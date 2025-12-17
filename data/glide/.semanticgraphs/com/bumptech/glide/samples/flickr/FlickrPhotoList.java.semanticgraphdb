@@ -1,0 +1,963 @@
+
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaì
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaFILEU
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java"
+
+LOC191*Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java–
+1com.bumptech.glide.samples.flickr.FlickrPhotoListCLASS]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java   (",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC159*FlickrPhotoList2≠
+?com.bumptech.glide.samples.flickr.FlickrPhotoList.newInstance()DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java,  ,(+2Ï
+~com.bumptech.glide.samples.flickr.FlickrPhotoList.onPhotosUpdated(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1 1(2ı
+Ücom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java9 9(2∆
+Xcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javal l(!2ø
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?PRELOAD_AHEAD_ITEMS@33.27:33.46DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java! !(.2¿
+Rcom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_INDEX@34.30:34.50DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java" "(22¡
+Scom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_OFFSET@35.30:35.51DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java# #(32≥
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java$! $((2π
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?currentPhotos@37.22:37.35DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java% %(#2∞
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java& &(2∑
+Icom.bumptech.glide.samples.flickr.FlickrPhotoList?fullRequest@39.33:39.44DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java'! '(,2∏
+Jcom.bumptech.glide.samples.flickr.FlickrPhotoList?thumbRequest@40.33:40.45DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java(! ((-2ø
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?preloadSizeProvider@41.41:41.60DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java)) )(<2π
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?layoutManager@42.30:42.43DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java* *(+2∂
+Hcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapterDECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaw w(,2ñ
+-com.bumptech.glide.samples.flickr.PhotoViewerEXTEND]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java 9  (D2á
+androidx.fragment.app.FragmentEXTEND]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java %  (-†
+?com.bumptech.glide.samples.flickr.FlickrPhotoList.newInstance()METHOD]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java,  ,(+",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeFlickrPhotoList"
+accesspublic"
+LOC2*newInstance2™
+Ccom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoList()CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java- -(2ü
+1com.bumptech.glide.samples.flickr.FlickrPhotoListRETURN_TYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java, ,(ç
+~com.bumptech.glide.samples.flickr.FlickrPhotoList.onPhotosUpdated(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)METHOD]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1 1(",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*onPhotosUpdated2˜
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.setPhotos(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java4 4(2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?currentPhotos@37.22:37.35CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java2 2(2Ì
+Öcom.bumptech.glide.samples.flickr.FlickrPhotoList.onPhotosUpdated(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)!photosCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java2 2(2¨
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java3 3(2¨
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java4 4(2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?currentPhotos@37.22:37.35CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java4 4(%2Â
+zcom.bumptech.glide.samples.flickr.PhotoViewer.onPhotosUpdated(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)OVERRIDE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1 1(2Ú
+Öcom.bumptech.glide.samples.flickr.FlickrPhotoList.onPhotosUpdated(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)!photos	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1* 1(02r
+voidRETURN_TYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1	 1(ı
+Öcom.bumptech.glide.samples.flickr.FlickrPhotoList.onPhotosUpdated(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)!photos	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1* 1(0"
+typeList<Photo>"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*photos2u
+java.util.ListTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1 1("2õ
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_ARGUMENT]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java1# 1((Õ\
+Ücom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)METHOD]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java9 9(",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeView"
+accesspublic"	
+LOC49*onCreateView2˜
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.setPhotos(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaK K(2∫
+Scom.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade()CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaW W(%2»
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.FlickrPhotoListAdapter()CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java@ @((2∞
+Icom.bumptech.glide.util.ViewPreloadSizeProvider.ViewPreloadSizeProvider()CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaC C(72˜
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!inflaterCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java; ;( 2¯
+êcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!containerCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java;E ;(N2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java= =(2Å
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?result@59.15:59.21CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java= =(2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?layoutManager@42.30:42.43CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java> >(2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java? ?(2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?layoutManager@42.30:42.43CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java? ?('2¨
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java@ @(2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaA A(2¨
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaA A(2∏
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?preloadSizeProvider@41.41:41.60CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaC C(2¨
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaF! F((2∏
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?preloadSizeProvider@41.41:41.60CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaF* F(=2∏
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?PRELOAD_AHEAD_ITEMS@33.27:33.46CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaF? F(R2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaG G(2Ñ
+úcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?preloader@68.33:68.42CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaG G(&2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaH H(2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?currentPhotos@37.22:37.35CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaJ J(2¨
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaK K(2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?currentPhotos@37.22:37.35CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaK K(%2∞
+Icom.bumptech.glide.samples.flickr.FlickrPhotoList?fullRequest@39.33:39.44CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaO O(2à
+†com.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?glideRequests@78.24:78.37CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaP P(2±
+Jcom.bumptech.glide.samples.flickr.FlickrPhotoList?thumbRequest@40.33:40.45CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaR R(2à
+†com.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?glideRequests@78.24:78.37CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaS S(2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaY Y(2î
+¨com.bumptech.glide.samples.flickr.FlickrPhotoList.Anonymous-af9cafda-85fb-422c-b677-5fbeab463e71.onViewRecycled(androidx.recyclerview.widget.RecyclerView.ViewHolder)!holderCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java]= ](C2à
+†com.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?glideRequests@78.24:78.37CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java^ ^(2ú
+¥com.bumptech.glide.samples.flickr.FlickrPhotoList.Anonymous-b4ec96b0-64de-4ca8-a614-a90b9dfd017a.onViewRecycled(androidx.recyclerview.widget.RecyclerView.ViewHolder)?vh@93.33:93.35CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java^  ^("2Å
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javab b(2Å
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javac c($2π
+Rcom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_INDEX@34.30:34.50CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javac, c(@2Å
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javad d(%2∫
+Scom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_OFFSET@35.30:35.51CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javad- d(B2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?layoutManager@42.30:42.43CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javae e(2Ä
+òcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?index@99.10:99.15CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javae/ e(42É
+õcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?offset@100.10:100.16CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javae6 e(<2Å
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?result@59.15:59.21CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javah h(2≈
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?imageView@183.28:183.37CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java^# ^(,2¸
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!inflater	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java: :(&2˝
+êcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!container	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java:2 :(;2Ü
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceState	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java:D :(V2à
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?result@59.15:59.21DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java; ;(2ã
+úcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?preloader@68.33:68.42DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaD! D(*2è
+†com.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?glideRequests@78.24:78.37DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaN N(%2£
+¥com.bumptech.glide.samples.flickr.FlickrPhotoList.Anonymous-905c8e69-15a9-4bbe-b488-91a4d9bf53e9.onViewRecycled(androidx.recyclerview.widget.RecyclerView.ViewHolder)?vh@93.33:93.35DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java]! ](#2á
+òcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?index@99.10:99.15DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javac
+ c(2ä
+õcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?offset@100.10:100.16DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javad
+ d(2
+android.view.ViewRETURN_TYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java9	 9(◊
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?result@59.15:59.21VALUE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java; ;("
+typeView"
+isFinaltrue",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*result2x
+android.view.ViewTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java;
+ ;(2˜
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!inflaterCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java; ;( 2¯
+êcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!containerCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java;E ;(N¯	
+úcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?preloader@68.33:68.42VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaD! D(*"$
+typeRecyclerViewPreloader<Photo>"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*	preloader2®
+Acom.bumptech.glide.integration.recyclerview.RecyclerViewPreloaderTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaD D(2õ
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_ARGUMENT]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaD D(2¨
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaF! F((2∏
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?preloadSizeProvider@41.41:41.60CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaF* F(=2∏
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?PRELOAD_AHEAD_ITEMS@33.27:33.46CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaF? F(Rı
+†com.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?glideRequests@78.24:78.37VALUE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaN N(%"
+typeGlideRequests"
+isFinaltrue",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*glideRequests2t
+GlideRequestsTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaN
+ N(⁄
+¥com.bumptech.glide.samples.flickr.FlickrPhotoList.Anonymous-d9593268-f153-4979-976d-49a01e3d90bc.onViewRecycled(androidx.recyclerview.widget.RecyclerView.ViewHolder)?vh@93.33:93.35VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java]! ](#"
+typePhotoTitleViewHolder"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*vh2≠
+Fcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolderTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java] ]( 2î
+¨com.bumptech.glide.samples.flickr.FlickrPhotoList.Anonymous-c207229b-2028-4dd2-ac62-1812d1797284.onViewRecycled(androidx.recyclerview.widget.RecyclerView.ViewHolder)!holderCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java]= ](Cï
+òcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?index@99.10:99.15VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javac
+ c("
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*index2j
+intTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javac c(	2Å
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javac c($2π
+Rcom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_INDEX@34.30:34.50CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javac, c(@ö
+õcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)?offset@100.10:100.16VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javad
+ d("
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*offset2j
+intTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javad d(	2Å
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javad d(%2∫
+Scom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_OFFSET@35.30:35.51CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javad- d(BÙ
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!inflater	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java: :(&"
+typeLayoutInflater"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*inflater2Ç
+android.view.LayoutInflaterTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java: :(Î
+êcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!container	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java:2 :(;"
+type	ViewGroup"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*	container2}
+android.view.ViewGroupTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java:( :(1ı
+ôcom.bumptech.glide.samples.flickr.FlickrPhotoList.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceState	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java:D :(V"
+typeBundle"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*savedInstanceState2x
+android.os.BundleTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java:= :(C±
+¨com.bumptech.glide.samples.flickr.FlickrPhotoList.Anonymous-b952d31e-921d-45ec-a06d-c462c1ced55f.onViewRecycled(androidx.recyclerview.widget.RecyclerView.ViewHolder)!holder	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java\= \(C"
+typeRecyclerView.ViewHolder"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*holder2õ
+4androidx.recyclerview.widget.RecyclerView.ViewHolderTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java\2 \(<ã
+Xcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)METHOD]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javal l(!",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC10*onSaveInstanceState2»
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)!outStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javam m(&2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javan n(2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?layoutManager@42.30:42.43CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javao o(2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javap p(2’
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?topView@112.11:112.18CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaq q(2’
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?topView@112.11:112.18CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaq% q(,2»
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)!outStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javar r(2π
+Rcom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_INDEX@34.30:34.50CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javar r(*2”
+lcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?index@111.10:111.15CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javar, r(12»
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)!outStateCALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javas s(2∫
+Scom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_OFFSET@35.30:35.51CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javas s(+2‘
+mcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?offset@113.10:113.16CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javas- s(32Õ
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)!outState	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javal2 l(:2⁄
+lcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?index@111.10:111.15DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javao
+ o(2‹
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?topView@112.11:112.18DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javap p(2€
+mcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?offset@113.10:113.16DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaq
+ q(2r
+voidRETURN_TYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javal	 l(›
+lcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?index@111.10:111.15VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javao
+ o("
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*index2j
+intTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javao o(	2≤
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?layoutManager@42.30:42.43CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javao o(Á
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?topView@112.11:112.18VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javap p("
+typeView"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*topView2x
+android.view.ViewTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javap p(
+2©
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javap p(⁄
+mcom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?offset@113.10:113.16VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaq
+ q("
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*offset2j
+intTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaq q(	2’
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?topView@112.11:112.18CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaq q(2’
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)?topView@112.11:112.18CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaq% q(,≤
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.onSaveInstanceState(android.os.Bundle)!outState	PARAMETER]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javal2 l(:"
+typeBundle"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*outState2x
+android.os.BundleTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javal+ l(1Ω
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?PRELOAD_AHEAD_ITEMS@33.27:33.46VALUE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java! !(."
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*PRELOAD_AHEAD_ITEMS2j
+intTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java! !(œ
+Rcom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_INDEX@34.30:34.50VALUE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java" "(2"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*STATE_POSITION_INDEX2w
+java.lang.StringTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java" "(—
+Scom.bumptech.glide.samples.flickr.FlickrPhotoList?STATE_POSITION_OFFSET@35.30:35.51VALUE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java# #(3"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*STATE_POSITION_OFFSET2w
+java.lang.StringTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java# #(É
+Ecom.bumptech.glide.samples.flickr.FlickrPhotoList?adapter@36.33:36.40VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java$! $(("
+isFinalfalse"
+typeFlickrPhotoListAdapter"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*adapter2Ø
+Hcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapterTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java$
+ $( Á
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?currentPhotos@37.22:37.35VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java% %(#"
+isFinalfalse"
+typeList<Photo>"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*currentPhotos2u
+java.util.ListTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java%
+ %(2õ
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_ARGUMENT]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java% %(‘
+Bcom.bumptech.glide.samples.flickr.FlickrPhotoList?list@38.23:38.27VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java& &("
+isFinalfalse"
+typeRecyclerView"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*list2ê
+)androidx.recyclerview.widget.RecyclerViewTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java&
+ &(Œ
+Icom.bumptech.glide.samples.flickr.FlickrPhotoList?fullRequest@39.33:39.44VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java'! '(,"
+isFinalfalse"
+typeGlideRequest<Drawable>"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*fullRequest2s
+GlideRequestTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java'
+ '(–
+Jcom.bumptech.glide.samples.flickr.FlickrPhotoList?thumbRequest@40.33:40.45VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java(! ((-"
+isFinalfalse"
+typeGlideRequest<Drawable>"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*thumbRequest2s
+GlideRequestTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java(
+ ((®
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?preloadSizeProvider@41.41:41.60VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java)) )(<"
+isFinalfalse"&
+typeViewPreloadSizeProvider<Photo>"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*preloadSizeProvider2ñ
+/com.bumptech.glide.util.ViewPreloadSizeProviderTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java)
+ )(!2õ
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_ARGUMENT]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java)" )('Ù
+Kcom.bumptech.glide.samples.flickr.FlickrPhotoList?layoutManager@42.30:42.43VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java* *(+"
+isFinalfalse"
+typeLinearLayoutManager"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*layoutManager2ó
+0androidx.recyclerview.widget.LinearLayoutManagerTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java*
+ *(–
+Hcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapterCLASS]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaw w(,",
+package!com.bumptech.glide.samples.flickr"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accessprivate"	
+LOC60*FlickrPhotoListAdapter2œ
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.FlickrPhotoListAdapter()DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java| |(2Ä
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.setPhotos(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÄ	 Ä(2Ë
+xcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜ  Ü(22ó
+¶com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaé é( 2«
+Wcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getItemId(int)DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaü ü(2«
+Wcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getItemCount()DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java§ §(2Õ
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadItems(int)DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java™ ™(&2ˇ
+écom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadRequestBuilder(com.bumptech.glide.samples.flickr.api.Photo)DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∞$ ∞(<2Õ
+_com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?inflater@121.33:121.41DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javay! y()2À
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?photos@122.24:122.30DECLARATION]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaz z(2û
+5com.bumptech.glide.ListPreloader.PreloadModelProviderEXTEND]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javax x(32ö
+1androidx.recyclerview.widget.RecyclerView.AdapterEXTEND]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javawB w(I2¢
++com.bumptech.glide.samples.flickr.api.PhotoEXTEND_TYPE_ARGUMENT]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javax4 x(92Ω
+Fcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolderEXTEND_TYPE_ARGUMENT]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javawJ w(^ó
+acom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.FlickrPhotoListAdapter()CONSTRUCTOR]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java| |(",
+package!com.bumptech.glide.samples.flickr*FlickrPhotoListAdapter2∆
+_com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?inflater@121.33:121.41CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java} }(2∂
+Hcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapterRETURN_TYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java| |(Î	
+ècom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.setPhotos(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)METHOD_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÄ	 Ä(",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*	setPhotos2Ä
+ñcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.setPhotos(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)!photosCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÅ Å(2∆
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?photos@122.24:122.30CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÅ Å(2Ö
+ñcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.setPhotos(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)!photos	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÄ Ä(%2t
+voidRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÄ Ä(å
+ñcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.setPhotos(java.util.List<com.bumptech.glide.samples.flickr.api.Photo>)!photos	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÄ Ä(%"
+typeList<Photo>"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*photos2w
+java.util.ListTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÄ Ä(2ù
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_ARGUMENT_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÄ Ä(¨
+xcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)METHOD_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜ  Ü(2",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typePhotoTitleViewHolder"
+accesspublic"
+LOC6*onCreateViewHolder2◊
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaà$ à(82»
+_com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?inflater@121.33:121.41CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaá á(2Ë
+com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)!parentCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaáD á(J2ı
+ãcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?view@135.11:135.15CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaà9 à(=2∫
+Qcom.bumptech.glide.samples.flickr.FlickrPhotoList?preloadSizeProvider@41.41:41.60CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaâ â(2Û
+âcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?vh@136.27:136.29CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaâ" â($2Û
+âcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?vh@136.27:136.29CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaä ä(2«
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?imageView@183.28:183.37CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaâ% â(.2Ì
+com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)!parent	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜ= Ü(C2
+Åcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)!viewType	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜI Ü(Q2¸
+ãcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?view@135.11:135.15DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaá á(2˙
+âcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?vh@136.27:136.29DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaà à(2∂
+Fcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolderRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜ Ü(ê
+ãcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?view@135.11:135.15VARIABLE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaá á("
+typeView"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*view2z
+android.view.ViewTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaá á(
+2»
+_com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?inflater@121.33:121.41CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaá á(2Ë
+com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)!parentCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaáD á(JÓ
+âcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?vh@136.27:136.29VARIABLE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaà à("
+typePhotoTitleViewHolder"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*vh2Ø
+Fcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolderTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaà à(2◊
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaà$ à(82ı
+ãcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)?view@135.11:135.15CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaà9 à(=⁄
+com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)!parent	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜ= Ü(C"
+type	ViewGroup"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*parent2
+android.view.ViewGroupTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜ3 Ü(<∆
+Åcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onCreateViewHolder(android.view.ViewGroup, int)!viewType	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜI Ü(Q"
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*viewType2l
+intTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaÜE Ü(Hë-
+¶com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)METHOD_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaé é( ",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC15*onBindViewHolder2Ä
+java.util.List.get(int)CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè# è(&2ü
+6com.bumptech.glide.samples.flickr.api.Photo.getTitle()CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaõ' õ(/2∆
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?photos@122.24:122.30CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè è("2ô
+Øcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!positionCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè' è(/2≤
+Icom.bumptech.glide.samples.flickr.FlickrPhotoList?fullRequest@39.33:39.44CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaê ê(2¶
+ºcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)?current@143.18:143.25CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaê ê(2≥
+Jcom.bumptech.glide.samples.flickr.FlickrPhotoList?thumbRequest@40.33:40.45CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaê* ê(62¶
+ºcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)?current@143.18:143.25CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaê< ê(C2ó
+≠com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!holderCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaêK ê(Q2ó
+≠com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!holderCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaí í(2¶
+ºcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)?current@143.18:143.25CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javañJ ñ(Q2ë
+ßcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.Anonymous-f6610859-1dbe-4d69-bb02-97322ebe8d4a.onClick(android.view.View)?intent@150.21:150.27CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaó ó("2ó
+≠com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!holderCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaõ õ(2¶
+ºcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)?current@143.18:143.25CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaõ õ(&2«
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?imageView@183.28:183.37CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaêR ê([2«
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?imageView@183.28:183.37CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaí í(2«
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?titleView@182.27:182.36CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaõ õ(2ú
+≠com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!holder	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaé6 é(<2û
+Øcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!position	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaéB é(J2≠
+ºcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)?current@143.18:143.25DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè è(2ò
+ßcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.Anonymous-0bd85ac2-6af4-4ab2-bad8-25e5b06a433b.onClick(android.view.View)?intent@150.21:150.27DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javañ ñ(2t
+voidRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaé é(é	
+ºcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)?current@143.18:143.25VALUE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè è("
+typePhoto"
+isFinaltrue",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*current2î
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè è(2Ä
+java.util.List.get(int)CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè# è(&2∆
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?photos@122.24:122.30CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè è("2ô
+Øcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!positionCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaè' è(/®
+ßcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.Anonymous-02055113-2ed1-4e00-ba90-aa3b3ebfccbd.onClick(android.view.View)?intent@150.21:150.27VARIABLE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javañ ñ("
+typeIntent"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*intent2
+android.content.IntentTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javañ ñ(2¶
+ºcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)?current@143.18:143.25CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javañJ ñ(Q≈
+≠com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!holder	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaé6 é(<"
+typePhotoTitleViewHolder"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*holder2Ø
+Fcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolderTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaé! é(5Ù
+Øcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.onBindViewHolder(com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder, int)!position	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaéB é(J"
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*position2l
+intTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaé> é(AÁ
+ócom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.Anonymous-c2951ab4-1025-49a7-8a86-a483a5bcda24.onClick(android.view.View)!view	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaï% ï()"
+typeView"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*view2z
+android.view.ViewTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaï  ï($ü
+Wcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getItemId(int)METHOD_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaü ü(",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typelong"
+accesspublic"
+LOC3*	getItemId2«
+Ycom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getItemId(int)!i	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaü ü(2t
+longRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaü ü(ñ
+Ycom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getItemId(int)!i	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaü ü("
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*i2l
+intTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaü ü(ü
+Wcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getItemCount()METHOD_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java§ §(",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC3*getItemCount2~
+java.util.List.size()CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java• •(2∆
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?photos@122.24:122.30CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java• •(2s
+intRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java§ §(È
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadItems(int)METHOD_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java™ ™(&",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<Photo>"
+accesspublic"
+LOC4*getPreloadItems2â
+ java.util.List.subList(int, int)CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java´ ´(2∆
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?photos@122.24:122.30CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java´ ´(2œ
+fcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadItems(int)!positionCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java´ ´($2œ
+fcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadItems(int)!positionCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java´& ´(.2‘
+fcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadItems(int)!position	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java™+ ™(32~
+java.util.ListRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java™ ™(2§
++com.bumptech.glide.samples.flickr.api.PhotoRETURN_TYPE_ARGUMENT_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java™ ™(™
+fcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadItems(int)!position	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java™+ ™(3"
+typeint"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*position2l
+intTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java™' ™(*‹
+écom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadRequestBuilder(com.bumptech.glide.samples.flickr.api.Photo)METHOD_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∞$ ∞(<",
+package!com.bumptech.glide.samples.flickr"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC4*getPreloadRequestBuilder2≤
+Icom.bumptech.glide.samples.flickr.FlickrPhotoList?fullRequest@39.33:39.44CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java± ±(2≥
+Jcom.bumptech.glide.samples.flickr.FlickrPhotoList?thumbRequest@40.33:40.45CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java±# ±(/2˝
+ìcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadRequestBuilder(com.bumptech.glide.samples.flickr.api.Photo)!itemCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java±5 ±(92˝
+ìcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadRequestBuilder(com.bumptech.glide.samples.flickr.api.Photo)!itemCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java±A ±(E2Ç
+ìcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadRequestBuilder(com.bumptech.glide.samples.flickr.api.Photo)!item	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∞L ∞(P2ë
+!com.bumptech.glide.RequestBuilderRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∞ ∞(2õ
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENT_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∞ ∞("ˇ
+ìcom.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter.getPreloadRequestBuilder(com.bumptech.glide.samples.flickr.api.Photo)!item	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∞L ∞(P"
+typePhoto"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*item2î
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∞F ∞(KÂ
+_com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?inflater@121.33:121.41VALUE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javay! y()"
+isFinaltrue"
+typeLayoutInflater"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*inflater2Ç
+android.view.LayoutInflaterTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javay y( ˝
+]com.bumptech.glide.samples.flickr.FlickrPhotoList.FlickrPhotoListAdapter?photos@122.24:122.30VARIABLE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaz z("
+isFinalfalse"
+typeList<Photo>"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*photos2u
+java.util.ListTYPE]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaz z(2õ
++com.bumptech.glide.samples.flickr.api.PhotoTYPE_ARGUMENT]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaz z(2à
+!java.util.Collections.emptyList()CALL]
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaz- z(6Ú
+Fcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolderCLASS_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaµ µ(1",
+package!com.bumptech.glide.samples.flickr"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"
+LOC9*PhotoTitleViewHolder2ﬁ
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaπ π(2Œ
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?titleView@182.27:182.36DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∂ ∂($2Œ
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?imageView@183.28:183.37DECLARATION_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∑ ∑(%2ü
+4androidx.recyclerview.widget.RecyclerView.ViewHolderEXTEND_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaµG µ(QÄ
+ncom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)CONSTRUCTOR_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaπ π(",
+package!com.bumptech.glide.samples.flickr*PhotoTitleViewHolder2‡
+wcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)!itemViewCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∫ ∫(2«
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?imageView@183.28:183.37CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaª ª(2‡
+wcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)!itemViewCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaª ª(2«
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?titleView@182.27:182.36CALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaº º(2‡
+wcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)!itemViewCALL_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaº º(2Â
+wcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)!itemView	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaπ π(&2∂
+Fcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolderRETURN_TYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaπ π( 
+wcom.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder.PhotoTitleViewHolder(android.view.View)!itemView	PARAMETER_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaπ π(&"
+typeView"
+isFinalfalse",
+package!com.bumptech.glide.samples.flickr"
+isLocaltrue*itemView2z
+android.view.ViewTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.javaπ π(ﬂ
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?titleView@182.27:182.36VALUE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∂ ∂($"
+isFinaltrue"
+typeTextView"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*	titleView2Ä
+android.widget.TextViewTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∂ ∂(·
+^com.bumptech.glide.samples.flickr.FlickrPhotoList.PhotoTitleViewHolder?imageView@183.28:183.37VALUE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∑ ∑(%"
+isFinaltrue"
+type	ImageView"
+isStaticfalse"
+accessprivate"
+isLocalfalse",
+package!com.bumptech.glide.samples.flickr*	imageView2Å
+android.widget.ImageViewTYPE_
+Ssamples/flickr/src/main/java/com/bumptech/glide/samples/flickr/FlickrPhotoList.java∑ ∑(

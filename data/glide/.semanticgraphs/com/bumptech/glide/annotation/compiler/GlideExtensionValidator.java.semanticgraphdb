@@ -1,0 +1,1432 @@
+
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java…
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaFILEg
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java"
+
+LOC291*eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÃ/
+>com.bumptech.glide.annotation.compiler.GlideExtensionValidatorCLASSo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java   (#"1
+package&com.bumptech.glide.annotation.compiler"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC259*GlideExtensionValidator2¿
+øcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java$ $(2ˆ
+vcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java* *(2Ç
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java= =(.2ˆ
+vcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaA A(-2Ë
+hcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getName(javax.lang.model.element.Element)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaE E(2˝
+}com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaI I(22˛
+~com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaY Y("2ä
+âcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionAnnotations(javax.lang.model.element.ExecutableElement)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javak k(-2â
+àcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javao o(32˜
+ucom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isBaseRequestOptions(javax.lang.model.type.TypeMirror)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ Ñ(-2â
+Ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaà à(*2ä
+ácom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaô ô(.2í
+ècom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java≥ ≥(92˛
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¿ ¿( 2˛
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java” ”("2£
+†com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄ ⁄(%2Û
+qcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÁ Á("2â
+Ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÏ Ï(12ä
+ácom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeAnnotations(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÄ Ä(+2Ü
+Écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ Ñ('2‡
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java!& !(;2ÿ
+Xcom.bumptech.glide.annotation.compiler.GlideExtensionValidator?processorUtil@34.30:34.43DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java" "(+ø
+øcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)CONSTRUCTORo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java$ $("1
+package&com.bumptech.glide.annotation.compiler*GlideExtensionValidator2œ
+’com.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvironmentCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java&! &(62«
+Õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtilCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java' '(&2Ÿ
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java&	 &(2—
+Xcom.bumptech.glide.annotation.compiler.GlideExtensionValidator?processorUtil@34.30:34.43CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java'	 '(2‘
+’com.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvironment	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java% %(12Ã
+Õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java%A %(N2æ
+>com.bumptech.glide.annotation.compiler.GlideExtensionValidatorRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java$ $(ç
+’com.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvironment	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java% %(1"
+typeProcessingEnvironment"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processingEnvironment2™
+1javax.annotation.processing.ProcessingEnvironmentTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java% %(¯
+Õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.GlideExtensionValidator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java%A %(N"
+typeProcessorUtil"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processorUtil2≠
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java%3 %(@ò4
+vcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java* *("1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC17*validateExtension2°
+(java.util.Set.contains(java.lang.Object)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java+$ +(,2®
+/javax.lang.model.element.Element.getModifiers()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java+ +(!2·
+hcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getName(javax.lang.model.element.Element)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java-C -(J2≥
+:javax.lang.model.element.TypeElement.getEnclosedElements()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java/' /(:2£
+*javax.lang.model.element.Element.getKind()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java0 0(2ˆ
+}com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java1 1($2£
+*javax.lang.model.element.Element.getKind()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java2 2( 2ª
+Bjavax.lang.model.element.Element.getAnnotation(java.lang.Class<A>)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java4 4(+2˜
+~com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java5
+ 5(2ª
+Bjavax.lang.model.element.Element.getAnnotation(java.lang.Class<A>)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java6% 6(22ı
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java7
+ 7(2∆
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java, ,((2¸
+Çcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)!typeElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java+	 +(2¸
+Çcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)!typeElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java-K -(V2¸
+Çcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)!typeElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java/ /(&2Ñ
+äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?element@47.17:47.24CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java0
+ 0(2Ñ
+äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?element@47.17:47.24CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java1% 1(,2Ñ
+äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?element@47.17:47.24CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java2 2(2Ñ
+äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?element@47.17:47.24CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java3B 3(I2é
+îcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?executableElement@51.26:51.43CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java4 4(2é
+îcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?executableElement@51.26:51.43CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java5 5(/2é
+îcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?executableElement@51.26:51.43CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java6 6($2é
+îcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?executableElement@51.26:51.43CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java7 7(-2Å
+Çcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)!typeElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java*% *(02ã
+äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?element@47.17:47.24DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java/ /(2ï
+îcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?executableElement@51.26:51.43DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java3 3(+2Ñ
+voidRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java* *(î
+äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?element@47.17:47.24VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java/ /("
+typeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2ô
+ javax.lang.model.element.ElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java/	 /(√
+îcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?executableElement@51.26:51.43VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java3 3(+"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2£
+*javax.lang.model.element.ExecutableElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java3 3(2Ñ
+äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)?element@47.17:47.24CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java3B 3(Iô
+Çcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtension(javax.lang.model.element.TypeElement)!typeElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java*% *(0"
+typeTypeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*typeElement2ù
+$javax.lang.model.element.TypeElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java* *($Ã
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java= =(."1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeString"
+accessprivate"
+LOC2*getQualifiedMethodName2Ô
+vcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java> >( 2·
+hcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getName(javax.lang.model.element.Element)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java>< >(C2ç
+ìcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java>! >(22ç
+ìcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java>D >(U2í
+ìcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java=A =(R2ê
+java.lang.StringRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java= =(º
+ìcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java=A =(R"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2£
+*javax.lang.model.element.ExecutableElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java=/ =(@ˆ
+
+vcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaA A(-"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeString"
+accessprivate"
+LOC2*getEnclosingClassName2î
+java.lang.Object.toString()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaB) B(12Ø
+6javax.lang.model.element.Element.getEnclosingElement()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaB B(&2˜
+~com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)!elementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaB B(2¸
+~com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)!element	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaA6 A(=2ê
+java.lang.StringRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaA A(à
+~com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)!element	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaA6 A(="
+typeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2ô
+ javax.lang.model.element.ElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaA. A(5å	
+hcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getName(javax.lang.model.element.Element)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaE E("1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeString"
+accessprivate"
+LOC2*getName2î
+java.lang.Object.toString()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaF F(2È
+pcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getName(javax.lang.model.element.Element)!elementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaF F(2Ó
+pcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getName(javax.lang.model.element.Element)!element	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaE( E(/2ê
+java.lang.StringRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaE E(˙
+pcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getName(javax.lang.model.element.Element)!element	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaE( E(/"
+typeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2ô
+ javax.lang.model.element.ElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaE  E('ä
+}com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaI I(2"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC14*validateExtensionConstructor2°
+(java.util.Set.contains(java.lang.Object)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaJ  J((2®
+/javax.lang.model.element.Element.getModifiers()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaJ J(2Ô
+vcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaN N(%2ë
+java.util.List.isEmpty()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaQ+ Q(22≥
+:javax.lang.model.element.ExecutableElement.getParameters()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaQ Q((2Ô
+vcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getEnclosingClassName(javax.lang.model.element.Element)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaU U(%2∆
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaK K((2∆
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaR R((2ˇ
+Öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)!elementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaJ	 J(2ˇ
+Öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)!elementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaN& N(-2ˇ
+Öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)!elementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaP> P(E2ï
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)?executableElement@80.22:80.39CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaQ	 Q(2ˇ
+Öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)!elementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaU& U(-2Ñ
+Öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)!element	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaI; I(B2ú
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)?executableElement@80.22:80.39DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaP P('2Ñ
+voidRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaI I(≈
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)?executableElement@80.22:80.39VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaP P('"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2£
+*javax.lang.model.element.ExecutableElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaP P(2ˇ
+Öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)!elementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaP> P(Eê
+Öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateExtensionConstructor(javax.lang.model.element.Element)!element	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaI; I(B"
+typeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2ô
+ javax.lang.model.element.ElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaI3 I(:∫$
+~com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaY Y(""1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC16*validateGlideOption2É
+âcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionAnnotations(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaZ Z("2Ç
+àcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java[ [(!2≥
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java\. \(;2Ó
+ucom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isBaseRequestOptions(javax.lang.model.type.TypeMirror)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java]	 ](2˚
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaa a(&2Ä
+Ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javah h(2∆
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java^ ^((2ä
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaZ# Z(42ä
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java[" [(32ä
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java\ \(-2è
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)?returnType@92.15:92.25CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java] ]((2ä
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaa' a(82è
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)?returnType@92.15:92.25CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javac c(2ä
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javah  h(12è
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaY5 Y(F2ñ
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)?returnType@92.15:92.25DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java\ \(2Ñ
+voidRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaY
+ Y(Ë
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)?returnType@92.15:92.25VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java\ \("
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+returnType2ô
+ javax.lang.model.type.TypeMirrorTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java\ \(2≥
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java\. \(;2ä
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java\ \(-π
+êcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOption(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaY5 Y(F"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2£
+*javax.lang.model.element.ExecutableElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaY# Y(4˘
+
+âcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionAnnotations(javax.lang.model.element.ExecutableElement)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javak k(-"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC2*validateGlideOptionAnnotations2˝
+Écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javal l(2ï
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionAnnotations(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javal l(.2ö
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionAnnotations(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javak@ k(Q2Ñ
+voidRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javak
+ k(ƒ
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionAnnotations(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javak@ k(Q"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2£
+*javax.lang.model.element.ExecutableElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javak. k(?á*
+àcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)METHODo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javao o(3"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC19*validateGlideOptionParameters2ë
+java.util.List.isEmpty()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javap* p(12≥
+:javax.lang.model.element.ExecutableElement.getParameters()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javap p('2˚
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javat t(&2ê
+java.util.List.get(int)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw> w(A2≥
+:javax.lang.model.element.ExecutableElement.getParameters()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw. w(;2¢
+)javax.lang.model.element.Element.asType()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javax  x(&2Ó
+ucom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isBaseRequestOptions(javax.lang.model.type.TypeMirror)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javay	 y(2˚
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java~ ~(&2∆
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaq q((2∆
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaz z((2î
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javap p(2î
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javat' t(82î
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw w(-2ñ
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?first@119.20:119.25CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javax x(2ô
+ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?expected@120.15:120.23CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javay y(&2î
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java~' ~(82õ
+ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?expected@120.15:120.23CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÄ Ä(2ô
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaoF o(W2ù
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?first@119.20:119.25DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw w(2†
+ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?expected@120.15:120.23DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javax x(2Ñ
+voidRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javao o(î	
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?first@119.20:119.25VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw w("
+typeVariableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*first2°
+(javax.lang.model.element.VariableElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw w(2ê
+java.util.List.get(int)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw> w(A2≥
+:javax.lang.model.element.ExecutableElement.getParameters()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw. w(;2î
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaw w(-Î
+ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?expected@120.15:120.23VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javax x("
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*expected2ô
+ javax.lang.model.type.TypeMirrorTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javax x(2¢
+)javax.lang.model.element.Element.asType()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javax  x(&2ñ
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)?first@119.20:119.25CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javax x(√
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionParameters(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaoF o(W"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2£
+*javax.lang.model.element.ExecutableElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javao4 o(EÅ
+ucom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isBaseRequestOptions(javax.lang.model.type.TypeMirror)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ Ñ(-"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isBaseRequestOptions2§
+)java.lang.String.equals(java.lang.Object)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÖ! Ö('2¶
++javax.lang.model.type.TypeMirror.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÖ Ö(2¸
+Äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isBaseRequestOptions(javax.lang.model.type.TypeMirror)!typeMirrorCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÖ Ö(2Å
+Äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isBaseRequestOptions(javax.lang.model.type.TypeMirror)!typeMirror	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ9 Ñ(C2â
+booleanRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ Ñ(ï
+Äcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isBaseRequestOptions(javax.lang.model.type.TypeMirror)!typeMirror	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ9 Ñ(C"
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+typeMirror2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ. Ñ(8¸)
+Ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaà à(*"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC15*validateGlideOptionOverride2Î
+pcom.bumptech.glide.annotation.compiler.ProcessorUtil.getOverrideType(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ% â(42É
+ácom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaä3 ä(O2˝
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaê ê(&2˝
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaï ï(&2»
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaå å((2»
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaí í((2”
+Xcom.bumptech.glide.annotation.compiler.GlideExtensionValidator?processorUtil@34.30:34.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ â($2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ5 â(<2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaäP ä(W2µ
+πcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?isOverridingBaseRequestOptionsMethod@138.12:138.48CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã ã(,2ú
+†com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?overrideType@137.8:137.20CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã0 ã(<2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaê' ê(.2µ
+πcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?isOverridingBaseRequestOptionsMethod@138.12:138.48CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaë ë(42ú
+†com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?overrideType@137.8:137.20CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaë8 ë(D2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaï' ï(.2è
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!element	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaà= à(D2£
+†com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?overrideType@137.8:137.20DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ â(2º
+πcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?isOverridingBaseRequestOptionsMethod@138.12:138.48DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaä ä(02Ü
+voidRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaà
+ à(‚	
+†com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?overrideType@137.8:137.20VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ â("
+typeint"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*overrideType2~
+intTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ â(2Î
+pcom.bumptech.glide.annotation.compiler.ProcessorUtil.getOverrideType(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ% â(42”
+Xcom.bumptech.glide.annotation.compiler.GlideExtensionValidator?processorUtil@34.30:34.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ â($2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaâ5 â(<ﬁ
+πcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)?isOverridingBaseRequestOptionsMethod@138.12:138.48VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaä ä(0"
+typeboolean"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*$isOverridingBaseRequestOptionsMethod2Ç
+booleanTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaä ä(2É
+ácom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaä3 ä(O2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaäP ä(W±
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideOptionOverride(javax.lang.model.element.ExecutableElement)!element	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaà= à(D"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaà+ à(<⁄>
+ácom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaô ô(."1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"	
+LOC24*isMethodInBaseRequestOptions2¿
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java† †(2æ
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaü ü(2ã
+ècom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java°( °(C2ú
+!java.lang.CharSequence.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢5 ¢(=2µ
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢% ¢(22µ
+:javax.lang.model.element.TypeElement.getEnclosedElements()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java£. £(A2•
+*javax.lang.model.element.Element.getKind()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java§ §(2§
+)java.lang.String.equals(java.lang.Object)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java® ®(!2ú
+!java.lang.CharSequence.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java®9 ®(A2µ
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java®) ®(62ã
+ècom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java™ ™('2¢
+'java.util.List.equals(java.lang.Object)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java´! ´('2€
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaû û(2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)!toFindCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java°D °(J2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)!toFindCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢ ¢($2§
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?requestOptionsType@157.16:157.34CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java£ £(-2ô
+ùcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?element@163.17:163.24CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java§
+ §(2ô
+ùcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?element@163.17:163.24CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaß5 ß(<2¢
+¶com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?toFindSimpleName@162.11:162.27CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java®
+ ®(2ò
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?inBase@167.24:167.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java®" ®((2ò
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?inBase@167.24:167.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java™( ™(.2¶
+™com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?parameterNamesInBase@169.21:169.41CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java´ ´( 2¶
+™com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?toFindParameterNames@161.17:161.37CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java´( ´(<2è
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)!toFind	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaôA ô(G2´
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?requestOptionsType@157.16:157.34DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaù ù("2≠
+™com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?toFindParameterNames@161.17:161.37DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java° °(%2©
+¶com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?toFindSimpleName@162.11:162.27DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢ ¢(2†
+ùcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?element@163.17:163.24DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java£ £(2ü
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?inBase@167.24:167.30DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaß ß(2≠
+™com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?parameterNamesInBase@169.21:169.41DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java© ©()2â
+booleanRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaô
+ ô(´	
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?requestOptionsType@157.16:157.34VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaù ù(""
+typeTypeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionsType2ü
+$javax.lang.model.element.TypeElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaù ù(2¿
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java† †(2æ
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaü ü(2€
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaû û(Í	
+™com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?toFindParameterNames@161.17:161.37VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java° °(%"
+typeList<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*toFindParameterNames2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java° °(2î
+java.lang.StringTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java°	 °(2ã
+ècom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java°( °(C2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)!toFindCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java°D °(Jê	
+¶com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?toFindSimpleName@162.11:162.27VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢ ¢("
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*toFindSimpleName2ã
+java.lang.StringTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢ ¢(
+2ú
+!java.lang.CharSequence.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢5 ¢(=2µ
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢% ¢(22ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)!toFindCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¢ ¢($´
+ùcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?element@163.17:163.24VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java£ £("
+typeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2õ
+ javax.lang.model.element.ElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java£	 £(Ÿ
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?inBase@167.24:167.30VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaß ß("
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*inBase2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaß ß(2ô
+ùcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?element@163.17:163.24CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaß5 ß(<¯	
+™com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?parameterNamesInBase@169.21:169.41VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java© ©()"
+typeList<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*parameterNamesInBase2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java© ©(2î
+java.lang.StringTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java© ©(2ã
+ècom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java™ ™('2ò
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)?inBase@167.24:167.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java™( ™(.∞
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isMethodInBaseRequestOptions(javax.lang.model.element.ExecutableElement)!toFind	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaôA ô(G"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*toFind2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaô/ ô(@î2
+ècom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java≥ ≥(9"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeList<String>"
+accessprivate"	
+LOC11*getComparableParameterNames2µ
+:javax.lang.model.element.ExecutableElement.getParameters()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaµ9 µ(F2õ
+ java.util.List.subList(int, int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∑ ∑(%2ê
+java.util.List.size()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∑4 ∑(82ê
+java.util.List.size()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ5 π(92ê
+java.util.List.add(E)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaª ª(2¶
++javax.lang.model.type.TypeMirror.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaª$ ª(,2§
+)javax.lang.model.element.Element.asType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaª ª(!2ù
+"java.util.ArrayList.ArrayList(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ π()2ì
+ócom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaµ1 µ(82ï
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)!skipFirstCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∂ ∂(2§
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∑ ∑(2§
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∑ ∑(2§
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∑) ∑(32§
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ* π(42§
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∫% ∫(/2†
+§com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?result@185.17:185.23CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaª ª(2£
+ßcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameter@186.25:186.34CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaª ª(2†
+§com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?result@185.17:185.23CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaΩ Ω(2ò
+ócom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)!element	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¥ ¥(2ö
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)!skipFirst	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¥) ¥(22´
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaµ$ µ(.2ß
+§com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?result@185.17:185.23DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ π(2™
+ßcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameter@186.25:186.34DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∫ ∫("2ê
+java.util.ListRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java≥ ≥(2õ
+java.lang.StringRETURN_TYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java≥ ≥(ç
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaµ$ µ(."'
+typeList<? extends VariableElement>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+parameters2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaµ µ(2µ
+:javax.lang.model.element.ExecutableElement.getParameters()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaµ9 µ(F2ì
+ócom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)!elementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaµ1 µ(8ï
+
+§com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?result@185.17:185.23VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ π("
+typeList<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*result2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ π(2î
+java.lang.StringTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ	 π(2ê
+java.util.List.size()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ5 π(92ù
+"java.util.ArrayList.ArrayList(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ π()2§
+®com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameters@181.36:181.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaπ* π(4«
+ßcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)?parameter@186.25:186.34VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∫ ∫(""
+typeVariableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	parameter2£
+(javax.lang.model.element.VariableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java∫	 ∫(∫
+ócom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)!element	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¥ ¥("
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¥ ¥(ë
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getComparableParameterNames(javax.lang.model.element.ExecutableElement, boolean)!skipFirst	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¥) ¥(2"
+typeboolean"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	skipFirst2Ç
+booleanTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¥! ¥((∏/
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¿ ¿( "1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC17*validateGlideType2µ
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¡. ¡(;2É
+ácom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeAnnotations(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¬ ¬( 2Ï
+qcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java√	 √(2ú
+†com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java√* √(=2˜
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaƒ! ƒ(22˝
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java… …(&2Ç
+Ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java– –(2»
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java≈ ≈((2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¡ ¡(-2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¬! ¬(22ë
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?returnType@193.15:193.25CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java√ √($2ë
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?returnType@193.15:193.25CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java√> √(H2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java√J √([2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaƒ3 ƒ(D2ò
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?expectedClassName@196.13:196.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java« «(!2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java…' …(82ë
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?returnType@193.15:193.25CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÀ À(2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java–  –(12è
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¿3 ¿(D2ò
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?returnType@193.15:193.25DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¡ ¡(2ü
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?expectedClassName@196.13:196.30DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaƒ ƒ(2Ü
+voidRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¿
+ ¿(Ó
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?returnType@193.15:193.25VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¡ ¡("
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+returnType2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¡ ¡(2µ
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¡. ¡(;2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¡ ¡(-™
+úcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)?expectedClassName@196.13:196.30VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaƒ ƒ("
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*expectedClassName2ã
+java.lang.StringTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaƒ ƒ(2˜
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaƒ! ƒ(22ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaƒ3 ƒ(Dª
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideType(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¿3 ¿(D"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¿! ¿(2ö
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java” ”(""1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accessprivate"
+LOC5*getGlideTypeValue2î
+java.util.Iterator.next()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java◊	 ◊(2ì
+java.util.Set.iterator()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java÷	 ÷(2∫
+æcom.bumptech.glide.annotation.compiler.ProcessorUtil.findClassValuesFromAnnotationOnClassAsNames(javax.lang.model.element.Element, java.lang.Class<? extends java.lang.annotation.Annotation>)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java’	 ’(42”
+Xcom.bumptech.glide.annotation.compiler.GlideExtensionValidator?processorUtil@34.30:34.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‘ ‘(2ä
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java’5 ’(F2è
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java”5 ”(F2í
+java.lang.StringRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java”
+ ”(ª
+écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java”5 ”(F"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java”# ”(4à*
+†com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄ ⁄(%"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"	
+LOC11*typeMatchesExpected2∞
+5javax.lang.model.type.DeclaredType.getTypeArguments()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬁK ﬁ([2ê
+java.util.List.size()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬂ ﬂ(2í
+java.util.List.get(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‚( ‚(+2˜
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java„ „('2§
+)java.lang.String.equals(java.lang.Object)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‰ ‰(%2¶
++javax.lang.model.type.TypeMirror.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‰ ‰(2ß
+´com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!returnTypeCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java€
+ €(2ß
+´com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!returnTypeCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬁ? ﬁ(I2∏
+ºcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?typeArguments@222.31:222.44CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬂ ﬂ(2∏
+ºcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?typeArguments@222.31:222.44CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‚ ‚('2Æ
+≤com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java„( „(92≥
+∑com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?argument@226.15:226.23CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‰ ‰(2≥
+∑com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?expected@227.11:227.19CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‰& ‰(.2¨
+´com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!returnType	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄1 ⁄(;2≥
+≤com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄O ⁄(`2ø
+ºcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?typeArguments@222.31:222.44DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬁ ﬁ(,2∫
+∑com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?argument@226.15:226.23DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‚ ‚(2∫
+∑com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?expected@227.11:227.19DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java„ „(2â
+booleanRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄
+ ⁄(Æ
+ºcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?typeArguments@222.31:222.44VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬁ ﬁ(,""
+typeList<? extends TypeMirror>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*typeArguments2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬁ ﬁ(2∞
+5javax.lang.model.type.DeclaredType.getTypeArguments()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬁK ﬁ([2ß
+´com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!returnTypeCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaﬁ? ﬁ(Iô
+∑com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?argument@226.15:226.23VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‚ ‚("
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*argument2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‚ ‚(2í
+java.util.List.get(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‚( ‚(+2∏
+ºcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?typeArguments@222.31:222.44CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java‚ ‚('‡
+∑com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)?expected@227.11:227.19VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java„ „("
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*expected2ã
+java.lang.StringTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java„ „(
+2˜
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.getGlideTypeValue(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java„ „('2Æ
+≤com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java„( „(9¿
+´com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!returnType	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄1 ⁄(;"
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+returnType2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄& ⁄(0ﬂ
+≤com.bumptech.glide.annotation.compiler.GlideExtensionValidator.typeMatchesExpected(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄O ⁄(`"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java⁄= ⁄(NÊ
+qcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÁ Á(""1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC3*isRequestBuilder2¿
+Ejavax.lang.model.util.Types.erasure(javax.lang.model.type.TypeMirror)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË@ Ë(G2ª
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË1 Ë(=2§
+)java.lang.String.equals(java.lang.Object)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÈ  È(&2¶
++javax.lang.model.type.TypeMirror.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÈ È(2€
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË Ë(02˜
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)!typeMirrorCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaËH Ë(R2Ö
+âcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)?toCompare@232.15:232.24CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÈ È(2¸
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)!typeMirror	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÁ. Á(82å
+âcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)?toCompare@232.15:232.24DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË Ë(2â
+booleanRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÁ
+ Á(ı
+
+âcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)?toCompare@232.15:232.24VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË Ë("
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	toCompare2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË Ë(2¿
+Ejavax.lang.model.util.Types.erasure(javax.lang.model.type.TypeMirror)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË@ Ë(G2ª
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË1 Ë(=2€
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaË Ë(02˜
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)!typeMirrorCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaËH Ë(Rê
+|com.bumptech.glide.annotation.compiler.GlideExtensionValidator.isRequestBuilder(javax.lang.model.type.TypeMirror)!typeMirror	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÁ. Á(8"
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+typeMirror2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÁ# Á(-É+
+Ücom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÏ Ï(1"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC18*validateGlideTypeParameters2ê
+java.util.List.size()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÌ* Ì(.2µ
+:javax.lang.model.element.ExecutableElement.getParameters()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÌ Ì('2˝
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÒ Ò(&2í
+java.util.List.get(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ> Ù(A2µ
+:javax.lang.model.element.ExecutableElement.getParameters()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ. Ù(;2§
+)javax.lang.model.element.Element.asType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaı$ ı(*2®
+-java.lang.String.startsWith(java.lang.String)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaˆ! ˆ(+2¶
++javax.lang.model.type.TypeMirror.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaˆ ˆ(2˝
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¸ ¸(&2»
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÓ Ó((2»
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java˜ ˜((2î
+òcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÌ Ì(2î
+òcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÒ' Ò(82î
+òcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ Ù(-2ñ
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?first@244.20:244.25CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaı ı(#2ù
+°com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?argumentType@245.15:245.27CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaˆ	 ˆ(2ù
+°com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?argumentType@245.15:245.27CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java˙ ˙(2î
+òcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java¸' ¸(82ô
+òcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÏD Ï(U2ù
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?first@244.20:244.25DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ Ù(2§
+°com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?argumentType@245.15:245.27DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaı ı(2Ü
+voidRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÏ Ï(ö	
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?first@244.20:244.25VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ Ù("
+typeVariableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*first2£
+(javax.lang.model.element.VariableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ Ù(2í
+java.util.List.get(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ> Ù(A2µ
+:javax.lang.model.element.ExecutableElement.getParameters()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ. Ù(;2î
+òcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÙ Ù(-˜
+°com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?argumentType@245.15:245.27VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaı ı("
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*argumentType2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaı ı(2§
+)javax.lang.model.element.Element.asType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaı$ ı(*2ñ
+öcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)?first@244.20:244.25CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaı ı(#≈
+òcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeParameters(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÏD Ï(U"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÏ2 Ï(C˚
+
+ácom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeAnnotations(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÄ Ä(+"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC2*validateGlideTypeAnnotations2ˇ
+Écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÅ Å(2ï
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeAnnotations(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÅ Å(.2ö
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeAnnotations(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÄ> Ä(O2Ü
+voidRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÄ
+ Ä(∆
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateGlideTypeAnnotations(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÄ> Ä(O"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÄ, Ä(=ì,
+Écom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ Ñ('"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC30*validateAnnotatedNonNull2≤
+7javax.lang.model.element.Element.getAnnotationMirrors()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÜ. Ü(B2ñ
+java.lang.Object.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaãA ã(I2©
+.javax.lang.model.type.DeclaredType.asElement()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã5 ã(>2∏
+=javax.lang.model.element.AnnotationMirror.getAnnotationType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã! ã(22∫
+?com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNulls()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaê ê(%2∫
+?javax.annotation.processing.ProcessingEnvironment.getMessager()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaò ò(2˝
+Åcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.getQualifiedMethodName(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaõ õ($2π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaù" ù()2ë
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÜ Ü(-2†
+§com.bumptech.glide.annotation.compiler.GlideExtensionValidator.Anonymous-ae32f07f-43c8-4337-80d6-817eb9ca9a31.apply(javax.lang.model.element.AnnotationMirror)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã ã( 2ù
+°com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?annotationNames@261.16:261.31CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaë
+ ë(2ï
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?nonNull@272.19:272.26CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaë# ë(*2ó
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?noNonNull@271.12:271.21CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaí í(2ó
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?noNonNull@271.12:271.21CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javañ ñ(2€
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaó ó(2ë
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaõ% õ(62”
+Xcom.bumptech.glide.annotation.compiler.GlideExtensionValidator?processorUtil@34.30:34.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaù ù(!2ñ
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ: Ñ(K2§
+°com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?annotationNames@261.16:261.31DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÖ Ö(2û
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?noNonNull@271.12:271.21DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaè è(2ú
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?nonNull@272.19:272.26DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaê ê(2Ü
+voidRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ
+ Ñ(´
+°com.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?annotationNames@261.16:261.31VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÖ Ö("
+typeSet<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*annotationNames2à
+java.util.SetTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÖ Ö(2î
+java.lang.StringTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÖ Ö(2≤
+7javax.lang.model.element.Element.getAnnotationMirrors()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÜ. Ü(B2ñ
+java.lang.Object.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaãA ã(I2©
+.javax.lang.model.type.DeclaredType.asElement()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã5 ã(>2∏
+=javax.lang.model.element.AnnotationMirror.getAnnotationType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã! ã(22ë
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)!executableElementCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÜ Ü(-2†
+§com.bumptech.glide.annotation.compiler.GlideExtensionValidator.Anonymous-3d40f742-7a65-4119-9114-5ccdfb115aef.apply(javax.lang.model.element.AnnotationMirror)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaã ã( í
+õcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?noNonNull@271.12:271.21VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaè è("
+typeboolean"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	noNonNull2Ç
+booleanTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaè è(®
+ôcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)?nonNull@272.19:272.26VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaê ê("
+type	ClassName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*nonNull2ö
+com.squareup.javapoet.ClassNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaê	 ê(¬
+ïcom.bumptech.glide.annotation.compiler.GlideExtensionValidator.validateAnnotatedNonNull(javax.lang.model.element.ExecutableElement)!executableElement	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ: Ñ(K"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*executableElement2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaÑ( Ñ(9√
+§com.bumptech.glide.annotation.compiler.GlideExtensionValidator.Anonymous-04680385-17a2-45bf-8dcd-bb38435ecd53.apply(javax.lang.model.element.AnnotationMirror)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaä7 ä(<"
+typeAnnotationMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2§
+)javax.lang.model.element.AnnotationMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.javaä& ä(6π
+`com.bumptech.glide.annotation.compiler.GlideExtensionValidator?processingEnvironment@33.38:33.59VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java!& !(;"
+isFinaltrue"
+typeProcessingEnvironment"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processingEnvironment2™
+1javax.annotation.processing.ProcessingEnvironmentTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java! !(%§
+Xcom.bumptech.glide.annotation.compiler.GlideExtensionValidator?processorUtil@34.30:34.43VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java" "(+"
+isFinaltrue"
+typeProcessorUtil"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processorUtil2≠
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideExtensionValidator.java" "(

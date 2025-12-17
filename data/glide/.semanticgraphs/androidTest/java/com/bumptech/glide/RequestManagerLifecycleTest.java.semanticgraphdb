@@ -1,0 +1,2290 @@
+
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¢
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaFILEZ
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java"
+
+LOC537*Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java´X
+.com.bumptech.glide.RequestManagerLifecycleTestCLASSb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java& &(("
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC500*RequestManagerLifecycleTest2©
+6com.bumptech.glide.RequestManagerLifecycleTest.setUp()DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java3 3(2ÿ
+ecom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameActivity_returnsSameRequestManager()DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java8 8(B2’
+bcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityBeforeCreate_startsRequestManager()DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java? ?(?2–
+]com.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_QPlus_doesNotCrash()DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaG G(:2„
+pcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java` `(M2”
+^com.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_beforeFragmentIsAdded_throws()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ Ö(;2ˆ
+Äcom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã ã(]2‘
+_com.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javañ ñ(<2⁄
+ecom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java± ±(B2÷
+acom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∫ ∫(>2ÿ
+ccom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≈ ≈(@2‚
+mcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java“ “(J2‰
+ocom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaﬁ ﬁ(L2Î
+vcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÎ Î(S2Ò
+|com.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¯ ¯(Y2Û
+~com.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ Ö([2”
+^com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_pausesRequestManager()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaì ì(;2‘
+_com.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_pausesRequestManager()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaù ù(<2”
+^com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java® ®(;2’
+`com.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥ ¥(=2”
+^com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java√ √(;2’
+`com.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ Õ(=2ﬁ
+icom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_doesNotPauseParentFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÿ ÿ(F2‡
+kcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‚ ‚(H2◊
+bcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java (?2Ÿ
+dcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚ ˚(A2Ú
+}com.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaá á(Z2Ù
+com.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaï ï(\2Á
+rcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java§ §(O2È
+tcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java± ±(Q2É
+çcom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬ ¬("2∞
+∫com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java   (12≤
+ºcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java÷ ÷(32ê
+öcom.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java· ·((2◊
+bcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ Ì(2ﬁ
+icom.bumptech.glide.RequestManagerLifecycleTest.getSiblingFragment(androidx.fragment.app.FragmentActivity)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÒ Ò(%2‹
+gcom.bumptech.glide.RequestManagerLifecycleTest.getChildFragment(androidx.fragment.app.FragmentActivity)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaı ı(#2È
+tcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘ ˘(2Ë
+scom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝ ˝(2Ú
+}com.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅ Å('2Í
+ucom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ Ö('2Ò
+|com.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ â('2∫
+Gcom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_TAG@39.30:39.42DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java' '(*2¬
+Ocom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_SIBLING_TAG@40.30:40.50DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java( ((22¿
+Mcom.bumptech.glide.RequestManagerLifecycleTest?CHILD_FRAGMENT_TAG@41.30:41.48DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java) )(02ª
+Hcom.bumptech.glide.RequestManagerLifecycleTest?tearDownGlide@42.35:42.48DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java*# *(02∫
+Gcom.bumptech.glide.RequestManagerLifecycleTest?scenarioRule@45.61:45.73DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java-= -(I2∂
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java04 0(<è
+6com.bumptech.glide.RequestManagerLifecycleTest.setUp()METHODb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java3 3("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*setUp2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java4 4(2≥
+Gcom.bumptech.glide.RequestManagerLifecycleTest?scenarioRule@45.61:45.73CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java4 4(2w
+voidRETURN_TYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java3	 3(®
+ecom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameActivity_returnsSameRequestManager()METHODb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java8 8(B"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC5*4get_twice_withSameActivity_returnsSameRequestManager2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java9 9(2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java: :(2Â
+ycom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameActivity_returnsSameRequestManager()?activity@59.8:59.16CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java;* ;(22Â
+ycom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameActivity_returnsSameRequestManager()?activity@59.8:59.16CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java;J ;(R2Ï
+ycom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameActivity_returnsSameRequestManager()?activity@59.8:59.16DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java; ;(2w
+voidRETURN_TYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java8	 8(≈
+ycom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameActivity_returnsSameRequestManager()?activity@59.8:59.16VARIABLEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java; ;("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE∂
+
+bcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityBeforeCreate_startsRequestManager()METHODb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java? ?(?"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*1get_withActivityBeforeCreate_startsRequestManager2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java@ @(2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaA A(2„
+wcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityBeforeCreate_startsRequestManager()?activity@65.24:65.32CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaA: A(B2Í
+wcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityBeforeCreate_startsRequestManager()?activity@65.24:65.32DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaA A( 2w
+voidRETURN_TYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java?	 ?(√
+wcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityBeforeCreate_startsRequestManager()?activity@65.24:65.32VARIABLEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaA A( "
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEÕ
+]com.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_QPlus_doesNotCrash()METHODb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaG G(:"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC23*,get_withActivityOnDestroy_QPlus_doesNotCrash2±
+Ecom.bumptech.glide.Glide.with(androidx.fragment.app.FragmentActivity)CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaV V(2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaK K(2Â
+ycom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.GetOnDestroy(androidx.fragment.app.FragmentActivity)!activityCALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaQ Q( 2º
+Pcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy?activity@78.37:78.45CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaV V(2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaY Y(2›
+qcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_QPlus_doesNotCrash()?activity@90.8:90.16CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaZ Z(2›
+qcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_QPlus_doesNotCrash()?activity@90.8:90.16CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaZI Z(Q2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java[ [(2º
+Pcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy?activity@78.37:78.45CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaQ Q(2‰
+qcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_QPlus_doesNotCrash()?activity@90.8:90.16DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaZ Z(2w
+voidRETURN_TYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaG	 G(Â
+ycom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.GetOnDestroy(androidx.fragment.app.FragmentActivity)!activity	PARAMETERb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaP$ P(,"
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2í
+&androidx.fragment.app.FragmentActivityTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaP P(#–
+ncom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.onDestroy(androidx.lifecycle.LifecycleOwner)!owner	PARAMETERb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaU4 U(9"
+typeLifecycleOwner"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*owner2ç
+!androidx.lifecycle.LifecycleOwnerTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaU% U(3Ω
+qcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_QPlus_doesNotCrash()?activity@90.8:90.16VARIABLEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaZ Z("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE¸!
+pcom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()METHODb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java` `(M"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC36*?get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash2±
+Ecom.bumptech.glide.Glide.with(androidx.fragment.app.FragmentActivity)CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javat t(2û
+2java.util.concurrent.atomic.AtomicReference.set(V)CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaw w(2ù
+1java.util.concurrent.atomic.AtomicReference.get()CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java ("2©
+=java.util.concurrent.atomic.AtomicReference.AtomicReference()CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javag5 g(F2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javah h(2Â
+ycom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.GetOnDestroy(androidx.fragment.app.FragmentActivity)!activityCALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javan n( 2æ
+Rcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy?activity@107.37:107.45CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javat t(2˚
+écom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?thrownException@103.31:103.46CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaw
+ w(2‰
+xcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.onDestroy(androidx.lifecycle.LifecycleOwner)?e@118.27:118.28CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaw w(2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java{ {(2Û
+Ücom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?activity@124.8:124.16CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java| |(2Û
+Ücom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?activity@124.8:124.16CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java|I |(Q2Ø
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java} }(2˚
+écom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?thrownException@103.31:103.46CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java (2æ
+Rcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy?activity@107.37:107.45CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javan n(2Ç
+écom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?thrownException@103.31:103.46DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javag g(.2Î
+xcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.onDestroy(androidx.lifecycle.LifecycleOwner)?e@118.27:118.28DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javav v(2˙
+Ücom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?activity@124.8:124.16DECLARATIONb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java| |(2w
+voidRETURN_TYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java`	 `(«
+écom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?thrownException@103.31:103.46VARIABLEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javag g(.""
+typeAtomicReference<Exception>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*thrownException2ó
++java.util.concurrent.atomic.AtomicReferenceTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javag g(2à
+java.lang.ExceptionTYPE_ARGUMENTb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javag g(2©
+=java.util.concurrent.atomic.AtomicReference.AtomicReference()CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javag5 g(FÂ
+ycom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.GetOnDestroy(androidx.fragment.app.FragmentActivity)!activity	PARAMETERb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javam$ m(,"
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2í
+&androidx.fragment.app.FragmentActivityTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javam m(#–
+ncom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.onDestroy(androidx.lifecycle.LifecycleOwner)!owner	PARAMETERb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javar4 r(9"
+typeLifecycleOwner"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*owner2ç
+!androidx.lifecycle.LifecycleOwnerTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javar% r(3¡
+xcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy.onDestroy(androidx.lifecycle.LifecycleOwner)?e@118.27:118.28VARIABLEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javav v("
+type	Exception"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*e2
+java.lang.ExceptionTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javav v(”
+Ücom.bumptech.glide.RequestManagerLifecycleTest.get_withActivityOnDestroy_afterJellyBeanAndbeforeQ_doesNotCrash()?activity@124.8:124.16VARIABLEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java| |("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE¸
+^com.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_beforeFragmentIsAdded_throws()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ Ö(;"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*-get_withFragment_beforeFragmentIsAdded_throws2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaá9 á(=2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_beforeFragmentIsAdded_throws()?fragment@134.13:134.21CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaá> á(F2Í
+ucom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_beforeFragmentIsAdded_throws()?fragment@134.13:134.21DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÜ Ü(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ	 Ö(‘
+ucom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_beforeFragmentIsAdded_throws()?fragment@134.13:134.21VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÜ Ü("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÜ Ü(ƒ
+Äcom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã ã(]"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*Oget_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaë* ë(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaë ë(2Ö
+ñcom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?activity@141.8:141.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé* é(22Ü
+ócom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?fragment@142.19:142.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaê ê(2Ü
+ócom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?fragment@142.19:142.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaë  ë((2ç
+ócom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?fragment@142.19:142.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé é(2å
+ñcom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?activity@141.8:141.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaç ç(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã	 ã(ˇ
+ócom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?fragment@142.19:142.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé é("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé
+ é(2Ö
+ñcom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?activity@141.8:141.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé* é(2Â
+ñcom.bumptech.glide.RequestManagerLifecycleTest.get_withFragment_whenFragmentIsAddedAndVisible_beforeStart_startsRequestManager()?activity@141.8:141.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaç ç("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE‡
+_com.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javañ ñ(<"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC25*.requestManager_afterFragmentIsStopped_isPaused2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java• •(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨* ¨(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨ ¨(2Ã
+^com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.EmptyContainerFragment()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô" ô(82±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaö ö(2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaõ õ(2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?activity@156.8:156.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaù
+ ù(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?fragment@153.19:153.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java†# †(+2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?fragment@153.19:153.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java• •(2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java® ®(2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java© ©(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?fragment@153.19:153.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java´ ´(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?fragment@153.19:153.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨  ¨((2Î
+vcom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?fragment@153.19:153.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô ô(2Í
+ucom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?activity@156.8:156.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaú ú(2Í
+ucom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?activity@170.8:170.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java™ ™(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javañ	 ñ(†
+vcom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?fragment@153.19:153.27VALUEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô ô("
+typeFragment"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô
+ ô(2Ã
+^com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.EmptyContainerFragment()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô" ô(8√
+ucom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?activity@156.8:156.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaú ú("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE√
+ucom.bumptech.glide.RequestManagerLifecycleTest.requestManager_afterFragmentIsStopped_isPaused()?activity@170.8:170.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java™ ™("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEí
+ecom.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java± ±(B"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC7*4get_twice_withSameFragment_returnsSameRequestManager2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ µ(2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ; µ(?2È
+{com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?activity@179.8:179.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥* ¥(22Í
+|com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?fragment@180.19:180.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ  µ((2Í
+|com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?fragment@180.19:180.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ@ µ(H2Ò
+|com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?fragment@180.19:180.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥ ¥(2
+{com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?activity@179.8:179.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≥ ≥(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java±	 ±(«
+|com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?fragment@180.19:180.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥ ¥("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥
+ ¥(2È
+{com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?activity@179.8:179.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥* ¥(2…
+{com.bumptech.glide.RequestManagerLifecycleTest.get_twice_withSameFragment_returnsSameRequestManager()?activity@179.8:179.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≥ ≥("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE‰
+acom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∫ ∫(>"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*0pauseRequestsRecursive_onActivity_pausesFragment2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¿* ¿(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¿ ¿(2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?activity@188.8:188.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaΩ* Ω(22Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?activity@188.8:188.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaø ø(2Ê
+xcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?fragment@189.19:189.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¿  ¿((2Ì
+xcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?fragment@189.19:189.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaΩ Ω(2Ï
+wcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?activity@188.8:188.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaº º(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∫	 ∫(ø
+xcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?fragment@189.19:189.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaΩ Ω("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaΩ
+ Ω(2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?activity@188.8:188.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaΩ* Ω(2≈
+wcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesFragment()?activity@188.8:188.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaº º("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE›
+ccom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≈ ≈(@"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC11*2resumeRequestsRecursive_onActivity_resumesFragment2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ* Õ(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ Õ(2Á
+ycom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?activity@199.8:199.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java»* »(22Á
+ycom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?activity@199.8:199.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java   (2Á
+ycom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?activity@199.8:199.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÀ À(2Ë
+zcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?fragment@200.19:200.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ  Õ((2Ô
+zcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?fragment@200.19:200.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java» »(2Ó
+ycom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?activity@199.8:199.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java« «(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≈	 ≈(√
+zcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?fragment@200.19:200.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java» »("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java»
+ »(2Á
+ycom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?activity@199.8:199.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java»* »(2«
+ycom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesFragment()?activity@199.8:199.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java« «("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE»
+mcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java“ “(J"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC10*<pauseRequestsRecursive_onActivity_pausesChildOfChildFragment2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŸ/ Ÿ(72´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŸ Ÿ(2Ú
+Écom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?activity@212.8:212.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java’4 ’(<2Ú
+Écom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?activity@212.8:212.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java◊ ◊(2¯
+âcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?childFragment@213.19:213.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŸ  Ÿ(-2ˇ
+âcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?childFragment@213.19:213.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java’ ’( 2˘
+Écom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?activity@212.8:212.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‘ ‘(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java“	 “(„
+âcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?childFragment@213.19:213.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java’ ’( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java’
+ ’(2Ú
+Écom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?activity@212.8:212.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java’4 ’(<“
+Écom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_pausesChildOfChildFragment()?activity@212.8:212.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‘ ‘("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEÕ
+ocom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaﬁ ﬁ(L"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC11*>resumeRequestsRecursive_onActivity_resumesChildOfChildFragment2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ/ Ê(72´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ Ê(2Ù
+Öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?activity@224.8:224.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java·4 ·(<2Ù
+Öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?activity@224.8:224.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java„ „(2Ù
+Öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?activity@224.8:224.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‰ ‰(2˙
+ãcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?childFragment@225.19:225.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ  Ê(-2Å
+ãcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?childFragment@225.19:225.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java· ·( 2˚
+Öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?activity@224.8:224.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‡ ‡(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaﬁ	 ﬁ(Á
+ãcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?childFragment@225.19:225.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java· ·( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java·
+ ·(2Ù
+Öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?activity@224.8:224.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java·4 ·(<‘
+Öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_resumesChildOfChildFragment()?activity@224.8:224.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‡ ‡("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEÿ
+vcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÎ Î(S"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC11*EpauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity2´
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java (82´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java (2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ* Ú(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ Ú(2˚
+åcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?activity@237.8:237.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ* Ó(22¸
+çcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?fragment@238.19:238.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java (2¸
+çcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?fragment@238.19:238.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ  Ú((2˚
+åcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?activity@237.8:237.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÛ  Û((2É
+çcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?fragment@238.19:238.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ Ó(2Ç
+åcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?activity@237.8:237.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ Ì(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÎ	 Î(Î
+çcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?fragment@238.19:238.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ Ó("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ
+ Ó(2˚
+åcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?activity@237.8:237.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ* Ó(2€
+åcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_doesNotPauseActivity()?activity@237.8:237.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ Ì("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE™
+|com.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¯ ¯(Y"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC11*KpauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment2´
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛% ˛(>2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛ ˛(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÄ/ Ä(72´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÄ Ä(2Å
+ícom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?activity@250.8:250.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚0 ˚(82Å
+ícom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?activity@250.8:250.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¸4 ¸(<2à
+ôcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?parentFragment@251.19:251.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛ ˛(#2á
+òcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?childFragment@252.19:252.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÄ  Ä(-2è
+ôcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?parentFragment@251.19:251.33DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚ ˚(!2é
+òcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?childFragment@252.19:252.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¸ ¸( 2à
+ícom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?activity@250.8:250.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˙ ˙(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¯	 ¯(É
+ôcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?parentFragment@251.19:251.33VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚ ˚(!"
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*parentFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚
+ ˚(2Å
+ícom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?activity@250.8:250.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚0 ˚(8Å
+òcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?childFragment@252.19:252.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¸ ¸( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¸
+ ¸(2Å
+ícom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?activity@250.8:250.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¸4 ¸(<·
+ícom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onChildFragmentOfActivity_pausesChildOfChildFragment()?activity@250.8:250.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˙ ˙("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE£
+~com.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ Ö(["
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC12*MresumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment2´
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã% ã(>2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã ã(2©
+;com.bumptech.glide.RequestManager.resumeRequestsRecursive()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaå% å(<2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaå å(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé/ é(72´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé é(2É
+îcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?activity@263.8:263.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaà0 à(82É
+îcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?activity@263.8:263.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ4 â(<2ä
+õcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?parentFragment@264.19:264.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã ã(#2ä
+õcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?parentFragment@264.19:264.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaå å(#2â
+öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?childFragment@265.19:265.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaé  é(-2ë
+õcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?parentFragment@264.19:264.33DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaà à(!2ê
+öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?childFragment@265.19:265.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ â( 2ä
+îcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?activity@263.8:263.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaá á(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ	 Ö(á
+õcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?parentFragment@264.19:264.33VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaà à(!"
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*parentFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaà
+ à(2É
+îcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?activity@263.8:263.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaà0 à(8Ö
+öcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?childFragment@265.19:265.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ â( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ
+ â(2É
+îcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?activity@263.8:263.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ4 â(<„
+îcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onChildFragmentOfActivity_resumesChildOfChildFragment()?activity@263.8:263.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaá á("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEô
+^com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_pausesRequestManager()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaì ì(;"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC8*-pauseRequests_onActivity_pausesRequestManager2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaî î(2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaï ï(2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_pausesRequestManager()?activity@278.8:278.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaó ó(2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_pausesRequestManager()?activity@278.8:278.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaò  ò((2È
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_pausesRequestManager()?activity@278.8:278.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javañ ñ(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaì	 ì(¬
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_pausesRequestManager()?activity@278.8:278.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javañ ñ("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEÑ
+_com.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_pausesRequestManager()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaù ù(<"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*.resumeRequests_onActivity_pausesRequestManager2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaû û(2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaü ü(2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_pausesRequestManager()?activity@288.8:288.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java° °(2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_pausesRequestManager()?activity@288.8:288.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¢ ¢(2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_pausesRequestManager()?activity@288.8:288.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java£  £((2Í
+ucom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_pausesRequestManager()?activity@288.8:288.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java† †(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaù	 ù(√
+ucom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_pausesRequestManager()?activity@288.8:288.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java† †("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEõ
+^com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java® ®(;"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC10*-pauseRequests_onActivity_doesNotPauseChildren2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaØ* Ø(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaØ Ø(2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?activity@298.8:298.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java´* ´(22‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?activity@298.8:298.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨ ¨(&2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?fragment@299.19:299.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨( ¨(02‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?activity@298.8:298.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÆ Æ(2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?fragment@299.19:299.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaØ  Ø((2Í
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?fragment@299.19:299.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java´ ´(2È
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?activity@298.8:298.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java™ ™(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java®	 ®(π
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?fragment@299.19:299.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java´ ´("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java´
+ ´(2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?activity@298.8:298.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java´* ´(2¬
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onActivity_doesNotPauseChildren()?activity@298.8:298.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java™ ™("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEœ
+`com.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥ ¥(="
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC13*/resumeRequests_onActivity_doesNotResumeChildren2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaª ª(/2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaª ª(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaæ* æ(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaæ æ(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?activity@310.8:310.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑* ∑(22‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?activity@310.8:310.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∏ ∏(&2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?fragment@311.19:311.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∏( ∏(02‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?activity@310.8:310.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∫ ∫(2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?fragment@311.19:311.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaª ª(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?activity@310.8:310.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaº º(2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?fragment@311.19:311.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaæ  æ((2Ï
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?fragment@311.19:311.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑ ∑(2Î
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?activity@310.8:310.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∂ ∂(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥	 ¥(Ω
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?fragment@311.19:311.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑ ∑("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑
+ ∑(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?activity@310.8:310.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑* ∑(2ƒ
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onActivity_doesNotResumeChildren()?activity@310.8:310.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∂ ∂("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE£
+^com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java√ √(;"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC8*-pauseRequests_onFragment_pausesRequestManager2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java« «(/2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java« «(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java»* »(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java» »(2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?activity@325.8:325.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∆* ∆(22„
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?fragment@326.19:326.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java« «(2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?fragment@326.19:326.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java»  »((2Í
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?fragment@326.19:326.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∆ ∆(2È
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?activity@325.8:325.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≈ ≈(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java√	 √(π
+ucom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?fragment@326.19:326.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∆ ∆("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∆
+ ∆(2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?activity@325.8:325.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∆* ∆(2¬
+tcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onFragment_pausesRequestManager()?activity@325.8:325.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≈ ≈("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEÍ
+`com.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ Õ(="
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*/resumeRequests_onFragment_resumesRequestManager2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java— —(/2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java— —(2†
+2com.bumptech.glide.RequestManager.resumeRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java“ “(-2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java“ “(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java”* ”(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java” ”(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?activity@335.8:335.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java–* –(22Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?fragment@336.19:336.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java— —(2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?fragment@336.19:336.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java“ “(2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?fragment@336.19:336.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java”  ”((2Ï
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?fragment@336.19:336.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java– –(2Î
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?activity@335.8:335.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœ œ(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ	 Õ(Ω
+wcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?fragment@336.19:336.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java– –("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java–
+ –(2‰
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?activity@335.8:335.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java–* –(2ƒ
+vcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onFragment_resumesRequestManager()?activity@335.8:335.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœ œ("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEË	
+icom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_doesNotPauseParentFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÿ ÿ(F"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC8*8pauseRequests_onChildFragment_doesNotPauseParentFragment2Ì
+com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_doesNotPauseParentFragment()?activity@346.8:346.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€& €(.2Ì
+com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_doesNotPauseParentFragment()?activity@346.8:346.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java›, ›(42Ù
+com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_doesNotPauseParentFragment()?activity@346.8:346.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄ ⁄(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÿ	 ÿ(Õ
+com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_doesNotPauseParentFragment()?activity@346.8:346.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄ ⁄("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEü 
+kcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‚ ‚(H"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC12*:resumeRequests_onChildFragment_doesNotResumeParentFragment2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÁ$ Á(42´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÁ Á(2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaË% Ë(52´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaË Ë(2†
+2com.bumptech.glide.RequestManager.resumeRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÈ$ È(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÈ È(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÎ0 Î(82´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÎ Î(2
+Åcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?activity@356.8:356.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÂ0 Â(82
+Åcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?activity@356.8:356.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ4 Ê(<2ˆ
+ácom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?childFragment@358.19:358.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÁ Á("2˜
+àcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?parentFragment@357.19:357.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaË Ë(#2ˆ
+ácom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?childFragment@358.19:358.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÈ È("2˜
+àcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?parentFragment@357.19:357.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÎ  Î(.2˛
+àcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?parentFragment@357.19:357.33DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÂ Â(!2˝
+ácom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?childFragment@358.19:358.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ Ê( 2˜
+Åcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?activity@356.8:356.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‰ ‰(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‚	 ‚(·
+àcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?parentFragment@357.19:357.33VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÂ Â(!"
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*parentFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÂ
+ Â(2
+Åcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?activity@356.8:356.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÂ0 Â(8ﬂ
+ácom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?childFragment@358.19:358.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ Ê( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ
+ Ê(2
+Åcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?activity@356.8:356.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÊ4 Ê(<–
+Åcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_doesNotResumeParentFragment()?activity@356.8:356.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‰ ‰("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEŒ
+bcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java (?"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*1pauseRequests_onChildFragment_pausesChildFragment2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÙ$ Ù(42´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÙ Ù(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˆ/ ˆ(72´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˆ ˆ(2Ê
+xcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?activity@370.8:370.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÛ4 Û(<2Ï
+~com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?childFragment@371.19:371.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÙ Ù("2Ï
+~com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?childFragment@371.19:371.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˆ  ˆ(-2Û
+~com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?childFragment@371.19:371.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÛ Û( 2Ì
+xcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?activity@370.8:370.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ Ú(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java	 (À
+~com.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?childFragment@371.19:371.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÛ Û( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÛ
+ Û(2Ê
+xcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?activity@370.8:370.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÛ4 Û(<∆
+xcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequests_onChildFragment_pausesChildFragment()?activity@370.8:370.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ Ú("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE£
+dcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚ ˚(A"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC10*3resumeRequests_onChildFragment_resumesChildFragment2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˇ$ ˇ(42´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˇ ˇ(2†
+2com.bumptech.glide.RequestManager.resumeRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÄ$ Ä(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÄ Ä(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÇ/ Ç(72´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÇ Ç(2Ë
+zcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?activity@381.8:381.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛4 ˛(<2Ô
+Äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?childFragment@382.19:382.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˇ ˇ("2Ô
+Äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?childFragment@382.19:382.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÄ Ä("2Ô
+Äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?childFragment@382.19:382.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÇ  Ç(-2ˆ
+Äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?childFragment@382.19:382.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛ ˛( 2Ô
+zcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?activity@381.8:381.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝ ˝(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˚	 ˚(–
+Äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?childFragment@382.19:382.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛ ˛( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛
+ ˛(2Ë
+zcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?activity@381.8:381.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛4 ˛(<»
+zcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequests_onChildFragment_resumesChildFragment()?activity@381.8:381.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝ ˝("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEè
+}com.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaá á(Z"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC12*LpauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaè* è(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaè è(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaê) ê(12´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaê ê(2Ç
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?activity@393.8:393.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä* ä(22Ç
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?activity@393.8:393.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã0 ã(82Ç
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?activity@393.8:393.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaç ç(2É
+îcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?fragment@394.19:394.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaè  è((2Ç
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?sibling@395.19:395.26CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaê  ê('2ä
+îcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?fragment@394.19:394.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä ä(2â
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?sibling@395.19:395.26DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã ã(2â
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?activity@393.8:393.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ â(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaá	 á(˘
+îcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?fragment@394.19:394.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä ä("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä
+ ä(2Ç
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?activity@393.8:393.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä* ä(2˜
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?sibling@395.19:395.26VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã ã("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*sibling2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã
+ ã(2Ç
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?activity@393.8:393.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã0 ã(8‚
+ìcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onActivity_withTwoSiblingFragments_pausesBothSiblings()?activity@393.8:393.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ â("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE™
+com.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaï ï(\"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC13*NresumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaû* û(22´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaû û(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaü) ü(12´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaü ü(2Ñ
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaò* ò(22Ñ
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô0 ô(82Ñ
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaõ õ(2Ñ
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaú ú(2Ö
+ñcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?fragment@408.19:408.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaû  û((2Ñ
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?sibling@409.19:409.26CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaü  ü('2å
+ñcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?fragment@408.19:408.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaò ò(2ã
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?sibling@409.19:409.26DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô ô(2ã
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaó ó(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaï	 ï(˝
+ñcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?fragment@408.19:408.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaò ò("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaò
+ ò(2Ñ
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaò* ò(2˚
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?sibling@409.19:409.26VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô ô("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*sibling2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô
+ ô(2Ñ
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaô0 ô(8‰
+ïcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onActivity_withTwoSiblingFragments_resumesBothSiblings()?activity@407.8:407.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaó ó("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE∏
+rcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java§ §(O"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC11*ApauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling2´
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java™ ™(82´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java™ ™(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨) ¨(12´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨ ¨(2˜
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?activity@422.8:422.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaß* ß(22˜
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?activity@422.8:422.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java®0 ®(82¯
+âcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?fragment@423.19:423.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java™ ™(2˜
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?sibling@424.19:424.26CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¨  ¨('2ˇ
+âcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?fragment@423.19:423.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaß ß(2˛
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?sibling@424.19:424.26DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java® ®(2˛
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?activity@422.8:422.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¶ ¶(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java§	 §(„
+âcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?fragment@423.19:423.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaß ß("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaß
+ ß(2˜
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?activity@422.8:422.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaß* ß(2·
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?sibling@424.19:424.26VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java® ®("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*sibling2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java®
+ ®(2˜
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?activity@422.8:422.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java®0 ®(8◊
+àcom.bumptech.glide.RequestManagerLifecycleTest.pauseRequestsRecursive_onFragment_withSibling_doesNotPauseSibling()?activity@422.8:422.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¶ ¶("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE 
+tcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java± ±(Q"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC13*CresumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling2´
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑ ∑(82´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑ ∑(2¢
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∏ ∏(.2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∏ ∏(2©
+;com.bumptech.glide.RequestManager.resumeRequestsRecursive()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaπ π(62´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaπ π(2ö
+,com.bumptech.glide.RequestManager.isPaused()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaª) ª(12´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaª ª(2˘
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?activity@435.8:435.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥* ¥(22˘
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?activity@435.8:435.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ0 µ(82˙
+ãcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?fragment@436.19:436.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∑ ∑(2˘
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?sibling@437.19:437.26CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java∏ ∏(2˙
+ãcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?fragment@436.19:436.27CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaπ π(2˘
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?sibling@437.19:437.26CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaª  ª('2Å
+ãcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?fragment@436.19:436.27DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥ ¥(2Ä
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?sibling@437.19:437.26DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ µ(2Ä
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?activity@435.8:435.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≥ ≥(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java±	 ±(Á
+ãcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?fragment@436.19:436.27VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥ ¥("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥
+ ¥(2˘
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?activity@435.8:435.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¥* ¥(2Â
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?sibling@437.19:437.26VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ µ("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*sibling2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ
+ µ(2˘
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?activity@435.8:435.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaµ0 µ(8Ÿ
+äcom.bumptech.glide.RequestManagerLifecycleTest.resumeRequestsRecursive_onFragment_withSibling_doesNotResumeSibling()?activity@435.8:435.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≥ ≥("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE’
+çcom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬ ¬(""
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC5*initRequestManagers2≥
+Ecom.bumptech.glide.Glide.with(androidx.fragment.app.FragmentActivity)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java√
+ √(2´
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≈ ≈(2Ö
+ñcom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)!activityCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java√ √(2Ü
+ócom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)!fragmentsCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaƒ ƒ(&2ì
+§com.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)?fragment@452.18:452.26CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java≈ ≈(2ä
+ñcom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬4 ¬(<2ã
+ócom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)!fragments	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬J ¬(S2ö
+§com.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)?fragment@452.18:452.26DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaƒ ƒ(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬
+ ¬(Ñ
+§com.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)?fragment@452.18:452.26VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaƒ ƒ("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaƒ	 ƒ(á
+ñcom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬4 ¬(<"
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2î
+&androidx.fragment.app.FragmentActivityTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬# ¬(3˚
+ócom.bumptech.glide.RequestManagerLifecycleTest.initRequestManagers(androidx.fragment.app.FragmentActivity, androidx.fragment.app.Fragment...)!fragments	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬J ¬(S"
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	fragments2é
+ androidx.fragment.app.Fragment[]TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java¬> ¬(F˙ 
+∫com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java   (1"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC9*"withActivityAndTwoFragmentSiblings2ø
+–com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@461.8:461.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŒ9 Œ(A2µ
+Gcom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_TAG@39.30:39.42CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŒC Œ(O2ø
+–com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@461.8:461.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœ: œ(B2Ω
+Ocom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_SIBLING_TAG@40.30:40.50CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœD œ(X2ø
+–com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@461.8:461.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java– –(&2∆
+◊com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@462.19:462.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java–( –(62«
+ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?siblingFragment@463.19:463.34CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java–8 –(G2≥
+ƒcom.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertionCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java“ “(2∏
+ƒcom.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertion	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÀ. À(72Õ
+◊com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@462.19:462.33DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŒ Œ(!2Œ
+ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?siblingFragment@463.19:463.34DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœ œ("2∆
+–com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@461.8:461.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ Õ(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java 
+  (∑
+◊com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@462.19:462.33VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŒ Œ(!"
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*parentFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŒ
+ Œ(2ø
+–com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@461.8:461.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŒ9 Œ(A2µ
+Gcom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_TAG@39.30:39.42CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŒC Œ(O¡
+ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?siblingFragment@463.19:463.34VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœ œ(""
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*siblingFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœ
+ œ(2ø
+–com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@461.8:461.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœ: œ(B2Ω
+Ocom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_SIBLING_TAG@40.30:40.50CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaœD œ(XÜ
+ƒcom.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertion	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÀ. À(7"/
+type'ActivityAction<DefaultFragmentActivity>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	assertion2§
+6androidx.test.core.app.ActivityScenario.ActivityActionTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÀ À(2¶
+/com.bumptech.glide.test.DefaultFragmentActivityTYPE_ARGUMENTd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÀ À(,ü
+–com.bumptech.glide.RequestManagerLifecycleTest.withActivityAndTwoFragmentSiblings(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@461.8:461.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÕ Õ("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPE˘"
+ºcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java÷ ÷(3"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC9*$withActivityFragmentAndChildFragment2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€# €(72¡
+“com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@473.8:473.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄9 ⁄(A2µ
+Gcom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_TAG@39.30:39.42CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄C ⁄(O2»
+Ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@474.19:474.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€8 €(F2ª
+Mcom.bumptech.glide.RequestManagerLifecycleTest?CHILD_FRAGMENT_TAG@41.30:41.48CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€H €(Z2¡
+“com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@473.8:473.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‹ ‹(&2»
+Ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@474.19:474.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‹( ‹(62«
+ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?childFragment@475.19:475.32CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‹8 ‹(E2µ
+∆com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertionCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaﬁ ﬁ(2∫
+∆com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertion	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java◊. ◊(72œ
+Ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@474.19:474.33DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄ ⁄(!2Œ
+ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?childFragment@475.19:475.32DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€ €( 2»
+“com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@473.8:473.16DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŸ Ÿ(2y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java÷
+ ÷(ª
+Ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@474.19:474.33VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄ ⁄(!"
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*parentFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄
+ ⁄(2¡
+“com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@473.8:473.16CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄9 ⁄(A2µ
+Gcom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_TAG@39.30:39.42CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java⁄C ⁄(O¨
+
+ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?childFragment@475.19:475.32VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€ €( "
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*childFragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€
+ €(2„
+ucom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€# €(72»
+Ÿcom.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?parentFragment@474.19:474.33CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€8 €(F2ª
+Mcom.bumptech.glide.RequestManagerLifecycleTest?CHILD_FRAGMENT_TAG@41.30:41.48CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java€H €(Zà
+∆com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertion	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java◊. ◊(7"/
+type'ActivityAction<DefaultFragmentActivity>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	assertion2§
+6androidx.test.core.app.ActivityScenario.ActivityActionTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java◊ ◊(2¶
+/com.bumptech.glide.test.DefaultFragmentActivityTYPE_ARGUMENTd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java◊ ◊(,°
+“com.bumptech.glide.RequestManagerLifecycleTest.withActivityFragmentAndChildFragment(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)?activity@473.8:473.16VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaŸ Ÿ("
+type"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2TYPEú
+öcom.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java· ·(("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC10*setupAndRunActivityAction2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‰ ‰(2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÈ È(2è
+†com.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!setupCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÈ È(2±
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÍ Í(2ì
+§com.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertionCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÍ Í(!2î
+†com.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!setup	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‚. ‚(32ò
+§com.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertion	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java„. „(72y
+voidRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java·
+ ·(ﬁ
+†com.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!setup	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‚. ‚(3"/
+type'ActivityAction<DefaultFragmentActivity>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*setup2§
+6androidx.test.core.app.ActivityScenario.ActivityActionTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‚ ‚(2¶
+/com.bumptech.glide.test.DefaultFragmentActivityTYPE_ARGUMENTd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java‚ ‚(,Ê
+§com.bumptech.glide.RequestManagerLifecycleTest.setupAndRunActivityAction(androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>, androidx.test.core.app.ActivityScenario.ActivityAction<com.bumptech.glide.test.DefaultFragmentActivity>)!assertion	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java„. „(7"/
+type'ActivityAction<DefaultFragmentActivity>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	assertion2§
+6androidx.test.core.app.ActivityScenario.ActivityActionTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java„ „(2¶
+/com.bumptech.glide.test.DefaultFragmentActivityTYPE_ARGUMENTd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java„ „(,◊
+
+bcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ Ì("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC2*getFragment2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ Ó(2Ÿ
+kcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity)!activityCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ Ó(2µ
+Gcom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_TAG@39.30:39.42CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÓ! Ó(-2ﬁ
+kcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ0 Ì(82ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ
+ Ì(€
+kcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ0 Ì(8"
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2î
+&androidx.fragment.app.FragmentActivityTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÌ Ì(/˚
+
+icom.bumptech.glide.RequestManagerLifecycleTest.getSiblingFragment(androidx.fragment.app.FragmentActivity)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÒ Ò(%"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC2*getSiblingFragment2‚
+tcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ Ú(2‡
+rcom.bumptech.glide.RequestManagerLifecycleTest.getSiblingFragment(androidx.fragment.app.FragmentActivity)!activityCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ Ú(2Ω
+Ocom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_SIBLING_TAG@40.30:40.50CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÚ! Ú(52Â
+rcom.bumptech.glide.RequestManagerLifecycleTest.getSiblingFragment(androidx.fragment.app.FragmentActivity)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÒ7 Ò(?2ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÒ
+ Ò(‚
+rcom.bumptech.glide.RequestManagerLifecycleTest.getSiblingFragment(androidx.fragment.app.FragmentActivity)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÒ7 Ò(?"
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2î
+&androidx.fragment.app.FragmentActivityTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÒ& Ò(6ﬂ
+
+gcom.bumptech.glide.RequestManagerLifecycleTest.getChildFragment(androidx.fragment.app.FragmentActivity)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaı ı(#"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC2*getChildFragment2–
+bcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity)CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˆ ˆ("2ﬁ
+pcom.bumptech.glide.RequestManagerLifecycleTest.getChildFragment(androidx.fragment.app.FragmentActivity)!activityCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˆ# ˆ(+2ª
+Mcom.bumptech.glide.RequestManagerLifecycleTest?CHILD_FRAGMENT_TAG@41.30:41.48CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaˆH ˆ(Z2„
+pcom.bumptech.glide.RequestManagerLifecycleTest.getChildFragment(androidx.fragment.app.FragmentActivity)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaı5 ı(=2ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaı
+ ı(‡
+pcom.bumptech.glide.RequestManagerLifecycleTest.getChildFragment(androidx.fragment.app.FragmentActivity)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaı5 ı(="
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2î
+&androidx.fragment.app.FragmentActivityTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaı$ ı(4«
+tcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘ ˘("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC2*getFragment2Î
+}com.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!activityCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˙ ˙(2Ê
+xcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!tagCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˙= ˙(@2
+}com.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘0 ˘(82Î
+xcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘A ˘(D2ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘
+ ˘(Ì
+}com.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!activity	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘0 ˘(8"
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*activity2î
+&androidx.fragment.app.FragmentActivityTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘ ˘(/¬
+xcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘A ˘(D"
+typeString"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*tag2~
+java.lang.StringTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˘: ˘(@¿
+scom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝ ˝("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC2*getFragment2È
+{com.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)!managerCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛ ˛(2Â
+wcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)!tagCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˛% ˛((2Ó
+{com.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)!manager	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝/ ˝(62Í
+wcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝? ˝(B2ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝
+ ˝(Ë
+{com.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)!manager	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝/ ˝(6"
+typeFragmentManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*manager2ì
+%androidx.fragment.app.FragmentManagerTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝ ˝(.¡
+wcom.bumptech.glide.RequestManagerLifecycleTest.getFragment(androidx.fragment.app.FragmentManager, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝? ˝(B"
+typeString"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*tag2~
+java.lang.StringTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java˝8 ˝(>˝
+}com.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅ Å('"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC2*createAndAddFragment2Û
+Ñcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!parentCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÇ  Ç(&2
+Åcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!tagCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÇD Ç(G2¯
+Ñcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!parent	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅ9 Å(?2ı
+Åcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅH Å(K2ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅ
+ Å(Û
+Ñcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!parent	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅ9 Å(?"
+typeFragmentActivity"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*parent2î
+&androidx.fragment.app.FragmentActivityTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅ( Å(8Ã
+Åcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentActivity, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅH Å(K"
+typeString"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*tag2~
+java.lang.StringTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÅA Å(G’
+ucom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ Ö('"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC2*createAndAddFragment2Ï
+~com.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)!fragmentCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÜ  Ü((2Á
+ycom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)!tagCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÜD Ü(G2Ò
+~com.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)!fragment	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ1 Ö(92Ï
+ycom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖB Ö(E2ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ
+ Ö(ﬁ
+~com.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)!fragment	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ1 Ö(9"
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*fragment2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ( Ö(0√
+ycom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.Fragment, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖB Ö(E"
+typeString"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*tag2~
+java.lang.StringTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaÖ; Ö(AŸ
+|com.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ â('"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFragment"
+accessprivate"
+LOC4*createAndAddFragment2Ã
+^com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.EmptyContainerFragment()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä ä(02Û
+Ñcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)!managerCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã ã(2Ä
+ëcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)?result@522.13:522.19CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã3 ã(92Ô
+Äcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)!tagCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaã; ã(>2Ä
+ëcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)?result@522.13:522.19CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaå å(2¯
+Ñcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)!manager	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ8 â(?2Ù
+Äcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâH â(K2á
+ëcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)?result@522.13:522.19DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä ä(2ì
+androidx.fragment.app.FragmentRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ
+ â(æ
+ëcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)?result@522.13:522.19VARIABLEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä ä("
+typeFragment"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*result2å
+androidx.fragment.app.FragmentTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä ä(2Ã
+^com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.EmptyContainerFragment()CALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaä ä(0Ú
+Ñcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)!manager	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ8 â(?"
+typeFragmentManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*manager2ì
+%androidx.fragment.app.FragmentManagerTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâ( â(7À
+Äcom.bumptech.glide.RequestManagerLifecycleTest.createAndAddFragment(androidx.fragment.app.FragmentManager, java.lang.String)!tag	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâH â(K"
+typeString"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*tag2~
+java.lang.StringTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaâA â(G∑
+Gcom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_TAG@39.30:39.42VALUEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java' '(*"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*FRAGMENT_TAG2|
+java.lang.StringTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java' '(«
+Ocom.bumptech.glide.RequestManagerLifecycleTest?FRAGMENT_SIBLING_TAG@40.30:40.50VALUEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java( ((2"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*FRAGMENT_SIBLING_TAG2|
+java.lang.StringTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java( ((√
+Mcom.bumptech.glide.RequestManagerLifecycleTest?CHILD_FRAGMENT_TAG@41.30:41.48VALUEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java) )(0"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*CHILD_FRAGMENT_TAG2|
+java.lang.StringTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java) )(Ç
+Hcom.bumptech.glide.RequestManagerLifecycleTest?tearDownGlide@42.35:42.48VALUEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java*# *(0"
+isFinaltrue"
+typeTearDownGlide"
+isStaticfalse"
+accesspublic"
+isLocalfalse"
+packagecom.bumptech.glide*tearDownGlide2ï
+)com.bumptech.glide.testutil.TearDownGlideTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java* *("2•
+9com.bumptech.glide.testutil.TearDownGlide.TearDownGlide()CALLb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java*7 *(D®
+Gcom.bumptech.glide.RequestManagerLifecycleTest?scenarioRule@45.61:45.73VALUEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java-= -(I"
+isFinaltrue"5
+type-ActivityScenarioRule<DefaultFragmentActivity>"
+isStaticfalse"
+accesspublic"
+isLocalfalse"
+packagecom.bumptech.glide*scenarioRule2û
+2androidx.test.ext.junit.rules.ActivityScenarioRuleTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java- -(#2§
+/com.bumptech.glide.test.DefaultFragmentActivityTYPE_ARGUMENTb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java-$ -(;ñ
+Ccom.bumptech.glide.RequestManagerLifecycleTest?scenario@48.52:48.60VARIABLEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java04 0(<"
+isFinalfalse"1
+type)ActivityScenario<DefaultFragmentActivity>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*scenario2ì
+'androidx.test.core.app.ActivityScenarioTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java0
+ 0(2§
+/com.bumptech.glide.test.DefaultFragmentActivityTYPE_ARGUMENTb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.java0 0(2ﬁ
+Pcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy?activity@78.37:78.45VALUEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaN% N(-"
+isFinaltrue"
+typeFragmentActivity"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*activity2í
+&androidx.fragment.app.FragmentActivityTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaN N($‡
+Rcom.bumptech.glide.RequestManagerLifecycleTest.GetOnDestroy?activity@107.37:107.45VALUEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javak% k(-"
+isFinaltrue"
+typeFragmentActivity"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*activity2í
+&androidx.fragment.app.FragmentActivityTYPEb
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javak k($Á
+Ecom.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragmentCLASSd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaè è(2"
+packagecom.bumptech.glide"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+LOC9*EmptyContainerFragment2ê
+öcom.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)DECLARATIONd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaë ë(2é
+androidx.fragment.app.FragmentEXTENDd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaè; è(C©
+öcom.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)METHODd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaë ë("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeView"
+accesspublic"
+LOC7*onCreateView2í
+£com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!inflaterCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaï ï(2ì
+§com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!containerCALLd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javañ. ñ(72ó
+£com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!inflater	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaí  í((2ò
+§com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!container	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaì ì(%2°
+≠com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceState	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaî î(+2Ü
+android.view.ViewRETURN_TYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaë ë(á
+£com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!inflater	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaí  í(("
+typeLayoutInflater"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*inflater2â
+android.view.LayoutInflaterTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaí í(ˇ
+§com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!container	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaì ì(%"
+type	ViewGroup"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	container2Ñ
+android.view.ViewGroupTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaì ì(à
+≠com.bumptech.glide.RequestManagerLifecycleTest.EmptyContainerFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)!savedInstanceState	PARAMETERd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaî î(+"
+typeBundle"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*savedInstanceState2
+android.os.BundleTYPEd
+Xinstrumentation/src/androidTest/java/com/bumptech/glide/RequestManagerLifecycleTest.javaî î(

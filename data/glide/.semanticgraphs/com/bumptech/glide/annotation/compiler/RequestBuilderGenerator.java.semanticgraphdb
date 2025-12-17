@@ -1,0 +1,1406 @@
+
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java…
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaFILEg
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java"
+
+LOC486*eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java•9
+>com.bumptech.glide.annotation.compiler.RequestBuilderGeneratorCLASSo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaU U(#"1
+package&com.bumptech.glide.annotation.compiler"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC401*RequestBuilderGenerator2¿
+øcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javau u(2ù
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÇ Ç(2æ
+ªcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡ ¡(E2¥
+±com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java· ·(02ß
+§com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÍ Í(#2å
+âcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚ ˚(=2¯
+vcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞ ∞(.2‚
+`com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverrides()DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaﬂ ﬂ(:2å
+âcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒ Ò(32◊
+Ucom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java° °(/2‰
+bcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateDownloadOnlyRequestMethod()DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java’ ’(62Á
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_PACKAGE_NAME@86.30:86.58DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaV V(:2Ê
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_SIMPLE_NAME@87.30:87.57DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaW W(92È
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_QUALIFIED_NAME@88.30:88.60DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaX X(<2Á
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_PACKAGE_NAME@91.30:91.58DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java[ [(:2Ê
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_SIMPLE_NAME@92.30:92.57DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java\ \(92È
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_QUALIFIED_NAME@93.22:93.52DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java] ](42
+pcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?GENERATED_REQUEST_BUILDER_SIMPLE_NAME@97.30:97.67DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaa a(C2‡
+`com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?TRANSCODE_TYPE_NAME@103.30:103.49DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javag g(12˜
+wcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?EXCLUDED_METHODS_FROM_BASE_REQUEST_OPTIONS@105.44:105.86DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javai, i(V2⁄
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processingEnv@108.38:108.51DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javal& l(32⁄
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javam m(+2ﬁ
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javan! n(22ﬂ
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsType@111.28:111.46DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javao o(.2ﬂ
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javap p(.2Ì
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaq q(42‰
+dcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsClassName@114.20:114.43DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javar r(+2Û
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70DECLARATIONo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javas  s(Fı'
+øcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)CONSTRUCTORo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javau u("1
+package&com.bumptech.glide.annotation.compiler*RequestBuilderGenerator2æ
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaz( z(62º
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaz z(%2æ
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java( (62º
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java (%2«
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javav v(&2«
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtilCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaw w(&2ÿ
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javay y(2«
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaz z(2‚
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_QUALIFIED_NAME@93.22:93.52CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaz7 z(U2◊
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java| |(2Ÿ
+`com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?TRANSCODE_TYPE_NAME@103.30:103.49CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java|- |(@2ÿ
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsType@111.28:111.46CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java~ ~(2«
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java (2‚
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_QUALIFIED_NAME@88.30:88.60CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java7 (U2”
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processingEnv@108.38:108.51CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javav	 v(2”
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaw	 w(2Ã
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javau0 u(=2Ã
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javauM u(Z2æ
+>com.bumptech.glide.annotation.compiler.RequestBuilderGeneratorRETURN_TYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javau u(˝
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javau0 u(="
+typeProcessingEnvironment"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processingEnv2™
+1javax.annotation.processing.ProcessingEnvironmentTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javau u(/¯
+Õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.RequestBuilderGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javauM u(Z"
+typeProcessorUtil"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processorUtil2≠
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javau? u(LÙU
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÇ Ç("1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeTypeSpec"
+accesspackage_private"	
+LOC57*generate2â
+çcom.bumptech.glide.annotation.compiler.RequestOptionsExtensionGenerator.generateInstanceMethodsForExtensions(java.util.Set<java.lang.String>)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaú) ú(M2–
+Ucom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≥ ≥((2›
+bcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateDownloadOnlyRequestMethod()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¥ ¥(42∑
+ªcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂ ∂(62€
+`com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverrides()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∏ ∏(32ß
+´com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedOptionsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÜ Ü(2ﬂ
+dcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsClassName@114.20:114.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaá á(2Ø
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedCodePackageNameCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaá. á(F2ß
+´com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedOptionsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaáH á(X2ﬂ
+dcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsClassName@114.20:114.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaâ â(2Ë
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè è($2Ø
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedCodePackageNameCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê ê(.2Î
+pcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?GENERATED_REQUEST_BUILDER_SIMPLE_NAME@97.30:97.67CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê0 ê(U2Ó
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaë ë(*2Ë
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaí" í(B2Ÿ
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaíD í(U2Ó
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaî- î(S2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaîU î(b2‚
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_PACKAGE_NAME@91.30:91.58CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaò ò(62·
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_SIMPLE_NAME@92.30:92.57CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaò8 ò(S2Ÿ
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaô ô(2≈
+…com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionGenerator@147.37:147.69CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaú ú((2Ø
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!glideExtensionClassNamesCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaù ù($2Î
+pcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?GENERATED_REQUEST_BUILDER_SIMPLE_NAME@97.30:97.67CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaü! ü(F2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java°O °(a2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsType@111.28:111.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¢C ¢(U2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java®! ®(32⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsType@111.28:111.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java©! ©(32Ÿ
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞ ∞(*2¬
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestBuilderOfTranscodeType@150.26:150.55CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java± ±(12√
+«com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionMethods@155.21:155.51CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∑ ∑(.2ß
+´com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedOptionsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∑0 ∑(@2√
+«com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionMethods@155.21:155.51CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaπ π(22¥
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÉ É(%2¥
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!glideExtensionClassNames	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÑ Ñ(*2¨
+´com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedOptions	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÖ Ö()2Ã
+…com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionGenerator@147.37:147.69DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaì% ì(E2…
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestBuilderOfTranscodeType@150.26:150.55DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javañ ñ(72 
+«com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionMethods@155.21:155.51DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaõ õ(32†
+com.squareup.javapoet.TypeSpecRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÇ Ç(
+˘
+…com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionGenerator@147.37:147.69VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaì% ì(E"(
+type RequestOptionsExtensionGenerator"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue* requestOptionsExtensionGenerator2¬
+Gcom.bumptech.glide.annotation.compiler.RequestOptionsExtensionGeneratorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaì ì($2Ó
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaî- î(S2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaîU î(b®
+
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestBuilderOfTranscodeType@150.26:150.55VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javañ ñ(7"
+typeParameterizedTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestBuilderOfTranscodeType2¶
++com.squareup.javapoet.ParameterizedTypeNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javañ ñ(2‚
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_PACKAGE_NAME@91.30:91.58CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaò ò(62·
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_SIMPLE_NAME@92.30:92.57CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaò8 ò(S2Ÿ
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaô ô(ê
+«com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionMethods@155.21:155.51VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaõ õ(3"
+typeList<MethodSpec>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionsExtensionMethods2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaõ õ(2§
+ com.squareup.javapoet.MethodSpecTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaõ	 õ(2â
+çcom.bumptech.glide.annotation.compiler.RequestOptionsExtensionGenerator.generateInstanceMethodsForExtensions(java.util.Set<java.lang.String>)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaú) ú(M2≈
+…com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)?requestOptionsExtensionGenerator@147.37:147.69CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaú ú((2Ø
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!glideExtensionClassNamesCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaù ù($¬
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÉ É(%"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedCodePackageName2ã
+java.lang.StringTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÉ É(€
+≥com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!glideExtensionClassNames	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÑ Ñ(*"
+typeSet<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*glideExtensionClassNames2à
+java.util.SetTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÑ Ñ(	2î
+java.lang.StringTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÑ
+ Ñ(¬
+´com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generate(java.lang.String, java.util.Set<java.lang.String>, com.squareup.javapoet.TypeSpec)!generatedOptions	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÖ Ö()"
+typeTypeSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedOptions2ô
+com.squareup.javapoet.TypeSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÖ Ö(Û
+ªcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡ ¡(E"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<MethodSpec>"
+accessprivate"	
+LOC22**generateGeneratedRequestOptionsEquivalents2ú
+!java.util.Collections.emptyList()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≈ ≈("2≠
+±com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÃ Ã(52Ö
+âcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java” ”(?2»
+Ãcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)!generatedOptionsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaƒ ƒ(2»
+Ãcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)!generatedOptionsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java« «(/2÷
+⁄com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)!requestOptionsExtensionMethodsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÃ6 Ã(T2ó
+õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-3cbba27c-239c-4d1f-85ad-9e3725a87175.apply(com.squareup.javapoet.MethodSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÃV Ã([2ó
+õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-7b4c27a6-2262-424a-81fc-fec43c83fa35.apply(com.squareup.javapoet.MethodSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java”@ ”(E2€
+⁄com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)!requestOptionsExtensionMethods	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¬ ¬(;2Õ
+Ãcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)!generatedOptions	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java√ √(/2ê
+java.util.ListRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡
+ ¡(2´
+ com.squareup.javapoet.MethodSpecRETURN_TYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡ ¡(ù
+⁄com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)!requestOptionsExtensionMethods	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¬ ¬(;"
+typeList<MethodSpec>"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionsExtensionMethods2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¬ ¬(2§
+ com.squareup.javapoet.MethodSpecTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¬ ¬(‚
+Ãcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionsEquivalents(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.TypeSpec)!generatedOptions	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java√ √(/"
+typeTypeSpec"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedOptions2ô
+com.squareup.javapoet.TypeSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java√ √(´
+õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-8708a4f5-144e-4a5b-b13c-308a65cd193a.apply(com.squareup.javapoet.MethodSpec)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÀ. À(3"
+type
+MethodSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÀ# À(-´
+õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-c636ed32-5539-42b9-afa9-6cbd17cbe0dc.apply(com.squareup.javapoet.MethodSpec)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java“1 “(6"
+type
+MethodSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java“& “(0œ 
+±com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java· ·(0"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC7*isUsefulGeneratedRequestOption2ñ
+java.lang.Object.toString()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÊ+ Ê(32†
+§com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÁ Á(2Ú
+wcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?EXCLUDED_METHODS_FROM_BASE_REQUEST_OPTIONS@105.44:105.86CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java„ „(62¬
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java„@ „(T2¬
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‰ ‰(2¬
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÂ Â( 2¬
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÊ Ê(2ﬂ
+dcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsClassName@114.20:114.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÊ= Ê(T2Ã
+–com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsExtensionMethodsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÁ Á(<2¬
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÁ> Á(R2—
+–com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsExtensionMethods	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‚ ‚(52«
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‚H ‚(\2â
+booleanRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java·
+ ·(î
+–com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsExtensionMethods	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‚ ‚(5"
+typeList<MethodSpec>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionsExtensionMethods2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‚ ‚(
+2§
+ com.squareup.javapoet.MethodSpecTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‚ ‚(‰
+∆com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isUsefulGeneratedRequestOption(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‚H ‚(\"
+type
+MethodSpec"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionsMethod2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‚= ‚(G«
+§com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÍ Í(#"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"	
+LOC11*isExtensionMethod2ø
+√com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsExtensionMethodsCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÏ Ï(=2ó
+õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-21a3f721-4b62-4261-bc5d-b8f4cc5cb7ec.apply(com.squareup.javapoet.MethodSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒ Ò(2µ
+πcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒ) Ò(=2ó
+õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-13c4f69a-9b63-41a0-b026-73e1515b86a9.apply(com.squareup.javapoet.MethodSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÚ Ú(2µ
+πcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÚ/ Ú(C2ƒ
+√com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsExtensionMethods	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÎ Î(52∫
+πcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÎH Î(\2â
+booleanRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÍ
+ Í(á
+√com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsExtensionMethods	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÎ Î(5"
+typeList<MethodSpec>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionsExtensionMethods2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÎ Î(
+2§
+ com.squareup.javapoet.MethodSpecTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÎ Î(◊
+πcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.isExtensionMethod(java.util.List<com.squareup.javapoet.MethodSpec>, com.squareup.javapoet.MethodSpec)!requestOptionsMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÎH Î(\"
+type
+MethodSpec"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionsMethod2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÎ= Î(G´
+õcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-28c8b093-ea72-4db0-8400-93ff50d7e113.apply(com.squareup.javapoet.MethodSpec)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java. (3"
+type
+MethodSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java# (-ÿ?
+âcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚ ˚(="1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC50*(generateGeneratedRequestOptionEquivalent2Ò
+vcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java®& ®(;2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˛ ˛(,2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÄ$ Ä(72ö
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-bb2cbcf4-14e8-4cef-876a-46f5df3bd601.apply(com.squareup.javapoet.ParameterSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÖ# Ö((2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaç! ç(42’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè è(2ﬂ
+dcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsClassName@114.20:114.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê ê(+2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê- ê(@2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaí í((2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaî$ î(72õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-701a0a82-7621-4bf2-9437-01efd4d7c9a4.apply(com.squareup.javapoet.AnnotationSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaô$ ô()2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-0ef85319-0d13-4426-9c9f-40544068258f.apply(com.squareup.javapoet.AnnotationSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaú$ ú()2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-85888126-8615-4145-a1ea-2cb34b70e4af.apply(com.squareup.javapoet.AnnotationSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaû$ û()2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¢ ¢(12ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java£ £(.2Ó
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java§ §(;2Ó
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java•* •(P2¨
+∞com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?callRequestOptionsMethod@252.14:252.38CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¶ ¶(-2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java®< ®(O2§
+®com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?suppressWarnings@296.19:296.35CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java© ©(2ö
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?result@268.23:268.29CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java™ ™(2§
+®com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?suppressWarnings@296.19:296.35CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java™ ™(+2ö
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?result@268.23:268.29CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¨ ¨(2û
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚I ˚(\2≥
+∞com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?callRequestOptionsMethod@252.14:252.38DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¸ ¸(&2°
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?result@268.23:268.29DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaå å(2´
+®com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?suppressWarnings@296.19:296.35DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java® ®(#2¢
+ com.squareup.javapoet.MethodSpecRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚
+ ˚(•
+∞com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?callRequestOptionsMethod@252.14:252.38VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¸ ¸(&"
+type	CodeBlock"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*callRequestOptionsMethod2ö
+com.squareup.javapoet.CodeBlockTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¸ ¸(2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˛ ˛(,2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÄ$ Ä(72ö
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-fdf06ebf-ee6e-4443-a464-141995e3c825.apply(com.squareup.javapoet.ParameterSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÖ# Ö((ã"
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?result@268.23:268.29VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaå å("
+typeMethodSpec.Builder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*result2£
+(com.squareup.javapoet.MethodSpec.BuilderTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaå å(2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaç! ç(42’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè è(2ﬂ
+dcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsClassName@114.20:114.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê ê(+2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê- ê(@2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaí í((2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaî$ î(72õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-f2c14f16-a6fa-4a7f-ba71-aa9378ad56a0.apply(com.squareup.javapoet.AnnotationSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaô$ ô()2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-353af145-e095-45bd-ab1c-6a3e988848f2.apply(com.squareup.javapoet.AnnotationSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaú$ ú()2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-c9c76bc0-bd90-493b-ab24-68e95fb4e789.apply(com.squareup.javapoet.AnnotationSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaû$ û()2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¢ ¢(12ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java£ £(.2Ó
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java§ §(;2Ó
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java•* •(P2¨
+∞com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?callRequestOptionsMethod@252.14:252.38CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¶ ¶(-⁄
+®com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)?suppressWarnings@296.19:296.35VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java® ®(#"
+typeAnnotationSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*suppressWarnings2ü
+$com.squareup.javapoet.AnnotationSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java® ®(2Ò
+vcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java®& ®(;2ô
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java®< ®(Oª
+ùcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateGeneratedRequestOptionEquivalent(com.squareup.javapoet.MethodSpec)!requestOptionMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚I ˚(\"
+type
+MethodSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionMethod2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚> ˚(H¥
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-e000d859-9a36-4054-9fcd-279e4e3ee170.apply(com.squareup.javapoet.ParameterSpec)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÑ< Ñ(A"
+typeParameterSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2û
+#com.squareup.javapoet.ParameterSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÑ. Ñ(;∑
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-b5d85a33-3ae4-4707-8e76-1109c3329884.apply(com.squareup.javapoet.AnnotationSpec)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaò> ò(C"
+typeAnnotationSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2ü
+$com.squareup.javapoet.AnnotationSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaò/ ò(=û?
+vcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞ ∞(."1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeAnnotationSpec"
+accessprivate"	
+LOC42*buildSuppressWarnings2è
+java.util.Set.add(E)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java« «(2è
+java.util.Set.add(E)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java» »(2í
+java.util.Set.isEmpty()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÀ À(2®
+-java.util.Collections.sort(java.util.List<T>)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java— —(2ñ
+java.util.HashSet.HashSet()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java±# ±(,2ª
+@java.util.ArrayList.ArrayList(java.util.Collection<? extends E>)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java–- –(82Ü
+äcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≤ ≤(2Ü
+äcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¥' ¥(:2ã
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?annotation@308.26:308.36CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaµ µ(2ã
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?annotation@308.26:308.36CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂' ∂(12ç
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∑
+ ∑(2ã
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?codeBlocks@310.26:310.36CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∏" ∏(,2ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-3257b237-1918-4ffd-baa8-83437fcac6d7.apply(com.squareup.javapoet.CodeBlock)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaΩ! Ω(&2Ü
+äcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)!requestOptionMethodCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≈ ≈(2ç
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java« «(2ç
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java» »(2ç
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÀ À(2ç
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java–9 –(E2ë
+ïcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressionsList@336.22:336.38CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java— —(%2ë
+ïcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressionsList@336.22:336.38CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‘ ‘(.2à
+åcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?builder@339.27:339.34CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java’ ’(2å
+êcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppression@340.16:340.27CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java’' ’(22à
+åcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?builder@339.27:339.34CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÿ ÿ(2ã
+äcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)!requestOptionMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞: ∞(M2î
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java± ±(2í
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?annotation@308.26:308.36DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¥ ¥($2í
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?codeBlocks@310.26:310.36DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂ ∂($2ò
+ïcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressionsList@336.22:336.38DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java– –(&2è
+åcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?builder@339.27:339.34DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java” ”("2ì
+êcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppression@340.16:340.27DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‘ ‘(2¶
+$com.squareup.javapoet.AnnotationSpecRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞
+ ∞(≈
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java± ±("
+typeSet<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*suppressions2à
+java.util.SetTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java± ±(2î
+java.lang.StringTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java± ±(2ñ
+java.util.HashSet.HashSet()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java±# ±(,´
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?annotation@308.26:308.36VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¥ ¥($"
+typeAnnotationSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+annotation2ü
+$com.squareup.javapoet.AnnotationSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¥ ¥( 
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?codeBlocks@310.26:310.36VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂ ∂($"
+typeList<CodeBlock>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+codeBlocks2â
+java.util.ListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂
+ ∂(2£
+com.squareup.javapoet.CodeBlockTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂ ∂(2ã
+ècom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?annotation@308.26:308.36CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂' ∂(1é	
+ïcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressionsList@336.22:336.38VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java– –(&"
+typeArrayList<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*suppressionsList2é
+java.util.ArrayListTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java– –(2î
+java.lang.StringTYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java– –(2ª
+@java.util.ArrayList.ArrayList(java.util.Collection<? extends E>)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java–- –(82ç
+ëcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppressions@305.16:305.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java–9 –(Eµ
+åcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?builder@339.27:339.34VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java” ”(""
+typeAnnotationSpec.Builder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2ß
+,com.squareup.javapoet.AnnotationSpec.BuilderTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java” ”(ë
+êcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)?suppression@340.16:340.27VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‘ ‘("
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*suppression2ã
+java.lang.StringTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‘	 ‘(®
+äcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.buildSuppressWarnings(com.squareup.javapoet.MethodSpec)!requestOptionMethod	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞: ∞(M"
+type
+MethodSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestOptionMethod2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞/ ∞(9®
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-5a0b1f76-3d2c-4e53-9cf9-7ad422dc78e7.apply(com.squareup.javapoet.CodeBlock)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaº6 º(;"
+type	CodeBlock"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2ö
+com.squareup.javapoet.CodeBlockTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaº, º(5«
+`com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverrides()METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaﬂ ﬂ(:"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<MethodSpec>"
+accessprivate"	
+LOC11*generateRequestBuilderOverrides2¿
+Ejavax.lang.model.util.Types.erasure(javax.lang.model.type.TypeMirror)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java·% ·(,2ª
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java· ·("2§
+)javax.lang.model.element.Element.asType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java·@ ·(F2ï
+ôcom.bumptech.glide.annotation.compiler.ProcessorUtil.findInstanceMethodsReturning(javax.lang.model.element.TypeElement, javax.lang.model.type.TypeMirror)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java„ „(22Ö
+âcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÁ Á(12’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processingEnv@108.38:108.51CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java· ·(2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java·- ·(?2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java„ „(2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java„3 „(E2Ä
+Ñcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverrides()?rawRequestBuilderType@352.15:352.36CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java„G „(\2°
+•com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-1a228de4-7db5-4a8a-b405-24d436b557da.apply(javax.lang.model.element.ExecutableElement)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÁ2 Á(72á
+Ñcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverrides()?rawRequestBuilderType@352.15:352.36DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‡ ‡($2ê
+java.util.ListRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaﬂ
+ ﬂ(2´
+ com.squareup.javapoet.MethodSpecRETURN_TYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaﬂ ﬂ(Ä
+Ñcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverrides()?rawRequestBuilderType@352.15:352.36VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‡ ‡($"
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*rawRequestBuilderType2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‡ ‡(2¿
+Ejavax.lang.model.util.Types.erasure(javax.lang.model.type.TypeMirror)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java·% ·(,2ª
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java· ·("2§
+)javax.lang.model.element.Element.asType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java·@ ·(F2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processingEnv@108.38:108.51CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java· ·(2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java·- ·(?∆
+•com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-0bad23e9-a1a6-48f3-9c5a-44c03c0b90d0.apply(javax.lang.model.element.ExecutableElement)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÊ4 Ê(9"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÊ" Ê(3òD
+âcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒ Ò(3"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC46*generateRequestBuilderOverride2í
+java.util.List.get(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaıM ı(P2∞
+5javax.lang.model.type.DeclaredType.getTypeArguments()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaı: ı(J2µ
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaı) ı(62Ê
+kcom.bumptech.glide.annotation.compiler.ProcessorUtil.overriding(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚ ˚( 2µ
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÅ! Å(.2≤
+7javax.lang.model.element.Element.getAnnotationMirrors()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè4 è(H2±
+6javax.lang.model.element.ExecutableElement.isVarArgs()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaì ì("2ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaı ı((2Ë
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¯" ¯(B2†
+§com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?typeArgument@372.15:372.27CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¯R ¯(^2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚ ˚(2ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚! ˚(12±
+µcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?generatedRequestBuilderOfType@375.26:375.55CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚; ˚(X2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¸ ¸(2±
+µcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?generatedRequestBuilderOfType@375.26:375.55CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÄ Ä(-2ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÅ Å( 2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÉ$ É(+2ö
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-3f06dec1-c0cd-4ea0-89ca-4891473e84a1.apply(com.squareup.javapoet.ParameterSpec)!inputCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaà# à((2ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè# è(32õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê ê(2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê ê(2ö
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?mirror@399.26:399.32CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaê9 ê(?2ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaì ì(2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaî î(2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaï
+ ï(2õ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaû û(2õ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒF Ò(V2ß
+§com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?typeArgument@372.15:372.27DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÙ Ù(2∏
+µcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?generatedRequestBuilderOfType@375.26:375.55DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˜ ˜(72¢
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˙ ˙(2°
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?mirror@399.26:399.32DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè è( 2¢
+ com.squareup.javapoet.MethodSpecRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒ
+ Ò(”
+
+§com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?typeArgument@372.15:372.27VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÙ Ù("
+type
+TypeMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*typeArgument2õ
+ javax.lang.model.type.TypeMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÙ Ù(2í
+java.util.List.get(int)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaıM ı(P2∞
+5javax.lang.model.type.DeclaredType.getTypeArguments()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaı: ı(J2µ
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaı) ı(62ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaı ı((Ä	
+µcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?generatedRequestBuilderOfType@375.26:375.55VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˜ ˜(7"
+typeParameterizedTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestBuilderOfType2¶
++com.squareup.javapoet.ParameterizedTypeNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˜ ˜(2Ë
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¯" ¯(B2†
+§com.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?typeArgument@372.15:372.27CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¯R ¯(^Œ
+ücom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?builder@378.23:378.30VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˙ ˙("
+typeMethodSpec.Builder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2£
+(com.squareup.javapoet.MethodSpec.BuilderTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˙ ˙(2Ê
+kcom.bumptech.glide.annotation.compiler.ProcessorUtil.overriding(javax.lang.model.element.ExecutableElement)CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚ ˚( 2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚ ˚(2ñ
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚! ˚(12±
+µcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?generatedRequestBuilderOfType@375.26:375.55CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java˚; ˚(XΩ
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)?mirror@399.26:399.32VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè è( "
+typeAnnotationMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*mirror2§
+)javax.lang.model.element.AnnotationMirrorTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaè	 è(∆
+öcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateRequestBuilderOverride(javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒF Ò(V"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2•
+*javax.lang.model.element.ExecutableElementTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaÒ4 Ò(E¥
+ûcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.Anonymous-e83c0378-c59a-4b4a-afa9-cae5737f4371.apply(com.squareup.javapoet.ParameterSpec)!input	PARAMETERq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaá< á(A"
+typeParameterSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2û
+#com.squareup.javapoet.ParameterSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaá. á(;Õ<
+Ucom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java° °(/"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<MethodSpec>"
+accessprivate"	
+LOC46*generateConstructors2π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≠1 ≠(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java±1 ±(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaΩ1 Ω(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡1 ¡(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≈1 ≈(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java…1 …(82Ÿ
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java£> £(O2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaß0 ß(B2Ô
+tcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?wildcardOfObject@421.13:421.29CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaßE ß(U2Û
+xcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?classOfTranscodeType@418.26:418.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¨& ¨(:2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≠# ≠(02Ä
+Ñcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestBuilderOfWildcardOfObject@422.26:422.58CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞& ∞(F2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java±# ±(02‰
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?glide@439.14:439.19CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaº& º(+2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaΩ# Ω(02Ì
+rcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestManager@440.14:440.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¿& ¿(42’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡# ¡(02Û
+xcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?classOfTranscodeType@418.26:418.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaƒ& ƒ(:2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≈# ≈(02Ê
+kcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?context@438.14:438.21CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java»& »(-2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java…# …(02Ô
+tcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?firstConstructor@425.15:425.31CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaŒ Œ(,2
+ucom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?secondConstructor@441.15:441.32CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaŒ. Œ(?2˙
+xcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?classOfTranscodeType@418.26:418.46DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¢ ¢(.2ˆ
+tcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?wildcardOfObject@421.13:421.29DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java• •(2á
+Ñcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestBuilderOfWildcardOfObject@422.26:422.58DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¶ ¶(:2ˆ
+tcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?firstConstructor@425.15:425.31DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java© ©(2Ì
+kcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?context@438.14:438.21DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂ ∂(2Î
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?glide@439.14:439.19DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∑ ∑(2Ù
+rcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestManager@440.14:440.28DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∏ ∏(2˜
+ucom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?secondConstructor@441.15:441.32DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaπ π( 2ê
+java.util.ListRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java°
+ °(2´
+ com.squareup.javapoet.MethodSpecRETURN_TYPE_ARGUMENTq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java° °(á
+xcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?classOfTranscodeType@418.26:418.46VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¢ ¢(."
+typeParameterizedTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*classOfTranscodeType2¶
++com.squareup.javapoet.ParameterizedTypeNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¢ ¢(2Ÿ
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java£> £(Oâ
+tcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?wildcardOfObject@421.13:421.29VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java• •("
+typeTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*wildcardOfObject2ô
+com.squareup.javapoet.TypeNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java• •(ì
+Ñcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestBuilderOfWildcardOfObject@422.26:422.58VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¶ ¶(:"
+typeParameterizedTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue* requestBuilderOfWildcardOfObject2¶
++com.squareup.javapoet.ParameterizedTypeNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¶ ¶(2⁄
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaß0 ß(B2Ô
+tcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?wildcardOfObject@421.13:421.29CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaßE ß(UÆ
+tcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?firstConstructor@425.15:425.31VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java© ©("
+type
+MethodSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*firstConstructor2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java© ©(2π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≠1 ≠(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java±1 ±(82Û
+xcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?classOfTranscodeType@418.26:418.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¨& ¨(:2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≠# ≠(02Ä
+Ñcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestBuilderOfWildcardOfObject@422.26:422.58CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∞& ∞(F2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java±# ±(0˘
+kcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?context@438.14:438.21VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂ ∂("
+type	ClassName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*context2ö
+com.squareup.javapoet.ClassNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∂ ∂(ı
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?glide@439.14:439.19VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∑ ∑("
+type	ClassName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*glide2ö
+com.squareup.javapoet.ClassNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∑ ∑(á
+rcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestManager@440.14:440.28VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∏ ∏("
+type	ClassName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*requestManager2ö
+com.squareup.javapoet.ClassNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java∏ ∏(ï
+ucom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?secondConstructor@441.15:441.32VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaπ π( "
+type
+MethodSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*secondConstructor2õ
+ com.squareup.javapoet.MethodSpecTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaπ π(2π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaΩ1 Ω(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡1 ¡(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≈1 ≈(82π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java…1 …(82‰
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?glide@439.14:439.19CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaº& º(+2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaΩ# Ω(02Ì
+rcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?requestManager@440.14:440.28CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¿& ¿(42’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java¡# ¡(02Û
+xcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?classOfTranscodeType@418.26:418.46CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaƒ& ƒ(:2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java≈# ≈(02Ê
+kcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateConstructors()?context@438.14:438.21CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java»& »(-2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java…# …(0È
+bcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateDownloadOnlyRequestMethod()METHODq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java’ ’(6"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC16*!generateDownloadOnlyRequestMethod2Ω
+Bcom.bumptech.glide.annotation.compiler.ProcessorUtil.checkResult()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java⁄% ⁄(02π
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNull()CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java€% €(,2Ë
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java◊" ◊(B2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java⁄ ⁄($2’
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java€ €($2ä
+écom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateDownloadOnlyRequestMethod()?generatedRequestBuilderOfFile@470.26:470.55CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‹ ‹(.2Ë
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java‡ ‡(,2ë
+écom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateDownloadOnlyRequestMethod()?generatedRequestBuilderOfFile@470.26:470.55DECLARATIONq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java÷ ÷(72¢
+ com.squareup.javapoet.MethodSpecRETURN_TYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java’
+ ’(∂
+écom.bumptech.glide.annotation.compiler.RequestBuilderGenerator.generateDownloadOnlyRequestMethod()?generatedRequestBuilderOfFile@470.26:470.55VARIABLEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java÷ ÷(7"
+typeParameterizedTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestBuilderOfFile2¶
++com.squareup.javapoet.ParameterizedTypeNameTYPEq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java÷ ÷(2Ë
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52CALLq
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java◊" ◊(Bñ
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_PACKAGE_NAME@86.30:86.58VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaV V(:"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_OPTIONS_PACKAGE_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaV V(î
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_SIMPLE_NAME@87.30:87.57VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaW W(9"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_OPTIONS_SIMPLE_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaW W(ﬂ
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_QUALIFIED_NAME@88.30:88.60VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaX X(<"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_OPTIONS_QUALIFIED_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaX X(2‡
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_PACKAGE_NAME@86.30:86.58CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaY Y("2ﬂ
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_OPTIONS_SIMPLE_NAME@87.30:87.57CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaY+ Y(Fñ
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_PACKAGE_NAME@91.30:91.58VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java[ [(:"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_BUILDER_PACKAGE_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java[ [(î
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_SIMPLE_NAME@92.30:92.57VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java\ \(9"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_BUILDER_SIMPLE_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java\ \(Á
+icom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_QUALIFIED_NAME@93.22:93.52VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java] ](4"
+isFinaltrue"
+typeString"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_BUILDER_QUALIFIED_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java] ](2‡
+gcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_PACKAGE_NAME@91.30:91.58CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java^ ^("2ﬂ
+fcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?REQUEST_BUILDER_SIMPLE_NAME@92.30:92.57CALLo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.java^+ ^(F®
+pcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?GENERATED_REQUEST_BUILDER_SIMPLE_NAME@97.30:97.67VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaa a(C"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*%GENERATED_REQUEST_BUILDER_SIMPLE_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaa a(Ü
+`com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?TRANSCODE_TYPE_NAME@103.30:103.49VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javag g(1"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*TRANSCODE_TYPE_NAME2â
+java.lang.StringTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javag g(Ì
+wcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?EXCLUDED_METHODS_FROM_BASE_REQUEST_OPTIONS@105.44:105.86VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javai, i(V"
+isFinaltrue"
+typeImmutableSet<String>"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler**EXCLUDED_METHODS_FROM_BASE_REQUEST_OPTIONS2ü
+&com.google.common.collect.ImmutableSetTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javai i(#2í
+java.lang.StringTYPE_ARGUMENTo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javai$ i(*´
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processingEnv@108.38:108.51VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javal& l(3"
+isFinaltrue"
+typeProcessingEnvironment"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processingEnv2™
+1javax.annotation.processing.ProcessingEnvironmentTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javal l(%¶
+Zcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?processorUtil@109.30:109.43VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javam m(+"
+isFinaltrue"
+typeProcessorUtil"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processorUtil2≠
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javam m(£
+^com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?transcodeTypeName@110.33:110.50VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javan! n(2"
+isFinaltrue"
+typeTypeVariableName"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*transcodeTypeName2ü
+&com.squareup.javapoet.TypeVariableNameTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javan n( û
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsType@111.28:111.46VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javao o(."
+isFinaltrue"
+typeTypeElement"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*requestOptionsType2ù
+$javax.lang.model.element.TypeElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javao o(û
+_com.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestBuilderType@112.28:112.46VALUEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javap p(."
+isFinaltrue"
+typeTypeElement"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*requestBuilderType2ù
+$javax.lang.model.element.TypeElementTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javap p(∑
+mcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderClassName@113.20:113.52VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaq q(4"
+isFinalfalse"
+type	ClassName"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler* generatedRequestBuilderClassName2ò
+com.squareup.javapoet.ClassNameTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javaq
+ q(•
+dcom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?requestOptionsClassName@114.20:114.43VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javar r(+"
+isFinalfalse"
+type	ClassName"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*requestOptionsClassName2ò
+com.squareup.javapoet.ClassNameTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javar
+ r(€
+scom.bumptech.glide.annotation.compiler.RequestBuilderGenerator?generatedRequestBuilderOfTranscodeType@115.32:115.70VARIABLEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javas  s(F"
+isFinalfalse"
+typeParameterizedTypeName"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*&generatedRequestBuilderOfTranscodeType2§
++com.squareup.javapoet.ParameterizedTypeNameTYPEo
+eannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestBuilderGenerator.javas
+ s(

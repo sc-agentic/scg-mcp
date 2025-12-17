@@ -1,0 +1,1766 @@
+
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÑ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaFILEP
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java"
+
+LOC369*Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaóK
+3com.bumptech.glide.load.resource.gif.GifFrameLoaderCLASSX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java! !("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC336*GifFrameLoader2‘
+Ícom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java? ?(2›
+Ûcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaQ Q(2é
+§com.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaf f(2µ
+Lcom.bumptech.glide.load.resource.gif.GifFrameLoader.getFrameTransformation()DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javap p(/2¨
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.getFirstFrame()DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javat	 t(2Í
+Äcom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javax x(2Ó
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.unsubscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ Ü(2©
+>com.bumptech.glide.load.resource.gif.GifFrameLoader.getWidth()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaç ç(2™
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.getHeight()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaë ë(2®
+=com.bumptech.glide.load.resource.gif.GifFrameLoader.getSize()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaï ï(2∞
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader.getCurrentIndex()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaô ô(2™
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.getBuffer()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù(2Æ
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.getFrameCount()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java° °(2≠
+Bcom.bumptech.glide.load.resource.gif.GifFrameLoader.getLoopCount()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java• •(2¶
+;com.bumptech.glide.load.resource.gif.GifFrameLoader.start()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java© ©(2•
+:com.bumptech.glide.load.resource.gif.GifFrameLoader.stop()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≥ ≥(2¶
+;com.bumptech.glide.load.resource.gif.GifFrameLoader.clear()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∑ ∑(2∞
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader.getCurrentFrame()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÀ	 À(2Æ
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaœ œ(2≤
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.recycleFirstFrame()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÍ Í( 2ª
+Pcom.bumptech.glide.load.resource.gif.GifFrameLoader.setNextStartFromFirstFrame()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÒ Ò(!2Ü
+öcom.bumptech.glide.load.resource.gif.GifFrameLoader.setOnEveryFrameReadyListener(com.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java˚ ˚(#2Ì
+Åcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ Ä(2›
+rcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‹( ‹(92≤
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.getFrameSignature()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ Á(&2≥
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java" "(%2∞
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?handler@35.24:35.31DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java# #(2≤
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java$$ $(-2∑
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java( ((%2≥
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?bitmapPool@42.27:42.37DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java* *(%2≤
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java, ,(2∂
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?isLoadPending@45.18:45.31DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java- -(2º
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader?startFromFirstFrame@46.18:46.37DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java. .(%2∑
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestBuilder@47.33:47.47DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java/! /(/2∞
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java0 0(2≤
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isCleared@49.18:49.27DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java1 1(2≠
+Dcom.bumptech.glide.load.resource.gif.GifFrameLoader?next@50.22:50.26DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java2 2(2≥
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java3 3(2∑
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?transformation@52.33:52.47DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java4! 4(/2∂
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java5 5(#2Ω
+Tcom.bumptech.glide.load.resource.gif.GifFrameLoader?onEveryFrameListener@54.56:54.76DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java68 6(L2∑
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrameSize@55.14:55.28DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java7 7(2Æ
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader?width@56.14:56.19DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java8 8(2Ø
+Fcom.bumptech.glide.load.resource.gif.GifFrameLoader?height@57.14:57.20DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java9 9(2™
+Acom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallbackDECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java; ;( 2≤
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallbackDECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java® ®(#2≥
+Hcom.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListenerDECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÓ Ó( ‹1
+Ícom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)CONSTRUCTORX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java? ?("/
+package$com.bumptech.glide.load.resource.gif*GifFrameLoader2ä
+(com.bumptech.glide.Glide.getBitmapPool()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaG G(2ò
+6com.bumptech.glide.Glide.with(android.content.Context)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaH H(2á
+%com.bumptech.glide.Glide.getContext()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaH H(#2‘
+rcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaK K(2ò
+6com.bumptech.glide.Glide.with(android.content.Context)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaK  K($2á
+%com.bumptech.glide.Glide.getContext()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaK+ K(52”
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!glideCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaG G(2”
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!glideCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaH H(2ÿ
+ıcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!gifDecoderCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaI I(2”
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!glideCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaK% K(*2”
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!widthCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaK: K(?2‘
+Òcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!heightCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaKA K(G2‹
+˘com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformationCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaL L(2ÿ
+ıcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrameCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaM M(2ÿ
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!glide	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java@ @(2›
+ıcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!gifDecoder	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaA A(2ÿ
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!width	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaB
+ B(2Ÿ
+Òcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!height	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaC
+ C(2·
+˘com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformation	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaD D(+2›
+ıcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrame	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaE E(2ú
+3com.bumptech.glide.load.resource.gif.GifFrameLoaderRETURN_TYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java? ?(æ
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!glide	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java@ @("
+typeGlide"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*glide2z
+com.bumptech.glide.GlideTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java@ @(ﬁ
+ıcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!gifDecoder	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaA A("
+type
+GifDecoder"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+gifDecoder2ä
+(com.bumptech.glide.gifdecoder.GifDecoderTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaA A(ß
+com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!width	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaB
+ B("
+typeint"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*width2e
+intTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaB B(	©
+Òcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!height	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaC
+ C("
+typeint"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*height2e
+intTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaC C(	ı
+˘com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformation	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaD D(+"
+typeTransformation<Bitmap>"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*transformation2à
+&com.bumptech.glide.load.TransformationTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaD D(2Ç
+android.graphics.BitmapTYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaD D(»
+ıcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.Glide, com.bumptech.glide.gifdecoder.GifDecoder, int, int, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrame	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaE E("
+typeBitmap"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+firstFrame2y
+android.graphics.BitmapTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaE E(ËL
+Ûcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)CONSTRUCTORX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaQ Q("/
+package$com.bumptech.glide.load.resource.gif*GifFrameLoader2á
+§com.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javac c(2ø
+]com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.FrameLoaderCallback()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java[8 [(K2Â
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!requestManagerCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaY Y((2ﬁ
+˚com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!handlerCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaZ Z(2ﬁ
+˚com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!handlerCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java[ [(2·
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!bitmapPoolCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java] ]( 2ﬁ
+˚com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!handlerCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java^ ^(2Â
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!requestBuilderCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java_ _((2·
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!gifDecoderCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaa a( 2Â
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformationCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javac c()2·
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrameCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javac+ c(52∞
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaY	 Y(2¨
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?bitmapPool@42.27:42.37CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java]	 ](2©
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?handler@35.24:35.31CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java^	 ^(2∞
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestBuilder@47.33:47.47CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java_	 _(2¨
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaa	 a(2Ê
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!bitmapPool	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaR R(2Í
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!requestManager	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaS S(#2Ê
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!gifDecoder	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaT T(2„
+˚com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!handler	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaU U(2Í
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!requestBuilder	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaV V(+2Í
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformation	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaW W(+2Ê
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrame	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaX X(2ú
+3com.bumptech.glide.load.resource.gif.GifFrameLoaderRETURN_TYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaQ Q(˜
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!bitmapPool	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaR R("
+type
+BitmapPool"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+bitmapPool2ö
+8com.bumptech.glide.load.engine.bitmap_recycle.BitmapPoolTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaR R(Ï
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!requestManager	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaS S(#"
+typeRequestManager"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*requestManager2É
+!com.bumptech.glide.RequestManagerTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaS S(Á
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!gifDecoder	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaT T("
+type
+GifDecoder"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+gifDecoder2ä
+(com.bumptech.glide.gifdecoder.GifDecoderTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaT T(«
+˚com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!handler	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaU U("
+typeHandler"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*handler2t
+android.os.HandlerTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaU U(˘
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!requestBuilder	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaV V(+"
+typeRequestBuilder<Bitmap>"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*requestBuilder2É
+!com.bumptech.glide.RequestBuilderTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaV V(2Ç
+android.graphics.BitmapTYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaV V(˛
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformation	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaW W(+"
+typeTransformation<Bitmap>"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*transformation2à
+&com.bumptech.glide.load.TransformationTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaW W(2Ç
+android.graphics.BitmapTYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaW W(—
+˛com.bumptech.glide.load.resource.gif.GifFrameLoader.GifFrameLoader(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool, com.bumptech.glide.RequestManager, com.bumptech.glide.gifdecoder.GifDecoder, android.os.Handler, com.bumptech.glide.RequestBuilder<android.graphics.Bitmap>, com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrame	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaX X("
+typeBitmap"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+firstFrame2y
+android.graphics.BitmapTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaX X(÷'
+§com.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)METHODX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaf f("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC8*setFrameTransformation2ó
+5com.bumptech.glide.util.Preconditions.checkNotNull(T)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javag( g(42ó
+5com.bumptech.glide.util.Preconditions.checkNotNull(T)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javah$ h(02ª
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javai$ i()2⁄
+xcom.bumptech.glide.request.BaseRequestOptions.transform(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javai? i(H2©
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javak k(+2ú
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javai. i(<2ñ
+≥com.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformationCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javag5 g(C2í
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrameCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javah1 h(;2∞
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestBuilder@47.33:47.47CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javai i(2∞
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestBuilder@47.33:47.47CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javai i(#2ñ
+≥com.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformationCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaiI i(W2∞
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrameSize@55.14:55.28CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javak k(2í
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrameCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javak, k(62ß
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader?width@56.14:56.19CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javal l(	2í
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrameCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javal l(2®
+Fcom.bumptech.glide.load.resource.gif.GifFrameLoader?height@57.14:57.20CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javam m(
+2í
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrameCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javam m(2∞
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?transformation@52.33:52.47CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javag	 g(2¨
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javah	 h(2õ
+≥com.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformation	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaf5 f(C2ó
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrame	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javafL f(V2m
+voidRETURN_TYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaf f(Ø
+≥com.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!transformation	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaf5 f(C"
+typeTransformation<Bitmap>"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*transformation2à
+&com.bumptech.glide.load.TransformationTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaf f(,2Ç
+android.graphics.BitmapTYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaf- f(3Ç
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setFrameTransformation(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>, android.graphics.Bitmap)!firstFrame	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javafL f(V"
+typeBitmap"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+firstFrame2y
+android.graphics.BitmapTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javafE f(K…
+Lcom.bumptech.glide.load.resource.gif.GifFrameLoader.getFrameTransformation()METHODX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javap p(/"/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeTransformation<Bitmap>"
+accesspackage_private"
+LOC2*getFrameTransformation2∞
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?transformation@52.33:52.47CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaq q(2è
+&com.bumptech.glide.load.TransformationRETURN_TYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javap p(2â
+android.graphics.BitmapRETURN_TYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javap p(à
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.getFirstFrame()METHODX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javat	 t("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspackage_private"
+LOC2*getFirstFrame2¨
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javau u(2Ä
+android.graphics.BitmapRETURN_TYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javat t(ó
+Äcom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)METHODX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javax x("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC12*	subscribe2ã
+)java.util.List.contains(java.lang.Object)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java| |(2z
+java.util.List.isEmpty()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java (%2y
+java.util.List.add(E)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ Ä(2ü
+;com.bumptech.glide.load.resource.gif.GifFrameLoader.start()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÇ Ç(2©
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaz z(%2©
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java} }(%2´
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isCleared@49.18:49.27CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javay y(2´
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java| |(2Ò
+écom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)!frameCallbackCALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java| |((2´
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java (2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ Ä(2Û
+écom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)!frameCallbackCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ Ä(2˘
+îcom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)?start@127.12:127.17CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÅ Å(2ˆ
+écom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)!frameCallback	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javax x(,2˛
+îcom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)?start@127.12:127.17DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java (2m
+voidRETURN_TYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javax x(¸
+îcom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)?start@127.12:127.17VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java ("
+typeboolean"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*start2i
+booleanTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java (2z
+java.util.List.isEmpty()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java (%2´
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java (ñ
+écom.bumptech.glide.load.resource.gif.GifFrameLoader.subscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)!frameCallback	PARAMETERX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javax x(,"
+typeFrameCallback"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*frameCallback2£
+Acom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallbackTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javax x(á
+Çcom.bumptech.glide.load.resource.gif.GifFrameLoader.unsubscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ Ü("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC5*unsubscribe2ã
+'java.util.List.remove(java.lang.Object)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaá á(2|
+java.util.List.isEmpty()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaà à(2û
+:com.bumptech.glide.load.resource.gif.GifFrameLoader.stop()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaâ â(
+2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaá á(2ı
+êcom.bumptech.glide.load.resource.gif.GifFrameLoader.unsubscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)!frameCallbackCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaá á("2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaà à(2˙
+êcom.bumptech.glide.load.resource.gif.GifFrameLoader.unsubscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)!frameCallback	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ! Ü(.2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ Ü(ú
+êcom.bumptech.glide.load.resource.gif.GifFrameLoader.unsubscribe(com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback)!frameCallback	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ! Ü(."
+typeFrameCallback"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*frameCallback2•
+Acom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallbackTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ Ü( Á
+>com.bumptech.glide.load.resource.gif.GifFrameLoader.getWidth()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaç ç("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC2*getWidth2©
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader?width@56.14:56.19CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaé é(2n
+intRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaç ç(Í
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.getHeight()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaë ë("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC2*	getHeight2™
+Fcom.bumptech.glide.load.resource.gif.GifFrameLoader?height@57.14:57.20CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaí í(2n
+intRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaë ë(º
+=com.bumptech.glide.load.resource.gif.GifFrameLoader.getSize()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaï ï("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC2*getSize2ö
+6com.bumptech.glide.gifdecoder.GifDecoder.getByteSize()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javañ ñ(!2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javañ ñ(2≤
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrameSize@55.14:55.28CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javañ& ñ(42n
+intRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaï ï(ﬂ
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader.getCurrentIndex()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaô ô("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC2*getCurrentIndex2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaö ö(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaö ö($2∑
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?index@320.25:320.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaö% ö(*2n
+intRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaô ô(´
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.getBuffer()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+ByteBuffer"
+accesspackage_private"
+LOC2*	getBuffer2ä
+&java.nio.ByteBuffer.asReadOnlyBuffer()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaû  û(02ñ
+2com.bumptech.glide.gifdecoder.GifDecoder.getData()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaû û(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaû û(2~
+java.nio.ByteBufferRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù(ï
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.getFrameCount()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java° °("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC2*getFrameCount2ú
+8com.bumptech.glide.gifdecoder.GifDecoder.getFrameCount()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¢ ¢(#2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¢ ¢(2n
+intRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java° °(ú
+Bcom.bumptech.glide.load.resource.gif.GifFrameLoader.getLoopCount()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java• •("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC2*getLoopCount2•
+Acom.bumptech.glide.gifdecoder.GifDecoder.getTotalIterationCount()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¶ ¶(,2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¶ ¶(2n
+intRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java• •(È
+;com.bumptech.glide.load.resource.gif.GifFrameLoader.start()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java© ©("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC8*start2ß
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∞ ∞(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java™ ™(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≠ ≠(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isCleared@49.18:49.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÆ Æ(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java©
+ ©(›
+:com.bumptech.glide.load.resource.gif.GifFrameLoader.stop()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≥ ≥("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC2*stop2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¥ ¥(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≥
+ ≥(¢!
+;com.bumptech.glide.load.resource.gif.GifFrameLoader.clear()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∑ ∑("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC18*clear2z
+java.util.List.clear()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∏ ∏(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.recycleFirstFrame()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaπ π(2û
+:com.bumptech.glide.load.resource.gif.GifFrameLoader.stop()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∫ ∫(2∏
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaº º(2∏
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¿ ¿(2∏
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ(2î
+0com.bumptech.glide.gifdecoder.GifDecoder.clear()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java« «(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∏ ∏(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaª ª(2≤
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaº º(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaº º("2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaΩ Ω(2®
+Dcom.bumptech.glide.load.resource.gif.GifFrameLoader?next@50.22:50.26CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaø ø(2≤
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¿ ¿(2®
+Dcom.bumptech.glide.load.resource.gif.GifFrameLoader?next@50.22:50.26CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¿ ¿(2®
+Dcom.bumptech.glide.load.resource.gif.GifFrameLoader?next@50.22:50.26CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¡ ¡(
+2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java√ √(2≤
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ((2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≈ ≈(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java« «(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isCleared@49.18:49.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java» »(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∑ ∑(¢	
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader.getCurrentFrame()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÀ	 À("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspackage_private"
+LOC2*getCurrentFrame2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.getResource()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÃ% Ã(02´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÃ Ã(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÃ Ã($2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÃ5 Ã(?2Ç
+android.graphics.BitmapRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÀ À(ö6
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaœ œ("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC25*loadNextFrame2≤
+Ncom.bumptech.glide.util.Preconditions.checkArgument(boolean, java.lang.String)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‘ ‘(!2û
+:com.bumptech.glide.gifdecoder.GifDecoder.resetFrameIndex()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java÷ ÷( 2Ê
+Åcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‹ ‹(2õ
+7com.bumptech.glide.gifdecoder.GifDecoder.getNextDelay()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚('2ñ
+2com.bumptech.glide.gifdecoder.GifDecoder.advance()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÂ Â(2£
+?com.bumptech.glide.gifdecoder.GifDecoder.getCurrentFrameIndex()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÊ/ Ê(C2ç
+)com.bumptech.glide.RequestBuilder.into(Y)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁL Á(P2ú
+8com.bumptech.glide.RequestBuilder.load(java.lang.Object)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ; Á(?2Ω
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ Á(2∂
+Rcom.bumptech.glide.request.RequestOptions.signatureOf(com.bumptech.glide.load.Key)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ Á($2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.getFrameSignature()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ% Á(62Œ
+jcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÊ Ê(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java–	 –(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?isLoadPending@45.18:45.31CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java– –(#2∑
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader?startFromFirstFrame@46.18:46.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java” ”(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java’
+ ’(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java÷ ÷(2∑
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader?startFromFirstFrame@46.18:46.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊ ◊(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaŸ Ÿ(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java⁄ ⁄(&2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java€ €(2∫
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?temp@218.18:218.22CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‹ ‹(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?isLoadPending@45.18:45.31CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaﬂ ﬂ(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚(2∫
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?delay@226.8:226.13CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java„3 „(82Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÂ Â(2®
+Dcom.bumptech.glide.load.resource.gif.GifFrameLoader?next@50.22:50.26CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÊ Ê(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?handler@35.24:35.31CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÊ Ê("2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÊ$ Ê(.2ø
+[com.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?targetTime@227.9:227.19CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÊG Ê(Q2≤
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestBuilder@47.33:47.47CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ Á(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ@ Á(J2®
+Dcom.bumptech.glide.load.resource.gif.GifFrameLoader?next@50.22:50.26CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁQ Á(U2¡
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?temp@218.18:218.22DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java⁄ ⁄(2¡
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?delay@226.8:226.13DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚(2∆
+[com.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?targetTime@227.9:227.19DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java„	 „(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaœ
+ œ(á
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?temp@218.18:218.22VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java⁄ ⁄("
+typeDelayTarget"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*temp2£
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java⁄ ⁄(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java⁄ ⁄(&ﬁ
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?delay@226.8:226.13VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚("
+typeint"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*delay2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚(2õ
+7com.bumptech.glide.gifdecoder.GifDecoder.getNextDelay()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚('2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚(ÿ
+[com.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?targetTime@227.9:227.19VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java„	 „("
+typelong"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+targetTime2h
+longTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java„ „(2∫
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()?delay@226.8:226.13CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java„3 „(8«
+
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.recycleFirstFrame()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÍ Í( "/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC5*recycleFirstFrame2π
+Ucom.bumptech.glide.load.engine.bitmap_recycle.BitmapPool.put(android.graphics.Bitmap)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÏ Ï(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÎ Î(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?bitmapPool@42.27:42.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÏ Ï(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÏ Ï(2Æ
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÌ Ì(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÍ
+ Í(å
+Pcom.bumptech.glide.load.resource.gif.GifFrameLoader.setNextStartFromFirstFrame()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÒ Ò(!"/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC7*setNextStartFromFirstFrame2≤
+Ncom.bumptech.glide.util.Preconditions.checkArgument(boolean, java.lang.String)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÚ Ú(2∏
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaı ı(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÚ! Ú(*2∑
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader?startFromFirstFrame@46.18:46.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÛ Û(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÙ Ù(2≤
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaı ı(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaı ı((2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaˆ ˆ(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÒ Ò(ú
+
+öcom.bumptech.glide.load.resource.gif.GifFrameLoader.setOnEveryFrameReadyListener(com.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener)METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java˚ ˚(#"/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*setOnEveryFrameReadyListener2î
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setOnEveryFrameReadyListener(com.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener)!onEveryFrameListenerCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¸  ¸(42∏
+Tcom.bumptech.glide.load.resource.gif.GifFrameLoader?onEveryFrameListener@54.56:54.76CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¸	 ¸(2ô
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setOnEveryFrameReadyListener(com.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener)!onEveryFrameListener	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java˚C ˚(W2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java˚ ˚(–
+Øcom.bumptech.glide.load.resource.gif.GifFrameLoader.setOnEveryFrameReadyListener(com.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener)!onEveryFrameListener	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java˚C ˚(W"
+typeOnEveryFrameListener"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*onEveryFrameListener2¨
+Hcom.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListenerTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java˚. ˚(BøB
+Åcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ Ä("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC39*onFrameReady2ª
+Wcom.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener.onFrameReady()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÇ Ç('2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.getResource()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javañ ñ(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.recycleFirstFrame()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaó ó(2y
+java.util.List.size()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú ú(!2{
+java.util.List.get(int)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù% ù((2¥
+Pcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback.onFrameReady()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaû û(2ß
+Ccom.bumptech.glide.load.resource.gif.GifFrameLoader.loadNextFrame()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java• •(2∏
+Tcom.bumptech.glide.load.resource.gif.GifFrameLoader?onEveryFrameListener@54.56:54.76CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÅ Å(2∏
+Tcom.bumptech.glide.load.resource.gif.GifFrameLoader?onEveryFrameListener@54.56:54.76CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÇ Ç(2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?isLoadPending@45.18:45.31CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÑ Ñ(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isCleared@49.18:49.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÖ Ö(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?handler@35.24:35.31CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ Ü(2Ú
+çcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)!delayTargetCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ; Ü(F2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaç	 ç(2∑
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader?startFromFirstFrame@46.18:46.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaé
+ é(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?handler@35.24:35.31CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaè è(2Ú
+çcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)!delayTargetCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaè= è(H2±
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaë ë(2Ú
+çcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)!delayTargetCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaë ë(#2Ú
+çcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)!delayTargetCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javañ ñ(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaò ò($2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaô ô(2Ú
+çcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)!delayTargetCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaô ô(2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú ú(2ˆ
+ëcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?i@284.15:284.16CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú) ú(*2ˆ
+ëcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?i@284.15:284.16CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú1 ú(22≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù($2ˆ
+ëcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?i@284.15:284.16CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù) ù(*2˜
+ícom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?cb@285.22:285.24CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaû û(
+2˝
+òcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?previous@280.18:280.26CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java†
+ †(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?handler@35.24:35.31CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java° °(2˝
+òcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?previous@280.18:280.26CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java°= °(E2√
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_CLEAR@298.21:298.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÜ0 Ü(92√
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_CLEAR@298.21:298.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaè2 è(;2√
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_CLEAR@298.21:298.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java°2 °(;2˜
+çcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)!delayTarget	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ  Ä(+2Ñ
+òcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?previous@280.18:280.26DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaò ò(2˝
+ëcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?i@284.15:284.16DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú ú(2˛
+ícom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?cb@285.22:285.24DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ Ä(»
+òcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?previous@280.18:280.26VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaò ò("
+typeDelayTarget"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*previous2£
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaò ò(2´
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaò ò($Ú
+ëcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?i@284.15:284.16VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú ú("
+typeint"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*i2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú ú(2y
+java.util.List.size()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú ú(!2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaú ú(∏
+ícom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?cb@285.22:285.24VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù("
+typeFrameCallback"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*cb2•
+Acom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallbackTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù(2{
+java.util.List.get(int)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù% ù((2≠
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù ù($2ˆ
+ëcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)?i@284.15:284.16CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaù) ù(*ì
+çcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)!delayTarget	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ  Ä(+"
+typeDelayTarget"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*delayTarget2£
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÄ Ä(π
+rcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‹( ‹(9"/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestBuilder<Bitmap>"
+accessprivate"
+LOC9*getRequestBuilder2Ω
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‡	 ‡(2ê
+,com.bumptech.glide.RequestManager.asBitmap()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaﬂ	 ﬂ(2§
+@com.bumptech.glide.request.BaseRequestOptions.override(int, int)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‰ ‰(2™
+Fcom.bumptech.glide.request.BaseRequestOptions.skipMemoryCache(boolean)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java„ „( 2´
+Gcom.bumptech.glide.request.BaseRequestOptions.useAnimationPool(boolean)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‚ ‚(!2”
+ocom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java· ·(2Ê
+Åcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!requestManagerCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaﬁ ﬁ(2‹
+xcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!widthCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‰ ‰(2›
+ycom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!heightCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‰! ‰('2Î
+Åcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!requestManager	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java› ›(#2·
+xcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!width	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java›) ›(.2‚
+ycom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!height	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java›4 ›(:2å
+!com.bumptech.glide.RequestBuilderRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‹ ‹(2ã
+android.graphics.BitmapRETURN_TYPE_ARGUMENTZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java‹  ‹(&Ô
+Åcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!requestManager	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java› ›(#"
+typeRequestManager"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*requestManager2Ö
+!com.bumptech.glide.RequestManagerTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java› ›(≤
+xcom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!width	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java›) ›(."
+typeint"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*width2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java›% ›((¥
+ycom.bumptech.glide.load.resource.gif.GifFrameLoader.getRequestBuilder(com.bumptech.glide.RequestManager, int, int)!height	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java›4 ›(:"
+typeint"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*height2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java›0 ›(3É
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.getFrameSignature()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ Á(&"/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeKey"
+accessprivate"
+LOC4*getFrameSignature2{
+java.lang.Math.random()CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÍ Í($2¶
+Bcom.bumptech.glide.signature.ObjectKey.ObjectKey(java.lang.Object)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÍ Í(2Ü
+com.bumptech.glide.load.KeyRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÁ Á(‘
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?gifDecoder@34.27:34.37VALUEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java" "(%"
+isFinaltrue"
+type
+GifDecoder"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*
+gifDecoder2ä
+(com.bumptech.glide.gifdecoder.GifDecoderTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java" "(¥
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?handler@35.24:35.31VALUEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java# #("
+isFinaltrue"
+typeHandler"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*handler2t
+android.os.HandlerTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java# #(Û
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?callbacks@36.36:36.45VALUEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java$$ $(-"
+isFinaltrue"
+typeList<FrameCallback>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*	callbacks2p
+java.util.ListTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java$ $(2¨
+Acom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallbackTYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java$ $("2Å
+java.util.ArrayList.ArrayList()CALLX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java$4 $(?·
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37VALUEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java( ((%"
+isFinaltrue"
+typeRequestManager"
+isStaticfalse"
+accesspackage_private"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*requestManager2É
+!com.bumptech.glide.RequestManagerTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java( ((‰
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?bitmapPool@42.27:42.37VALUEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java* *(%"
+isFinaltrue"
+type
+BitmapPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*
+bitmapPool2ö
+8com.bumptech.glide.load.engine.bitmap_recycle.BitmapPoolTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java* *(±
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isRunning@44.18:44.27VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java, ,("
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*	isRunning2i
+booleanTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java,
+ ,(π
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?isLoadPending@45.18:45.31VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java- -("
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*isLoadPending2i
+booleanTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java-
+ -(≈
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader?startFromFirstFrame@46.18:46.37VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java. .(%"
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*startFromFirstFrame2i
+booleanTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java.
+ .(Í
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestBuilder@47.33:47.47VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java/! /(/"
+isFinalfalse"
+typeRequestBuilder<Bitmap>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*requestBuilder2É
+!com.bumptech.glide.RequestBuilderTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java/
+ /(2Ç
+android.graphics.BitmapTYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java/ /(Í
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader?current@48.22:48.29VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java0 0("
+isFinalfalse"
+typeDelayTarget"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*current2°
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java0
+ 0(±
+Icom.bumptech.glide.load.resource.gif.GifFrameLoader?isCleared@49.18:49.27VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java1 1("
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*	isCleared2i
+booleanTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java1
+ 1(‰
+Dcom.bumptech.glide.load.resource.gif.GifFrameLoader?next@50.22:50.26VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java2 2("
+isFinalfalse"
+typeDelayTarget"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*next2°
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java2
+ 2(¬
+Jcom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrame@51.17:51.27VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java3 3("
+isFinalfalse"
+typeBitmap"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*
+firstFrame2y
+android.graphics.BitmapTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java3
+ 3(Ô
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?transformation@52.33:52.47VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java4! 4(/"
+isFinalfalse"
+typeTransformation<Bitmap>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*transformation2à
+&com.bumptech.glide.load.TransformationTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java4
+ 4(2Ç
+android.graphics.BitmapTYPE_ARGUMENTX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java4 4(ˆ
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader?pendingTarget@53.22:53.35VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java5 5(#"
+isFinalfalse"
+typeDelayTarget"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*pendingTarget2°
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java5
+ 5(•
+Tcom.bumptech.glide.load.resource.gif.GifFrameLoader?onEveryFrameListener@54.56:54.76VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java68 6(L"
+isFinalfalse"+
+type#GifFrameLoader.OnEveryFrameListener"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*onEveryFrameListener2™
+Hcom.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListenerTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java6# 6(7≥
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?firstFrameSize@55.14:55.28VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java7 7("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*firstFrameSize2e
+intTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java7
+ 7(°
+Ecom.bumptech.glide.load.resource.gif.GifFrameLoader?width@56.14:56.19VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java8 8("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*width2e
+intTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java8
+ 8(£
+Fcom.bumptech.glide.load.resource.gif.GifFrameLoader?height@57.14:57.20VARIABLEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java9 9("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*height2e
+intTYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java9
+ 9(˘
+Acom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallbackTRAITX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java; ;( "/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+LOC2*FrameCallback2π
+Pcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback.onFrameReady()DECLARATIONX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java<	 <(œ
+Pcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameCallback.onFrameReady()METHODX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java<	 <("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC0*onFrameReady2m
+voidRETURN_TYPEX
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java< <(å
+
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallbackCLASSZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java® ®(#"/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"
+accessprivate"	
+LOC19*FrameLoaderCallback2»
+]com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.FrameLoaderCallback()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≠ ≠(2‘
+icom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∞ ∞( 2 
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_DELAY@297.21:297.30DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java© ©(2 
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_CLEAR@298.21:298.30DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java™ ™(2Å
+android.os.Handler.CallbackEXTENDZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java®7 ®(?√
+]com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.FrameLoaderCallback()CONSTRUCTORZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≠ ≠("/
+package$com.bumptech.glide.load.resource.gif*FrameLoaderCallback2≤
+Gcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallbackRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≠ ≠(õ
+icom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∞ ∞( "/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"	
+LOC11*handleMessage2Ê
+Åcom.bumptech.glide.load.resource.gif.GifFrameLoader.onFrameReady(com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≥ ≥(2∏
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∑ ∑(2—
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msgCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java±
+ ±(2√
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_DELAY@297.21:297.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java± ±(2—
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msgCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≤: ≤(=2‚
+~com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)?target@306.35:306.41CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≥ ≥(2—
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msgCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaµ µ(2√
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_CLEAR@298.21:298.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaµ µ(&2—
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msgCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∂: ∂(=2≤
+Ncom.bumptech.glide.load.resource.gif.GifFrameLoader?requestManager@40.23:40.37CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∑ ∑(2‚
+~com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)?target@310.35:310.41CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∑ ∑(#2÷
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msg	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∞) ∞(,2È
+~com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)?target@306.35:306.41DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≤# ≤()2È
+~com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)?target@310.35:310.41DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∂# ∂()2r
+booleanRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∞ ∞(‡
+~com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)?target@306.35:306.41VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≤# ≤()""
+typeGifFrameLoader.DelayTarget"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*target2£
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≤ ≤("2—
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msgCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≤: ≤(=‡
+~com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)?target@310.35:310.41VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∂# ∂()""
+typeGifFrameLoader.DelayTarget"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*target2£
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∂ ∂("2—
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msgCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∂: ∂(=∏
+mcom.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback.handleMessage(android.os.Message)!msg	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∞) ∞(,"
+typeMessage"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*msg2v
+android.os.MessageTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∞! ∞((∆
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_DELAY@297.21:297.30VALUEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java© ©("
+isFinaltrue"
+typeint"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*	MSG_DELAY2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java© ©(∆
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_CLEAR@298.21:298.30VALUEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java™ ™("
+isFinaltrue"
+typeint"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*	MSG_CLEAR2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java™ ™(î
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetCLASSZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaæ æ("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC29*DelayTarget2’
+jcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ(2∏
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.getResource()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java   (2ß
+ªcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaœ œ(2‹
+qcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onLoadCleared(android.graphics.drawable.Drawable)DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊ ◊(2¿
+Ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?handler@319.26:319.33DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaø ø(!2æ
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?index@320.25:320.30DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¿ ¿(2√
+Xcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?targetTime@321.23:321.33DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¡ ¡(!2¡
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?resource@322.19:322.27DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¬ ¬(2î
+.com.bumptech.glide.request.target.CustomTargetEXTENDZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaæ# æ(/2ã
+android.graphics.BitmapEXTEND_TYPE_ARGUMENTZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaæ0 æ(6ú
+jcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)CONSTRUCTORZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ("/
+package$com.bumptech.glide.load.resource.gif*DelayTarget2÷
+rcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!handlerCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≈ ≈(2‘
+pcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!indexCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∆ ∆(2Ÿ
+ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!targetTimeCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java« «("2π
+Ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?handler@319.26:319.33CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java≈ ≈(2∑
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?index@320.25:320.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java∆ ∆(2º
+Xcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?targetTime@321.23:321.33CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java« «(2€
+rcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!handler	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ(2Ÿ
+pcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!index	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ% ƒ(*2ﬁ
+ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!targetTime	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ1 ƒ(;2™
+?com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTargetRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ(¡
+rcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!handler	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ("
+typeHandler"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*handler2v
+android.os.HandlerTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ ƒ(™
+pcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!index	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ% ƒ(*"
+typeint"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*index2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ! ƒ($∂
+ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.DelayTarget(android.os.Handler, int, long)!targetTime	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ1 ƒ(;"
+typelong"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+targetTime2h
+longTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaƒ, ƒ(0¢
+Mcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.getResource()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java   ("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspackage_private"
+LOC2*getResource2∫
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?resource@322.19:322.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÀ À(2Ç
+android.graphics.BitmapRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java   (
+Ù
+ªcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaœ œ("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*onResourceReady2©
+ƒcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)!resourceCALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java— —(2π
+Ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?handler@319.26:319.33CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java“ “(2π
+Ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?handler@319.26:319.33CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java” ”(2≤
+Õcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)?msg@338.14:338.17CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java”  ”(#2º
+Xcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?targetTime@321.23:321.33CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java”% ”(/2∫
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?resource@322.19:322.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java— —(2√
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_DELAY@297.21:297.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java“> “(G2Æ
+ƒcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)!resource	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java– –( 2∞
+∆com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)!transition	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java–G –(Q2π
+Õcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)?msg@338.14:338.17DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java“ “(2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaœ œ(ö
+Õcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)?msg@338.14:338.17VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java“ “("
+typeMessage"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*msg2v
+android.os.MessageTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java“ “(2π
+Ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?handler@319.26:319.33CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java“ “(2√
+_com.bumptech.glide.load.resource.gif.GifFrameLoader.FrameLoaderCallback?MSG_DELAY@297.21:297.30CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java“> “(Gô
+ƒcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)!resource	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java– –( "
+typeBitmap"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*resource2{
+android.graphics.BitmapTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java– –(À
+∆com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onResourceReady(android.graphics.Bitmap, com.bumptech.glide.request.transition.Transition<? super android.graphics.Bitmap>)!transition	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java–G –(Q""
+typeTransition<? super Bitmap>"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*
+transition2î
+0com.bumptech.glide.request.transition.TransitionTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java–, –(6◊
+qcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onLoadCleared(android.graphics.drawable.Drawable)METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊ ◊("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*onLoadCleared2∫
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?resource@322.19:322.27CALLZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÿ ÿ(2¬
+Zcom.bumptech.glide.request.target.Target.onLoadCleared(android.graphics.drawable.Drawable)OVERRIDEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊ ◊(2Ê
+}com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onLoadCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊1 ◊(<2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊ ◊(‚
+}com.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget.onLoadCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊1 ◊(<"
+typeDrawable"
+isFinalfalse"/
+package$com.bumptech.glide.load.resource.gif"
+isLocaltrue*placeholder2Ü
+"android.graphics.drawable.DrawableTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java◊( ◊(0∆
+Ucom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?handler@319.26:319.33VALUEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaø ø(!"
+isFinaltrue"
+typeHandler"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*handler2v
+android.os.HandlerTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaø ø(∑
+Scom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?index@320.25:320.30VALUEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¿ ¿("
+isFinaltrue"
+typeint"
+isStaticfalse"
+accesspackage_private"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*index2g
+intTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¿ ¿(ª
+Xcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?targetTime@321.23:321.33VALUEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¡ ¡(!"
+isFinaltrue"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*
+targetTime2h
+longTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¡ ¡(–
+Vcom.bumptech.glide.load.resource.gif.GifFrameLoader.DelayTarget?resource@322.19:322.27VARIABLEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¬ ¬("
+isFinalfalse"
+typeBitmap"
+isStaticfalse"
+accessprivate"
+isLocalfalse"/
+package$com.bumptech.glide.load.resource.gif*resource2{
+android.graphics.BitmapTYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.java¬ ¬(õ
+Hcom.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListenerTRAITZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÓ Ó( "/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+LOC3*OnEveryFrameListener2¬
+Wcom.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener.onFrameReady()DECLARATIONZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÔ	 Ô(⁄
+Wcom.bumptech.glide.load.resource.gif.GifFrameLoader.OnEveryFrameListener.onFrameReady()METHODZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÔ	 Ô("/
+package$com.bumptech.glide.load.resource.gif"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC0*onFrameReady2o
+voidRETURN_TYPEZ
+Nlibrary/src/main/java/com/bumptech/glide/load/resource/gif/GifFrameLoader.javaÔ Ô(

@@ -1,0 +1,985 @@
+
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÊ
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaFILEF
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java"
+
+LOC295*Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÛ4
+)com.bumptech.glide.request.RequestOptionsCLASSN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java ("%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC271*RequestOptions2†
+Acom.bumptech.glide.request.RequestOptions.sizeMultiplierOf(float)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java( ((/2Œ
+ocom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java2 2(22∞
+Qcom.bumptech.glide.request.RequestOptions.priorityOf(com.bumptech.glide.Priority)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java= =()2∫
+[com.bumptech.glide.request.RequestOptions.placeholderOf(android.graphics.drawable.Drawable)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaD D(,2õ
+<com.bumptech.glide.request.RequestOptions.placeholderOf(int)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaK K(,2¥
+Ucom.bumptech.glide.request.RequestOptions.errorOf(android.graphics.drawable.Drawable)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaR R(&2ï
+6com.bumptech.glide.request.RequestOptions.errorOf(int)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaY Y(&2£
+Dcom.bumptech.glide.request.RequestOptions.skipMemoryCacheOf(boolean)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java` `(02ù
+>com.bumptech.glide.request.RequestOptions.overrideOf(int, int)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar r()2ò
+9com.bumptech.glide.request.RequestOptions.overrideOf(int)DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java} }()2≥
+Rcom.bumptech.glide.request.RequestOptions.signatureOf(com.bumptech.glide.load.Key)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÑ Ñ(*2ü
+>com.bumptech.glide.request.RequestOptions.fitCenterTransform()DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaã ã(12¢
+Acom.bumptech.glide.request.RequestOptions.centerInsideTransform()DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javañ ñ(42†
+?com.bumptech.glide.request.RequestOptions.centerCropTransform()DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java° °(22†
+?com.bumptech.glide.request.RequestOptions.circleCropTransform()DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¨ ¨(22€
+zcom.bumptech.glide.request.RequestOptions.bitmapTransform(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∑ ∑(.2ù
+<com.bumptech.glide.request.RequestOptions.noTransformation()DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaø ø(/2∑
+Vcom.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ# Ã()2´
+Jcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java” ”(+2π
+Xcom.bumptech.glide.request.RequestOptions.formatOf(com.bumptech.glide.load.DecodeFormat)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java€ €('2ò
+7com.bumptech.glide.request.RequestOptions.frameOf(long)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java„ „(&2”
+rcom.bumptech.glide.request.RequestOptions.downsampleOf(com.bumptech.glide.load.resource.bitmap.DownsampleStrategy)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÎ Î(+2ô
+8com.bumptech.glide.request.RequestOptions.timeoutOf(int)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÚ Ú((2ü
+>com.bumptech.glide.request.RequestOptions.encodeQualityOf(int)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˝ ˝(.2¡
+`com.bumptech.glide.request.RequestOptions.encodeFormatOf(android.graphics.Bitmap.CompressFormat)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaà à(-2ò
+7com.bumptech.glide.request.RequestOptions.noAnimation()DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaì ì(*2£
+Bcom.bumptech.glide.request.RequestOptions.equals(java.lang.Object)DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaú ú(2ï
+4com.bumptech.glide.request.RequestOptions.hashCode()DECLARATIONP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java§ §(2Ø
+Pcom.bumptech.glide.request.RequestOptions?skipMemoryCacheTrueOptions@27.42:27.68DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (D2∞
+Qcom.bumptech.glide.request.RequestOptions?skipMemoryCacheFalseOptions@28.42:28.69DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (E2•
+Fcom.bumptech.glide.request.RequestOptions?fitCenterOptions@29.42:29.58DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (:2®
+Icom.bumptech.glide.request.RequestOptions?centerInsideOptions@30.42:30.61DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (=2¶
+Gcom.bumptech.glide.request.RequestOptions?centerCropOptions@31.42:31.59DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (;2¶
+Gcom.bumptech.glide.request.RequestOptions?circleCropOptions@32.42:32.59DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java *  (;2ß
+Hcom.bumptech.glide.request.RequestOptions?noTransformOptions@33.42:33.60DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java!* !(<2ß
+Hcom.bumptech.glide.request.RequestOptions?noAnimationOptions@34.42:34.60DECLARATIONN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java"* "(<2á
+-com.bumptech.glide.request.BaseRequestOptionsEXTENDN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java$ (62ë
+)com.bumptech.glide.request.RequestOptionsEXTEND_TYPE_ARGUMENTN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java7 (E⁄
+Acom.bumptech.glide.request.RequestOptions.sizeMultiplierOf(float)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java( ((/"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC6*sizeMultiplierOf2õ
+Ccom.bumptech.glide.request.BaseRequestOptions.sizeMultiplier(float)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java*  *(.2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* *(2®
+Pcom.bumptech.glide.request.RequestOptions.sizeMultiplierOf(float)!sizeMultiplierCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java*/ *(=2≠
+Pcom.bumptech.glide.request.RequestOptions.sizeMultiplierOf(float)!sizeMultiplier	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java)* )(82à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java( ((ı
+Pcom.bumptech.glide.request.RequestOptions.sizeMultiplierOf(float)!sizeMultiplier	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java)* )(8"
+typefloat"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*sizeMultiplier2]
+floatTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java)$ )()ù
+
+ocom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java2 2(2"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*diskCacheStrategyOf2…
+qcom.bumptech.glide.request.BaseRequestOptions.diskCacheStrategy(com.bumptech.glide.load.engine.DiskCacheStrategy)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java3  3(12í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java3 3(2⁄
+Åcom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)!diskCacheStrategyCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java32 3(C2ﬂ
+Åcom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)!diskCacheStrategy	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java2N 2(_2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java2 2(‚
+Åcom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)!diskCacheStrategy	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java2N 2(_"
+typeDiskCacheStrategy"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*diskCacheStrategy2à
+0com.bumptech.glide.load.engine.DiskCacheStrategyTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java2< 2(Mà	
+Qcom.bumptech.glide.request.RequestOptions.priorityOf(com.bumptech.glide.Priority)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java= =()"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*
+priorityOf2´
+Scom.bumptech.glide.request.BaseRequestOptions.priority(com.bumptech.glide.Priority)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java>  >((2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java> >(2≤
+Zcom.bumptech.glide.request.RequestOptions.priorityOf(com.bumptech.glide.Priority)!priorityCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java>) >(12∑
+Zcom.bumptech.glide.request.RequestOptions.priorityOf(com.bumptech.glide.Priority)!priority	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java=< =(D2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java= =(í
+Zcom.bumptech.glide.request.RequestOptions.priorityOf(com.bumptech.glide.Priority)!priority	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java=< =(D"
+typePriority"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*priority2s
+com.bumptech.glide.PriorityTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java=3 =(;π	
+[com.bumptech.glide.request.RequestOptions.placeholderOf(android.graphics.drawable.Drawable)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaD D(,"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*placeholderOf2µ
+]com.bumptech.glide.request.BaseRequestOptions.placeholder(android.graphics.drawable.Drawable)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaE  E(+2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaE E(2ø
+gcom.bumptech.glide.request.RequestOptions.placeholderOf(android.graphics.drawable.Drawable)!placeholderCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaE, E(72ƒ
+gcom.bumptech.glide.request.RequestOptions.placeholderOf(android.graphics.drawable.Drawable)!placeholder	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaD@ D(K2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaD D(©
+gcom.bumptech.glide.request.RequestOptions.placeholderOf(android.graphics.drawable.Drawable)!placeholder	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaD@ D(K"
+typeDrawable"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*placeholder2z
+"android.graphics.drawable.DrawableTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaD7 D(?¡
+<com.bumptech.glide.request.RequestOptions.placeholderOf(int)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaK K(,"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*placeholderOf2ñ
+>com.bumptech.glide.request.BaseRequestOptions.placeholder(int)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaL  L(+2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaL L(2¢
+Jcom.bumptech.glide.request.RequestOptions.placeholderOf(int)!placeholderIdCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaL, L(92ß
+Jcom.bumptech.glide.request.RequestOptions.placeholderOf(int)!placeholderId	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaK> K(K2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaK K(Í
+Jcom.bumptech.glide.request.RequestOptions.placeholderOf(int)!placeholderId	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaK> K(K"
+typeint"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*placeholderId2[
+intTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaK: K(=ü	
+Ucom.bumptech.glide.request.RequestOptions.errorOf(android.graphics.drawable.Drawable)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaR R(&"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*errorOf2Ø
+Wcom.bumptech.glide.request.BaseRequestOptions.error(android.graphics.drawable.Drawable)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaS  S(%2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaS S(2ª
+ccom.bumptech.glide.request.RequestOptions.errorOf(android.graphics.drawable.Drawable)!errorDrawableCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaS& S(32¿
+ccom.bumptech.glide.request.RequestOptions.errorOf(android.graphics.drawable.Drawable)!errorDrawable	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaR: R(G2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaR R(ß
+ccom.bumptech.glide.request.RequestOptions.errorOf(android.graphics.drawable.Drawable)!errorDrawable	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaR: R(G"
+typeDrawable"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*errorDrawable2z
+"android.graphics.drawable.DrawableTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaR1 R(9ó
+6com.bumptech.glide.request.RequestOptions.errorOf(int)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaY Y(&"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*errorOf2ê
+8com.bumptech.glide.request.BaseRequestOptions.error(int)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaZ  Z(%2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaZ Z(2ñ
+>com.bumptech.glide.request.RequestOptions.errorOf(int)!errorIdCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaZ& Z(-2õ
+>com.bumptech.glide.request.RequestOptions.errorOf(int)!errorId	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaY8 Y(?2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaY Y(ÿ
+>com.bumptech.glide.request.RequestOptions.errorOf(int)!errorId	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaY8 Y(?"
+typeint"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*errorId2[
+intTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaY4 Y(7Õ
+Dcom.bumptech.glide.request.RequestOptions.skipMemoryCacheOf(boolean)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java` `(0"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"	
+LOC14*skipMemoryCacheOf2ë
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javacP c(Y2û
+Fcom.bumptech.glide.request.BaseRequestOptions.skipMemoryCache(boolean)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javac: c(I2ë
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javahR h([2û
+Fcom.bumptech.glide.request.BaseRequestOptions.skipMemoryCache(boolean)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javah; h(J2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javac) c(72í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javah* h(82¨
+Tcom.bumptech.glide.request.RequestOptions.skipMemoryCacheOf(boolean)!skipMemoryCacheCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaa a(2®
+Pcom.bumptech.glide.request.RequestOptions?skipMemoryCacheTrueOptions@27.42:27.68CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javab
+ b($2®
+Pcom.bumptech.glide.request.RequestOptions?skipMemoryCacheTrueOptions@27.42:27.68CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javac c("2®
+Pcom.bumptech.glide.request.RequestOptions?skipMemoryCacheTrueOptions@27.42:27.68CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javae e('2©
+Qcom.bumptech.glide.request.RequestOptions?skipMemoryCacheFalseOptions@28.42:28.69CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javag
+ g(%2©
+Qcom.bumptech.glide.request.RequestOptions?skipMemoryCacheFalseOptions@28.42:28.69CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javah h(#2©
+Qcom.bumptech.glide.request.RequestOptions?skipMemoryCacheFalseOptions@28.42:28.69CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaj j((2±
+Tcom.bumptech.glide.request.RequestOptions.skipMemoryCacheOf(boolean)!skipMemoryCache	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java`9 `(H2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java` `(˛
+Tcom.bumptech.glide.request.RequestOptions.skipMemoryCacheOf(boolean)!skipMemoryCache	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java`9 `(H"
+typeboolean"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*skipMemoryCache2_
+booleanTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java`1 `(8˚
+
+>com.bumptech.glide.request.RequestOptions.overrideOf(int, int)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar r()"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*
+overrideOf2ò
+@com.bumptech.glide.request.BaseRequestOptions.override(int, int)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javas  s((2í
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javas s(2ú
+Dcom.bumptech.glide.request.RequestOptions.overrideOf(int, int)!widthCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javas) s(.2ù
+Ecom.bumptech.glide.request.RequestOptions.overrideOf(int, int)!heightCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javas0 s(62°
+Dcom.bumptech.glide.request.RequestOptions.overrideOf(int, int)!width	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar. r(32¢
+Ecom.bumptech.glide.request.RequestOptions.overrideOf(int, int)!height	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar9 r(?2à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar r(‹
+Dcom.bumptech.glide.request.RequestOptions.overrideOf(int, int)!width	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar. r(3"
+typeint"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*width2[
+intTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar* r(-ﬁ
+Ecom.bumptech.glide.request.RequestOptions.overrideOf(int, int)!height	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar9 r(?"
+typeint"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*height2[
+intTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javar5 r(8ß
+9com.bumptech.glide.request.RequestOptions.overrideOf(int)METHODN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java} }()"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*
+overrideOf2ñ
+>com.bumptech.glide.request.RequestOptions.overrideOf(int, int)CALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java~ ~(2ñ
+>com.bumptech.glide.request.RequestOptions.overrideOf(int)!sizeCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java~ ~(2ñ
+>com.bumptech.glide.request.RequestOptions.overrideOf(int)!sizeCALLN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java~ ~( 2õ
+>com.bumptech.glide.request.RequestOptions.overrideOf(int)!size	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java}. }(22à
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java} }(’
+>com.bumptech.glide.request.RequestOptions.overrideOf(int)!size	PARAMETERN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java}. }(2"
+typeint"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*size2[
+intTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java}* }(-õ	
+Rcom.bumptech.glide.request.RequestOptions.signatureOf(com.bumptech.glide.load.Key)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÑ Ñ(*"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*signatureOf2Æ
+Tcom.bumptech.glide.request.BaseRequestOptions.signature(com.bumptech.glide.load.Key)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÖ  Ö()2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÖ Ö(2∂
+\com.bumptech.glide.request.RequestOptions.signatureOf(com.bumptech.glide.load.Key)!signatureCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÖ* Ö(32ª
+\com.bumptech.glide.request.RequestOptions.signatureOf(com.bumptech.glide.load.Key)!signature	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÑ8 Ñ(A2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÑ Ñ(î
+\com.bumptech.glide.request.RequestOptions.signatureOf(com.bumptech.glide.load.Key)!signature	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÑ8 Ñ(A"
+typeKey"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*	signature2u
+com.bumptech.glide.load.KeyTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÑ4 Ñ(7˚
+
+>com.bumptech.glide.request.RequestOptions.fitCenterTransform()METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaã ã(1"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC7*fitCenterTransform2ì
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaç: ç(C2ì
+9com.bumptech.glide.request.BaseRequestOptions.fitCenter()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaç. ç(72î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaç ç(+2†
+Fcom.bumptech.glide.request.RequestOptions?fitCenterOptions@29.42:29.58CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaå å(2†
+Fcom.bumptech.glide.request.RequestOptions?fitCenterOptions@29.42:29.58CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaç ç(2†
+Fcom.bumptech.glide.request.RequestOptions?fitCenterOptions@29.42:29.58CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaè è(2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaã ã(ç
+Acom.bumptech.glide.request.RequestOptions.centerInsideTransform()METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javañ ñ(4"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC8*centerInsideTransform2ì
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaò@ ò(I2ñ
+<com.bumptech.glide.request.BaseRequestOptions.centerInside()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaò1 ò(=2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaò  ò(.2£
+Icom.bumptech.glide.request.RequestOptions?centerInsideOptions@30.42:30.61CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaó ó(2£
+Icom.bumptech.glide.request.RequestOptions?centerInsideOptions@30.42:30.61CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaò ò(2£
+Icom.bumptech.glide.request.RequestOptions?centerInsideOptions@30.42:30.61CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaö ö(2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javañ ñ(Å
+?com.bumptech.glide.request.RequestOptions.centerCropTransform()METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java° °(2"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC8*centerCropTransform2ì
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java£< £(E2î
+:com.bumptech.glide.request.BaseRequestOptions.centerCrop()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java£/ £(92î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java£ £(,2°
+Gcom.bumptech.glide.request.RequestOptions?centerCropOptions@31.42:31.59CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¢ ¢(2°
+Gcom.bumptech.glide.request.RequestOptions?centerCropOptions@31.42:31.59CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java£ £(2°
+Gcom.bumptech.glide.request.RequestOptions?centerCropOptions@31.42:31.59CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java• •(2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java° °(Å
+?com.bumptech.glide.request.RequestOptions.circleCropTransform()METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¨ ¨(2"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC8*circleCropTransform2ì
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÆ< Æ(E2î
+:com.bumptech.glide.request.BaseRequestOptions.circleCrop()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÆ/ Æ(92î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÆ Æ(,2°
+Gcom.bumptech.glide.request.RequestOptions?circleCropOptions@32.42:32.59CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java≠ ≠(2°
+Gcom.bumptech.glide.request.RequestOptions?circleCropOptions@32.42:32.59CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÆ Æ(2°
+Gcom.bumptech.glide.request.RequestOptions?circleCropOptions@32.42:32.59CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∞ ∞(2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¨ ¨(«
+
+zcom.bumptech.glide.request.RequestOptions.bitmapTransform(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∑ ∑(."%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*bitmapTransform2“
+xcom.bumptech.glide.request.BaseRequestOptions.transform(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∏  ∏()2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∏ ∏(2‰
+âcom.bumptech.glide.request.RequestOptions.bitmapTransform(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>)!transformationCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∏* ∏(82È
+âcom.bumptech.glide.request.RequestOptions.bitmapTransform(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>)!transformation	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∑O ∑(]2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∑ ∑(‚
+âcom.bumptech.glide.request.RequestOptions.bitmapTransform(com.bumptech.glide.load.Transformation<android.graphics.Bitmap>)!transformation	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∑O ∑(]"
+typeTransformation<Bitmap>"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*transformation2Ä
+&com.bumptech.glide.load.TransformationTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∑8 ∑(F2z
+android.graphics.BitmapTYPE_ARGUMENTP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java∑G ∑(MÅ
+<com.bumptech.glide.request.RequestOptions.noTransformation()METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaø ø(/"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC8*noTransformation2ì
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¡@ ¡(I2ó
+=com.bumptech.glide.request.BaseRequestOptions.dontTransform()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¡0 ¡(=2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¡ ¡(-2¢
+Hcom.bumptech.glide.request.RequestOptions?noTransformOptions@33.42:33.60CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¿ ¿(2¢
+Hcom.bumptech.glide.request.RequestOptions?noTransformOptions@33.42:33.60CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java¡ ¡(2¢
+Hcom.bumptech.glide.request.RequestOptions?noTransformOptions@33.42:33.60CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java√ √(2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaø ø(’
+Vcom.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ# Ã()"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*option2±
+Wcom.bumptech.glide.request.BaseRequestOptions.set(com.bumptech.glide.load.Option<Y>, Y)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÕ  Õ(#2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÕ Õ(2∑
+]com.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)!optionCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÕ$ Õ(*2∂
+\com.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)!valueCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÕ, Õ(12º
+]com.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)!option	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ= Ã(C2ª
+\com.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)!value	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃP Ã(U2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ Ã("2º
+Xcom.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T).TTYPE_PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ Ã(Ÿ
+]com.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)!option	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ= Ã(C"
+type	Option<T>"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*option2x
+com.bumptech.glide.load.OptionTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ3 Ã(92ª
+Xcom.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T).TTYPE_ARGUMENTP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ: Ã(;Ã
+\com.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T)!value	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃP Ã(U"	
+typeT"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*value2≤
+Xcom.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T).TTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃN Ã(Oø
+Xcom.bumptech.glide.request.RequestOptions.option(com.bumptech.glide.load.Option<T>, T).TTYPE_PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÃ Ã(*TÄ	
+Jcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java” ”(+"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*decodeTypeOf2¢
+Hcom.bumptech.glide.request.BaseRequestOptions.decode(java.lang.Class<?>)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‘  ‘(&2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‘ ‘(2≤
+Xcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)!resourceClassCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‘' ‘(42∑
+Xcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)!resourceClass	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java”> ”(K2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java” ”(ç
+Xcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)!resourceClass	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java”> ”(K"
+typeClass<?>"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*resourceClass2i
+java.lang.ClassTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java”5 ”(:™	
+Xcom.bumptech.glide.request.RequestOptions.formatOf(com.bumptech.glide.load.DecodeFormat)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java€ €('"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*formatOf2¥
+Zcom.bumptech.glide.request.BaseRequestOptions.format(com.bumptech.glide.load.DecodeFormat)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‹  ‹(&2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‹ ‹(2π
+_com.bumptech.glide.request.RequestOptions.formatOf(com.bumptech.glide.load.DecodeFormat)!formatCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‹' ‹(-2æ
+_com.bumptech.glide.request.RequestOptions.formatOf(com.bumptech.glide.load.DecodeFormat)!format	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java€> €(D2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java€ €(¶
+_com.bumptech.glide.request.RequestOptions.formatOf(com.bumptech.glide.load.DecodeFormat)!format	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java€> €(D"
+typeDecodeFormat"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*format2~
+$com.bumptech.glide.load.DecodeFormatTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java€1 €(=∑
+7com.bumptech.glide.request.RequestOptions.frameOf(long)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java„ „(&"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*frameOf2ì
+9com.bumptech.glide.request.BaseRequestOptions.frame(long)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‰  ‰(%2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‰ ‰(2°
+Gcom.bumptech.glide.request.RequestOptions.frameOf(long)!frameTimeMicrosCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java‰& ‰(52¶
+Gcom.bumptech.glide.request.RequestOptions.frameOf(long)!frameTimeMicros	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java„@ „(O2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java„ „(Ô
+Gcom.bumptech.glide.request.RequestOptions.frameOf(long)!frameTimeMicros	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java„@ „(O"
+typelong"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*frameTimeMicros2^
+longTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java„; „(?ö
+
+rcom.bumptech.glide.request.RequestOptions.downsampleOf(com.bumptech.glide.load.resource.bitmap.DownsampleStrategy)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÎ Î(+"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*downsampleOf2Œ
+tcom.bumptech.glide.request.BaseRequestOptions.downsample(com.bumptech.glide.load.resource.bitmap.DownsampleStrategy)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÏ  Ï(*2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÏ Ï(2’
+{com.bumptech.glide.request.RequestOptions.downsampleOf(com.bumptech.glide.load.resource.bitmap.DownsampleStrategy)!strategyCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÏ+ Ï(32⁄
+{com.bumptech.glide.request.RequestOptions.downsampleOf(com.bumptech.glide.load.resource.bitmap.DownsampleStrategy)!strategy	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÎH Î(P2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÎ Î(·
+{com.bumptech.glide.request.RequestOptions.downsampleOf(com.bumptech.glide.load.resource.bitmap.DownsampleStrategy)!strategy	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÎH Î(P"
+typeDownsampleStrategy"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*strategy2î
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÎ5 Î(G≠
+8com.bumptech.glide.request.RequestOptions.timeoutOf(int)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÚ Ú(("%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC4*	timeoutOf2î
+:com.bumptech.glide.request.BaseRequestOptions.timeout(int)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÛ  Û('2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÛ Û(2ö
+@com.bumptech.glide.request.RequestOptions.timeoutOf(int)!timeoutCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÛ( Û(/2ü
+@com.bumptech.glide.request.RequestOptions.timeoutOf(int)!timeout	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÚA Ú(H2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÚ Ú(ﬁ
+@com.bumptech.glide.request.RequestOptions.timeoutOf(int)!timeout	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÚA Ú(H"
+typeint"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*timeout2]
+intTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaÚ= Ú(@À
+>com.bumptech.glide.request.RequestOptions.encodeQualityOf(int)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˝ ˝(."%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*encodeQualityOf2ö
+@com.bumptech.glide.request.BaseRequestOptions.encodeQuality(int)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˛  ˛(-2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˛ ˛(2†
+Fcom.bumptech.glide.request.RequestOptions.encodeQualityOf(int)!qualityCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˛. ˛(52•
+Fcom.bumptech.glide.request.RequestOptions.encodeQualityOf(int)!quality	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˝Q ˝(X2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˝ ˝(‰
+Fcom.bumptech.glide.request.RequestOptions.encodeQualityOf(int)!quality	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˝Q ˝(X"
+typeint"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*quality2]
+intTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java˝M ˝(P–	
+`com.bumptech.glide.request.RequestOptions.encodeFormatOf(android.graphics.Bitmap.CompressFormat)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaà à(-"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC5*encodeFormatOf2º
+bcom.bumptech.glide.request.BaseRequestOptions.encodeFormat(android.graphics.Bitmap.CompressFormat)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaâ  â(,2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaâ â(2¡
+gcom.bumptech.glide.request.RequestOptions.encodeFormatOf(android.graphics.Bitmap.CompressFormat)!formatCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaâ- â(32∆
+gcom.bumptech.glide.request.RequestOptions.encodeFormatOf(android.graphics.Bitmap.CompressFormat)!format	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaàM à(S2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaà à(∫
+gcom.bumptech.glide.request.RequestOptions.encodeFormatOf(android.graphics.Bitmap.CompressFormat)!format	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaàM à(S"
+typeBitmap.CompressFormat"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*format2Ä
+&android.graphics.Bitmap.CompressFormatTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaà> à(Lı
+
+7com.bumptech.glide.request.RequestOptions.noAnimation()METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaì ì(*"%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC8*noAnimation2ì
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaï> ï(G2ï
+;com.bumptech.glide.request.BaseRequestOptions.dontAnimate()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaï0 ï(;2î
+:com.bumptech.glide.request.RequestOptions.RequestOptions()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaï ï(-2¢
+Hcom.bumptech.glide.request.RequestOptions?noAnimationOptions@34.42:34.60CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaî î(2¢
+Hcom.bumptech.glide.request.RequestOptions?noAnimationOptions@34.42:34.60CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaï ï(2¢
+Hcom.bumptech.glide.request.RequestOptions?noAnimationOptions@34.42:34.60CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaó ó(2ä
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaì ì(–	
+Bcom.bumptech.glide.request.RequestOptions.equals(java.lang.Object)METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaú ú("%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC3*equals2†
+Fcom.bumptech.glide.request.BaseRequestOptions.equals(java.lang.Object)CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaù0 ù(62û
+Dcom.bumptech.glide.request.RequestOptions.equals(java.lang.Object)!oCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaù ù(2û
+Dcom.bumptech.glide.request.RequestOptions.equals(java.lang.Object)!oCALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaù7 ù(82§
+Fcom.bumptech.glide.request.BaseRequestOptions.equals(java.lang.Object)OVERRIDEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaú ú(2£
+Dcom.bumptech.glide.request.RequestOptions.equals(java.lang.Object)!o	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaú ú( 2h
+booleanRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaú	 ú(Ï
+Dcom.bumptech.glide.request.RequestOptions.equals(java.lang.Object)!o	PARAMETERP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaú ú( "
+typeObject"
+isFinalfalse"%
+packagecom.bumptech.glide.request"
+isLocaltrue*o2j
+java.lang.ObjectTYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.javaú ú(∏
+4com.bumptech.glide.request.RequestOptions.hashCode()METHODP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java§ §("%
+packagecom.bumptech.glide.request"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC4*hashCode2í
+8com.bumptech.glide.request.BaseRequestOptions.hashCode()CALLP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java• •(2ñ
+8com.bumptech.glide.request.BaseRequestOptions.hashCode()OVERRIDEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java§ §(2d
+intRETURN_TYPEP
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java§	 §(‘
+Pcom.bumptech.glide.request.RequestOptions?skipMemoryCacheTrueOptions@27.42:27.68VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (D"
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*skipMemoryCacheTrueOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java ()÷
+Qcom.bumptech.glide.request.RequestOptions?skipMemoryCacheFalseOptions@28.42:28.69VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (E"
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*skipMemoryCacheFalseOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java ()¿
+Fcom.bumptech.glide.request.RequestOptions?fitCenterOptions@29.42:29.58VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (:"
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*fitCenterOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java ()∆
+Icom.bumptech.glide.request.RequestOptions?centerInsideOptions@30.42:30.61VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (="
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*centerInsideOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java ()¬
+Gcom.bumptech.glide.request.RequestOptions?centerCropOptions@31.42:31.59VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java* (;"
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*centerCropOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java ()¬
+Gcom.bumptech.glide.request.RequestOptions?circleCropOptions@32.42:32.59VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java *  (;"
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*circleCropOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java   ()ƒ
+Hcom.bumptech.glide.request.RequestOptions?noTransformOptions@33.42:33.60VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java!* !(<"
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*noTransformOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java! !()ƒ
+Hcom.bumptech.glide.request.RequestOptions?noAnimationOptions@34.42:34.60VARIABLEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java"* "(<"
+isFinalfalse"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"%
+packagecom.bumptech.glide.request*noAnimationOptions2Å
+)com.bumptech.glide.request.RequestOptionsTYPEN
+Dlibrary/src/main/java/com/bumptech/glide/request/RequestOptions.java" "()

@@ -1,0 +1,792 @@
+
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java˘
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaFILEw
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java"
+
+LOC164*uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaó.
+Bcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManagerCLASS
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java
+ 
+("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC154*EvictionManager2ñ
+Öcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java! !(2Ï
+\com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaC C('2Ë
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.getMaximumSizeBytes()DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaK K(/2Í
+Zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction()DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaS S(2Ó
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction(long)DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaW W($2Î
+[com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java] ]($2Ê
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaa a( 2‚
+Rcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?TAG@11.30:11.33DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (!2Ë
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?LOG_DEBUG@14.31:14.40DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java ((2Í
+Zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?LOG_VERBOSE@15.31:15.42DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (*2Ù
+dcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?MAXIMUM_EVICTION_SLOP@18.28:18.49DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (12Ó
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionHandler@20.24:20.39DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java ('2Ë
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?diskCache@21.38:21.47DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java& (/2Ì
+]com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?cacheDirectory@22.21:22.35DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (#2È
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?fileSystem@23.27:23.37DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (%2Ê
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (2È
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?workLooper@25.23:25.33DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (!2‰
+Tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?clock@26.22:26.27DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (2
+`com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionSlopBytes@27.21:27.38DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (&2˜
+gcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?staleEvictionThresholdMs@28.21:28.45DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (-2Ô
+_com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?maximumSizeBytes@31.15:31.31DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (2Ê
+Scom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallbackDECLARATIONÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaö ö( òt
+Öcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)CONSTRUCTOR
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java! !("=
+package2com.bumptech.glide.integration.sqljournaldiskcache*EvictionManager2ß
+java.lang.Math.min(long, long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java5 5(2§
+java.lang.Math.round(float)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java5 5(2Ô
+fcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallback.EvictionCallback()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java62 6(B2ô
+ècom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!diskCacheCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java+ +(2û
+îcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!cacheDirectoryCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java, ,((2ö
+êcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!fileSystemCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java- -( 2ó
+çcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!journalCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java. .(2ö
+êcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!workLooperCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java/ /( 2†
+ñcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!maximumSizeBytesCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java0 0(,2ï
+ãcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!clockCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java1 1(2®
+ûcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!staleEvictionThresholdMsCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java2$ 2(<2È
+`com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionSlopBytes@27.21:27.38CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java4 4(2†
+ñcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!maximumSizeBytesCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java5 5(,2û
+îcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!slopMultiplierCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java5/ 5(=2Ì
+dcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?MAXIMUM_EVICTION_SLOP@18.28:18.49CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java5@ 5(U2Á
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionHandler@20.24:20.39CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java6 6(2ö
+êcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!workLooperCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java6" 6(,2·
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?diskCache@21.38:21.47CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java+	 +(2Ê
+]com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?cacheDirectory@22.21:22.35CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java,	 ,(2‚
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?fileSystem@23.27:23.37CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java-	 -(2ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java.	 .(2‚
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?workLooper@25.23:25.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java/	 /(2Ë
+_com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?maximumSizeBytes@31.15:31.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java0	 0(2›
+Tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?clock@26.22:26.27CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java1	 1(2
+gcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?staleEvictionThresholdMs@28.21:28.45CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java2	 2(!2û
+ècom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!diskCache	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java" "(%2£
+îcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!cacheDirectory	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java# #(2ü
+êcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!fileSystem	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java$ $(2ú
+çcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!journal	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java% %(2ü
+êcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!workLooper	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java& &(2•
+ñcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!maximumSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java' '(2£
+îcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!slopMultiplier	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java( ((2≠
+ûcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!staleEvictionThresholdMs	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java) )(#2ö
+ãcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!clock	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java* *(2“
+Bcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManagerRETURN_TYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java! !(˛
+ècom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!diskCache	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java" "(%"
+typeJournaledLruDiskCache"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*	diskCache2—
+Hcom.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCacheTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java" "(ª
+îcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!cacheDirectory	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java# #("
+typeFile"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*cacheDirectory2ï
+java.io.FileTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java# #(
+Í
+êcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!fileSystem	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java$ $("
+type
+FileSystem"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*
+fileSystem2∆
+=com.bumptech.glide.integration.sqljournaldiskcache.FileSystemTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java$ $(ﬁ
+çcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!journal	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java% %("
+typeJournal"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*journal2√
+:com.bumptech.glide.integration.sqljournaldiskcache.JournalTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java% %(∫
+êcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!workLooper	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java& &("
+typeLooper"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*
+workLooper2ö
+android.os.LooperTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java& &(∑
+ñcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!maximumSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java' '("
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*maximumSizeBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java' '(
+µ
+îcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!slopMultiplier	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java( (("
+typefloat"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*slopMultiplier2é
+floatTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java( ((«
+ûcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!staleEvictionThresholdMs	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java) )(#"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*staleEvictionThresholdMs2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java) )(
+÷
+ãcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionManager(com.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache, java.io.File, com.bumptech.glide.integration.sqljournaldiskcache.FileSystem, com.bumptech.glide.integration.sqljournaldiskcache.Journal, android.os.Looper, long, float, long, com.bumptech.glide.integration.sqljournaldiskcache.Clock)!clock	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java* *("
+typeClock"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*clock2¡
+8com.bumptech.glide.integration.sqljournaldiskcache.ClockTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java* *(Û
+\com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)METHOD
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaC C('"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC6*setMaximumSizeBytes2Á
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaG G(2Ë
+_com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?maximumSizeBytes@31.15:31.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaD D(,2Ë
+_com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?maximumSizeBytes@31.15:31.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaE E(2ı
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)!newMaxSizeBytesCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaE E(&2ı
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)!newMaxSizeBytesCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaF F(2Å
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)?originalMaxBytes@68.9:68.25CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaF F(*2ı
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)!newMaxSizeBytesCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaG G(+2˙
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)!newMaxSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaC- C(<2à
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)?originalMaxBytes@68.9:68.25DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaD	 D(2î
+voidRETURN_TYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaC C(Ç
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)?originalMaxBytes@68.9:68.25VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaD	 D("
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*originalMaxBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaD D(2Ë
+_com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?maximumSizeBytes@31.15:31.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaD D(,ã
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.setMaximumSizeBytes(long)!newMaxSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaC- C(<"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*newMaxSizeBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaC( C(,û
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.getMaximumSizeBytes()METHOD
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaK K(/"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typelong"
+accessprivate"
+LOC2*getMaximumSizeBytes2Ë
+_com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?maximumSizeBytes@31.15:31.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaL L(2î
+longRETURN_TYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaK K(ç
+Zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction()METHOD
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaS S("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC2*maybeScheduleEviction2Á
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaT T(2·
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.getMaximumSizeBytes()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaT T(-2î
+voidRETURN_TYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaS S(á
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction(long)METHOD
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaW W($"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC4*maybeScheduleEviction2‰
+[com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaX X(2¯
+ocom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction(long)!maximumSizeBytesCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaX X(+2Á
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionHandler@20.24:20.39CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaY Y(2˝
+ocom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction(long)!maximumSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaW* W(:2î
+voidRETURN_TYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaW
+ W(è
+ocom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.maybeScheduleEviction(long)!maximumSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaW* W(:"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*maximumSizeBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaW% W()⁄
+[com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)METHOD
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java] ]($"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isEvictionRequired2Ÿ
+Pcom.bumptech.glide.integration.sqljournaldiskcache.Journal.getCurrentSizeBytes()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java^ ^(&2ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java^ ^(2È
+`com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionSlopBytes@27.21:27.38CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java^+ ^(<2ı
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)!maximumSizeBytesCALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java^? ^(O2˙
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)!maximumSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java]* ](:2ó
+booleanRETURN_TYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java]
+ ](å
+lcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)!maximumSizeBytes	PARAMETER
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java]* ](:"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*maximumSizeBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java]% ]()Ô|
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()METHOD
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaa a( "=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC55*evictOnWorkThread2£
+java.lang.Thread.getName()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javadO d(V2©
+ java.lang.Thread.currentThread()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javad? d(L2·
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.getMaximumSizeBytes()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaf f(/2’
+Lcom.bumptech.glide.integration.sqljournaldiskcache.Clock.currentTimeMillis()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag g(.2Ÿ
+Pcom.bumptech.glide.integration.sqljournaldiskcache.Journal.getStaleEntries(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah, h(;2‰
+[com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javak	 k(2°
+java.util.List.isEmpty()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javakB k(I2û
+java.util.List.size()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javav0 v(42°
+java.util.List.isEmpty()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaw w(!2û
+java.util.List.size()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaxE x(I2˙
+qcom.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache.delete(java.util.List<java.lang.String>)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javax, x(22‰
+[com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.isEvictionRequired(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java| |(2Ÿ
+Pcom.bumptech.glide.integration.sqljournaldiskcache.Journal.getCurrentSizeBytes()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java}" }(52ﬁ
+Ucom.bumptech.glide.integration.sqljournaldiskcache.Journal.getLeastRecentlyUsed(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~3 ~(G2û
+java.util.List.size()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java4 (82°
+java.util.List.size()CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaÄJ Ä(N2˝
+qcom.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCache.delete(java.util.List<java.lang.String>)CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaÄ, Ä(22‹
+Pcom.bumptech.glide.integration.sqljournaldiskcache.Journal.getCurrentSizeBytes()CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaî î(+2Ë
+\com.bumptech.glide.integration.sqljournaldiskcache.FileSystem.getDirectorySize(java.io.File)CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javañ ñ(+2–
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javac c(%2”
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaÑ Ñ(%2‚
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?workLooper@25.23:25.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javab" b(,2›
+Tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?clock@26.22:26.27CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag g(2
+gcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?staleEvictionThresholdMs@28.21:28.45CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag3 g(K2ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah$ h(+2¯
+ocom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleDateMs@103.9:103.20CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah< h(G2˝
+tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?maximumSizeBytes@102.9:102.25CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javak k(,2˛
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleEntriesKeys@104.17:104.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javak1 k(A2„
+Zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?LOG_VERBOSE@15.31:15.42CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javal
+ l(2€
+Rcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?TAG@11.30:11.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javam m(2·
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?LOG_DEBUG@14.31:14.40CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaq q(2€
+Rcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?TAG@11.30:11.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javar r(2˛
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleEntriesKeys@104.17:104.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javav v(/2˛
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleEntriesKeys@104.17:104.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaw	 w(2Ö
+|com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?successfullyDeletedCount@117.8:117.32CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javax x(2·
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?diskCache@21.38:21.47CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javax" x(+2˛
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleEntriesKeys@104.17:104.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javax3 x(C2˝
+tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?maximumSizeBytes@102.9:102.25CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java{ {(&2È
+`com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionSlopBytes@27.21:27.38CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java{) {(:2˝
+tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?maximumSizeBytes@102.9:102.25CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java| |(+2ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java} }(!2˜
+ncom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?targetSize@123.9:123.19CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java}: }(D2ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~+ ~(22˙
+qcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?bytesToEvict@125.11:125.23CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~H ~(T2Å
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?triedToDeleteEntries@118.8:118.28CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (2É
+zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?leastRecentlyUsedKeys@126.19:126.40CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (32à
+|com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?successfullyDeletedCount@117.8:117.32CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaÄ Ä(2‰
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?diskCache@21.38:21.47CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaÄ" Ä(+2Ü
+zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?leastRecentlyUsedKeys@126.19:126.40CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaÄ3 Ä(H2Ñ
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?triedToDeleteEntries@118.8:118.28CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaÉ É(2‰
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?LOG_DEBUG@14.31:14.40CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaá á(2ﬁ
+Rcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?TAG@11.30:11.33CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaâ
+ â(2Ñ
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?triedToDeleteEntries@118.8:118.28CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaå å($2à
+|com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?successfullyDeletedCount@117.8:117.32CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaè è((2˙
+ncom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?targetSize@123.9:123.19CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaí í(2‚
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaî î(2Â
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?fileSystem@23.27:23.37CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javañ ñ(2È
+]com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?cacheDirectory@22.21:22.35CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javañ, ñ(:2Ñ
+tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?maximumSizeBytes@102.9:102.25DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaf	 f(2ˇ
+ocom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleDateMs@103.9:103.20DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag	 g(2Ö
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleEntriesKeys@104.17:104.33DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah h(!2å
+|com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?successfullyDeletedCount@117.8:117.32DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javau u( 2à
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?triedToDeleteEntries@118.8:118.28DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javav v(2˛
+ncom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?targetSize@123.9:123.19DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java{	 {(2Å
+qcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?bytesToEvict@125.11:125.23DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java} }(2ä
+zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?leastRecentlyUsedKeys@126.19:126.40DECLARATION
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~ ~((2î
+voidRETURN_TYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaa
+ a(˜
+tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?maximumSizeBytes@102.9:102.25VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaf	 f("
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*maximumSizeBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaf f(2·
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.getMaximumSizeBytes()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaf f(/¥	
+ocom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleDateMs@103.9:103.20VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag	 g("
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*staleDateMs2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag g(2’
+Lcom.bumptech.glide.integration.sqljournaldiskcache.Clock.currentTimeMillis()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag g(.2›
+Tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?clock@26.22:26.27CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag g(2
+gcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?staleEvictionThresholdMs@28.21:28.45CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javag3 g(KÑ
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleEntriesKeys@104.17:104.33VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah h(!"
+typeList<String>"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*staleEntriesKeys2ó
+java.util.ListTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah h(2¢
+java.lang.StringTYPE_ARGUMENT
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah	 h(2Ÿ
+Pcom.bumptech.glide.integration.sqljournaldiskcache.Journal.getStaleEntries(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah, h(;2ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah$ h(+2¯
+ocom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleDateMs@103.9:103.20CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javah< h(G°
+|com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?successfullyDeletedCount@117.8:117.32VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javau u( "
+typeint"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*successfullyDeletedCount2å
+intTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javau u(ª
+xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?triedToDeleteEntries@118.8:118.28VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javav v("
+typeint"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*triedToDeleteEntries2å
+intTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javav v(2û
+java.util.List.size()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javav0 v(42˛
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?staleEntriesKeys@104.17:104.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javav v(/Û
+ncom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?targetSize@123.9:123.19VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java{	 {("
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*
+targetSize2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java{ {(2˝
+tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?maximumSizeBytes@102.9:102.25CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java{ {(&2È
+`com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionSlopBytes@27.21:27.38CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java{) {(:ƒ	
+qcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?bytesToEvict@125.11:125.23VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java} }("
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*bytesToEvict2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java} }(
+2Ÿ
+Pcom.bumptech.glide.integration.sqljournaldiskcache.Journal.getCurrentSizeBytes()CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java}" }(52ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java} }(!2˜
+ncom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?targetSize@123.9:123.19CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java}: }(Dï
+zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?leastRecentlyUsedKeys@126.19:126.40VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~ ~(("
+typeList<String>"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*leastRecentlyUsedKeys2ó
+java.util.ListTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~ ~(
+2¢
+java.lang.StringTYPE_ARGUMENT
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~ ~(2ﬁ
+Ucom.bumptech.glide.integration.sqljournaldiskcache.Journal.getLeastRecentlyUsed(long)CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~3 ~(G2ﬂ
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~+ ~(22˙
+qcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()?bytesToEvict@125.11:125.23CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java~H ~(Tî
+Rcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?TAG@11.30:11.33VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (!"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*TAG2ô
+java.lang.StringTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (ˆ
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?LOG_DEBUG@14.31:14.40VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (("
+isFinaltrue"
+typeboolean"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*	LOG_DEBUG2ê
+booleanTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (2€
+Rcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?TAG@11.30:11.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java: (=˙
+Zcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?LOG_VERBOSE@15.31:15.42VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (*"
+isFinaltrue"
+typeboolean"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*LOG_VERBOSE2ê
+booleanTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (2€
+Rcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?TAG@11.30:11.33CALL
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java< (?™
+dcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?MAXIMUM_EVICTION_SLOP@18.28:18.49VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (1"
+isFinaltrue"
+typelong"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*MAXIMUM_EVICTION_SLOP2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (∞
+^com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionHandler@20.24:20.39VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java ('"
+isFinaltrue"
+typeHandler"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*evictionHandler2õ
+android.os.HandlerTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (Ë
+Xcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?diskCache@21.38:21.47VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java& (/"
+isFinaltrue"
+typeJournaledLruDiskCache"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*	diskCache2—
+Hcom.bumptech.glide.integration.sqljournaldiskcache.JournaledLruDiskCacheTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (%•
+]com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?cacheDirectory@22.21:22.35VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (#"
+isFinaltrue"
+typeFile"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*cacheDirectory2ï
+java.io.FileTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (‘
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?fileSystem@23.27:23.37VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (%"
+isFinaltrue"
+type
+FileSystem"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*
+fileSystem2∆
+=com.bumptech.glide.integration.sqljournaldiskcache.FileSystemTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (»
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?journal@24.24:24.31VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java ("
+isFinaltrue"
+typeJournal"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*journal2√
+:com.bumptech.glide.integration.sqljournaldiskcache.JournalTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (§
+Ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?workLooper@25.23:25.33VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (!"
+isFinaltrue"
+typeLooper"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*
+workLooper2ö
+android.os.LooperTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (¿
+Tcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?clock@26.22:26.27VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java ("
+isFinaltrue"
+typeClock"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*clock2¡
+8com.bumptech.glide.integration.sqljournaldiskcache.ClockTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (£
+`com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?evictionSlopBytes@27.21:27.38VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (&"
+isFinaltrue"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*evictionSlopBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (±
+gcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?staleEvictionThresholdMs@28.21:28.45VALUE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (-"
+isFinaltrue"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*staleEvictionThresholdMs2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java (•
+_com.bumptech.glide.integration.sqljournaldiskcache.EvictionManager?maximumSizeBytes@31.15:31.31VARIABLE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java ("
+isFinalfalse"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*maximumSizeBytes2ç
+longTYPE
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java
+ (¡
+Scom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallbackCLASSÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaö ö( "=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"
+accessprivate"
+LOC9*EvictionCallback2à
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallback.handleMessage(android.os.Message)DECLARATIONÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaú ú( 2©
+android.os.Handler.CallbackEXTENDÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaö4 ö(<œ
+
+ucom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallback.handleMessage(android.os.Message)METHODÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaú ú( "=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC7*handleMessage2‚
+Vcom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.evictOnWorkThread()CALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.java† †(2Ö
+ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallback.handleMessage(android.os.Message)!msgCALLÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaù
+ ù(2ä
+ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallback.handleMessage(android.os.Message)!msg	PARAMETERÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaú) ú(,2ö
+booleanRETURN_TYPEÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaú ú(£
+ycom.bumptech.glide.integration.sqljournaldiskcache.EvictionManager.EvictionCallback.handleMessage(android.os.Message)!msg	PARAMETERÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaú) ú(,"
+typeMessage"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*msg2û
+android.os.MessageTYPEÅ
+uintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/EvictionManager.javaú! ú((

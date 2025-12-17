@@ -1,0 +1,1060 @@
+
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÚ
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaFILEJ
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java"
+
+LOC504*Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java≤
+com.bumptech.glide.CachingTestCLASSR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java9 9("
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC448*CachingTest2â
+&com.bumptech.glide.CachingTest.setUp()DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaE E(2œ
+lcom.bumptech.glide.CachingTest.submit_withDisabledMemoryCache_andResourceInActiveResources_loadsFromMemory()DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaM M(Y2Ω
+Zcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java` `(G2Ã
+gcom.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaò ò(T2◊
+rcom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_completesFromMemoryCache()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaø ø(_2”
+ncom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaﬁ ﬁ([2Æ
+Icom.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˝ ˝(62Õ
+hcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaµ µ(U2“
+mcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÀ À(Z2«
+bcom.bumptech.glide.CachingTest.loadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaı ı(O2…
+dcom.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaû û(Q2 
+ecom.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java… …(R2¢
+=com.bumptech.glide.CachingTest.clearMemoryCacheOnMainThread()DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ Ô(+2ü
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java: :(,2û
+;com.bumptech.glide.CachingTest?CACHE_SIZE_BYTES@60.28:60.44DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java< <(,2õ
+8com.bumptech.glide.CachingTest?tearDownGlide@62.29:62.42DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java> >(*2ù
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java?* ?(92ô
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java@" @(-2ï
+2com.bumptech.glide.CachingTest?context@66.18:66.25DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaB B(‡
+&com.bumptech.glide.CachingTest.setUp()METHODR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaE E("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*setUp2≥
+Wcom.bumptech.glide.Glide.init(android.content.Context, com.bumptech.glide.GlideBuilder)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaI
+ I(2º
+`com.bumptech.glide.GlideBuilder.setMemoryCache(com.bumptech.glide.load.engine.cache.MemoryCache)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaI+ I(92ä
+.com.bumptech.glide.GlideBuilder.GlideBuilder()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaI I((2®
+Lcom.bumptech.glide.load.engine.cache.LruResourceCache.LruResourceCache(long)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaI> I(N2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaG G(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaI I(2ó
+;com.bumptech.glide.CachingTest?CACHE_SIZE_BYTES@60.28:60.44CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaIO I(_2g
+voidRETURN_TYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaE	 E(±
+lcom.bumptech.glide.CachingTest.submit_withDisabledMemoryCache_andResourceInActiveResources_loadsFromMemory()METHODR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaM M(Y"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC17*Ksubmit_withDisabledMemoryCache_andResourceInActiveResources_loadsFromMemory2≥
+Wcom.bumptech.glide.Glide.init(android.content.Context, com.bumptech.glide.GlideBuilder)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaN
+ N(2º
+`com.bumptech.glide.GlideBuilder.setMemoryCache(com.bumptech.glide.load.engine.cache.MemoryCache)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaN+ N(92≠
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaQ Q(2ä
+.com.bumptech.glide.GlideBuilder.GlideBuilder()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaN N((2®
+Lcom.bumptech.glide.load.engine.cache.MemoryCacheAdapter.MemoryCacheAdapter()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaN> N(P2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaN N(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaP1 P(82í
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaQ Q(2⁄
+~com.bumptech.glide.CachingTest.submit_withDisabledMemoryCache_andResourceInActiveResources_loadsFromMemory()?first@80.27:80.32CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaQ Q(2í
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaS S(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaT T(2ñ
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaTH T(W2ñ
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaV V(2·
+~com.bumptech.glide.CachingTest.submit_withDisabledMemoryCache_andResourceInActiveResources_loadsFromMemory()?first@80.27:80.32DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaP P( 2g
+voidRETURN_TYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaM	 M(Ë
+~com.bumptech.glide.CachingTest.submit_withDisabledMemoryCache_andResourceInActiveResources_loadsFromMemory()?first@80.27:80.32VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaP P( "
+typeFutureTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*first2É
+'com.bumptech.glide.request.FutureTargetTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaP P(2á
+"android.graphics.drawable.DrawableTYPE_ARGUMENTR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaP P(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaP1 P(8Œ0
+Zcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()METHODR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java` `(G"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC54*9submit_withRequestClearedFromMemory_doesNotLoadFromMemory2≥
+Wcom.bumptech.glide.Glide.init(android.content.Context, com.bumptech.glide.GlideBuilder)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaa
+ a(2º
+`com.bumptech.glide.GlideBuilder.setMemoryCache(com.bumptech.glide.load.engine.cache.MemoryCache)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaa+ a(92Ø
+Scom.bumptech.glide.testutil.ConcurrencyHelper.loadOnOtherThread(java.lang.Runnable)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javad d(!2≠
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javai i(2r
+java.lang.Runtime.gc()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javar r(2z
+java.lang.Runtime.getRuntime()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javar r(2ö
+>com.bumptech.glide.testutil.ConcurrencyHelper.pokeMainThread()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javas s( 2ä
+.com.bumptech.glide.GlideBuilder.GlideBuilder()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaa a((2®
+Lcom.bumptech.glide.load.engine.cache.MemoryCacheAdapter.MemoryCacheAdapter()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaa> a(P2⁄
+~com.bumptech.glide.CachingTest.Anonymous-0f17effc-7956-436f-881d-996c7e7184c7.Anonymous-0f17effc-7956-436f-881d-996c7e7184c7()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javae e(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaa a(2í
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javad d(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javah9 h(@2í
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javai i(2√
+gcom.bumptech.glide.CachingTest.Anonymous-0afc1c82-ed76-4649-b8d0-74e61a42a92c.run()?first@104.35:104.40CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javai i(!2∆
+jcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?j@113.13:113.14CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaq q(2∆
+jcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?j@113.13:113.14CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaq q(2í
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javas s(2í
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javay y(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaz z(%2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java (2À
+ocom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?target@120.25:120.31CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java% (+2◊
+ycom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?isWeakRefCleared@112.12:112.28CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÇ Ç(2◊
+ycom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?isWeakRefCleared@112.12:112.28CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaá	 á(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaã ã(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaå å(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaåH å(W2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaé é(2 
+gcom.bumptech.glide.CachingTest.Anonymous-6a407f2b-1e6b-4cad-a8c0-68064bbc4dd7.run()?first@104.35:104.40DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javah# h((2‹
+ycom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?isWeakRefCleared@112.12:112.28DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javap p(2Õ
+jcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?j@113.13:113.14DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaq q(2“
+ocom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?target@120.25:120.31DECLARATIONR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javax x(2œ
+jcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?e@128.32:128.33DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÄ  Ä(!2g
+voidRETURN_TYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java`	 `(—
+gcom.bumptech.glide.CachingTest.Anonymous-4828f8e4-fc73-4e7b-b73a-50632cba6df0.run()?first@104.35:104.40VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javah# h(("
+typeFutureTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*first2É
+'com.bumptech.glide.request.FutureTargetTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javah h(2á
+"android.graphics.drawable.DrawableTYPE_ARGUMENTR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javah h(!2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javah9 h(@£
+ycom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?isWeakRefCleared@112.12:112.28VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javap p("
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isWeakRefCleared2c
+booleanTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javap p(˝
+jcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?j@113.13:113.14VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaq q("
+typeint"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*j2_
+intTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaq	 q(Í
+ocom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?target@120.25:120.31VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javax x("
+typeTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2Ñ
+(com.bumptech.glide.request.target.TargetTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javax x(2á
+"android.graphics.drawable.DrawableTYPE_ARGUMENTR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javax x(2í
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javay y(2é
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaz z(%•
+jcom.bumptech.glide.CachingTest.submit_withRequestClearedFromMemory_doesNotLoadFromMemory()?e@128.32:128.33VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÄ  Ä(!"
+typeRuntimeException"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*e2x
+java.lang.RuntimeExceptionTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÄ Ä(ô*
+gcom.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaò ò(T"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC37*Fsubmit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache2Ø
+Qcom.bumptech.glide.load.engine.executor.MockGlideExecutor.newMainThreadExecutor()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaú9 ú(N2µ
+Wcom.bumptech.glide.Glide.init(android.content.Context, com.bumptech.glide.GlideBuilder)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaù
+ ù(2…
+kcom.bumptech.glide.GlideBuilder.setAnimationExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¢ ¢(!2…
+kcom.bumptech.glide.GlideBuilder.setDiskCacheExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java° °(!2∆
+hcom.bumptech.glide.GlideBuilder.setSourceExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java† †(2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java© ©(2õ
+=com.bumptech.glide.CachingTest.clearMemoryCacheOnMainThread()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¨ ¨( 2å
+.com.bumptech.glide.GlideBuilder.GlideBuilder()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaü ü(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaû û(2Á
+àcom.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?mainThreadExecutor@156.18:156.36CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java† †(12Á
+àcom.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?mainThreadExecutor@156.18:156.36CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java°" °(42Á
+àcom.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?mainThreadExecutor@156.18:156.36CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¢" ¢(42ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java• •(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java® ®(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java®' ®(82î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java© ©(2⁄
+|com.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?future@164.27:164.33CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java© ©(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java™ ™(2⁄
+|com.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?future@164.27:164.33CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java™! ™('2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÆ Æ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaØ Ø(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java≤ ≤(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java≥ ≥(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java≥' ≥(82ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaµ µ(2Ó
+àcom.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?mainThreadExecutor@156.18:156.36DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaú ú($2·
+|com.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?future@164.27:164.33DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java§ §(!2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaò	 ò(†
+àcom.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?mainThreadExecutor@156.18:156.36VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaú ú($"
+typeGlideExecutor"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*mainThreadExecutor2ì
+5com.bumptech.glide.load.engine.executor.GlideExecutorTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaú ú(2Ø
+Qcom.bumptech.glide.load.engine.executor.MockGlideExecutor.newMainThreadExecutor()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaú9 ú(N©
+|com.bumptech.glide.CachingTest.submit_withPreviousRequestClearedFromMemory_completesFromDataDiskCache()?future@164.27:164.33VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java§ §(!"
+typeFutureTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*future2Ö
+'com.bumptech.glide.request.FutureTargetTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java§ §(2â
+"android.graphics.drawable.DrawableTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java§ §(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java• •(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java® ®(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java®' ®(8º
+rcom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_completesFromMemoryCache()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaø ø(_"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC29*Qsubmit_withPreviousButNoLongerReferencedIdenticalRequest_completesFromMemoryCache2t
+java.lang.Runtime.gc()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java   (2|
+java.lang.Runtime.getRuntime()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java   (2ú
+>com.bumptech.glide.testutil.ConcurrencyHelper.pokeMainThread()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÀ À(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¬ ¬(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java√ √(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∆ ∆(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∆' ∆(82î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÀ À(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÕ Õ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaŒ Œ(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java— —(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java“ “(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java“' “(82ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java‘ ‘(2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaø	 ø(¸#
+ncom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaﬁ ﬁ(["
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC29*Msubmit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap2t
+java.lang.Runtime.gc()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÎ Î(2|
+java.lang.Runtime.getRuntime()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÎ Î(2ú
+>com.bumptech.glide.testutil.ConcurrencyHelper.pokeMainThread()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÏ Ï(2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÙ Ù(2≤
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaı ı(2î
+6com.bumptech.glide.Glide.with(android.content.Context)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaı
+ ı(2õ
+=com.bumptech.glide.CachingTest.clearMemoryCacheOnMainThread()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˜ ˜( 2ó
+9com.bumptech.glide.testutil.BitmapSubject.isNotRecycled()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˘ ˘($2´
+Mcom.bumptech.glide.testutil.BitmapSubject.assertThat(android.graphics.Bitmap)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˘ ˘(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java‚ ‚(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java„ „(!2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÁ Á()2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÁ+ Á(<2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÏ Ï(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ Ô(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÛ Û(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÛ' Û(82î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÙ Ù(2‚
+Écom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()?future@238.25:238.31CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÙ Ù(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaı ı(2‚
+Écom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()?future@238.25:238.31CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaı ı($2‚
+Écom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()?bitmap@225.11:225.17CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˘ ˘(2È
+Écom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()?bitmap@225.11:225.17DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·(2È
+Écom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()?future@238.25:238.31DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÓ Ó(2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaﬁ	 ﬁ(õ
+Écom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()?bitmap@225.11:225.17VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·("
+typeBitmap"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*bitmap2u
+android.graphics.BitmapTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·(
+2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java‚ ‚(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java„ „(!2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÁ Á()2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÁ+ Á(<£
+Écom.bumptech.glide.CachingTest.submit_withPreviousButNoLongerReferencedIdenticalRequest_doesNotRecycleBitmap()?future@238.25:238.31VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÓ Ó("
+typeFutureTarget<Bitmap>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*future2Ö
+'com.bumptech.glide.request.FutureTargetTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÓ Ó(2~
+android.graphics.BitmapTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÓ Ó(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ Ô(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÛ Û(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÛ' Û(8û6
+Icom.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˝ ˝(6"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC53*(clearDiskCache_doesNotPreventFutureLoads2Ø
+Qcom.bumptech.glide.load.engine.executor.MockGlideExecutor.newMainThreadExecutor()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÅ9 Å(N2µ
+Wcom.bumptech.glide.Glide.init(android.content.Context, com.bumptech.glide.GlideBuilder)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÇ
+ Ç(2…
+kcom.bumptech.glide.GlideBuilder.setAnimationExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaá á(!2…
+kcom.bumptech.glide.GlideBuilder.setDiskCacheExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÜ Ü(!2∆
+hcom.bumptech.glide.GlideBuilder.setSourceExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÖ Ö(2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaè è(2õ
+=com.bumptech.glide.CachingTest.clearMemoryCacheOnMainThread()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaí í( 2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaõ õ(2õ
+=com.bumptech.glide.CachingTest.clearMemoryCacheOnMainThread()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaû û( 2å
+.com.bumptech.glide.GlideBuilder.GlideBuilder()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÑ Ñ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÉ É(2»
+jcom.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?mainThreadExecutor@257.18:257.36CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÖ Ö(12»
+jcom.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?mainThreadExecutor@257.18:257.36CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÜ" Ü(42»
+jcom.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?mainThreadExecutor@257.18:257.36CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaá" á(42ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaã ã(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaé é(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaé' é(82î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaè è(2º
+^com.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?future@266.27:266.33CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaè è(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaë ë(2º
+^com.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?future@266.27:266.33CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaë! ë('2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaì ì(2º
+^com.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?future@266.27:266.33CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javañ ñ(
+2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaó ó(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaö ö(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaö' ö(82î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaõ õ(2º
+^com.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?future@266.27:266.33CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaõ õ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaù ù(2º
+^com.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?future@266.27:266.33CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaù! ù('2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java° °(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¢ ¢(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java§ §(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¶ ¶(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¶' ¶(82ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java™ ™(2œ
+jcom.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?mainThreadExecutor@257.18:257.36DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÅ Å($2√
+^com.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?future@266.27:266.33DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaä ä(!2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˝	 ˝(Å
+jcom.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?mainThreadExecutor@257.18:257.36VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÅ Å($"
+typeGlideExecutor"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*mainThreadExecutor2ì
+5com.bumptech.glide.load.engine.executor.GlideExecutorTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÅ Å(2Ø
+Qcom.bumptech.glide.load.engine.executor.MockGlideExecutor.newMainThreadExecutor()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÅ9 Å(Nã
+^com.bumptech.glide.CachingTest.clearDiskCache_doesNotPreventFutureLoads()?future@266.27:266.33VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaä ä(!"
+typeFutureTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*future2Ö
+'com.bumptech.glide.request.FutureTargetTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaä ä(2â
+"android.graphics.drawable.DrawableTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaä ä(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaã ã(2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaé é(%2ö
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaé' é(8’!
+hcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaµ µ(U"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC19*GonlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock2ì
+5com.bumptech.glide.testutil.WaitModelLoader.waitOn(T)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∂9 ∂(?2¢
+Djava.util.concurrent.Future.get(long, java.util.concurrent.TimeUnit)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaΩ Ω(2ü
+Acom.bumptech.glide.testutil.WaitModelLoader.WaitModel.countDown()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaƒ ƒ(2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∆! ∆($2û
+@java.lang.RuntimeException.RuntimeException(java.lang.Throwable)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¿ ¿( 2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏@ ∏(G2ﬂ
+Äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?waitModel@310.29:310.38CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏N ∏(W2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaª ª(2ﬂ
+Äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?waitModel@310.29:310.38CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaª$ ª(-2È
+äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?onlyFromCacheFuture@314.27:314.46CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaΩ Ω(2÷
+xcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?e@319.53:319.54CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¿! ¿("2ﬂ
+Äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?waitModel@310.29:310.38CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaƒ ƒ(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∆ ∆( 2Í
+ãcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?loadFromSourceFuture@312.27:312.47CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∆% ∆(92Ê
+Äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?waitModel@310.29:310.38DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∂ ∂(&2Ò
+ãcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?loadFromSourceFuture@312.27:312.47DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏ ∏(/2
+äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?onlyFromCacheFuture@314.27:314.46DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∫ ∫(.2›
+xcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?e@319.53:319.54DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaø5 ø(62›
+xcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?e@321.32:321.33DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¡  ¡(!2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaµ	 µ(Ó
+Äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?waitModel@310.29:310.38VALUET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∂ ∂(&"
+typeWaitModel<Integer>"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*	waitModel2ì
+5com.bumptech.glide.testutil.WaitModelLoader.WaitModelTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∂
+ ∂(2x
+java.lang.IntegerTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∂ ∂(2ì
+5com.bumptech.glide.testutil.WaitModelLoader.waitOn(T)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∂9 ∂(?Ô
+ãcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?loadFromSourceFuture@312.27:312.47VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏ ∏(/"
+typeFutureTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*loadFromSourceFuture2Ö
+'com.bumptech.glide.request.FutureTargetTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏ ∏(2â
+"android.graphics.drawable.DrawableTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏ ∏(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏@ ∏(G2ﬂ
+Äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?waitModel@310.29:310.38CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏N ∏(WÌ
+äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?onlyFromCacheFuture@314.27:314.46VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∫ ∫(."
+typeFutureTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*onlyFromCacheFuture2Ö
+'com.bumptech.glide.request.FutureTargetTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∫ ∫(2â
+"android.graphics.drawable.DrawableTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∫ ∫(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaª ª(2ﬂ
+Äcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?waitModel@310.29:310.38CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaª$ ª(-˜
+xcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?e@319.53:319.54VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaø5 ø(6"/
+type'InterruptedException | TimeoutException"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*e2§
+Fjava.lang.InterruptedException | java.util.concurrent.TimeoutExceptionTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaø ø(4√
+xcom.bumptech.glide.CachingTest.onlyRetrieveFromCache_withPreviousRequestLoadingFromSource_doesNotBlock()?e@321.32:321.33VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¡  ¡(!"
+typeExecutionException"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*e2Ö
+'java.util.concurrent.ExecutionExceptionTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¡ ¡(ó"
+mcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÀ À(Z"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC40*Lsubmit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail2â
++java.util.concurrent.CountDownLatch.await()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java’" ’('2ç
+/java.util.concurrent.CountDownLatch.countDown()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÂ Â(2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaË! Ë($2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.get(java.util.concurrent.Future<T>)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ Ô(2ï
+7java.util.concurrent.CountDownLatch.CountDownLatch(int)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaŒ/ Œ(=2‹
+~com.bumptech.glide.CachingTest.Anonymous-e5bcd17f-6f74-4986-ab6d-a8926286a117.Anonymous-e5bcd17f-6f74-4986-ab6d-a8926286a117()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java— —(2û
+@java.lang.RuntimeException.RuntimeException(java.lang.Throwable)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java◊ ◊(,2Í
+ãcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?blockMainThread@334.25:334.40CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java’ ’(!2¡
+ccom.bumptech.glide.CachingTest.Anonymous-6dbdf8c0-2610-4dde-9622-4715a3c37118.run()?e@342.46:342.47CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java◊- ◊(.2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaﬁ ﬁ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java‚ ‚(2Í
+ãcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?blockMainThread@334.25:334.40CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÂ Â(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaË Ë( 2È
+äcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?expectedFuture@353.27:353.41CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaË% Ë(32î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ Ô(2Ï
+çcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?firstQueuedFuture@349.27:349.44CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ Ô(-2Ò
+ãcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?blockMainThread@334.25:334.40DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaŒ Œ((2Û
+çcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?firstQueuedFuture@349.27:349.44DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java› ›(,2
+äcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?expectedFuture@353.27:353.41DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·()2»
+ccom.bumptech.glide.CachingTest.Anonymous-a5f9d8e3-6a66-444c-88a7-3e278c8d8fa9.run()?e@342.46:342.47DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java÷. ÷(/2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÀ	 À(Ò
+ãcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?blockMainThread@334.25:334.40VALUET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaŒ Œ(("
+typeCountDownLatch"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*blockMainThread2Å
+#java.util.concurrent.CountDownLatchTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaŒ
+ Œ(2ï
+7java.util.concurrent.CountDownLatch.CountDownLatch(int)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaŒ/ Œ(=ı
+çcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?firstQueuedFuture@349.27:349.44VALUET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java› ›(,"
+typeFuture<Drawable>"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*firstQueuedFuture2y
+java.util.concurrent.FutureTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java›
+ ›(2â
+"android.graphics.drawable.DrawableTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java› ›(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaﬁ ﬁ(Ü
+äcom.bumptech.glide.CachingTest.submit_withRequestLoadingWithOnlyRetrieveFromCache_andNotInCache_doesNotFail()?expectedFuture@353.27:353.41VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·()"
+typeFutureTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*expectedFuture2Ö
+'com.bumptech.glide.request.FutureTargetTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·(2â
+"android.graphics.drawable.DrawableTYPE_ARGUMENTT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java‚ ‚(¶
+ccom.bumptech.glide.CachingTest.Anonymous-6dc3b1bd-e8c0-4572-b8cf-bb27a94c783d.run()?e@342.46:342.47VARIABLET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java÷. ÷(/"
+typeInterruptedException"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*e2|
+java.lang.InterruptedExceptionTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java÷ ÷(-À
+bcom.bumptech.glide.CachingTest.loadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaı ı(O"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC39*AloadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.runOnMainThread(java.lang.Runnable)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaà à(2‹
+~com.bumptech.glide.CachingTest.Anonymous-d7fb7865-8d6b-4cfd-bf80-3aa8ada77d99.Anonymous-d7fb7865-8d6b-4cfd-bf80-3aa8ada77d99()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaâ â(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaˆ. ˆ(52ÿ
+zcom.bumptech.glide.CachingTest.loadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent()?imageView@374.20:374.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˜ ˜(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˘ ˘(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˙ ˙(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¸ ¸(%2ÿ
+zcom.bumptech.glide.CachingTest.loadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent()?imageView@374.20:374.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java˛ ˛(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÇ Ç(+2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaà à(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaå å(!2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaé é()2ÿ
+zcom.bumptech.glide.CachingTest.loadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent()?imageView@374.20:374.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaê ê(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaî î(2ﬂ
+zcom.bumptech.glide.CachingTest.loadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent()?imageView@374.20:374.29DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaˆ ˆ(2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaı	 ı(√
+zcom.bumptech.glide.CachingTest.loadIntoView_withoutSkipMemoryCache_loadsFromMemoryCacheIfPresent()?imageView@374.20:374.29VALUET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaˆ ˆ("
+type	ImageView"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*	imageView2v
+android.widget.ImageViewTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaˆ
+ ˆ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaˆ. ˆ(5◊
+dcom.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaû û(Q"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC41*CloadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.runOnMainThread(java.lang.Runnable)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java≤ ≤(2‹
+~com.bumptech.glide.CachingTest.Anonymous-ee0a08f6-a0c4-45dc-8995-79993a93db69.Anonymous-ee0a08f6-a0c4-45dc-8995-79993a93db69()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java≥ ≥(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaü. ü(52⁄
+|com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent()?imageView@415.20:415.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java† †(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¢ ¢(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java£ £(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java• •(%2⁄
+|com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent()?imageView@415.20:415.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java® ®(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java¨ ¨(+2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java≤ ≤(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∂ ∂(!2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java∏ ∏()2⁄
+|com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent()?imageView@415.20:415.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaª ª(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaø ø(2·
+|com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent()?imageView@415.20:415.29DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaü ü(2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaû	 û(≈
+|com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCacheFalse_loadsFromMemoryCacheIfPresent()?imageView@415.20:415.29VALUET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaü ü("
+type	ImageView"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*	imageView2v
+android.widget.ImageViewTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaü
+ ü(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaü. ü(5Ã
+ecom.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java… …(R"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC37*DloadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java .  (52€
+}com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent()?imageView@458.20:458.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÀ À(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÕ Õ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaŒ Œ(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java– –(%2€
+}com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent()?imageView@458.20:458.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java” ”(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java◊ ◊(+2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaﬁ ﬁ(2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaﬂ ﬂ(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java· ·(%2€
+}com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent()?imageView@458.20:458.29CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java‰ ‰(2ò
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÊ Ê(2‚
+}com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent()?imageView@458.20:458.29DECLARATIONT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java   (2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java…	 …(∆
+}com.bumptech.glide.CachingTest.loadIntoView_withSkipMemoryCache_doesNotLoadFromMemoryCacheIfPresent()?imageView@458.20:458.29VALUET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java   ("
+type	ImageView"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*	imageView2v
+android.widget.ImageViewTYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java 
+  (2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java .  (5Ç
+=com.bumptech.glide.CachingTest.clearMemoryCacheOnMainThread()METHODT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ Ô(+"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC8*clearMemoryCacheOnMainThread2Ø
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.runOnMainThread(java.lang.Runnable)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java (2Ñ
+&com.bumptech.glide.Glide.clearMemory()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÙ Ù(*2ì
+5com.bumptech.glide.Glide.get(android.content.Context)CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÙ Ù(2‹
+~com.bumptech.glide.CachingTest.Anonymous-1ff7acc6-6999-4883-91ff-062dbc0cfab9.Anonymous-1ff7acc6-6999-4883-91ff-062dbc0cfab9()CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÒ Ò(2î
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java (2ê
+2com.bumptech.glide.CachingTest?context@66.18:66.25CALLT
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÙ Ù(2i
+voidRETURN_TYPET
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaÔ
+ Ô(Å
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44VALUER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java: :(,"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*IMAGE_SIZE_PIXELS2_
+intTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java: :(∑
+;com.bumptech.glide.CachingTest?CACHE_SIZE_BYTES@60.28:60.44VALUER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java< <(,"
+isFinaltrue"
+typelong"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*CACHE_SIZE_BYTES2`
+longTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java< <(2ò
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java</ <(@2ò
+<com.bumptech.glide.CachingTest?IMAGE_SIZE_PIXELS@58.27:58.44CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java<C <(T∆
+8com.bumptech.glide.CachingTest?tearDownGlide@62.29:62.42VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java> >(*"
+isFinalfalse"
+typeTearDownGlide"
+isStaticfalse"
+accesspublic"
+isLocalfalse"
+packagecom.bumptech.glide*tearDownGlide2Ö
+)com.bumptech.glide.testutil.TearDownGlideTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java> >(2ï
+9com.bumptech.glide.testutil.TearDownGlide.TearDownGlide()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java>1 >(> 
+:com.bumptech.glide.CachingTest?requestListener@63.42:63.57VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java?* ?(9"
+isFinalfalse"!
+typeRequestListener<Drawable>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*requestListener2Ü
+*com.bumptech.glide.request.RequestListenerTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java? ?(2á
+"android.graphics.drawable.DrawableTYPE_ARGUMENTR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java?  ?((œ
+6com.bumptech.glide.CachingTest?concurrency@64.34:64.45VALUER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java@" @(-"
+isFinaltrue"
+typeConcurrencyHelper"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*concurrency2â
+-com.bumptech.glide.testutil.ConcurrencyHelperTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java@ @(!2ù
+Acom.bumptech.glide.testutil.ConcurrencyHelper.ConcurrencyHelper()CALLR
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.java@4 @(Eä
+2com.bumptech.glide.CachingTest?context@66.18:66.25VARIABLER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaB B("
+isFinalfalse"
+typeContext"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*context2s
+android.content.ContextTYPER
+Hinstrumentation/src/androidTest/java/com/bumptech/glide/CachingTest.javaB
+ B(

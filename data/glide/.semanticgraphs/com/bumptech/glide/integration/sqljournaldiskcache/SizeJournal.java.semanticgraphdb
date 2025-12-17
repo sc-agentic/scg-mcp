@@ -1,0 +1,602 @@
+
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaÌ
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaFILEs
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java"
+
+LOC136*qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaØ$
+>com.bumptech.glide.integration.sqljournaldiskcache.SizeJournalCLASS{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java ("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC121*SizeJournal2ù
+êcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java1 1(2—
+Ecom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java6 6(2ﬂ
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaF F(2ﬁ
+Rcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.getCacheSizeBytes()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaL L(2„
+Wcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaP  P(62º
+Øcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaX X(2 
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java] ](!2 
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaa a(!2Ï
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (32˚
+ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX@24.27:24.63DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (?2Í
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (12Á
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CACHE_SIZE_QUERY@27.30:27.46DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (.2€
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (2Í
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java$ (72Á
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java4 (D2ﬂ
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java/" /(*2Ë
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerDECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javao o(+Ô
+êcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)CONSTRUCTOR{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java1 1("=
+package2com.bumptech.glide.integration.sqljournaldiskcache*SizeJournal2ä
+Ñcom.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.SqliteStatementPool(android.database.sqlite.SQLiteOpenHelper)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java3 3(12ü
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelperCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java2 2(2„
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java3 3(2ü
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelperCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java32 3(:2ÿ
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java2	 2(2§
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelper	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java1  1((2 
+>com.bumptech.glide.integration.sqljournaldiskcache.SizeJournalRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java1 1(˜
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelper	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java1  1(("
+typeDiskCacheDbHelper"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*dbHelper2…
+Dcom.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelperTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java1 1(—#
+Ecom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java6 6("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC14*open2µ
+0java.util.concurrent.atomic.AtomicLong.set(long)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaC	 C(2ÿ
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java7 7( 2Ÿ
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java9( 9(*2„
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java9, 9(?2„
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?containsSize@56.12:56.24CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java;	 ;(2›
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java= =(2Ÿ
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java> >(2›
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java>? >(E2‚
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java? ?(2‚
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaA A(2Ÿ
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaA/ A(12‡
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CACHE_SIZE_QUERY@27.30:27.46CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaA3 A(C2‘
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaC C(2‚
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaC C(2‡
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java7 7(2Í
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?containsSize@56.12:56.24DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java8 8(2È
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java: :(2‰
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java< <(2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java6 6(‰
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21VARIABLE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java7 7("
+typeSQLiteDatabase"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*db2´
+&android.database.sqlite.SQLiteDatabaseTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java7 7(2ÿ
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java7 7( π
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?containsSize@56.12:56.24VARIABLE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java8 8("
+typeboolean"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*containsSize2å
+booleanTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java8 8(2Ÿ
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java9( 9(*2„
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java9, 9(?Î
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java: :("
+typelong"
+isFinaltrue"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*currentSize2â
+longTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java:
+ :(á
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26VARIABLE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java< <("
+typeContentValues"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*values2¢
+android.content.ContentValuesTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java< <(Ú
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaF F("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC4*clearInTransaction2µ
+0java.util.concurrent.atomic.AtomicLong.set(long)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaI	 I(2ÿ
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaG G( 2Á
+bcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()?db@71.19:71.21CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaH H(2‘
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaI I(2Ó
+bcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()?db@71.19:71.21DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaG G(2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaF F(Ú
+bcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()?db@71.19:71.21VARIABLE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaG G("
+typeSQLiteDatabase"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*db2´
+&android.database.sqlite.SQLiteDatabaseTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaG G(2ÿ
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaG G( ∂
+Rcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.getCacheSizeBytes()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaL L("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typelong"
+accesspackage_private"
+LOC2*getCacheSizeBytes2±
+,java.util.concurrent.atomic.AtomicLong.get()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaM M(2‘
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaM M(2ê
+longRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaL L(‹
+Wcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaP  P(6"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"%
+typeSizeSQLiteTransactionListener"
+accesspackage_private"
+LOC6*prepareSizeTransaction2Å
+|com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.SizeSQLiteTransactionListener()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaS S(02‡
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaQ+ Q(;2Ô
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaR R(2Ô
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaS S(2Ô
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaU U(2ˆ
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaQ" Q((2Ë
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaP P(À
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40VARIABLE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaQ" Q(("%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*result2·
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaQ Q(!2‡
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaQ+ Q(;°
+Øcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaX X("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*endSizeTransaction2È
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaY Y(2æ
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listenerCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaY Y(2‡
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaZ Z(2æ
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listenerCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaZ Z(%2√
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listener	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaX8 X(@2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaX X(∫
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listener	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaX8 X(@"%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*listener2·
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaX X(7∫
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java] ](!"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC2*decrementSizeInTransaction2√
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java^ ^(2–
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListenerCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java^ ^(+2œ
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!decrementByCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java^. ^(92’
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java]@ ](L2‘
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!decrementBy	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java]S ](^2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java] ](–
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java]@ ](L"%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*sizeListener2·
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java]" ](?›
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!decrementBy	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java]S ](^"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*decrementBy2â
+longTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java]N ](RÒ2
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaa a(!"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC11*incrementSizeInTransaction2‰
+_com.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.obtain(java.lang.String)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javadC d(I2ª
+6java.util.concurrent.atomic.AtomicLong.addAndGet(long)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javah h(2ç
+ácom.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.offer(java.lang.String, android.database.sqlite.SQLiteStatement)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaj j(2–
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListenerCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javab b(2œ
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementByCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javab b(*2„
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javad/ d(B2Â
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javadJ d(_2Í
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaf f(2Ù
+ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX@24.27:24.63CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaf( f(L2œ
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementByCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javafN f(Y2Í
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javag g(2‘
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javah h(
+2œ
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementByCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javah h( 2„
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaj j(2Â
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaj  j(52Í
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaj7 j(O2˚
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javab b(2’
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaa@ a(L2‘
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementBy	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaaS a(^2Ò
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javad d(,2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaa a(Á
+
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44VARIABLE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javad d(,"
+typeSQLiteStatement"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*updateCacheSizeStatement2¨
+'android.database.sqlite.SQLiteStatementTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javad d(2‰
+_com.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.obtain(java.lang.String)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javadC d(I2„
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javad/ d(B2Â
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javadJ d(_–
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaa@ a(L"%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*sizeListener2·
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaa" a(?›
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementBy	PARAMETER{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaaS a(^"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*incrementBy2â
+longTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaaN a(R¨
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (3"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*UPDATE_CACHE_SIZE_SQL2ï
+java.lang.StringTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (∫
+ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX@24.27:24.63VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (?"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*$UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX2à
+intTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (®
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (1"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*CONTAINS_SIZE_QUERY2ï
+java.lang.StringTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (¢
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CACHE_SIZE_QUERY@27.30:27.46VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (."
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*CACHE_SIZE_QUERY2ï
+java.lang.StringTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (‡
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java ("
+isFinaltrue"
+type
+AtomicLong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*size2´
+&java.util.concurrent.atomic.AtomicLongTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (2∏
+3java.util.concurrent.atomic.AtomicLong.AtomicLong()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java& (0Ï
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java$ (7"
+isFinaltrue"
+typeSqliteStatementPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*updateCacheSizePool2À
+Fcom.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPoolTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (#à
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java4 (D"
+isFinaltrue"+
+type#Pool<SizeSQLiteTransactionListener>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*sizeListenerPool2¢
+androidx.core.util.Pools.PoolTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (2Í
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPE_ARGUMENT{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (22¨
+¶com.bumptech.glide.util.pool.FactoryPools.threadSafe(int, com.bumptech.glide.util.pool.FactoryPools.Factory<T>, com.bumptech.glide.util.pool.FactoryPools.Resetter<T>)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java   (2È
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java+ +(2§
+ûcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.Anonymous-ce21e4b5-bc6e-4b9d-9047-edd880f5d231.Anonymous-ce21e4b5-bc6e-4b9d-9047-edd880f5d231()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java" "(A2Å
+|com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.SizeSQLiteTransactionListener()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java% %(62§
+ûcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.Anonymous-9144909d-773f-456b-a0d6-242843ee8071.Anonymous-9144909d-773f-456b-a0d6-242843ee8071()CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java( ((52ﬁ
+ÿcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.Anonymous-ce78688a-01d0-4d90-85f1-7faad0c57367.reset(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!objectCALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java+ +(“
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42VALUE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java/" /(*"
+isFinaltrue"
+typeDiskCacheDbHelper"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*dbHelper2…
+Dcom.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelperTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java/ /(!Ó
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerCLASS{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javao o(+"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC24*SizeSQLiteTransactionListener2
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javar	 r(2Ú
+fcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onBegin()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaw w(2Û
+gcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onCommit()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaz z(2ı
+icom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onRollback()DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java} }(2¯
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.getVerifier()DECLARATION}
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaÑ Ñ($2Ç
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28DECLARATION{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javap p(2∏
+1android.database.sqlite.SQLiteTransactionListenerEXTEND{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javao7 o(P2π
+2com.bumptech.glide.util.pool.FactoryPools.PoolableEXTEND{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaoR o(ZØ
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javar	 r("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC2*clear2˚
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javas s(2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javar r(¨
+fcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onBegin()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaw w("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*onBegin2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaw w(Æ
+gcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onCommit()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaz z("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*onCommit2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaz z(≈	
+icom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onRollback()METHOD{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java} }("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*
+onRollback2ª
+6java.util.concurrent.atomic.AtomicLong.addAndGet(long)CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (2‘
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (
+2˚
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28CALL{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java (!2ê
+voidRETURN_TYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.java} }(˜
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.getVerifier()METHOD}
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaÑ Ñ($"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeStateVerifier"
+accesspublic"
+LOC4*getVerifier2ø
+8com.bumptech.glide.util.pool.StateVerifier.newInstance()CALL}
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaÖ Ö(&2À
+@com.bumptech.glide.util.pool.FactoryPools.Poolable.getVerifier()OVERRIDE}
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaÑ Ñ($2∏
+*com.bumptech.glide.util.pool.StateVerifierRETURN_TYPE}
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javaÑ Ñ(Ø
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28VARIABLE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javap p("
+isFinalfalse"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*updatedSize2â
+longTYPE{
+qintegration/sqljournaldiskcache/src/main/java/com/bumptech/glide/integration/sqljournaldiskcache/SizeJournal.javap p(

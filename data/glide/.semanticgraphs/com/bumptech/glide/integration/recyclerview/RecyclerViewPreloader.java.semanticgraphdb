@@ -1,0 +1,436 @@
+
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java·
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaFILEo
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java"
+
+LOC100*mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java÷
+Acom.bumptech.glide.integration.recyclerview.RecyclerViewPreloaderCLASSw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java (("6
+package+com.bumptech.glide.integration.recyclerview"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"	
+LOC71*RecyclerViewPreloader2Ó
+Âcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java#	 #(2Ä
+˜com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java,	 ,(2¯
+Ôcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java5	 5(2Ó
+Âcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaD	 D(2˚
+Úcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaT	 T(2ä
+Åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa a(2Ï
+dcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader?recyclerScrollListener@32.49:32.71DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java 1  (G2Ω
+:androidx.recyclerview.widget.RecyclerView.OnScrollListenerEXTENDw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaA (Q2Œ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java) (*®
+Âcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)CONSTRUCTORw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java#	 #("6
+package+com.bumptech.glide.integration.recyclerview*RecyclerViewPreloader2¥
+3com.bumptech.glide.Glide.with(android.app.Activity)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java( ((2
+Ócom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!activityCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java( ((2¸
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java( ((32Ä
+˛com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java(5 ((M2Ú
+com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreloadCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java(O ((Y2ı
+Ócom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!activity	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java$ $( 2Å
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java%' %(;2Ö
+˛com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java&& &(>2˜
+com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java'
+ '(2…
+Acom.bumptech.glide.integration.recyclerview.RecyclerViewPreloaderRETURN_TYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java#	 #(Ñ
+Ócom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!activity	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java$ $( "
+typeActivity"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*activity2ï
+android.app.ActivityTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java$ $(ú
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java%' %(;"
+typePreloadModelProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadModelProvider2∂
+5com.bumptech.glide.ListPreloader.PreloadModelProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java% %(#2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java%$ %(%¢
+˛com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java&& &(>"
+typePreloadSizeProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadDimensionProvider2µ
+4com.bumptech.glide.ListPreloader.PreloadSizeProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java& &("2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java&# &($Ú
+com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Activity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java'
+ '("
+typeint"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*
+maxPreload2Ñ
+intTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java' '(	Ï
+˜com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)CONSTRUCTORw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java,	 ,("6
+package+com.bumptech.glide.integration.recyclerview*RecyclerViewPreloader2∆
+Ecom.bumptech.glide.Glide.with(androidx.fragment.app.FragmentActivity)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java1 1(2ä
+àcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragmentActivityCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java1 1($2é
+åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java1' 1(;2í
+êcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java1= 1(U2Ñ
+Çcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreloadCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java1W 1(a2è
+àcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragmentActivity	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java-  -(02ì
+åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java.' .(;2ó
+êcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java/& /(>2â
+Çcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java0
+ 0(2…
+Acom.bumptech.glide.integration.recyclerview.RecyclerViewPreloaderRETURN_TYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java,	 ,(¿
+àcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragmentActivity	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java-  -(0"
+typeFragmentActivity"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*fragmentActivity2ß
+&androidx.fragment.app.FragmentActivityTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java- -(Æ
+åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java.' .(;"
+typePreloadModelProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadModelProvider2∂
+5com.bumptech.glide.ListPreloader.PreloadModelProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java. .(#2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java.$ .(%¥
+êcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java/& /(>"
+typePreloadSizeProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadDimensionProvider2µ
+4com.bumptech.glide.ListPreloader.PreloadSizeProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java/ /("2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java/# /($Ñ
+Çcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.FragmentActivity, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java0
+ 0("
+typeint"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*
+maxPreload2Ñ
+intTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java0 0(	å
+Ôcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)CONSTRUCTORw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java5	 5("6
+package+com.bumptech.glide.integration.recyclerview*RecyclerViewPreloader2æ
+=com.bumptech.glide.Glide.with(androidx.fragment.app.Fragment)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java: :(2˙
+¯com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragmentCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java: :(2Ü
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java: :(32ä
+àcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java:5 :(M2¸
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreloadCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java:O :(Y2ˇ
+¯com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragment	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java6 6( 2ã
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java7' 7(;2è
+àcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java8& 8(>2Å
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java9
+ 9(2…
+Acom.bumptech.glide.integration.recyclerview.RecyclerViewPreloaderRETURN_TYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java5	 5(ò
+¯com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragment	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java6 6( "
+typeFragment"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*fragment2ü
+androidx.fragment.app.FragmentTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java6 6(¶
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java7' 7(;"
+typePreloadModelProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadModelProvider2∂
+5com.bumptech.glide.ListPreloader.PreloadModelProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java7 7(#2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java7$ 7(%¨
+àcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java8& 8(>"
+typePreloadSizeProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadDimensionProvider2µ
+4com.bumptech.glide.ListPreloader.PreloadSizeProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java8 8("2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java8# 8($¸
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(androidx.fragment.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java9
+ 9("
+typeint"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*
+maxPreload2Ñ
+intTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java9 9(	®
+Âcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)CONSTRUCTORw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaD	 D("6
+package+com.bumptech.glide.integration.recyclerview*RecyclerViewPreloader2¥
+3com.bumptech.glide.Glide.with(android.app.Fragment)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaI I(2
+Ócom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragmentCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaI I(2¸
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaI I(32Ä
+˛com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaI5 I(M2Ú
+com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreloadCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaIO I(Y2ı
+Ócom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragment	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaE$ E(,2Å
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaF' F(;2Ö
+˛com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaG& G(>2˜
+com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaH
+ H(2…
+Acom.bumptech.glide.integration.recyclerview.RecyclerViewPreloaderRETURN_TYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaD	 D(ê
+Ócom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!fragment	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaE$ E(,"
+typeandroid.app.Fragment"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*fragment2ï
+android.app.FragmentTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaE E(#ú
+˙com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaF' F(;"
+typePreloadModelProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadModelProvider2∂
+5com.bumptech.glide.ListPreloader.PreloadModelProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaF F(#2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaF$ F(%¢
+˛com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaG& G(>"
+typePreloadSizeProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadDimensionProvider2µ
+4com.bumptech.glide.ListPreloader.PreloadSizeProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaG G("2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaG# G($Ú
+com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(android.app.Fragment, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaH
+ H("
+typeint"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*
+maxPreload2Ñ
+intTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaH H(	*
+Úcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)CONSTRUCTORw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaT	 T("6
+package+com.bumptech.glide.integration.recyclerview*RecyclerViewPreloader2À
+…com.bumptech.glide.ListPreloader.ListPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java[ [(2ú
+öcom.bumptech.glide.integration.recyclerview.RecyclerToListViewScrollListener.RecyclerToListViewScrollListener(android.widget.AbsListView.OnScrollListener)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java]! ](A2É
+Åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!requestManagerCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\ \(2â
+ácom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\ \(02ç
+ãcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\2 \(J2ˇ
+˝com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreloadCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\L \(V2Â
+dcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader?recyclerScrollListener@32.49:32.71CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java] ](2é
+åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)?listPreloader@90.21:90.34CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java]B ](O2à
+Åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!requestManager	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaU U(,2é
+ácom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaV' V(;2í
+ãcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaW& W(>2Ñ
+˝com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaX
+ X(2ï
+åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)?listPreloader@90.21:90.34DECLARATIONw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaZ Z("2…
+Acom.bumptech.glide.integration.recyclerview.RecyclerViewPreloaderRETURN_TYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaT	 T(¸
+åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)?listPreloader@90.21:90.34VARIABLEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaZ Z(""
+typeListPreloader<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*listPreloader2°
+ com.bumptech.glide.ListPreloaderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaZ Z(2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaZ Z(2À
+…com.bumptech.glide.ListPreloader.ListPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java[ [(2É
+Åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!requestManagerCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\ \(2â
+ácom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\ \(02ç
+ãcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProviderCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\2 \(J2ˇ
+˝com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreloadCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java\L \(V∞
+Åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!requestManager	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaU U(,"
+typeRequestManager"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*requestManager2¢
+!com.bumptech.glide.RequestManagerTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaU U(©
+ácom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadModelProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaV' V(;"
+typePreloadModelProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadModelProvider2∂
+5com.bumptech.glide.ListPreloader.PreloadModelProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaV V(#2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaV$ V(%Ø
+ãcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!preloadDimensionProvider	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaW& W(>"
+typePreloadSizeProvider<T>"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*preloadDimensionProvider2µ
+4com.bumptech.glide.ListPreloader.PreloadSizeProviderTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaW W("2Õ
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_ARGUMENTw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaW# W($ˇ
+˝com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.RecyclerViewPreloader(com.bumptech.glide.RequestManager, com.bumptech.glide.ListPreloader.PreloadModelProvider<T>, com.bumptech.glide.ListPreloader.PreloadSizeProvider<T>, int)!maxPreload	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaX
+ X("
+typeint"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*
+maxPreload2Ñ
+intTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaX X(	é
+Åcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)METHODw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa a("6
+package+com.bumptech.glide.integration.recyclerview"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*
+onScrolled2é
+åcom.bumptech.glide.integration.recyclerview.RecyclerToListViewScrollListener.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javab b(%2Â
+dcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader?recyclerScrollListener@32.49:32.71CALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javab b(2ê
+écom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!recyclerViewCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javab& b(22Ü
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!dxCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javab4 b(62Ü
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!dyCALLw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javab8 b(:2ï
+écom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!recyclerView	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa& a(22ã
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!dx	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa8 a(:2ã
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!dy	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa@ a(B2å
+voidRETURN_TYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa	 a(¡
+écom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!recyclerView	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa& a(2"
+typeRecyclerView"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*recyclerView2™
+)androidx.recyclerview.widget.RecyclerViewTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa a(%˛
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!dx	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa8 a(:"
+typeint"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*dx2Ñ
+intTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa4 a(7˛
+Ñcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.onScrolled(androidx.recyclerview.widget.RecyclerView, int, int)!dy	PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa@ a(B"
+typeint"
+isFinalfalse"6
+package+com.bumptech.glide.integration.recyclerview"
+isLocaltrue*dy2Ñ
+intTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.javaa< a(?˘
+dcom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader?recyclerScrollListener@32.49:32.71VALUEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java 1  (G"
+isFinaltrue"(
+type RecyclerToListViewScrollListener"
+isStaticfalse"
+accessprivate"
+isLocalfalse"6
+package+com.bumptech.glide.integration.recyclerview*recyclerScrollListener2Õ
+Lcom.bumptech.glide.integration.recyclerview.RecyclerToListViewScrollListenerTYPEw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java   (0—
+Ccom.bumptech.glide.integration.recyclerview.RecyclerViewPreloader.TTYPE_PARAMETERw
+mintegration/recyclerview/src/main/java/com/bumptech/glide/integration/recyclerview/RecyclerViewPreloader.java) (**T

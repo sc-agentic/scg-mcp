@@ -1,0 +1,752 @@
+
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÅ
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaFILEO
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java"
+
+LOC162*Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java∏
+#com.bumptech.glide.MultiRequestTestCLASSW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java( (("
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC123*MultiRequestTest2Ÿ
+qcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java0 0(Y2‚
+zcom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java^ ^(b2ú
+2com.bumptech.glide.MultiRequestTest.newImageFile()DECLARATIONY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaç ç(2ü
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java) )(2•
+=com.bumptech.glide.MultiRequestTest?tearDownGlide@42.35:42.48DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java*# *(02™
+Bcom.bumptech.glide.MultiRequestTest?modelGeneratorRule@43.40:43.58DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java+( +(:2ß
+?com.bumptech.glide.MultiRequestTest?temporaryFolder@44.37:44.52DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java,% ,(42£
+;com.bumptech.glide.MultiRequestTest?concurrency@45.34:45.45DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java-" -(-ú=
+qcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()METHODW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java0 0(Y"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC44*Kthumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled2∏
+Wcom.bumptech.glide.Glide.init(android.content.Context, com.bumptech.glide.GlideBuilder)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java4
+ 4(2…
+hcom.bumptech.glide.GlideBuilder.setSourceExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java7 7(2¶
+Ecom.bumptech.glide.load.engine.executor.GlideExecutor.Builder.build()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java7R 7(W2≤
+Qcom.bumptech.glide.load.engine.executor.GlideExecutor.Builder.setThreadCount(int)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java7@ 7(N2©
+Hcom.bumptech.glide.load.engine.executor.GlideExecutor.newSourceBuilder()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java7- 7(=2∆
+ecom.bumptech.glide.RequestBuilder.listener(com.bumptech.glide.request.RequestListener<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java@ @(2æ
+]com.bumptech.glide.RequestBuilder.thumbnail(com.bumptech.glide.RequestBuilder<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java? ?(2ï
+4com.bumptech.glide.RequestManager.load(java.io.File)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java> >(2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java= =(2ì
+2com.bumptech.glide.MultiRequestTest.newImageFile()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java> >(2ï
+4com.bumptech.glide.RequestManager.load(java.io.File)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java?+ ?(/2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java? ?(!2ì
+2com.bumptech.glide.MultiRequestTest.newImageFile()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java?0 ?(<2ó
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR- R(02ê
+/com.bumptech.glide.request.Request.isComplete()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaRE R(O2ñ
+5com.bumptech.glide.request.target.Target.getRequest()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR8 R(B2ê
+/java.util.concurrent.CountDownLatch.countDown()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaS# S(,2≤
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.runOnMainThread(java.lang.Runnable)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaW W(2ä
+)com.bumptech.glide.RequestBuilder.into(Y)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaW. W(22Ø
+Njava.util.concurrent.CountDownLatch.await(long, java.util.concurrent.TimeUnit)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaY Y(#2ê
+/java.util.concurrent.atomic.AtomicBoolean.get()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaZ( Z(+2è
+.com.bumptech.glide.GlideBuilder.GlideBuilder()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java6 6(2°
+@java.util.concurrent.atomic.AtomicBoolean.AtomicBoolean(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java91 9(>2ò
+7java.util.concurrent.CountDownLatch.CountDownLatch(int)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java:( :(62Â
+Écom.bumptech.glide.MultiRequestTest.Anonymous-2dd5b07d-292f-427c-b46a-36dcec21a083.Anonymous-2dd5b07d-292f-427c-b46a-36dcec21a083()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaA A(%2¶
+Ecom.bumptech.glide.MultiRequestTest.DoNothingTarget.DoNothingTarget()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaW7 W(F2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java5 5(2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java= =(2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java?" ?()2¯
+ñcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?isPrimaryRequestComplete@57.18:57.42CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR R(,2¸
+öcom.bumptech.glide.MultiRequestTest.Anonymous-2d0ba4ce-87e6-4484-b1d3-653b4d24fb31.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!targetCALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR1 R(72Ó
+åcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?countDownLatch@58.19:58.33CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaS S("2ú
+;com.bumptech.glide.MultiRequestTest?concurrency@45.34:45.45CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaW W(2Á
+Öcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?request@60.29:60.36CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaW& W(-2Ó
+åcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?countDownLatch@58.19:58.33CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaY Y(2¯
+ñcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?isPrimaryRequestComplete@57.18:57.42CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaZ Z('2ˇ
+ñcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?isPrimaryRequestComplete@57.18:57.42DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java9 9(*2ı
+åcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?countDownLatch@58.19:58.33DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java: :(!2Ó
+Öcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?request@60.29:60.36DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java< <($2l
+voidRETURN_TYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java0	 0(†
+ñcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?isPrimaryRequestComplete@57.18:57.42VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java9 9(*"
+typeAtomicBoolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isPrimaryRequestComplete2ä
+)java.util.concurrent.atomic.AtomicBooleanTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java9 9(2°
+@java.util.concurrent.atomic.AtomicBoolean.AtomicBoolean(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java91 9(>˛
+åcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?countDownLatch@58.19:58.33VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java: :(!"
+typeCountDownLatch"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*countDownLatch2Ñ
+#java.util.concurrent.CountDownLatchTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java: :(2ò
+7java.util.concurrent.CountDownLatch.CountDownLatch(int)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java:( :(6Ë
+Öcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?request@60.29:60.36VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java< <($" 
+typeRequestBuilder<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2Ç
+!com.bumptech.glide.RequestBuilderTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java< <(2å
+"android.graphics.drawable.DrawableTYPE_ARGUMENTW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java< <(2∆
+ecom.bumptech.glide.RequestBuilder.listener(com.bumptech.glide.request.RequestListener<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java@ @(2æ
+]com.bumptech.glide.RequestBuilder.thumbnail(com.bumptech.glide.RequestBuilder<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java? ?(2ï
+4com.bumptech.glide.RequestManager.load(java.io.File)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java> >(2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java= =(2ì
+2com.bumptech.glide.MultiRequestTest.newImageFile()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java> >(2ï
+4com.bumptech.glide.RequestManager.load(java.io.File)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java?+ ?(/2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java? ?(!2ì
+2com.bumptech.glide.MultiRequestTest.newImageFile()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java?0 ?(<2ó
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR- R(02ê
+/com.bumptech.glide.request.Request.isComplete()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaRE R(O2ñ
+5com.bumptech.glide.request.target.Target.getRequest()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR8 R(B2ê
+/java.util.concurrent.CountDownLatch.countDown()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaS# S(,2Â
+Écom.bumptech.glide.MultiRequestTest.Anonymous-19be925a-1a97-4807-93fa-35321f0fb450.Anonymous-19be925a-1a97-4807-93fa-35321f0fb450()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaA A(%2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java= =(2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java?" ?()2¯
+ñcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?isPrimaryRequestComplete@57.18:57.42CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR R(,2¸
+öcom.bumptech.glide.MultiRequestTest.Anonymous-8bb717c9-0dca-4614-89a1-e2c91f49cbad.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!targetCALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaR1 R(72Ó
+åcom.bumptech.glide.MultiRequestTest.thumbnail_onResourceReady_forPrimary_isComplete_whenRequestListenerIsCalled()?countDownLatch@58.19:58.33CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaS S("Œ
+˘com.bumptech.glide.MultiRequestTest.Anonymous-a6d8cabe-7afe-47e7-a84c-95590d267b13.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!e	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaD/ D(0"
+typeGlideException"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*e2é
+-com.bumptech.glide.load.engine.GlideExceptionTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaD  D(.∞
+˝com.bumptech.glide.MultiRequestTest.Anonymous-480e1f7a-2f8d-4f9d-b950-ea988f8a2cae.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!model	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaE E(""
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2q
+java.lang.ObjectTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaE E(‰
+˛com.bumptech.glide.MultiRequestTest.Anonymous-0635cdac-16fb-4302-9766-fef1f756d89a.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!target	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaF' F(-"
+typeTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2â
+(com.bumptech.glide.request.target.TargetTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaF F(2å
+"android.graphics.drawable.DrawableTYPE_ARGUMENTW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaF F(%º
+ácom.bumptech.glide.MultiRequestTest.Anonymous-0e7a0bdd-5b53-4aeb-9177-6587c7b9e844.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!isFirstResource	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaG G(-"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isFirstResource2h
+booleanTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaG G(Á
+úcom.bumptech.glide.MultiRequestTest.Anonymous-acb84cc7-72de-42a7-ae1d-835eb4eb6e0b.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!resource	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaM M('"
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*resource2É
+"android.graphics.drawable.DrawableTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaM M(Ã
+ôcom.bumptech.glide.MultiRequestTest.Anonymous-59efb700-f057-434a-9960-1c553cfe8f53.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!model	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaN N(""
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2q
+java.lang.ObjectTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaN N(Ä
+öcom.bumptech.glide.MultiRequestTest.Anonymous-488bf603-298c-4834-a152-c63f31f884d7.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!target	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaO' O(-"
+typeTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2â
+(com.bumptech.glide.request.target.TargetTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaO O(2å
+"android.graphics.drawable.DrawableTYPE_ARGUMENTW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaO O(%Ì
+ûcom.bumptech.glide.MultiRequestTest.Anonymous-3548a834-cbe6-4739-8855-de2355b01187.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!dataSource	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaP! P(+"
+type
+DataSource"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*
+dataSource2É
+"com.bumptech.glide.load.DataSourceTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaP P( ÿ
+£com.bumptech.glide.MultiRequestTest.Anonymous-3bd947d5-bf31-434f-bb4b-23a3630c2cb0.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!isFirstResource	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaQ Q(-"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isFirstResource2h
+booleanTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaQ Q(ÙJ
+zcom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()METHODW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java^ ^(b"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC46*Tthumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled2∏
+Wcom.bumptech.glide.Glide.init(android.content.Context, com.bumptech.glide.GlideBuilder)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javab
+ b(2…
+hcom.bumptech.glide.GlideBuilder.setSourceExecutor(com.bumptech.glide.load.engine.executor.GlideExecutor)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javae e(2¶
+Ecom.bumptech.glide.load.engine.executor.GlideExecutor.Builder.build()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaeR e(W2≤
+Qcom.bumptech.glide.load.engine.executor.GlideExecutor.Builder.setThreadCount(int)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javae@ e(N2©
+Hcom.bumptech.glide.load.engine.executor.GlideExecutor.newSourceBuilder()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javae- e(=2∆
+ecom.bumptech.glide.RequestBuilder.listener(com.bumptech.glide.request.RequestListener<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javao o(2æ
+]com.bumptech.glide.RequestBuilder.thumbnail(com.bumptech.glide.RequestBuilder<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan n(2ö
+9com.bumptech.glide.RequestManager.load(java.lang.Integer)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javam m(2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javal l(2ï
+4com.bumptech.glide.RequestManager.load(java.io.File)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan+ n(/2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan n(!2ì
+2com.bumptech.glide.MultiRequestTest.newImageFile()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan0 n(<2ñ
+5com.bumptech.glide.request.target.Target.getRequest()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw- w(72ó
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax0 x(32ê
+/com.bumptech.glide.request.Request.isComplete()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax= x(G2è
+.com.bumptech.glide.request.Request.isRunning()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaxV x(_2ê
+/java.util.concurrent.CountDownLatch.countDown()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javay# y(,2¥
+Qcom.bumptech.glide.testutil.ConcurrencyHelper.runOnMainThread(java.lang.Runnable)CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaá á(2å
+)com.bumptech.glide.RequestBuilder.into(Y)CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaá5 á(92±
+Njava.util.concurrent.CountDownLatch.await(long, java.util.concurrent.TimeUnit)CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaâ â(#2í
+/java.util.concurrent.atomic.AtomicBoolean.get()CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaä+ ä(.2è
+.com.bumptech.glide.GlideBuilder.GlideBuilder()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javad d(2°
+@java.util.concurrent.atomic.AtomicBoolean.AtomicBoolean(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javag4 g(A2ò
+7java.util.concurrent.CountDownLatch.CountDownLatch(int)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javah( h(62Â
+Écom.bumptech.glide.MultiRequestTest.Anonymous-a094afb5-b8a9-4f7b-ae78-a1937281e8f2.Anonymous-a094afb5-b8a9-4f7b-ae78-a1937281e8f2()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javap p(%2®
+Ecom.bumptech.glide.MultiRequestTest.DoNothingTarget.DoNothingTarget()CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaá> á(M2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javac c(2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javal l(2˚
+ôcom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?missingResourceId@106.8:106.25CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javam m(#2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan" n()2‡
+˛com.bumptech.glide.MultiRequestTest.Anonymous-b291d5f1-ce4b-49ec-9b7f-c064fb8e9559.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!targetCALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw& w(,2Ü
+§com.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?isNeitherRunningNorComplete@103.18:103.45CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax x(/2Ô
+çcom.bumptech.glide.MultiRequestTest.Anonymous-86cdc647-4dbb-4d17-90b6-18e89b3d526f.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)?request@119.28:119.35CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax5 x(<2Ô
+çcom.bumptech.glide.MultiRequestTest.Anonymous-52842a6a-8673-4379-bd54-cc70f01fabc7.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)?request@119.28:119.35CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaxN x(U2˘
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?countDownLatch@104.19:104.33CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javay y("2û
+;com.bumptech.glide.MultiRequestTest?concurrency@45.34:45.45CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaá á(2˚
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?requestBuilder@107.29:107.43CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaá& á(42˚
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?countDownLatch@104.19:104.33CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaâ â(2à
+§com.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?isNeitherRunningNorComplete@103.18:103.45CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaä ä(*2ç
+§com.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?isNeitherRunningNorComplete@103.18:103.45DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javag g(-2Ä
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?countDownLatch@104.19:104.33DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javah h(!2Ç
+ôcom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?missingResourceId@106.8:106.25DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaj j(2Ä
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?requestBuilder@107.29:107.43DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javak k(+2ˆ
+çcom.bumptech.glide.MultiRequestTest.Anonymous-67915b17-d715-4173-9ec3-46898e70ba7e.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)?request@119.28:119.35DECLARATIONW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw w(#2l
+voidRETURN_TYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java^	 ^(±
+§com.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?isNeitherRunningNorComplete@103.18:103.45VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javag g(-"
+typeAtomicBoolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isNeitherRunningNorComplete2ä
+)java.util.concurrent.atomic.AtomicBooleanTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javag g(2°
+@java.util.concurrent.atomic.AtomicBoolean.AtomicBoolean(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javag4 g(Aâ
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?countDownLatch@104.19:104.33VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javah h(!"
+typeCountDownLatch"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*countDownLatch2Ñ
+#java.util.concurrent.CountDownLatchTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javah h(2ò
+7java.util.concurrent.CountDownLatch.CountDownLatch(int)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javah( h(6«
+ôcom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?missingResourceId@106.8:106.25VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaj j("
+typeint"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*missingResourceId2d
+intTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaj j(·&
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?requestBuilder@107.29:107.43VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javak k(+" 
+typeRequestBuilder<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestBuilder2Ç
+!com.bumptech.glide.RequestBuilderTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javak k(2å
+"android.graphics.drawable.DrawableTYPE_ARGUMENTW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javak k(2∆
+ecom.bumptech.glide.RequestBuilder.listener(com.bumptech.glide.request.RequestListener<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javao o(2æ
+]com.bumptech.glide.RequestBuilder.thumbnail(com.bumptech.glide.RequestBuilder<TranscodeType>)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan n(2ö
+9com.bumptech.glide.RequestManager.load(java.lang.Integer)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javam m(2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javal l(2ï
+4com.bumptech.glide.RequestManager.load(java.io.File)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan+ n(/2ó
+6com.bumptech.glide.Glide.with(android.content.Context)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan n(!2ì
+2com.bumptech.glide.MultiRequestTest.newImageFile()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan0 n(<2ñ
+5com.bumptech.glide.request.target.Target.getRequest()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw- w(72ó
+6java.util.concurrent.atomic.AtomicBoolean.set(boolean)CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax0 x(32ê
+/com.bumptech.glide.request.Request.isComplete()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax= x(G2è
+.com.bumptech.glide.request.Request.isRunning()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaxV x(_2ê
+/java.util.concurrent.CountDownLatch.countDown()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javay# y(,2Â
+Écom.bumptech.glide.MultiRequestTest.Anonymous-0317a10a-3345-4695-bee8-9b649a2c5f66.Anonymous-0317a10a-3345-4695-bee8-9b649a2c5f66()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javap p(%2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javal l(2˚
+ôcom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?missingResourceId@106.8:106.25CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javam m(#2ò
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javan" n()2‡
+˛com.bumptech.glide.MultiRequestTest.Anonymous-592e7465-d42f-488c-84cb-7e3a5594cdcb.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!targetCALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw& w(,2Ü
+§com.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?isNeitherRunningNorComplete@103.18:103.45CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax x(/2Ô
+çcom.bumptech.glide.MultiRequestTest.Anonymous-d8963282-a370-40af-b438-08bb0ef1844e.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)?request@119.28:119.35CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javax5 x(<2Ô
+çcom.bumptech.glide.MultiRequestTest.Anonymous-445c72bf-93e5-47f3-a030-214eba855e59.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)?request@119.28:119.35CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaxN x(U2˘
+ócom.bumptech.glide.MultiRequestTest.thumbnail_onLoadFailed_forPrimary_isNotRunningOrComplete_whenRequestListenerIsCalled()?countDownLatch@104.19:104.33CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javay y("—
+çcom.bumptech.glide.MultiRequestTest.Anonymous-b9f5387e-572e-4e4e-a5fa-e4de24242f4a.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)?request@119.28:119.35VARIABLEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw w(#"
+typeRequest"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2É
+"com.bumptech.glide.request.RequestTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw w(2ñ
+5com.bumptech.glide.request.target.Target.getRequest()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw- w(72‡
+˛com.bumptech.glide.MultiRequestTest.Anonymous-6d992806-0e56-4219-b04c-dfccc4afe1ee.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!targetCALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaw& w(,Œ
+˘com.bumptech.glide.MultiRequestTest.Anonymous-23685d89-f831-44fb-9385-eaf43ca82217.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!e	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javas/ s(0"
+typeGlideException"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*e2é
+-com.bumptech.glide.load.engine.GlideExceptionTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javas  s(.∞
+˝com.bumptech.glide.MultiRequestTest.Anonymous-084d7264-6a78-4a68-aba3-dceb5f7f3b01.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!model	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javat t(""
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2q
+java.lang.ObjectTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javat t(‰
+˛com.bumptech.glide.MultiRequestTest.Anonymous-56919017-d2f5-499c-89b6-6b6508b87b20.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!target	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javau' u(-"
+typeTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2â
+(com.bumptech.glide.request.target.TargetTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javau u(2å
+"android.graphics.drawable.DrawableTYPE_ARGUMENTW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javau u(%º
+ácom.bumptech.glide.MultiRequestTest.Anonymous-b996890b-7959-4d66-9098-1e12b31df475.onLoadFailed(com.bumptech.glide.load.engine.GlideException, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, boolean)!isFirstResource	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javav v(-"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isFirstResource2h
+booleanTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javav v(Á
+úcom.bumptech.glide.MultiRequestTest.Anonymous-730bcc1c-1f11-4141-ac28-b819d25e944c.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!resource	PARAMETERW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java ('"
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*resource2É
+"android.graphics.drawable.DrawableTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java (–
+ôcom.bumptech.glide.MultiRequestTest.Anonymous-f13fe7e7-1f74-4d91-8ab4-83d35ebcf8be.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!model	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÄ Ä(""
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2s
+java.lang.ObjectTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÄ Ä(Ü
+öcom.bumptech.glide.MultiRequestTest.Anonymous-5fa35b29-c491-48cb-bcc0-f059c51ae8c5.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!target	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÅ' Å(-"
+typeTarget<Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2ã
+(com.bumptech.glide.request.target.TargetTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÅ Å(2é
+"android.graphics.drawable.DrawableTYPE_ARGUMENTY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÅ Å(%Ò
+ûcom.bumptech.glide.MultiRequestTest.Anonymous-f9ea86cb-4a81-43e6-9f6f-351d8c273f85.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!dataSource	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÇ! Ç(+"
+type
+DataSource"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*
+dataSource2Ö
+"com.bumptech.glide.load.DataSourceTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÇ Ç( ‹
+£com.bumptech.glide.MultiRequestTest.Anonymous-d4adee2a-1ca4-461c-bc49-098b5c665031.onResourceReady(android.graphics.drawable.Drawable, java.lang.Object, com.bumptech.glide.request.target.Target<android.graphics.drawable.Drawable>, com.bumptech.glide.load.DataSource, boolean)!isFirstResource	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÉ É(-"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isFirstResource2j
+booleanTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaÉ É(„
+2com.bumptech.glide.MultiRequestTest.newImageFile()METHODY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaç ç("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeFile"
+accessprivate"
+LOC9*newImageFile2™
+Gjava.io.BufferedOutputStream.BufferedOutputStream(java.io.OutputStream)CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaí í(32ö
+7java.io.FileOutputStream.FileOutputStream(java.io.File)CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaí8 í(H2™
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?bitmap@142.11:142.17CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaè è(%2™
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?canvas@143.11:143.17CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaê ê(
+2¢
+?com.bumptech.glide.MultiRequestTest?temporaryFolder@44.37:44.52CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaë ë(!2©
+Fcom.bumptech.glide.MultiRequestTest.newImageFile()?result@145.9:145.15CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaíI í(O2™
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?bitmap@142.11:142.17CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaì ì(2¶
+Ccom.bumptech.glide.MultiRequestTest.newImageFile()?os@146.22:146.24CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaì/ ì(12©
+Fcom.bumptech.glide.MultiRequestTest.newImageFile()?result@145.9:145.15CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaï ï(2±
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?bitmap@142.11:142.17DECLARATIONY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaé é(2±
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?canvas@143.11:143.17DECLARATIONY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaè è(2∞
+Fcom.bumptech.glide.MultiRequestTest.newImageFile()?result@145.9:145.15DECLARATIONY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaë	 ë(2≠
+Ccom.bumptech.glide.MultiRequestTest.newImageFile()?os@146.22:146.24DECLARATIONY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaí í(2v
+java.io.FileRETURN_TYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaç
+ ç(Ñ
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?bitmap@142.11:142.17VARIABLEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaé é("
+typeBitmap"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*bitmap2z
+android.graphics.BitmapTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaé é(
+±
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?canvas@143.11:143.17VARIABLEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaè è("
+typeCanvas"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*canvas2z
+android.graphics.CanvasTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaè è(
+2™
+Gcom.bumptech.glide.MultiRequestTest.newImageFile()?bitmap@142.11:142.17CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaè è(%õ
+Fcom.bumptech.glide.MultiRequestTest.newImageFile()?result@145.9:145.15VARIABLEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaë	 ë("
+typeFile"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*result2o
+java.io.FileTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaë ë(2¢
+?com.bumptech.glide.MultiRequestTest?temporaryFolder@44.37:44.52CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaë ë(!ı
+Ccom.bumptech.glide.MultiRequestTest.newImageFile()?os@146.22:146.24VARIABLEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaí í("
+typeOutputStream"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*os2w
+java.io.OutputStreamTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaí	 í(2™
+Gjava.io.BufferedOutputStream.BufferedOutputStream(java.io.OutputStream)CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaí í(32ö
+7java.io.FileOutputStream.FileOutputStream(java.io.File)CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaí8 í(H2©
+Fcom.bumptech.glide.MultiRequestTest.newImageFile()?result@145.9:145.15CALLY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaíI í(Oï
+7com.bumptech.glide.MultiRequestTest?context@41.24:41.31VALUEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java) )("
+isFinaltrue"
+typeContext"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*context2x
+android.content.ContextTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java) )(÷
+=com.bumptech.glide.MultiRequestTest?tearDownGlide@42.35:42.48VALUEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java*# *(0"
+isFinaltrue"
+typeTearDownGlide"
+isStaticfalse"
+accesspublic"
+isLocalfalse"
+packagecom.bumptech.glide*tearDownGlide2ä
+)com.bumptech.glide.testutil.TearDownGlideTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java* *("2ö
+9com.bumptech.glide.testutil.TearDownGlide.TearDownGlide()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java*7 *(DÏ
+Bcom.bumptech.glide.MultiRequestTest?modelGeneratorRule@43.40:43.58VALUEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java+( +(:"
+isFinaltrue"
+typeModelGeneratorRule"
+isStaticfalse"
+accesspublic"
+isLocalfalse"
+packagecom.bumptech.glide*modelGeneratorRule2ã
+*com.bumptech.glide.test.ModelGeneratorRuleTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java+ +('2†
+?com.bumptech.glide.test.ModelGeneratorRule.ModelGeneratorRule()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java+A +(Sµ
+?com.bumptech.glide.MultiRequestTest?temporaryFolder@44.37:44.52VALUEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java,% ,(4"
+isFinaltrue"
+typeTemporaryFolder"
+isStaticfalse"
+accesspublic"
+isLocalfalse"
+packagecom.bumptech.glide*temporaryFolder2Ä
+org.junit.rules.TemporaryFolderTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java, ,($„
+;com.bumptech.glide.MultiRequestTest?concurrency@45.34:45.45VALUEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java-" -(-"
+isFinaltrue"
+typeConcurrencyHelper"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*concurrency2é
+-com.bumptech.glide.testutil.ConcurrencyHelperTYPEW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java- -(!2¢
+Acom.bumptech.glide.testutil.ConcurrencyHelper.ConcurrencyHelper()CALLW
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java-4 -(E”
+3com.bumptech.glide.MultiRequestTest.DoNothingTargetCLASSY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaö ö(,"
+packagecom.bumptech.glide"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"
+LOC7*DoNothingTarget2∞
+≈com.bumptech.glide.MultiRequestTest.DoNothingTarget.onResourceReady(android.graphics.drawable.Drawable, com.bumptech.glide.request.transition.Transition<? super android.graphics.drawable.Drawable>)DECLARATIONY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaú ú(2œ
+ecom.bumptech.glide.MultiRequestTest.DoNothingTarget.onLoadCleared(android.graphics.drawable.Drawable)DECLARATIONY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java† †(2ì
+.com.bumptech.glide.request.target.CustomTargetEXTENDY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaö5 ö(A2ï
+"android.graphics.drawable.DrawableEXTEND_TYPE_ARGUMENTY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaöB ö(J•	
+≈com.bumptech.glide.MultiRequestTest.DoNothingTarget.onResourceReady(android.graphics.drawable.Drawable, com.bumptech.glide.request.transition.Transition<? super android.graphics.drawable.Drawable>)METHODY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaú ú("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*onResourceReady2∑
+Œcom.bumptech.glide.MultiRequestTest.DoNothingTarget.onResourceReady(android.graphics.drawable.Drawable, com.bumptech.glide.request.transition.Transition<? super android.graphics.drawable.Drawable>)!resource	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaù ù("2π
+–com.bumptech.glide.MultiRequestTest.DoNothingTarget.onResourceReady(android.graphics.drawable.Drawable, com.bumptech.glide.request.transition.Transition<? super android.graphics.drawable.Drawable>)!transition	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaùK ù(U2n
+voidRETURN_TYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaú ú(ù
+Œcom.bumptech.glide.MultiRequestTest.DoNothingTarget.onResourceReady(android.graphics.drawable.Drawable, com.bumptech.glide.request.transition.Transition<? super android.graphics.drawable.Drawable>)!resource	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaù ù(""
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*resource2Ö
+"android.graphics.drawable.DrawableTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaù ù(√
+–com.bumptech.glide.MultiRequestTest.DoNothingTarget.onResourceReady(android.graphics.drawable.Drawable, com.bumptech.glide.request.transition.Transition<? super android.graphics.drawable.Drawable>)!transition	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaùK ù(U"$
+typeTransition<? super Drawable>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*
+transition2ì
+0com.bumptech.glide.request.transition.TransitionTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.javaù. ù(8Ï
+ecom.bumptech.glide.MultiRequestTest.DoNothingTarget.onLoadCleared(android.graphics.drawable.Drawable)METHODY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java† †("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*onLoadCleared2¡
+Zcom.bumptech.glide.request.target.Target.onLoadCleared(android.graphics.drawable.Drawable)OVERRIDEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java† †(2Ÿ
+qcom.bumptech.glide.MultiRequestTest.DoNothingTarget.onLoadCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java†1 †(<2n
+voidRETURN_TYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java† †(¬
+qcom.bumptech.glide.MultiRequestTest.DoNothingTarget.onLoadCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java†1 †(<"
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*placeholder2Ö
+"android.graphics.drawable.DrawableTYPEY
+Minstrumentation/src/androidTest/java/com/bumptech/glide/MultiRequestTest.java†( †(0

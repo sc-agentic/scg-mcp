@@ -1,0 +1,548 @@
+
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java¢
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaFILEZ
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java"
+
+LOC119*Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaÓ
+=com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpenerCLASSb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ("2
+package'com.bumptech.glide.load.data.mediastore"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC101*ThumbnailStreamOpener2î
+†com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (2…
+’com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java$ $(2–
+]com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java1 1(2∆
+Scom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaG G(2…
+Vcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java_ _(2∆
+Scom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.isValid(java.io.File)DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javat t(2¿
+Mcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?TAG@19.30:19.33DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (!2Ã
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?DEFAULT_SERVICE@20.35:20.50DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java# (22ƒ
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?service@22.28:22.35DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (#2¬
+Ocom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?query@23.31:23.36DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ($2 
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?byteArrayPool@24.26:24.39DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ('2Ã
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?contentResolver@25.32:25.47DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java  (/2ƒ
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?parsers@26.40:26.47DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java( (/∆ 
+†com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)CONSTRUCTORb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ("2
+package'com.bumptech.glide.load.data.mediastore*ThumbnailStreamOpener2ï
+®com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!parsersCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java!	 !(2≈
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?DEFAULT_SERVICE@20.35:20.50CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java! !(!2ì
+¶com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!queryCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java!# !((2õ
+Æcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!byteArrayPoolCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java!* !(72ù
+∞com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!contentResolverCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java!9 !(H2ö
+®com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!parsers	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (%2ò
+¶com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!query	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (2†
+Æcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!byteArrayPool	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (2¢
+∞com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!contentResolver	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java   (%2∞
+=com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpenerRETURN_TYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (∏
+®com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!parsers	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (%"
+typeList<ImageHeaderParser>"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*parsers2z
+java.util.ListTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (
+2û
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (≥
+¶com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!query	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ("
+typeThumbnailQuery"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*query2¢
+6com.bumptech.glide.load.data.mediastore.ThumbnailQueryTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (ø
+Æcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!byteArrayPool	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ("
+type	ArrayPool"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*byteArrayPool2£
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (±
+∞com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!contentResolver	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java   (%"
+typeContentResolver"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*contentResolver2ã
+android.content.ContentResolverTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java   (∆1
+’com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)CONSTRUCTORb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java$ $("2
+package'com.bumptech.glide.load.data.mediastore*ThumbnailStreamOpener2 
+›com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!serviceCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java* *(2»
+€com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!queryCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java+ +(2–
+„com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!byteArrayPoolCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java, ,(&2“
+Âcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!contentResolverCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java- -(*2 
+›com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!parsersCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java. .(2Ω
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?service@22.28:22.35CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java*	 *(2ª
+Ocom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?query@23.31:23.36CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java+	 +(2√
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?byteArrayPool@24.26:24.39CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java,	 ,(2≈
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?contentResolver@25.32:25.47CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java-	 -(2Ω
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?parsers@26.40:26.47CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java.	 .(2œ
+›com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!parsers	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java% %(%2œ
+›com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!service	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java& &(2Õ
+€com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!query	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java' '(2’
+„com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!byteArrayPool	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java( ((2◊
+Âcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!contentResolver	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java) )(%2∞
+=com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpenerRETURN_TYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java$ $(Ì
+›com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!parsers	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java% %(%"
+typeList<ImageHeaderParser>"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*parsers2z
+java.util.ListTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java% %(
+2û
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java% %(Ê
+›com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!service	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java& &("
+typeFileService"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*service2ü
+3com.bumptech.glide.load.data.mediastore.FileServiceTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java& &(Ë
+€com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!query	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java' '("
+typeThumbnailQuery"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*query2¢
+6com.bumptech.glide.load.data.mediastore.ThumbnailQueryTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java' '(Ù
+„com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!byteArrayPool	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java( (("
+type	ArrayPool"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*byteArrayPool2£
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java( ((Ê
+Âcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.ThumbnailStreamOpener(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.mediastore.FileService, com.bumptech.glide.load.data.mediastore.ThumbnailQuery, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, android.content.ContentResolver)!contentResolver	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java) )(%"
+typeContentResolver"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*contentResolver2ã
+android.content.ContentResolverTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java) )(Ÿ!
+]com.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)METHODb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java1 1("2
+package'com.bumptech.glide.load.data.mediastore"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"	
+LOC20*getOrientation2≥
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java5$ 5(22á
+java.io.InputStream.close()CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java> >(2ÿ
+lcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?is@50.16:50.18CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java4 4(2≈
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?contentResolver@25.32:25.47CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java4 4(2Õ
+acom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)!uriCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java4+ 4(.2Ω
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?parsers@26.40:26.47CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java53 5(:2ÿ
+lcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?is@50.16:50.18CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java5< 5(>2√
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?byteArrayPool@24.26:24.39CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java5@ 5(M2π
+Mcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?TAG@19.30:19.33CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java8 8(2π
+Mcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?TAG@19.30:19.33CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java9 9(2Õ
+acom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)!uriCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java9, 9(/2◊
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?e@55.90:55.91CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java91 9(22ÿ
+lcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?is@50.16:50.18CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java<
+ <(2ÿ
+lcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?is@50.16:50.18CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java>
+ >(2“
+acom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)!uri	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java1 1(2ﬂ
+lcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?is@50.16:50.18DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java2 2(2ﬁ
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?e@55.90:55.91DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java7Z 7([2ﬁ
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?e@63.29:63.30DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java? ?(2v
+intRETURN_TYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java1 1(Õ
+lcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?is@50.16:50.18VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java2 2("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*is2
+java.io.InputStreamTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java2 2(∏
+acom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)!uri	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java1 1("
+typeUri"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*uri2{
+android.net.UriTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java1 1(Ñ
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?e@55.90:55.91VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java7Z 7(["*
+type"IOException | NullPointerException"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*e2†
+4java.io.IOException | java.lang.NullPointerExceptionTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java77 7(YÀ
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getOrientation(android.net.Uri)?e@63.29:63.30VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java? ?("
+typeIOException"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*e2
+java.io.IOExceptionTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java? ?(ú%
+Scom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)METHODb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaG G("2
+package'com.bumptech.glide.load.data.mediastore"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeInputStream"
+accesspublic"	
+LOC21*open2¬
+Vcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaH H(2µ
+Icom.bumptech.glide.load.data.mediastore.FileService.get(java.lang.String)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM M(2ø
+Scom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.isValid(java.io.File)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaN	 N(2û
+2java.lang.Throwable.initCause(java.lang.Throwable)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaZW Z(`2±
+Ejava.io.FileNotFoundException.FileNotFoundException(java.lang.String)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaZ Z(#2√
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)!uriCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaH H(2–
+dcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?path@72.11:72.15CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaI I(2Ω
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?service@22.28:22.35CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM M(2–
+dcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?path@72.11:72.15CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM M( 2œ
+ccom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?file@77.9:77.13CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaN N(2œ
+ccom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?file@77.9:77.13CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaR$ R((2≈
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?contentResolver@25.32:25.47CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaT T(2◊
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?thumbnailUri@82.8:82.20CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaT- T(92√
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)!uriCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaZ: Z(=2◊
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?thumbnailUri@82.8:82.20CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaZI Z(U2Õ
+acom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?e@88.29:88.30CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaZa Z(b2»
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)!uri	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaG G(!2◊
+dcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?path@72.11:72.15DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaH H(2÷
+ccom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?file@77.9:77.13DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM	 M(2ﬁ
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?thumbnailUri@82.8:82.20DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaR R(2‘
+acom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?e@88.29:88.30DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaX X(2Ü
+java.io.InputStreamRETURN_TYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaG	 G( 
+dcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?path@72.11:72.15VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaH H("
+typeString"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*path2|
+java.lang.StringTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaH H(
+2¬
+Vcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaH H(2√
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)!uriCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaH H(É
+ccom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?file@77.9:77.13VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM	 M("
+typeFile"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*file2x
+java.io.FileTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM M(2µ
+Icom.bumptech.glide.load.data.mediastore.FileService.get(java.lang.String)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM M(2Ω
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?service@22.28:22.35CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM M(2–
+dcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?path@72.11:72.15CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaM M( ú
+kcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?thumbnailUri@82.8:82.20VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaR R("
+typeUri"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*thumbnailUri2{
+android.net.UriTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaR R(2œ
+ccom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?file@77.9:77.13CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaR$ R((Æ
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)!uri	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaG G(!"
+typeUri"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*uri2{
+android.net.UriTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaG G(÷
+acom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.open(android.net.Uri)?e@88.29:88.30VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaX X("
+typeNullPointerException"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*e2ä
+java.lang.NullPointerExceptionTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaX X(·
+Vcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)METHODb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java_ _("2
+package'com.bumptech.glide.load.data.mediastore"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accessprivate"	
+LOC20*getPath2π
+Mcom.bumptech.glide.load.data.mediastore.ThumbnailQuery.query(android.net.Uri)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javab b(2’
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javab b(2ª
+Ocom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?query@23.31:23.36CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javab b(2∆
+Zcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)!uriCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javab b(2’
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javac
+ c(2’
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javac c("2’
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javad d(2π
+Mcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?TAG@19.30:19.33CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javai i(2π
+Mcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?TAG@19.30:19.33CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaj j(2∆
+Zcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)!uriCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javaj? j(B2“
+fcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?e@104.31:104.32CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javajD j(E2’
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javan
+ n(2’
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javao o(2À
+Zcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)!uri	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java_& _()2‹
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java` `(2Ÿ
+fcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?e@104.31:104.32DECLARATIONb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javah h( 2É
+java.lang.StringRETURN_TYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java_
+ _(Œ
+icom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?cursor@96.11:96.17VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java` `("
+typeCursor"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*cursor2É
+android.database.CursorTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java` `(
+±
+Zcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)!uri	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java_& _()"
+typeUri"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*uri2{
+android.net.UriTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java_" _(%’
+fcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.getPath(android.net.Uri)?e@104.31:104.32VARIABLEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javah h( "
+typeSecurityException"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*e2á
+java.lang.SecurityExceptionTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javah h(™
+Scom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.isValid(java.io.File)METHODb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javat t("2
+package'com.bumptech.glide.load.data.mediastore"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isValid2¥
+Hcom.bumptech.glide.load.data.mediastore.FileService.exists(java.io.File)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javau u(2¥
+Hcom.bumptech.glide.load.data.mediastore.FileService.length(java.io.File)CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javau/ u(52Ω
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?service@22.28:22.35CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javau u(2ƒ
+Xcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.isValid(java.io.File)!fileCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javau u(2Ω
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?service@22.28:22.35CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javau' u(.2ƒ
+Xcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.isValid(java.io.File)!fileCALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javau6 u(:2…
+Xcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.isValid(java.io.File)!file	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javat t(#2z
+booleanRETURN_TYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javat
+ t(Æ
+Xcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener.isValid(java.io.File)!file	PARAMETERb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javat t(#"
+typeFile"
+isFinalfalse"2
+package'com.bumptech.glide.load.data.mediastore"
+isLocaltrue*file2x
+java.io.FileTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.javat t(…
+Mcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?TAG@19.30:19.33VALUEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (!"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.data.mediastore*TAG2|
+java.lang.StringTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (∫
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?DEFAULT_SERVICE@20.35:20.50VALUEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java# (2"
+isFinaltrue"
+typeFileService"
+isStatictrue"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.data.mediastore*DEFAULT_SERVICE2ü
+3com.bumptech.glide.load.data.mediastore.FileServiceTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ("2≠
+Acom.bumptech.glide.load.data.mediastore.FileService.FileService()CALLb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java9 (D˚
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?service@22.28:22.35VALUEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (#"
+isFinaltrue"
+typeFileService"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.data.mediastore*service2ü
+3com.bumptech.glide.load.data.mediastore.FileServiceTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (˝
+Ocom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?query@23.31:23.36VALUEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ($"
+isFinaltrue"
+typeThumbnailQuery"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.data.mediastore*query2¢
+6com.bumptech.glide.load.data.mediastore.ThumbnailQueryTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (â
+Wcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?byteArrayPool@24.26:24.39VALUEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java ('"
+isFinaltrue"
+type	ArrayPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.data.mediastore*byteArrayPool2£
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (˚
+Ycom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?contentResolver@25.32:25.47VALUEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java  (/"
+isFinaltrue"
+typeContentResolver"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.data.mediastore*contentResolver2ã
+android.content.ContentResolverTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (Ç
+Qcom.bumptech.glide.load.data.mediastore.ThumbnailStreamOpener?parsers@26.40:26.47VALUEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java( (/"
+isFinaltrue"
+typeList<ImageHeaderParser>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.data.mediastore*parsers2z
+java.util.ListTYPEb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (2û
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTb
+Xlibrary/src/main/java/com/bumptech/glide/load/data/mediastore/ThumbnailStreamOpener.java (&

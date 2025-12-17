@@ -1,0 +1,2019 @@
+
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÎ
+<library/src/main/java/com/bumptech/glide/RequestManager.javaFILE>
+<library/src/main/java/com/bumptech/glide/RequestManager.java"
+
+LOC771*<library/src/main/java/com/bumptech/glide/RequestManager.java÷U
+!com.bumptech.glide.RequestManagerCLASSF
+<library/src/main/java/com/bumptech/glide/RequestManager.java8 8("
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC715*RequestManager2”
+¼com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javac	 c(2ö
+žcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javas s(2·
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™ ™(/2º
+acom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (02À
+gcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java³% ³(?2¾
+ecom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÉ% É(=2ˆ
+/com.bumptech.glide.RequestManager.clearOnStop()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÕ% Õ(02Ò
+ycom.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaë ë(12«
+Rcom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô ô(52…
+,com.bumptech.glide.RequestManager.isPaused()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaþ þ(&2Š
+1com.bumptech.glide.RequestManager.pauseRequests()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŒ Œ((2
+4com.bumptech.glide.RequestManager.pauseAllRequests()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java   (+2–
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­ ­(42“
+:com.bumptech.glide.RequestManager.pauseRequestsRecursive()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ Ä(12‹
+2com.bumptech.glide.RequestManager.resumeRequests()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ()2”
+;com.bumptech.glide.RequestManager.resumeRequestsRecursive()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ Ü(22„
++com.bumptech.glide.RequestManager.onStart()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaê ê("2ƒ
+*com.bumptech.glide.RequestManager.onStop()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ(!2†
+-com.bumptech.glide.RequestManager.onDestroy()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ ƒ($2…
+,com.bumptech.glide.RequestManager.asBitmap()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java•  •((2‚
+)com.bumptech.glide.RequestManager.asGif()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¨% ¨(*2‡
+.com.bumptech.glide.RequestManager.asDrawable()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¸" ¸(,2˜
+?com.bumptech.glide.RequestManager.load(android.graphics.Bitmap)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ" Ä(&2£
+Jcom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ" Ð(&2‘
+8com.bumptech.glide.RequestManager.load(java.lang.String)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ" Ü(&2
+7com.bumptech.glide.RequestManager.load(android.net.Uri)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaè" è(&2
+4com.bumptech.glide.RequestManager.load(java.io.File)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô" ô(&2’
+9com.bumptech.glide.RequestManager.load(java.lang.Integer)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java" (&2
+4com.bumptech.glide.RequestManager.load(java.net.URL)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ" Ž(&2‡
+.com.bumptech.glide.RequestManager.load(byte[])DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš" š(&2‘
+8com.bumptech.glide.RequestManager.load(java.lang.Object)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java§" §(&2‰
+0com.bumptech.glide.RequestManager.downloadOnly()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java· ·(*2•
+<com.bumptech.glide.RequestManager.download(java.lang.Object)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÃ Ã(&2ƒ
+*com.bumptech.glide.RequestManager.asFile()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ Ò($2œ
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà5 à(72“
+:com.bumptech.glide.RequestManager.clear(android.view.View)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javañ ñ(2­
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaû û(2¹
+`com.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ ƒ( 2¯
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (2Ñ
+xcom.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­ ­(2—
+>com.bumptech.glide.RequestManager.getDefaultRequestListeners()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java²  ²(:2•
+<com.bumptech.glide.RequestManager.getDefaultRequestOptions()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¶ ¶(62ª
+Qcom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java» »(92…
+,com.bumptech.glide.RequestManager.toString()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÀ À(%2Œ
+3com.bumptech.glide.RequestManager.onTrimMemory(int)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å(2ˆ
+/com.bumptech.glide.RequestManager.onLowMemory()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÌ Ì(2Š
+1com.bumptech.glide.RequestManager.clearRequests()DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ Ð()2´
+[com.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaØ Ø($2—
+@com.bumptech.glide.RequestManager?DECODE_TYPE_BITMAP@58.38:58.56DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.java:& :(82”
+=com.bumptech.glide.RequestManager?DECODE_TYPE_GIF@59.38:59.53DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.java;& ;(52š
+Ccom.bumptech.glide.RequestManager?DOWNLOAD_ONLY_OPTIONS@60.38:60.59DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.java<& <(;2Š
+3com.bumptech.glide.RequestManager?glide@63.24:63.29DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.java? ?(2Œ
+5com.bumptech.glide.RequestManager?context@64.26:64.33DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.java@ @(!2Ž
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaD D(2“
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaG G(-2
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaJ' J(/2’
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaM M(+2—
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaO O(+2˜
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaV$ V(72œ
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaZ> Z(U2“
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.java] ]('2©
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.java_ _(62
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29DECLARATIONF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaa a(2
+Dcom.bumptech.glide.RequestManager.RequestManagerConnectivityListenerDECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÚ Ú(22u
+#android.content.ComponentCallbacks2EXTENDF
+<library/src/main/java/com/bumptech/glide/RequestManager.java9 9("2~
+,com.bumptech.glide.manager.LifecycleListenerEXTENDF
+<library/src/main/java/com/bumptech/glide/RequestManager.java9$ 9(52o
+com.bumptech.glide.ModelTypesEXTENDF
+<library/src/main/java/com/bumptech/glide/RequestManager.java97 9(A2
+!com.bumptech.glide.RequestBuilderEXTEND_TYPE_ARGUMENTF
+<library/src/main/java/com/bumptech/glide/RequestManager.java9B 9(ZÁ
+¼com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)CONSTRUCTORF
+<library/src/main/java/com/bumptech/glide/RequestManager.javac	 c("
+packagecom.bumptech.glide*RequestManager2ˆ
+8com.bumptech.glide.Glide.getConnectivityMonitorFactory()CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javam m(+2Š
+:com.bumptech.glide.manager.RequestTracker.RequestTracker()CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javal l(2“
+Âcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glideCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javai i(2—
+Æcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!lifecycleCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaj j(2–
+Åcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!treeNodeCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javak k(2“
+Âcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glideCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javam m(2•
+Äcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!contextCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javan n(2˜
+Âcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glide	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javad d(2œ
+Æcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!lifecycle	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javae e("2›
+Åcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!treeNode	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaf& f(.2š
+Äcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!context	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javag g(2x
+!com.bumptech.glide.RequestManagerRETURN_TYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javac	 c(Ú
+Âcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glide	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javad d("
+typeGlide"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*glide2h
+com.bumptech.glide.GlideTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javad d(ò
+Æcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!lifecycle	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javae e(""
+type	Lifecycle"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	lifecycle2t
+$com.bumptech.glide.manager.LifecycleTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javae e(‹
+Åcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!treeNode	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaf& f(."
+typeRequestManagerTreeNode"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*treeNode2
+1com.bumptech.glide.manager.RequestManagerTreeNodeTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaf f(%ß
+Äcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!context	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javag g("
+typeContext"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*context2g
+android.content.ContextTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javag g(‘V
+žcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)CONSTRUCTORF
+<library/src/main/java/com/bumptech/glide/RequestManager.javas s("
+packagecom.bumptech.glide*RequestManager2¤
+Rcom.bumptech.glide.Glide.registerRequestManager(com.bumptech.glide.RequestManager)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‡
+ ‡( 2…
+3com.bumptech.glide.util.Util.isOnBackgroundThread()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (!2‘
+?com.bumptech.glide.util.Util.postOnUiThread(java.lang.Runnable)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ Ž(2°
+^com.bumptech.glide.manager.Lifecycle.addListener(com.bumptech.glide.manager.LifecycleListener)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (2°
+^com.bumptech.glide.manager.Lifecycle.addListener(com.bumptech.glide.manager.LifecycleListener)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java’ ’(2Ž
+<com.bumptech.glide.GlideContext.getDefaultRequestListeners()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java•; •(U2|
+*com.bumptech.glide.Glide.getGlideContext()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java•) •(82°
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(2Œ
+:com.bumptech.glide.GlideContext.getDefaultRequestOptions()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java–. –(F2|
+*com.bumptech.glide.Glide.getGlideContext()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(+2å
+’com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ ƒ(22³
+ajava.util.concurrent.CopyOnWriteArrayList.CopyOnWriteArrayList(java.util.Collection<? extends E>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java• •("2õ
+¤com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaz z(2ù
+¨com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycleCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java{ {(2ø
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!treeNodeCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java| |(2þ
+­com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTrackerCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java} }((2÷
+¦com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!contextCALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java~ ~(2“
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java€ €(2ù
+¦com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!factoryCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (2ù
+¦com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!contextCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‚ ‚(2€
+­com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTrackerCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ3 ƒ(A2÷
+¤com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‡ ‡(	2’
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ Ž(,2û
+¨com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycleCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (2û
+¨com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycleCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java’ ’(2“
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java’ ’(-2—
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java” ”(2÷
+¤com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java•# •((2÷
+¤com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(2ƒ
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaz	 z(2‡
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java{	 {(2†
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java|	 |(2Œ
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java}	 }(2…
+5com.bumptech.glide.RequestManager?context@64.26:64.33CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java~	 ~(2ú
+¤com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glide	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javat t(2þ
+¨com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycle	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javau u(2ý
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!treeNode	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javav v(%2ƒ
+­com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTracker	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaw w(#2ü
+¦com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!factory	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javax! x((2ü
+¦com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!context	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javay y(2x
+!com.bumptech.glide.RequestManagerRETURN_TYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javas s(¼
+¤com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glide	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javat t("
+typeGlide"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*glide2h
+com.bumptech.glide.GlideTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javat t(Ô
+¨com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycle	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javau u("
+type	Lifecycle"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	lifecycle2t
+$com.bumptech.glide.manager.LifecycleTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javau u(í
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!treeNode	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javav v(%"
+typeRequestManagerTreeNode"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*treeNode2
+1com.bumptech.glide.manager.RequestManagerTreeNodeTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javav v(è
+­com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTracker	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaw w(#"
+typeRequestTracker"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestTracker2y
+)com.bumptech.glide.manager.RequestTrackerTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaw w(ó
+¦com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!factory	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javax! x((""
+typeConnectivityMonitorFactory"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*factory2…
+5com.bumptech.glide.manager.ConnectivityMonitorFactoryTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javax x( Á
+¦com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!context	PARAMETERF
+<library/src/main/java/com/bumptech/glide/RequestManager.javay y("
+typeContext"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*context2g
+android.content.ContextTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javay y(Ê	
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™ ™(/"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+access	protected"
+LOC2*setRequestOptions2‹
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš# š(,2‡
+5com.bumptech.glide.request.BaseRequestOptions.clone()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš š( 2Ž
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš š(2¶
+dcom.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)!toSetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš š(2»
+dcom.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)!toSet	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™H ™(M2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™ ™(™
+dcom.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)!toSet	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™H ™(M"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*toSet2{
+)com.bumptech.glide.request.RequestOptionsTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™9 ™(G
+
+acom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (0"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC2*updateRequestOptions2·
+ecom.bumptech.glide.request.BaseRequestOptions.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž$ ž()2Ž
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž(2Ž
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž(#2¼
+jcom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)!toUpdateCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž* ž(22Á
+jcom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)!toUpdate	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaI (Q2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (¢
+jcom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)!toUpdate	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaI (Q"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*toUpdate2{
+)com.bumptech.glide.request.RequestOptionsTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java: (H±
+gcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java³% ³(?"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC5*applyDefaultRequestOptions2³
+acom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaµ µ(2È
+vcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptionsCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaµ µ('2Í
+vcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java´ ´(,2z
+!com.bumptech.glide.RequestManagerRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java³ ³($´
+vcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java´ ´(,"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestOptions2{
+)com.bumptech.glide.request.RequestOptionsTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java´ ´(¦
+ecom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÉ% É(="
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC5*setDefaultRequestOptions2°
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaË Ë(2Æ
+tcom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptionsCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaË Ë($2Ë
+tcom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÊ Ê(,2z
+!com.bumptech.glide.RequestManagerRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÉ É($²
+tcom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÊ Ê(,"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestOptions2{
+)com.bumptech.glide.request.RequestOptionsTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÊ Ê(§
+/com.bumptech.glide.RequestManager.clearOnStop()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÕ% Õ(0"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC4*clearOnStop2‹
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÖ Ö(2z
+!com.bumptech.glide.RequestManagerRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÕ Õ($Ó	
+ycom.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaë ë(1"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC3*addDefaultRequestListener2‚
+0java.util.concurrent.CopyOnWriteArrayList.add(E)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaì ì(2—
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaì ì(2Ü
+‰com.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)!requestListenerCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaì  ì(/2á
+‰com.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)!requestListener	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaëJ ë(Y2z
+!com.bumptech.glide.RequestManagerRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaë	 ë(À
+‰com.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)!requestListener	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaëJ ë(Y"
+typeRequestListener<Object>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestListener2|
+*com.bumptech.glide.request.RequestListenerTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaë2 ë(A2k
+java.lang.ObjectTYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaëB ë(HÉ
+Rcom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô ô(5"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*'setPauseAllRequestsOnTrimMemoryModerate2¤
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ((2³
+acom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)!pauseAllOnTrimCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ+ õ(92¸
+acom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)!pauseAllOnTrim	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô> ô(L2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô	 ô(ö
+acom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)!pauseAllOnTrim	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô> ô(L"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*pauseAllOnTrim2Y
+booleanTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô6 ô(=Œ
+,com.bumptech.glide.RequestManager.isPaused()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaþ þ(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC2*isPaused2†
+4com.bumptech.glide.manager.RequestTracker.isPaused()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿ ÿ("2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿ ÿ(2`
+booleanRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaþ þ(•
+1com.bumptech.glide.RequestManager.pauseRequests()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŒ Œ(("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*pauseRequests2‹
+9com.bumptech.glide.manager.RequestTracker.pauseRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java ( 2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŒ Œ(ž
+4com.bumptech.glide.RequestManager.pauseAllRequests()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java   (+"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*pauseAllRequests2Ž
+<com.bumptech.glide.manager.RequestTracker.pauseAllRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¡ ¡(#2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¡ ¡(2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java   (§
+
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­ ­(4"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*pauseAllRequestsRecursive2†
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java® ®(2”
+Bcom.bumptech.glide.manager.RequestManagerTreeNode.getDescendants()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯2 ¯(@2†
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java° °(%2ˆ
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯) ¯(12¬
+Zcom.bumptech.glide.RequestManager.pauseAllRequestsRecursive()?requestManager@303.24:303.38CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java° °(2³
+Zcom.bumptech.glide.RequestManager.pauseAllRequestsRecursive()?requestManager@303.24:303.38DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯ ¯(&2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­ ­(
+Zcom.bumptech.glide.RequestManager.pauseAllRequestsRecursive()?requestManager@303.24:303.38VARIABLEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯ ¯(&"
+typeRequestManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestManager2s
+!com.bumptech.glide.RequestManagerTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯	 ¯(•
+
+:com.bumptech.glide.RequestManager.pauseRequestsRecursive()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ Ä(1"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*pauseRequestsRecursive2ƒ
+1com.bumptech.glide.RequestManager.pauseRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å(2”
+Bcom.bumptech.glide.manager.RequestManagerTreeNode.getDescendants()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÆ2 Æ(@2ƒ
+1com.bumptech.glide.RequestManager.pauseRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÇ Ç("2ˆ
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÆ) Æ(12©
+Wcom.bumptech.glide.RequestManager.pauseRequestsRecursive()?requestManager@326.24:326.38CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÇ Ç(2°
+Wcom.bumptech.glide.RequestManager.pauseRequestsRecursive()?requestManager@326.24:326.38DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÆ Æ(&2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ Ä(Œ
+Wcom.bumptech.glide.RequestManager.pauseRequestsRecursive()?requestManager@326.24:326.38VARIABLEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÆ Æ(&"
+typeRequestManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestManager2s
+!com.bumptech.glide.RequestManagerTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÆ	 Æ(˜
+2com.bumptech.glide.RequestManager.resumeRequests()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ()"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*resumeRequests2Œ
+:com.bumptech.glide.manager.RequestTracker.resumeRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ Ò(!2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ Ò(2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ(Ÿ
+;com.bumptech.glide.RequestManager.resumeRequestsRecursive()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ Ü(2"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC7*resumeRequestsRecursive2
+/com.bumptech.glide.util.Util.assertMainThread()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÝ	 Ý(2„
+2com.bumptech.glide.RequestManager.resumeRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÞ Þ(2”
+Bcom.bumptech.glide.manager.RequestManagerTreeNode.getDescendants()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß2 ß(@2„
+2com.bumptech.glide.RequestManager.resumeRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà à(#2ˆ
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß) ß(12ª
+Xcom.bumptech.glide.RequestManager.resumeRequestsRecursive()?requestManager@351.24:351.38CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà à(2±
+Xcom.bumptech.glide.RequestManager.resumeRequestsRecursive()?requestManager@351.24:351.38DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß ß(&2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ Ü(
+Xcom.bumptech.glide.RequestManager.resumeRequestsRecursive()?requestManager@351.24:351.38VARIABLEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß ß(&"
+typeRequestManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestManager2s
+!com.bumptech.glide.RequestManagerTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß	 ß(—
++com.bumptech.glide.RequestManager.onStart()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaê ê(""
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*onStart2„
+2com.bumptech.glide.RequestManager.resumeRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaë ë(2„
+2com.bumptech.glide.manager.TargetTracker.onStart()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaì ì(2
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaì ì(2Œ
+6com.bumptech.glide.manager.LifecycleListener.onStart()OVERRIDEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaê ê("2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaê ê(¦	
+*com.bumptech.glide.RequestManager.onStop()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ(!"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC8*onStop2ƒ
+1com.bumptech.glide.manager.TargetTracker.onStop()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaö ö(2ƒ
+1com.bumptech.glide.RequestManager.clearRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaø ø(2ƒ
+1com.bumptech.glide.RequestManager.pauseRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaú ú(2
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaö ö(2‹
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java÷ ÷(2‹
+5com.bumptech.glide.manager.LifecycleListener.onStop()OVERRIDEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ(!2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ(¼
+-com.bumptech.glide.RequestManager.onDestroy()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ ƒ($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*	onDestroy2†
+4com.bumptech.glide.manager.TargetTracker.onDestroy()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„ „(2ƒ
+1com.bumptech.glide.RequestManager.clearRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java… …(2‹
+9com.bumptech.glide.manager.RequestTracker.clearRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java† †( 2³
+acom.bumptech.glide.manager.Lifecycle.removeListener(com.bumptech.glide.manager.LifecycleListener)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‡ ‡(2³
+acom.bumptech.glide.manager.Lifecycle.removeListener(com.bumptech.glide.manager.LifecycleListener)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaˆ ˆ(2œ
+Jcom.bumptech.glide.util.Util.removeCallbacksOnUiThread(java.lang.Runnable)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‰	 ‰("2¦
+Tcom.bumptech.glide.Glide.unregisterRequestManager(com.bumptech.glide.RequestManager)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŠ
+ Š("2
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„ „(2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java† †(2‰
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‡ ‡(2‰
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaˆ ˆ(2“
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaˆ ˆ(02’
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‰# ‰(52…
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŠ Š(	2Ž
+8com.bumptech.glide.manager.LifecycleListener.onDestroy()OVERRIDEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ ƒ($2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ ƒ(ñ
+,com.bumptech.glide.RequestManager.asBitmap()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java•  •(("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<Bitmap>"
+accesspublic"
+LOC4*asBitmap2«
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(!2•
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(2’
+@com.bumptech.glide.RequestManager?DECODE_TYPE_BITMAP@58.38:58.56CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java–" –(42z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java•	 •(2y
+android.graphics.BitmapRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java• •(‡
+)com.bumptech.glide.RequestManager.asGif()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¨% ¨(*"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"#
+typeRequestBuilder<GifDrawable>"
+accesspublic"
+LOC4*asGif2«
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java©! ©(&2•
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java© ©(2
+=com.bumptech.glide.RequestManager?DECODE_TYPE_GIF@59.38:59.53CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java©' ©(62z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¨	 ¨(2’
+0com.bumptech.glide.load.resource.gif.GifDrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¨ ¨(#À
+.com.bumptech.glide.RequestManager.asDrawable()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¸" ¸(,"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC4*
+asDrawable2•
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¹ ¹(2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¸	 ¸(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¸ ¸( …	
+?com.bumptech.glide.RequestManager.load(android.graphics.Bitmap)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ" Ä(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2‘
+?com.bumptech.glide.RequestBuilder.load(android.graphics.Bitmap)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å(2˜
+Fcom.bumptech.glide.RequestManager.load(android.graphics.Bitmap)!bitmapCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å(#2
+Fcom.bumptech.glide.RequestManager.load(android.graphics.Bitmap)!bitmap	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ8 Ä(>2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ	 Ä(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ Ä( â
+Fcom.bumptech.glide.RequestManager.load(android.graphics.Bitmap)!bitmap	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ8 Ä(>"
+typeBitmap"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*bitmap2i
+android.graphics.BitmapTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ1 Ä(7µ	
+Jcom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ" Ð(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2œ
+Jcom.bumptech.glide.RequestBuilder.load(android.graphics.drawable.Drawable)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ(2¥
+Scom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)!drawableCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ(%2ª
+Scom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)!drawable	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ: Ð(B2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ	 Ð(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ Ð( þ
+Scom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)!drawable	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ: Ð(B"
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*drawable2t
+"android.graphics.drawable.DrawableTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ1 Ð(9é
+8com.bumptech.glide.RequestManager.load(java.lang.String)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ" Ü(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2Š
+8com.bumptech.glide.RequestBuilder.load(java.lang.String)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÝ Ý(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÝ Ý(2‘
+?com.bumptech.glide.RequestManager.load(java.lang.String)!stringCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÝ Ý(#2–
+?com.bumptech.glide.RequestManager.load(java.lang.String)!string	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ8 Ü(>2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ	 Ü(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ Ü( Ô
+?com.bumptech.glide.RequestManager.load(java.lang.String)!string	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ8 Ü(>"
+typeString"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*string2b
+java.lang.StringTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÜ1 Ü(7ß
+7com.bumptech.glide.RequestManager.load(android.net.Uri)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaè" è(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2‰
+7com.bumptech.glide.RequestBuilder.load(android.net.Uri)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaé é(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaé é(2
+;com.bumptech.glide.RequestManager.load(android.net.Uri)!uriCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaé é( 2’
+;com.bumptech.glide.RequestManager.load(android.net.Uri)!uri	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaè5 è(82z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaè	 è(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaè è( É
+;com.bumptech.glide.RequestManager.load(android.net.Uri)!uri	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaè5 è(8"
+typeUri"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*uri2a
+android.net.UriTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaè1 è(4Õ
+4com.bumptech.glide.RequestManager.load(java.io.File)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô" ô(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2†
+4com.bumptech.glide.RequestBuilder.load(java.io.File)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ(2‹
+9com.bumptech.glide.RequestManager.load(java.io.File)!fileCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaõ õ(!2
+9com.bumptech.glide.RequestManager.load(java.io.File)!file	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô6 ô(:2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô	 ô(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô ô( Æ
+9com.bumptech.glide.RequestManager.load(java.io.File)!file	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô6 ô(:"
+typeFile"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*file2^
+java.io.FileTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô1 ô(5õ
+9com.bumptech.glide.RequestManager.load(java.lang.Integer)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java" (&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC6*load2‹
+9com.bumptech.glide.RequestBuilder.load(java.lang.Integer)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‚ ‚(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‚ ‚(2–
+Dcom.bumptech.glide.RequestManager.load(java.lang.Integer)!resourceIdCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java‚ ‚('2›
+Dcom.bumptech.glide.RequestManager.load(java.lang.Integer)!resourceId	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaN (X2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java	 (2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java ( ß
+Dcom.bumptech.glide.RequestManager.load(java.lang.Integer)!resourceId	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaN (X"
+typeInteger"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*
+resourceId2c
+java.lang.IntegerTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaF (MÓ
+4com.bumptech.glide.RequestManager.load(java.net.URL)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ" Ž(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC6*load2†
+4com.bumptech.glide.RequestBuilder.load(java.net.URL)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (2Š
+8com.bumptech.glide.RequestManager.load(java.net.URL)!urlCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java ( 2
+8com.bumptech.glide.RequestManager.load(java.net.URL)!url	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ5 Ž(82z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ	 Ž(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ Ž( Ã
+8com.bumptech.glide.RequestManager.load(java.net.URL)!url	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ5 Ž(8"
+typeURL"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*url2^
+java.net.URLTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaŽ1 Ž(4¿
+.com.bumptech.glide.RequestManager.load(byte[])METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš" š(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2€
+.com.bumptech.glide.RequestBuilder.load(byte[])CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java› ›(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java› ›(2†
+4com.bumptech.glide.RequestManager.load(byte[])!modelCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java› ›("2‹
+4com.bumptech.glide.RequestManager.load(byte[])!model	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš8 š(=2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš	 š(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš š( ¾
+4com.bumptech.glide.RequestManager.load(byte[])!model	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš8 š(="
+typebyte[]"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2X
+byte[]TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaš1 š(7ç
+8com.bumptech.glide.RequestManager.load(java.lang.Object)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java§" §(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2Š
+8com.bumptech.glide.RequestBuilder.load(java.lang.Object)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¨ ¨(2€
+.com.bumptech.glide.RequestManager.asDrawable()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¨ ¨(2
+>com.bumptech.glide.RequestManager.load(java.lang.Object)!modelCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¨ ¨("2•
+>com.bumptech.glide.RequestManager.load(java.lang.Object)!model	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java§8 §(=2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java§	 §(2„
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java§ §( Ò
+>com.bumptech.glide.RequestManager.load(java.lang.Object)!model	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java§8 §(="
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2b
+java.lang.ObjectTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java§1 §(7ï
+0com.bumptech.glide.RequestManager.downloadOnly()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java· ·(*"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<File>"
+accesspublic"
+LOC4*downloadOnly2«
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¸ ¸(2•
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¸ ¸(2•
+Ccom.bumptech.glide.RequestManager?DOWNLOAD_ONLY_OPTIONS@60.38:60.59CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¸  ¸(52z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java·	 ·(2n
+java.io.FileRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java· ·(Þ
+<com.bumptech.glide.RequestManager.download(java.lang.Object)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÃ Ã(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<File>"
+accesspublic"
+LOC4*download2Š
+8com.bumptech.glide.RequestBuilder.load(java.lang.Object)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ Ä(2‚
+0com.bumptech.glide.RequestManager.downloadOnly()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ Ä(2”
+Bcom.bumptech.glide.RequestManager.download(java.lang.Object)!modelCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÄ Ä($2™
+Bcom.bumptech.glide.RequestManager.download(java.lang.Object)!model	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÃ8 Ã(=2z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÃ	 Ã(2n
+java.io.FileRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÃ Ã(Ö
+Bcom.bumptech.glide.RequestManager.download(java.lang.Object)!model	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÃ8 Ã(="
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2b
+java.lang.ObjectTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÃ1 Ã(7ä
+*com.bumptech.glide.RequestManager.asFile()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ Ò($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<File>"
+accesspublic"
+LOC4*asFile2«
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÓ Ó(2•
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÓ Ó(2–
+Dcom.bumptech.glide.request.RequestOptions.skipMemoryCacheOf(boolean)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÓ  Ó(12z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ	 Ò(2n
+java.io.FileRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ Ò(õ
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà5 à(7"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"$
+typeRequestBuilder<ResourceType>"
+accesspublic"
+LOC5*as2ù
+¦com.bumptech.glide.RequestBuilder.RequestBuilder(com.bumptech.glide.Glide, com.bumptech.glide.RequestManager, java.lang.Class<TranscodeType>, android.content.Context)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaâ â(2…
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaâ  â(%2£
+Qcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)!resourceClassCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaâ- â(:2‡
+5com.bumptech.glide.RequestManager?context@64.26:64.33CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaâ< â(C2¨
+Qcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)!resourceClass	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaá# á(02z
+!com.bumptech.glide.RequestBuilderRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà à(&2²
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà' à(32¬
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeTYPE_PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà
+ à(§
+Qcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)!resourceClass	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaá# á(0"
+typeClass<ResourceType>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*resourceClass2a
+java.lang.ClassTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaá á(2«
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeTYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaá á(!º
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeTYPE_PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà
+ à(*ResourceTypeî
+:com.bumptech.glide.RequestManager.clear(android.view.View)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javañ ñ("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*clear2¦
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaò ò(	2ž
+Lcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaò ò(2‘
+?com.bumptech.glide.RequestManager.clear(android.view.View)!viewCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaò ò(2–
+?com.bumptech.glide.RequestManager.clear(android.view.View)!view	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javañ" ñ(&2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javañ	 ñ(Ñ
+?com.bumptech.glide.RequestManager.clear(android.view.View)!view	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javañ" ñ(&"
+typeView"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*view2c
+android.view.ViewTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javañ ñ(!Û
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaû û("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*clear2²
+`com.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java€ €(2­
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaü ü(2­
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java€ €(2²
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaû. û(42]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaû	 û(Š
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaû. û(4"
+type	Target<?>"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*target2z
+(com.bumptech.glide.request.target.TargetTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaû$ û(*ý
+`com.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ ƒ( "
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC24*untrackOrDelegate2¨
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„ „(!2‡
+5com.bumptech.glide.request.target.Target.getRequest()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –('2ª
+Xcom.bumptech.glide.Glide.removeFromManagers(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java— —(12©
+Wcom.bumptech.glide.request.target.Target.setRequest(com.bumptech.glide.request.Request)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java˜ ˜(2|
+*com.bumptech.glide.request.Request.clear()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™ ™(2¹
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„" „((2¹
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(2Ì
+zcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?isOwnedByUs@644.12:644.23CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java—	 —(2…
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java— —(2¹
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java—2 —(82È
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java—= —(D2¹
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java˜ ˜(2È
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java™ ™(2¾
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ4 ƒ(:2Ó
+zcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?isOwnedByUs@644.12:644.23DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„ „(2Ï
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ
+ ƒ(ò
+zcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?isOwnedByUs@644.12:644.23VARIABLEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„ „("
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isOwnedByUs2Y
+booleanTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„ „(2¨
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„ „(!2¹
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java„" „((ä
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19VARIABLEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –("
+typeRequest"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2t
+"com.bumptech.glide.request.RequestTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(2‡
+5com.bumptech.glide.request.target.Target.getRequest()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –('2¹
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java– –(—
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ4 ƒ(:"
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2z
+(com.bumptech.glide.request.target.TargetTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaƒ* ƒ(0ö
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java ("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspackage_private"	
+LOC14*untrack2‡
+5com.bumptech.glide.request.target.Target.getRequest()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž('2®
+\com.bumptech.glide.manager.RequestTracker.clearAndRemove(com.bumptech.glide.request.Request)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¤ ¤(%2¯
+]com.bumptech.glide.manager.TargetTracker.untrack(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¥ ¥(2©
+Wcom.bumptech.glide.request.target.Target.setRequest(com.bumptech.glide.request.Request)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¦ ¦(2¯
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž(2¾
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java   (2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¤ ¤(2¾
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¤& ¤(-2
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¥ ¥(2¯
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¥ ¥("2¯
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¦ ¦(2´
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java2 (82Å
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž(2`
+booleanRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java (Ð
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19VARIABLEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž("
+typeRequest"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2t
+"com.bumptech.glide.request.RequestTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž(2‡
+5com.bumptech.glide.request.target.Target.getRequest()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž('2¯
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaž ž(
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java2 (8"
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2z
+(com.bumptech.glide.request.target.TargetTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java( (.š
+xcom.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­ ­("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*track2­
+[com.bumptech.glide.manager.TargetTracker.track(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java® ®(2ª
+Xcom.bumptech.glide.manager.RequestTracker.runRequest(com.bumptech.glide.request.Request)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯ ¯(2
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java® ®(2Ñ
+com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!targetCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java® ®(2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯ ¯(2Ó
+€com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!requestCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¯ ¯(%2Ö
+com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­- ­(32Ø
+€com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!request	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­F ­(M2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­ ­(¯
+com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!target	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­- ­(3"
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2z
+(com.bumptech.glide.request.target.TargetTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­# ­()ª
+€com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!request	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­F ­(M"
+typeRequest"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2t
+"com.bumptech.glide.request.RequestTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java­> ­(EÙ
+>com.bumptech.glide.RequestManager.getDefaultRequestListeners()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java²  ²(:"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"%
+typeList<RequestListener<Object>>"
+accesspackage_private"
+LOC2*getDefaultRequestListeners2—
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java³ ³("2g
+java.util.ListRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java² ²(2Œ
+*com.bumptech.glide.request.RequestListenerRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java² ²(2r
+java.lang.ObjectRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java² ²(Ö
+<com.bumptech.glide.RequestManager.getDefaultRequestOptions()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¶ ¶(6"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspackage_private"
+LOC2*getDefaultRequestOptions2Ž
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java· ·(2‚
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¶ ¶(ã
+Qcom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.java» »(9"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeTransitionOptions<?, T>"
+accesspackage_private"
+LOC3*getDefaultTransitionOptions2¡
+Ocom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¼# ¼(>2|
+*com.bumptech.glide.Glide.getGlideContext()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¼ ¼( 2…
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¼ ¼(2²
+`com.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClassCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.java¼? ¼(M2·
+`com.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClass	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java»C »(Q2}
+$com.bumptech.glide.TransitionOptionsRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java» »(2µ
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TRETURN_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java» »(2¯
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java» »(¯
+`com.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClass	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java»C »(Q"
+typeClass<T>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*transcodeClass2a
+java.lang.ClassTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.java»: »(?2®
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.java»@ »(A²
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.java» »(*T…
+,com.bumptech.glide.RequestManager.toString()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÀ À(%"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC3*toString2m
+java.lang.Object.toString()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÁ Á(2Ž
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÁ, Á(:2ˆ
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÁM Á(U2i
+java.lang.StringRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÀ À(Ñ
+3com.bumptech.glide.RequestManager.onTrimMemory(int)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC5*onTrimMemory2
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÇ Ç(2‹
+9com.bumptech.glide.RequestManager.onTrimMemory(int)!levelCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÆ Æ(2¤
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÆ) Æ(M2
+9com.bumptech.glide.RequestManager.onTrimMemory(int)!level	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å($2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ	 Å(½
+9com.bumptech.glide.RequestManager.onTrimMemory(int)!level	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å($"
+typeint"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*level2U
+intTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÅ Å(ò
+/com.bumptech.glide.RequestManager.onLowMemory()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÌ Ì("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*onLowMemory2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÌ	 Ì(ˆ
+1com.bumptech.glide.RequestManager.clearRequests()METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ Ð()"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC5*clearRequests2ƒ
+1com.bumptech.glide.manager.TargetTracker.getAll()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ* Ñ(02¦
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ Ò(2‚
+0com.bumptech.glide.manager.TargetTracker.clear()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÔ Ô(2
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ()2˜
+Fcom.bumptech.glide.RequestManager.clearRequests()?target@721.19:721.25CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÒ Ò(2
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÔ Ô(2Ÿ
+Fcom.bumptech.glide.RequestManager.clearRequests()?target@721.19:721.25DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ(2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÐ Ð(õ
+Fcom.bumptech.glide.RequestManager.clearRequests()?target@721.19:721.25VARIABLEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ Ñ("
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2z
+(com.bumptech.glide.request.target.TargetTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÑ	 Ñ(è
+[com.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaØ Ø($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*onConfigurationChanged2¼
+ecom.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)!newConfig	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaØ3 Ø(<2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaØ	 Ø(•
+ecom.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)!newConfig	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaØ3 Ø(<"
+typeConfiguration"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	newConfig2s
+!android.content.res.ConfigurationTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaØ% Ø(2Ã
+@com.bumptech.glide.RequestManager?DECODE_TYPE_BITMAP@58.38:58.56VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java:& :(8"
+isFinaltrue"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*DECODE_TYPE_BITMAP2y
+)com.bumptech.glide.request.RequestOptionsTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java: :(%2„
+4com.bumptech.glide.request.BaseRequestOptions.lock()CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java:V :(Z2š
+Jcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java:; :(G½
+=com.bumptech.glide.RequestManager?DECODE_TYPE_GIF@59.38:59.53VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java;& ;(5"
+isFinaltrue"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*DECODE_TYPE_GIF2y
+)com.bumptech.glide.request.RequestOptionsTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java; ;(%2„
+4com.bumptech.glide.request.BaseRequestOptions.lock()CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java;X ;(\2š
+Jcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java;8 ;(D¦
+Ccom.bumptech.glide.RequestManager?DOWNLOAD_ONLY_OPTIONS@60.38:60.59VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java<& <(;"
+isFinaltrue"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*DOWNLOAD_ONLY_OPTIONS2y
+)com.bumptech.glide.request.RequestOptionsTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java< <(%2–
+Fcom.bumptech.glide.request.BaseRequestOptions.skipMemoryCache(boolean)CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java=I =(X2£
+Scom.bumptech.glide.request.BaseRequestOptions.priority(com.bumptech.glide.Priority)CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java=2 =(:2¿
+ocom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.java= =(î
+3com.bumptech.glide.RequestManager?glide@63.24:63.29VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java? ?("
+isFinaltrue"
+typeGlide"
+isStaticfalse"
+access	protected"
+isLocalfalse"
+packagecom.bumptech.glide*glide2h
+com.bumptech.glide.GlideTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java? ?(ó
+5com.bumptech.glide.RequestManager?context@64.26:64.33VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java@ @(!"
+isFinaltrue"
+typeContext"
+isStaticfalse"
+access	protected"
+isLocalfalse"
+packagecom.bumptech.glide*context2g
+android.content.ContextTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java@ @(Œ
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaD D("
+isFinaltrue"
+type	Lifecycle"
+isStaticfalse"
+accesspackage_private"
+isLocalfalse"
+packagecom.bumptech.glide*	lifecycle2t
+$com.bumptech.glide.manager.LifecycleTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaD D(˜
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaG G(-"
+isFinaltrue"
+typeRequestTracker"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*requestTracker2y
+)com.bumptech.glide.manager.RequestTrackerTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaG G(
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaJ' J(/"
+isFinaltrue"
+typeRequestManagerTreeNode"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*treeNode2
+1com.bumptech.glide.manager.RequestManagerTreeNodeTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaJ J(&Ÿ
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaM M(+"
+isFinaltrue"
+typeTargetTracker"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*targetTracker2x
+(com.bumptech.glide.manager.TargetTrackerTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaM M(2ˆ
+8com.bumptech.glide.manager.TargetTracker.TargetTracker()CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaM2 M(?“
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaO O(+"
+isFinaltrue"
+typeRunnable"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*addSelfToLifecycle2b
+java.lang.RunnableTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaO O(2®
+^com.bumptech.glide.manager.Lifecycle.addListener(com.bumptech.glide.manager.LifecycleListener)CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaS S(2Ò
+com.bumptech.glide.RequestManager.Anonymous-f3de6f66-bc53-4c4d-9acf-5e61dc9d19ec.Anonymous-f3de6f66-bc53-4c4d-9acf-5e61dc9d19ec()CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaP
+ P(2‡
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaS
+ S(¬
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaV$ V(7"
+isFinaltrue"
+typeConnectivityMonitor"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*connectivityMonitor2~
+.com.bumptech.glide.manager.ConnectivityMonitorTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaV V(#º
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85VALUEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaZ> Z(U"
+isFinaltrue"5
+type-CopyOnWriteArrayList<RequestListener<Object>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*defaultRequestListeners2y
+)java.util.concurrent.CopyOnWriteArrayListTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaZ Z($2ƒ
+*com.bumptech.glide.request.RequestListenerTYPE_ARGUMENTF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaZ% Z(42i
+java.lang.ObjectTYPE_ARGUMENTF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaZ5 Z(;œ
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39VARIABLEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java] ]('"
+isFinalfalse"
+typeRequestOptions"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*requestOptions2y
+)com.bumptech.glide.request.RequestOptionsTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java]
+ ](Ÿ
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54VARIABLEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java_ _(6"
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*$pauseAllRequestsOnTrimMemoryModerate2W
+booleanTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.java_
+ _(í
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29VARIABLEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaa a("
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*clearOnStop2W
+booleanTYPEF
+<library/src/main/java/com/bumptech/glide/RequestManager.javaa
+ a(¹
+Dcom.bumptech.glide.RequestManager.RequestManagerConnectivityListenerCLASSH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÚ Ú(2"
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"
+accessprivate"	
+LOC17*"RequestManagerConnectivityListener2ì
+’com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß ß(&2¼
+ccom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaä ä(%2º
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÝ! Ý(/2—
+Ccom.bumptech.glide.manager.ConnectivityMonitor.ConnectivityListenerEXTENDH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÛ% Û(9ø
+’com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)CONSTRUCTORH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß ß(&"
+packagecom.bumptech.glide*"RequestManagerConnectivityListener2ô
+¡com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)!requestTrackerCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà à(*2³
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaà à(2ù
+¡com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)!requestTracker	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß? ß(M2
+Dcom.bumptech.glide.RequestManager.RequestManagerConnectivityListenerRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß ß(&à
+¡com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)!requestTracker	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß? ß(M"
+typeRequestTracker"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestTracker2{
+)com.bumptech.glide.manager.RequestTrackerTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaß0 ß(>¾
+
+ccom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaä ä(%"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC7*onConnectivityChanged2
+;com.bumptech.glide.manager.RequestTracker.restartRequests()CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaç ç((2Á
+ocom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)!isConnectedCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaå
+ å(2³
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaç
+ ç(2¸
+bcom.bumptech.glide.manager.ConnectivityMonitor.ConnectivityListener.onConnectivityChanged(boolean)OVERRIDEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaä ä(%2Æ
+ocom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)!isConnected	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaä. ä(92]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaä ä(
+ocom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)!isConnected	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaä. ä(9"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isConnected2Y
+booleanTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaä& ä(-Á
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47VALUEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÝ! Ý(/"
+isFinaltrue"
+typeRequestTracker"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*requestTracker2{
+)com.bumptech.glide.manager.RequestTrackerTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÝ Ý( ’
+-com.bumptech.glide.RequestManager.ClearTargetCLASSH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaí í(""
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC21*ClearTarget2¥
+Lcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaï ï(2¼
+ccom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô ô($2·
+^com.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaù ù(2õ
+›com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)DECLARATIONH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaþ þ(2†
+2com.bumptech.glide.request.target.CustomViewTargetEXTENDH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaí+ í(;2s
+android.view.ViewEXTEND_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaí< í(@2r
+java.lang.ObjectEXTEND_TYPE_ARGUMENTH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaíB í(HÆ
+Lcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)CONSTRUCTORH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaï ï("
+packagecom.bumptech.glide*ClearTarget2˜
+Fcom.bumptech.glide.request.target.CustomViewTarget.CustomViewTarget(T)CALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javað ð(2£
+Qcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)!viewCALLH
+<library/src/main/java/com/bumptech/glide/RequestManager.javað ð(2¨
+Qcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)!view	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaï ï("2†
+-com.bumptech.glide.RequestManager.ClearTargetRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaï ï(ã
+Qcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)!view	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaï ï(""
+typeView"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*view2c
+android.view.ViewTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaï ï(¹
+ccom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô ô($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+access	protected"
+LOC3*onResourceCleared2¾
+hcom.bumptech.glide.request.target.CustomViewTarget.onResourceCleared(android.graphics.drawable.Drawable)OVERRIDEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô ô($2Æ
+ocom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô8 ô(C2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô ô(
+ocom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô8 ô(C"
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*placeholder2t
+"android.graphics.drawable.DrawableTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaô/ ô(7š
+^com.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaù ù("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*onLoadFailed2¯
+Ycom.bumptech.glide.request.target.Target.onLoadFailed(android.graphics.drawable.Drawable)OVERRIDEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaù ù(2Ã
+lcom.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)!errorDrawable	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaù0 ù(=2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaù ù(œ
+lcom.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)!errorDrawable	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaù0 ù(="
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*errorDrawable2t
+"android.graphics.drawable.DrawableTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaù' ù(/ã
+›com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)METHODH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaþ þ("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*onResourceReady2ü
+¤com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!resource	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿ ÿ( 2þ
+¦com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!transition	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿG ÿ(Q2]
+voidRETURN_TYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaþ þ(¼
+¤com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!resource	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿ ÿ( "
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*resource2b
+java.lang.ObjectTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿ ÿ(õ
+¦com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!transition	PARAMETERH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿG ÿ(Q""
+typeTransition<? super Object>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*
+transition2‚
+0com.bumptech.glide.request.transition.TransitionTYPEH
+<library/src/main/java/com/bumptech/glide/RequestManager.javaÿ, ÿ(6

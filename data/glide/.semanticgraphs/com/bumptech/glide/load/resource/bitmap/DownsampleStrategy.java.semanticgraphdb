@@ -1,0 +1,1354 @@
+
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaFILEW
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java"
+
+LOC296*Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java•
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyCLASS_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java (("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstracttrue"
+accesspublic"
+
+LOC267*DownsampleStrategy2Õ
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javay y(&2÷
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÖ% Ö(:2ø
+Ocom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?AT_LEAST@38.41:38.49DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java&) &(12æ
+Ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?AT_MOST@46.41:46.48DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java.) .(02¡
+Qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?FIT_CENTER@63.41:63.51DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java?) ?(32ƒ
+Tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?CENTER_INSIDE@66.41:66.54DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaB) B(62≈
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?CENTER_OUTSIDE@80.41:80.55DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaP) P(72ª
+Kcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?NONE@83.41:83.45DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaS) S(-2æ
+Ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?DEFAULT@86.41:86.48DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaV) V(02Ω
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?OPTION@95.49:95.55DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java_1 _(72‹
+lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?IS_BITMAP_FACTORY_SCALING_SUPPORTED@100.23:100.58DECLARATION_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javad d(:2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingDECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaú ú( ◊
+
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)METHOD_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javay y(&"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstracttrue"
+typefloat"
+accesspublic"
+LOC1*getScaleFactor2◊
+icom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz
+ z(2ÿ
+jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz z('2⁄
+lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz- z(;2€
+mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javazA z(P2u
+floatRETURN_TYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javay y(∂
+icom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz
+ z("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2l
+intTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz z(	∏
+jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz z('"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2l
+intTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz z(º
+lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz- z(;"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2l
+intTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz) z(,æ
+mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETER_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javazA z(P"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2l
+intTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaz= z(@„
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÖ% Ö(:"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstracttrue"
+typeSampleSizeRounding"
+accesspublic"
+LOC1*getSampleSizeRounding2‡
+pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ
+ Ü(2·
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü('2„
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ- Ü(;2‰
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜA Ü(P2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÖ Ö($¡
+pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ
+ Ü("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü(	√
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü('"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü(«
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ- Ü(;"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ) Ü(,…
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜA Ü(P"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ= Ü(@∏
+Ocom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?AT_LEAST@38.41:38.49VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java&) &(1"
+isFinaltrue"
+typeDownsampleStrategy"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*AT_LEAST2£
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java& &((2µ
+Lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.AtLeast()CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java&8 &(?¥
+Ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?AT_MOST@46.41:46.48VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java.) .(0"
+isFinaltrue"
+typeDownsampleStrategy"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*AT_MOST2£
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java. .((2≥
+Jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.AtMost()CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java.7 .(=¿
+Qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?FIT_CENTER@63.41:63.51VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java?) ?(3"
+isFinaltrue"
+typeDownsampleStrategy"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*
+FIT_CENTER2£
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java? ?((2π
+Pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.FitCenter()CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java?: ?(CÃ
+Tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?CENTER_INSIDE@66.41:66.54VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaB) B(6"
+isFinaltrue"
+typeDownsampleStrategy"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*CENTER_INSIDE2£
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaB B((2ø
+Vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.CenterInside()CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaB= B(I–
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?CENTER_OUTSIDE@80.41:80.55VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaP) P(7"
+isFinaltrue"
+typeDownsampleStrategy"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*CENTER_OUTSIDE2£
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaP P((2¡
+Xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.CenterOutside()CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaP> P(K™
+Kcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?NONE@83.41:83.45VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaS) S(-"
+isFinaltrue"
+typeDownsampleStrategy"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*NONE2£
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaS S((2Ø
+Fcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.None()CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaS4 S(8ø
+Ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?DEFAULT@86.41:86.48VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaV) V(0"
+isFinaltrue"
+typeDownsampleStrategy"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*DEFAULT2£
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaV V((2æ
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?CENTER_OUTSIDE@80.41:80.55CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaV3 V(A˜
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?OPTION@95.49:95.55VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java_1 _(7"
+isFinaltrue""
+typeOption<DownsampleStrategy>"
+isStatictrue"
+accesspublic"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*OPTION2á
+com.bumptech.glide.load.OptionTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java_ _(2¨
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyTYPE_ARGUMENT_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java_ _(/2£
+:com.bumptech.glide.load.Option.memory(java.lang.String, T)CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java` `(2∑
+Ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?DEFAULT@86.41:86.48CALL_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaaT a([Ç
+lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy?IS_BITMAP_FACTORY_SCALING_SUPPORTED@100.23:100.58VALUE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javad d(:"
+isFinaltrue"
+typeboolean"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*#IS_BITMAP_FACTORY_SCALING_SUPPORTED2p
+booleanTYPE_
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javad d(¯
+Dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenterCLASSa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaà à( "2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC34*	FitCenter2¬
+Pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.FitCenter()DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaã ã(2Ÿ
+gcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaé é(2‡
+ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaü ü(32ß
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyEXTENDa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaà) à(;∫
+Pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.FitCenter()CONSTRUCTORa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaã ã("2
+package'com.bumptech.glide.load.resource.bitmap*	FitCenter2∂
+Dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenterRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaã ã(Ó+
+gcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaé é("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typefloat"
+accesspublic"	
+LOC15*getScaleFactor2ã
+ java.lang.Math.min(float, float)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaî î(2á
+java.lang.Math.max(int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô ô(2è
+$java.lang.Integer.highestOneBit(int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaö9 ö(F2·
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë  ë(.2ﬁ
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë9 ë(D2‚
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí! í(02ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí; í(G2Ò
+Öcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?widthPercentage@145.14:145.29CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaî î('2Ú
+Ücom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?heightPercentage@146.14:146.30CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaî) î(92ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô ô(!2‚
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô$ ô(32ﬁ
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô5 ô(@2·
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaôC ô(Q2Ú
+Ücom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?maxIntegerFactor@152.12:152.28CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaö ö(2Ú
+Ücom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?maxIntegerFactor@152.12:152.28CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaöG ö(W2Ã
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaé é(2„
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è(2‰
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è()2Ê
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè/ è(=2Á
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaèC è(R2¯
+Öcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?widthPercentage@145.14:145.29DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë ë(2˘
+Ücom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?heightPercentage@146.14:146.30DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí í(2˘
+Ücom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?maxIntegerFactor@152.12:152.28DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaò ò(2w
+floatRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaé é(£
+Öcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?widthPercentage@145.14:145.29VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë ë("
+typefloat"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*widthPercentage2p
+floatTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë ë(2·
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë  ë(.2ﬁ
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë9 ë(Dß
+Ücom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?heightPercentage@146.14:146.30VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí í("
+typefloat"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*heightPercentage2p
+floatTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí í(2‚
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí! í(02ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí; í(GÚ
+Ücom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)?maxIntegerFactor@152.12:152.28VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaò ò("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*maxIntegerFactor2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaò ò(2á
+java.lang.Math.max(int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô ô(2ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô ô(!2‚
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô$ ô(32ﬁ
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaô5 ô(@2·
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaôC ô(Qƒ
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è(∆
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è( 
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè/ è(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè+ è(.Ã
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaèC è(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè? è(BÚ
+ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaü ü(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSampleSizeRounding"
+accesspublic"	
+LOC11*getSampleSizeRounding2¿
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?QUALITYCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¢" ¢()2ø
+Tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?MEMORYCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaß" ß((2”
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaü ü(32Í
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java† †(2Î
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java† †()2Ì
+}com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java†/ †(=2Ó
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java†C †(R2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaü ü(À
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java† †("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java† †(Õ
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java† †()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java† †(—
+}com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java†/ †(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java†+ †(.”
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.FitCenter.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java†C †(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java†? †(Bê	
+Hcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutsideCLASSa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¨ ¨($"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC18*CenterOutside2 
+Xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.CenterOutside()DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaØ Ø(2›
+kcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≤ ≤(2‰
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∫ ∫(32ß
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyEXTENDa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¨- ¨(? 
+Xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.CenterOutside()CONSTRUCTORa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaØ Ø("2
+package'com.bumptech.glide.load.resource.bitmap*CenterOutside2∫
+Hcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutsideRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaØ Ø(ì
+kcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≤ ≤("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typefloat"
+accesspublic"
+LOC6*getScaleFactor2ã
+ java.lang.Math.max(float, float)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∂ ∂(2Â
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¥ ¥(,2‚
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¥7 ¥(B2Ê
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaµ µ(.2„
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaµ9 µ(E2ı
+âcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)?widthPercentage@180.12:180.27CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∂ ∂(%2ˆ
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)?heightPercentage@181.12:181.28CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∂' ∂(72Ã
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≤ ≤(2Á
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥ ≥(2Ë
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥ ≥()2Í
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥/ ≥(=2Î
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥C ≥(R2¸
+âcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)?widthPercentage@180.12:180.27DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¥ ¥(2˝
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)?heightPercentage@181.12:181.28DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaµ µ(2w
+floatRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≤ ≤(Ø
+âcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)?widthPercentage@180.12:180.27VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¥ ¥("
+typefloat"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*widthPercentage2p
+floatTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¥ ¥(2Â
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¥ ¥(,2‚
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¥7 ¥(B≥
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)?heightPercentage@181.12:181.28VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaµ µ("
+typefloat"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*heightPercentage2p
+floatTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaµ µ(2Ê
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaµ µ(.2„
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaµ9 µ(E»
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥ ≥("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥ ≥( 
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥ ≥()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥ ≥(Œ
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥/ ≥(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥+ ≥(.–
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥C ≥(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java≥? ≥(B≈
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∫ ∫(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSampleSizeRounding"
+accesspublic"
+LOC4*getSampleSizeRounding2¿
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?QUALITYCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaº  º('2”
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∫ ∫(32Ó
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª ª(2Ô
+com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª ª()2Ú
+Åcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª/ ª(=2Û
+Çcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaªC ª(R2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∫ ∫(œ
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª ª("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª ª(—
+com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª ª()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª ª(÷
+Åcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª/ ª(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª+ ª(.ÿ
+Çcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterOutside.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaªC ª(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaª? ª(BÏ
+Bcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeastCLASSa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¿ ¿("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC17*AtLeast2æ
+Lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.AtLeast()DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java√ √(2◊
+ecom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∆ ∆(2ﬁ
+lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÕ Õ(32ß
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyEXTENDa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¿' ¿(9≤
+Lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.AtLeast()CONSTRUCTORa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java√ √("2
+package'com.bumptech.glide.load.resource.bitmap*AtLeast2¥
+Bcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeastRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java√ √(€
+ecom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∆ ∆("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typefloat"
+accesspublic"
+LOC5*getScaleFactor2á
+java.lang.Math.min(int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»" »(%2è
+$java.lang.Integer.highestOneBit(int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java…7 …(D2›
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»& »(22‡
+ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»5 »(D2‹
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»F »(Q2ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»T »(b2
+Ñcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)?minIntegerFactor@200.10:200.26CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java… …(2
+Ñcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)?minIntegerFactor@200.10:200.26CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java…E …(U2Ã
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∆ ∆(2·
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java« «(2‚
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java« «()2‰
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java«/ «(=2Â
+ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java«C «(R2˜
+Ñcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)?minIntegerFactor@200.10:200.26DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»
+ »(2w
+floatRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java∆ ∆(Ë
+Ñcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)?minIntegerFactor@200.10:200.26VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»
+ »("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*minIntegerFactor2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java» »(	2á
+java.lang.Math.min(int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»" »(%2›
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»& »(22‡
+ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»5 »(D2‹
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»F »(Q2ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java»T »(b¬
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java« «("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java« «(ƒ
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java« «()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java« «(»
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java«/ «(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java«+ «(. 
+ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java«C «(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java«? «(B•
+lcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÕ Õ(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSampleSizeRounding"
+accesspublic"
+LOC4*getSampleSizeRounding2¿
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?QUALITYCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaœ  œ('2”
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÕ Õ(32Ë
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ Œ(2È
+ycom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ Œ()2Î
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ/ Œ(=2Ï
+|com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒC Œ(R2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÕ Õ(…
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ Œ("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ Œ(À
+ycom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ Œ()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ Œ(œ
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ/ Œ(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ+ Œ(.—
+|com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtLeast.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒC Œ(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŒ? Œ(BÊ
+Acom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMostCLASSa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java” ”("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC25*AtMost2º
+Jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.AtMost()DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java÷ ÷(
+2÷
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŸ Ÿ(2›
+kcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaË Ë(32ß
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyEXTENDa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java”& ”(8Æ
+Jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.AtMost()CONSTRUCTORa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java÷ ÷(
+"2
+package'com.bumptech.glide.load.resource.bitmap*AtMost2≥
+Acom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMostRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java÷ ÷(
+‘'
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŸ Ÿ("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typefloat"
+accesspublic"	
+LOC13*getScaleFactor2Ü
+java.lang.Math.ceil(double)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java› ›(2ã
+ java.lang.Math.max(float, float)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaﬁ ﬁ(2á
+java.lang.Math.max(int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·) ·(,2è
+$java.lang.Integer.highestOneBit(int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·8 ·(E2‹
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaﬂ ﬂ("2ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaﬂ- ﬂ(<2€
+pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‡ ‡(!2ﬁ
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‡, ‡(:2Ô
+Écom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?maxIntegerFactor@219.10:219.26CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·F ·(V2ˆ
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?lesserOrEqualSampleSize@225.10:225.33CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java„
+ „(!2ˆ
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?lesserOrEqualSampleSize@225.10:225.33CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java„& „(=2Ô
+Écom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?maxIntegerFactor@219.10:219.26CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java„@ „(P2˜
+ãcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?greaterOrEqualSampleSize@226.10:226.34CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‰ ‰(*2Ã
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŸ Ÿ(2‡
+pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄ ⁄(2·
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄ ⁄()2„
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄/ ⁄(=2‰
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄C ⁄(R2ˆ
+Écom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?maxIntegerFactor@219.10:219.26DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java€
+ €(2˝
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?lesserOrEqualSampleSize@225.10:225.33DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·
+ ·(!2˛
+ãcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?greaterOrEqualSampleSize@226.10:226.34DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‚
+ ‚("2w
+floatRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaŸ Ÿ(
+Écom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?maxIntegerFactor@219.10:219.26VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java€
+ €("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*maxIntegerFactor2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java€ €(	2Ü
+java.lang.Math.ceil(double)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java› ›(2ã
+ java.lang.Math.max(float, float)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaﬁ ﬁ(2‹
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaﬂ ﬂ("2ﬂ
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaﬂ- ﬂ(<2€
+pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‡ ‡(!2ﬁ
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‡, ‡(:ı
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?lesserOrEqualSampleSize@225.10:225.33VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·
+ ·(!"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*lesserOrEqualSampleSize2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java· ·(	2á
+java.lang.Math.max(int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·) ·(,2è
+$java.lang.Integer.highestOneBit(int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·8 ·(E2Ô
+Écom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?maxIntegerFactor@219.10:219.26CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java·F ·(VÕ	
+ãcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?greaterOrEqualSampleSize@226.10:226.34VARIABLEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‚
+ ‚(""
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*greaterOrEqualSampleSize2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java‚ ‚(	2ˆ
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?lesserOrEqualSampleSize@225.10:225.33CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java„
+ „(!2ˆ
+äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?lesserOrEqualSampleSize@225.10:225.33CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java„& „(=2Ô
+Écom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)?maxIntegerFactor@219.10:219.26CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java„@ „(P¡
+pcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄ ⁄("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄ ⁄(√
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄ ⁄()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄ ⁄(«
+scom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄/ ⁄(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄+ ⁄(.…
+tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄C ⁄(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java⁄? ⁄(Bü
+kcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaË Ë(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSampleSizeRounding"
+accesspublic"
+LOC4*getSampleSizeRounding2ø
+Tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?MEMORYCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÍ  Í(&2”
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaË Ë(32Á
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ È(2Ë
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ È()2Í
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ/ È(=2Î
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈC È(R2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaË Ë(»
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ È("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ È( 
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ È()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ È(Œ
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ/ È(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ+ È(.–
+{com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.AtMost.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈC È(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÈ? È(B⁄
+?com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.NoneCLASSa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÓ Ó("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC16*None2∏
+Fcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.None()DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÒ Ò(2‘
+bcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÙ Ù(2€
+icom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˙ ˙(32ß
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyEXTENDa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÓ$ Ó(6¶
+Fcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.None()CONSTRUCTORa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÒ Ò("2
+package'com.bumptech.glide.load.resource.bitmap*None2±
+?com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.NoneRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÒ Ò(Ã
+bcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÙ Ù("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typefloat"
+accesspublic"
+LOC4*getScaleFactor2Ã
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÙ Ù(2ﬁ
+ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı ı(2ﬂ
+ocom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı ı()2·
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı/ ı(=2‚
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaıC ı(R2w
+floatRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÙ Ù(ø
+ncom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı ı("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı ı(¡
+ocom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı ı()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı ı(≈
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı/ ı(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı+ ı(.«
+rcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaıC ı(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaı? ı(Bñ
+icom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˙ ˙(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSampleSizeRounding"
+accesspublic"
+LOC4*getSampleSizeRounding2¿
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?QUALITYCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¸  ¸('2”
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˙ ˙(32Â
+ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚ ˚(2Ê
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚ ˚()2Ë
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚/ ˚(=2È
+ycom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚C ˚(R2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˙ ˙(∆
+ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚ ˚("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚ ˚(»
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚ ˚()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚ ˚(Ã
+xcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚/ ˚(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚+ ˚(.Œ
+ycom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.None.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚C ˚(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java˚? ˚(Bä	
+Gcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInsideCLASSa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÄ Ä(#"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC22*CenterInside2»
+Vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.CenterInside()DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÉ É(2‹
+jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü(2„
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)DECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è(32ß
+:com.bumptech.glide.load.resource.bitmap.DownsampleStrategyEXTENDa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÄ, Ä(>∆
+Vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.CenterInside()CONSTRUCTORa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÉ É("2
+package'com.bumptech.glide.load.resource.bitmap*CenterInside2π
+Gcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInsideRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÉ É(Â
+jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typefloat"
+accesspublic"
+LOC7*getScaleFactor2ã
+ java.lang.Math.min(float, float)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaâ â(2»
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaã ã(#2·
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaã$ ã(/2‚
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaã1 ã(=2‰
+ycom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaã? ã(M2Â
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaãO ã(^2Ã
+]com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getScaleFactor(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü(2Ê
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá á(2Á
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá á()2È
+ycom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá/ á(=2Í
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaáC á(R2w
+floatRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaÜ Ü(«
+vcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá á("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá á(…
+wcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá á()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá á(Õ
+ycom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá/ á(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá+ á(.œ
+zcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaáC á(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaá? á(B÷!
+qcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)METHODa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSampleSizeRounding"
+accesspublic"
+LOC7*getSampleSizeRounding2’
+jcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getScaleFactor(int, int, int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë ë(2œ
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)CALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaì ì(,2Ë
+}com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë ë('2È
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë) ë(52Ï
+Äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaë7 ë(E2Ì
+Åcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaëG ë(V2Ë
+}com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaî î(2È
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaî î('2Ï
+Äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedWidthCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaî) î(72Ì
+Åcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedHeightCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaî9 î(H2¿
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?QUALITYCALLa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaí í(&2”
+dcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.getSampleSizeRounding(int, int, int, int)OVERRIDEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è(32Ì
+}com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê ê(2Ó
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê ê()2Ò
+Äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê/ ê(=2Ú
+Åcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaêC ê(R2ø
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingRETURN_TYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaè è(Œ
+}com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê ê("
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê ê(–
+~com.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!sourceHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê ê()"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*sourceHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê ê(’
+Äcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedWidth	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê/ ê(="
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedWidth2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê+ ê(.◊
+Åcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.CenterInside.getSampleSizeRounding(int, int, int, int)!requestedHeight	PARAMETERa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaêC ê(R"
+typeint"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*requestedHeight2n
+intTYPEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaê? ê(Bì
+Mcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRoundingENUMa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.javaú ú( "2
+package'com.bumptech.glide.load.resource.bitmap*SampleSizeRounding2∆
+Tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?MEMORYDECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java° °(
+2«
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?QUALITYDECLARATIONa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¶ ¶(î
+Tcom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?MEMORYVALUEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java° °(
+"
+enumtrue"
+LOC0"2
+package'com.bumptech.glide.load.resource.bitmap*MEMORYñ
+Ucom.bumptech.glide.load.resource.bitmap.DownsampleStrategy.SampleSizeRounding?QUALITYVALUEa
+Ulibrary/src/main/java/com/bumptech/glide/load/resource/bitmap/DownsampleStrategy.java¶ ¶("
+enumtrue"
+LOC0"2
+package'com.bumptech.glide.load.resource.bitmap*QUALITY

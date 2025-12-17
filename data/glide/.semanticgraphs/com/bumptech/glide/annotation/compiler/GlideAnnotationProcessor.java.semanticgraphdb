@@ -1,0 +1,350 @@
+
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaÃ
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaFILEh
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java"
+
+LOC127*fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaÃ
+?com.bumptech.glide.annotation.compiler.GlideAnnotationProcessorCLASSp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java> >(+"1
+package&com.bumptech.glide.annotation.compiler"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"	
+LOC66*GlideAnnotationProcessor2¯
+wcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaG G(2ﬁ
+]com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedAnnotationTypes()DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaR R(02‹
+[com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedSourceVersion()DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaZ Z(02∂
+¥com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javam m(2“
+Qcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?DEBUG@63.23:63.28DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java? ?(2⁄
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java@ @(%2„
+bcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?libraryModuleProcessor@65.33:65.55DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaA! A(72ﬂ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?appModuleProcessor@66.29:66.47DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaB B(/2Ì
+lcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?isGeneratedAppGlideModuleWritten@67.18:67.50DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaC C(22ﬂ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?extensionProcessor@68.29:68.47DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaD D(/2©
+-javax.annotation.processing.AbstractProcessorEXTENDp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java>4 >(EÉ0
+wcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)METHODp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaG G("1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*init2ﬂ
+ejavax.annotation.processing.AbstractProcessor.init(javax.annotation.processing.ProcessingEnvironment)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaH
+ H(2Ô
+ucom.bumptech.glide.annotation.compiler.ProcessorUtil.ProcessorUtil(javax.annotation.processing.ProcessingEnvironment)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaI I(%2¯
+~com.bumptech.glide.annotation.compiler.IndexerGenerator.IndexerGenerator(com.bumptech.glide.annotation.compiler.ProcessorUtil)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaJ, J(<2æ
+√com.bumptech.glide.annotation.compiler.LibraryModuleProcessor.LibraryModuleProcessor(com.bumptech.glide.annotation.compiler.ProcessorUtil, com.bumptech.glide.annotation.compiler.IndexerGenerator)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaK! K(72∞
+µcom.bumptech.glide.annotation.compiler.AppModuleProcessor.AppModuleProcessor(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaL L(/2È
+Ócom.bumptech.glide.annotation.compiler.ExtensionProcessor.ExtensionProcessor(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil, com.bumptech.glide.annotation.compiler.IndexerGenerator)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaN N(2à
+çcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)!processingEnvironmentCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaH H($2”
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaI I(2à
+çcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)!processingEnvironmentCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaI& I(;2”
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaJ= J(J2‹
+bcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?libraryModuleProcessor@65.33:65.55CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaK K(2”
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaK8 K(E2è
+îcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)?indexerGenerator@74.21:74.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaKG K(W2ÿ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?appModuleProcessor@66.29:66.47CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaL L(2à
+çcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)!processingEnvironmentCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaL0 L(E2”
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaLG L(T2ÿ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?extensionProcessor@68.29:68.47CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaM M(2à
+çcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)!processingEnvironmentCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaN N(42”
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaN6 N(C2è
+îcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)?indexerGenerator@74.21:74.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaNE N(U2ç
+çcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)!processingEnvironment	PARAMETERp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaG6 G(K2ñ
+îcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)?indexerGenerator@74.21:74.37DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaJ J(%2Ö
+voidRETURN_TYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaG G(ö
+îcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)?indexerGenerator@74.21:74.37VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaJ J(%"
+typeIndexerGenerator"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*indexerGenerator2±
+7com.bumptech.glide.annotation.compiler.IndexerGeneratorTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaJ J(2¯
+~com.bumptech.glide.annotation.compiler.IndexerGenerator.IndexerGenerator(com.bumptech.glide.annotation.compiler.ProcessorUtil)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaJ, J(<2”
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaJ= J(J«
+çcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.init(javax.annotation.processing.ProcessingEnvironment)!processingEnvironment	PARAMETERp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaG6 G(K"
+typeProcessingEnvironment"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processingEnvironment2´
+1javax.annotation.processing.ProcessingEnvironmentTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaG  G(5„
+]com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedAnnotationTypes()METHODp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaR R(0"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSet<String>"
+accesspublic"
+LOC6*getSupportedAnnotationTypes2±
+7java.util.Set.addAll(java.util.Collection<? extends E>)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaT T(2’
+[com.bumptech.glide.annotation.compiler.LibraryModuleProcessor.getSupportedAnnotationTypes()CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaT) T(D2±
+7java.util.Set.addAll(java.util.Collection<? extends E>)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaU U(2—
+Wcom.bumptech.glide.annotation.compiler.ExtensionProcessor.getSupportedAnnotationTypes()CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaU% U(@2ï
+java.util.HashSet.HashSet()CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaS S(&2Í
+pcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedAnnotationTypes()?result@83.16:83.22CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaT T(
+2‹
+bcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?libraryModuleProcessor@65.33:65.55CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaT T((2Í
+pcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedAnnotationTypes()?result@83.16:83.22CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaU U(
+2ÿ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?extensionProcessor@68.29:68.47CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaU U($2Í
+pcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedAnnotationTypes()?result@83.16:83.22CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaV V(2Ò
+pcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedAnnotationTypes()?result@83.16:83.22DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaS S(2é
+java.util.SetRETURN_TYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaR	 R(2ö
+java.lang.StringRETURN_TYPE_ARGUMENTp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaR R(ô
+pcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedAnnotationTypes()?result@83.16:83.22VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaS S("
+typeSet<String>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*result2á
+java.util.SetTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaS S(2ì
+java.lang.StringTYPE_ARGUMENTp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaS S(2ï
+java.util.HashSet.HashSet()CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaS S(&·
+[com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.getSupportedSourceVersion()METHODp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaZ Z(0"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeSourceVersion"
+accesspublic"
+LOC3*getSupportedSourceVersion2™
+0javax.lang.model.SourceVersion.latestSupported()CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java[ [((2ü
+javax.lang.model.SourceVersionRETURN_TYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaZ	 Z(Ù6
+¥com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)METHODp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javam m("1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"	
+LOC18*process2∏
+>com.bumptech.glide.annotation.compiler.ProcessorUtil.process()CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javan n(2Ù
+zcom.bumptech.glide.annotation.compiler.LibraryModuleProcessor.processModules(javax.annotation.processing.RoundEnvironment)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javao7 o(E2Û
+ycom.bumptech.glide.annotation.compiler.ExtensionProcessor.processExtensions(javax.annotation.processing.RoundEnvironment)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javap5 p(F2∞
+µcom.bumptech.glide.annotation.compiler.AppModuleProcessor.processModules(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaq q(%2…
+Ocom.bumptech.glide.annotation.compiler.AppModuleProcessor.maybeWriteAppModule()CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java{< {(O2¡
+Gjava.lang.IllegalStateException.IllegalStateException(java.lang.String)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javau u('2”
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javan n(2‹
+bcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?libraryModuleProcessor@65.33:65.55CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javao  o(62≥
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!envCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaoF o(I2ÿ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?extensionProcessor@68.29:68.47CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javap" p(42≥
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!envCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javapG p(J2ÿ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?appModuleProcessor@66.29:66.47CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaq q(2≥
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!setCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaq& q()2≥
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!envCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaq+ q(.2—
+÷com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)?newExtensionWritten@112.12:112.31CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javas s(2œ
+‘com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)?newModulesWritten@111.12:111.29CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javas s(02Ê
+lcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?isGeneratedAppGlideModuleWritten@67.18:67.50CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javat
+ t(*2Ê
+lcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?isGeneratedAppGlideModuleWritten@67.18:67.50CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaz	 z()2Ê
+lcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?isGeneratedAppGlideModuleWritten@67.18:67.50CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java{ {(&2ÿ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?appModuleProcessor@66.29:66.47CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java{) {(;2∏
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!set	PARAMETERp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javam4 m(72∏
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!env	PARAMETERp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javamJ m(M2÷
+‘com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)?newModulesWritten@111.12:111.29DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javao o(2ÿ
+÷com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)?newExtensionWritten@112.12:112.31DECLARATIONp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javap p(2à
+booleanRETURN_TYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javam	 m(›
+
+‘com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)?newModulesWritten@111.12:111.29VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javao o("
+typeboolean"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*newModulesWritten2Å
+booleanTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javao o(2Ù
+zcom.bumptech.glide.annotation.compiler.LibraryModuleProcessor.processModules(javax.annotation.processing.RoundEnvironment)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javao7 o(E2‹
+bcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?libraryModuleProcessor@65.33:65.55CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javao  o(62≥
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!envCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaoF o(I‹
+
+÷com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)?newExtensionWritten@112.12:112.31VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javap p("
+typeboolean"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*newExtensionWritten2Å
+booleanTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javap p(2Û
+ycom.bumptech.glide.annotation.compiler.ExtensionProcessor.processExtensions(javax.annotation.processing.RoundEnvironment)CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javap5 p(F2ÿ
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?extensionProcessor@68.29:68.47CALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javap" p(42≥
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!envCALLp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javapG p(J¡
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!set	PARAMETERp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javam4 m(7""
+typeSet<? extends TypeElement>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*set2á
+java.util.SetTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javam m(÷
+∏com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment)!env	PARAMETERp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javamJ m(M"
+typeRoundEnvironment"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*env2¶
+,javax.annotation.processing.RoundEnvironmentTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javam9 m(IÎ
+Qcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?DEBUG@63.23:63.28VALUEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java? ?("
+isFinaltrue"
+typeboolean"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*DEBUG2Å
+booleanTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java? ?(´
+Ycom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?processorUtil@64.24:64.37VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java@ @(%"
+isFinalfalse"
+typeProcessorUtil"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processorUtil2Æ
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.java@
+ @(œ
+bcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?libraryModuleProcessor@65.33:65.55VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaA! A(7"
+isFinalfalse"
+typeLibraryModuleProcessor"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*libraryModuleProcessor2∑
+=com.bumptech.glide.annotation.compiler.LibraryModuleProcessorTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaA
+ A( ø
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?appModuleProcessor@66.29:66.47VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaB B(/"
+isFinalfalse"
+typeAppModuleProcessor"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*appModuleProcessor2≥
+9com.bumptech.glide.annotation.compiler.AppModuleProcessorTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaB
+ B(û
+lcom.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?isGeneratedAppGlideModuleWritten@67.18:67.50VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaC C(2"
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler* isGeneratedAppGlideModuleWritten2Å
+booleanTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaC
+ C(ø
+^com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor?extensionProcessor@68.29:68.47VARIABLEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaD D(/"
+isFinalfalse"
+typeExtensionProcessor"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*extensionProcessor2≥
+9com.bumptech.glide.annotation.compiler.ExtensionProcessorTYPEp
+fannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideAnnotationProcessor.javaD
+ D(

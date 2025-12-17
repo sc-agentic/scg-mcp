@@ -1,0 +1,306 @@
+
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java·
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaFILEo
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java"
+
+LOC103*mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java€
+Fcom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGeneratorCLASSw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (+"1
+package&com.bumptech.glide.annotation.compiler"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC77*RequestOptionsOverrideGenerator2ÿ
+œcom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (!2†
+ócom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName)DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java' '(C2¡
+∏com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java, ,(C2π
+∞com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaB B(22Ò
+icom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?baseRequestOptionsType@28.28:28.50DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (22Ë
+`com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?processorUtil@29.24:29.37DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (%
+œcom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)CONSTRUCTORw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (!"1
+package&com.bumptech.glide.annotation.compiler*RequestOptionsOverrideGenerator2∆
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java$( $(62ƒ
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java$ $(%2ﬂ
+›com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtilCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java" "(&2Í
+icom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?baseRequestOptionsType@28.28:28.50CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java# #(2ﬂ
+›com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java$ $(2·
+`com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?processorUtil@29.24:29.37CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java"	 "(2‰
+›com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java   ()2‰
+›com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java 9  (F2Œ
+Fcom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGeneratorRETURN_TYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (!ù
+›com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java   ()"
+typeProcessingEnvironment"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processingEnv2≤
+1javax.annotation.processing.ProcessingEnvironmentTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java   (ò
+›com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.RequestOptionsOverrideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java 9  (F"
+typeProcessorUtil"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processorUtil2µ
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java +  (8Ü
+ócom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName)METHODw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java' '(C"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<MethodSpec>"
+accesspackage_private"
+LOC3*0generateInstanceMethodOverridesForRequestOptions2∫
+∏com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java( ((;2°
+ java.util.Collections.emptySet()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java). )(62™
+®com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName)!typeToOverrideInCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java) )(2Ø
+®com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName)!typeToOverrideIn	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java'M '(]2ñ
+java.util.ListRETURN_TYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java' '(2±
+ com.squareup.javapoet.MethodSpecRETURN_TYPE_ARGUMENTw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java' '(À
+®com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName)!typeToOverrideIn	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java'M '(]"
+typeTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*typeToOverrideIn2ü
+com.squareup.javapoet.TypeNameTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java'D '(L∞$
+∏com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)METHODw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java, ,(C"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<MethodSpec>"
+accesspackage_private"	
+LOC20*0generateInstanceMethodOverridesForRequestOptions2ü
+ùcom.bumptech.glide.annotation.compiler.ProcessorUtil.findInstanceMethodsReturning(javax.lang.model.element.TypeElement, javax.lang.model.element.TypeElement)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java/ /(62©
+(java.util.Set.contains(java.lang.Object)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java5( 5(02¢
+!java.lang.CharSequence.toString()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java5G 5(O2ª
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java57 5(D2≤
+∞com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java< <(42·
+`com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?processorUtil@29.24:29.37CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java/ /(2Í
+icom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?baseRequestOptionsType@28.28:28.50CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java0 0(&2Í
+icom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?baseRequestOptionsType@28.28:28.50CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java0( 0(>2 
+»com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)!excludedMethodsCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java5 5('2Ø
+≠com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.Anonymous-96a08b75-bf9a-4974-9a86-826b09a9b128.apply(javax.lang.model.element.ExecutableElement)!inputCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java51 5(62À
+…com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)!typeToOverrideInCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java<5 <(E2Ø
+≠com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.Anonymous-24c825f6-4fb5-4045-8695-4decee6b4308.apply(javax.lang.model.element.ExecutableElement)!inputCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java<G <(L2–
+…com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)!typeToOverrideIn	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java- -(%2œ
+»com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)!excludedMethods	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java-9 -(H2ñ
+java.util.ListRETURN_TYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java, ,(2±
+ com.squareup.javapoet.MethodSpecRETURN_TYPE_ARGUMENTw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java, ,(Î
+…com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)!typeToOverrideIn	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java- -(%"
+typeTypeName"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*typeToOverrideIn2ü
+com.squareup.javapoet.TypeNameTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java- -(¯
+»com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateInstanceMethodOverridesForRequestOptions(com.squareup.javapoet.TypeName, java.util.Set<java.lang.String>)!excludedMethods	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java-9 -(H"
+typeSet<String>"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*excludedMethods2é
+java.util.SetTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java-- -(02ö
+java.lang.StringTYPE_ARGUMENTw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java-1 -(7⁄
+≠com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.Anonymous-bc31a3af-003f-405e-bb87-884781e96b40.apply(javax.lang.model.element.ExecutableElement)!input	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java45 4(:"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2´
+*javax.lang.model.element.ExecutableElementTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java4# 4(4⁄
+≠com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.Anonymous-1d7a5efa-87d3-4f99-aa7b-0c81c427ab2c.apply(javax.lang.model.element.ExecutableElement)!input	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java;8 ;(="
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2´
+*javax.lang.model.element.ExecutableElementTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java;& ;(7¥?
+∞com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)METHODw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaB B(2"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC36*generateRequestOptionOverride2Ï
+kcom.bumptech.glide.annotation.compiler.ProcessorUtil.overriding(javax.lang.model.element.ExecutableElement)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE E( 2ª
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaHM H(Z2≤
+1java.lang.String.contains(java.lang.CharSequence)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaV4 V(<2¢
+!java.lang.CharSequence.toString()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaV) V(12ª
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaV V(&2∑
+6javax.lang.model.element.ExecutableElement.isVarArgs()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaW W(%2∏
+7javax.lang.model.element.Element.getAnnotationMirrors()CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaa4 a(H2·
+`com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?processorUtil@29.24:29.37CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE E(2√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE! E(12√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!typeToOverrideInCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE; E(K2≈
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?result@68.23:68.29CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaF F(
+2√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!typeToOverrideInCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaH* H(:2√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaH< H(L2≈
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?result@68.23:68.29CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaJ$ J(*2®
+¶com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.Anonymous-7b76eed6-fc7e-4a20-9992-6c405904f00d.apply(com.squareup.javapoet.ParameterSpec)!inputCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaO# O((2√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaV V(2√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaW W(2≈
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?result@68.23:68.29CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaX X(2√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaa# a(32≈
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?result@68.23:68.29CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javab b(2≈
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?mirror@97.26:97.32CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javab. b(42≈
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?result@68.23:68.29CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javae e(2»
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!typeToOverrideIn	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaC C(2»
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaC3 C(C2Ã
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?result@68.23:68.29DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaD D(2Ã
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?mirror@97.26:97.32DECLARATIONw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaa a( 2®
+ com.squareup.javapoet.MethodSpecRETURN_TYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaB
+ B(Œ
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?result@68.23:68.29VARIABLEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaD D("
+typeMethodSpec.Builder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*result2©
+(com.squareup.javapoet.MethodSpec.BuilderTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaD D(2Ï
+kcom.bumptech.glide.annotation.compiler.ProcessorUtil.overriding(javax.lang.model.element.ExecutableElement)CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE E( 2·
+`com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?processorUtil@29.24:29.37CALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE E(2√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE! E(12√
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!typeToOverrideInCALLw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaE; E(KÓ
+√com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)?mirror@97.26:97.32VARIABLEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaa a( "
+typeAnnotationMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*mirror2™
+)javax.lang.model.element.AnnotationMirrorTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaa	 a(‰
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!typeToOverrideIn	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaC C("
+typeTypeName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*typeToOverrideIn2ü
+com.squareup.javapoet.TypeNameTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaC C(˘
+¡com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.generateRequestOptionOverride(com.squareup.javapoet.TypeName, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaC3 C(C"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2´
+*javax.lang.model.element.ExecutableElementTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaC! C(2»
+¶com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator.Anonymous-9c59d9ad-0220-4b8c-b264-240f2e0c5c08.apply(com.squareup.javapoet.ParameterSpec)!input	PARAMETERw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaN< N(A"
+typeParameterSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2§
+#com.squareup.javapoet.ParameterSpecTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.javaN. N(;º
+icom.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?baseRequestOptionsType@28.28:28.50VALUEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (2"
+isFinaltrue"
+typeTypeElement"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*baseRequestOptionsType2•
+$javax.lang.model.element.TypeElementTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (¿
+`com.bumptech.glide.annotation.compiler.RequestOptionsOverrideGenerator?processorUtil@29.24:29.37VARIABLEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java (%"
+isFinalfalse"
+typeProcessorUtil"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processorUtil2µ
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEw
+mannotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/RequestOptionsOverrideGenerator.java
+ (

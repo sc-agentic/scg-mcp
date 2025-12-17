@@ -1,0 +1,944 @@
+
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆ
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaFILE^
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java"
+
+LOC226*\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÍ
+5com.bumptech.glide.annotation.compiler.GlideGeneratorCLASSf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaH H("1
+package&com.bumptech.glide.annotation.compiler"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC154*GlideGenerator2•
+≠com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaU U(2˙
+Çcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java` `(2Ä
+àcom.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javau u(;2Ù
+{com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÜ Ü(.2ö
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™ ™(&2œ
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator.discoverGlideMethodsToOverride()DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¬" ¬(@2Ï
+scom.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∆ ∆(#2•
+´com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java   (,2Õ
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator?GLIDE_QUALIFIED_NAME@73.30:73.50DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaI I(22◊
+`com.bumptech.glide.annotation.compiler.GlideGenerator?REQUEST_MANAGER_QUALIFIED_NAME@75.30:75.60DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaK K(<2”
+\com.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_PACKAGE_NAME@77.30:77.56DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaM M(82—
+Zcom.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_CLASS_NAME@78.30:78.54DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaN N(62∆
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaP& P(32∆
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaQ Q(+2¬
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaR R(%2À
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaS S(.å%
+≠com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)CONSTRUCTORf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaU U("1
+package&com.bumptech.glide.annotation.compiler*GlideGenerator2≥
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaY* Y(92µ
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java[& [(42µ
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java] ](+2¨
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaV V(&2¨
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtilCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaW W(&2¨
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaY Y()2ƒ
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java[ [(2∑
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java[ [(%2–
+`com.bumptech.glide.annotation.compiler.GlideGenerator?REQUEST_MANAGER_QUALIFIED_NAME@75.30:75.60CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java[5 [(S2ª
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java] ](2∑
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java] ](2∆
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator?GLIDE_QUALIFIED_NAME@73.30:73.50CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java], ](@2ø
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaV	 V(2ø
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaW	 W(2±
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaU' U(42±
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaUD U(Q2æ
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25DECLARATIONf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaY Y(2¨
+5com.bumptech.glide.annotation.compiler.GlideGeneratorRETURN_TYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaU U(ß
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25VARIABLEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaY Y("
+typeElements"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*elementUtils2é
+javax.lang.model.util.ElementsTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaY Y(2≥
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaY* Y(92¨
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaY Y()Ÿ
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaU' U(4"
+typeProcessingEnvironment"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processingEnv2°
+1javax.annotation.processing.ProcessingEnvironmentTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaU U(&‘
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaUD U(Q"
+typeProcessorUtil"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processorUtil2§
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaU6 U(Cø
+Çcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)METHODf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java` `("1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeTypeSpec"
+accesspackage_private"	
+LOC19*generate2˘
+àcom.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaq q(,2˝
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!glideNameCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javab! b(*2ª
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javam m(2å
+õcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageNameCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaq- q(E2ã
+öcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManagerCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaqG q(^2ë
+õcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaa a(%2Ç
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!glideName	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaa. a(72ê
+öcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaaB a(Y2ï
+com.squareup.javapoet.TypeSpecRETURN_TYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java` `(
+î
+õcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaa a(%"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedCodePackageName2Ä
+java.lang.StringTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaa a(ˆ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!glideName	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaa. a(7"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	glideName2Ä
+java.lang.StringTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaa' a(-¢
+öcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaaB a(Y"
+typeTypeSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestManager2é
+com.squareup.javapoet.TypeSpecTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaa9 a(Aπ
+àcom.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)METHODf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javau u(;"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<MethodSpec>"
+accessprivate"	
+LOC15* generateOverridesForGlideMethods2∆
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator.discoverGlideMethodsToOverride()CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javax x(&2„
+scom.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java| |(!2ú
+´com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)CALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java} }(,2Ì
+{com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÄ Ä(.2ç
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-55d6b8e1-b891-4abb-b9fd-2f744afc9e31.apply(javax.lang.model.element.ExecutableElement)!inputCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java|" |('2í
+°com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageNameCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java~ ~(*2ë
+†com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManagerCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java~, ~(C2ç
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-ece56f44-23c9-47d1-bc58-e5d11f14328e.apply(javax.lang.model.element.ExecutableElement)!inputCALLf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java~E ~(J2è
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-46497be8-6283-4bc9-b696-478c1b6e9f05.apply(javax.lang.model.element.ExecutableElement)!inputCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÄ/ Ä(42ó
+°com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javav v(+2ñ
+†com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javav< v(S2Ö
+java.util.ListRETURN_TYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javau
+ u(2†
+ com.squareup.javapoet.MethodSpecRETURN_TYPE_ARGUMENTf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javau u(ô
+°com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javav v(+"
+typeString"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedCodePackageName2Ä
+java.lang.StringTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javav v(ß
+†com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javav< v(S"
+typeTypeSpec"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestManager2é
+com.squareup.javapoet.TypeSpecTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javav3 v(;ß
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-cdd1eb0d-578e-4323-b676-ebe8413eecab.apply(javax.lang.model.element.ExecutableElement)!input	PARAMETERf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java{4 {(9"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2ö
+*javax.lang.model.element.ExecutableElementTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java{" {(3∞s
+{com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)METHODh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÜ Ü(."1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC34*overrideGlideStaticMethod2‡
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá3 á(@2π
+Gjavax.lang.model.util.Types.asElement(javax.lang.model.type.TypeMirror)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä3 ä(<2≤
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä$ ä(02¨
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaäN ä([2ì
+!java.lang.CharSequence.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaçB ç(J2¨
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaç2 ç(?2Î
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaè& è(>2ì
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaí í(2¢
+0java.lang.StringBuilder.append(java.lang.String)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaö	 ö(2á
+java.util.List.add(E)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaù	 ù(2¨
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaù ù(+2ä
+java.util.List.isEmpty()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaû û(2¢
+0java.lang.StringBuilder.append(java.lang.String)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java† †(2•
+3java.lang.AbstractStringBuilder.substring(int, int)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java£$ £(-2ö
+(java.lang.AbstractStringBuilder.length()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java£6 £(<2¢
+0java.lang.StringBuilder.append(java.lang.String)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java•	 •(2î
+"java.lang.StringBuilder.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¶ ¶(&2ç
+java.util.List.toArray(T[])CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¶/ ¶(62©
+7java.lang.StringBuilder.StringBuilder(java.lang.String)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaô ô(*2ë
+java.util.ArrayList.ArrayList()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaõ õ('2©
+7java.lang.StringBuilder.StringBuilder(java.lang.String)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java£ £(2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá% á(22ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaáA á(Q2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä ä(#2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä= ä(M2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaç! ç(12¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaè è(%2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaè? è(O2á
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaê ê(%2Ñ
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaí í( 2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaí" í(22Ñ
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaî î("2â
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaï ï(2Ñ
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javañ ñ(2Ñ
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javañ$ ñ(+2â
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaô+ ô(72Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaö ö(2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaú ú(2Ω
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaú ú($2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaù ù(2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaù ù(2á
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaû	 û(2á
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaü! ü(+2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java† †(2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java° °(2Ç
+ècom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?param@159.25:159.30CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java° °(2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java£ £(
+2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java£ £(#2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java£1 £(52Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java• •(2Ñ
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¶ ¶(2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¶ ¶(2Å
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¶* ¶(.2Ñ
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaß ß(2Ñ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÜA Ü(Q2é
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá á("2ã
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaâ â(2ã
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaå å(2ê
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaî î(2à
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaô ô(2à
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaõ õ(2â
+ècom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?param@159.25:159.30DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaü ü(2ô
+ com.squareup.javapoet.MethodSpecRETURN_TYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÜ
+ Ü(◊
+
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá á(""
+typeList<ParameterSpec>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+parameters2Ä
+java.util.ListTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá á(2û
+#com.squareup.javapoet.ParameterSpecTYPE_ARGUMENTh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá	 á(2‡
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá3 á(@2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaá% á(22ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaáA á(Q˚
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaâ â("
+typeTypeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2ñ
+$javax.lang.model.element.TypeElementTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaâ â(2π
+Gjavax.lang.model.util.Types.asElement(javax.lang.model.type.TypeMirror)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä3 ä(<2≤
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä$ ä(02¨
+:javax.lang.model.element.ExecutableElement.getReturnType()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaäN ä([2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä ä(#2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaä= ä(M•
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaå å("
+typeMethodSpec.Builder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2ö
+(com.squareup.javapoet.MethodSpec.BuilderTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaå å(2ì
+!java.lang.CharSequence.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaçB ç(J2¨
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaç2 ç(?2Î
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaè& è(>2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaç! ç(12¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaè è(%2ˇ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaè? è(O2á
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaê ê(%Ñ
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaî î("
+typeboolean"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*returnsValue2y
+booleanTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaî î(2Ñ
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaî î("º
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaô ô("
+typeStringBuilder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*code2â
+java.lang.StringBuilderTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaô ô(2©
+7java.lang.StringBuilder.StringBuilder(java.lang.String)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaô ô(*2â
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaô+ ô(7ú
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaõ õ("
+typeList<Object>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*args2Ä
+java.util.ListTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaõ õ(2ã
+java.lang.ObjectTYPE_ARGUMENTh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaõ	 õ(2ë
+java.util.ArrayList.ArrayList()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaõ õ('í
+ècom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?param@159.25:159.30VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaü ü("
+typeParameterSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*param2ï
+#com.squareup.javapoet.ParameterSpecTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaü ü(¶
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÜA Ü(Q"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2ú
+*javax.lang.model.element.ExecutableElementTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÜ/ Ü(@ä=
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)METHODh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™ ™(&"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBuilder"
+accessprivate"	
+LOC22*addReturnAnnotations2µ
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java´& ´(52∫
+Hcom.bumptech.glide.annotation.compiler.ProcessorUtil.visibleForTesting()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java≠. ≠(?2ç
+java.lang.Object.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆM Æ(U2©
+7javax.lang.model.element.Element.getAnnotationMirrors()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∞4 ∞(H2ù
++javax.lang.model.type.TypeMirror.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµB µ(J2Ø
+=javax.lang.model.element.AnnotationMirror.getAnnotationType()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµ. µ(?2õ
+)java.lang.String.equals(java.lang.Object)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∂" ∂((2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java´ ´(%2™
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java≠ ≠(2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java≠  ≠(-2æ
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆ0 Æ(L2§
+±com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∞# ∞(32õ
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builderCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java± ±(2®
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java±/ ±(52®
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµ' µ(-2π
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?annotationQualifiedName@181.13:181.36CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∂
+ ∂(!2ƒ
+—com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeQualifiedName@174.11:174.45CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∂) ∂(K2õ
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builderCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∑ ∑(2Œ
+\com.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_PACKAGE_NAME@77.30:77.56CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaπ" π(<2Ã
+Zcom.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_CLASS_NAME@78.30:78.54CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaπ> π(V2õ
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builderCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaø ø(2†
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builder	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™/ ™(62©
+±com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™J ™(Z2±
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java´ ´(2≈
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¨ ¨(,2À
+—com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeQualifiedName@174.11:174.45DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆ Æ(-2Ø
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∞ ∞( 2¿
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?annotationQualifiedName@181.13:181.36DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµ µ($2°
+(com.squareup.javapoet.MethodSpec.BuilderRETURN_TYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™
+ ™(Ø
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java´ ´("
+typeElements"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*elements2ê
+javax.lang.model.util.ElementsTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java´ ´(2µ
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java´& ´(52¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java´ ´(%í
+
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¨ ¨(,"
+typeTypeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*visibleForTestingTypeElement2ñ
+$javax.lang.model.element.TypeElementTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¨ ¨(2∫
+Hcom.bumptech.glide.annotation.compiler.ProcessorUtil.visibleForTesting()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java≠. ≠(?2™
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java≠ ≠(2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java≠  ≠(-®
+—com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeQualifiedName@174.11:174.45VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆ Æ(-"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*"visibleForTestingTypeQualifiedName2Ç
+java.lang.StringTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆ Æ(
+2ç
+java.lang.Object.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆM Æ(U2æ
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÆ0 Æ(L¬
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∞ ∞( "
+typeAnnotationMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*mirror2õ
+)javax.lang.model.element.AnnotationMirrorTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∞	 ∞(æ	
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?annotationQualifiedName@181.13:181.36VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµ µ($"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*annotationQualifiedName2Ç
+java.lang.StringTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµ µ(2ù
++javax.lang.model.type.TypeMirror.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµB µ(J2Ø
+=javax.lang.model.element.AnnotationMirror.getAnnotationType()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµ. µ(?2®
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaµ' µ(-≠
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builder	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™/ ™(6"
+typeBuilder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2ö
+(com.squareup.javapoet.MethodSpec.BuilderTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™' ™(.À
+±com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™J ™(Z"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2ú
+*javax.lang.model.element.ExecutableElementTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java™8 ™(I≥
+
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator.discoverGlideMethodsToOverride()METHODh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¬" ¬(@"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<ExecutableElement>"
+accessprivate"
+LOC2*discoverGlideMethodsToOverride2ﬁ
+lcom.bumptech.glide.annotation.compiler.ProcessorUtil.findStaticMethods(javax.lang.model.element.TypeElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java√ √(*2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java√ √(2Ω
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java√+ √(42á
+java.util.ListRETURN_TYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¬
+ ¬(2¨
+*javax.lang.model.element.ExecutableElementRETURN_TYPE_ARGUMENTh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java¬ ¬( †
+scom.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)METHODh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∆ ∆(#"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isGlideWithMethod2ì
+†com.bumptech.glide.annotation.compiler.ProcessorUtil.isReturnValueTypeMatching(javax.lang.model.element.ExecutableElement, javax.lang.model.element.TypeElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java« «(22¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java« «(2Ì
+{com.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)!elementCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java«3 «(:2∆
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java«< «(N2Ú
+{com.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)!element	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∆6 ∆(=2Ä
+booleanRETURN_TYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∆
+ ∆(ã
+{com.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)!element	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∆6 ∆(="
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2ú
+*javax.lang.model.element.ExecutableElementTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java∆$ ∆(5‡M
+´com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)METHODh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java   (,"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC23*overrideGlideWithMethod2‡
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ3 Œ(@2á
+java.util.List.size()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java– –(2ã
+java.util.Iterator.next()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java—4 —(82ã
+java.util.List.iterator()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java—) —(12ì
+!java.lang.CharSequence.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‘B ‘(J2¨
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‘2 ‘(?2Î
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java÷& ÷(>2ì
+!java.lang.CharSequence.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java›1 ›(92¨
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java›! ›(.2ì
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‡ ‡(2™
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageNameCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÕ Õ(!2∂
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManagerCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÕ# Õ(:2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ% Œ(22Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒA Œ(Q2∑
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java– –(2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java–B –(R2∑
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java— —((2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‘! ‘(12¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java÷ ÷(%2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java÷? ÷(O2∑
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java◊ ◊(%2Õ
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÿ ÿ(52Õ
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java€ €(02Ω
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‹ ‹(2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java› ›( 2∂
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaﬁ ﬁ(2¥
+¡com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?builder@211.12:211.19CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‡  ‡('2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‡) ‡(92Ø
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageName	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀ À(2ª
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManager	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀ# À(:2¥
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀN À(^2‘
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÃ Ã(.2æ
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ Œ("2Ω
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java— —(2ª
+¡com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?builder@211.12:211.19DECLARATIONh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java” ”(2ô
+ com.squareup.javapoet.MethodSpecRETURN_TYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java 
+  (÷	
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÃ Ã(."
+type	ClassName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue* generatedRequestManagerClassName2ë
+com.squareup.javapoet.ClassNameTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÃ Ã(2™
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageNameCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÕ Õ(!2∂
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManagerCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÕ# Õ(:∑
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ Œ(""
+typeList<ParameterSpec>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+parameters2Ä
+java.util.ListTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ Œ(2û
+#com.squareup.javapoet.ParameterSpecTYPE_ARGUMENTh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ	 Œ(2‡
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ3 Œ(@2¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒ% Œ(22Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaŒA Œ(Q†	
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java— —("
+typeParameterSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	parameter2ï
+#com.squareup.javapoet.ParameterSpecTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java— —(2ã
+java.util.Iterator.next()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java—4 —(82ã
+java.util.List.iterator()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java—) —(12∑
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java— —((Í
+¡com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?builder@211.12:211.19VARIABLEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java” ”("
+typeBuilder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2ö
+(com.squareup.javapoet.MethodSpec.BuilderTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java” ”(2ì
+!java.lang.CharSequence.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‘B ‘(J2¨
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‘2 ‘(?2Î
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java÷& ÷(>2ì
+!java.lang.CharSequence.toString()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java›1 ›(92¨
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java›! ›(.2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‘! ‘(12¡
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java÷ ÷(%2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java÷? ÷(O2∑
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java◊ ◊(%2Õ
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÿ ÿ(52Õ
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java€ €(02Ω
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java‹ ‹(2Ø
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.java› ›( 2∂
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27CALLh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaﬁ ﬁ(ß
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageName	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀ À("
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*packageName2Ç
+java.lang.StringTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀ À(œ
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManager	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀ# À(:"
+typeTypeSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestManager2ê
+com.squareup.javapoet.TypeSpecTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀ À("÷
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETERh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀN À(^"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2ú
+*javax.lang.model.element.ExecutableElementTYPEh
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaÀ< À(MÎ
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator?GLIDE_QUALIFIED_NAME@73.30:73.50VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaI I(2"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*GLIDE_QUALIFIED_NAME2Ä
+java.lang.StringTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaI I(ˇ
+`com.bumptech.glide.annotation.compiler.GlideGenerator?REQUEST_MANAGER_QUALIFIED_NAME@75.30:75.60VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaK K(<"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_MANAGER_QUALIFIED_NAME2Ä
+java.lang.StringTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaK K(˜
+\com.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_PACKAGE_NAME@77.30:77.56VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaM M(8"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*SUPPRESS_LINT_PACKAGE_NAME2Ä
+java.lang.StringTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaM M(Û
+Zcom.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_CLASS_NAME@78.30:78.54VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaN N(6"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*SUPPRESS_LINT_CLASS_NAME2Ä
+java.lang.StringTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaN N(é
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaP& P(3"
+isFinaltrue"
+typeProcessingEnvironment"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processingEnv2°
+1javax.annotation.processing.ProcessingEnvironmentTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaP P(%â
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaQ Q(+"
+isFinaltrue"
+typeProcessorUtil"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processorUtil2§
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaQ Q(Ô
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaR R(%"
+isFinaltrue"
+typeTypeElement"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*	glideType2î
+$javax.lang.model.element.TypeElementTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaR R(Å
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46VALUEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaS S(."
+isFinaltrue"
+typeTypeElement"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*requestManagerType2î
+$javax.lang.model.element.TypeElementTYPEf
+\annotation/compiler/src/main/java/com/bumptech/glide/annotation/compiler/GlideGenerator.javaS S(

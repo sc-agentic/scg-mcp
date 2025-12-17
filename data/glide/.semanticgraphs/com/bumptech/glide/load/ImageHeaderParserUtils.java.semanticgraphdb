@@ -1,0 +1,899 @@
+
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaı
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaFILEK
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java"
+
+LOC244*Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¨
+.com.bumptech.glide.load.ImageHeaderParserUtilsCLASSS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java ()""
+packagecom.bumptech.glide.load"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC226*ImageHeaderParserUtils2´
+Gcom.bumptech.glide.load.ImageHeaderParserUtils.ImageHeaderParserUtils()DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java
+ ( 2§
+øcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (!2Î
+Ücom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java: :(!2 
+Âcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaQ Q(!2ô
+¥com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javas s(*2≠
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaà à("2≠
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java† †("2”
+Ïcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaæ æ("2©
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaﬂ ﬂ(+2Æ
+Jcom.bumptech.glide.load.ImageHeaderParserUtils?MARK_READ_LIMIT@21.27:21.42DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (*2ü
+9com.bumptech.glide.load.ImageHeaderParserUtils.TypeReaderDECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÌ Ì(2¶
+@com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReaderDECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÒ Ò(%¸
+Gcom.bumptech.glide.load.ImageHeaderParserUtils.ImageHeaderParserUtils()CONSTRUCTORS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java
+ ( ""
+packagecom.bumptech.glide.load*ImageHeaderParserUtils2í
+.com.bumptech.glide.load.ImageHeaderParserUtilsRETURN_TYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java
+ ( Ç3
+øcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)METHODS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (!""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+type	ImageType"
+accesspublic"	
+LOC28*getType2Ä
+#java.io.InputStream.markSupported()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java$ $(2z
+java.io.InputStream.mark(int)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java( ((2í
+¥com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java* *(2£
+Fcom.bumptech.glide.load.ImageHeaderParser.getType(java.io.InputStream)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java0 0(#2x
+java.io.InputStream.reset()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java2 2(2è
+±com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.RecyclableBufferedInputStream(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java% %(,2Ï
+écom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-993cbd69-d30e-4300-9735-57a7c231f8a7.Anonymous-993cbd69-d30e-4300-9735-57a7c231f8a7()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java, ,(2†
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java   (
+2†
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java$	 $(2†
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java% %(2†
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java%- %(/2´
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java%1 %(>2†
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java( ((2ß
+Jcom.bumptech.glide.load.ImageHeaderParserUtils?MARK_READ_LIMIT@21.27:21.42CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java( ((2†
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java)  )("2•
+«com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java+ +(2˛
+†com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-3c37d2bd-c556-461d-9e13-8b1e0f5dd73b.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parserCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java0 0(2±
+”com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@41.22:41.29CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java0$ 0(+2±
+”com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@41.22:41.29CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java2 2(2™
+«com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java' (.2•
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!is	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (2∞
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (&2∏
+”com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@41.22:41.29DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java) )(2ó
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (´
+”com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@41.22:41.29VALUES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java) )("
+typeInputStream"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*finalIs2p
+java.io.InputStreamTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java)
+ )(2†
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java)  )("ö
+«com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java' (."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2k
+java.util.ListTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (2è
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (%˜
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!is	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java ("
+typeInputStream"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*is2p
+java.io.InputStreamTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (∞
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (&"
+type	ArrayPool"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*byteArrayPool2î
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (ˆ
+†com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-e4355124-2981-4fef-af75-68d18ca22762.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java.> .(D"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2Ü
+)com.bumptech.glide.load.ImageHeaderParserTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java., .(=É
+Ücom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)METHODS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java: :(!""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+type	ImageType"
+accesspublic"	
+LOC20*getType2í
+¥com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaA A(2£
+Fcom.bumptech.glide.load.ImageHeaderParser.getType(java.nio.ByteBuffer)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaG G(#2ü
+Bcom.bumptech.glide.util.ByteBufferUtil.rewind(java.nio.ByteBuffer)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaI I(#2Ï
+écom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-e7e0321d-0cd6-4034-ad0e-8b83c848b851.Anonymous-e7e0321d-0cd6-4034-ad0e-8b83c848b851()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaC C(2Î
+çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!bufferCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java= =(2Ï
+écom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!parsersCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaB B(2˛
+†com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-1a097978-77b2-44e5-935b-8cbb6e340e80.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parserCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaG G(2Î
+çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!bufferCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaG$ G(*2Î
+çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!bufferCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaI$ I(*2Ò
+écom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java;' ;(.2
+çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!buffer	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java;K ;(Q2ó
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java: :(·
+écom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java;' ;(."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2k
+java.util.ListTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java; ;(2è
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java; ;(%ƒ
+çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)!buffer	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java;K ;(Q"
+type
+ByteBuffer"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*buffer2p
+java.nio.ByteBufferTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java;@ ;(Jˆ
+†com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-abb84062-1180-4223-bb13-edd11ea50040.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaE> E(D"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2Ü
+)com.bumptech.glide.load.ImageHeaderParserTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaE, E(=·/
+Âcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)METHODS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaQ Q(!""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+type	ImageType"
+accesspublic"	
+LOC33*getType2í
+¥com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaV V(2•
+Hcom.bumptech.glide.load.data.ParcelFileDescriptorRewinder.rewindAndGet()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javab7 b(C2£
+Fcom.bumptech.glide.load.ImageHeaderParser.getType(java.io.InputStream)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javad d(#2¨
+Ocom.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.release()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaj j(2•
+Hcom.bumptech.glide.load.data.ParcelFileDescriptorRewinder.rewindAndGet()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javal+ l(72Ï
+écom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-c8856f77-4e61-402a-8f5d-bf4194fabf85.Anonymous-c8856f77-4e61-402a-8f5d-bf4194fabf85()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaX X(2è
+±com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.RecyclableBufferedInputStream(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java` `(32À
+Ìcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaW W(2Ü
+®com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-bb46843b-433e-4276-98c3-27ee49b18d32.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@93.42:93.44CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java_ _(2‡
+Çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinderCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javab b(62—
+Ûcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javac c(#2˛
+†com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-f7efae07-0865-4406-aa9a-727f1e93560b.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parserCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javad d(2Ü
+®com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-ea6e3212-b377-43fa-b8db-4cda0bf0c6f1.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@93.42:93.44CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javad$ d(&2Ü
+®com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-345793ee-ca92-46fa-852e-b2d2b7039e8c.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@93.42:93.44CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javai i(2Ü
+®com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-864ce51f-e819-4e67-b1c4-cff2b1ac449c.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@93.42:93.44CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaj j(2‡
+Çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinderCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javal l(*2–
+Ìcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaR' R(.2Â
+Çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinder	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaS2 S(N2÷
+Ûcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaT T(,2ç
+®com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-04a87c4f-f806-4d50-a58a-f02503dd46fa.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@93.42:93.44DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java]* ](,2ó
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaQ Q(°
+®com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-d7d577eb-5edc-4863-a25d-6c15d660a30a.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@93.42:93.44VARIABLES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java]* ](,"%
+typeRecyclableBufferedInputStream"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*is2¢
+Ecom.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStreamTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java] ]()¿
+Ìcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaR' R(."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2k
+java.util.ListTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaR R(2è
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaR R(%à
+Çcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinder	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaS2 S(N"$
+typeParcelFileDescriptorRewinder"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*parcelFileDescriptorRewinder2ñ
+9com.bumptech.glide.load.data.ParcelFileDescriptorRewinderTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaS S(1’
+Ûcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaT T(,"
+type	ArrayPool"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*byteArrayPool2î
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaT T(ˆ
+†com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-0a9021d2-9240-42d8-93e7-3c0c7fb8a852.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaZ> Z(D"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2Ü
+)com.bumptech.glide.load.ImageHeaderParserTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaZ, Z(=Ò,
+¥com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)METHODS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javas s(*""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+type	ImageType"
+accessprivate"	
+LOC13*getTypeInternal2r
+java.util.List.size()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav# v('2t
+java.util.List.get(int)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw) w(,2“
+ucom.bumptech.glide.load.ImageHeaderParserUtils.TypeReader.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax x(.2ö
+ºcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!parsersCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav v("2¢
+ƒcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?i@118.13:118.14CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav+ v(,2•
+«com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?size@118.20:118.24CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav/ v(32¢
+ƒcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?i@118.13:118.14CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav5 v(62ö
+ºcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!parsersCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw! w((2¢
+ƒcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?i@118.13:118.14CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw- w(.2ô
+ªcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!readerCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax x(2ß
+…com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?parser@119.24:119.30CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax/ x(52•
+«com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?type@120.16:120.20CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javay
+ y(2•
+«com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?type@120.16:120.20CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaz z(2ü
+ºcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javat' t(.2û
+ªcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!reader	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javat; t(A2©
+ƒcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?i@118.13:118.14DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav v(2¨
+«com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?size@118.20:118.24DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav v(2Æ
+…com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?parser@119.24:119.30DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw w(2¨
+«com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?type@120.16:120.20DECLARATIONS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax x(2ó
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javas s(ﬂ
+ƒcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?i@118.13:118.14VARIABLES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav v("
+typeint"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*i2`
+intTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav	 v(ˆ
+«com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?size@118.20:118.24VARIABLES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav v("
+typeint"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*size2`
+intTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav	 v(2r
+java.util.List.size()CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav# v('2ö
+ºcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!parsersCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javav v("÷	
+…com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?parser@119.24:119.30VARIABLES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw w("
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2Ü
+)com.bumptech.glide.load.ImageHeaderParserTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw w(2t
+java.util.List.get(int)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw) w(,2ö
+ºcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!parsersCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw! w((2¢
+ƒcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?i@118.13:118.14CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaw- w(.∑
+
+«com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?type@120.16:120.20VARIABLES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax x("
+type	ImageType"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*type2ê
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax x(2“
+ucom.bumptech.glide.load.ImageHeaderParserUtils.TypeReader.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax x(.2ô
+ªcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!readerCALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax x(2ß
+…com.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)?parser@119.24:119.30CALLS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javax/ x(5è
+ºcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!parsers	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javat' t(."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2k
+java.util.ListTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javat t(2è
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javat t(%ö
+ªcom.bumptech.glide.load.ImageHeaderParserUtils.getTypeInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader)!reader	PARAMETERS
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javat; t(A"
+type
+TypeReader"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*reader2ñ
+9com.bumptech.glide.load.ImageHeaderParserUtils.TypeReaderTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javat0 t(:Ó 
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)METHODU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaà à("""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeint"
+accesspublic"	
+LOC21*getOrientation2¢
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaë ë(!2Ê
+Ücom.bumptech.glide.load.ImageHeaderParser.getOrientation(java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaó ó(*2°
+Bcom.bumptech.glide.util.ByteBufferUtil.rewind(java.nio.ByteBuffer)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaô ô(#2Ó
+écom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-e0cbaafe-aeb4-4c25-976c-c869cf60b600.Anonymous-e0cbaafe-aeb4-4c25-976c-c869cf60b600()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaì ì(2≠
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!bufferCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaç ç(2Æ
+Œcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaí í(2á
+ßcom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-bfbe6641-d72a-4c2f-94fd-a846aa8d8559.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parserCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaó ó(2≠
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!bufferCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaó+ ó(12∞
+–com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!arrayPoolCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaó3 ó(<2≠
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!bufferCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaô$ ô(*2≥
+Œcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaâ' â(.2≤
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!buffer	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaä! ä('2µ
+–com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!arrayPool	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaã ã((2i
+intRETURN_TYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaà à(ß
+Œcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaâ' â(."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2m
+java.util.ListTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaâ â(2ë
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaâ â(%à
+Õcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!buffer	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaä! ä('"
+type
+ByteBuffer"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*buffer2r
+java.nio.ByteBufferTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaä ä( ≤
+–com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!arrayPool	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaã ã(("
+type	ArrayPool"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*	arrayPool2ñ
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaã ã(Å
+ßcom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-fdfe7357-d48d-4e67-a4b5-17ee569e1367.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaï? ï(E"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2à
+)com.bumptech.glide.load.ImageHeaderParserTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaï- ï(>Ä7
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)METHODU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java† †("""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeint"
+accesspublic"	
+LOC27*getOrientation2Ç
+#java.io.InputStream.markSupported()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java© ©(2|
+java.io.InputStream.mark(int)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java≠ ≠(2¢
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaØ Ø(!2Ê
+Ücom.bumptech.glide.load.ImageHeaderParser.getOrientation(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaµ µ(*2z
+java.io.InputStream.reset()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java∑ ∑(2ë
+±com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.RecyclableBufferedInputStream(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java™ ™(,2Ó
+écom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-e85cd0cf-373a-4f09-b44d-63cf32dafbe8.Anonymous-e85cd0cf-373a-4f09-b44d-63cf32dafbe8()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java± ±(2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java• •(
+2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java©	 ©(2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java™ ™(2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java™- ™(/2¥
+‘com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java™1 ™(>2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java≠ ≠(2©
+Jcom.bumptech.glide.load.ImageHeaderParserUtils?MARK_READ_LIMIT@21.27:21.42CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java≠ ≠(2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÆ  Æ("2Æ
+Œcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java∞ ∞(2á
+ßcom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-c21ffbd5-0510-446c-b13a-8cc600b2f5e7.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parserCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaµ µ(2º
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@174.22:174.29CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaµ+ µ(22¥
+‘com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaµ4 µ(A2º
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@174.22:174.29CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java∑ ∑(2≥
+Œcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java°' °(.2Æ
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!is	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¢ ¢(2π
+‘com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java£ £(,2√
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@174.22:174.29DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÆ Æ(2i
+intRETURN_TYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java† †(¡
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)?finalIs@174.22:174.29VALUEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÆ Æ("
+typeInputStream"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*finalIs2r
+java.io.InputStreamTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÆ
+ Æ(2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÆ  Æ("ß
+Œcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java°' °(."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2m
+java.util.ListTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java° °(2ë
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java° °(%Ç
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!is	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¢ ¢("
+typeInputStream"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*is2r
+java.io.InputStreamTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¢ ¢(∫
+‘com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java£ £(,"
+type	ArrayPool"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*byteArrayPool2ñ
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java£ £(Å
+ßcom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-ff97b30b-dd3d-41ab-b4e8-2450b48d40d9.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java≥? ≥(E"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2à
+)com.bumptech.glide.load.ImageHeaderParserTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java≥- ≥(>ı3
+Ïcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)METHODU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaæ æ("""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeint"
+accesspublic"	
+LOC32*getOrientation2¢
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java√ √(!2ß
+Hcom.bumptech.glide.load.data.ParcelFileDescriptorRewinder.rewindAndGet()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaœ7 œ(C2Ê
+Ücom.bumptech.glide.load.ImageHeaderParser.getOrientation(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java— —(*2Æ
+Ocom.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.release()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java◊ ◊(2ß
+Hcom.bumptech.glide.load.data.ParcelFileDescriptorRewinder.rewindAndGet()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaŸ+ Ÿ(72Ó
+écom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-dd1ad610-1579-46c0-b9a4-f928df9a6bb3.Anonymous-dd1ad610-1579-46c0-b9a4-f928df9a6bb3()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java≈ ≈(2ë
+±com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.RecyclableBufferedInputStream(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÕ Õ(32‘
+Ùcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaƒ ƒ(2ë
+±com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-3291fe17-d5b5-41da-9b8b-6c38385fc69e.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@202.42:202.44CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÃ Ã(2È
+âcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinderCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaœ œ(62⁄
+˙com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java– –(#2á
+ßcom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-80197c31-d044-43bd-8907-e2f233ced60e.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parserCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java— —(2ë
+±com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-2d441ec2-73e9-4f92-bb71-9f30e02d245a.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@202.42:202.44CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java—+ —(-2⁄
+˙com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java—/ —(<2ë
+±com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-8ba80ce7-683e-4477-8ecc-c27bb14b4f8d.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@202.42:202.44CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java÷ ÷(2ë
+±com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-d4cacaf5-889f-41a4-b412-c879980fe542.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@202.42:202.44CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java◊ ◊(2È
+âcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinderCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaŸ Ÿ(*2Ÿ
+Ùcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaø' ø(.2Ó
+âcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinder	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¿2 ¿(N2ﬂ
+˙com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¡ ¡(,2ò
+±com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-c72e32d3-32fb-42c3-b1a4-1a1351ad1c56.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@202.42:202.44DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java *  (,2i
+intRETURN_TYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaæ æ(Æ
+±com.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-b0aefddf-7ef7-48e6-a1d1-a120fc47029c.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)?is@202.42:202.44VARIABLEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java *  (,"%
+typeRecyclableBufferedInputStream"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*is2§
+Ecom.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStreamTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java   ()Õ
+Ùcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaø' ø(."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2m
+java.util.ListTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaø ø(2ë
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaø ø(%ì
+âcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorRewinder	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¿2 ¿(N"$
+typeParcelFileDescriptorRewinder"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*parcelFileDescriptorRewinder2ò
+9com.bumptech.glide.load.data.ParcelFileDescriptorRewinderTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¿ ¿(1‡
+˙com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¡ ¡(,"
+type	ArrayPool"
+isFinaltrue""
+packagecom.bumptech.glide.load"
+isLocaltrue*byteArrayPool2ñ
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java¡ ¡(Å
+ßcom.bumptech.glide.load.ImageHeaderParserUtils.Anonymous-457ecad2-ff45-42dd-ab5b-681df56cd59b.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java«? «(E"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2à
+)com.bumptech.glide.load.ImageHeaderParserTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java«- «(>˝.
+¬com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)METHODU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaﬂ ﬂ(+""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeint"
+accessprivate"	
+LOC12*getOrientationInternal2t
+java.util.List.size()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚# ‚('2v
+java.util.List.get(int)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„) „(,2„
+Écom.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰ ‰(62™
+ com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!parsersCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚ ‚("2≤
+“com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?i@226.13:226.14CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚+ ‚(,2µ
+’com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?size@226.20:226.24CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚/ ‚(32≤
+“com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?i@226.13:226.14CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚5 ‚(62™
+ com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!parsersCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„! „((2≤
+“com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?i@226.13:226.14CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„- „(.2©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!readerCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰ ‰(2∑
+◊com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?parser@227.24:227.30CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰7 ‰(=2º
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?orientation@228.10:228.21CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÂ
+ Â(2º
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?orientation@228.10:228.21CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÊ Ê(2Ø
+ com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‡' ‡(.2Æ
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!reader	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‡B ‡(H2π
+“com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?i@226.13:226.14DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚ ‚(2º
+’com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?size@226.20:226.24DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚ ‚(2æ
+◊com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?parser@227.24:227.30DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„ „(2√
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?orientation@228.10:228.21DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰
+ ‰(2i
+intRETURN_TYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaﬂ ﬂ(Ò
+“com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?i@226.13:226.14VARIABLEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚ ‚("
+typeint"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*i2b
+intTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚	 ‚(ö
+’com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?size@226.20:226.24VARIABLEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚ ‚("
+typeint"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*size2b
+intTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚	 ‚(2t
+java.util.List.size()CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚# ‚('2™
+ com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!parsersCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‚ ‚("ä
+
+◊com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?parser@227.24:227.30VARIABLEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„ „("
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2à
+)com.bumptech.glide.load.ImageHeaderParserTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„ „(2v
+java.util.List.get(int)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„) „(,2™
+ com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!parsersCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„! „((2≤
+“com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?i@226.13:226.14CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java„- „(.—
+
+‹com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?orientation@228.10:228.21VARIABLEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰
+ ‰("
+typeint"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*orientation2b
+intTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰ ‰(	2„
+Écom.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰ ‰(62©
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!readerCALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰ ‰(2∑
+◊com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)?parser@227.24:227.30CALLU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‰7 ‰(=£
+ com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!parsers	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‡' ‡(."
+typeList<ImageHeaderParser>"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parsers2m
+java.util.ListTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‡ ‡(2ë
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‡ ‡(%∫
+…com.bumptech.glide.load.ImageHeaderParserUtils.getOrientationInternal(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader)!reader	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‡B ‡(H"
+typeOrientationReader"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*reader2ü
+@com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReaderTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java‡0 ‡(Aî
+Jcom.bumptech.glide.load.ImageHeaderParserUtils?MARK_READ_LIMIT@21.27:21.42VALUES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (*"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse""
+packagecom.bumptech.glide.load*MARK_READ_LIMIT2`
+intTYPES
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.java (Å
+9com.bumptech.glide.load.ImageHeaderParserUtils.TypeReaderTRAITU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÌ Ì(""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"
+LOC2*
+TypeReader2€
+ucom.bumptech.glide.load.ImageHeaderParserUtils.TypeReader.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÓ Ó(˝
+ucom.bumptech.glide.load.ImageHeaderParserUtils.TypeReader.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)METHODU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÓ Ó(""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type	ImageType"
+accesspackage_private"
+LOC0*getTypeAndRewind2‡
+|com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÓ1 Ó(72ô
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÓ Ó(’
+|com.bumptech.glide.load.ImageHeaderParserUtils.TypeReader.getTypeAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÓ1 Ó(7"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2à
+)com.bumptech.glide.load.ImageHeaderParserTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÓ Ó(0û
+@com.bumptech.glide.load.ImageHeaderParserUtils.OrientationReaderTRAITU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÒ Ò(%""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"
+LOC2*OrientationReader2Í
+Écom.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)DECLARATIONU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÚ Ú(Î
+Écom.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)METHODU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÚ Ú(""
+packagecom.bumptech.glide.load"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC0*getOrientationAndRewind2Ô
+äcom.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÚ2 Ú(82i
+intRETURN_TYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÚ Ú(‰
+äcom.bumptech.glide.load.ImageHeaderParserUtils.OrientationReader.getOrientationAndRewind(com.bumptech.glide.load.ImageHeaderParser)!parser	PARAMETERU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÚ2 Ú(8"
+typeImageHeaderParser"
+isFinalfalse""
+packagecom.bumptech.glide.load"
+isLocaltrue*parser2à
+)com.bumptech.glide.load.ImageHeaderParserTYPEU
+Ilibrary/src/main/java/com/bumptech/glide/load/ImageHeaderParserUtils.javaÚ  Ú(1

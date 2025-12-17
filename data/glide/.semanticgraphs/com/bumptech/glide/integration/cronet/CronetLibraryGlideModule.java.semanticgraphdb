@@ -1,0 +1,103 @@
+
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java≈
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.javaFILEf
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java"	
+LOC39*dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java©
+>com.bumptech.glide.integration.cronet.CronetLibraryGlideModuleCLASSn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java (+"0
+package%com.bumptech.glide.integration.cronet"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"	
+LOC19*CronetLibraryGlideModule2°
+°com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)DECLARATIONn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ( 2¶
+,com.bumptech.glide.module.LibraryGlideModuleEXTENDn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java4 (Fì+
+°com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)METHODn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ( "0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC15*registerComponents2Ÿ
+acom.bumptech.glide.integration.cronet.CronetEngineSingleton.getSingleton(android.content.Context)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java- (92û
+•com.bumptech.glide.Registry.replace(java.lang.Class<Model>, java.lang.Class<Data>, com.bumptech.glide.load.model.ModelLoaderFactory<? extends Model, ? extends Data>)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java" "(2ä
+ëcom.bumptech.glide.Registry.prepend(java.lang.Class<Model>, java.lang.Class<Data>, com.bumptech.glide.load.model.ModelLoaderFactory<Model, Data>)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java$ $(2ê
+ócom.bumptech.glide.integration.cronet.CronetRequestFactoryImpl.CronetRequestFactoryImpl(com.google.common.base.Supplier<org.chromium.net.CronetEngine>)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ($2∫
+¡com.bumptech.glide.integration.cronet.ChromiumUrlLoader.StreamFactory.StreamFactory(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java#/ #(<2¬
+…com.bumptech.glide.integration.cronet.ChromiumUrlLoader.ByteBufferFactory.ByteBufferFactory(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java%. %(?2¢
+©com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!contextCALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java: (A2£
+™com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!registryCALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java" "(2Æ
+µcom.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)?factory@26.25:26.32CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java#= #(D2£
+™com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!registryCALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java$ $(2Æ
+µcom.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)?factory@26.25:26.32CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java%@ %(G2å
+ècom.bumptech.glide.module.LibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)OVERRIDEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ( 2ç
+êcom.bumptech.glide.module.RegistersComponents.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)OVERRIDEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ( 2ß
+©com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!context	PARAMETERn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ($2•
+ßcom.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!glide	PARAMETERn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java5 (:2®
+™com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!registry	PARAMETERn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.javaN (V2µ
+µcom.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)?factory@26.25:26.32DECLARATIONn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ( 2É
+voidRETURN_TYPEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java	 (˜
+
+µcom.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)?factory@26.25:26.32VARIABLEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ( "
+typeCronetRequestFactory"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*factory2≤
+:com.bumptech.glide.integration.cronet.CronetRequestFactoryTYPEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java (2Ÿ
+acom.bumptech.glide.integration.cronet.CronetEngineSingleton.getSingleton(android.content.Context)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java- (92ê
+ócom.bumptech.glide.integration.cronet.CronetRequestFactoryImpl.CronetRequestFactoryImpl(com.google.common.base.Supplier<org.chromium.net.CronetEngine>)CALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ($2¢
+©com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!contextCALLn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java: (Aß
+©com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!context	PARAMETERn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java ($"
+typeContext"
+isFinaltrue"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*context2è
+android.content.ContextTYPEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java (£
+ßcom.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!glide	PARAMETERn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java5 (:"
+typeGlide"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*glide2ê
+com.bumptech.glide.GlideTYPEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.java/ (4Ø
+™com.bumptech.glide.integration.cronet.CronetLibraryGlideModule.registerComponents(android.content.Context, com.bumptech.glide.Glide, com.bumptech.glide.Registry)!registry	PARAMETERn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.javaN (V"
+typeRegistry"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*registry2ì
+com.bumptech.glide.RegistryTYPEn
+dintegration/cronet/src/main/java/com/bumptech/glide/integration/cronet/CronetLibraryGlideModule.javaE (M

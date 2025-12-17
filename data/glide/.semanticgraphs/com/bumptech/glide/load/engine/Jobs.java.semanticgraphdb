@@ -1,0 +1,286 @@
+
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java”
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.javaFILE@
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java"	
+LOC35*>library/src/main/java/com/bumptech/glide/load/engine/Jobs.javaô
+#com.bumptech.glide.load.engine.JobsCLASSH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (")
+packagecom.bumptech.glide.load.engine"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC27*Jobs2Ö
+,com.bumptech.glide.load.engine.Jobs.getAll()DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2¶
+Mcom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2 
+qcom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (
+2÷
+}com.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2è
+6com.bumptech.glide.load.engine.Jobs.getJobMap(boolean)DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java !  (*2ã
+2com.bumptech.glide.load.engine.Jobs?jobs@9.39:9.43DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java	' 	(+2ñ
+=com.bumptech.glide.load.engine.Jobs?onlyCacheJobs@10.39:10.52DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java
+' 
+(4–
+,com.bumptech.glide.load.engine.Jobs.getAll()METHODH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (")
+packagecom.bumptech.glide.load.engine"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeMap<Key, EngineJob<?>>"
+accesspackage_private"
+LOC3*getAll2†
+Njava.util.Collections.unmodifiableMap(java.util.Map<? extends K, ? extends V>)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (&2Ñ
+2com.bumptech.glide.load.engine.Jobs?jobs@9.39:9.43CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java' (+2f
+java.util.MapRETURN_TYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2}
+com.bumptech.glide.load.KeyRETURN_TYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (	2ä
+(com.bumptech.glide.load.engine.EngineJobRETURN_TYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (í
+Mcom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)METHODH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (")
+packagecom.bumptech.glide.load.engine"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeEngineJob<?>"
+accesspackage_private"
+LOC2*get2u
+#java.util.Map.get(java.lang.Object)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java, (/2à
+6com.bumptech.glide.load.engine.Jobs.getJobMap(boolean)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2µ
+ccom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)!onlyRetrieveFromCacheCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (*2£
+Qcom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)!keyCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java0 (32®
+Qcom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)!key	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2∫
+ccom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)!onlyRetrieveFromCache	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java$ (92Å
+(com.bumptech.glide.load.engine.EngineJobRETURN_TYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (˜
+Qcom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)!key	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java ("
+typeKey"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*key2m
+com.bumptech.glide.load.KeyTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (ã
+ccom.bumptech.glide.load.engine.Jobs.get(com.bumptech.glide.load.Key, boolean)!onlyRetrieveFromCache	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java$ (9"
+typeboolean"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*onlyRetrieveFromCache2Y
+booleanTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (#»
+qcom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)METHODH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (
+")
+packagecom.bumptech.glide.load.engine"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC2*put2i
+java.util.Map.put(K, V)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java+ (.2à
+6com.bumptech.glide.load.engine.Jobs.getJobMap(boolean)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2í
+@com.bumptech.glide.load.engine.EngineJob.onlyRetrieveFromCache()CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java ('2«
+ucom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!jobCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2«
+ucom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!keyCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java/ (22«
+ucom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!jobCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java4 (72Ã
+ucom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!key	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2Ã
+ucom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!job	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java! ($2]
+voidRETURN_TYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (õ
+ucom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!key	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java ("
+typeKey"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*key2m
+com.bumptech.glide.load.KeyTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (±
+ucom.bumptech.glide.load.engine.Jobs.put(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!job	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java! ($"
+typeEngineJob<?>"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*job2z
+(com.bumptech.glide.load.engine.EngineJobTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (√
+}com.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)METHODH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (")
+packagecom.bumptech.glide.load.engine"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC5*removeIfCurrent2à
+6com.bumptech.glide.load.engine.Jobs.getJobMap(boolean)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java$ (-2í
+@com.bumptech.glide.load.engine.EngineJob.onlyRetrieveFromCache()CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java7 (L2{
+)java.lang.Object.equals(java.lang.Object)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2u
+#java.util.Map.get(java.lang.Object)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java ("2x
+&java.util.Map.remove(java.lang.Object)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2Ÿ
+Ücom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!expectedCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java. (62Ÿ
+Ücom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!expectedCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2„
+êcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)?jobMap@26.27:26.33CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2‘
+Åcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!keyCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java# (&2„
+êcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)?jobMap@26.27:26.33CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2‘
+Åcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!keyCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2Ÿ
+Åcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!key	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2ﬁ
+Ücom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!expected	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java- (52Í
+êcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)?jobMap@26.27:26.33DECLARATIONH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (!2]
+voidRETURN_TYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (∏	
+êcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)?jobMap@26.27:26.33VARIABLEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (!"
+typeMap<Key, EngineJob<?>>"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*jobMap2_
+java.util.MapTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2v
+com.bumptech.glide.load.KeyTYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2É
+(com.bumptech.glide.load.engine.EngineJobTYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (2à
+6com.bumptech.glide.load.engine.Jobs.getJobMap(boolean)CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java$ (-2í
+@com.bumptech.glide.load.engine.EngineJob.onlyRetrieveFromCache()CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java7 (L2Ÿ
+Ücom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!expectedCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java. (6®
+Åcom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!key	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java ("
+typeKey"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*key2m
+com.bumptech.glide.load.KeyTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java (»
+Ücom.bumptech.glide.load.engine.Jobs.removeIfCurrent(com.bumptech.glide.load.Key, com.bumptech.glide.load.engine.EngineJob<?>)!expected	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java- (5"
+typeEngineJob<?>"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*expected2z
+(com.bumptech.glide.load.engine.EngineJobTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java  ()ã
+
+6com.bumptech.glide.load.engine.Jobs.getJobMap(boolean)METHODH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java !  (*")
+packagecom.bumptech.glide.load.engine"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeMap<Key, EngineJob<?>>"
+accessprivate"
+LOC2*	getJobMap2û
+Lcom.bumptech.glide.load.engine.Jobs.getJobMap(boolean)!onlyRetrieveFromCacheCALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java! !( 2è
+=com.bumptech.glide.load.engine.Jobs?onlyCacheJobs@10.39:10.52CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java!# !(02Ñ
+2com.bumptech.glide.load.engine.Jobs?jobs@9.39:9.43CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java!3 !(72£
+Lcom.bumptech.glide.load.engine.Jobs.getJobMap(boolean)!onlyRetrieveFromCache	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java 3  (H2f
+java.util.MapRETURN_TYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java 
+  (2}
+com.bumptech.glide.load.KeyRETURN_TYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java   (2ä
+(com.bumptech.glide.load.engine.EngineJobRETURN_TYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java   (Ù
+Lcom.bumptech.glide.load.engine.Jobs.getJobMap(boolean)!onlyRetrieveFromCache	PARAMETERH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java 3  (H"
+typeboolean"
+isFinalfalse")
+packagecom.bumptech.glide.load.engine"
+isLocaltrue*onlyRetrieveFromCache2Y
+booleanTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java +  (2Ì
+2com.bumptech.glide.load.engine.Jobs?jobs@9.39:9.43VALUEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java	' 	(+"
+isFinaltrue"
+typeMap<Key, EngineJob<?>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse")
+packagecom.bumptech.glide.load.engine*jobs2_
+java.util.MapTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java	 	(2v
+com.bumptech.glide.load.KeyTYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java	 	(2É
+(com.bumptech.glide.load.engine.EngineJobTYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java	 	("2m
+java.util.HashMap.HashMap()CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java	2 	(;Å
+=com.bumptech.glide.load.engine.Jobs?onlyCacheJobs@10.39:10.52VALUEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java
+' 
+(4"
+isFinaltrue"
+typeMap<Key, EngineJob<?>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse")
+packagecom.bumptech.glide.load.engine*onlyCacheJobs2_
+java.util.MapTYPEH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java
+ 
+(2v
+com.bumptech.glide.load.KeyTYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java
+ 
+(2É
+(com.bumptech.glide.load.engine.EngineJobTYPE_ARGUMENTH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java
+ 
+("2m
+java.util.HashMap.HashMap()CALLH
+>library/src/main/java/com/bumptech/glide/load/engine/Jobs.java
+; 
+(D

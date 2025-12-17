@@ -1,0 +1,795 @@
+
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java¯
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaFILEL
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java"
+
+LOC163*Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java¢
+/com.bumptech.glide.load.model.ResourceUriLoaderCLASST
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java! !($"(
+packagecom.bumptech.glide.load.model"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC130*ResourceUriLoader2Ö
+ücom.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6 6(2æ
+Ycom.bumptech.glide.load.model.ResourceUriLoader.newStreamFactory(android.content.Context)DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java-5 -(E2À
+fcom.bumptech.glide.load.model.ResourceUriLoader.newAssetFileDescriptorFactory(android.content.Context)DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java1= 1(Z2ﬁ
+ycom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java= =(&2Ê
+Äcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaO O(.2„
+~com.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javad d(,2≠
+Hcom.bumptech.glide.load.model.ResourceUriLoader.handles(android.net.Uri)DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javax x(2¥
+Ocom.bumptech.glide.load.model.ResourceUriLoader?INVALID_RESOURCE_ID@38.27:38.46DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java& &(.2§
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java( ((!2®
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java* *(2©
+Dcom.bumptech.glide.load.model.ResourceUriLoader?delegate@43.44:43.52DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java+, +(42â
+)com.bumptech.glide.load.model.ModelLoaderEXTENDT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java!7 !(B2ù
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTTYPE_PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java!% !(*2}
+android.net.UriEXTEND_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java!C !(F2£
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTEXTEND_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java!H !(M“
+ücom.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)CONSTRUCTORT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6 6("(
+packagecom.bumptech.glide.load.model*ResourceUriLoader2Ü
+ßcom.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)!contextCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java7 7(2á
+®com.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)!delegateCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java8 8(2°
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java7	 7(2¢
+Dcom.bumptech.glide.load.model.ResourceUriLoader?delegate@43.44:43.52CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java8	 8(2ã
+ßcom.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)!context	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6 6(#2å
+®com.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)!delegate	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6A 6(I2î
+/com.bumptech.glide.load.model.ResourceUriLoaderRETURN_TYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6 6(È
+ßcom.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)!context	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6 6(#"
+typeContext"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*context2u
+android.content.ContextTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6 6(´
+®com.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)!delegate	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6A 6(I"#
+typeModelLoader<Integer, DataT>"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*delegate2á
+)com.bumptech.glide.load.model.ModelLoaderTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6% 6(02ú
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTTYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java61 6(82x
+java.lang.IntegerTYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java6: 6(?Î
+
+Ycom.bumptech.glide.load.model.ResourceUriLoader.newStreamFactory(android.content.Context)METHODT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java-5 -(E"(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse",
+type$ModelLoaderFactory<Uri, InputStream>"
+accesspublic"
+LOC2*newStreamFactory2Ã
+ncom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.InputStreamFactory(android.content.Context)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java. .(!2ø
+acom.bumptech.glide.load.model.ResourceUriLoader.newStreamFactory(android.content.Context)!contextCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java." .()2ƒ
+acom.bumptech.glide.load.model.ResourceUriLoader.newStreamFactory(android.content.Context)!context	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java-N -(U2ï
+0com.bumptech.glide.load.model.ModelLoaderFactoryRETURN_TYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java- -("2}
+android.net.UriRETURN_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java-# -(&2Å
+java.io.InputStreamRETURN_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java-( -(3¢
+acom.bumptech.glide.load.model.ResourceUriLoader.newStreamFactory(android.content.Context)!context	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java-N -(U"
+typeContext"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*context2u
+android.content.ContextTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java-F -(MÀ
+fcom.bumptech.glide.load.model.ResourceUriLoader.newAssetFileDescriptorFactory(android.content.Context)METHODT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java1= 1(Z"(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"4
+type,ModelLoaderFactory<Uri, AssetFileDescriptor>"
+accesspublic"
+LOC3*newAssetFileDescriptorFactory2‹
+~com.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.AssetFileDescriptorFactory(android.content.Context)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java3 3()2Ã
+ncom.bumptech.glide.load.model.ResourceUriLoader.newAssetFileDescriptorFactory(android.content.Context)!contextCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java3* 3(12—
+ncom.bumptech.glide.load.model.ResourceUriLoader.newAssetFileDescriptorFactory(android.content.Context)!context	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java2 2(2ï
+0com.bumptech.glide.load.model.ModelLoaderFactoryRETURN_TYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java1 1("2}
+android.net.UriRETURN_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java1# 1(&2ï
+'android.content.res.AssetFileDescriptorRETURN_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java1( 1(;Ø
+ncom.bumptech.glide.load.model.ResourceUriLoader.newAssetFileDescriptorFactory(android.content.Context)!context	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java2 2("
+typeContext"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*context2u
+android.content.ContextTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java2 2(È+
+ycom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)METHODT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java= =(&"(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeLoadData<DataT>"
+accesspublic"	
+LOC17*buildLoadData2s
+java.util.List.size()CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaA A(2‹
+~com.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaB B(2s
+java.util.List.size()CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaE E(2ﬂ
+Äcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaF F(!2€
+}com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java?  ?(#2Ò
+ícom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@63.17:63.29CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaA A(2€
+}com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaB  B(#2›
+com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!widthCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaB% B(*2ﬂ
+Äcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!heightCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaB, B(22‡
+Åcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!optionsCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaB4 B(;2Ò
+ícom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@63.17:63.29CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaE E(2€
+}com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaF" F(%2›
+com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!widthCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaF' F(,2ﬂ
+Äcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!heightCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaF. F(42‡
+Åcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!optionsCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaF6 F(=2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaH H(2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaI I(2€
+}com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaI4 I(72‡
+}com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java> >(2‚
+com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!width	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java> >(!2‰
+Äcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!height	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java>' >(-2Â
+Åcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!options	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java>@ >(G2¯
+ícom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@63.17:63.29DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java? ?(2ó
+2com.bumptech.glide.load.model.ModelLoader.LoadDataRETURN_TYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java=	 =(2£
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTRETURN_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java= =(´
+ícom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@63.17:63.29VARIABLET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java? ?("
+typeList<String>"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*pathSegments2l
+java.util.ListTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java? ?(2w
+java.lang.StringTYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java?	 ?(2€
+}com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java?  ?(#Æ
+}com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java> >("
+typeUri"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*uri2m
+android.net.UriTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java> >(¶
+com.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!width	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java> >(!"
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*width2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java> >(©
+Äcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!height	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java>' >(-"
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*height2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java># >(&À
+Åcom.bumptech.glide.load.model.ResourceUriLoader.buildLoadData(android.net.Uri, int, int, com.bumptech.glide.load.Options)!options	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java>@ >(G"
+typeOptions"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*options2}
+com.bumptech.glide.load.OptionsTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java>8 >(?Ñ5
+Äcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)METHODT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaO O(."(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeLoadData<DataT>"
+accessprivate"	
+LOC19*parseResourceNameUri2u
+java.util.List.get(int)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaR' R(*2u
+java.util.List.get(int)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaS' S(*2«
+icom.bumptech.glide.load.model.ModelLoader.buildLoadData(Model, int, int, com.bumptech.glide.load.Options)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java` `(!2„
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaQ  Q(#2¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@81.17:81.29CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaR R(&2¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@81.17:81.29CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaS S(&2°
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaX X(2¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceName@83.11:83.23CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaX- X(92¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceType@82.11:82.23CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaX; X(G2°
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaXI X(P2ı
+ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?identifier@87.8:87.18CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaY Y(2≠
+Ocom.bumptech.glide.load.model.ResourceUriLoader?INVALID_RESOURCE_ID@38.27:38.46CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaY Y()2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaZ Z(2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java[ [(2„
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java[8 [(;2¢
+Dcom.bumptech.glide.load.model.ResourceUriLoader?delegate@43.44:43.52CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java` `(2ı
+ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?identifier@87.8:87.18CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java`" `(,2Â
+Ücom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!widthCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java`. `(32Ê
+ácom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!heightCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java`5 `(;2Á
+àcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!optionsCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java`= `(D2Ë
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP P(2Í
+Ücom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!width	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP P(!2Î
+ácom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!height	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP' P(-2Ï
+àcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!options	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP@ P(G2ˇ
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@81.17:81.29DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaQ Q(2ˇ
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceType@82.11:82.23DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaR R(2ˇ
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceName@83.11:83.23DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaS S(2¸
+ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?identifier@87.8:87.18DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaW W(2ó
+2com.bumptech.glide.load.model.ModelLoader.LoadDataRETURN_TYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaO
+ O(2£
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTRETURN_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaO O(∫
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@81.17:81.29VARIABLET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaQ Q("
+typeList<String>"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*pathSegments2l
+java.util.ListTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaQ Q(2w
+java.lang.StringTYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaQ	 Q(2„
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaQ  Q(#…
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceType@82.11:82.23VARIABLET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaR R("
+typeString"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*resourceType2n
+java.lang.StringTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaR R(
+2u
+java.util.List.get(int)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaR' R(*2¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@81.17:81.29CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaR R(&…
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceName@83.11:83.23VARIABLET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaS S("
+typeString"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*resourceName2n
+java.lang.StringTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaS S(
+2u
+java.util.List.get(int)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaS' S(*2¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?pathSegments@81.17:81.29CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaS S(&Ä
+
+ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?identifier@87.8:87.18VARIABLET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaW W("
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*
+identifier2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaW W(2°
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaX X(2¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceName@83.11:83.23CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaX- X(92¯
+ôcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceType@82.11:82.23CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaX; X(G2°
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaXI X(P∂
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP P("
+typeUri"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*uri2m
+android.net.UriTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP P(Æ
+Ücom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!width	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP P(!"
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*width2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP P(∞
+ácom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!height	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP' P(-"
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*height2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP# P(&“
+àcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceNameUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!options	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP@ P(G"
+typeOptions"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*options2}
+com.bumptech.glide.load.OptionsTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaP8 P(?”*
+~com.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)METHODT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javad d(,"(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeLoadData<DataT>"
+accessprivate"	
+LOC18*parseResourceIdUri2«
+icom.bumptech.glide.load.model.ModelLoader.buildLoadData(Model, int, int, com.bumptech.glide.load.Options)CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javan n(#2·
+Çcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javag( g(+2ˆ
+ócom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceId@103.10:103.20CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javah
+ h(2≠
+Ocom.bumptech.glide.load.model.ResourceUriLoader?INVALID_RESOURCE_ID@38.27:38.46CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javah h(+2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javai i(2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaj j(2·
+Çcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javajJ j(M2¢
+Dcom.bumptech.glide.load.model.ResourceUriLoader?delegate@43.44:43.52CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javan n(2ˆ
+ócom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceId@103.10:103.20CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javan$ n(.2„
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!widthCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javan0 n(52‰
+Öcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!heightCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javan7 n(=2Â
+Ücom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!optionsCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javan? n(F2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javap p(2ù
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaq q(2·
+Çcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaq: q(=2Ì
+écom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?e@111.35:111.36CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaq? q(@2Ê
+Çcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae e(2Ë
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!width	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae e(!2È
+Öcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!height	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae' e(-2Í
+Ücom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!options	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae@ e(G2˝
+ócom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceId@103.10:103.20DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javag
+ g(2Ù
+écom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?e@111.35:111.36DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javao# o($2ó
+2com.bumptech.glide.load.model.ModelLoader.LoadDataRETURN_TYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javad
+ d(2£
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTRETURN_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javad d(ß
+ócom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?resourceId@103.10:103.20VARIABLET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javag
+ g("
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*
+resourceId2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javag g(	2·
+Çcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javag( g(+¥
+Çcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae e("
+typeUri"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*uri2m
+android.net.UriTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae e(¨
+Ñcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!width	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae e(!"
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*width2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae e(Æ
+Öcom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!height	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae' e(-"
+typeint"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*height2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae# e(&–
+Ücom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)!options	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae@ e(G"
+typeOptions"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*options2}
+com.bumptech.glide.load.OptionsTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javae8 e(?ﬂ
+écom.bumptech.glide.load.model.ResourceUriLoader.parseResourceIdUri(android.net.Uri, int, int, com.bumptech.glide.load.Options)?e@111.35:111.36VARIABLET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javao# o($"
+typeNumberFormatException"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*e2}
+java.lang.NumberFormatExceptionTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javao o("‡
+Hcom.bumptech.glide.load.model.ResourceUriLoader.handles(android.net.Uri)METHODT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javax x("(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC4*handles2™
+Lcom.bumptech.glide.load.model.ResourceUriLoader.handles(android.net.Uri)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javay: y(=2°
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31CALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaz z(2™
+Lcom.bumptech.glide.load.model.ResourceUriLoader.handles(android.net.Uri)!uriCALLT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaz+ z(.2Ø
+Lcom.bumptech.glide.load.model.ResourceUriLoader.handles(android.net.Uri)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javax& x()2l
+booleanRETURN_TYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javax	 x(˝
+Lcom.bumptech.glide.load.model.ResourceUriLoader.handles(android.net.Uri)!uri	PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javax& x()"
+typeUri"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*uri2m
+android.net.UriTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javax" x(%•
+Ocom.bumptech.glide.load.model.ResourceUriLoader?INVALID_RESOURCE_ID@38.27:38.46VALUET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java& &(."
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"(
+packagecom.bumptech.glide.load.model*INVALID_RESOURCE_ID2a
+intTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java& &(ï
+?com.bumptech.glide.load.model.ResourceUriLoader?TAG@40.30:40.33VALUET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java( ((!"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"(
+packagecom.bumptech.glide.load.model*TAG2n
+java.lang.StringTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java( ((¶
+Ccom.bumptech.glide.load.model.ResourceUriLoader?context@42.24:42.31VALUET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java* *("
+isFinaltrue"
+typeContext"
+isStaticfalse"
+accessprivate"
+isLocalfalse"(
+packagecom.bumptech.glide.load.model*context2u
+android.content.ContextTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java* *(Ë
+Dcom.bumptech.glide.load.model.ResourceUriLoader?delegate@43.44:43.52VALUET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java+, +(4"
+isFinaltrue"#
+typeModelLoader<Integer, DataT>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"(
+packagecom.bumptech.glide.load.model*delegate2á
+)com.bumptech.glide.load.model.ModelLoaderTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java+ +(2ú
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTTYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java+ +(#2x
+java.lang.IntegerTYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java+% +(*§
+5com.bumptech.glide.load.model.ResourceUriLoader.DataTTYPE_PARAMETERT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java!% !(**DataTá
+Bcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactoryCLASST
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java} }(/"(
+packagecom.bumptech.glide.load.model"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC16*InputStreamFactory2’
+ncom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.InputStreamFactory(android.content.Context)DECLARATIONV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÅ Å(2Ê
+com.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)DECLARATIONV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaá) á(.2¥
+Mcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.teardown()DECLARATIONV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaå å(2Ω
+Xcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory?context@127.26:127.33DECLARATIONT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java (!2ê
+0com.bumptech.glide.load.model.ModelLoaderFactoryEXTENDT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java}; }(M2}
+android.net.UriEXTEND_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java}N }(Q2Å
+java.io.InputStreamEXTEND_TYPE_ARGUMENTT
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java}S }(^±
+ncom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.InputStreamFactory(android.content.Context)CONSTRUCTORV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÅ Å("(
+packagecom.bumptech.glide.load.model*InputStreamFactory2÷
+vcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.InputStreamFactory(android.content.Context)!contextCALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÇ Ç(2∏
+Xcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory?context@127.26:127.33CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÇ Ç(2€
+vcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.InputStreamFactory(android.content.Context)!context	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÅ Å(&2©
+Bcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactoryRETURN_TYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÅ Å(ª
+vcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.InputStreamFactory(android.content.Context)!context	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÅ Å(&"
+typeContext"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*context2w
+android.content.ContextTYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaÅ Å(ô
+com.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)METHODV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaá) á(."(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"%
+typeModelLoader<Uri, InputStream>"
+accesspublic"
+LOC4*build2 
+jcom.bumptech.glide.load.model.MultiModelLoaderFactory.build(java.lang.Class<Model>, java.lang.Class<Data>)CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaà; à(@2Ä
+ücom.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaà à($2∏
+Xcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory?context@127.26:127.33CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaà% à(,2Ì
+åcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)!multiFactoryCALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaà. à(:2Ú
+åcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)!multiFactory	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaáP á(\2ê
+)com.bumptech.glide.load.model.ModelLoaderRETURN_TYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaá á(2É
+java.io.InputStreamRETURN_TYPE_ARGUMENTV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaá á(2
+android.net.UriRETURN_TYPE_ARGUMENTV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaá á('Ü
+åcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)!multiFactory	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaáP á(\"
+typeMultiModelLoaderFactory"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*multiFactory2ï
+5com.bumptech.glide.load.model.MultiModelLoaderFactoryTYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaá8 á(O÷
+Mcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory.teardown()METHODV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaå å("(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*teardown2ü
+;com.bumptech.glide.load.model.ModelLoaderFactory.teardown()OVERRIDEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaå å(2k
+voidRETURN_TYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaå å(ª
+Xcom.bumptech.glide.load.model.ResourceUriLoader.InputStreamFactory?context@127.26:127.33VALUET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java (!"
+isFinaltrue"
+typeContext"
+isStaticfalse"
+accessprivate"
+isLocalfalse"(
+packagecom.bumptech.glide.load.model*context2u
+android.content.ContextTYPET
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java (ﬁ
+Jcom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactoryCLASSV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaè è(7"(
+packagecom.bumptech.glide.load.model"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC19*AssetFileDescriptorFactory2Â
+~com.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.AssetFileDescriptorFactory(android.content.Context)DECLARATIONV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaî î(2Ô
+ácom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)DECLARATIONV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaö1 ö(62º
+Ucom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.teardown()DECLARATIONV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java° °(2«
+`com.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory?context@146.26:146.33DECLARATIONV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaí í(!2í
+0com.bumptech.glide.load.model.ModelLoaderFactoryEXTENDV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaê ê(#2
+android.net.UriEXTEND_TYPE_ARGUMENTV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaê$ ê('2ó
+'android.content.res.AssetFileDescriptorEXTEND_TYPE_ARGUMENTV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaê) ê(<˚
+~com.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.AssetFileDescriptorFactory(android.content.Context)CONSTRUCTORV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaî î("(
+packagecom.bumptech.glide.load.model*AssetFileDescriptorFactory2Á
+Ücom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.AssetFileDescriptorFactory(android.content.Context)!contextCALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaï ï(2¿
+`com.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory?context@146.26:146.33CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaï ï(2Ï
+Ücom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.AssetFileDescriptorFactory(android.content.Context)!context	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaî' î(.2±
+Jcom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactoryRETURN_TYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaî î(Ã
+Ücom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.AssetFileDescriptorFactory(android.content.Context)!context	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaî' î(."
+typeContext"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*context2w
+android.content.ContextTYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaî î(&÷
+ácom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)METHODV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaö1 ö(6"(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"-
+type%ModelLoader<Uri, AssetFileDescriptor>"
+accesspublic"
+LOC6*build2 
+jcom.bumptech.glide.load.model.MultiModelLoaderFactory.build(java.lang.Class<Model>, java.lang.Class<Data>)CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaù  ù(%2Ä
+ücom.bumptech.glide.load.model.ResourceUriLoader.ResourceUriLoader(android.content.Context, com.bumptech.glide.load.model.ModelLoader<java.lang.Integer, DataT>)CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaú ú($2¿
+`com.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory?context@146.26:146.33CALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaù
+ ù(2ı
+îcom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)!multiFactoryCALLV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaù ù(2˙
+îcom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)!multiFactory	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaõ) õ(52ê
+)com.bumptech.glide.load.model.ModelLoaderRETURN_TYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaö ö(2ó
+'android.content.res.AssetFileDescriptorRETURN_TYPE_ARGUMENTV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaö ö(2
+android.net.UriRETURN_TYPE_ARGUMENTV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaö ö(/é
+îcom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.build(com.bumptech.glide.load.model.MultiModelLoaderFactory)!multiFactory	PARAMETERV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaõ) õ(5"
+typeMultiModelLoaderFactory"
+isFinalfalse"(
+packagecom.bumptech.glide.load.model"
+isLocaltrue*multiFactory2ï
+5com.bumptech.glide.load.model.MultiModelLoaderFactoryTYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaõ õ((ﬁ
+Ucom.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory.teardown()METHODV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java° °("(
+packagecom.bumptech.glide.load.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*teardown2ü
+;com.bumptech.glide.load.model.ModelLoaderFactory.teardown()OVERRIDEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java° °(2k
+voidRETURN_TYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.java° °(«
+`com.bumptech.glide.load.model.ResourceUriLoader.AssetFileDescriptorFactory?context@146.26:146.33VALUEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaí í(!"
+isFinaltrue"
+typeContext"
+isStaticfalse"
+accessprivate"
+isLocalfalse"(
+packagecom.bumptech.glide.load.model*context2w
+android.content.ContextTYPEV
+Jlibrary/src/main/java/com/bumptech/glide/load/model/ResourceUriLoader.javaí í(

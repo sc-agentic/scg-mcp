@@ -1,0 +1,100 @@
+
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java¹
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.javaFILEb
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java"	
+LOC25*`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.javaª	
+Ecom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoderCLASSj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java ('"5
+package*com.bumptech.glide.load.resource.transcode"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+LOC9*GifDrawableBytesTranscoder2Ç
+Ëcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)DECLARATIONj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (#2³
+=com.bumptech.glide.load.resource.transcode.ResourceTranscoderEXTENDj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java3 (E2´
+0com.bumptech.glide.load.resource.gif.GifDrawableEXTEND_TYPE_ARGUMENTj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.javaF (Q2Š
+byte[]EXTEND_TYPE_ARGUMENTj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.javaS (YÎ
+Ëcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)METHODj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (#"5
+package*com.bumptech.glide.load.resource.transcode"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeResource<byte[]>"
+accesspublic"
+LOC7*	transcode2¡
+-com.bumptech.glide.load.engine.Resource.get()CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java& ()2°
+<com.bumptech.glide.load.resource.gif.GifDrawable.getBuffer()CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java$ (-2·
+Ccom.bumptech.glide.util.ByteBufferUtil.toBytes(java.nio.ByteBuffer)CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java, (32¾
+Jcom.bumptech.glide.load.resource.bytes.BytesResource.BytesResource(byte[])CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (2Ì
+×com.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)!toTranscodeCALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (%2Ô
+ßcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)?gifData@21.16:21.23CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (#2×
+âcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)?byteBuffer@22.15:22.25CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java4 (>2Ñ
+×com.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)!toTranscode	PARAMETERj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java% (02Í
+Ócom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)!options	PARAMETERj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.javaC (J2Û
+ßcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)?gifData@21.16:21.23DECLARATIONj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (2Þ
+âcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)?byteBuffer@22.15:22.25DECLARATIONj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (2¢
+'com.bumptech.glide.load.engine.ResourceRETURN_TYPEj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java	 (ê
+ßcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)?gifData@21.16:21.23VARIABLEj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java ("
+typeGifDrawable"
+isFinalfalse"5
+package*com.bumptech.glide.load.resource.transcode"
+isLocaltrue*gifData2¤
+0com.bumptech.glide.load.resource.gif.GifDrawableTYPEj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (2¡
+-com.bumptech.glide.load.engine.Resource.get()CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java& ()2Ì
+×com.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)!toTranscodeCALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (%é
+âcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)?byteBuffer@22.15:22.25VARIABLEj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java ("
+type
+ByteBuffer"
+isFinalfalse"5
+package*com.bumptech.glide.load.resource.transcode"
+isLocaltrue*
+byteBuffer2‡
+java.nio.ByteBufferTYPEj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (2°
+<com.bumptech.glide.load.resource.gif.GifDrawable.getBuffer()CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java$ (-2Ô
+ßcom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)?gifData@21.16:21.23CALLj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (#¥
+×com.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)!toTranscode	PARAMETERj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java% (0"
+typeResource<GifDrawable>"
+isFinalfalse"5
+package*com.bumptech.glide.load.resource.transcode"
+isLocaltrue*toTranscode2›
+'com.bumptech.glide.load.engine.ResourceTYPEj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (2­
+0com.bumptech.glide.load.resource.gif.GifDrawableTYPE_ARGUMENTj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java (#×
+Ócom.bumptech.glide.load.resource.transcode.GifDrawableBytesTranscoder.transcode(com.bumptech.glide.load.engine.Resource<com.bumptech.glide.load.resource.gif.GifDrawable>, com.bumptech.glide.load.Options)!options	PARAMETERj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.javaC (J"
+typeOptions"
+isFinalfalse"5
+package*com.bumptech.glide.load.resource.transcode"
+isLocaltrue*options2“
+com.bumptech.glide.load.OptionsTYPEj
+`library/src/main/java/com/bumptech/glide/load/resource/transcode/GifDrawableBytesTranscoder.java; (B

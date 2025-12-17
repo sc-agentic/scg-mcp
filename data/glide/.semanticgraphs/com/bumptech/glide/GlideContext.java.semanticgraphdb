@@ -1,0 +1,606 @@
+
+:library/src/main/java/com/bumptech/glide/GlideContext.java»
+:library/src/main/java/com/bumptech/glide/GlideContext.javaFILE<
+:library/src/main/java/com/bumptech/glide/GlideContext.java"
+
+LOC127*:library/src/main/java/com/bumptech/glide/GlideContext.java
+com.bumptech.glide.GlideContextCLASSD
+:library/src/main/java/com/bumptech/glide/GlideContext.java ("
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC101*GlideContext2ˇ
+©com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java.	 .(2ë
+<com.bumptech.glide.GlideContext.getDefaultRequestListeners()DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javaF' F(A2è
+:com.bumptech.glide.GlideContext.getDefaultRequestOptions()DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javaJ% J(=2§
+Ocom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javaT% T(@2∑
+bcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javad& d(:2Ä
++com.bumptech.glide.GlideContext.getEngine()DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javaj j(2Ç
+-com.bumptech.glide.GlideContext.getRegistry()DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javao o(2Ç
+-com.bumptech.glide.GlideContext.getLogLevel()DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javas s(2É
+.com.bumptech.glide.GlideContext.getArrayPool()DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javax x(2Ö
+0com.bumptech.glide.GlideContext.getExperiments()DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java| |((2õ
+Fcom.bumptech.glide.GlideContext?DEFAULT_TRANSITION_OPTIONS@29.39:29.65DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java' (A2ä
+5com.bumptech.glide.GlideContext?arrayPool@32.26:32.35DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java   (#2â
+4com.bumptech.glide.GlideContext?registry@33.40:33.48DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java!( !(02ó
+Bcom.bumptech.glide.GlideContext?imageViewTargetFactory@34.39:34.61DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java"' "(=2ù
+Hcom.bumptech.glide.GlideContext?defaultRequestOptionsFactory@35.38:35.66DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java#& #(B2ò
+Ccom.bumptech.glide.GlideContext?defaultRequestListeners@36.46:36.69DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java$. $(E2ô
+Dcom.bumptech.glide.GlideContext?defaultTransitionOptions@37.55:37.79DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java%7 %(O2á
+2com.bumptech.glide.GlideContext?engine@38.23:38.29DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java& &(2å
+7com.bumptech.glide.GlideContext?experiments@39.33:39.44DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java'! '(,2â
+4com.bumptech.glide.GlideContext?logLevel@40.20:40.28DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java( ((2ñ
+Acom.bumptech.glide.GlideContext?defaultRequestOptions@44.25:44.46DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.java, ,(.2n
+android.content.ContextWrapperEXTENDD
+:library/src/main/java/com/bumptech/glide/GlideContext.java" (0—w
+©com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)CONSTRUCTORD
+:library/src/main/java/com/bumptech/glide/GlideContext.java.	 .("
+packagecom.bumptech.glide*GlideContext2∂
+hcom.bumptech.glide.util.GlideSuppliers.memorize(com.bumptech.glide.util.GlideSuppliers.GlideSupplier<T>)CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaC# C(+2Ä
+±com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!contextCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java9
+ 9(2Ç
+≥com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!arrayPoolCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java: :(2è
+¿com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!imageViewTargetFactoryCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java;" ;(82ï
+∆com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultRequestOptionsFactoryCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java<( <(D2ê
+¡com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultRequestListenersCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java=# =(:2ë
+¬com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultTransitionOptionsCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java>$ >(<2ˇ
+∞com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!engineCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java? ?(2Ñ
+µcom.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!experimentsCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java@ @("2Å
+≤com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!logLevelCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaA A(2Å
+≤com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!registryCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaC, C(42É
+5com.bumptech.glide.GlideContext?arrayPool@32.26:32.35CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java:	 :(2ê
+Bcom.bumptech.glide.GlideContext?imageViewTargetFactory@34.39:34.61CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java;	 ;(2ñ
+Hcom.bumptech.glide.GlideContext?defaultRequestOptionsFactory@35.38:35.66CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java<	 <(%2ë
+Ccom.bumptech.glide.GlideContext?defaultRequestListeners@36.46:36.69CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java=	 =( 2í
+Dcom.bumptech.glide.GlideContext?defaultTransitionOptions@37.55:37.79CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java>	 >(!2Ä
+2com.bumptech.glide.GlideContext?engine@38.23:38.29CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java?	 ?(2Ö
+7com.bumptech.glide.GlideContext?experiments@39.33:39.44CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java@	 @(2Ç
+4com.bumptech.glide.GlideContext?logLevel@40.20:40.28CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaA	 A(2Ç
+4com.bumptech.glide.GlideContext?registry@33.40:33.48CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaC	 C(2Ö
+±com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!context	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java/ /(2á
+≥com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!arrayPool	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java0 0("2Ü
+≤com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!registry	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java1' 1(/2î
+¿com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!imageViewTargetFactory	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java2& 2(<2ö
+∆com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultRequestOptionsFactory	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java3% 3(A2ñ
+¬com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultTransitionOptions	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java46 4(N2ï
+¡com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultRequestListeners	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java5- 5(D2Ñ
+∞com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!engine	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java6 6(2â
+µcom.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!experiments	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java7  7(+2Ü
+≤com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!logLevel	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java8
+ 8(2t
+com.bumptech.glide.GlideContextRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java.	 .(»
+±com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!context	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java/ /("
+typeContext"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*context2e
+android.content.ContextTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java/ /(Ô
+≥com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!arrayPool	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java0 0(""
+type	ArrayPool"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	arrayPool2Ö
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java0 0(Ï
+≤com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!registry	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java1' 1(/"
+typeGlideSupplier<Registry>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*registry2Ç
+4com.bumptech.glide.util.GlideSuppliers.GlideSupplierTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java1 1(2r
+com.bumptech.glide.RegistryTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java1 1(%ó
+¿com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!imageViewTargetFactory	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java2& 2(<"
+typeImageViewTargetFactory"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*imageViewTargetFactory2Ü
+8com.bumptech.glide.request.target.ImageViewTargetFactoryTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java2 2(%ó
+∆com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultRequestOptionsFactory	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java3% 3(A"
+typeRequestOptionsFactory"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*defaultRequestOptionsFactory2|
+.com.bumptech.glide.Glide.RequestOptionsFactoryTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java3 3($‰
+¬com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultTransitionOptions	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java46 4(N".
+type&Map<Class<?>, TransitionOptions<?, ?>>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*defaultTransitionOptions2[
+java.util.MapTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java4 4(2f
+java.lang.ClassTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java4 4(2{
+$com.bumptech.glide.TransitionOptionsTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java4 4(.‚
+¡com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!defaultRequestListeners	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java5- 5(D"%
+typeList<RequestListener<Object>>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*defaultRequestListeners2\
+java.util.ListTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java5 5(2Å
+*com.bumptech.glide.request.RequestListenerTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java5 5(#2g
+java.lang.ObjectTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java5$ 5(*”
+∞com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!engine	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java6 6("
+typeEngine"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*engine2s
+%com.bumptech.glide.load.engine.EngineTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java6 6(Â
+µcom.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!experiments	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java7  7(+"
+typeGlideExperiments"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*experiments2q
+#com.bumptech.glide.GlideExperimentsTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java7 7(≤
+≤com.bumptech.glide.GlideContext.GlideContext(android.content.Context, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool, com.bumptech.glide.util.GlideSuppliers.GlideSupplier<com.bumptech.glide.Registry>, com.bumptech.glide.request.target.ImageViewTargetFactory, com.bumptech.glide.Glide.RequestOptionsFactory, java.util.Map<java.lang.Class<?>, com.bumptech.glide.TransitionOptions<?, ?>>, java.util.List<com.bumptech.glide.request.RequestListener<java.lang.Object>>, com.bumptech.glide.load.engine.Engine, com.bumptech.glide.GlideExperiments, int)!logLevel	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.java8
+ 8("
+typeint"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*logLevel2Q
+intTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java8 8(	∏
+<com.bumptech.glide.GlideContext.getDefaultRequestListeners()METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaF' F(A"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"%
+typeList<RequestListener<Object>>"
+accesspublic"
+LOC2*getDefaultRequestListeners2ë
+Ccom.bumptech.glide.GlideContext?defaultRequestListeners@36.46:36.69CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaG G("2c
+java.util.ListRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaF	 F(2à
+*com.bumptech.glide.request.RequestListenerRETURN_TYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaF F(2n
+java.lang.ObjectRETURN_TYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaF F($å
+
+:com.bumptech.glide.GlideContext.getDefaultRequestOptions()METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaJ% J(="
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspublic"
+LOC6*getDefaultRequestOptions2Ç
+4com.bumptech.glide.request.BaseRequestOptions.lock()CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaLC L(G2Ñ
+6com.bumptech.glide.Glide.RequestOptionsFactory.build()CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaL; L(@2è
+Acom.bumptech.glide.GlideContext?defaultRequestOptions@44.25:44.46CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaK K(2è
+Acom.bumptech.glide.GlideContext?defaultRequestOptions@44.25:44.46CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaL L(2ñ
+Hcom.bumptech.glide.GlideContext?defaultRequestOptionsFactory@35.38:35.66CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaL L(:2è
+Acom.bumptech.glide.GlideContext?defaultRequestOptions@44.25:44.46CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaO O( 2~
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaJ J($®
+Ocom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaT% T(@"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeTransitionOptions<?, T>"
+accesspublic"	
+LOC15*getDefaultTransitionOptions2q
+#java.util.Map.get(java.lang.Object)CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaU> U(A2f
+java.util.Map.entrySet()CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaWU W(]2õ
+Mjava.lang.Class.isAssignableFrom(java.lang.Class<? extends java.lang.Object>)CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaX X(+2j
+java.util.Map.Entry.getKey()CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaX X(2l
+java.util.Map.Entry.getValue()CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaY Y(!2í
+Dcom.bumptech.glide.GlideContext?defaultTransitionOptions@37.55:37.79CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaU% U(=2¨
+^com.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClassCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaUB U(P2∞
+bcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?result@85.28:85.34CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaV V(2í
+Dcom.bumptech.glide.GlideContext?defaultTransitionOptions@37.55:37.79CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaW< W(T2Ø
+acom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?value@87.52:87.57CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaX X(2¨
+^com.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClassCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaX, X(:2∞
+bcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?result@85.28:85.34CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaY
+ Y(2Ø
+acom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?value@87.52:87.57CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaY Y(2∞
+bcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?result@85.28:85.34CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java] ](2∞
+bcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?result@85.28:85.34CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java^ ^(2î
+Fcom.bumptech.glide.GlideContext?DEFAULT_TRANSITION_OPTIONS@29.39:29.65CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java^ ^()2∞
+bcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?result@85.28:85.34CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java`% `(+2±
+^com.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClass	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaTS T(a2∑
+bcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?result@85.28:85.34DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javaU U("2∂
+acom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?value@87.52:87.57DECLARATIOND
+:library/src/main/java/com/bumptech/glide/GlideContext.javaW4 W(92y
+$com.bumptech.glide.TransitionOptionsRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaT T(2Ø
+Qcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>).TRETURN_TYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaT" T(#2©
+Qcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaT
+ T( 
+bcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?result@85.28:85.34VARIABLED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaU U(""
+typeTransitionOptions<?, ?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*result2r
+$com.bumptech.glide.TransitionOptionsTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaU U(2q
+#java.util.Map.get(java.lang.Object)CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaU> U(A2í
+Dcom.bumptech.glide.GlideContext?defaultTransitionOptions@37.55:37.79CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaU% U(=2¨
+^com.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClassCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaUB U(Pˆ
+acom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)?value@87.52:87.57VARIABLED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaW4 W(9"0
+type(Entry<Class<?>, TransitionOptions<?, ?>>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*value2a
+java.util.Map.EntryTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaW W(2f
+java.lang.ClassTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaW W(2{
+$com.bumptech.glide.TransitionOptionsTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaW W(,ü
+^com.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClass	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaTS T(a"
+typeClass<T>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*transcodeClass2]
+java.lang.ClassTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaTJ T(O2®
+Qcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaTP T(Q¨
+Qcom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaT
+ T(*TΩ
+bcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javad& d(:"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeViewTarget<ImageView, X>"
+accesspublic"
+LOC4*buildImageViewTarget2¿
+rcom.bumptech.glide.request.target.ImageViewTargetFactory.buildTarget(android.widget.ImageView, java.lang.Class<Z>)CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaf" f(-2ê
+Bcom.bumptech.glide.GlideContext?imageViewTargetFactory@34.39:34.61CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaf f(!2∫
+lcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)!imageViewCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaf. f(72ø
+qcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)!transcodeClassCALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaf9 f(G2ø
+lcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)!imageView	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javae e("2ƒ
+qcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)!transcodeClass	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javae6 e(D2Å
+,com.bumptech.glide.request.target.ViewTargetRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javad d(2¬
+dcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>).XRETURN_TYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javad d(!2v
+android.widget.ImageViewRETURN_TYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javad# d($2º
+dcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>).XTYPE_PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javad
+ d(á
+lcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)!imageView	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javae e(""
+type	ImageView"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	imageView2f
+android.widget.ImageViewTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javae e(≈
+qcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>)!transcodeClass	PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javae6 e(D"
+typeClass<X>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*transcodeClass2]
+java.lang.ClassTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javae- e(22ª
+dcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>).XTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.javae3 e(4ø
+dcom.bumptech.glide.GlideContext.buildImageViewTarget(android.widget.ImageView, java.lang.Class<X>).XTYPE_PARAMETERD
+:library/src/main/java/com/bumptech/glide/GlideContext.javad
+ d(*Xä
++com.bumptech.glide.GlideContext.getEngine()METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javaj j("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeEngine"
+accesspublic"
+LOC3*	getEngine2Ä
+2com.bumptech.glide.GlideContext?engine@38.23:38.29CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javak k(2z
+%com.bumptech.glide.load.engine.EngineRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javaj	 j(ì
+-com.bumptech.glide.GlideContext.getRegistry()METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javao o("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRegistry"
+accesspublic"
+LOC3*getRegistry2à
+:com.bumptech.glide.util.GlideSuppliers.GlideSupplier.get()CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javap p(2Ç
+4com.bumptech.glide.GlideContext?registry@33.40:33.48CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javap p(2p
+com.bumptech.glide.RegistryRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javao	 o(Î
+-com.bumptech.glide.GlideContext.getLogLevel()METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javas s("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC2*getLogLevel2Ç
+4com.bumptech.glide.GlideContext?logLevel@40.20:40.28CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javat t(2X
+intRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javas	 s(©
+.com.bumptech.glide.GlideContext.getArrayPool()METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.javax x("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type	ArrayPool"
+accesspublic"
+LOC3*getArrayPool2É
+5com.bumptech.glide.GlideContext?arrayPool@32.26:32.35CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.javay y(2å
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.javax	 x(°
+0com.bumptech.glide.GlideContext.getExperiments()METHODD
+:library/src/main/java/com/bumptech/glide/GlideContext.java| |(("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeGlideExperiments"
+accesspublic"
+LOC2*getExperiments2Ö
+7com.bumptech.glide.GlideContext?experiments@39.33:39.44CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java} }(2x
+#com.bumptech.glide.GlideExperimentsRETURN_TYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java|	 |(Ã
+Fcom.bumptech.glide.GlideContext?DEFAULT_TRANSITION_OPTIONS@29.39:29.65VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java' (A"
+isFinaltrue"
+typeTransitionOptions<?, ?>"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"
+packagecom.bumptech.glide*DEFAULT_TRANSITION_OPTIONS2r
+$com.bumptech.glide.TransitionOptionsTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java ( 2î
+Fcom.bumptech.glide.GenericTransitionOptions.GenericTransitionOptions()CALLD
+:library/src/main/java/com/bumptech/glide/GlideContext.java
+ ($í
+5com.bumptech.glide.GlideContext?arrayPool@32.26:32.35VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java   (#"
+isFinaltrue"
+type	ArrayPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*	arrayPool2Ö
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java   (è
+4com.bumptech.glide.GlideContext?registry@33.40:33.48VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java!( !(0"
+isFinaltrue"
+typeGlideSupplier<Registry>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*registry2Ç
+4com.bumptech.glide.util.GlideSuppliers.GlideSupplierTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java! !(2r
+com.bumptech.glide.RegistryTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java! !(&∫
+Bcom.bumptech.glide.GlideContext?imageViewTargetFactory@34.39:34.61VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java"' "(="
+isFinaltrue"
+typeImageViewTargetFactory"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*imageViewTargetFactory2Ü
+8com.bumptech.glide.request.target.ImageViewTargetFactoryTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java" "(&∫
+Hcom.bumptech.glide.GlideContext?defaultRequestOptionsFactory@35.38:35.66VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java#& #(B"
+isFinaltrue"
+typeRequestOptionsFactory"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*defaultRequestOptionsFactory2|
+.com.bumptech.glide.Glide.RequestOptionsFactoryTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java# #(%Ö
+Ccom.bumptech.glide.GlideContext?defaultRequestListeners@36.46:36.69VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java$. $(E"
+isFinaltrue"%
+typeList<RequestListener<Object>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*defaultRequestListeners2\
+java.util.ListTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java$ $(2Å
+*com.bumptech.glide.request.RequestListenerTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java$ $($2g
+java.lang.ObjectTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java$% $(+á
+Dcom.bumptech.glide.GlideContext?defaultTransitionOptions@37.55:37.79VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java%7 %(O"
+isFinaltrue".
+type&Map<Class<?>, TransitionOptions<?, ?>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*defaultTransitionOptions2[
+java.util.MapTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java% %(2f
+java.lang.ClassTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java% %(2{
+$com.bumptech.glide.TransitionOptionsTYPE_ARGUMENTD
+:library/src/main/java/com/bumptech/glide/GlideContext.java% %(/ˆ
+2com.bumptech.glide.GlideContext?engine@38.23:38.29VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java& &("
+isFinaltrue"
+typeEngine"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*engine2s
+%com.bumptech.glide.load.engine.EngineTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java& &(à
+7com.bumptech.glide.GlideContext?experiments@39.33:39.44VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java'! '(,"
+isFinaltrue"
+typeGlideExperiments"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*experiments2q
+#com.bumptech.glide.GlideExperimentsTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java' '( ’
+4com.bumptech.glide.GlideContext?logLevel@40.20:40.28VALUED
+:library/src/main/java/com/bumptech/glide/GlideContext.java( (("
+isFinaltrue"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*logLevel2Q
+intTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java( ((§
+Acom.bumptech.glide.GlideContext?defaultRequestOptions@44.25:44.46VARIABLED
+:library/src/main/java/com/bumptech/glide/GlideContext.java, ,(."
+isFinalfalse"
+typeRequestOptions"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*defaultRequestOptions2w
+)com.bumptech.glide.request.RequestOptionsTYPED
+:library/src/main/java/com/bumptech/glide/GlideContext.java,
+ ,(

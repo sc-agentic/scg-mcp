@@ -1,0 +1,1126 @@
+
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÏ
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaFILEH
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java"
+
+LOC242*Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaØ(
++com.bumptech.glide.load.data.HttpUrlFetcherCLASSP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java ("'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC220*HttpUrlFetcher2»
+gcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)	 )(2è
+≠com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java. .(2á
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java5 5(2˜
+ïcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaG G(+2≈
+bcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÖ Ö(/2Ï
+àcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaê ê(72ú
+9com.bumptech.glide.load.data.HttpUrlFetcher.isHttpOk(int)DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¶ ¶(!2¢
+?com.bumptech.glide.load.data.HttpUrlFetcher.isHttpRedirect(int)DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java´ ´('2»
+ecom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaØ Ø(32ò
+5com.bumptech.glide.load.data.HttpUrlFetcher.cleanup()DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java√ √(2ó
+4com.bumptech.glide.load.data.HttpUrlFetcher.cancel()DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java“ “(2ù
+:com.bumptech.glide.load.data.HttpUrlFetcher.getDataClass()DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java⁄ ⁄((2û
+;com.bumptech.glide.load.data.HttpUrlFetcher.getDataSource()DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java‡ ‡(!2ú
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (!2™
+Icom.bumptech.glide.load.data.HttpUrlFetcher?MAXIMUM_REDIRECTS@24.27:24.44DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (,2Æ
+Mcom.bumptech.glide.load.data.HttpUrlFetcher?REDIRECT_HEADER_FIELD@25.41:25.62DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java) (>2≥
+Rcom.bumptech.glide.load.data.HttpUrlFetcher?DEFAULT_CONNECTION_FACTORY@28.40:28.66DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java( (B2¨
+Kcom.bumptech.glide.load.data.HttpUrlFetcher?INVALID_STATUS_CODE@31.38:31.57DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java& (92°
+@com.bumptech.glide.load.data.HttpUrlFetcher?glideUrl@33.25:33.33DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java! !(!2†
+?com.bumptech.glide.load.data.HttpUrlFetcher?timeout@34.20:34.27DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java" "(2™
+Icom.bumptech.glide.load.data.HttpUrlFetcher?connectionFactory@35.41:35.58DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java#) #(:2¶
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java% %()2ü
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java& &(2§
+Ccom.bumptech.glide.load.data.HttpUrlFetcher?isCancelled@39.27:39.38DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java' '(&2ß
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactoryDECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java‰ ‰($2Ñ
+(com.bumptech.glide.load.data.DataFetcherEXTENDP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java' (22}
+java.io.InputStreamEXTEND_TYPE_ARGUMENTP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java3 (>˚
+
+gcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)CONSTRUCTORP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)	 )("'
+packagecom.bumptech.glide.load.data*HttpUrlFetcher2 
+pcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)!glideUrlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java*	 *(2…
+ocom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)!timeoutCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java* *(2¨
+Rcom.bumptech.glide.load.data.HttpUrlFetcher?DEFAULT_CONNECTION_FACTORY@28.40:28.66CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java* *(62œ
+pcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)!glideUrl	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)! )()2Œ
+ocom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)!timeout	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)/ )(62å
++com.bumptech.glide.load.data.HttpUrlFetcherRETURN_TYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)	 )(∫
+pcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)!glideUrl	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)! )()"
+typeGlideUrl"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*glideUrl2Ä
+&com.bumptech.glide.load.model.GlideUrlTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java) )( è
+ocom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int)!timeout	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)/ )(6"
+typeint"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*timeout2]
+intTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java)+ )(.Õ
+≠com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)CONSTRUCTORP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java. .("'
+packagecom.bumptech.glide.load.data*HttpUrlFetcher2ë
+∂com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!glideUrlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java/ /(2ê
+µcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!timeoutCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java0 0(2ö
+øcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!connectionFactoryCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java1 1(.2ö
+@com.bumptech.glide.load.data.HttpUrlFetcher?glideUrl@33.25:33.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java/	 /(2ô
+?com.bumptech.glide.load.data.HttpUrlFetcher?timeout@34.20:34.27CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java0	 0(2£
+Icom.bumptech.glide.load.data.HttpUrlFetcher?connectionFactory@35.41:35.58CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java1	 1(2ñ
+∂com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!glideUrl	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java. .("2ï
+µcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!timeout	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java.( .(/2ü
+øcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!connectionFactory	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java.J .([2å
++com.bumptech.glide.load.data.HttpUrlFetcherRETURN_TYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java. .(Å
+∂com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!glideUrl	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java. .(""
+typeGlideUrl"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*glideUrl2Ä
+&com.bumptech.glide.load.model.GlideUrlTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java. .(÷
+µcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!timeout	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java.( .(/"
+typeint"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*timeout2]
+intTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java.$ .('¡
+øcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlFetcher(com.bumptech.glide.load.model.GlideUrl, int, com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory)!connectionFactory	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java.J .([" 
+typeHttpUrlConnectionFactory"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*connectionFactory2û
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactoryTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java.1 .(IÍ-
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)METHODP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java5 5("'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC17*loadData2Ü
+,com.bumptech.glide.util.LogTime.getLogTime()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java7 7('2
+ïcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9 9(02à
+.com.bumptech.glide.load.model.GlideUrl.toURL()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9: 9(?2ç
+3com.bumptech.glide.load.model.GlideUrl.getHeaders()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9U 9(_2û
+Dcom.bumptech.glide.load.data.DataFetcher.DataCallback.onDataReady(T)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java: :(2±
+Wcom.bumptech.glide.load.data.DataFetcher.DataCallback.onLoadFailed(java.lang.Exception)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java? ?(2ê
+6com.bumptech.glide.util.LogTime.getElapsedMillis(long)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaBC B(S2ö
+@com.bumptech.glide.load.data.HttpUrlFetcher?glideUrl@33.25:33.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java91 9(92ö
+@com.bumptech.glide.load.data.HttpUrlFetcher?glideUrl@33.25:33.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9L 9(T2â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)!callbackCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java: :(2ì
+∏com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?result@57.18:57.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java: :(!2ï
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java< <(2ï
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java= =(2é
+≥com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?e@59.25:59.26CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java=2 =(32â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)!callbackCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java? ?(2é
+≥com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?e@59.25:59.26CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java? ?(2ï
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaA A(2ï
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaB B(2ï
+∫com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?startTime@55.9:55.18CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaBT B(]2Ô
+êcom.bumptech.glide.load.data.DataFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super T>)OVERRIDEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java5 5(2é
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)!priority	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java6 6( 2é
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)!callback	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java6M 6(U2ú
+∫com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?startTime@55.9:55.18DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java7	 7(2ö
+∏com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?result@57.18:57.24DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9 9(2ï
+≥com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?e@59.25:59.26DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java; ;(2e
+voidRETURN_TYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java5	 5(Á
+∫com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?startTime@55.9:55.18VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java7	 7("
+typelong"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*	startTime2^
+longTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java7 7(2Ü
+,com.bumptech.glide.util.LogTime.getLogTime()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java7 7('∑
+
+∏com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?result@57.18:57.24VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9 9("
+typeInputStream"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*result2m
+java.io.InputStreamTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9 9(2
+ïcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9 9(02à
+.com.bumptech.glide.load.model.GlideUrl.toURL()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9: 9(?2ç
+3com.bumptech.glide.load.model.GlideUrl.getHeaders()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9U 9(_2ö
+@com.bumptech.glide.load.data.HttpUrlFetcher?glideUrl@33.25:33.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java91 9(92ö
+@com.bumptech.glide.load.data.HttpUrlFetcher?glideUrl@33.25:33.33CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java9L 9(TÌ
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)!priority	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java6 6( "
+typePriority"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*priority2u
+com.bumptech.glide.PriorityTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java6 6(°
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)!callback	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java6M 6(U")
+type!DataCallback<? super InputStream>"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*callback2è
+5com.bumptech.glide.load.data.DataFetcher.DataCallbackTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java6+ 6(7Â
+≥com.bumptech.glide.load.data.HttpUrlFetcher.loadData(com.bumptech.glide.Priority, com.bumptech.glide.load.data.DataFetcher.DataCallback<? super java.io.InputStream>)?e@59.25:59.26VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java; ;("
+typeIOException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2m
+java.io.IOExceptionTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java; ;(ÉÉ
+ïcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)METHODP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaG G(+"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeInputStream"
+accessprivate"	
+LOC60*loadDataWithRedirects2
+%java.net.URI.equals(java.lang.Object)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaP+ P(12n
+java.net.URL.toURI()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaP# P((2n
+java.net.URL.toURI()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaP: P(?2„
+àcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaX X(/2z
+ java.net.URLConnection.connect()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java\ \(2Å
+'java.net.URLConnection.getInputStream()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java^ ^(+2º
+bcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaa. a(H2º
+bcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javah h(52ì
+9com.bumptech.glide.load.data.HttpUrlFetcher.isHttpOk(int)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javai i(2ø
+ecom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaj j(*2ô
+?com.bumptech.glide.load.data.HttpUrlFetcher.isHttpRedirect(int)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javak k(2ë
+7java.net.URLConnection.getHeaderField(java.lang.String)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal/ l(=2è
+5com.bumptech.glide.load.data.HttpUrlFetcher.cleanup()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javax x(2
+ïcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javay y("2â
+/java.net.HttpURLConnection.getResponseMessage()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java~. ~(@2§
+Jcom.bumptech.glide.load.HttpException.HttpException(java.lang.String, int)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaJ J(2§
+Jcom.bumptech.glide.load.HttpException.HttpException(java.lang.String, int)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaQ Q(!2π
+_com.bumptech.glide.load.HttpException.HttpException(java.lang.String, int, java.lang.Throwable)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java` `(2§
+Jcom.bumptech.glide.load.HttpException.HttpException(java.lang.String, int)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javan n(2ä
+0java.net.URL.URL(java.net.URL, java.lang.String)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javar r(2π
+_com.bumptech.glide.load.HttpException.HttpException(java.lang.String, int, java.lang.Throwable)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javat t(2í
+8com.bumptech.glide.load.HttpException.HttpException(int)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java{ {(2§
+Jcom.bumptech.glide.load.HttpException.HttpException(java.lang.String, int)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java~ ~(2ª
+_com.bumptech.glide.load.HttpException.HttpException(java.lang.String, int, java.lang.Throwable)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÄ Ä(2˙
+ücom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!redirectsCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaI I(2£
+Icom.bumptech.glide.load.data.HttpUrlFetcher?MAXIMUM_REDIRECTS@24.27:24.44CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaI I(&2£
+Icom.bumptech.glide.load.data.HttpUrlFetcher?MAXIMUM_REDIRECTS@24.27:24.44CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaK K(,2•
+Kcom.bumptech.glide.load.data.HttpUrlFetcher?INVALID_STATUS_CODE@31.38:31.57CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaK? K(R2¯
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!lastUrlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaP P(2Ù
+ôcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!urlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaP P("2¯
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!lastUrlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaP2 P(92•
+Kcom.bumptech.glide.load.data.HttpUrlFetcher?INVALID_STATUS_CODE@31.38:31.57CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaQ7 Q(J2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaX X(2Ù
+ôcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!urlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaX0 X(32¯
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!headersCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaX5 X(<2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java\ \(2ò
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java^ ^(2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java^ ^(2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaaI a(V2˛
+£com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@95.25:95.26CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaaY a(Z2ù
+Ccom.bumptech.glide.load.data.HttpUrlFetcher?isCancelled@39.27:39.38CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javad d(2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javah6 h(C2â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javai i(2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaj+ j(82â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javak k((2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal! l(.2ß
+Mcom.bumptech.glide.load.data.HttpUrlFetcher?REDIRECT_HEADER_FIELD@25.41:25.62CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal> l(S2ê
+µcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrlString@108.13:108.30CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javam m(-2â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javanG n(Q2ä
+Øcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrl@112.10:112.21CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javar r(2Ù
+ôcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!urlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javar r(!2ê
+µcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrlString@108.13:108.30CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javar# r(42ê
+µcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrlString@108.13:108.30CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javat7 t(H2â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javatJ t(T2Ä
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@115.37:115.38CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javatV t(W2ä
+Øcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrl@112.10:112.21CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javay# y(.2˙
+ücom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!redirectsCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javay0 y(92Ù
+ôcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!urlCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javay? y(B2¯
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!headersCALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javayD y(K2â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaz z(2•
+Kcom.bumptech.glide.load.data.HttpUrlFetcher?INVALID_STATUS_CODE@31.38:31.57CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaz z(02â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java{ {((2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java~  ~(-2â
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java~D ~(N2ã
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÄD Ä(N2Ç
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@127.27:127.28CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÄP Ä(Q2˘
+ôcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!url	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH
+ H(2ˇ
+ücom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!redirects	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH H(2˝
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!lastUrl	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH" H()2˝
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!headers	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH? H(F2ê
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javah h(2ó
+µcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrlString@108.13:108.30DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal l(2ë
+Øcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrl@112.10:112.21DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javap
+ p(2Ö
+£com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@83.34:83.35DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaS" S(#2Ö
+£com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@95.25:95.26DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java_ _(2á
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@115.37:115.38DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javas% s(&2á
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@127.27:127.28DECLARATIONP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (2t
+java.io.InputStreamRETURN_TYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaG
+ G(Æ
+Æcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?statusCode@104.14:104.24VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javah h("
+typeint"
+isFinaltrue"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*
+statusCode2]
+intTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javah
+ h(2º
+bcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javah h(52ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javah6 h(Cœ
+µcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrlString@108.13:108.30VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal l("
+typeString"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*redirectUrlString2j
+java.lang.StringTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal l(2ë
+7java.net.URLConnection.getHeaderField(java.lang.String)CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal/ l(=2ü
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal! l(.2ß
+Mcom.bumptech.glide.load.data.HttpUrlFetcher?REDIRECT_HEADER_FIELD@25.41:25.62CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javal> l(S‹
+Øcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?redirectUrl@112.10:112.21VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javap
+ p("
+typeURL"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*redirectUrl2f
+java.net.URLTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javap p(	ø
+ôcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!url	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH
+ H("
+typeURL"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*url2f
+java.net.URLTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH H(	¬
+ücom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!redirects	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH H("
+typeint"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*	redirects2]
+intTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH H(«
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!lastUrl	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH" H()"
+typeURL"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*lastUrl2f
+java.net.URLTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH H(!¬
+ùcom.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!headers	PARAMETERP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH? H(F"
+typeMap<String, String>"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*headers2g
+java.util.MapTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH+ H(.2s
+java.lang.StringTYPE_ARGUMENTP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH/ H(52s
+java.lang.StringTYPE_ARGUMENTP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaH7 H(=‰
+£com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@83.34:83.35VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaS" S(#"
+typeURISyntaxException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2u
+java.net.URISyntaxExceptionTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaS S(!’
+£com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@95.25:95.26VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java_ _("
+typeIOException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2m
+java.io.IOExceptionTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java_ _(Ï
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@115.37:115.38VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javas% s(&"
+typeMalformedURLException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2x
+java.net.MalformedURLExceptionTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javas s($◊
+•com.bumptech.glide.load.data.HttpUrlFetcher.loadDataWithRedirects(java.net.URL, int, java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@127.27:127.28VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java ("
+typeIOException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2m
+java.io.IOExceptionTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (Ö
+bcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÖ Ö(/"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeint"
+accessprivate"
+LOC9*getHttpStatusCodeOrInvalid2à
+,java.net.HttpURLConnection.getResponseCode()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaá á(*2Ã
+pcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaá á(2ó
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaâ â(2ó
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaä ä(2Œ
+rcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)?e@136.25:136.26CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaä4 ä(52ß
+Kcom.bumptech.glide.load.data.HttpUrlFetcher?INVALID_STATUS_CODE@31.38:31.57CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaç ç(2—
+pcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)!urlConnection	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÖB Ö(O2’
+rcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)?e@136.25:136.26DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaà à(2f
+intRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÖ Ö(ø
+pcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)!urlConnection	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÖB Ö(O"
+typeHttpURLConnection"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*urlConnection2v
+java.net.HttpURLConnectionTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÖ0 Ö(Aß
+rcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)?e@136.25:136.26VARIABLER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaà à("
+typeIOException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2o
+java.io.IOExceptionTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaà à(«8
+àcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaê ê(7"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeHttpURLConnection"
+accessprivate"	
+LOC19*buildAndConfigureConnection2¥
+Xcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory.build(java.net.URL)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaî( î(-2t
+java.util.Map.entrySet()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaò9 ò(A2©
+Mjava.net.URLConnection.addRequestProperty(java.lang.String, java.lang.String)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaô ô(&2x
+java.util.Map.Entry.getKey()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaô3 ô(92z
+java.util.Map.Entry.getValue()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaôI ô(Q2â
+-java.net.URLConnection.setConnectTimeout(int)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaõ õ(#2Ü
+*java.net.URLConnection.setReadTimeout(int)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaú ú( 2à
+,java.net.URLConnection.setUseCaches(boolean)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaù ù(2Ü
+*java.net.URLConnection.setDoInput(boolean)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaû û(2ö
+>java.net.HttpURLConnection.setInstanceFollowRedirects(boolean)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java° °(,2ª
+_com.bumptech.glide.load.HttpException.HttpException(java.lang.String, int, java.lang.Throwable)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javañ ñ(2Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaî î(2•
+Icom.bumptech.glide.load.data.HttpUrlFetcher?connectionFactory@35.41:35.58CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaî î('2È
+åcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!urlCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaî. î(12ı
+òcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@149.25:149.26CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javañO ñ(P2Ì
+êcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!headersCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaò1 ò(82Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaô ô(2ˇ
+¢com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?headerEntry@152.35:152.46CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaô' ô(22ˇ
+¢com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?headerEntry@152.35:152.46CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaô= ô(H2Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaõ õ(2õ
+?com.bumptech.glide.load.data.HttpUrlFetcher?timeout@34.20:34.27CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaõ$ õ(+2Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaú ú(2õ
+?com.bumptech.glide.load.data.HttpUrlFetcher?timeout@34.20:34.27CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaú! ú((2Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaù ù(2Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaû û(2Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java° °(2Å
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¢ ¢(2Ó
+åcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!url	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaê< ê(?2Ú
+êcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!headers	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaêU ê(\2à
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaí í(#2Ü
+¢com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?headerEntry@152.35:152.46DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaò# ò(.2¸
+òcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@149.25:149.26DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaï ï(2}
+java.net.HttpURLConnectionRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaê
+ ê(Û
+§com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?urlConnection@146.22:146.35VARIABLER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaí í(#"
+typeHttpURLConnection"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*urlConnection2v
+java.net.HttpURLConnectionTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaí í(ﬁ
+¢com.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?headerEntry@152.35:152.46VARIABLER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaò# ò(."!
+typeMap.Entry<String, String>"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*headerEntry2o
+java.util.Map.EntryTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaò ò(2u
+java.lang.StringTYPE_ARGUMENTR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaò	 ò(2u
+java.lang.StringTYPE_ARGUMENTR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaò ò(∂
+åcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!url	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaê< ê(?"
+typeURL"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*url2h
+java.net.URLTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaê8 ê(;Ω
+êcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)!headers	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaêU ê(\"
+typeMap<String, String>"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*headers2i
+java.util.MapTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaêA ê(D2u
+java.lang.StringTYPE_ARGUMENTR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaêE ê(K2u
+java.lang.StringTYPE_ARGUMENTR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaêM ê(SŒ
+òcom.bumptech.glide.load.data.HttpUrlFetcher.buildAndConfigureConnection(java.net.URL, java.util.Map<java.lang.String, java.lang.String>)?e@149.25:149.26VARIABLER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaï ï("
+typeIOException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2o
+java.io.IOExceptionTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaï ï(Ë
+9com.bumptech.glide.load.data.HttpUrlFetcher.isHttpOk(int)METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¶ ¶(!"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isHttpOk2†
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.isHttpOk(int)!statusCodeCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaß ß(2•
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.isHttpOk(int)!statusCode	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¶& ¶(02j
+booleanRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¶ ¶(Î
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.isHttpOk(int)!statusCode	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¶& ¶(0"
+typeint"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*
+statusCode2_
+intTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¶" ¶(%Ä
+?com.bumptech.glide.load.data.HttpUrlFetcher.isHttpRedirect(int)METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java´ ´('"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isHttpRedirect2¶
+Jcom.bumptech.glide.load.data.HttpUrlFetcher.isHttpRedirect(int)!statusCodeCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¨ ¨(2´
+Jcom.bumptech.glide.load.data.HttpUrlFetcher.isHttpRedirect(int)!statusCode	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java´, ´(62j
+booleanRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java´ ´(Ò
+Jcom.bumptech.glide.load.data.HttpUrlFetcher.isHttpRedirect(int)!statusCode	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java´, ´(6"
+typeint"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*
+statusCode2_
+intTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java´( ´(+é&
+ecom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaØ Ø(3"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeInputStream"
+accessprivate"	
+LOC17*getStreamForSuccessfulRequest2á
++java.net.URLConnection.getContentEncoding()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≤* ≤(<2Ö
+)java.net.URLConnection.getContentLength()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≥* ≥(:2Æ
+Rcom.bumptech.glide.util.ContentLengthInputStream.obtain(java.io.InputStream, long)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¥* ¥(02É
+'java.net.URLConnection.getInputStream()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¥? ¥(M2á
++java.net.URLConnection.getContentEncoding()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java∑H ∑(Z2É
+'java.net.URLConnection.getInputStream()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaπ π(-2æ
+bcom.bumptech.glide.load.data.HttpUrlFetcher.getHttpStatusCodeOrInvalid(java.net.HttpURLConnection)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaΩ* Ω(D2ª
+_com.bumptech.glide.load.HttpException.HttpException(java.lang.String, int, java.lang.Throwable)CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaº º(2œ
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≤ ≤()2œ
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≥ ≥()2ö
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¥ ¥(2œ
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¥1 ¥(>2ﬁ
+Åcom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)?contentLength@179.12:179.25CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java¥Q ¥(^2ó
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java∂ ∂(2ó
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java∑ ∑(2œ
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java∑: ∑(G2ö
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaπ π(2œ
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaπ π(2œ
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaΩE Ω(R2—
+ucom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)?e@187.25:187.26CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaΩU Ω(V2ö
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaø ø(2‘
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnection	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaØF Ø(S2Â
+Åcom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)?contentLength@179.12:179.25DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≥ ≥(2ÿ
+ucom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)?e@187.25:187.26DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaª ª(2v
+java.io.InputStreamRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaØ
+ Ø(Ö
+Åcom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)?contentLength@179.12:179.25VARIABLER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≥ ≥("
+typeint"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*contentLength2_
+intTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≥ ≥(2Ö
+)java.net.URLConnection.getContentLength()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≥* ≥(:2œ
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnectionCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java≥ ≥()¬
+scom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)!urlConnection	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaØF Ø(S"
+typeHttpURLConnection"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*urlConnection2v
+java.net.HttpURLConnectionTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaØ4 Ø(E™
+ucom.bumptech.glide.load.data.HttpUrlFetcher.getStreamForSuccessfulRequest(java.net.HttpURLConnection)?e@187.25:187.26VARIABLER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaª ª("
+typeIOException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2o
+java.io.IOExceptionTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaª ª(¯
+5com.bumptech.glide.load.data.HttpUrlFetcher.cleanup()METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java√ √("'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC13*cleanup2w
+java.io.InputStream.close()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java∆ ∆(2É
+'java.net.HttpURLConnection.disconnect()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÃ Ã(2ö
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaƒ ƒ(2ö
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java∆ ∆(2°
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÀ À(2°
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÃ Ã(2°
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaŒ Œ(2í
+2com.bumptech.glide.load.data.DataFetcher.cleanup()OVERRIDER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java√ √(2®
+Ecom.bumptech.glide.load.data.HttpUrlFetcher.cleanup()?e@199.27:199.28DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java« «(2g
+voidRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java√	 √(˙
+Ecom.bumptech.glide.load.data.HttpUrlFetcher.cleanup()?e@199.27:199.28VARIABLER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java« «("
+typeIOException"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*e2o
+java.io.IOExceptionTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java« «(∆
+4com.bumptech.glide.load.data.HttpUrlFetcher.cancel()METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java“ “("'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC5*cancel2ü
+Ccom.bumptech.glide.load.data.HttpUrlFetcher?isCancelled@39.27:39.38CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java’ ’(2ë
+1com.bumptech.glide.load.data.DataFetcher.cancel()OVERRIDER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java“ “(2g
+voidRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java“	 “(∂
+:com.bumptech.glide.load.data.HttpUrlFetcher.getDataClass()METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java⁄ ⁄(("'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeClass<InputStream>"
+accesspublic"
+LOC4*getDataClass2r
+java.lang.ClassRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java⁄	 ⁄(2
+java.io.InputStreamRETURN_TYPE_ARGUMENTR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java⁄ ⁄(ﬁ
+;com.bumptech.glide.load.data.HttpUrlFetcher.getDataSource()METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java‡ ‡(!"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+DataSource"
+accesspublic"
+LOC4*getDataSource2ò
+8com.bumptech.glide.load.data.DataFetcher.getDataSource()OVERRIDER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java‡ ‡(!2Ö
+"com.bumptech.glide.load.DataSourceRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java‡	 ‡(à
+;com.bumptech.glide.load.data.HttpUrlFetcher?TAG@23.30:23.33VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (!"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*TAG2j
+java.lang.StringTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (î
+Icom.bumptech.glide.load.data.HttpUrlFetcher?MAXIMUM_REDIRECTS@24.27:24.44VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (,"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*MAXIMUM_REDIRECTS2]
+intTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java (¥
+Mcom.bumptech.glide.load.data.HttpUrlFetcher?REDIRECT_HEADER_FIELD@25.41:25.62VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java) (>"
+isFinaltrue"
+typeString"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*REDIRECT_HEADER_FIELD2j
+java.lang.StringTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java" ((œ
+Rcom.bumptech.glide.load.data.HttpUrlFetcher?DEFAULT_CONNECTION_FACTORY@28.40:28.66VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java( (B"
+isFinaltrue" 
+typeHttpUrlConnectionFactory"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*DEFAULT_CONNECTION_FACTORY2û
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactoryTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java ('2«
+mcom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.DefaultHttpUrlConnectionFactory()CALLP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java
+ ()†
+Kcom.bumptech.glide.load.data.HttpUrlFetcher?INVALID_STATUS_CODE@31.38:31.57VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java& (9"
+isFinaltrue"
+typeint"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*INVALID_STATUS_CODE2]
+intTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java" (%¨
+@com.bumptech.glide.load.data.HttpUrlFetcher?glideUrl@33.25:33.33VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java! !(!"
+isFinaltrue"
+typeGlideUrl"
+isStaticfalse"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*glideUrl2Ä
+&com.bumptech.glide.load.model.GlideUrlTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java! !(Å
+?com.bumptech.glide.load.data.HttpUrlFetcher?timeout@34.20:34.27VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java" "("
+isFinaltrue"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*timeout2]
+intTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java" "(Ï
+Icom.bumptech.glide.load.data.HttpUrlFetcher?connectionFactory@35.41:35.58VALUEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java#) #(:"
+isFinaltrue" 
+typeHttpUrlConnectionFactory"
+isStaticfalse"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*connectionFactory2û
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactoryTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java# #((∂
+Ecom.bumptech.glide.load.data.HttpUrlFetcher?urlConnection@37.28:37.41VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java% %()"
+isFinalfalse"
+typeHttpURLConnection"
+isStaticfalse"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*urlConnection2t
+java.net.HttpURLConnectionTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java%
+ %(õ
+>com.bumptech.glide.load.data.HttpUrlFetcher?stream@38.22:38.28VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java& &("
+isFinalfalse"
+typeInputStream"
+isStaticfalse"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*stream2m
+java.io.InputStreamTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java&
+ &(ï
+Ccom.bumptech.glide.load.data.HttpUrlFetcher?isCancelled@39.27:39.38VARIABLEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java' '(&"
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"'
+packagecom.bumptech.glide.load.data*isCancelled2a
+booleanTYPEP
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java' '(Ñ
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactoryTRAITR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.java‰ ‰($"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+LOC2*HttpUrlConnectionFactory2ª
+Xcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory.build(java.net.URL)DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÂ Â(ü
+Xcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory.build(java.net.URL)METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÂ Â("'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeHttpURLConnection"
+accesspackage_private"
+LOC0*build2Ω
+\com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory.build(java.net.URL)!url	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÂ  Â(#2}
+java.net.HttpURLConnectionRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÂ Â(Ö
+\com.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory.build(java.net.URL)!url	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÂ  Â(#"
+typeURL"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*url2h
+java.net.URLTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÂ Â(â
+Kcom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactoryCLASSR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaË Ë(6"'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"
+LOC9*DefaultHttpUrlConnectionFactory2–
+mcom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.DefaultHttpUrlConnectionFactory()DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÎ Î(#2¬
+_com.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.build(java.net.URL)DECLARATIONR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÓ Ó("2¢
+Dcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactoryEXTENDR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaËB Ë(ZÀ
+mcom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.DefaultHttpUrlConnectionFactory()CONSTRUCTORR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÎ Î(#"'
+packagecom.bumptech.glide.load.data*DefaultHttpUrlConnectionFactory2Æ
+Kcom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactoryRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÎ Î(#ú	
+_com.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.build(java.net.URL)METHODR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÓ Ó(""'
+packagecom.bumptech.glide.load.data"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeHttpURLConnection"
+accesspublic"
+LOC3*build2y
+java.net.URL.openConnection()CALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÔ% Ô(32ø
+ccom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.build(java.net.URL)!urlCALLR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÔ! Ô($2∏
+Xcom.bumptech.glide.load.data.HttpUrlFetcher.HttpUrlConnectionFactory.build(java.net.URL)OVERRIDER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÓ Ó("2ƒ
+ccom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.build(java.net.URL)!url	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÓ' Ó(*2}
+java.net.HttpURLConnectionRETURN_TYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÓ Ó(å
+ccom.bumptech.glide.load.data.HttpUrlFetcher.DefaultHttpUrlConnectionFactory.build(java.net.URL)!url	PARAMETERR
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÓ' Ó(*"
+typeURL"
+isFinalfalse"'
+packagecom.bumptech.glide.load.data"
+isLocaltrue*url2h
+java.net.URLTYPER
+Flibrary/src/main/java/com/bumptech/glide/load/data/HttpUrlFetcher.javaÓ# Ó(&
