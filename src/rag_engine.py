@@ -1,47 +1,32 @@
-import sys
+import os
+import torch
+import networkx as nx
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Union
-
-import networkx as nx
-import torch
-
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.append(str(PROJECT_ROOT))
-
-try:
-    from sentence_transformers import SentenceTransformer, util
-
-    HAS_SENTENCE_TRANSFORMERS = True
-except ImportError:
-    HAS_SENTENCE_TRANSFORMERS = False
-    print("Warning: sentence-transformers not found. Using simple string matching.")
-
-try:
-    from src.models.semantic_graph_pb2 import SemanticGraphFile, GraphNode, Edge
-except ImportError:
-    try:
-        from semantic_graph_pb2 import SemanticGraphFile, GraphNode, Edge
-    except ImportError:
-        raise ImportError(
-            "Could not import semantic_graph_pb2. Ensure protobuf bindings are generated."
-        )
+from src.models.semantic_graph_pb2 import SemanticGraphFile
+from sentence_transformers import SentenceTransformer, util
 
 
 class GraphRAG:
-    def __init__(self, data_dir: Union[str, Path]):
+    def __init__(
+        self, data_dir: Union[str, Path], code_dir: Optional[Union[str, Path]] = None
+    ):
         self.data_dir = Path(data_dir)
+        self.code_dir = Path(code_dir) if code_dir else None
         self.graph = nx.DiGraph()
         self.node_metadata: Dict[str, Dict[str, Any]] = {}
         self.node_ids_list: List[str] = []
         self.embeddings: Optional[torch.Tensor] = None
-        self.model: Optional[SentenceTransformer] = None
+        self.model = None
+        self.file_map: Dict[str, Path] = {}
 
-        if HAS_SENTENCE_TRANSFORMERS:
-            print("Initializing sentence-transformer model (all-MiniLM-L6-v2)...")
-            self.model = SentenceTransformer("all-MiniLM-L6-v2")
+        print("Initializing model...")
+        self.model = SentenceTransformer("all-MiniLM-L6-v2")
 
         self._load_graph()
+        if self.code_dir:
+            self._build_code_index()
+        self._link_definitions()
         if self.model:
             self._build_index()
 
@@ -63,7 +48,7 @@ class GraphRAG:
     def _process_file(self, sgf: SemanticGraphFile):
         file_uri = sgf.uri
         for node in sgf.nodes:
-            if not self.graph.has_node(node.id):
+            if node.id not in self.node_metadata:
                 self.graph.add_node(
                     node.id, kind=node.kind, display_name=node.displayName
                 )
@@ -77,14 +62,75 @@ class GraphRAG:
             for edge in node.edges:
                 self.graph.add_edge(node.id, edge.to, type=edge.type)
 
+    def _link_definitions(self):
+        print("Linking definitions to files...")
+        count = 0
+        for node_id, meta in self.node_metadata.items():
+            if loc := meta.get("location"):
+                file_uri = loc.uri
+                if file_uri and self.graph.has_node(file_uri) and file_uri != node_id:
+                    self.graph.add_edge(file_uri, node_id, type="CONTAINS")
+                    count += 1
+        print(f"Created {count} CONTAINS edges.")
+
+    def _build_code_index(self):
+        print(f"Indexing source code in {self.code_dir}...")
+        for root, _, files in os.walk(self.code_dir):
+            for file in files:
+                if file.endswith(
+                    (".java", ".constants", ".kt", ".py", ".c", ".h", ".cpp")
+                ):
+                    self.file_map[file] = Path(root) / file
+        print(f"Indexed {len(self.file_map)} source files.")
+
+    def get_node_source(self, node_id: str, context_padding: int = 0) -> Optional[str]:
+        if not self.code_dir:
+            return None
+
+        meta = self.node_metadata.get(node_id)
+        if not meta or not (loc := meta.get("location")):
+            return None
+
+        target_uri = loc.uri or meta.get("file_uri")
+        if not target_uri or not (source_file := self._resolve_file_path(target_uri)):
+            return None
+
+        try:
+            with open(source_file, "r", encoding="utf-8", errors="ignore") as f:
+                lines = f.readlines()
+                start = max(0, loc.startLine - 1 - context_padding)
+                end = min(len(lines), loc.endLine + context_padding)
+                return "".join(lines[start:end]) if start < len(lines) else None
+        except Exception as e:
+            print(f"Error reading source for {node_id}: {e}")
+            return None
+
+    def _resolve_file_path(self, uri: str) -> Optional[Path]:
+        clean_path = uri.replace("file://", "")
+
+        # 1. Direct match
+        if (candidate := self.code_dir / clean_path).exists():
+            return candidate
+
+        # 2. Index match by filename
+        filename = Path(clean_path).name
+        if filename in self.file_map:
+            candidate = self.file_map[filename]
+            if str(candidate).replace("\\", "/").endswith(clean_path):
+                return candidate
+        return None
+
     def _build_index(self):
         print(f"Computing embeddings for {len(self.node_metadata)} nodes...")
-        texts = []
-        self.node_ids_list = []
+        texts, self.node_ids_list = [], []
+
         for node_id, data in self.node_metadata.items():
             display = data.get("display_name") or node_id
             kind = data.get("kind", "UNKNOWN")
-            texts.append(f"{kind}: {display}")
+
+            source = self.get_node_source(node_id)
+            code_snippet = source[:500].replace("\n", " ") if source else ""
+            texts.append(f"Type: {kind}; Name: {display}; Code: {code_snippet}")
             self.node_ids_list.append(node_id)
 
         if texts and self.model:
@@ -94,69 +140,67 @@ class GraphRAG:
             print("Embeddings computed.")
 
     def find_nodes(self, query: str, limit: int = 5) -> List[Dict]:
-        if HAS_SENTENCE_TRANSFORMERS and self.embeddings is not None and self.model:
-            return self._find_nodes_semantic(query, limit)
-        return self._find_nodes_keyword(query, limit)
+        if self.embeddings is not None and self.model:
+            query_emb = self.model.encode(query, convert_to_tensor=True)
+            cos_scores = util.cos_sim(query_emb, self.embeddings)[0]
+            top_results = torch.topk(cos_scores, k=min(limit, len(self.node_ids_list)))
 
-    def _find_nodes_semantic(self, query: str, limit: int = 5) -> List[Dict]:
-        query_embedding = self.model.encode(query, convert_to_tensor=True)
-        cos_scores = util.cos_sim(query_embedding, self.embeddings)[0]
-        top_results = torch.topk(cos_scores, k=min(limit, len(self.node_ids_list)))
+            return [
+                {
+                    "id": self.node_ids_list[idx],
+                    "score": float(score),
+                    **self.node_metadata[self.node_ids_list[idx]],
+                }
+                for score, idx in zip(top_results.values, top_results.indices)
+            ]
 
-        results = []
-        for score, idx in zip(top_results.values, top_results.indices):
-            node_id = self.node_ids_list[idx]
-            results.append(
-                {"id": node_id, "score": float(score), **self.node_metadata[node_id]}
-            )
-        return results
-
-    def _find_nodes_keyword(self, query: str, limit: int = 5) -> List[Dict]:
-        query_lower = query.lower()
+        # Fallback keyword search
         matches = []
-        for node_id, data in self.node_metadata.items():
+        q_lower = query.lower()
+        for nid, data in self.node_metadata.items():
             score = 0
-            if query_lower in (data.get("display_name") or "").lower():
+            if q_lower in (data.get("display_name") or "").lower():
                 score += 2
-            if query_lower in node_id.lower():
+            if q_lower in nid.lower():
                 score += 1
             if score > 0:
-                matches.append((score, node_id, data))
+                matches.append((score, nid, data))
+
         matches.sort(key=lambda x: x[0], reverse=True)
         return [{"id": m[1], **m[2]} for m in matches[:limit]]
 
     def get_context_subgraph(
         self, node_ids: List[str], hops: int = 1
     ) -> Dict[str, Any]:
-        subgraph_nodes = set(node_ids)
-        current_level = set(node_ids)
+        nodes = set(node_ids)
+        current = set(node_ids)
 
         for _ in range(hops):
-            next_level = set()
-            for node_id in current_level:
-                if node_id not in self.graph:
-                    continue
-                next_level.update(self.graph.successors(node_id))
-                next_level.update(self.graph.predecessors(node_id))
-            subgraph_nodes.update(next_level)
-            current_level = next_level
+            nxt = set()
+            for nid in current:
+                if nid in self.graph:
+                    nxt.update(self.graph.successors(nid))
+                    nxt.update(self.graph.predecessors(nid))
+            nodes.update(nxt)
+            current = nxt
 
-        result = {
+        sub = self.graph.subgraph(nodes)
+        return {
             "nodes": [
-                {"id": nid, **self.node_metadata[nid]}
-                for nid in subgraph_nodes
-                if nid in self.node_metadata
+                {"id": n, **self.node_metadata[n]}
+                for n in nodes
+                if n in self.node_metadata
             ],
             "edges": [
-                {"source": u, "target": v, "type": data.get("type", "unknown")}
-                for u, v, data in self.graph.subgraph(subgraph_nodes).edges(data=True)
+                {"source": u, "target": v, "type": d.get("type", "unknown")}
+                for u, v, d in sub.edges(data=True)
             ],
         }
-        return result
 
-    def format_context_for_llm(self, subgraph: Dict[str, Any]) -> str:
+    def format_context_for_llm(
+        self, subgraph: Dict[str, Any], code_context_padding: int = 0
+    ) -> str:
         output = ["CODEBASE CONTEXT:\n\nEntities:"]
-
         nodes_by_kind = {}
         for node in subgraph["nodes"]:
             nodes_by_kind.setdefault(node["kind"], []).append(node)
@@ -164,18 +208,32 @@ class GraphRAG:
         for kind, nodes in nodes_by_kind.items():
             output.append(f"  [{kind}]")
             for node in nodes:
-                name = node["display_name"] or node["id"]
+                name = node.get("display_name") or node["id"]
                 output.append(f"    - {name} (ID: {node['id']})")
+
+                if src := self.get_node_source(
+                    node["id"], context_padding=code_context_padding
+                ):
+                    block = "\n".join(f"        {line}" for line in src.splitlines())
+                    loc = node["location"]
+                    output.append(
+                        f"      Code Location: {loc.uri} L{loc.startLine}-L{loc.endLine}"
+                    )
+                    if code_context_padding:
+                        output.append(
+                            f"      (Context: +/- {code_context_padding} lines)"
+                        )
+                    output.append(f"      Source:\n{block}\n")
 
         output.append("\nRelationships:")
         for edge in subgraph["edges"]:
-            s_name = self.node_metadata.get(edge["source"], {}).get(
+            s = self.node_metadata.get(edge["source"], {}).get(
                 "display_name", edge["source"]
             )
-            t_name = self.node_metadata.get(edge["target"], {}).get(
+            t = self.node_metadata.get(edge["target"], {}).get(
                 "display_name", edge["target"]
             )
-            output.append(f"  - {s_name} --[{edge['type']}]--> {t_name}")
+            output.append(f"  - {s} --[{edge['type']}]--> {t}")
 
         return "\n".join(output)
 
@@ -186,24 +244,21 @@ def demo():
         print(f"Data path {data_path} not found.")
         return
 
-    rag = GraphRAG("data/glide")
-
+    rag = GraphRAG(data_dir=data_path.parent, code_dir="code/glide-4.5.0")
     print("\n--- Demo Query: 'Cache' ---")
-    nodes = rag.find_nodes("Cache", limit=3)
-    if not nodes:
+
+    if nodes := rag.find_nodes("Cache", limit=2):
+        print(f"Found {len(nodes)} starting nodes.")
+        subgraph = rag.get_context_subgraph([n["id"] for n in nodes], hops=1)
+        print(
+            f"Subgraph: {len(subgraph['nodes'])} nodes, {len(subgraph['edges'])} edges."
+        )
+        print("\nGenerated LLM Context:")
+        print("-" * 40)
+        print(rag.format_context_for_llm(subgraph, code_context_padding=5))
+        print("-" * 40)
+    else:
         print("No nodes found for 'Cache'")
-        return
-
-    print(f"Found {len(nodes)} starting nodes.")
-    subgraph = rag.get_context_subgraph([n["id"] for n in nodes], hops=1)
-
-    print(
-        f"Subgraph has {len(subgraph['nodes'])} nodes and {len(subgraph['edges'])} edges."
-    )
-    print("\nGenerated LLM Context:")
-    print("-" * 40)
-    print(rag.format_context_for_llm(subgraph))
-    print("-" * 40)
 
 
 if __name__ == "__main__":
