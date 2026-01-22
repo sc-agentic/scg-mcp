@@ -108,18 +108,30 @@ class GraphRAG:
             return None
 
     def _resolve_file_path(self, uri: str) -> Optional[Path]:
-        clean_path = uri.replace("file://", "")
+        clean_path = uri.replace("file://", "").replace("\\", "/").lstrip("/")
 
         # 1. Direct match
-        if (candidate := self.code_dir / clean_path).exists():
+        candidate = self.code_dir / clean_path
+        if candidate.exists():
             return candidate
 
-        # 2. Index match by filename
+        # 2. Try matching by filename from index
         filename = Path(clean_path).name
         if filename in self.file_map:
             candidate = self.file_map[filename]
-            if str(candidate).replace("\\", "/").endswith(clean_path):
+            # Check if the path suffix matches
+            candidate_str = str(candidate).replace("\\", "/")
+            if candidate_str.endswith(clean_path):
                 return candidate
+
+        # 3. Fallback: glob search for the file
+        parts = clean_path.split("/")
+        if len(parts) >= 2:
+            pattern = f"**/{'/'.join(parts[-2:])}"
+            matches = list(self.code_dir.glob(pattern))
+            if matches:
+                return matches[0]
+
         return None
 
     def _build_index(self):
@@ -149,6 +161,7 @@ class GraphRAG:
             self.node_ids_list.append(node_id)
 
         if texts and self.model:
+            print(f"Using device: {self.device}")
             batch_size = 128 if self.device == "cuda" else 32
             self.embeddings = self.model.encode(
                 texts,

@@ -2,7 +2,7 @@
 
 ```bash
 docker-compose up -d              # Start Neo4j
-uv run python -m src.bootstrap    # Run full pipeline
+uv run python -m src.bootstrap    # Runs pipline that creates embeddings, uploads them to neo4j to build a cache
 
 npx @modelcontextprotocol/inspector uv run python -m src.mcp_server # Start MCP Inspector
 ```
