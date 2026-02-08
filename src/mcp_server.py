@@ -1,11 +1,10 @@
-import asyncio
 import sys
+import uvicorn
 import logging
 import contextlib
-from typing import Any
-from mcp.server import Server
-from mcp.server.stdio import stdio_server
-from mcp.types import Tool, TextContent
+from starlette.applications import Starlette
+from starlette.routing import Mount
+from mcp.server import FastMCP
 
 from src.rag_engine import GraphRAG
 
@@ -43,219 +42,152 @@ def get_rag() -> GraphRAG:
     return rag
 
 
-server = Server("semantic-graph-rag")
+mcp = FastMCP("scg-mcp")
 
 
-@server.list_tools()
-async def list_tools() -> list[Tool]:
-    return [
-        Tool(
-            name="search_code",
-            description="Search for code entities (classes, methods, fields) in the codebase using semantic search. Returns the most relevant nodes matching your query.",
-            inputSchema={
-                "type": "object",
-                "properties": {
-                    "query": {
-                        "type": "string",
-                        "description": "Natural language query to search for code entities (e.g., 'image loading', 'cache management', 'bitmap decoder')",
-                    },
-                    "limit": {
-                        "type": "integer",
-                        "description": "Maximum number of results to return (default: 5)",
-                        "default": 5,
-                    },
-                },
-                "required": ["query"],
-            },
-        ),
-        Tool(
-            name="get_node_context",
-            description="Get the context subgraph around specific code nodes, including related entities and their relationships. Useful for understanding how a piece of code connects to the rest of the codebase.",
-            inputSchema={
-                "type": "object",
-                "properties": {
-                    "node_ids": {
-                        "type": "array",
-                        "items": {"type": "string"},
-                        "description": "List of node IDs to get context for (obtained from search_code)",
-                    },
-                    "hops": {
-                        "type": "integer",
-                        "description": "Number of relationship hops to traverse (default: 1)",
-                        "default": 1,
-                    },
-                    "include_source": {
-                        "type": "boolean",
-                        "description": "Whether to include source code snippets (default: true)",
-                        "default": True,
-                    },
-                },
-                "required": ["node_ids"],
-            },
-        ),
-        Tool(
-            name="get_node_source",
-            description="Get the source code for a specific node. Returns the actual code implementation.",
-            inputSchema={
-                "type": "object",
-                "properties": {
-                    "node_id": {
-                        "type": "string",
-                        "description": "The ID of the node to get source code for",
-                    },
-                    "context_padding": {
-                        "type": "integer",
-                        "description": "Number of lines of context to include before and after (default: 5)",
-                        "default": 5,
-                    },
-                },
-                "required": ["node_id"],
-            },
-        ),
-        Tool(
-            name="get_graph_stats",
-            description="Get statistics about the loaded code graph, including node and edge counts.",
-            inputSchema={
-                "type": "object",
-                "properties": {},
-            },
-        ),
-    ]
-
-
-@server.call_tool()
-async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
+@mcp.tool()
+def search_code(query: str, limit: int = 5) -> str:
+    """Search for code entities (classes, methods, fields) in the codebase using semantic search.
+    
+    Args:
+        query: Natural language query to search for code entities (e.g., 'image loading', 'cache management')
+        limit: Maximum number of results to return (default: 5)
+    """
     engine = get_rag()
+    results = engine.find_nodes(query, limit=limit)
+    
+    if not results:
+        return f"No results found for query: '{query}'"
+    
+    output = [f"Found {len(results)} results for '{query}':\n"]
+    for i, node in enumerate(results, 1):
+        score = node.get("score", "N/A")
+        kind = node.get("kind", "Unknown")
+        name = node.get("display_name") or node["id"]
+        output.append(f"{i}. [{kind}] {name}")
+        output.append(f"   ID: {node['id']}")
+        if isinstance(score, float):
+            output.append(f"   Score: {score:.4f}")
+        output.append("")
+    
+    return "\n".join(output)
 
-    if name == "search_code":
-        query = arguments["query"]
-        limit = arguments.get("limit", 5)
 
-        results = engine.find_nodes(query, limit=limit)
+@mcp.tool()
+def get_node_context(node_ids: list[str], hops: int = 1, include_source: bool = True) -> str:
+    """Get the context subgraph around specific code nodes, including related entities and their relationships.
+    
+    Args:
+        node_ids: List of node IDs to get context for (obtained from search_code)
+        hops: Number of relationship hops to traverse (default: 1)
+        include_source: Whether to include source code snippets (default: true)
+    """
+    engine = get_rag()
+    subgraph = engine.get_context_subgraph(node_ids, hops=hops)
+    
+    if include_source:
+        return engine.format_context_for_llm(subgraph, code_context_padding=3)
+    
+    output = [
+        f"Context subgraph ({len(subgraph['nodes'])} nodes, {len(subgraph['edges'])} edges):\n"
+    ]
+    output.append("Nodes:")
+    for node in subgraph["nodes"]:
+        kind = node.get("kind", "Unknown")
+        name = node.get("display_name") or node["id"]
+        output.append(f"  - [{kind}] {name} (ID: {node['id']})")
+    
+    output.append("\nRelationships:")
+    for edge in subgraph["edges"]:
+        s = engine.node_metadata.get(edge["source"], {}).get("display_name", edge["source"])
+        t = engine.node_metadata.get(edge["target"], {}).get("display_name", edge["target"])
+        output.append(f"  - {s} --[{edge['type']}]--> {t}")
+    
+    return "\n".join(output)
 
-        if not results:
-            return [
-                TextContent(type="text", text=f"No results found for query: '{query}'")
-            ]
 
-        output = [f"Found {len(results)} results for '{query}':\n"]
-        for i, node in enumerate(results, 1):
-            score = node.get("score", "N/A")
-            kind = node.get("kind", "Unknown")
-            name = node.get("display_name") or node["id"]
-            output.append(f"{i}. [{kind}] {name}")
-            output.append(f"   ID: {node['id']}")
-            if isinstance(score, float):
-                output.append(f"   Score: {score:.4f}")
-            output.append("")
+@mcp.tool()
+def get_node_source(node_id: str, context_padding: int = 5) -> str:
+    """Get the source code for a specific node. Returns the actual code implementation.
+    
+    Args:
+        node_id: The ID of the node to get source code for
+        context_padding: Number of lines of context to include before and after (default: 5)
+    """
+    engine = get_rag()
+    source = engine.get_node_source(node_id, context_padding=context_padding)
+    
+    if source is None:
+        meta = engine.node_metadata.get(node_id)
+        if meta is None:
+            return f"Node '{node_id}' not found in the graph."
+        return f"Source code not available for node '{node_id}'."
+    
+    meta = engine.node_metadata.get(node_id, {})
+    name = meta.get("display_name") or node_id
+    kind = meta.get("kind", "Unknown")
+    
+    output = [
+        f"Source code for [{kind}] {name}:",
+        f"Node ID: {node_id}",
+        "-" * 60,
+        source,
+        "-" * 60,
+    ]
+    return "\n".join(output)
 
-        return [TextContent(type="text", text="\n".join(output))]
 
-    elif name == "get_node_context":
-        node_ids = arguments["node_ids"]
-        hops = arguments.get("hops", 1)
-        include_source = arguments.get("include_source", True)
-
-        subgraph = engine.get_context_subgraph(node_ids, hops=hops)
-
-        if include_source:
-            context = engine.format_context_for_llm(subgraph, code_context_padding=3)
-        else:
-            output = [
-                f"Context subgraph ({len(subgraph['nodes'])} nodes, {len(subgraph['edges'])} edges):\n"
-            ]
-            output.append("Nodes:")
-            for node in subgraph["nodes"]:
-                kind = node.get("kind", "Unknown")
-                name = node.get("display_name") or node["id"]
-                output.append(f"  - [{kind}] {name} (ID: {node['id']})")
-
-            output.append("\nRelationships:")
-            for edge in subgraph["edges"]:
-                s = engine.node_metadata.get(edge["source"], {}).get(
-                    "display_name", edge["source"]
-                )
-                t = engine.node_metadata.get(edge["target"], {}).get(
-                    "display_name", edge["target"]
-                )
-                output.append(f"  - {s} --[{edge['type']}]--> {t}")
-
-            context = "\n".join(output)
-
-        return [TextContent(type="text", text=context)]
-
-    elif name == "get_node_source":
-        node_id = arguments["node_id"]
-        padding = arguments.get("context_padding", 5)
-
-        source = engine.get_node_source(node_id, context_padding=padding)
-
-        if source is None:
-            meta = engine.node_metadata.get(node_id)
-            if meta is None:
-                return [
-                    TextContent(
-                        type="text", text=f"Node '{node_id}' not found in the graph."
-                    )
-                ]
-            return [
-                TextContent(
-                    type="text", text=f"Source code not available for node '{node_id}'."
-                )
-            ]
-
-        meta = engine.node_metadata.get(node_id, {})
-        name = meta.get("display_name") or node_id
+@mcp.tool()
+def get_graph_stats() -> str:
+    """Get statistics about the loaded code graph, including node and edge counts."""
+    engine = get_rag()
+    graph = engine.graph
+    node_count = graph.number_of_nodes()
+    edge_count = graph.number_of_edges()
+    
+    kind_counts: dict[str, int] = {}
+    for _, meta in engine.node_metadata.items():
         kind = meta.get("kind", "Unknown")
-
-        output = [
-            f"Source code for [{kind}] {name}:",
-            f"Node ID: {node_id}",
-            "-" * 60,
-            source,
-            "-" * 60,
-        ]
-
-        return [TextContent(type="text", text="\n".join(output))]
-
-    elif name == "get_graph_stats":
-        graph = engine.graph
-        node_count = graph.number_of_nodes()
-        edge_count = graph.number_of_edges()
-
-        # Count nodes by kind
-        kind_counts: dict[str, int] = {}
-        for _, meta in engine.node_metadata.items():
-            kind = meta.get("kind", "Unknown")
-            kind_counts[kind] = kind_counts.get(kind, 0) + 1
-
-        output = [
-            "Graph Statistics:",
-            f"  Total Nodes: {node_count:,}",
-            f"  Total Edges: {edge_count:,}",
-            f"  Embeddings: {'Yes' if engine.embeddings is not None else 'No'}",
-            "",
-            "Nodes by Kind:",
-        ]
-
-        for kind, count in sorted(kind_counts.items(), key=lambda x: -x[1]):
-            output.append(f"  {kind}: {count:,}")
-
-        return [TextContent(type="text", text="\n".join(output))]
-
-    else:
-        return [TextContent(type="text", text=f"Unknown tool: {name}")]
+        kind_counts[kind] = kind_counts.get(kind, 0) + 1
+    
+    output = [
+        "Graph Statistics:",
+        f"  Total Nodes: {node_count:,}",
+        f"  Total Edges: {edge_count:,}",
+        f"  Embeddings: {'Yes' if engine.embeddings is not None else 'No'}",
+        "",
+        "Nodes by Kind:",
+    ]
+    
+    for kind, count in sorted(kind_counts.items(), key=lambda x: -x[1]):
+        output.append(f"  {kind}: {count:,}")
+    
+    return "\n".join(output)
 
 
-async def main():
+@contextlib.asynccontextmanager
+async def lifespan(app: Starlette):
     init_rag()
-    log.info("Starting Semantic Graph RAG MCP Server...")
-    async with stdio_server() as (read_stream, write_stream):
-        await server.run(
-            read_stream, write_stream, server.create_initialization_options()
-        )
-    log.info("Server stopped.")
+    async with mcp.session_manager.run():
+        yield
+
+
+def create_app():
+    app = Starlette(
+        routes=[
+            Mount("/", app=mcp.streamable_http_app()),
+        ],
+        lifespan=lifespan,
+    )
+    return app
+
+
+def main():
+    log.info("Starting SCG MCP Server...")
+    log.info("Connect to: http://localhost:8080/mcp")
+    app = create_app()
+    uvicorn.run(app, host="0.0.0.0", port=8080)
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

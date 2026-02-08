@@ -1,13 +1,14 @@
 # Quick start
 
 ```bash
-docker-compose up -d              # Start Neo4j
-uv run python -m src.bootstrap    # Runs pipline that creates embeddings, uploads them to neo4j to build a cache
+docker-compose up -d  # start Neo4j
+uv run python -m src.bootstrap  # runs pipeline - embeddings, uploads to neo4j and builds cache
 
-npx @modelcontextprotocol/inspector uv run python -m src.mcp_server # Start MCP Inspector
+uv run python -m src.mcp_server # start MCP server
+npx @modelcontextprotocol/inspector http://localhost:8080/mcp # start MCP inspector
 ```
 
-# Queries
+## Queries
 
 ```sql
 MATCH (n:CodeNode)-[r:CALL|TYPE]->(m:CodeNode)
@@ -40,9 +41,4 @@ MATCH (n)
 WITH n LIMIT 200
 MATCH (n)-[r]-(m)
 RETURN n, r, m
-```
-
-# MCP Inspector 
-```bash
-npx @modelcontextprotocol/inspector uv run python -m src.mcp_server
 ```
