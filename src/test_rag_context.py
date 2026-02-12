@@ -3,7 +3,7 @@ from neo4j import GraphDatabase
 
 NEO4J_URI = "bolt://localhost:7687"
 NEO4J_AUTH = ("neo4j", "password")
-USER_QUESTION = "How does the caching mechanism work in Glide?"
+USER_QUESTION = "How does the caching mechanism work?"
 
 
 def main():

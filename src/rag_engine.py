@@ -282,12 +282,14 @@ class GraphRAG:
 
 
 def demo():
-    data_path = Path("data/glide/.semanticgraphs")
-    if not data_path.exists():
-        print(f"Data path {data_path} not found.")
+    from src.config import get_project_config
+
+    cfg = get_project_config()
+    if not cfg.data_dir.exists():
+        print(f"Data path {cfg.data_dir} not found.")
         return
 
-    rag = GraphRAG(data_dir=data_path.parent, code_dir="code/glide-4.5.0")
+    rag = GraphRAG(data_dir=cfg.data_dir, code_dir=cfg.code_dir)
     print("\n--- Demo Query: 'Cache' ---")
 
     if nodes := rag.find_nodes("Cache", limit=2):

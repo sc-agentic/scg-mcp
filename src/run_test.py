@@ -67,7 +67,10 @@ def generate_graph_image(all_graphs: List[SemanticGraphFile], filename: str):
 
 
 def main():
-    print("=== Semantic Graph Reader Setup Test ===")
+    from src.config import get_project_config
+
+    cfg = get_project_config()
+    print(f"=== Semantic Graph Reader Setup Test [{cfg.name}] ===")
     print(f"1. Python: {sys.version.split()[0]}")
 
     # Check Protobuf
@@ -104,7 +107,7 @@ def main():
     print("5. Import: ✓ Success")
 
     # Read Files
-    test_dir = Path("data/glide/.semanticgraphs")
+    test_dir = cfg.data_dir / ".semanticgraphs"
     db_files = list(test_dir.rglob("*.semanticgraphdb"))
     if not db_files:
         sys.exit("6. Data: ✗ No .semanticgraphdb files found")

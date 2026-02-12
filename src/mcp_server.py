@@ -7,6 +7,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
 
+from src.config import get_project_config
 from src.rag_engine import GraphRAG
 
 logging.basicConfig(
@@ -31,9 +32,10 @@ def redirect_stdout_to_stderr():
 
 def init_rag() -> None:
     global rag
-    log.info("Initializing GraphRAG engine...")
+    cfg = get_project_config()
+    log.info("Initializing GraphRAG engine for project '%s'...", cfg.name)
     with redirect_stdout_to_stderr():
-        rag = GraphRAG(data_dir="data/glide", code_dir="code/glide-4.5.0")
+        rag = GraphRAG(data_dir=cfg.data_dir, code_dir=cfg.code_dir)
     log.info("GraphRAG engine initialized.")
 
 

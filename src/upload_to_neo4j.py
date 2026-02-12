@@ -108,12 +108,15 @@ class Neo4jUploader:
 
 
 def main():
+    from src.config import get_project_config
+
     NEO4J_URI = "bolt://localhost:7687"
     NEO4J_AUTH = ("neo4j", "password")
 
-    print("--- Neo4j SCG Uploader ---")
+    cfg = get_project_config()
+    print(f"--- Neo4j SCG Uploader [{cfg.name}] ---")
     print("Initializing GraphRAG engine...")
-    rag = GraphRAG(data_dir="data/glide", code_dir="code/glide-4.5.0")
+    rag = GraphRAG(data_dir=cfg.data_dir, code_dir=cfg.code_dir)
 
     print("Preparing data...")
     embedding_map = {}

@@ -58,7 +58,10 @@ def print_graph_summary(graph: SemanticGraphFile):
 
 
 def main():
-    directory = sys.argv[1] if len(sys.argv) > 1 else "data/glide"
+    from src.config import get_project_config
+
+    cfg = get_project_config()
+    directory = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else str(cfg.data_dir)
     print(f"Reading graphs from: {directory}")
 
     try:
