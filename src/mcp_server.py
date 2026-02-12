@@ -43,7 +43,14 @@ def get_rag() -> GraphRAG:
     return rag
 
 
-server = Server("semantic-graph-rag")
+server = Server(
+    "semantic-graph-rag",
+    instructions="A powerful Semantic Code Graph (SCG) tool for deep codebase understanding. "
+                 "It enables semantic search, relationship exploration (inheritance, usage, etc.), and retrieval of source code. "
+                 "Accessing graph statistics and exploring deep code relationships is essential for understanding "
+                 "complex architectural patterns, identifying core components, and navigating large-scale projects "
+                 "efficiently. Use this to get a structural overview or drill down into specific implementations."
+)
 
 
 @server.list_tools()
@@ -51,7 +58,9 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="search_code",
-            description="Search for code entities (classes, methods, fields) in the codebase using semantic search. Returns the most relevant nodes matching your query.",
+            description="Search for code entities (classes, methods, fields) in the codebase using semantic search. "
+                        "This is the entry point for finding relevant code when you don't know the exact names. "
+                        "Returns the most relevant nodes matching your query.",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -70,7 +79,9 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="get_node_context",
-            description="Get the context subgraph around specific code nodes, including related entities and their relationships. Useful for understanding how a piece of code connects to the rest of the codebase.",
+            description="Get the context subgraph around specific code nodes. "
+                        "Use this to explore graph relations (like who calls this, or what this inherits from). "
+                        "Understanding these relations is crucial for tracing data flow and architectural dependencies.",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -114,7 +125,9 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="get_graph_stats",
-            description="Get statistics about the loaded code graph, including node and edge counts.",
+            description="Get statistics about the loaded code graph, including node and edge counts. "
+                        "These statistics provide a high-level overview of the project's complexity and "
+                        "the distribution of code entities (classes, methods, etc.).",
             inputSchema={
                 "type": "object",
                 "properties": {},
