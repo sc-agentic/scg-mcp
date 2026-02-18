@@ -1,22 +1,23 @@
 import sys
 from pathlib import Path
+from src.config import get_project_config
 from src.rag_engine import GraphRAG
 from src.upload_to_neo4j import Neo4jUploader
 
 NEO4J_URI = "bolt://localhost:7687"
 NEO4J_AUTH = ("neo4j", "password")
-CACHE_PATH = Path("data/glide/.embeddings_cache.pt")
 
 
 def main():
-    print("=== Semantic Graph RAG Bootstrap ===\n")
+    cfg = get_project_config()
+    print(f"=== Semantic Graph RAG Bootstrap [{cfg.name}] ===\n")
 
-    if CACHE_PATH.exists():
-        print(f"Removing old cache: {CACHE_PATH}")
-        CACHE_PATH.unlink()
+    if cfg.cache_path.exists():
+        print(f"Removing old cache: {cfg.cache_path}")
+        cfg.cache_path.unlink()
 
     print("[1/2] Loading GraphRAG...")
-    rag = GraphRAG(data_dir="data/glide", code_dir="code/glide-4.5.0")
+    rag = GraphRAG(data_dir=cfg.data_dir, code_dir=cfg.code_dir)
     print(
         f"      {rag.graph.number_of_nodes()} nodes, {rag.graph.number_of_edges()} edges\n"
     )

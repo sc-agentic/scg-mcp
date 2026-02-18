@@ -2,10 +2,12 @@ import sys
 import uvicorn
 import logging
 import contextlib
-from starlette.applications import Starlette
-from starlette.routing import Mount
-from mcp.server import FastMCP
+from typing import Any
+from mcp.server import Server
+from mcp.server.stdio import stdio_server
+from mcp.types import Tool, TextContent
 
+from src.config import get_project_config
 from src.rag_engine import GraphRAG
 
 logging.basicConfig(
@@ -30,9 +32,10 @@ def redirect_stdout_to_stderr():
 
 def init_rag() -> None:
     global rag
-    log.info("Initializing GraphRAG engine...")
+    cfg = get_project_config()
+    log.info("Initializing GraphRAG engine for project '%s'...", cfg.name)
     with redirect_stdout_to_stderr():
-        rag = GraphRAG(data_dir="data/glide", code_dir="code/glide-4.5.0")
+        rag = GraphRAG(data_dir=cfg.data_dir, code_dir=cfg.code_dir)
     log.info("GraphRAG engine initialized.")
 
 
@@ -42,17 +45,101 @@ def get_rag() -> GraphRAG:
     return rag
 
 
-mcp = FastMCP("scg-mcp")
+server = Server(
+    "semantic-graph-rag",
+    instructions="A powerful Semantic Code Graph (SCG) tool for deep codebase understanding. "
+                 "It enables semantic search, relationship exploration (inheritance, usage, etc.), and retrieval of source code. "
+                 "Accessing graph statistics and exploring deep code relationships is essential for understanding "
+                 "complex architectural patterns, identifying core components, and navigating large-scale projects "
+                 "efficiently. Use this to get a structural overview or drill down into specific implementations."
+)
 
 
-@mcp.tool()
-def search_code(query: str, limit: int = 5) -> str:
-    """Search for code entities (classes, methods, fields) in the codebase using semantic search.
-    
-    Args:
-        query: Natural language query to search for code entities (e.g., 'image loading', 'cache management')
-        limit: Maximum number of results to return (default: 5)
-    """
+@server.list_tools()
+async def list_tools() -> list[Tool]:
+    return [
+        Tool(
+            name="search_code",
+            description="Search for code entities (classes, methods, fields) in the codebase using semantic search. "
+                        "This is the entry point for finding relevant code when you don't know the exact names. "
+                        "Returns the most relevant nodes matching your query.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "Natural language query to search for code entities (e.g., 'image loading', 'cache management', 'bitmap decoder')",
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "description": "Maximum number of results to return (default: 5)",
+                        "default": 5,
+                    },
+                },
+                "required": ["query"],
+            },
+        ),
+        Tool(
+            name="get_node_context",
+            description="Get the context subgraph around specific code nodes. "
+                        "Use this to explore graph relations (like who calls this, or what this inherits from). "
+                        "Understanding these relations is crucial for tracing data flow and architectural dependencies.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "node_ids": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "List of node IDs to get context for (obtained from search_code)",
+                    },
+                    "hops": {
+                        "type": "integer",
+                        "description": "Number of relationship hops to traverse (default: 1)",
+                        "default": 1,
+                    },
+                    "include_source": {
+                        "type": "boolean",
+                        "description": "Whether to include source code snippets (default: true)",
+                        "default": True,
+                    },
+                },
+                "required": ["node_ids"],
+            },
+        ),
+        Tool(
+            name="get_node_source",
+            description="Get the source code for a specific node. Returns the actual code implementation.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "node_id": {
+                        "type": "string",
+                        "description": "The ID of the node to get source code for",
+                    },
+                    "context_padding": {
+                        "type": "integer",
+                        "description": "Number of lines of context to include before and after (default: 5)",
+                        "default": 5,
+                    },
+                },
+                "required": ["node_id"],
+            },
+        ),
+        Tool(
+            name="get_graph_stats",
+            description="Get statistics about the loaded code graph, including node and edge counts. "
+                        "These statistics provide a high-level overview of the project's complexity and "
+                        "the distribution of code entities (classes, methods, etc.).",
+            inputSchema={
+                "type": "object",
+                "properties": {},
+            },
+        ),
+    ]
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
     engine = get_rag()
     results = engine.find_nodes(query, limit=limit)
     

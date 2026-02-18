@@ -1,0 +1,1081 @@
+
+1oolab/src/main/java/agh/ics/oop/model/Animal.java≠
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaFILE3
+1oolab/src/main/java/agh/ics/oop/model/Animal.java"
+
+LOC182*1oolab/src/main/java/agh/ics/oop/model/Animal.java√$
+agh.ics.oop.model.AnimalCLASS;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
+packageagh.ics.oop.model"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC174*Animal2¡
+uagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2Ñ
+8agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Globe)DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2l
+ agh.ics.oop.model.Animal.getId()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java& &(2r
+&agh.ics.oop.model.Animal.getPosition()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java* *(2p
+$agh.ics.oop.model.Animal.getEnergy()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java/ /(2m
+!agh.ics.oop.model.Animal.getAge()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java3 3(2r
+&agh.ics.oop.model.Animal.getGenotype()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java7 7(2u
+)agh.ics.oop.model.Animal.getChildrenIds()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java; ;($2t
+(agh.ics.oop.model.Animal.getStatistics()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java? ?()2á
+;agh.ics.oop.model.Animal.addChild(agh.ics.oop.model.Animal)DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaE E(2y
+-agh.ics.oop.model.Animal.incrementDaysLived()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaJ J("2o
+#agh.ics.oop.model.Animal.toString()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaQ Q(2u
+)agh.ics.oop.model.Animal.shouldShipMove()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaW W("2k
+agh.ics.oop.model.Animal.move()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java` `(2q
+%agh.ics.oop.model.Animal.loseEnergy()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javas s(2j
+agh.ics.oop.model.Animal.eat()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaw w(2j
+agh.ics.oop.model.Animal.age()DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java| |(2u
+'agh.ics.oop.model.Animal.canReproduce()DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÄ Ä(2r
+$agh.ics.oop.model.Animal.reproduce()DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÑ Ñ(2§
+Vagh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà à("2ó
+Iagh.ics.oop.model.Animal.subscribe(agh.ics.oop.model.AnimalMovedListener)DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java† †(2™
+\agh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§ §(2§
+Vagh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java™ ™(+2•
+Wagh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ Ø(&2q
+%agh.ics.oop.model.Animal?id@9.23:9.25DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java	 	(2y
+-agh.ics.oop.model.Animal?position@10.21:10.29DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java
+ 
+(2z
+.agh.ics.oop.model.Animal?direction@11.25:11.34DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("2w
++agh.ics.oop.model.Animal?energy@12.16:12.22DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2y
+-agh.ics.oop.model.Animal?genotype@13.27:13.35DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (#2t
+(agh.ics.oop.model.Animal?age@14.16:14.19DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2z
+.agh.ics.oop.model.Animal?listeners@15.44:15.53DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java, (52t
+(agh.ics.oop.model.Animal?map@16.24:16.27DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2|
+0agh.ics.oop.model.Animal?childrenIds@17.29:17.40DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ((2{
+/agh.ics.oop.model.Animal?statistics@18.35:18.45DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java# (-2e
+agh.ics.oop.model.WorldElementEXTEND;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (+Ò
+uagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)CONSTRUCTOR;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
+packageagh.ics.oop.model*Animal2l
+'agh.ics.oop.model.MapDirection.values()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java& (,2\
+java.lang.Math.random()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java; (A2™
+eagh.ics.oop.util.AnimalStatistics.AnimalStatistics(agh.ics.oop.model.Globe, agh.ics.oop.model.Animal)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (.2√
+~agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!positionCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ( 2√
+~agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!genotypeCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ( 2æ
+yagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!mapCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2¡
+|agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!energyCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2æ
+yagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!mapCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java/ (22r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2r
+-agh.ics.oop.model.Animal?genotype@13.27:13.35CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2m
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2p
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2t
+/agh.ics.oop.model.Animal?statistics@18.35:18.45CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2»
+~agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!position	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (#2»
+~agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!genotype	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java. (62√
+yagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!map	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java> (A2∆
+|agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!energy	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaG (M2d
+agh.ics.oop.model.AnimalRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (Ü
+~agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!position	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (#"
+typeVector2d"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*position2_
+agh.ics.oop.model.Vector2dTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (Ü
+~agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!genotype	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java. (6"
+typeGenotype"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*genotype2_
+agh.ics.oop.model.GenotypeTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java% (-ˆ
+yagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!map	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java> (A"
+typeGlobe"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*map2\
+agh.ics.oop.model.GlobeTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java8 (=Ê
+|agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)!energy	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaG (M"
+typeint"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*energy2H
+intTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaC (Fä
+8agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Globe)CONSTRUCTOR;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
+packageagh.ics.oop.model*Animal2\
+java.lang.Math.random()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java) (/2\
+java.lang.Math.random()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaE (K2v
+1agh.ics.oop.model.Configuration.getGenotypeSize()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java -  (<2h
+#agh.ics.oop.model.Globe.getConfig()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java !  (*2x
+3agh.ics.oop.model.Configuration.getStartingEnergy()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java"  "(12h
+#agh.ics.oop.model.Globe.getConfig()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java" "(2r
+-agh.ics.oop.model.Vector2d.Vector2d(int, int)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2m
+(agh.ics.oop.model.Genotype.Genotype(int)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java   (2Å
+<agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Globe)!mapCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java   ( 2Å
+<agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Globe)!mapCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java! !(2Å
+<agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Globe)!mapCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java" "(2Ü
+<agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Globe)!map	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2d
+agh.ics.oop.model.AnimalRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (π
+<agh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Globe)!map	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
+typeGlobe"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*map2\
+agh.ics.oop.model.GlobeTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (∏
+ agh.ics.oop.model.Animal.getId()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java& &("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeUUID"
+accesspublic"
+LOC2*getId2j
+%agh.ics.oop.model.Animal?id@9.23:9.25CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java' '(2Z
+java.util.UUIDRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java& &(”
+&agh.ics.oop.model.Animal.getPosition()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java* *("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeVector2d"
+accesspublic"
+LOC2*getPosition2r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java+ +(2u
+,agh.ics.oop.model.WorldElement.getPosition()OVERRIDE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java* *(2f
+agh.ics.oop.model.Vector2dRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java* *(∫
+$agh.ics.oop.model.Animal.getEnergy()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java/ /("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC2*	getEnergy2p
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java0 0(2O
+intRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java/ /(±
+!agh.ics.oop.model.Animal.getAge()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java3 3("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC2*getAge2m
+(agh.ics.oop.model.Animal?age@14.16:14.19CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java4 4(2O
+intRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java3 3(‹
+&agh.ics.oop.model.Animal.getGenotype()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java7 7("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeGenotype"
+accesspublic"
+LOC2*getGenotype2r
+-agh.ics.oop.model.Animal?genotype@13.27:13.35CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java8 8(2f
+agh.ics.oop.model.GenotypeRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java7 7(¿
+)agh.ics.oop.model.Animal.getChildrenIds()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java; ;($"
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+List<UUID>"
+accesspublic"
+LOC2*getChildrenIds2u
+0agh.ics.oop.model.Animal?childrenIds@17.29:17.40CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java< <(2Z
+java.util.ListRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java; ;(2c
+java.util.UUIDRETURN_TYPE_ARGUMENT;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java; ;(Ò
+(agh.ics.oop.model.Animal.getStatistics()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java? ?()"
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeAnimalStatistics"
+accesspublic"
+LOC2*getStatistics2t
+/agh.ics.oop.model.Animal?statistics@18.35:18.45CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java@ @(2m
+!agh.ics.oop.util.AnimalStatisticsRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java? ?(®	
+;agh.ics.oop.model.Animal.addChild(agh.ics.oop.model.Animal)METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaE E("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*addChild2Z
+java.util.List.add(E)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaF F(2e
+ agh.ics.oop.model.Animal.getId()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaF F(#2
+:agh.ics.oop.util.AnimalStatistics.incrementChildrenCount()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaG G()2u
+0agh.ics.oop.model.Animal?childrenIds@17.29:17.40CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaF F(2Ü
+Aagh.ics.oop.model.Animal.addChild(agh.ics.oop.model.Animal)!childCALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaF F(2t
+/agh.ics.oop.model.Animal?statistics@18.35:18.45CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaG G(2ã
+Aagh.ics.oop.model.Animal.addChild(agh.ics.oop.model.Animal)!child	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaE  E(%2P
+voidRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaE E(¬
+Aagh.ics.oop.model.Animal.addChild(agh.ics.oop.model.Animal)!child	PARAMETER;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaE  E(%"
+typeAnimal"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*child2]
+agh.ics.oop.model.AnimalTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaE E(œ
+-agh.ics.oop.model.Animal.incrementDaysLived()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaJ J(""
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*incrementDaysLived2{
+6agh.ics.oop.util.AnimalStatistics.incrementDaysLived()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaK K(%2t
+/agh.ics.oop.model.Animal?statistics@18.35:18.45CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaK K(2P
+voidRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaJ J(Ø
+#agh.ics.oop.model.Animal.toString()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaQ Q("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC3*toString2n
+)agh.ics.oop.model.MapDirection.toString()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaR R(!2s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaR R(2r
+)agh.ics.oop.model.WorldElement.toString()OVERRIDE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaQ Q(2\
+java.lang.StringRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaQ Q(à
+
+)agh.ics.oop.model.Animal.shouldShipMove()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaW W(""
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC7*shouldShipMove2Ä
+;agh.ics.oop.model.Configuration.isBehaviorOption1Selected()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaX X(52h
+#agh.ics.oop.model.Globe.getConfig()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaX X(2\
+java.lang.Math.random()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java] ](2g
+"java.lang.Math.min(double, double)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java]$ ]('2m
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaX X(2m
+(agh.ics.oop.model.Animal?age@14.16:14.19CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java\ \(!2á
+Bagh.ics.oop.model.Animal.shouldShipMove()?changeToSkip@92.14:92.26CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java]( ](42é
+Bagh.ics.oop.model.Animal.shouldShipMove()?changeToSkip@92.14:92.26DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java\ \(2S
+booleanRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaW W(§
+Bagh.ics.oop.model.Animal.shouldShipMove()?changeToSkip@92.14:92.26VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java\ \("
+typefloat"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*changeToSkip2J
+floatTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java\ \(2m
+(agh.ics.oop.model.Animal?age@14.16:14.19CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java\ \(!√$
+agh.ics.oop.model.Animal.move()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java` `("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC17*move2n
+)agh.ics.oop.model.Animal.shouldShipMove()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaa a(2o
+*agh.ics.oop.model.MapDirection.rotate(int)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javab" b((2m
+(agh.ics.oop.model.Genotype.getNextGene()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javab2 b(=2
+:agh.ics.oop.model.Vector2d.add(agh.ics.oop.model.Vector2d)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae, e(/2r
+-agh.ics.oop.model.MapDirection.toUnitVector()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae: e(F2°
+\agh.ics.oop.model.Globe.validateMove(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf0 f(<2™
+eagh.ics.oop.model.Globe.validateDirection(agh.ics.oop.model.Vector2d, agh.ics.oop.model.MapDirection)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javai i(-2°
+\agh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaj j(2j
+%agh.ics.oop.model.Animal.loseEnergy()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javam m(2c
+agh.ics.oop.model.Animal.age()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javan n(2r
+-agh.ics.oop.model.Animal.incrementDaysLived()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javao o(2r
+-java.io.PrintStream.println(java.lang.String)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javap p(2s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javab b(2s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javab b(!2r
+-agh.ics.oop.model.Animal?genotype@13.27:13.35CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javab) b(12r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javad' d(/2r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae# e(+2s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae0 e(92m
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf, f(/2Ç
+=agh.ics.oop.model.Animal.move()?initialPosition@100.21:100.36CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf= f(L2~
+9agh.ics.oop.model.Animal.move()?newPosition@101.21:101.32CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javafN f(Y2r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javah h(2á
+Bagh.ics.oop.model.Animal.move()?validatedNewPosition@102.21:102.41CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javah h(+2s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javai i(2m
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javai i(2~
+9agh.ics.oop.model.Animal.move()?newPosition@101.21:101.32CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javai. i(92s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javai; i(D2Ç
+=agh.ics.oop.model.Animal.move()?initialPosition@100.21:100.36CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaj j('2á
+Bagh.ics.oop.model.Animal.move()?validatedNewPosition@102.21:102.41CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaj) j(=2r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javap. p(62p
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javap? p(E2m
+(agh.ics.oop.model.Animal?age@14.16:14.19CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javapN p(Q2â
+=agh.ics.oop.model.Animal.move()?initialPosition@100.21:100.36DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javad d($2Ö
+9agh.ics.oop.model.Animal.move()?newPosition@101.21:101.32DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae e( 2é
+Bagh.ics.oop.model.Animal.move()?validatedNewPosition@102.21:102.41DECLARATION;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf f()2P
+voidRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java` `(ø
+=agh.ics.oop.model.Animal.move()?initialPosition@100.21:100.36VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javad d($"
+typeVector2d"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*initialPosition2_
+agh.ics.oop.model.Vector2dTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javad d(2r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javad' d(/°
+9agh.ics.oop.model.Animal.move()?newPosition@101.21:101.32VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae e( "
+typeVector2d"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*newPosition2_
+agh.ics.oop.model.Vector2dTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae e(2
+:agh.ics.oop.model.Vector2d.add(agh.ics.oop.model.Vector2d)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae, e(/2r
+-agh.ics.oop.model.MapDirection.toUnitVector()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae: e(F2r
+-agh.ics.oop.model.Animal?position@10.21:10.29CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae# e(+2s
+.agh.ics.oop.model.Animal?direction@11.25:11.34CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javae0 e(9Ì
+Bagh.ics.oop.model.Animal.move()?validatedNewPosition@102.21:102.41VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf f()"
+typeVector2d"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*validatedNewPosition2_
+agh.ics.oop.model.Vector2dTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf f(2°
+\agh.ics.oop.model.Globe.validateMove(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf0 f(<2m
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf, f(/2Ç
+=agh.ics.oop.model.Animal.move()?initialPosition@100.21:100.36CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaf= f(L2~
+9agh.ics.oop.model.Animal.move()?newPosition@101.21:101.32CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javafN f(YÈ
+%agh.ics.oop.model.Animal.loseEnergy()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javas s("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*
+loseEnergy2a
+java.lang.Math.min(int, int)CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javat t(2{
+6agh.ics.oop.model.Configuration.getLoseEnergyPerMove()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javat0 t(D2h
+#agh.ics.oop.model.Globe.getConfig()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javat$ t(-2m
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javat  t(#2p
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javat t(2p
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javatM t(S2P
+voidRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javas s(ˇ
+agh.ics.oop.model.Animal.eat()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaw w("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*eat2
+:agh.ics.oop.model.Configuration.getEnergyProvidedByPlant()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javax' x(?2h
+#agh.ics.oop.model.Globe.getConfig()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javax x($2}
+8agh.ics.oop.util.AnimalStatistics.incrementPlantsEaten()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javay y('2m
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javax x(2t
+/agh.ics.oop.model.Animal?statistics@18.35:18.45CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javay y(2p
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javax x(2P
+voidRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaw w(≠
+agh.ics.oop.model.Animal.age()METHOD;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java| |("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*age2m
+(agh.ics.oop.model.Animal?age@14.16:14.19CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java} }(2P
+voidRETURN_TYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java| |(™
+'agh.ics.oop.model.Animal.canReproduce()METHOD=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÄ Ä("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC2*canReproduce2}
+6agh.ics.oop.model.Configuration.getEnergyToReproduce()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÅ) Å(=2j
+#agh.ics.oop.model.Globe.getConfig()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÅ Å(&2r
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÅ Å(2o
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÅ Å(2U
+booleanRETURN_TYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÄ Ä(©
+$agh.ics.oop.model.Animal.reproduce()METHOD=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÑ Ñ("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*	reproduce2á
+@agh.ics.oop.model.Configuration.getEnergyLoseAfterReproduction()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÖ" Ö(@2j
+#agh.ics.oop.model.Globe.getConfig()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÖ Ö(2r
++agh.ics.oop.model.Animal?energy@12.16:12.22CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÖ Ö(2o
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÖ Ö(2R
+voidRETURN_TYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaÑ Ñ(¨5
+Vagh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)METHOD=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà à(""
+packageagh.ics.oop.model"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeAnimal"
+accesspublic"	
+LOC22*	reproduce2n
+'agh.ics.oop.model.Animal.canReproduce()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâ â(!2n
+'agh.ics.oop.model.Animal.canReproduce()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâ0 â(<2z
+3agh.ics.oop.model.Vector2d.equals(java.lang.Object)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâY â(_2m
+&agh.ics.oop.model.Animal.getPosition()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâK â(V2m
+&agh.ics.oop.model.Animal.getPosition()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâh â(s2r
+)java.lang.Object.equals(java.lang.Object)CALL?
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâá â(ç2t
+-java.io.PrintStream.println(java.lang.String)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaä ä(2k
+$agh.ics.oop.model.Animal.reproduce()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaé é(2k
+$agh.ics.oop.model.Animal.reproduce()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaè è(2m
+&agh.ics.oop.model.Animal.getPosition()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaî î(#2á
+@agh.ics.oop.model.Configuration.getEnergyLoseAfterReproduction()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó( ó(F2j
+#agh.ics.oop.model.Globe.getConfig()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó ó(%2Ç
+;agh.ics.oop.model.Animal.addChild(agh.ics.oop.model.Animal)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaö ö(2Ç
+;agh.ics.oop.model.Animal.addChild(agh.ics.oop.model.Animal)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaõ õ(2û
+Wagh.ics.oop.model.Genotype.Genotype(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë  ë((2º
+uagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaì ì(!2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâ â(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâ( â(/2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâC â(J2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâ` â(g2¶
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL>
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâ{ â(Ç2ß
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2CALL?
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâé â(ï2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaé é(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaè è(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë) ë(02•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë2 ë(92•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaî î(2¥
+magh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?genotype@145.17:145.25CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaï ï(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javañ ñ(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó ó(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaö ö(2±
+jagh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?child@147.15:147.20CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaö ö(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaõ õ(2±
+jagh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?child@147.15:147.20CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaõ õ(2±
+jagh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?child@147.15:147.20CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaù ù(2q
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL?
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâÉ â(Ü2q
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL?
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaâñ â(ô2o
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javañ ñ(2o
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó ó(2™
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà* à(12™
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà: à(A2ª
+magh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?genotype@145.17:145.25DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë ë(2∏
+jagh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?child@147.15:147.20DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaì ì(2f
+agh.ics.oop.model.AnimalRETURN_TYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà à(È
+magh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?genotype@145.17:145.25VARIABLE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë ë("
+typeGenotype"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*genotype2a
+agh.ics.oop.model.GenotypeTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë ë(2û
+Wagh.ics.oop.model.Genotype.Genotype(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë  ë((2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë) ë(02•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaë2 ë(9£
+jagh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?child@147.15:147.20VARIABLE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaì ì("
+typeAnimal"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*child2_
+agh.ics.oop.model.AnimalTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaì ì(2m
+&agh.ics.oop.model.Animal.getPosition()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaî î(#2á
+@agh.ics.oop.model.Configuration.getEnergyLoseAfterReproduction()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó( ó(F2j
+#agh.ics.oop.model.Globe.getConfig()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó ó(%2º
+uagh.ics.oop.model.Animal.Animal(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Genotype, agh.ics.oop.model.Globe, int)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaì ì(!2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaî î(2¥
+magh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)?genotype@145.17:145.25CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaï ï(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javañ ñ(2•
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó ó(2o
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javañ ñ(2o
+(agh.ics.oop.model.Animal?map@16.24:16.27CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaó ó(Â
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent1	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà* à(1"
+typeAnimal"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*parent12_
+agh.ics.oop.model.AnimalTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà# à()Â
+^agh.ics.oop.model.Animal.reproduce(agh.ics.oop.model.Animal, agh.ics.oop.model.Animal)!parent2	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà: à(A"
+typeAnimal"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*parent22_
+agh.ics.oop.model.AnimalTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaà3 à(9Ö
+Iagh.ics.oop.model.Animal.subscribe(agh.ics.oop.model.AnimalMovedListener)METHOD=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java† †("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*	subscribe2\
+java.util.List.add(E)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java° °(2u
+.agh.ics.oop.model.Animal?listeners@15.44:15.53CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java° °(2ô
+Ragh.ics.oop.model.Animal.subscribe(agh.ics.oop.model.AnimalMovedListener)!listenerCALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java° °(2û
+Ragh.ics.oop.model.Animal.subscribe(agh.ics.oop.model.AnimalMovedListener)!listener	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java†. †(62R
+voidRETURN_TYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java† †(Ù
+Ragh.ics.oop.model.Animal.subscribe(agh.ics.oop.model.AnimalMovedListener)!listener	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java†. †(6"
+typeAnimalMovedListener"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*listener2l
+%agh.ics.oop.model.AnimalMovedListenerTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java† †(-°
+\agh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)METHOD=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§ §("
+packageagh.ics.oop.model"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC4*animalMoved2À
+Éagh.ics.oop.model.AnimalMovedListener.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d, agh.ics.oop.model.Animal)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¶ ¶( 2u
+.agh.ics.oop.model.Animal?listeners@15.44:15.53CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java•, •(52∫
+sagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)?listener@165.33:165.41CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¶ ¶(2Ø
+hagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)!oldPositionCALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¶! ¶(,2Ø
+hagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)!newPositionCALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¶. ¶(92¥
+hagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)!oldPosition	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§& §(12¥
+hagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)!newPosition	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§< §(G2¡
+sagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)?listener@165.33:165.41DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java•! •()2R
+voidRETURN_TYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§ §(î
+sagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)?listener@165.33:165.41VARIABLE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java•! •()"
+typeAnimalMovedListener"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*listener2l
+%agh.ics.oop.model.AnimalMovedListenerTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java• •( ˜
+hagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)!oldPosition	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§& §(1"
+typeVector2d"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*oldPosition2a
+agh.ics.oop.model.Vector2dTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§ §(%˜
+hagh.ics.oop.model.Animal.animalMoved(agh.ics.oop.model.Vector2d, agh.ics.oop.model.Vector2d)!newPosition	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§< §(G"
+typeVector2d"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*newPosition2a
+agh.ics.oop.model.Vector2dTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java§3 §(;Ê
+Vagh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)METHOD=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java™ ™(+"
+packageagh.ics.oop.model"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC3*sortAnimalsByEnergy2ï
+Njava.util.Comparator.comparingInt(java.util.function.ToIntFunction<? super T>)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´9 ´(E2{
+4java.util.List.sort(java.util.Comparator<? super E>)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¨ ¨(2•
+^agh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)!animalsCALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¨ ¨(2º
+uagh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)?energyComparator@171.27:171.43CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¨ ¨(%2k
+$agh.ics.oop.model.Animal.getEnergy()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´F ´(W2™
+^agh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)!animals	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java™9 ™(@2√
+uagh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)?energyComparator@171.27:171.43DECLARATION=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´ ´(+2R
+voidRETURN_TYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java™ ™(˚
+uagh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)?energyComparator@171.27:171.43VARIABLE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´ ´(+"
+typeComparator<Animal>"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*energyComparator2[
+java.util.ComparatorTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´ ´(2h
+agh.ics.oop.model.AnimalTYPE_ARGUMENT=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´ ´(2ï
+Njava.util.Comparator.comparingInt(java.util.function.ToIntFunction<? super T>)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´9 ´(E2k
+$agh.ics.oop.model.Animal.getEnergy()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java´F ´(WÀ
+^agh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)!animals	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java™9 ™(@"
+typeList<Animal>"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*animals2U
+java.util.ListTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java™, ™(02h
+agh.ics.oop.model.AnimalTYPE_ARGUMENT=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java™1 ™(7Â
+Wagh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)METHOD=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ Ø(&"
+packageagh.ics.oop.model"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*resolveConflict2\
+java.util.List.size()CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java∞ ∞(2ù
+Vagh.ics.oop.model.Animal.sortAnimalsByEnergy(java.util.List<agh.ics.oop.model.Animal>)CALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¥ ¥(2¶
+_agh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)!animalsCALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java∞ ∞(2´
+dagh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)!animalsCountCALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java∞ ∞(*2¶
+_agh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)!animalsCALL=
+1oolab/src/main/java/agh/ics/oop/model/Animal.java¥ ¥(#2´
+_agh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)!animals	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ4 Ø(;2∞
+dagh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)!animalsCount	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØA Ø(M2R
+voidRETURN_TYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ Ø(Ã
+_agh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)!animals	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ4 Ø(;"
+typeList<Animal>"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*animals2U
+java.util.ListTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ' Ø(+2h
+agh.ics.oop.model.AnimalTYPE_ARGUMENT=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ, Ø(2ÿ
+dagh.ics.oop.model.Animal.resolveConflict(java.util.List<agh.ics.oop.model.Animal>, int)!animalsCount	PARAMETER=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØA Ø(M"
+typeint"
+isFinalfalse"
+packageagh.ics.oop.model"
+isLocaltrue*animalsCount2J
+intTYPE=
+1oolab/src/main/java/agh/ics/oop/model/Animal.javaØ= Ø(@õ
+%agh.ics.oop.model.Animal?id@9.23:9.25VALUE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java	 	("
+isFinaltrue"
+typeUUID"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*id2S
+java.util.UUIDTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java	 	(2`
+java.util.UUID.randomUUID()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java	! 	(+€
+-agh.ics.oop.model.Animal?position@10.21:10.29VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java
+ 
+("
+isFinalfalse"
+typeVector2d"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*position2_
+agh.ics.oop.model.Vector2dTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java
+ 
+(Â
+.agh.ics.oop.model.Animal?direction@11.25:11.34VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (""
+isFinalfalse"
+typeMapDirection"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*	direction2c
+agh.ics.oop.model.MapDirectionTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (ª
++agh.ics.oop.model.Animal?energy@12.16:12.22VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*energy2H
+intTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (◊
+-agh.ics.oop.model.Animal?genotype@13.27:13.35VALUE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (#"
+isFinaltrue"
+typeGenotype"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*genotype2_
+agh.ics.oop.model.GenotypeTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (µ
+(agh.ics.oop.model.Animal?age@14.16:14.19VARIABLE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*age2H
+intTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (π
+.agh.ics.oop.model.Animal?listeners@15.44:15.53VALUE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java, (5"
+isFinaltrue"!
+typeList<AnimalMovedListener>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*	listeners2S
+java.util.ListTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2s
+%agh.ics.oop.model.AnimalMovedListenerTYPE_ARGUMENT;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (*2d
+java.util.ArrayList.ArrayList()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java< (G«
+(agh.ics.oop.model.Animal?map@16.24:16.27VALUE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
+isFinaltrue"
+typeGlobe"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*map2\
+agh.ics.oop.model.GlobeTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (ó
+0agh.ics.oop.model.Animal?childrenIds@17.29:17.40VALUE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (("
+isFinaltrue"
+type
+List<UUID>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*childrenIds2S
+java.util.ListTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2\
+java.util.UUIDTYPE_ARGUMENT;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java (2d
+java.util.ArrayList.ArrayList()CALL;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java/ (:Í
+/agh.ics.oop.model.Animal?statistics@18.35:18.45VALUE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java# (-"
+isFinaltrue"
+typeAnimalStatistics"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packageagh.ics.oop.model*
+statistics2f
+!agh.ics.oop.util.AnimalStatisticsTYPE;
+1oolab/src/main/java/agh/ics/oop/model/Animal.java ("
