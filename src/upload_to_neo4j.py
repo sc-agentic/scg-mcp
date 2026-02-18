@@ -35,6 +35,18 @@ class Neo4jUploader:
                 session.run("CREATE CONSTRAINT FOR (n:CodeNode) REQUIRE n.id IS UNIQUE")
             except Exception as e:
                 print(f"Note: {e}")
+            try:
+                session.run("""
+                    CREATE VECTOR INDEX code_embeddings IF NOT EXISTS
+                    FOR (n:CodeNode) ON (n.embedding)
+                    OPTIONS {indexConfig: {
+                        `vector.dimensions`: 384,
+                        `vector.similarity_function`: 'cosine'
+                    }}
+                """)
+                print("Vector index 'code_embeddings' created/verified.")
+            except Exception as e:
+                print(f"Note (vector index): {e}")
 
     def upload_nodes(self, nodes_data: List[Dict]):
         print(f"Uploading {len(nodes_data)} nodes...")
