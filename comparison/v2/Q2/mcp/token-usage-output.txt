@@ -1,0 +1,125 @@
+═══════════════════════════════════════════════════════════════════════════
+Token Analysis: Session ses_369c56bafffeVe0T4Pj5w5h24F
+Model: approx
+═══════════════════════════════════════════════════════════════════════════
+
+TOKEN BREAKDOWN BY CATEGORY
+─────────────────────────────────────────────────────────────────────────
+Estimated using tokenizer analysis of message content:
+
+Input Categories:
+  SYSTEM    ████████████░░░░░░░░░░░░░░░░░░    38.7% (11,001)
+  USER      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░         0.3% (73)
+  TOOLS     ██████████████████░░░░░░░░░░░░    61.1% (17,359)
+
+  Subtotal: 28,433 estimated input tokens
+
+Output Categories:
+  ASSISTANT █████████████████░░░░░░░░░░░░░       57.7% (537)
+  REASONING █████████████░░░░░░░░░░░░░░░░░       42.3% (394)
+
+  Subtotal: 931 estimated output tokens
+
+Local Total: 29,364 tokens (estimated)
+
+TOOL USAGE BREAKDOWN
+─────────────────────────────────────────────────────────────────────────
+semantic-graph-rag_get_node_context ████████████████████░░░░░░░░░░    66.0% (11,465)    3x
+semantic-graph-rag_list_package_classes ███████░░░░░░░░░░░░░░░░░░░░░░░     23.1% (4,014)    1x
+bash                 ███░░░░░░░░░░░░░░░░░░░░░░░░░░░      9.2% (1,589)    1x
+semantic-graph-rag_get_class_hierarchy ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░        1.3% (220)    3x
+tokenscope           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░         0.4% (71)    1x
+
+TOP CONTRIBUTORS
+─────────────────────────────────────────────────────────────────────────
+• semantic-graph-rag_get_node_context 11,465 tokens (39.0%)
+• System (inferred from API)   11,001 tokens (37.5%)
+• semantic-graph-rag_list_package_classes 4,014 tokens (13.7%)
+• bash                         1,589 tokens (5.4%)
+• Assistant#1                  537 tokens (1.8%)
+
+═══════════════════════════════════════════════════════════════════════════
+MOST RECENT API CALL
+─────────────────────────────────────────────────────────────────────────
+
+Raw telemetry from last API response:
+  Input (fresh):         17,937 tokens
+  Cache read:            10,496 tokens
+  Output:                    91 tokens
+  Reasoning:                 50 tokens
+  ─────────────────────────────────────
+  Total:                 28,574 tokens
+
+═══════════════════════════════════════════════════════════════════════════
+SESSION TOTALS (All 8 API calls)
+─────────────────────────────────────────────────────────────────────────
+
+Total tokens processed across the entire session (for cost calculation):
+
+  Input tokens:          38,984 (fresh tokens across all calls)
+  Cache read:           110,592 (cached tokens across all calls)
+  Cache write:                0 (tokens written to cache)
+  Output tokens:          1,211 (all model responses)
+  Reasoning tokens:         409 (thinking/reasoning)
+  ─────────────────────────────────────
+  Session Total:        151,196 tokens (for billing)
+
+═══════════════════════════════════════════════════════════════════════════
+SESSION COST
+─────────────────────────────────────────────────────────────────────────
+
+Token usage breakdown:
+  Input tokens:          38,984
+  Output tokens:          1,211
+  Reasoning tokens:         409
+  Cache read:           110,592
+
+─────────────────────────────────────────────────────────────────────────
+ACTUAL COST (from API):  $0.0393
+Estimated cost:          $0.0438 (+11.5% diff)
+
+Note: Actual cost from OpenCode includes provider-specific pricing
+and 200K+ context adjustments.
+
+═══════════════════════════════════════════════════════════════════════════
+TOOL DEFINITION COSTS (Estimated from argument analysis)
+─────────────────────────────────────────────────────────────────────────
+
+  Tool                Est. Tokens   Args   Complexity
+  ───────────────────────────────────────────────────────────────────
+  semantic-graph-rag_get_node_context         ~410       2   complex (arrays/objects)
+  semantic-graph-rag_list_package_classes         ~340       2   simple
+  semantic-graph-rag_get_class_hierarchy         ~340       2   simple
+  bash                       ~340       2   simple
+  tokenscope                 ~280       0   simple
+  ───────────────────────────────────────────────────────────────────
+  Total:             ~      1,710 tokens (5 enabled tools)
+
+  Note: Estimates inferred from tool call arguments in this session.
+        Actual schema tokens may vary +/-20%.
+
+═══════════════════════════════════════════════════════════════════════════
+CACHE EFFICIENCY
+─────────────────────────────────────────────────────────────────────────
+
+  Token Distribution:
+    Cache Read:           110,592 tokens   ██████████████████████░░░░░░░░  73.9%
+    Fresh Input:           38,984 tokens   ████████░░░░░░░░░░░░░░░░░░░░░░  26.1%
+  ───────────────────────────────────────────────────────────────────
+  Cache Hit Rate:      73.9%
+
+  Cost Analysis (approx @ $1.00/M input, $0.00/M cache read):
+    Without caching:   $0.1496  (149,576 tokens x $1.00/M)
+    With caching:      $0.0390  (fresh x $1.00/M + cached x $0.00/M)
+  ───────────────────────────────────────────────────────────────────
+  Cost Savings:        $0.1106  (73.9% reduction)
+  Effective Rate:      $0.26/M tokens  (vs. $1.00/M standard)
+
+═══════════════════════════════════════════════════════════════════════════
+SUMMARY
+─────────────────────────────────────────────────────────────────────────
+
+                          Cost        Tokens          API Calls
+  Session:           $    0.0393       151,196             8
+
+═══════════════════════════════════════════════════════════════════════════

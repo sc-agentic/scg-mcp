@@ -16,7 +16,6 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ── Configuration ────────────────────────────────────────────────────────────
 
 NEO4J_URI = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
 NEO4J_AUTH = ("neo4j", os.environ.get("NEO4J_PASSWORD", "password"))
@@ -24,7 +23,6 @@ EMBED_MODEL_NAME = "all-MiniLM-L6-v2"
 VECTOR_INDEX_NAME = "code_embeddings"
 VECTOR_DIMENSIONS = 384
 
-# ── Module-level state ───────────────────────────────────────────────────────
 
 neo4j_driver = None
 embed_model: SentenceTransformer | None = None
@@ -46,71 +44,32 @@ def _get_driver():
     return neo4j_driver
 
 
-# ── MCP Server ───────────────────────────────────────────────────────────────
 
 mcp = FastMCP(
     "semantic-graph-rag",
-    instructions="A powerful Semantic Code Graph (SCG) tool for deep codebase understanding. "
-    "It enables semantic search, relationship exploration (inheritance, usage, etc.), and retrieval of source code. "
-    "Accessing graph statistics and exploring deep code relationships is essential for understanding "
-    "complex architectural patterns, identifying core components, and navigating large-scale projects "
-    "efficiently. Use this to get a structural overview or drill down into specific implementations.\n\n"
-    "=== GRAPH SCHEMA ===\n"
-    "Nodes: :CodeNode\n"
-    "  Properties: id, kind, displayName, source, uri, startLine, endLine, embedding, prop_*\n"
-    "  kind values: CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE, VALUE, VARIABLE, PARAMETER, TYPE_PARAMETER, etc.\n\n"
-    "Relationships (edge types):\n"
-    "  - CALL: method/function calls\n"
-    "  - EXTEND: class inheritance and interface implementation\n"
-    "  - OVERRIDE: method overriding\n"
-    "  - CONTAINS: file/class contains members\n"
-    "  - TYPE: type usage/reference\n"
-    "  - DECLARATION: variable/function declarations\n"
-    "  - PARAMETER: method parameters\n"
-    "  - RETURN_TYPE: method return types\n"
-    "  - TYPE_ARGUMENT, EXTEND_TYPE_ARGUMENT, RETURN_TYPE_ARGUMENT, TYPE_PARAMETER: generics\n"
-    "  Relationships may have locUri, locLine properties.\n\n"
-    "=== RECOMMENDED WORKFLOW (token-efficient) ===\n"
-    "1. START with search_code or list_package_classes to find relevant entities at class/interface level.\n"
-    "2. USE get_node_summary (cheap, no source code) to understand relationships before diving deep.\n"
-    "3. USE get_class_hierarchy to understand inheritance structure.\n"
-    "4. ONLY THEN use get_node_source or get_node_context (with include_source=True) for specific nodes.\n\n"
-    "AVOID:\n"
-    "- query_neo4j without LIMIT or kind filters (always add WHERE n.kind IN ['CLASS', 'TRAIT', 'METHOD']).\n"
-    "- get_node_context with include_source=True on broad queries — use get_node_summary first.\n"
-    "- get_node_context with hops=2 on nodes inside large classes — this causes fan-out explosion. "
-    "Use hops=1 first, then drill into specific neighbors.\n"
-    "- Fetching all nodes in a package via raw Cypher — use list_package_classes instead.",
+    instructions="Semantic Code Graph (SCG) for codebase exploration.\n\n"
+    "SCHEMA: Nodes are :CodeNode with properties: id, kind, displayName, uri, startLine, endLine.\n"
+    "kind values: CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE, VALUE, VARIABLE, PARAMETER, TYPE_PARAMETER.\n"
+    "Edges: CALL, EXTEND, OVERRIDE, CONTAINS, TYPE, DECLARATION, PARAMETER, RETURN_TYPE, "
+    "TYPE_ARGUMENT, EXTEND_TYPE_ARGUMENT, RETURN_TYPE_ARGUMENT, TYPE_PARAMETER.\n\n"
+    "WORKFLOW: search_code → get_node_summary → get_class_hierarchy → get_node_context.\n"
+    "AVOID: hops=2 on large classes (fan-out explosion), query_neo4j without LIMIT.",
 )
 
 
-# ── Tools ────────────────────────────────────────────────────────────────────
-
-
-# Default kinds for search — class-level entities that carry architectural meaning.
-# The agent can override this to include finer-grained nodes when needed.
 DEFAULT_SEARCH_KINDS = ["CLASS", "TRAIT", "ENUM", "METHOD", "CONSTRUCTOR", "FILE"]
-
-# Maximum nodes returned by get_node_context before truncation.
 MAX_CONTEXT_NODES = 50
-
-# Node kinds that are filtered out of get_node_context results by default
-# to avoid fan-out explosion from large classes.
 CONTEXT_NOISE_KINDS = {"PARAMETER", "VARIABLE", "TYPE_PARAMETER"}
 
 
 @mcp.tool()
 def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> str:
-    """Search for code entities (classes, methods, fields) in the codebase using semantic vector search.
-    This is the entry point for finding relevant code when you don't know the exact names.
-    Returns the most relevant nodes matching your query.
+    """Semantic search for code entities. Entry point for finding relevant code.
 
     Args:
-        query: Natural language query to search for code entities (e.g., 'image loading', 'cache management', 'bitmap decoder')
-        limit: Maximum number of results to return (default: 5)
-        kinds: Optional list of node kinds to include (e.g., ['CLASS', 'TRAIT', 'METHOD']).
-               Defaults to CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE.
-               Pass ['ALL'] to include everything (parameters, variables, etc.).
+        query: Natural language query (e.g., 'image loading', 'cache management')
+        limit: Max results (default: 5)
+        kinds: Node kinds to include (default: CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE). Pass ['ALL'] for all.
     """
     driver = _get_driver()
 
@@ -119,11 +78,11 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
 
     query_embedding = embed_model.encode(query).tolist()
 
-    # Determine kind filter
+
     include_all = kinds is not None and len(kinds) == 1 and kinds[0].upper() == "ALL"
     filter_kinds = None if include_all else (kinds if kinds else DEFAULT_SEARCH_KINDS)
 
-    # Fetch more candidates so we have enough after kind-filtering
+
     raw_limit = limit * 5 if filter_kinds else limit
 
     cypher = """
@@ -148,7 +107,7 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
     except Exception as e:
         return f"Search error: {e}"
 
-    # Apply kind filter
+
     if filter_kinds:
         results = [r for r in results if r["kind"] in filter_kinds][:limit]
     else:
@@ -173,42 +132,26 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
 def get_node_context(
     node_ids: list[str],
     hops: int = 1,
-    include_source: bool = False,
     kinds: list[str] | None = None,
 ) -> str:
-    """Get the context subgraph around specific code nodes, including related entities and their relationships.
-    Use this to explore graph relations (like who calls this, or what this inherits from).
-    Understanding these relations is crucial for tracing data flow and architectural dependencies.
-
-    To save tokens, include_source defaults to false. Use get_node_source to fetch source
-    for specific nodes after reviewing the relationship map.
-
-    IMPORTANT: With hops=2 on nodes inside large classes, the results can explode to hundreds
-    of nodes. Start with hops=1 and drill into specific neighbors instead.
+    """Get the context subgraph around code nodes — related entities and relationships.
 
     Args:
-        node_ids: List of node IDs to get context for (obtained from search_code)
-        hops: Number of relationship hops to traverse (default: 1, max: 3)
-        include_source: Whether to include source code snippets (default: false)
-        kinds: Optional list of node kinds to include in results.
-               By default, PARAMETER, VARIABLE, and TYPE_PARAMETER are filtered out
-               to reduce noise. Pass ['ALL'] to include everything.
+        node_ids: Node IDs to explore (from search_code)
+        hops: Relationship hops (default: 1, max: 3). Avoid hops=2 on large classes.
+        kinds: Node kinds to include. Default filters out PARAMETER, VARIABLE, TYPE_PARAMETER. Pass ['ALL'] for all.
     """
     driver = _get_driver()
     hops = max(1, min(int(hops), 3))
 
-    # Determine kind filtering
     include_all = kinds is not None and len(kinds) == 1 and kinds[0].upper() == "ALL"
     filter_kinds = None if include_all else (set(k.upper() for k in kinds) if kinds else None)
-    # If no explicit kinds given, use noise filter
     use_noise_filter = not include_all and filter_kinds is None
-
-    source_field = ", n.source AS source" if include_source else ""
 
     nodes_cypher = f"""
     MATCH (start:CodeNode) WHERE start.id IN $node_ids
     MATCH path = (start)-[*0..{hops}]-(n:CodeNode)
-    RETURN DISTINCT n.id AS id, n.kind AS kind, n.displayName AS displayName{source_field}
+    RETURN DISTINCT n.id AS id, n.kind AS kind, n.displayName AS displayName
     """
 
     try:
@@ -222,7 +165,7 @@ def get_node_context(
     if not raw_nodes:
         return f"No nodes found for IDs: {node_ids}"
 
-    # Apply kind filtering
+
     if use_noise_filter:
         filtered_nodes = [n for n in raw_nodes if n["kind"] not in CONTEXT_NOISE_KINDS]
         noise_count = len(raw_nodes) - len(filtered_nodes)
@@ -233,14 +176,14 @@ def get_node_context(
         filtered_nodes = raw_nodes
         noise_count = 0
 
-    # Truncate if still too many
+
     truncated = False
     truncated_summary = ""
     if len(filtered_nodes) > MAX_CONTEXT_NODES:
         truncated = True
         shown_nodes = filtered_nodes[:MAX_CONTEXT_NODES]
         omitted = filtered_nodes[MAX_CONTEXT_NODES:]
-        # Group omitted nodes by kind — collect IDs (capped per kind to avoid bloat)
+
         omitted_by_kind: dict[str, list[str]] = {}
         omitted_counts: dict[str, int] = {}
         max_ids_per_kind = 10
@@ -252,7 +195,7 @@ def get_node_context(
             if len(omitted_by_kind[kind]) < max_ids_per_kind:
                 omitted_by_kind[kind].append(n["id"])
 
-        # Build summary with counts and recoverable IDs
+
         lines = [
             f"\n⚠️ Showing {MAX_CONTEXT_NODES} of {len(filtered_nodes)} nodes "
             f"({len(filtered_nodes) - MAX_CONTEXT_NODES} omitted)."
@@ -271,13 +214,11 @@ def get_node_context(
     else:
         shown_nodes = filtered_nodes
 
-    # Collect IDs of shown nodes for relationship filtering
     shown_ids = {n["id"] for n in shown_nodes}
-    # Collect ALL traversed IDs (including omitted/filtered) to detect hidden relationships
     all_traversed_ids = {n["id"] for n in raw_nodes}
     hidden_ids = all_traversed_ids - shown_ids
 
-    # Fetch relationships between shown nodes (full detail)
+
     rels_cypher = """
     MATCH (a:CodeNode)-[r]->(b:CodeNode)
     WHERE a.id IN $shown_ids AND b.id IN $shown_ids
@@ -293,7 +234,7 @@ def get_node_context(
     except Exception as e:
         return f"Error getting relationships: {e}"
 
-    # If there are hidden nodes, count relationships crossing the boundary
+
     hidden_rel_summary = ""
     if hidden_ids:
         hidden_rels_cypher = """
@@ -319,9 +260,9 @@ def get_node_context(
                     f"Use get_node_summary on omitted IDs to explore."
                 )
         except Exception:
-            pass  # Non-critical — don't fail if summary query errors
+            pass
 
-    # Build output
+
     header = f"Context subgraph ({len(shown_nodes)} nodes shown"
     if noise_count > 0:
         header += f", {noise_count} noise nodes filtered"
@@ -335,17 +276,17 @@ def get_node_context(
     for n in shown_nodes:
         output.append(f"  - [{n['kind']}] {n['displayName']} (ID: {n['id']})")
 
-    if include_source:
-        output.append("\nSource Code:")
-        for n in shown_nodes:
-            source = n.get("source", "")
-            if source:
-                output.append(f"\n--- [{n['kind']}] {n['displayName']} ---")
-                output.append(source)
-
     output.append("\nRelationships:")
     if rels:
+        # Deduplicate
+        seen_rels = set()
+        unique_rels = []
         for r in rels:
+            key = (r['source'], r['relType'], r['target'])
+            if key not in seen_rels:
+                seen_rels.add(key)
+                unique_rels.append(r)
+        for r in unique_rels:
             output.append(f"  - {r['source']} --[{r['relType']}]--> {r['target']}")
     else:
         output.append("  (none)")
@@ -356,61 +297,12 @@ def get_node_context(
     return "\n".join(output)
 
 
-@mcp.tool()
-def get_node_source(node_id: str) -> str:
-    """Get the source code for a specific node. Returns the actual code implementation
-    along with file location information.
 
-    Args:
-        node_id: The ID of the node to get source code for
-    """
-    driver = _get_driver()
-
-    cypher = """
-    MATCH (n:CodeNode {id: $node_id})
-    RETURN n.id AS id, n.kind AS kind, n.displayName AS displayName,
-           n.source AS source, n.uri AS uri, n.startLine AS startLine, n.endLine AS endLine
-    """
-
-    try:
-        with driver.session() as session:
-            result = session.execute_read(
-                lambda tx: list(tx.run(cypher, node_id=node_id))
-            )
-    except Exception as e:
-        return f"Error: {e}"
-
-    if not result:
-        return f"Node '{node_id}' not found in the graph."
-
-    record = result[0]
-    source = record.get("source", "")
-    if not source:
-        return f"Source code not available for node '{node_id}'."
-
-    name = record["displayName"] or node_id
-    kind = record["kind"] or "Unknown"
-    uri = record.get("uri", "N/A")
-    start_line = record.get("startLine", "?")
-    end_line = record.get("endLine", "?")
-
-    output = [
-        f"Source code for [{kind}] {name}:",
-        f"Node ID: {node_id}",
-        f"File: {uri} (lines {start_line}-{end_line})",
-        "-" * 60,
-        source,
-        "-" * 60,
-    ]
-    return "\n".join(output)
 
 
 @mcp.tool()
 def get_graph_stats() -> str:
-    """Get statistics about the loaded code graph, including node and edge counts.
-    These statistics provide a high-level overview of the project's complexity and
-    the distribution of code entities (classes, methods, etc.).
-    """
+    """Get node/edge counts and kind distribution for the code graph."""
     driver = _get_driver()
 
     cypher = """
@@ -456,14 +348,12 @@ def get_graph_stats() -> str:
 
 @mcp.tool()
 def find_path(from_id: str, to_id: str, max_depth: int = 5) -> str:
-    """Find the shortest path between two code entities in the graph.
-    Use this to trace execution flow, dependency chains, or understand how
-    two components are connected through the codebase.
+    """Find shortest path between two code entities.
 
     Args:
-        from_id: The node ID of the starting entity
-        to_id: The node ID of the target entity
-        max_depth: Maximum number of hops to search (default: 5, max: 10)
+        from_id: Starting node ID
+        to_id: Target node ID
+        max_depth: Max hops (default: 5, max: 10)
     """
     driver = _get_driver()
     max_depth = max(1, min(int(max_depth), 10))
@@ -512,30 +402,24 @@ def find_path(from_id: str, to_id: str, max_depth: int = 5) -> str:
 
 @mcp.tool()
 def get_node_summary(node_ids: list[str]) -> str:
-    """Get a compact summary of one or more code nodes — metadata and relationship
-    counts, PLUS a few sample neighbors. Use this to get an overview before deciding
-    what to drill into.
-
-    Returns for each node:
-    - Metadata (kind, name, location)
-    - Incoming/Outgoing relationship breakdown (counts + top 3 example nodes for each type)
+    """Compact summary of nodes: metadata + relationship counts with sample neighbors.
 
     Args:
-        node_ids: List of node IDs to summarize
+        node_ids: Node IDs to summarize
     """
     driver = _get_driver()
 
-    # Cypher: Collect neighbors by type, limited to 5 examples per type
+
     cypher = """
     UNWIND $node_ids AS nid
     MATCH (n:CodeNode {id: nid})
     
-    // Outgoing relationships
+
     OPTIONAL MATCH (n)-[out]->(target)
     WITH n, type(out) AS outType, count(out) AS outCount, collect(target.displayName)[..5] AS outExamples
     WITH n, collect(CASE WHEN outType IS NOT NULL THEN {type: outType, count: outCount, examples: outExamples} END) AS outgoing
     
-    // Incoming relationships
+
     OPTIONAL MATCH (n)<-[inc]-(source)
     WITH n, outgoing, type(inc) AS incType, count(inc) AS incCount, collect(source.displayName)[..5] AS incExamples
     WITH n, outgoing, collect(CASE WHEN incType IS NOT NULL THEN {type: incType, count: incCount, examples: incExamples} END) AS incoming
@@ -596,12 +480,11 @@ def get_node_summary(node_ids: list[str]) -> str:
 
 @mcp.tool()
 def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
-    """Get the full inheritance/implementation hierarchy for a class or interface.
-    Returns superclasses (parents), subclasses (children), and implemented interfaces.
+    """Get inheritance hierarchy for a class/interface.
 
     Args:
-        node_id: The node ID of the class or interface to analyze
-        direction: 'up' (ancestors only), 'down' (descendants only), or 'both' (default)
+        node_id: Class or interface node ID
+        direction: 'up', 'down', or 'both' (default)
     """
     driver = _get_driver()
     direction = direction.lower()
@@ -610,7 +493,7 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
 
     sections = []
 
-    # Get the target node info
+
     node_cypher = """
     MATCH (n:CodeNode {id: $node_id})
     RETURN n.id AS id, n.kind AS kind, n.displayName AS displayName
@@ -628,7 +511,7 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
             node = node_result[0]
             sections.append(f"Hierarchy for [{node['kind']}] {node['displayName']}:\n")
 
-            # Ancestors: this node inherits/implements → parents → grandparents...
+
             if direction in ("up", "both"):
                 ancestors_cypher = """
                 MATCH (start:CodeNode {id: $node_id})
@@ -654,7 +537,7 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
                     sections.append("  (none — this is a root class/interface)")
                 sections.append("")
 
-            # Descendants: children/implementors that inherit/implement this node
+
             if direction in ("down", "both"):
                 descendants_cypher = """
                 MATCH (start:CodeNode {id: $node_id})
@@ -688,14 +571,11 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
 
 @mcp.tool()
 def list_package_classes(package_path: str, include_methods: bool = False) -> str:
-    """List all classes, interfaces, and traits in a specific package/directory.
-    Returns only high-level entities (CLASS, TRAIT), not individual methods, fields, or variables.
-    This is the recommended way to explore a package structure — much cheaper than a raw
-    Cypher query which would return every AST node.
+    """List classes/interfaces in a package.
 
     Args:
-        package_path: Part of the file path to filter by (e.g., 'bitmap_recycle', 'load/engine')
-        include_methods: If true, also list METHOD and CONSTRUCTOR nodes (default: false)
+        package_path: Path fragment to filter by (e.g., 'bitmap_recycle', 'load/engine')
+        include_methods: Also list methods/constructors (default: false)
     """
     driver = _get_driver()
 
@@ -721,7 +601,7 @@ def list_package_classes(package_path: str, include_methods: bool = False) -> st
     if not results:
         return f"No classes or interfaces found matching path '{package_path}'."
 
-    # Group by file
+
     by_file: dict[str, list] = {}
     for r in results:
         uri = r.get("uri", "unknown")
@@ -742,23 +622,11 @@ MAX_QUERY_RESULTS = 50
 
 @mcp.tool()
 def query_neo4j(cypher: str, params: dict | None = None) -> str:
-    """Execute a read-only Cypher query against the Neo4j code graph database.
-    Use this for advanced queries that the other tools don't cover, such as
-    complex pattern matching, path finding, or aggregations.
-
-    The graph schema consists of :CodeNode nodes with properties:
-      id, kind, displayName, source, uri, startLine, endLine, embedding, prop_*
-    Relationships are typed by their edge kind (e.g. CALL, EXTEND, OVERRIDE,
-    CONTAINS, TYPE, DECLARATION, PARAMETER, RETURN_TYPE, etc.) and may have locUri, locLine properties.
-
-    IMPORTANT: Always use LIMIT in your Cypher queries and filter by n.kind
-    (e.g., WHERE n.kind IN ['CLASS', 'TRAIT', 'METHOD']) to avoid overwhelming
-    results. Avoid returning PARAMETERs, VARIABLEs, or TYPE_PARAMETERs unless
-    specifically needed.
+    """Execute a read-only Cypher query. Always use LIMIT and kind filters.
 
     Args:
-        cypher: A Cypher query string (read-only — MATCH, RETURN, WITH, etc.)
-        params: Optional dictionary of query parameters to pass to the Cypher query
+        cypher: Cypher query string (read-only)
+        params: Optional query parameters
     """
     driver = _get_driver()
 
@@ -777,11 +645,10 @@ def query_neo4j(cypher: str, params: dict | None = None) -> str:
 
         output = [f"Returned {total_count} record(s)"]
         if truncated:
-            # Build a summary of what was truncated
+
             truncated_records = result[MAX_QUERY_RESULTS:]
             kind_counts: dict[str, int] = {}
             for r in truncated_records:
-                # Try common column names for kind
                 k = None
                 for col in ("kind", "n.kind"):
                     if col in r.keys():
@@ -816,14 +683,13 @@ def query_neo4j(cypher: str, params: dict | None = None) -> str:
         return f"Cypher query error: {e}"
 
 
-# ── Server lifecycle ─────────────────────────────────────────────────────────
 
 
 @contextlib.asynccontextmanager
 async def lifespan(app: Starlette):
     global neo4j_driver, embed_model
 
-    # Initialize Neo4j
+
     try:
         neo4j_driver = GraphDatabase.driver(NEO4J_URI, auth=NEO4J_AUTH)
         neo4j_driver.verify_connectivity()
@@ -832,7 +698,7 @@ async def lifespan(app: Starlette):
         log.error("Could not connect to Neo4j: %s", e)
         raise
 
-    # Load embedding model (lightweight — only used for encoding queries)
+
     log.info("Loading embedding model '%s'...", EMBED_MODEL_NAME)
     with redirect_stdout_to_stderr():
         embed_model = SentenceTransformer(EMBED_MODEL_NAME)
@@ -841,7 +707,7 @@ async def lifespan(app: Starlette):
     async with mcp.session_manager.run():
         yield
 
-    # Cleanup
+
     if neo4j_driver is not None:
         neo4j_driver.close()
         log.info("Neo4j driver closed.")
