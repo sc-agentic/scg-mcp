@@ -1,0 +1,1842 @@
+
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÑ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaFILE•
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java"
+
+LOC417*¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaø.
+?com.bumptech.glide.integration.cronet.ChromiumRequestSerializerCLASS≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java1 1(%"0
+package%com.bumptech.glide.integration.cronet"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC368*ChromiumRequestSerializer2æ
+˛com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javab b(2õ
+€com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav v(2Å
+øcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú(2÷
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaß ß(12é
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java2 2(!2•
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_TO_CHROMIUM_PRIORITY@52.46:52.72DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java4. 4(H2¢
+ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_EXECUTOR_SUPPLIER@56.42:56.65DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java8* 8(A2í
+Scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobPool@93.24:93.31DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java] ](2è
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobs@94.35:94.39DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java^# ^('2ô
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?requestFactory@95.37:95.51DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java_% _(32ï
+Vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?dataLogger@96.37:96.47DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java`% `(/2Ñ
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobDECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏ ∏(2à
+Gcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPoolDECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÄ Ä(2â
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerDECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú(2û
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_TO_CHROMIUM_PRIORITY@52.46:52.72CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaW W(2û
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_TO_CHROMIUM_PRIORITY@52.46:52.72CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaX X(2û
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_TO_CHROMIUM_PRIORITY@52.46:52.72CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaY Y(2û
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_TO_CHROMIUM_PRIORITY@52.46:52.72CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaZ Z(ˆ.
+˛com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)CONSTRUCTOR≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javab b("0
+package%com.bumptech.glide.integration.cronet*ChromiumRequestSerializer2»
+ècom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.JobPool(com.google.common.base.Supplier<java.util.concurrent.Executor>)CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javai i( 2»
+ècom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.JobPool(com.google.common.base.Supplier<java.util.concurrent.Executor>)CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javal l(2∆
+çcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!requestFactoryCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaf f((2¬
+âcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!dataLoggerCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javag g( 2¿
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!executorCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javah h(2õ
+ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_EXECUTOR_SUPPLIER@56.42:56.65CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javai! i(82¿
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!executorCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javap p(!2í
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?requestFactory@95.37:95.51CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaf	 f(2é
+Vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?dataLogger@96.37:96.47CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javag	 g(2ã
+Scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobPool@93.24:93.31CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javai i(2ã
+Scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobPool@93.24:93.31CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javak k(2À
+çcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!requestFactory	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javac c()2«
+âcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!dataLogger	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javad d(%2≈
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!executor	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javae$ e(,2˛
+?com.bumptech.glide.integration.cronet.ChromiumRequestSerializerRETURN_TYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javab b(√
+çcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!requestFactory	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javac c()"
+typeCronetRequestFactory"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*requestFactory2Ú
+:com.bumptech.glide.integration.cronet.CronetRequestFactoryTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javac c(ß
+âcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!dataLogger	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javad d(%"
+type
+DataLogger"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*
+dataLogger2Ë
+0com.bumptech.glide.integration.cronet.DataLoggerTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javad d(™
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ChromiumRequestSerializer(com.bumptech.glide.integration.cronet.CronetRequestFactory, com.bumptech.glide.integration.cronet.DataLogger, com.bumptech.glide.load.engine.executor.GlideExecutor)!executor	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javae$ e(,"
+typeGlideExecutor"
+isFinaltrue"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*executor2Ì
+5com.bumptech.glide.load.engine.executor.GlideExecutorTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javae e(#îä
+€com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)METHOD≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav v("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC36*startRequest2€
+#java.util.Map.get(java.lang.Object)CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaz z(2´
+scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java} }(2œ
+java.util.Map.put(K, V)CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java~ ~(2‘
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.addListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÄ
+ Ä(2
+µcom.bumptech.glide.integration.cronet.CronetRequestFactory.newRequest(java.lang.String, int, java.util.Map<java.lang.String, java.lang.String>, org.chromium.net.UrlRequest.Callback)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä ä(2Ó
+4com.bumptech.glide.load.model.GlideUrl.toStringUrl()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaã ã(&2›
+#java.util.Map.get(java.lang.Object)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaå- å(02Ì
+3com.bumptech.glide.load.model.GlideUrl.getHeaders()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaç ç(%2•
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaz z(	2à
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobs@94.35:94.39CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaz z(2ù
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrlCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaz z(2•
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java{
+ {(2≤
+˘com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?startNewRequest@119.12:119.27CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java| |(2•
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java} }(2ã
+Scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobPool@93.24:93.31CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java} }(2ù
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrlCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java} }("2à
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobs@94.35:94.39CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java~ ~(2ù
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrlCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java~ ~(2•
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java~ ~(2ß
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÄ Ä(	2ü
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listenerCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÄ Ä(2¥
+˘com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?startNewRequest@119.12:119.27CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÉ É(2â
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÑ Ñ(2â
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ Ö(2ü
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrlCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖB Ö(J2ß
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaá á(	2ü
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!priorityCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaá á(2ß
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaà à(	2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?requestFactory@95.37:95.51CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ
+ â(2ü
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrlCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaã ã(2†
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_TO_CHROMIUM_PRIORITY@52.46:52.72CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaå å(,2ü
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!priorityCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaå1 å(92ü
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrlCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaç ç(2ß
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaé é(2ß
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê ê(	2ß
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javañ
+ ñ(2ß
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaó ó(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?priority@188.21:188.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaá
+ á(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaà
+ à(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê
+ ê(2ó
+]com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?isCancelled@193.29:193.40CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javañ ñ(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaó ó(2¢
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!priority	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav v(%2¢
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrl	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav0 v(82¢
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javavC v(K2π
+˘com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?startNewRequest@119.12:119.27DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaw w(2¨
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javax x(2√
+voidRETURN_TYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav v(Ô
+˘com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?startNewRequest@119.12:119.27VARIABLE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaw w("
+typeboolean"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*startNewRequest2ø
+booleanTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaw w(é
+Ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@120.8:120.11VARIABLE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javax x("
+typeJob"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*job2˚
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javax x(È
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!priority	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav v(%"
+typePriority"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*priority2”
+com.bumptech.glide.PriorityTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav v(Ù
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrl	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav0 v(8"
+typeGlideUrl"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*glideUrl2ﬁ
+&com.bumptech.glide.load.model.GlideUrlTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav' v(/ñ
+‰com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.startRequest(com.bumptech.glide.Priority, com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javavC v(K"
+typeListener"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*listener2Ä
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javav: v(Bû%
+øcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC9*cancelRequest2›
+#java.util.Map.get(java.lang.Object)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü ü(2◊
+úcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java£
+ £(2å
+—com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@157.14:157.17CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü ü(	2ä
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobs@94.35:94.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü ü(2É
+»com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrlCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü ü(2å
+—com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@157.14:157.17CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¢ ¢(2å
+—com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@157.14:157.17CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java£ £(	2É
+»com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listenerCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java£ £(!2à
+»com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrl	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú(&2à
+»com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú1 ú(92ì
+—com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@157.14:157.17DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú(Û
+—com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?job@157.14:157.17VALUEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù("
+typeJob"
+isFinaltrue"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*job2˝
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù
+ ù(‹
+»com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!glideUrl	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú(&"
+typeGlideUrl"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*glideUrl2‡
+&com.bumptech.glide.load.model.GlideUrlTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú(˛
+»com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.cancelRequest(com.bumptech.glide.load.model.GlideUrl, com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú1 ú(9"
+typeListener"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*listener2Ç
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú( ú(0™
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaß ß(1"0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeIOException"
+accessprivate"	
+LOC10*getExceptionIfFailed2‹
+°com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!wasCancelledCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java© ©(2—
+ñcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!eCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java´ ´(2—
+ñcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!eCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¨ ¨(2‘
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!infoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≠ ≠(2‘
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!infoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÆ Æ(#2Ÿ
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java® ®(2÷
+ñcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java®( ®()2·
+°com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!wasCancelled	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java®3 ®(?2‘
+java.io.IOExceptionRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaß ß(™
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java® ®("
+typeUrlResponseInfo"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*info2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java® ®(ì
+ñcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java®( ®()"
+typeIOException"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*e2Õ
+java.io.IOExceptionTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java® ®('ô
+°com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.getExceptionIfFailed(org.chromium.net.UrlResponseInfo, java.io.IOException, boolean)!wasCancelled	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java®3 ®(?"
+typeboolean"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*wasCancelled2¡
+booleanTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java®+ ®(2‚
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java2 2(!"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*TAG2»
+java.lang.StringTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java2 2(π
+
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_TO_CHROMIUM_PRIORITY@52.46:52.72VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java4. 4(H"
+isFinaltrue"
+typeMap<Priority, Integer>"
+isStatictrue"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*GLIDE_TO_CHROMIUM_PRIORITY2≈
+java.util.MapTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java4 4(2‹
+com.bumptech.glide.PriorityTYPE_ARGUMENT≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java4 4(#2“
+java.lang.IntegerTYPE_ARGUMENT≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java4% 4(,2Â
+-java.util.EnumMap.EnumMap(java.lang.Class<K>)CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java5
+ 5(Ò	
+ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?GLIDE_EXECUTOR_SUPPLIER@56.42:56.65VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java8* 8(A"
+isFinaltrue"
+typeSupplier<Executor>"
+isStatictrue"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*GLIDE_EXECUTOR_SUPPLIER2◊
+com.google.common.base.SupplierTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java8 8(2ﬁ
+java.util.concurrent.ExecutorTYPE_ARGUMENT≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java8  8((2Ë
+Øcom.bumptech.glide.load.engine.executor.GlideExecutor.newSourceExecutor(int, java.lang.String, com.bumptech.glide.load.engine.executor.GlideExecutor.UncaughtThrowableStrategy)CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java># >(4£
+Scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobPool@93.24:93.31VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java] ]("
+isFinaltrue"
+typeJobPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*jobPool2ˇ
+Gcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPoolTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java] ](µ
+
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobs@94.35:94.39VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java^# ^('"
+isFinaltrue"
+typeMap<GlideUrl, Job>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*jobs2≈
+java.util.MapTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java^ ^(2Á
+&com.bumptech.glide.load.model.GlideUrlTYPE_ARGUMENT≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java^ ^(2Ñ
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobTYPE_ARGUMENT≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java^ ^(!2”
+java.util.HashMap.HashMap()CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java^. ^(7±
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?requestFactory@95.37:95.51VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java_% _(3"
+isFinaltrue"
+typeCronetRequestFactory"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*requestFactory2Ú
+:com.bumptech.glide.integration.cronet.CronetRequestFactoryTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java_ _($ï
+Vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?dataLogger@96.37:96.47VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java`% `(/"
+isFinaltrue"
+type
+DataLogger"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*
+dataLogger2Ë
+0com.bumptech.glide.integration.cronet.DataLoggerTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java` `($∏
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnableCLASS≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaC  C(0"0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+inner classfalse"
+
+isAbstracttrue"
+accessprivate"	
+LOC17*PriorityRunnable2Ω
+~com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaG G(2Ï
+¨com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.compareTo(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable)DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaL L(2§
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable?priority@69.22:69.30DECLARATION≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaE E(2Ã
+java.lang.RunnableEXTEND≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaC< C(D2Œ
+java.lang.ComparableEXTEND≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaCF C(P2ò
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnableEXTEND_TYPE_ARGUMENT≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaCQ C(aë
+~com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)CONSTRUCTOR≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaG G("0
+package%com.bumptech.glide.integration.cronet*PriorityRunnable2–
+java.lang.Enum.ordinal()CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaH H(&2¿
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)!priorityCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaH H(2ù
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable?priority@69.22:69.30CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaH H(2≈
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)!priority	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaG& G(.2è
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnableRETURN_TYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaG G(å
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)!priority	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaG& G(."
+typePriority"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*priority2”
+com.bumptech.glide.PriorityTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaG G(%†
+¨com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.compareTo(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable)METHOD≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaL L("0
+package%com.bumptech.glide.integration.cronet"
+isFinaltrue"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC8*	compareTo2Ì
+¥com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.compareTo(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable)!anotherCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaM
+ M(2Ì
+¥com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.compareTo(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable)!anotherCALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaO O(2ù
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable?priority@69.22:69.30CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaM M(2ù
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable?priority@69.22:69.30CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaM" M(*2ù
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable?priority@69.22:69.30CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaO O(!2ù
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable?priority@69.22:69.30CALL≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaO) O(12Ú
+¥com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.compareTo(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable)!another	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaL0 L(72¬
+intRETURN_TYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaL L(ı
+¥com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.compareTo(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable)!another	PARAMETER≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaL0 L(7"
+typePriorityRunnable"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*another2à
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnableTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaL L(/Ó
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable?priority@69.22:69.30VALUE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaE E("
+isFinaltrue"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*priority2ª
+intTYPE≠
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaE E(¯B
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobCLASSØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏ ∏("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"
+accessprivate"
+
+LOC198*Job2…
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.Job(com.google.common.base.Supplier<java.util.concurrent.Executor>)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≈ ≈(2±
+pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.init(com.bumptech.glide.load.model.GlideUrl)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java…	 …(2€
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.addListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŒ	 Œ(2ﬁ
+úcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‘	 ‘(2È
+ßcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ Í("2÷
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java (!2È
+ßcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˜ ˜(2–
+écom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onSucceeded(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛ ˛(2Ô
+≠com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaè è(2œ
+çcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onCanceled(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù(2˘
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java™ ™("2ß
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java« «(2ß
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java◊ ◊(2–
+écom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÂ Â(2ï
+Tcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.clearListeners()DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˜ ˜(2ú
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaπ! π(*2õ
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?glideUrl@187.21:187.29DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaª ª(2õ
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?priority@188.21:188.29DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaº º(2ú
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?startTime@189.17:189.26DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaΩ Ω(2ö
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaæ æ(2ú
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?endTimeMs@191.17:191.26DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaø ø(2¶
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?responseStartTimeMs@192.17:192.36DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿ ¿($2û
+]com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?isCancelled@193.29:193.40DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¡ ¡((2ö
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?builder@194.32:194.39DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¬  ¬('2£
+bcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?executorSupplier@195.37:195.53DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java√% √(52‡
+$org.chromium.net.UrlRequest.CallbackEXTENDØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏ ∏($◊
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.Job(com.google.common.base.Supplier<java.util.concurrent.Executor>)CONSTRUCTORØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≈ ≈("0
+package%com.bumptech.glide.integration.cronet*Job2”
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.Job(com.google.common.base.Supplier<java.util.concurrent.Executor>)!executorSupplierCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∆ ∆(.2ú
+bcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?executorSupplier@195.37:195.53CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∆ ∆(2ÿ
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.Job(com.google.common.base.Supplier<java.util.concurrent.Executor>)!executorSupplier	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≈ ≈(+2Ñ
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≈ ≈(ö
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.Job(com.google.common.base.Supplier<java.util.concurrent.Executor>)!executorSupplier	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≈ ≈(+"
+typeSupplier<Executor>"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*executorSupplier2Ÿ
+com.google.common.base.SupplierTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≈ ≈(2‡
+java.util.concurrent.ExecutorTYPE_ARGUMENTØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≈ ≈(ö
+pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.init(com.bumptech.glide.load.model.GlideUrl)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java…	 …("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*init2ﬁ
+$java.lang.System.currentTimeMillis()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java   (*2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?startTime@189.17:189.26CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java   (2≥
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.init(com.bumptech.glide.load.model.GlideUrl)!glideUrlCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÀ À(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?glideUrl@187.21:187.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÀ À(2∏
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.init(com.bumptech.glide.load.model.GlideUrl)!glideUrl	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java… …(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java… …(å
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.init(com.bumptech.glide.load.model.GlideUrl)!glideUrl	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java… …("
+typeGlideUrl"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*glideUrl2‡
+&com.bumptech.glide.load.model.GlideUrlTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java… …(˘
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.addListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŒ	 Œ("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC4*addListener2œ
+java.util.List.add(E)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(2›
+¢com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.addListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listenerCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(2‚
+¢com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.addListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŒ Œ(&2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŒ Œ(ÿ
+¢com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.addListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŒ Œ(&"
+typeListener"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*listener2Ç
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŒ Œ(º(
+úcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‘	 ‘("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC19*removeListener2·
+'java.util.List.remove(java.lang.Object)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŸ Ÿ(2“
+java.util.List.isEmpty()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java⁄ ⁄(2‡
+&java.util.Map.remove(java.lang.Object)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‹ ‹(2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŸ Ÿ(2‡
+•com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listenerCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaŸ Ÿ(!2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java⁄ ⁄(2ó
+]com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?isCancelled@193.29:193.40CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java€
+ €(2ä
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobs@94.35:94.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‹
+ ‹(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?glideUrl@187.21:187.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‹ ‹(2ó
+]com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?isCancelled@193.29:193.40CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java·
+ ·(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‚" ‚()2Ú
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?localRequest@226.19:226.31CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java„ „(2Ú
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?localRequest@226.19:226.31CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‰
+ ‰(2Â
+•com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‘! ‘()2˘
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?localRequest@226.19:226.31DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‚ ‚(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‘ ‘(€
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)?localRequest@226.19:226.31VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‚ ‚("
+type
+UrlRequest"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*localRequest2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‚ ‚(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‚" ‚()€
+•com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.removeListener(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener)!listener	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‘! ‘()"
+typeListener"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*listener2Ç
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‘ ‘( °
+ßcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ Í(""0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*onRedirectReceived2Ì
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)!urlRequestCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÏ Ï(2Ú
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ. Í(82˜
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍJ Í(Y2È
+©com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)!s	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍb Í(c2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ Í(ø
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ. Í(8"
+type
+UrlRequest"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*
+urlRequest2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ# Í(-”
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍJ Í(Y"
+typeUrlResponseInfo"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*urlResponseInfo2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ: Í(Iû
+©com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRedirectReceived(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.lang.String)!s	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍb Í(c"
+typeString"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*s2 
+java.lang.StringTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÍ[ Í(a¸
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java (!"0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC5*onResponseStarted2ﬁ
+$java.lang.System.currentTimeMillis()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÒ# Ò(42ı
+;com.bumptech.glide.integration.cronet.BufferQueue.builder()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÚ Ú(#2§
+jcom.bumptech.glide.integration.cronet.BufferQueue.Builder.getFirstBuffer(org.chromium.net.UrlResponseInfo)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÛ Û()2ü
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?responseStartTimeMs@192.17:192.36CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÒ Ò(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?builder@194.32:194.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÚ Ú(2◊
+úcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!requestCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÛ Û(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?builder@194.32:194.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÛ Û(2‘
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!infoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÛ* Û(.2‹
+úcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!request	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java- (42Ÿ
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaF (J2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java (¶
+úcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!request	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java- (4"
+type
+UrlRequest"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*request2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java" (,™
+ôcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onResponseStarted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaF (J"
+typeUrlResponseInfo"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*info2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java6 (EÏ
+ßcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˜ ˜("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC5*onReadCompleted2ñ
+\com.bumptech.glide.integration.cronet.BufferQueue.Builder.getNextBuffer(java.nio.ByteBuffer)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˙ ˙((2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˙ ˙(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?builder@194.32:194.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˙ ˙(2Ì
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)!byteBufferCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˙) ˙(32Ú
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯ ¯(2˜
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯/ ¯(>2Ú
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)!byteBuffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯K ¯(U2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˜ ˜(ø
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯ ¯("
+type
+UrlRequest"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*
+urlRequest2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯ ¯(”
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯/ ¯(>"
+typeUrlResponseInfo"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*urlResponseInfo2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯ ¯(.∑
+≤com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onReadCompleted(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, java.nio.ByteBuffer)!byteBuffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯K ¯(U"
+type
+ByteBuffer"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*
+byteBuffer2Õ
+java.nio.ByteBufferTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¯@ ¯(J≤
+écom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onSucceeded(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛ ˛("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC15*onSucceeded2Ú
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ Ö(#2˛
+Dcom.bumptech.glide.integration.cronet.BufferQueue.coalesceToBuffer()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ& â(62˚
+Acom.bumptech.glide.integration.cronet.BufferQueue.Builder.build()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ â(#2∏
+~com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÇ Ç("2ú
+bcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?executorSupplier@195.37:195.53CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaˇ ˇ(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?priority@188.21:188.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÇ# Ç(+2Œ
+ìcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onSucceeded(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!infoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÜ Ü(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?builder@194.32:194.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ â(2÷
+ñcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onSucceeded(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!request	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛' ˛(.2”
+ìcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onSucceeded(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛F ˛(J2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛ ˛(†
+ñcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onSucceeded(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!request	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛' ˛(."
+type
+UrlRequest"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*request2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛ ˛(&£
+ìcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onSucceeded(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛F ˛(J"
+typeUrlResponseInfo"
+isFinaltrue"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*info2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˛6 ˛(Eé
+≠com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaè è("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC12*onFailed2Ú
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaó ó(#2∏
+~com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaî î("2ú
+bcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?executorSupplier@195.37:195.53CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaë ë(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?priority@188.21:188.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaî# î(+2¯
+Ωcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!urlResponseInfoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaó$ ó(32Í
+Øcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!eCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaó5 ó(62¯
+∏com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê ê(2˝
+Ωcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê5 ê(D2Ô
+Øcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê\ ê(]2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaè è(≈
+∏com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê ê("
+type
+UrlRequest"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*
+urlRequest2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê ê(ÿ
+Ωcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê5 ê(D"
+typeUrlResponseInfo"
+isFinaltrue"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*urlResponseInfo2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê% ê(4º
+Øcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onFailed(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaê\ ê(]"
+typeCronetException"
+isFinaltrue"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*e2⁄
+ org.chromium.net.CronetExceptionTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaêL ê([±
+çcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onCanceled(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC12*
+onCanceled2Ú
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java§ §(#2∏
+~com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.PriorityRunnable.PriorityRunnable(com.bumptech.glide.Priority)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java° °("2ú
+bcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?executorSupplier@195.37:195.53CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaû û(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?priority@188.21:188.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java°# °(+2ÿ
+ùcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onCanceled(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!urlResponseInfoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java• •(%2ÿ
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onCanceled(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù& ù(02›
+ùcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onCanceled(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaùR ù(a2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù(•
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onCanceled(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!urlRequest	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù& ù(0"
+type
+UrlRequest"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*
+urlRequest2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù(%∏
+ùcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onCanceled(org.chromium.net.UrlRequest, org.chromium.net.UrlResponseInfo)!urlResponseInfo	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaùR ù(a"
+typeUrlResponseInfo"
+isFinaltrue"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*urlResponseInfo2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaùB ù(QÍd
+∑com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java™ ™(""0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC27*onRequestFinished2‡
+&java.util.Map.remove(java.lang.Object)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∞ ∞(2ﬁ
+$java.lang.System.currentTimeMillis()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∂ ∂(*2…
+écom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏ ∏(2†
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∫ ∫(2†
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaº º(2≠
+scom.bumptech.glide.integration.cronet.DataLogger.logNetworkData(org.chromium.net.UrlResponseInfo, long, long, long)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿ ¿(!2À
+êcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.put(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaƒ ƒ(2ä
+Pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobs@94.35:94.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∞ ∞(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?glideUrl@187.21:187.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∞ ∞(2˜
+ºcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!infoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥1 ≥(52Ù
+πcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!eCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥7 ≥(82ˇ
+ƒcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!wasCancelledCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥: ≥(F2ä
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?exception@307.16:307.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¥ ¥(#2ˇ
+ƒcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!wasCancelledCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¥0 ¥(<2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?endTimeMs@191.17:191.26CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∂ ∂(2ä
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?isSuccess@308.14:308.23CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏ ∏(2ä
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?exception@307.16:307.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏  ∏()2ˇ
+ƒcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!wasCancelledCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏+ ∏(72˘
+æcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!bufferCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∏9 ∏(?2ä
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?isSuccess@308.14:308.23CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaπ
+ π(2˘
+æcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!bufferCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java∫ ∫(2ä
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?exception@307.16:307.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaº º(2ê
+Vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?dataLogger@96.37:96.47CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaø
+ ø(2ê
+Vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?dataLogger@96.37:96.47CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿ ¿(2˜
+ºcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!infoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿" ¿(&2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?startTime@189.17:189.26CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿( ¿(12ü
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?responseStartTimeMs@192.17:192.36CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿3 ¿(F2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?endTimeMs@191.17:191.26CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿H ¿(Q2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?builder@194.32:194.39CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¬ ¬(2ç
+Scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?jobPool@93.24:93.31CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaƒ ƒ(2¸
+ºcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java´ ´(2˘
+πcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¨" ¨(#2Ñ
+ƒcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!wasCancelled	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≠ ≠(2˛
+æcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!buffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÆ Æ(2ë
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?exception@307.16:307.25DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥ ≥(2ë
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?isSuccess@308.14:308.23DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¥ ¥(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java™ ™(ƒ
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?exception@307.16:307.25VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥ ≥("
+type	Exception"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*	exception2Õ
+java.lang.ExceptionTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥ ≥(2˜
+ºcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!infoCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥1 ≥(52Ù
+πcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!eCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥7 ≥(82ˇ
+ƒcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!wasCancelledCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≥: ≥(F“
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?isSuccess@308.14:308.23VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¥ ¥("
+typeboolean"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*	isSuccess2¡
+booleanTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¥ ¥(2ä
+œcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)?exception@307.16:307.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¥ ¥(#2ˇ
+ƒcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!wasCancelledCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¥0 ¥(<Õ
+ºcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!info	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java´ ´("
+typeUrlResponseInfo"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*info2⁄
+ org.chromium.net.UrlResponseInfoTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java´ ´(«
+πcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¨" ¨(#"
+typeCronetException"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*e2⁄
+ org.chromium.net.CronetExceptionTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¨ ¨(!º
+ƒcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!wasCancelled	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≠ ≠("
+typeboolean"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*wasCancelled2¡
+booleanTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java≠ ≠(ø
+æcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.onRequestFinished(org.chromium.net.UrlResponseInfo, org.chromium.net.CronetException, boolean, java.nio.ByteBuffer)!buffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÆ Æ("
+type
+ByteBuffer"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*buffer2Õ
+java.nio.ByteBufferTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÆ Æ(›4
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java« «("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC14*notifySuccess2œ
+java.util.List.size()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java–' –(+2—
+java.util.List.get(int)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java—& —()2©
+ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestComplete(java.nio.ByteBuffer)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java“ “("2€
+!java.nio.ByteBuffer.position(int)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java”< ”(D2‡
+&java.nio.ByteBuffer.asReadOnlyBuffer()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java”) ”(92ß
+mcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)!bufferCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java» »("2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(&2∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?i@336.15:336.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java–/ –(02≥
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?size@336.22:336.26CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java–3 –(72∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?i@336.15:336.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java–9 –(:2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java— —(%2∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?i@336.15:336.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java—* —(+2∑
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?listener@337.17:337.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java“ “(2∑
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?toNotify@328.17:328.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java“# “(+2∑
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?toNotify@328.17:328.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java” ”(2∑
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?toNotify@328.17:328.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java”  ”((2¨
+mcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)!buffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java«* «(02æ
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?toNotify@328.17:328.25DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java» »(2∑
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?i@336.15:336.16DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(2∫
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?size@336.22:336.26DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(2æ
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?listener@337.17:337.25DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java— —(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java« «(®
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?toNotify@328.17:328.25VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java» »("
+type
+ByteBuffer"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*toNotify2Õ
+java.nio.ByteBufferTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java» »(2ß
+mcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)!bufferCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java» »("Ÿ
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?i@336.15:336.16VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –("
+typeint"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*i2Ω
+intTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(…
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?size@336.22:336.26VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –("
+typeint"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*size2Ω
+intTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(2œ
+java.util.List.size()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java–' –(+2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java– –(&–
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?listener@337.17:337.25VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java— —("
+typeListener"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*listener2Ç
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java— —(2—
+java.util.List.get(int)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java—& —()2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java— —(%2∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)?i@336.15:336.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java—* —(+Ì
+mcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifySuccess(java.nio.ByteBuffer)!buffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java«* «(0"
+type
+ByteBuffer"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*buffer2Õ
+java.nio.ByteBufferTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java« «()±'
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java◊ ◊("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC12*notifyFailure2œ
+java.util.List.size()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ' ﬂ(+2—
+java.util.List.get(int)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡& ‡()2ß
+mcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestFailed(java.lang.Exception)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java· ·( 2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ(&2∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?i@351.15:351.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ/ ﬂ(02≥
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?size@351.22:351.26CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ3 ﬂ(72∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?i@351.15:351.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ9 ﬂ(:2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡ ‡(%2∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?i@351.15:351.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡* ‡(+2∑
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?listener@352.17:352.25CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java· ·(2™
+pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)!exceptionCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java·! ·(*2Ø
+pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)!exception	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java◊) ◊(22∑
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?i@351.15:351.16DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ(2∫
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?size@351.22:351.26DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ(2æ
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?listener@352.17:352.25DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡ ‡(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java◊ ◊(Ÿ
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?i@351.15:351.16VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ("
+typeint"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*i2Ω
+intTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ(…
+ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?size@351.22:351.26VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ("
+typeint"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*size2Ω
+intTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ(2œ
+java.util.List.size()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ' ﬂ(+2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaﬂ ﬂ(&–
+}com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?listener@352.17:352.25VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡ ‡("
+typeListener"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*listener2Ç
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡ ‡(2—
+java.util.List.get(int)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡& ‡()2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡ ‡(%2∞
+vcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)?i@351.15:351.16CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java‡* ‡(+Ú
+pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.notifyFailure(java.lang.Exception)!exception	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java◊) ◊(2"
+type	Exception"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*	exception2Õ
+java.lang.ExceptionTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java◊ ◊((Ä0
+écom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÂ Â("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC16*maybeLogResult2ﬁ
+$java.lang.System.currentTimeMillis()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÓ Ó(+2—
+java.nio.Buffer.limit()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java (2”
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!isSuccessCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÁ
+ Á(2â
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÁ& Á()2â
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÈ È(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?glideUrl@187.21:187.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÏ Ï(2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?startTime@189.17:189.26CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÓ0 Ó(92–
+ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!bufferCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java (2”
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!isSuccessCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÚ Ú(2â
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÚ. Ú(12÷
+õcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!wasCancelledCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÚB Ú(N2â
+Ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer?TAG@50.30:50.33CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÛ Û(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?glideUrl@187.21:187.29CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÛ- Û(52”
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!exceptionCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÛ7 Û(@2ÿ
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!isSuccess	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ Ê(2ÿ
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!exception	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ% Ê(.2€
+õcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!wasCancelled	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ8 Ê(D2’
+ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!buffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊQ Ê(W2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÂ Â(ç
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!isSuccess	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ Ê("
+typeboolean"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*	isSuccess2¡
+booleanTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ Ê(õ
+òcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!exception	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ% Ê(."
+type	Exception"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*	exception2Õ
+java.lang.ExceptionTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ Ê($ì
+õcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!wasCancelled	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ8 Ê(D"
+typeboolean"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*wasCancelled2¡
+booleanTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊ0 Ê(7ñ
+ïcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.maybeLogResult(boolean, java.lang.Exception, boolean, java.nio.ByteBuffer)!buffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊQ Ê(W"
+type
+ByteBuffer"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*buffer2Õ
+java.nio.ByteBufferTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÊF Ê(Pö
+Tcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.clearListeners()METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˜ ˜("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC6*clearListeners2–
+java.util.List.clear()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˘ ˘(2ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˘ ˘(2ì
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˙ ˙(2ó
+]com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?isCancelled@193.29:193.40CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˚ ˚(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java˜ ˜(Ï
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?listeners@185.33:185.42VALUEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaπ! π(*"
+isFinaltrue"
+typeList<Listener>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*	listeners2»
+java.util.ListTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaπ π(2ã
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.ListenerTYPE_ARGUMENTØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaπ π(2‹
+"java.util.ArrayList.ArrayList(int)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaπ1 π(<ì
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?glideUrl@187.21:187.29VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaª ª("
+isFinalfalse"
+typeGlideUrl"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*glideUrl2‡
+&com.bumptech.glide.load.model.GlideUrlTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaª ª(à
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?priority@188.21:188.29VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaº º("
+isFinalfalse"
+typePriority"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*priority2’
+com.bumptech.glide.PriorityTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaº º(Ô
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?startTime@189.17:189.26VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaΩ Ω("
+isFinalfalse"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*	startTime2æ
+longTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaΩ Ω(à
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?request@190.23:190.30VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaæ æ("
+isFinalfalse"
+type
+UrlRequest"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*request2’
+org.chromium.net.UrlRequestTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaæ æ(Ô
+[com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?endTimeMs@191.17:191.26VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaø ø("
+isFinalfalse"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*	endTimeMs2æ
+longTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaø ø(É
+ecom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?responseStartTimeMs@192.17:192.36VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿ ¿($"
+isFinalfalse"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*responseStartTimeMs2æ
+longTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¿ ¿(˘
+]com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?isCancelled@193.29:193.40VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¡ ¡(("
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*isCancelled2¡
+booleanTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¡ ¡(Ø
+Ycom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?builder@194.32:194.39VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¬  ¬('"
+isFinalfalse"
+typeBufferQueue.Builder"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*builder2Û
+9com.bumptech.glide.integration.cronet.BufferQueue.BuilderTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java¬ ¬(Ö
+bcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job?executorSupplier@195.37:195.53VALUEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java√% √(5"
+isFinaltrue"
+typeSupplier<Executor>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*executorSupplier2Ÿ
+com.google.common.base.SupplierTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java√ √(2‡
+java.util.concurrent.ExecutorTYPE_ARGUMENTØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.java√ √(#Ê
+Gcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPoolCLASSØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÄ Ä("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"
+accessprivate"	
+LOC26*JobPool2—
+ècom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.JobPool(com.google.common.base.Supplier<java.util.concurrent.Executor>)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ Ö(2¥
+scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ â(2“
+êcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.put(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaí í(2§
+ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?MAX_POOL_SIZE@385.29:385.42DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÅ Å(*2õ
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?pool@386.34:386.38DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÇ" Ç(&2ß
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?executorSupplier@387.37:387.53DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÉ% É(5˚
+ècom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.JobPool(com.google.common.base.Supplier<java.util.concurrent.Executor>)CONSTRUCTORØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ Ö("0
+package%com.bumptech.glide.integration.cronet*JobPool2€
+†com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.JobPool(com.google.common.base.Supplier<java.util.concurrent.Executor>)!executorSupplierCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÜ Ü(.2†
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?executorSupplier@387.37:387.53CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÜ Ü(2‡
+†com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.JobPool(com.google.common.base.Supplier<java.util.concurrent.Executor>)!executorSupplier	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ& Ö(62à
+Gcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPoolRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ Ö(¢
+†com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.JobPool(com.google.common.base.Supplier<java.util.concurrent.Executor>)!executorSupplier	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ& Ö(6"
+typeSupplier<Executor>"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*executorSupplier2Ÿ
+com.google.common.base.SupplierTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ Ö(2‡
+java.util.concurrent.ExecutorTYPE_ARGUMENTØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÖ Ö($°"
+scom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ â("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeJob"
+accesspublic"
+LOC7*get2’
+java.util.ArrayDeque.poll()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä ä(2™
+pcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.init(com.bumptech.glide.load.model.GlideUrl)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaé
+ é(2¬
+ácom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.Job(com.google.common.base.Supplier<java.util.concurrent.Executor>)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaå å(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?pool@386.34:386.38CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä ä(2¿
+Öcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)?job@394.10:394.13CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaã
+ ã(2¿
+Öcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)?job@394.10:394.13CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaå å(2†
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?executorSupplier@387.37:387.53CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaå å(&2¿
+Öcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)?job@394.10:394.13CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaé é(	2∂
+|com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)!glideUrlCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaé é(2¿
+Öcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)?job@394.10:394.13CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaè è(2ª
+|com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)!glideUrl	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ) â(12«
+Öcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)?job@394.10:394.13DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä
+ ä(2Ñ
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ â(ö	
+Öcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)?job@394.10:394.13VARIABLEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä
+ ä("
+typeJob"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*job2˝
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä ä(	2’
+java.util.ArrayDeque.poll()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä ä(2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?pool@386.34:386.38CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaä ä(è
+|com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.get(com.bumptech.glide.load.model.GlideUrl)!glideUrl	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ) â(1"
+typeGlideUrl"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*glideUrl2‡
+&com.bumptech.glide.load.model.GlideUrlTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaâ  â((º
+êcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.put(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaí í("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC7*put2é
+Tcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job.clearListeners()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaì
+ ì(2’
+java.util.ArrayDeque.size()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaï ï(2◊
+java.util.ArrayDeque.offer(E)CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javañ ñ(2œ
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.put(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job)!jobCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaì ì(	2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?pool@386.34:386.38CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaï ï(2ù
+ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?MAX_POOL_SIZE@385.29:385.42CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaï ï('2î
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?pool@386.34:386.38CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javañ
+ ñ(2œ
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.put(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job)!jobCALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javañ ñ(2‘
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.put(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job)!job	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaí í(2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaí í(ª
+îcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool.put(com.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Job)!job	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaí í("
+typeJob"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*job2˝
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaí í(Ù
+ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?MAX_POOL_SIZE@385.29:385.42VALUEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÅ Å(*"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*MAX_POOL_SIZE2Ω
+intTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÅ Å(Á
+Zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?pool@386.34:386.38VALUEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÇ" Ç(&"
+isFinaltrue"
+typeArrayDeque<Job>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*pool2Œ
+java.util.ArrayDequeTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÇ Ç(2Ü
+Ccom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobTYPE_ARGUMENTØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÇ Ç( 2€
+!java.util.ArrayDeque.ArrayDeque()CALLØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÇ- Ç(9â
+fcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.JobPool?executorSupplier@387.37:387.53VALUEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÉ% É(5"
+isFinaltrue"
+typeSupplier<Executor>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"0
+package%com.bumptech.glide.integration.cronet*executorSupplier2Ÿ
+com.google.common.base.SupplierTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÉ É(2‡
+java.util.concurrent.ExecutorTYPE_ARGUMENTØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaÉ É(#â
+Hcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener	INTERFACEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaú ú("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+LOC4*Listener2∞
+ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestComplete(java.nio.ByteBuffer)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù	 ù(2Æ
+mcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestFailed(java.lang.Exception)DECLARATIONØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü	 ü(·
+ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestComplete(java.nio.ByteBuffer)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù	 ù("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC0*onRequestComplete2π
+zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestComplete(java.nio.ByteBuffer)!byteBuffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù& ù(02≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù(˛
+zcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestComplete(java.nio.ByteBuffer)!byteBuffer	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù& ù(0"
+type
+ByteBuffer"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*
+byteBuffer2Õ
+java.nio.ByteBufferTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaù ù(%“
+mcom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestFailed(java.lang.Exception)METHODØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü	 ü("0
+package%com.bumptech.glide.integration.cronet"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC0*onRequestFailed2Æ
+ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestFailed(java.lang.Exception)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü- ü(.2≈
+voidRETURN_TYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü ü(È
+ocom.bumptech.glide.integration.cronet.ChromiumRequestSerializer.Listener.onRequestFailed(java.lang.Exception)!e	PARAMETERØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü- ü(."
+type	Exception"
+isFinalfalse"0
+package%com.bumptech.glide.integration.cronet"
+isLocaltrue*e2Õ
+java.lang.ExceptionTYPEØ
+¢F:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\cronet\src\main\java\com\bumptech\glide\integration\cronet\ChromiumRequestSerializer.javaü# ü(,

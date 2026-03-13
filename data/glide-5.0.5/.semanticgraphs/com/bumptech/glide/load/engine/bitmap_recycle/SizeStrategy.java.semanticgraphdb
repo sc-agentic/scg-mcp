@@ -1,0 +1,998 @@
+
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java‘
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaFILEï
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java"
+
+LOC164*íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÉ"
+:com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategyCLASSù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC147*SizeStrategy2Ü
+Wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2ó
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java% %(2ˆ
+Gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java< <(2í
+ccom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaE E($2å
+]com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(android.graphics.Bitmap)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaO O(2ù
+ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT T(2ä
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getSize(android.graphics.Bitmap)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaZ Z(2Ù
+Ecom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.toString()DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java_ _(2í
+ccom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javac c('2˛
+Ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javai i(2á
+Xcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?MAX_SIZE_MULTIPLE@19.27:19.44DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (,2˝
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2Ä
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java. (82Å
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java/ (:2Á
+=com.bumptech.glide.load.engine.bitmap_recycle.LruPoolStrategyEXTENDù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java$ (3ò5
+Wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*put2Ô
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (%2Û
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2
+Hcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.put(K, V)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2À
+#java.util.Map.get(java.lang.Object)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java" (%2ø
+java.util.Map.put(K, V)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java   (2Ü
+^com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)!bitmapCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& (,2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?size@26.8:26.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java  ($2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?key@27.14:27.17CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2Ü
+^com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)!bitmapCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (!2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?key@27.14:27.17CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& ()2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java   (2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?key@27.14:27.17CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java   (2ì
+kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?current@31.12:31.19CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java   (%2ì
+kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?current@31.12:31.19CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java 4  (;2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java* (.2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java   (2Ü
+Zcom.bumptech.glide.load.engine.bitmap_recycle.LruPoolStrategy.put(android.graphics.Bitmap)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2ã
+^com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2ñ
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?size@26.8:26.12DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2ñ
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?key@27.14:27.17DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2ö
+kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?current@31.12:31.19DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2≥
+voidRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java	 (¨
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?size@26.8:26.12VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2Ô
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (%2Ü
+^com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)!bitmapCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& (,Ë
+
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?key@27.14:27.17VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("
+typeKey"
+isFinaltrue"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*key2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java
+ (2Û
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?size@26.8:26.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java  ($£
+kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?current@31.12:31.19VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*current2π
+java.lang.IntegerTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2À
+#java.util.Map.get(java.lang.Object)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java" (%2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (!2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)?key@27.14:27.17CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& ()2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java* (.¬
+^com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.put(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("
+typeBitmap"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*bitmap2ø
+android.graphics.BitmapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (ü`
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java% %("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspublic"	
+LOC21*get2Ä
+Xcom.bumptech.glide.util.Util.getBitmapByteSize(int, int, android.graphics.Bitmap.Config)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& &(+2Û
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(2Ã
+$java.util.NavigableMap.ceilingKey(K)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java)' )(12Í
+Bcom.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool.offer(T)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java+ +(2Û
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java, ,(2Ì
+Ecom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.get(K)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1% 1((2ã
+ccom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java4 4(2ñ
+ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!widthCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java&, &(12ó
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!heightCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java&3 &(92ó
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!configCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java&; &(A2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(2°
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java) )(&2°
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java)2 )(62™
+Åcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?possibleSize@41.12:41.24CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java* *(2™
+Åcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?possibleSize@41.12:41.24CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java*  *(,2°
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java*0 *(42™
+Åcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?possibleSize@41.12:41.24CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java*8 *(D2°
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java*H *(L2Ä
+Xcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?MAX_SIZE_MULTIPLE@19.27:19.44CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java*O *(`2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java+ +(2ü
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?key@39.8:39.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java+ +(2ü
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?key@39.8:39.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java, ,(	2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java, ,(2™
+Åcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?possibleSize@41.12:41.24CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java, ,($2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1 1($2ü
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?key@39.8:39.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1) 1(,2£
+{com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?result@49.17:49.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java2 2(2£
+{com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?result@49.17:49.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java3 3(2ñ
+ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!widthCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java3 3(2ó
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!heightCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java3  3(&2ó
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!configCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java3( 3(.2™
+Åcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?possibleSize@41.12:41.24CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java4 4((2£
+{com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?result@49.17:49.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java7 7(2ó
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruPoolStrategy.get(int, int, android.graphics.Bitmap.Config)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java% %(2õ
+ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!width	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java% %(2ú
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!height	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java%# %()2ú
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!config	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java%9 %(?2®
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& &(2¶
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?key@39.8:39.11DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(2±
+Åcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?possibleSize@41.12:41.24DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java) )(2™
+{com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?result@49.17:49.23DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1 1(2∆
+android.graphics.BitmapRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java%	 %(è
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& &("
+typeint"
+isFinaltrue"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java&
+ &(2Ä
+Xcom.bumptech.glide.util.Util.getBitmapByteSize(int, int, android.graphics.Bitmap.Config)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& &(+2ñ
+ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!widthCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java&, &(12ó
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!heightCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java&3 &(92ó
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!configCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java&; &(Aé
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?key@39.8:39.11VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '("
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*key2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(2Û
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(2°
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java' '(÷
+
+Åcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?possibleSize@41.12:41.24VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java) )("
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*possibleSize2π
+java.lang.IntegerTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java) )(2Ã
+$java.util.NavigableMap.ceilingKey(K)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java)' )(12˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java) )(&2°
+ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?size@38.14:38.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java)2 )(6Ë
+
+{com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?result@49.17:49.23VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1 1("
+typeBitmap"
+isFinaltrue"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*result2ø
+android.graphics.BitmapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1
+ 1(2Ì
+Ecom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.get(K)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1% 1((2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1 1($2ü
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)?key@39.8:39.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java1) 1(,∫
+ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!width	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java% %("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*width2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java% %(º
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!height	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java%# %()"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*height2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java% %("·
+ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.get(int, int, android.graphics.Bitmap.Config)!config	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java%9 %(?"
+typeBitmap.Config"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*config2∆
+android.graphics.Bitmap.ConfigTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java%2 %(8ã
+Gcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java< <("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspublic"
+LOC9*
+removeLast2Û
+Kcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.removeLast()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java=  =(*2Ô
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java?# ?(42ã
+ccom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java@ @(2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java= =(2É
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removed@61.11:61.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java> >(2É
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removed@61.11:61.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java?5 ?(<2á
+_com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removedSize@63.16:63.27CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java@ @('2É
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removed@61.11:61.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaB B(2ˆ
+Jcom.bumptech.glide.load.engine.bitmap_recycle.LruPoolStrategy.removeLast()OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java< <(2ä
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removed@61.11:61.18DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java= =(2é
+_com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removedSize@63.16:63.27DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java? ?(2∆
+android.graphics.BitmapRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java<	 <(±
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removed@61.11:61.18VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java= =("
+typeBitmap"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*removed2ø
+android.graphics.BitmapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java= =(
+2Û
+Kcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.removeLast()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java=  =(*2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java= =(§
+_com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removedSize@63.16:63.27VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java? ?("
+typeint"
+isFinaltrue"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*removedSize2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java? ?(2Ô
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java?# ?(42É
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.removeLast()?removed@61.11:61.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java?5 ?(<è
+ccom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaE E($"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC7*decrementBitmapOfSize2À
+#java.util.Map.get(java.lang.Object)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF" F(%2Œ
+&java.util.Map.remove(java.lang.Object)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaH H(2ø
+java.util.Map.put(K, V)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaJ J(2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF F(!2ê
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF& F(*2ü
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)?current@70.12:70.19CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaG G(2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaH H(2ê
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaH H(2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaJ J(2ê
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaJ J(2ü
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)?current@70.12:70.19CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaJ J(#2ï
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaE- E(12¶
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)?current@70.12:70.19DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF F(2≥
+voidRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaE
+ E(¥
+
+wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)?current@70.12:70.19VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF F("
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*current2π
+java.lang.IntegerTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF F(2À
+#java.util.Map.get(java.lang.Object)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF" F(%2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF F(!2ê
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaF& F(*≈
+hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.decrementBitmapOfSize(java.lang.Integer)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaE- E(1"
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2π
+java.lang.IntegerTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaE% E(,¥
+]com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(android.graphics.Bitmap)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaO O("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC3*	logBitmap2ã
+ccom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaP P(2å
+dcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(android.graphics.Bitmap)!bitmapCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaP P(!2å
+`com.bumptech.glide.load.engine.bitmap_recycle.LruPoolStrategy.logBitmap(android.graphics.Bitmap)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaO O(2ë
+dcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaO! O('2ø
+java.lang.StringRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaO	 O(»
+dcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaO! O('"
+typeBitmap"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*bitmap2ø
+android.graphics.BitmapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaO O( »
+ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT T("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC4*	logBitmap2Ä
+Xcom.bumptech.glide.util.Util.getBitmapByteSize(int, int, android.graphics.Bitmap.Config)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU U(%2˜
+Ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaV V(2ú
+tcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!widthCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU& U(+2ù
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!heightCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU- U(32ù
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!configCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU5 U(;2¶
+~com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)?size@85.8:85.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaV V(2ù
+qcom.bumptech.glide.load.engine.bitmap_recycle.LruPoolStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT T(2°
+tcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!width	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT T(#2¢
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!height	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT) T(/2¢
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!config	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT? T(E2≠
+~com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)?size@85.8:85.12DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU U(2ø
+java.lang.StringRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT	 T(™
+~com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)?size@85.8:85.12VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU U("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU U(2Ä
+Xcom.bumptech.glide.util.Util.getBitmapByteSize(int, int, android.graphics.Bitmap.Config)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU U(%2ú
+tcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!widthCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU& U(+2ù
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!heightCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU- U(32ù
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!configCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaU5 U(;¿
+tcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!width	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT T(#"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*width2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT T(¬
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!height	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT) T(/"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*height2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT% T((Á
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.logBitmap(int, int, android.graphics.Bitmap.Config)!config	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT? T(E"
+typeBitmap.Config"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*config2∆
+android.graphics.Bitmap.ConfigTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaT8 T(>˛
+[com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getSize(android.graphics.Bitmap)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaZ Z("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC3*getSize2Ô
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java[ [(!2ä
+bcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getSize(android.graphics.Bitmap)!bitmapCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java[" [((2ä
+^com.bumptech.glide.load.engine.bitmap_recycle.LruPoolStrategy.getSize(android.graphics.Bitmap)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaZ Z(2è
+bcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getSize(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaZ Z("2≤
+intRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaZ	 Z(∆
+bcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getSize(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaZ Z(""
+typeBitmap"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*bitmap2ø
+android.graphics.BitmapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaZ Z(‘
+Ecom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.toString()METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java_ _("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC3*toString2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java`! `(+2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java`G `(R2ø
+java.lang.StringRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java_	 _(‚
+ccom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javac c('"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeString"
+accessprivate"
+LOC3*getBitmapString2Ô
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javad d(%2˜
+Ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javae e(2í
+jcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)!bitmapCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javad& d(,2ù
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)?size@100.8:100.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javae e(2ó
+jcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javac/ c(52§
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)?size@100.8:100.12DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javad d(2ø
+java.lang.StringRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javac c(∆
+ucom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)?size@100.8:100.12VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javad d("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javad d(2Ô
+Gcom.bumptech.glide.util.Util.getBitmapByteSize(android.graphics.Bitmap)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javad d(%2í
+jcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)!bitmapCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javad& d(,Œ
+jcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(android.graphics.Bitmap)!bitmap	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javac/ c(5"
+typeBitmap"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*bitmap2ø
+android.graphics.BitmapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javac( c(.˜
+Ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javai i("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStatictrue"
+
+isAbstractfalse"
+typeString"
+accesspackage_private"
+LOC3*getBitmapString2¸
+Tcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaj j(2Å
+Tcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javai$ i((2ø
+java.lang.StringRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javai	 i(ü
+Tcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javai$ i(("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javai  i(#—
+Xcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?MAX_SIZE_MULTIPLE@19.27:19.44VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (,"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*MAX_SIZE_MULTIPLE2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (¯
+Ncom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?keyPool@20.24:20.31VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("
+isFinaltrue"
+typeKeyPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*keyPool2Í
+Bcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPoolTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2Ù
+Lcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.KeyPool()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& (-“
+
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?groupedMap@21.46:21.56VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java. (8"
+isFinaltrue"%
+typeGroupedLinkedMap<Key, Bitmap>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*
+groupedMap2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ( 2Ô
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java! ($2»
+android.graphics.BitmapTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& (,2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.GroupedLinkedMap()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java? (Q˛	
+Rcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy?sortedSizes@22.47:22.58VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java/ (:"
+isFinaltrue"&
+typeNavigableMap<Integer, Integer>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*sortedSizes2æ
+java.util.NavigableMapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2¬
+java.lang.IntegerTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ($2¬
+java.lang.IntegerTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java& (-2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.PrettyPrintTreeMap.PrettyPrintTreeMap()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaA (UÍ
+
+Bcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPoolCLASSù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javao o("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC13*KeyPool2˙
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaq q(2˙
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.create()DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javax x(2„
+9com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPoolEXTENDù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javao o(*2ˆ
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyEXTEND_TYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javao+ o(.á
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaq q("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeKey"
+accesspublic"
+LOC4*get2Á
+?com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool.get()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javar r(2
+Hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.init(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javas s(2à
+`com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)?result@114.10:114.16CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javas s(2¯
+Pcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javas s(2à
+`com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)?result@114.10:114.16CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javat t(2˝
+Pcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaq q(2è
+`com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)?result@114.10:114.16DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javar
+ r(2Ì
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaq q(—
+`com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)?result@114.10:114.16VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javar
+ r("
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*result2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javar r(	2Á
+?com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool.get()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javar r(õ
+Pcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.get(int)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaq q("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaq q(ø
+Kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool.create()METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javax x("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeKey"
+access	protected"
+LOC3*create2Ø
+Ücom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javay y(2Ì
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javax x(©
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyCLASSù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java~ ~("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC38*Key2∏
+Ücom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÇ Ç(2˘
+Hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.init(int)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÜ Ü(2à
+Wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaã ã(2˙
+Icom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.hashCode()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaî î(2˙
+Icom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.toString()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaõ õ(2˜
+Fcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.offer()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java† †(2Ä
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?pool@127.26:127.30DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (2Ç
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÄ Ä(2‡
+6com.bumptech.glide.load.engine.bitmap_recycle.PoolableEXTENDù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java~$ ~(,ﬁ
+Ücom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool)CONSTRUCTORü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÇ Ç("8
+package-com.bumptech.glide.load.engine.bitmap_recycle*Key2∂
+ãcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool)!poolCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÉ É(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?pool@127.26:127.30CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÉ É(2ª
+ãcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool)!pool	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÇ Ç(2Ô
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÇ Ç(û
+ãcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPool)!pool	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÇ Ç("
+typeKeyPool"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*pool2Ï
+Bcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPoolTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÇ Ç(«
+
+Hcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.init(int)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÜ Ü("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*init2˜
+Mcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.init(int)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaá á(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaá á(2¸
+Mcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.init(int)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÜ Ü(2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÜ Ü(ú
+Mcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.init(int)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÜ Ü("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÜ Ü(±
+Wcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaã ã("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC7*equals2É
+Ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)!oCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaå
+ å(2É
+Ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)!oCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaç ç(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaé é(2ï
+kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)?other@141.12:141.17CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaé é(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaé é(!2à
+Ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)!o	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaã! ã("2ú
+kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)?other@141.12:141.17DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaç ç(2∏
+booleanRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaã ã(˚
+kcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)?other@141.12:141.17VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaç ç("
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*other2Ë
+>com.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaç ç(2É
+Ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)!oCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaç ç(µ
+Ycom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.equals(java.lang.Object)!o	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaã! ã(""
+typeObject"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*o2∫
+java.lang.ObjectTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaã ã( —
+Icom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.hashCode()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaî î("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC3*hashCode2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaï ï(2¥
+intRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaî î(›
+Icom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.toString()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaõ õ("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC4*toString2˘
+Ocom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.getBitmapString(int)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaú ú(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaú ú(!2¡
+java.lang.StringRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaõ õ(´
+
+Fcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key.offer()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java† †("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*offer2Ï
+Bcom.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool.offer(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java° °(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?pool@127.26:127.30CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java° °(
+2Ï
+>com.bumptech.glide.load.engine.bitmap_recycle.Poolable.offer()OVERRIDEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java† †(2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java† †(Å
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?pool@127.26:127.30VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java ("
+isFinaltrue"
+typeKeyPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*pool2Í
+Bcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.KeyPoolTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.java (Œ
+Qcom.bumptech.glide.load.engine.bitmap_recycle.SizeStrategy.Key?size@128.19:128.23VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÄ Ä("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accesspackage_private"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*size2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\SizeStrategy.javaÄ Ä(

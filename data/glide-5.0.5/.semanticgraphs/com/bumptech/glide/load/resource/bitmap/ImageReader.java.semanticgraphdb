@@ -1,0 +1,1472 @@
+
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaø
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaFILEé
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java"
+
+LOC293*ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaè
+3com.bumptech.glide.load.resource.bitmap.ImageReader	INTERFACEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java
+ ("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC264*ImageReader2ê
+hcom.bumptech.glide.load.resource.bitmap.ImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java 	  (2Í
+Bcom.bumptech.glide.load.resource.bitmap.ImageReader.getImageType()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java" "(*2Ò
+Icom.bumptech.glide.load.resource.bitmap.ImageReader.getImageOrientation()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java$ $(2Ë
+@com.bumptech.glide.load.resource.bitmap.ImageReader.hasJpegMpf()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java&
+ &(2
+Hcom.bumptech.glide.load.resource.bitmap.ImageReader.stopGrowingBuffers()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java( ((2Î
+Ccom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReaderDECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java* *(2Ê
+>com.bumptech.glide.load.resource.bitmap.ImageReader.FileReaderDECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaO O(2Ó
+Dcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReaderDECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java§ §(2Ù
+Jcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReaderDECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java– –($2˝
+Scom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReaderDECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˙ ˙(-ó
+hcom.bumptech.glide.load.resource.bitmap.ImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java 	  ("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspackage_private"
+LOC1*decodeBitmap2ñ
+pcom.bumptech.glide.load.resource.bitmap.ImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java ,  (32ø
+android.graphics.BitmapRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java   (ﬂ
+pcom.bumptech.glide.load.resource.bitmap.ImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java ,  (3"
+typeBitmapFactory.Options"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*options2«
+&android.graphics.BitmapFactory.OptionsTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java $  (+â
+Bcom.bumptech.glide.load.resource.bitmap.ImageReader.getImageType()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java" "(*"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"#
+typeImageHeaderParser.ImageType"
+accesspackage_private"
+LOC0*getImageType2€
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java" "(œ
+Icom.bumptech.glide.load.resource.bitmap.ImageReader.getImageOrientation()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java$ $("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC0*getImageOrientation2´
+intRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java$ $(≈
+@com.bumptech.glide.load.resource.bitmap.ImageReader.hasJpegMpf()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java&
+ &("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspackage_private"
+LOC0*
+hasJpegMpf2Ø
+booleanRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java& &(	œ
+Hcom.bumptech.glide.load.resource.bitmap.ImageReader.stopGrowingBuffers()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java( (("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC0*stopGrowingBuffers2¨
+voidRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java( ((ã
+Ccom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReaderCLASSñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java* *("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC35*ByteArrayReader2¯
+œcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0 0(2†
+xcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.decodeBitmap(android.graphics.BitmapFactory.Options)DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java8 8(2˙
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.getImageType()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java= =(!2Å
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.getImageOrientation()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaB B("2¯
+Pcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.hasJpegMpf()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaG G(2Ä
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.stopGrowingBuffers()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaL L("2˝
+Ucom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?bytes@44.25:44.30DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java, ,(2ˇ
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?parsers@45.42:45.49DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java-* -(12Ö
+]com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?byteArrayPool@46.28:46.41DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java. .()2÷
+3com.bumptech.glide.load.resource.bitmap.ImageReaderEXTENDñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java*) *(4ü
+œcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CONSTRUCTORñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0 0("2
+package'com.bumptech.glide.load.resource.bitmap*ByteArrayReader2˜
+’com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!bytesCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java1 1(2˘
+◊com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java2 2(2ˇ
+›com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java3 3((2ˆ
+Ucom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?bytes@44.25:44.30CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java1 1(2¯
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?parsers@45.42:45.49CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java2 2(2˛
+]com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?byteArrayPool@46.28:46.41CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java3 3(2¸
+’com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!bytes	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0 0( 2˛
+◊com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0: 0(A2Ñ
+›com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0M 0(Z2Î
+Ccom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReaderRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0 0(î
+’com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!bytes	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0 0( "
+typebyte[]"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*bytes2ß
+byte[]TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0 0(á
+◊com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0: 0(A"
+typeList<ImageHeaderParser>"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*parsers2Ø
+java.util.ListTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0" 0(&2”
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0' 0(8ÿ
+›com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.ByteArrayReader(byte[], java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0M 0(Z"
+type	ArrayPool"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*byteArrayPool2ÿ
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java0C 0(L°
+xcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.decodeBitmap(android.graphics.BitmapFactory.Options)METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java8 8("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspublic"
+LOC4*decodeBitmap2—
+Øcom.bumptech.glide.load.resource.bitmap.GlideBitmapFactory.decodeByteArray(byte[], android.graphics.BitmapFactory.Options, com.bumptech.glide.load.resource.bitmap.ImageReader)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java9  9(/2ˆ
+Ucom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?bytes@44.25:44.30CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java90 9(52¢
+Äcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.decodeBitmap(android.graphics.BitmapFactory.Options)!optionsCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java97 9(>2ß
+Äcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java8' 8(.2ø
+android.graphics.BitmapRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java8 8(‚
+Äcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java8' 8(."
+typeOptions"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*options2«
+&android.graphics.BitmapFactory.OptionsTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java8 8(&·
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.getImageType()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java= =(!"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type	ImageType"
+accesspublic"
+LOC3*getImageType2®
+Ücom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java>$ >(+2¡
+ java.nio.ByteBuffer.wrap(byte[])CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java>@ >(D2¯
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?parsers@45.42:45.49CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java>, >(32ˆ
+Ucom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?bytes@44.25:44.30CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java>E >(J2€
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java= =(Î
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.getImageOrientation()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaB B(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC3*getImageOrientation2Ë
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaC$ C(22¡
+ java.nio.ByteBuffer.wrap(byte[])CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaCG C(K2¯
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?parsers@45.42:45.49CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaC3 C(:2ˆ
+Ucom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?bytes@44.25:44.30CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaCL C(Q2˛
+]com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?byteArrayPool@46.28:46.41CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaCT C(a2Ó
+Icom.bumptech.glide.load.resource.bitmap.ImageReader.getImageOrientation()OVERRIDEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaB B("2´
+intRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaB B(‘
+Pcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.hasJpegMpf()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaG G("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC3*
+hasJpegMpf2‰
+¬com.bumptech.glide.load.ImageHeaderParserUtils.hasJpegMpf(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaH$ H(.2¡
+ java.nio.ByteBuffer.wrap(byte[])CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaHC H(G2¯
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?parsers@45.42:45.49CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaH/ H(62ˆ
+Ucom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?bytes@44.25:44.30CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaHH H(M2˛
+]com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?byteArrayPool@46.28:46.41CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaHP H(]2Â
+@com.bumptech.glide.load.resource.bitmap.ImageReader.hasJpegMpf()OVERRIDEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaG G(2Ø
+booleanRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaG G(∆
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader.stopGrowingBuffers()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaL L(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*stopGrowingBuffers2Ì
+Hcom.bumptech.glide.load.resource.bitmap.ImageReader.stopGrowingBuffers()OVERRIDEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaL L("2¨
+voidRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaL L(≥
+Ucom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?bytes@44.25:44.30VALUEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java, ,("
+isFinaltrue"
+typebyte"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*bytes2ß
+byte[]TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java, ,(®
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?parsers@45.42:45.49VALUEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java-* -(1"
+isFinaltrue"
+typeList<ImageHeaderParser>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*parsers2Ø
+java.util.ListTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java- -(2”
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java- -((˘
+]com.bumptech.glide.load.resource.bitmap.ImageReader.ByteArrayReader?byteArrayPool@46.28:46.41VALUEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java. .()"
+isFinaltrue"
+type	ArrayPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*byteArrayPool2ÿ
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java. .(ÿ
+>com.bumptech.glide.load.resource.bitmap.ImageReader.FileReaderCLASSñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaO O("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC83*
+FileReader2Ù
+Àcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U(2õ
+scom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java] ](2ı
+Mcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javan n(!2¸
+Tcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java ("2ı
+Kcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaê ê(2˝
+Scom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.stopGrowingBuffers()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °("2˜
+Ocom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?file@81.23:81.27DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaQ Q(2˙
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?parsers@82.42:82.49DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaR* R(12Ä
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaS S()2÷
+3com.bumptech.glide.load.resource.bitmap.ImageReaderEXTENDñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaO$ O(/Á
+Àcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CONSTRUCTORñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U("2
+package'com.bumptech.glide.load.resource.bitmap*
+FileReader2Ú
+–com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!fileCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaV V(2ı
+”com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaW W(2˚
+Ÿcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaX X((2
+Ocom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?file@81.23:81.27CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaV V(2Û
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?parsers@82.42:82.49CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaW W(2˘
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaX X(2˜
+–com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!file	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U(2˙
+”com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU2 U(92Ä
+Ÿcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaUE U(R2Ê
+>com.bumptech.glide.load.resource.bitmap.ImageReader.FileReaderRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U(í
+–com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!file	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U("
+typeFile"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*file2≠
+java.io.FileTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U(É
+”com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU2 U(9"
+typeList<ImageHeaderParser>"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*parsers2Ø
+java.util.ListTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U(2”
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU U(0‘
+Ÿcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.FileReader(java.io.File, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaUE U(R"
+type	ArrayPool"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*byteArrayPool2ÿ
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaU; U(D¯#
+scom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java] ]("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspublic"	
+LOC16*decodeBitmap2€
+πcom.bumptech.glide.load.resource.bitmap.GlideBitmapFactory.decodeStream(java.io.InputStream, android.graphics.BitmapFactory.Options, com.bumptech.glide.load.resource.bitmap.ImageReader)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaa" a(.2º
+java.io.InputStream.close()CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javae e(2”
+±com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.RecyclableBufferedInputStream(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java` `(.2÷
+5java.io.FileInputStream.FileInputStream(java.io.File)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java`3 `(B2§
+Çcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?is@94.18:94.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java` `(
+2
+Ocom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?file@81.23:81.27CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java`C `(G2˘
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java`J `(W2§
+Çcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?is@94.18:94.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaa/ a(12ú
+{com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)!optionsCALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaa3 a(:2§
+Çcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?is@94.18:94.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javac c(2§
+Çcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?is@94.18:94.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javae e(2°
+{com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java]' ](.2´
+Çcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?is@94.18:94.20DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java^ ^(2¨
+Écom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?e@102.31:102.32DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaf f( 2ø
+android.graphics.BitmapRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java] ](œ
+Çcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?is@94.18:94.20VARIABLEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java^ ^("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*is2¥
+java.io.InputStreamTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java^ ^(‹
+{com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java]' ](."
+typeOptions"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*options2«
+&android.graphics.BitmapFactory.OptionsTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java] ](&œ
+Écom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.decodeBitmap(android.graphics.BitmapFactory.Options)?e@102.31:102.32VARIABLEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaf f( "
+typeIOException"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*e2¥
+java.io.IOExceptionTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaf f(∆!
+Mcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javan n(!"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type	ImageType"
+accesspublic"	
+LOC15*getImageType2·
+øcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javar& r(-2º
+java.io.InputStream.close()CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javav v(2”
+±com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.RecyclableBufferedInputStream(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaq q(.2÷
+5java.io.FileInputStream.FileInputStream(java.io.File)CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaq3 q(B2ˇ
+^com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?is@111.18:111.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaq q(
+2
+Ocom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?file@81.23:81.27CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaqC q(G2˘
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaqJ q(W2Û
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?parsers@82.42:82.49CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javar. r(52ˇ
+^com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?is@111.18:111.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javar7 r(92˘
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javar; r(H2ˇ
+^com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?is@111.18:111.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javat t(2ˇ
+^com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?is@111.18:111.20CALLñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javav v(2Ü
+^com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?is@111.18:111.20DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javao o(2Ö
+]com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?e@119.31:119.32DECLARATIONñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaw w( 2€
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javan n(™
+^com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?is@111.18:111.20VARIABLEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javao o("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*is2¥
+java.io.InputStreamTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javao o(®
+]com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageType()?e@119.31:119.32VARIABLEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaw w( "
+typeIOException"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*e2¥
+java.io.IOExceptionTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaw w(‹#
+Tcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()METHODñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java (""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"	
+LOC15*getImageOrientation2Í
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÉ& É(42æ
+java.io.InputStream.close()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaá á(2’
+±com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.RecyclableBufferedInputStream(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇ Ç(.2ÿ
+5java.io.FileInputStream.FileInputStream(java.io.File)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇ3 Ç(B2à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?is@128.18:128.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇ Ç(
+2Ú
+Ocom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?file@81.23:81.27CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇC Ç(G2˚
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇJ Ç(W2ı
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?parsers@82.42:82.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÉ5 É(<2à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?is@128.18:128.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÉ> É(@2˚
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÉB É(O2à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?is@128.18:128.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÖ Ö(2à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?is@128.18:128.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaá á(2Ó
+Icom.bumptech.glide.load.resource.bitmap.ImageReader.getImageOrientation()OVERRIDEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java ("2è
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?is@128.18:128.20DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÄ Ä(2é
+dcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?e@136.31:136.32DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaà à( 2´
+intRETURN_TYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java (µ
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?is@128.18:128.20VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÄ Ä("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*is2∂
+java.io.InputStreamTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÄ Ä(≥
+dcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.getImageOrientation()?e@136.31:136.32VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaà à( "
+typeIOException"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*e2∂
+java.io.IOExceptionTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaà à(ø
+Kcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaê ê("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"	
+LOC15*
+hasJpegMpf2Ê
+¬com.bumptech.glide.load.ImageHeaderParserUtils.hasJpegMpf(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaî& î(02æ
+java.io.InputStream.close()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaò ò(2ÿ
+5java.io.FileInputStream.FileInputStream(java.io.File)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaì ì( 2ˇ
+\com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?is@145.18:145.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaì ì(
+2Ú
+Ocom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?file@81.23:81.27CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaì! ì(%2ı
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?parsers@82.42:82.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaî1 î(82ˇ
+\com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?is@145.18:145.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaî: î(<2˚
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaî> î(K2ˇ
+\com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?is@145.18:145.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javañ ñ(2ˇ
+\com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?is@145.18:145.20CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaò ò(2Á
+@com.bumptech.glide.load.resource.bitmap.ImageReader.hasJpegMpf()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaê ê(2Ü
+\com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?is@145.18:145.20DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaë ë(2Ö
+[com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?e@153.31:153.32DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaô ô( 2±
+booleanRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaê ê(¨
+\com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?is@145.18:145.20VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaë ë("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*is2∂
+java.io.InputStreamTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaë ë(™
+[com.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.hasJpegMpf()?e@153.31:153.32VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaô ô( "
+typeIOException"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*e2∂
+java.io.IOExceptionTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaô ô(«
+Scom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader.stopGrowingBuffers()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*stopGrowingBuffers2Ô
+Hcom.bumptech.glide.load.resource.bitmap.ImageReader.stopGrowingBuffers()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °("2Æ
+voidRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °(≤
+Ocom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?file@81.23:81.27VALUEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaQ Q("
+isFinaltrue"
+typeFile"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*file2≠
+java.io.FileTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaQ Q(£
+Rcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?parsers@82.42:82.49VALUEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaR* R(1"
+isFinaltrue"
+typeList<ImageHeaderParser>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*parsers2Ø
+java.util.ListTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaR R(2”
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaR R((Ù
+Xcom.bumptech.glide.load.resource.bitmap.ImageReader.FileReader?byteArrayPool@83.28:83.41VALUEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaS S()"
+isFinaltrue"
+type	ArrayPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*byteArrayPool2ÿ
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEñ
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaS S(ª
+Dcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReaderCLASSò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java§ §("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC42*ByteBufferReader2â
+ﬁcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™ ™(2£
+ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≤ ≤(2˝
+Scom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.getImageType()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java∏ ∏(!2Ñ
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.getImageOrientation()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaΩ Ω("2˚
+Qcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.hasJpegMpf()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java√ √(2É
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.stopGrowingBuffers()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java… …("2˜
+Mcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.stream()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÀ À(2É
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?buffer@166.29:166.35DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¶ ¶(#2Ñ
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?parsers@167.42:167.49DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaß* ß(12ä
+`com.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?byteArrayPool@168.28:168.41DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java® ®()2ÿ
+3com.bumptech.glide.load.resource.bitmap.ImageReaderEXTENDò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java§* §(5¨
+ﬁcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CONSTRUCTORò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™ ™("2
+package'com.bumptech.glide.load.resource.bitmap*ByteBufferReader2â
+Âcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!bufferCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java´ ´(2ä
+Êcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¨ ¨(2ê
+Ïcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≠ ≠((2¸
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?buffer@166.29:166.35CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java´ ´(2˝
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?parsers@167.42:167.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¨ ¨(2É
+`com.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?byteArrayPool@168.28:168.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≠ ≠(2é
+Âcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!buffer	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™  ™(&2è
+Êcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™@ ™(G2ï
+Ïcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™S ™(`2Ó
+Dcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReaderRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™ ™(∫
+Âcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!buffer	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™  ™(&"
+type
+ByteBuffer"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*buffer2∂
+java.nio.ByteBufferTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™ ™(ú
+Êcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™@ ™(G"
+typeList<ImageHeaderParser>"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*parsers2±
+java.util.ListTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™( ™(,2’
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™- ™(>Î
+Ïcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.ByteBufferReader(java.nio.ByteBuffer, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™S ™(`"
+type	ArrayPool"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*byteArrayPool2⁄
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java™I ™(R≠
+ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≤ ≤("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspublic"
+LOC5*decodeBitmap2
+Mcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.stream()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≥  ≥(&2›
+πcom.bumptech.glide.load.resource.bitmap.GlideBitmapFactory.decodeStream(java.io.InputStream, android.graphics.BitmapFactory.Options, com.bumptech.glide.load.resource.bitmap.ImageReader)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¥  ¥(,2∑
+ìcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)?inputStream@179.18:179.29CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¥- ¥(82•
+Åcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)!optionsCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¥: ¥(A2™
+Åcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≤' ≤(.2æ
+ìcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)?inputStream@179.18:179.29DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≥ ≥(2¡
+android.graphics.BitmapRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≤ ≤(‡
+ìcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)?inputStream@179.18:179.29VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≥ ≥("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*inputStream2∂
+java.io.InputStreamTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≥ ≥(2
+Mcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.stream()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≥  ≥(&Á
+Åcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≤' ≤(."
+typeOptions"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*options2…
+&android.graphics.BitmapFactory.OptionsTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≤ ≤(&ó
+Scom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.getImageType()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java∏ ∏(!"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type	ImageType"
+accesspublic"
+LOC3*getImageType2™
+Ücom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaπ$ π(+2Â
+Bcom.bumptech.glide.util.ByteBufferUtil.rewind(java.nio.ByteBuffer)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaπD π(J2˝
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?parsers@167.42:167.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaπ, π(32¸
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?buffer@166.29:166.35CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaπK π(Q2›
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java∏ ∏(®
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.getImageOrientation()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaΩ Ω(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC4*getImageOrientation2Í
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaæ$ æ(22Â
+Bcom.bumptech.glide.util.ByteBufferUtil.rewind(java.nio.ByteBuffer)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaø" ø((2˝
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?parsers@167.42:167.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaø
+ ø(2¸
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?buffer@166.29:166.35CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaø) ø(/2É
+`com.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?byteArrayPool@168.28:168.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaø2 ø(?2
+Icom.bumptech.glide.load.resource.bitmap.ImageReader.getImageOrientation()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaΩ Ω("2≠
+intRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaΩ Ω(ë
+Qcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.hasJpegMpf()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java√ √("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC4*
+hasJpegMpf2Ê
+¬com.bumptech.glide.load.ImageHeaderParserUtils.hasJpegMpf(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.nio.ByteBuffer, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaƒ$ ƒ(.2Â
+Bcom.bumptech.glide.util.ByteBufferUtil.rewind(java.nio.ByteBuffer)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≈" ≈((2˝
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?parsers@167.42:167.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≈
+ ≈(2¸
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?buffer@166.29:166.35CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≈) ≈(/2É
+`com.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?byteArrayPool@168.28:168.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java≈2 ≈(?2Á
+@com.bumptech.glide.load.resource.bitmap.ImageReader.hasJpegMpf()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java√ √(2±
+booleanRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java√ √(Õ
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.stopGrowingBuffers()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java… …(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*stopGrowingBuffers2Ô
+Hcom.bumptech.glide.load.resource.bitmap.ImageReader.stopGrowingBuffers()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java… …("2Æ
+voidRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java… …(´
+
+Mcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader.stream()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÀ À("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeInputStream"
+accessprivate"
+LOC2*stream2Á
+Dcom.bumptech.glide.util.ByteBufferUtil.toStream(java.nio.ByteBuffer)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÃ Ã($2Â
+Bcom.bumptech.glide.util.ByteBufferUtil.rewind(java.nio.ByteBuffer)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÃ4 Ã(:2¸
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?buffer@166.29:166.35CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÃ; Ã(A2Ω
+java.io.InputStreamRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÀ À(œ
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?buffer@166.29:166.35VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¶ ¶(#"
+isFinaltrue"
+type
+ByteBuffer"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*buffer2∂
+java.nio.ByteBufferTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¶ ¶(±
+Zcom.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?parsers@167.42:167.49VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaß* ß(1"
+isFinaltrue"
+typeList<ImageHeaderParser>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*parsers2±
+java.util.ListTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaß ß(2’
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaß ß((Ä
+`com.bumptech.glide.load.resource.bitmap.ImageReader.ByteBufferReader?byteArrayPool@168.28:168.41VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java® ®()"
+isFinaltrue"
+type	ArrayPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*byteArrayPool2⁄
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java® ®(è
+Jcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReaderCLASSò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java– –($"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC40*InputStreamImageReader2ï
+Ícom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java’ ’(2©
+com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaﬂ ﬂ(2É
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.getImageType()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÂ' Â(32ä
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.getImageOrientation()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÍ Í("2Å
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.hasJpegMpf()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java (2â
+_com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.stopGrowingBuffers()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaı ı("2è
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java—& —(22ê
+fcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?byteArrayPool@210.28:210.41DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java“ “()2ä
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?parsers@211.42:211.49DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java”* ”(12ÿ
+3com.bumptech.glide.load.resource.bitmap.ImageReaderEXTENDò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java–0 –(;™(
+Ícom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CONSTRUCTORò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java’ ’("2
+package'com.bumptech.glide.load.resource.bitmap*InputStreamImageReader2ÿ
+5com.bumptech.glide.util.Preconditions.checkNotNull(T)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java◊) ◊(52ÿ
+5com.bumptech.glide.util.Preconditions.checkNotNull(T)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÿ# ÿ(/2∂
+ícom.bumptech.glide.load.data.InputStreamRewinder.InputStreamRewinder(java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java⁄ ⁄(,2ú
+¯com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java◊6 ◊(C2ñ
+Úcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÿ0 ÿ(72à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java⁄ ⁄(2ë
+Ìcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!isCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java⁄- ⁄(/2ú
+¯com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java⁄1 ⁄(>2â
+fcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?byteArrayPool@210.28:210.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java◊ ◊(2É
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?parsers@211.42:211.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÿ ÿ(2ñ
+Ìcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!is	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷ ÷(2õ
+Úcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷0 ÷(72°
+¯com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷C ÷(P2Ù
+Jcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReaderRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java’ ’(ø
+Ìcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!is	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷ ÷("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*is2∂
+java.io.InputStreamTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷ ÷(®
+Úcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷0 ÷(7"
+typeList<ImageHeaderParser>"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*parsers2±
+java.util.ListTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷ ÷(2’
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷ ÷(.˜
+¯com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.InputStreamImageReader(java.io.InputStream, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷C ÷(P"
+type	ArrayPool"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*byteArrayPool2⁄
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java÷9 ÷(B⁄
+com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaﬂ ﬂ("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspublic"
+LOC5*decodeBitmap2‚
+?com.bumptech.glide.load.data.InputStreamRewinder.rewindAndGet()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java‡- ‡(92›
+πcom.bumptech.glide.load.resource.bitmap.GlideBitmapFactory.decodeStream(java.io.InputStream, android.graphics.BitmapFactory.Options, com.bumptech.glide.load.resource.bitmap.ImageReader)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java·  ·(,2à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java‡  ‡(,2Ω
+ôcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?inputStream@224.18:224.29CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java·- ·(82´
+ácom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!optionsCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java·: ·(A2è
+hcom.bumptech.glide.load.resource.bitmap.ImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaﬂ ﬂ(2∞
+ácom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaﬂ5 ﬂ(<2ƒ
+ôcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?inputStream@224.18:224.29DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java‡ ‡(2¡
+android.graphics.BitmapRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaﬂ ﬂ(„
+ôcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?inputStream@224.18:224.29VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java‡ ‡("
+typeInputStream"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*inputStream2∂
+java.io.InputStreamTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java‡ ‡(2‚
+?com.bumptech.glide.load.data.InputStreamRewinder.rewindAndGet()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java‡- ‡(92à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java‡  ‡(,˚
+ácom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaﬂ5 ﬂ(<"
+typeBitmapFactory.Options"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*options2…
+&android.graphics.BitmapFactory.OptionsTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaﬂ- ﬂ(4Ô
+Ycom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.getImageType()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÂ' Â(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"#
+typeImageHeaderParser.ImageType"
+accesspublic"
+LOC3*getImageType2„
+øcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÊ$ Ê(+2‚
+?com.bumptech.glide.load.data.InputStreamRewinder.rewindAndGet()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÊB Ê(N2É
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?parsers@211.42:211.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÊ, Ê(32à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÊ5 Ê(A2â
+fcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?byteArrayPool@210.28:210.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÊR Ê(_2È
+Bcom.bumptech.glide.load.resource.bitmap.ImageReader.getImageType()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÂ' Â(32›
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÂ Â(&√
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.getImageOrientation()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÍ Í(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC4*getImageOrientation2Í
+∆com.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÎ$ Î(22‚
+?com.bumptech.glide.load.data.InputStreamRewinder.rewindAndGet()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÏ  Ï(,2É
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?parsers@211.42:211.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÏ
+ Ï(2à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÏ Ï(2â
+fcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?byteArrayPool@210.28:210.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÏ0 Ï(=2
+Icom.bumptech.glide.load.resource.bitmap.ImageReader.getImageOrientation()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÍ Í("2≠
+intRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÍ Í(¨
+Wcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.hasJpegMpf()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java ("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC3*
+hasJpegMpf2Ê
+¬com.bumptech.glide.load.ImageHeaderParserUtils.hasJpegMpf(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, java.io.InputStream, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÒ$ Ò(.2‚
+?com.bumptech.glide.load.data.InputStreamRewinder.rewindAndGet()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÒE Ò(Q2É
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?parsers@211.42:211.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÒ/ Ò(62à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÒ8 Ò(D2â
+fcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?byteArrayPool@210.28:210.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÒU Ò(b2Á
+@com.bumptech.glide.load.resource.bitmap.ImageReader.hasJpegMpf()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java (2±
+booleanRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java (ƒ
+
+_com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader.stopGrowingBuffers()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaı ı(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*stopGrowingBuffers2„
+@com.bumptech.glide.load.data.InputStreamRewinder.fixMarkLimits()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaˆ ˆ( 2à
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaˆ ˆ(2Ô
+Hcom.bumptech.glide.load.resource.bitmap.ImageReader.stopGrowingBuffers()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaı ı("2Æ
+voidRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaı ı(á
+ecom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?dataRewinder@209.38:209.50VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java—& —(2"
+isFinaltrue"
+typeInputStreamRewinder"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*dataRewinder2”
+0com.bumptech.glide.load.data.InputStreamRewinderTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java— —(%Ü
+fcom.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?byteArrayPool@210.28:210.41VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java“ “()"
+isFinaltrue"
+type	ArrayPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*byteArrayPool2⁄
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java“ “(∑
+`com.bumptech.glide.load.resource.bitmap.ImageReader.InputStreamImageReader?parsers@211.42:211.49VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java”* ”(1"
+isFinaltrue"
+typeList<ImageHeaderParser>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*parsers2±
+java.util.ListTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java” ”(2’
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java” ”((à
+Scom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReaderCLASSò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˙ ˙(-"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC42*ParcelFileDescriptorImageReader2≥
+àcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaˇ ˇ(#2≥
+àcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaã ã(2å
+bcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.getImageType()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaí' í(32ì
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.getImageOrientation()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaó ó("2ä
+`com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.hasJpegMpf()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaú ú(2í
+hcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.stopGrowingBuffers()DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °("2ô
+ocom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?byteArrayPool@251.28:251.41DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˚ ˚()2ì
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?parsers@252.42:252.49DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¸* ¸(12ò
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˝/ ˝(;2ÿ
+3com.bumptech.glide.load.resource.bitmap.ImageReaderEXTENDò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˙9 ˙(Dí'
+àcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CONSTRUCTORò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaˇ ˇ(#"2
+package'com.bumptech.glide.load.resource.bitmap*ParcelFileDescriptorImageReader2ÿ
+5com.bumptech.glide.util.Preconditions.checkNotNull(T)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÉ) É(52ÿ
+5com.bumptech.glide.util.Preconditions.checkNotNull(T)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÑ# Ñ(/2ö
+wcom.bumptech.glide.load.data.ParcelFileDescriptorRewinder.ParcelFileDescriptorRewinder(android.os.ParcelFileDescriptor)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÜ Ü(52∫
+ñcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPoolCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÉ6 É(C2¥
+êcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsersCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÑ0 Ñ(72ë
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÜ Ü(2¡
+ùcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptorCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÜ6 Ü(J2í
+ocom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?byteArrayPool@251.28:251.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÉ É(2å
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?parsers@252.42:252.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÑ Ñ(2∆
+ùcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptor	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÄ Ä(12π
+êcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÅ  Å('2ø
+ñcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇ Ç(2˝
+Scom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReaderRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaˇ ˇ(#ñ
+ùcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parcelFileDescriptor	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÄ Ä(1"
+typeParcelFileDescriptor"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*parcelFileDescriptor2¬
+android.os.ParcelFileDescriptorTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÄ Ä(∆
+êcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!parsers	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÅ  Å('"
+typeList<ImageHeaderParser>"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*parsers2±
+java.util.ListTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÅ Å(2’
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÅ Å(ï
+ñcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.ParcelFileDescriptorImageReader(android.os.ParcelFileDescriptor, java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)!byteArrayPool	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇ Ç("
+type	ArrayPool"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*byteArrayPool2⁄
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaÇ Ç(÷
+àcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaã ã("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBitmap"
+accesspublic"
+LOC6*decodeBitmap2Î
+Hcom.bumptech.glide.load.data.ParcelFileDescriptorRewinder.rewindAndGet()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaå? å(K2Ë
+ƒcom.bumptech.glide.load.resource.bitmap.GlideBitmapFactory.decodeFileDescriptor(java.io.FileDescriptor, android.graphics.BitmapFactory.Options, com.bumptech.glide.load.resource.bitmap.ImageReader)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaé  é(42ë
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaå2 å(>2œ
+´com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?parcelFileDescriptor@268.27:268.47CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaç& ç(:2…
+•com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?fileDescriptor@269.21:269.35CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaé5 é(C2¥
+êcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!optionsCALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaéE é(L2è
+hcom.bumptech.glide.load.resource.bitmap.ImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaã ã(2π
+êcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaã5 ã(<2÷
+´com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?parcelFileDescriptor@268.27:268.47DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaå å(/2–
+•com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?fileDescriptor@269.21:269.35DECLARATIONò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaç ç(#2¡
+android.graphics.BitmapRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaã ã(•	
+´com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?parcelFileDescriptor@268.27:268.47VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaå å(/"
+typeParcelFileDescriptor"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*parcelFileDescriptor2¬
+android.os.ParcelFileDescriptorTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaå å(2Î
+Hcom.bumptech.glide.load.data.ParcelFileDescriptorRewinder.rewindAndGet()CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaå? å(K2ë
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaå2 å(>⁄
+•com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?fileDescriptor@269.21:269.35VARIABLEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaç ç(#"
+typeFileDescriptor"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*fileDescriptor2π
+java.io.FileDescriptorTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaç ç(2œ
+´com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)?parcelFileDescriptor@268.27:268.47CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaç& ç(:Ñ
+êcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.decodeBitmap(android.graphics.BitmapFactory.Options)!options	PARAMETERò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaã5 ã(<"
+typeBitmapFactory.Options"
+isFinalfalse"2
+package'com.bumptech.glide.load.resource.bitmap"
+isLocaltrue*options2…
+&android.graphics.BitmapFactory.OptionsTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaã- ã(4‘
+bcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.getImageType()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaí' í(3"2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"#
+typeImageHeaderParser.ImageType"
+accesspublic"
+LOC3*getImageType2â
+Âcom.bumptech.glide.load.ImageHeaderParserUtils.getType(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaì$ ì(+2å
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?parsers@252.42:252.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaì, ì(32ë
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaì5 ì(A2í
+ocom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?byteArrayPool@251.28:251.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaìC ì(P2È
+Bcom.bumptech.glide.load.resource.bitmap.ImageReader.getImageType()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaí' í(32›
+3com.bumptech.glide.load.ImageHeaderParser.ImageTypeRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaí í(&®
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.getImageOrientation()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaó ó(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC3*getImageOrientation2ê
+Ïcom.bumptech.glide.load.ImageHeaderParserUtils.getOrientation(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaò$ ò(22å
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?parsers@252.42:252.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaò3 ò(:2ë
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaò< ò(H2í
+ocom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?byteArrayPool@251.28:251.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaòJ ò(W2
+Icom.bumptech.glide.load.resource.bitmap.ImageReader.getImageOrientation()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaó ó("2≠
+intRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaó ó(ë
+`com.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.hasJpegMpf()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaú ú("2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC3*
+hasJpegMpf2å
+Ëcom.bumptech.glide.load.ImageHeaderParserUtils.hasJpegMpf(java.util.List<com.bumptech.glide.load.ImageHeaderParser>, com.bumptech.glide.load.data.ParcelFileDescriptorRewinder, com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaù$ ù(.2å
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?parsers@252.42:252.49CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaù/ ù(62ë
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaù8 ù(D2í
+ocom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?byteArrayPool@251.28:251.41CALLò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaùF ù(S2Á
+@com.bumptech.glide.load.resource.bitmap.ImageReader.hasJpegMpf()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaú ú(2±
+booleanRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.javaú ú(‹
+hcom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader.stopGrowingBuffers()METHODò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °(""2
+package'com.bumptech.glide.load.resource.bitmap"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*stopGrowingBuffers2Ô
+Hcom.bumptech.glide.load.resource.bitmap.ImageReader.stopGrowingBuffers()OVERRIDEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °("2Æ
+voidRETURN_TYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java° °(è
+ocom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?byteArrayPool@251.28:251.41VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˚ ˚()"
+isFinaltrue"
+type	ArrayPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*byteArrayPool2⁄
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˚ ˚(¿
+icom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?parsers@252.42:252.49VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¸* ¸(1"
+isFinaltrue"
+typeList<ImageHeaderParser>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*parsers2±
+java.util.ListTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¸ ¸(2’
+)com.bumptech.glide.load.ImageHeaderParserTYPE_ARGUMENTò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java¸ ¸((¢
+ncom.bumptech.glide.load.resource.bitmap.ImageReader.ParcelFileDescriptorImageReader?dataRewinder@253.47:253.59VALUEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˝/ ˝(;"
+isFinaltrue"$
+typeParcelFileDescriptorRewinder"
+isStaticfalse"
+accessprivate"
+isLocalfalse"2
+package'com.bumptech.glide.load.resource.bitmap*dataRewinder2‹
+9com.bumptech.glide.load.data.ParcelFileDescriptorRewinderTYPEò
+ãF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\resource\bitmap\ImageReader.java˝ ˝(.

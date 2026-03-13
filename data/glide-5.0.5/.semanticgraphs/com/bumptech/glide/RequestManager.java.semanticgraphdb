@@ -1,0 +1,2026 @@
+
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaFILE{
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java"
+
+LOC771*yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∞w
+!com.bumptech.glide.RequestManagerCLASSÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java8 8("
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC715*RequestManager2“
+ºcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javac	 c(2¥
+ûcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javas s(2ı
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaô ô(/2¯
+acom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù ù(02˛
+gcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≥% ≥(?2¸
+ecom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java…% …(=2∆
+/com.bumptech.glide.RequestManager.clearOnStop()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java’% ’(02ê
+ycom.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎ Î(12È
+Rcom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ Ù(52√
+,com.bumptech.glide.RequestManager.isPaused()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˛ ˛(&2»
+1com.bumptech.glide.RequestManager.pauseRequests()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaå å((2À
+4com.bumptech.glide.RequestManager.pauseAllRequests()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java† †(+2‘
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠ ≠(42—
+:com.bumptech.glide.RequestManager.pauseRequestsRecursive()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ ƒ(12…
+2com.bumptech.glide.RequestManager.resumeRequests()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —()2“
+;com.bumptech.glide.RequestManager.resumeRequestsRecursive()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹ ‹(22¬
++com.bumptech.glide.RequestManager.onStart()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÍ Í("2¡
+*com.bumptech.glide.RequestManager.onStop()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı(!2ƒ
+-com.bumptech.glide.RequestManager.onDestroy()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ É($2√
+,com.bumptech.glide.RequestManager.asBitmap()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï  ï((2¿
+)com.bumptech.glide.RequestManager.asGif()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java®% ®(*2≈
+.com.bumptech.glide.RequestManager.asDrawable()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∏" ∏(,2÷
+?com.bumptech.glide.RequestManager.load(android.graphics.Bitmap)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ" ƒ(&2·
+Jcom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java–" –(&2œ
+8com.bumptech.glide.RequestManager.load(java.lang.String)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹" ‹(&2Œ
+7com.bumptech.glide.RequestManager.load(android.net.Uri)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaË" Ë(&2À
+4com.bumptech.glide.RequestManager.load(java.io.File)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ" Ù(&2–
+9com.bumptech.glide.RequestManager.load(java.lang.Integer)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅ" Å(&2À
+4com.bumptech.glide.RequestManager.load(java.net.URL)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé" é(&2≈
+.com.bumptech.glide.RequestManager.load(byte[])DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö" ö(&2œ
+8com.bumptech.glide.RequestManager.load(java.lang.Object)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaß" ß(&2«
+0com.bumptech.glide.RequestManager.downloadOnly()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∑ ∑(*2”
+<com.bumptech.glide.RequestManager.download(java.lang.Object)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java√ √(&2¡
+*com.bumptech.glide.RequestManager.asFile()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“ “($2⁄
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡5 ‡(72—
+:com.bumptech.glide.RequestManager.clear(android.view.View)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÒ Ò(2Î
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˚ ˚(2˜
+`com.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ É( 2Ì
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù ù(2è
+xcom.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠ ≠(2’
+>com.bumptech.glide.RequestManager.getDefaultRequestListeners()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≤  ≤(:2”
+<com.bumptech.glide.RequestManager.getDefaultRequestOptions()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∂ ∂(62Ë
+Qcom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª ª(92√
+,com.bumptech.glide.RequestManager.toString()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¿ ¿(%2 
+3com.bumptech.glide.RequestManager.onTrimMemory(int)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈(2∆
+/com.bumptech.glide.RequestManager.onLowMemory()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÃ Ã(2»
+1com.bumptech.glide.RequestManager.clearRequests()DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java– –()2Ú
+[com.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÿ ÿ($2’
+@com.bumptech.glide.RequestManager?DECODE_TYPE_BITMAP@58.38:58.56DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java:& :(82“
+=com.bumptech.glide.RequestManager?DECODE_TYPE_GIF@59.38:59.53DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java;& ;(52ÿ
+Ccom.bumptech.glide.RequestManager?DOWNLOAD_ONLY_OPTIONS@60.38:60.59DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java<& <(;2»
+3com.bumptech.glide.RequestManager?glide@63.24:63.29DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java? ?(2 
+5com.bumptech.glide.RequestManager?context@64.26:64.33DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java@ @(!2Ã
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaD D(2—
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaG G(-2À
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaJ' J(/2–
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaM M(+2’
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaO O(+2÷
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaV$ V(72⁄
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaZ> Z(U2—
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java] ]('2Á
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java_ _(62Œ
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29DECLARATIONÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaa a(2€
+Dcom.bumptech.glide.RequestManager.RequestManagerConnectivityListenerDECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java⁄ ⁄(22≥
+#android.content.ComponentCallbacks2EXTENDÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java9 9("2º
+,com.bumptech.glide.manager.LifecycleListenerEXTENDÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java9$ 9(52≠
+com.bumptech.glide.ModelTypesEXTENDÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java97 9(A2ø
+!com.bumptech.glide.RequestBuilderEXTEND_TYPE_ARGUMENTÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java9B 9(ZË
+ºcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)CONSTRUCTORÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javac	 c("
+packagecom.bumptech.glide*RequestManager2∆
+8com.bumptech.glide.Glide.getConnectivityMonitorFactory()CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javam m(+2»
+:com.bumptech.glide.manager.RequestTracker.RequestTracker()CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javal l(2—
+¬com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glideCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javai i(2’
+∆com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!lifecycleCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaj j(2‘
+≈com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!treeNodeCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javak k(2—
+¬com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glideCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javam m(2”
+ƒcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!contextCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javan n(2÷
+¬com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glide	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javad d(2⁄
+∆com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!lifecycle	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javae e("2Ÿ
+≈com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!treeNode	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaf& f(.2ÿ
+ƒcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!context	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javag g(2∂
+!com.bumptech.glide.RequestManagerRETURN_TYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javac	 c(◊
+¬com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!glide	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javad d("
+typeGlide"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*glide2¶
+com.bumptech.glide.GlideTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javad d(Ô
+∆com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!lifecycle	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javae e(""
+type	Lifecycle"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	lifecycle2≤
+$com.bumptech.glide.manager.LifecycleTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javae e(á
+≈com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!treeNode	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaf& f(."
+typeRequestManagerTreeNode"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*treeNode2ø
+1com.bumptech.glide.manager.RequestManagerTreeNodeTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaf f(%‹
+ƒcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, android.content.Context)!context	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javag g("
+typeContext"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*context2•
+android.content.ContextTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javag g(¿j
+ûcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)CONSTRUCTORÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javas s("
+packagecom.bumptech.glide*RequestManager2‚
+Rcom.bumptech.glide.Glide.registerRequestManager(com.bumptech.glide.RequestManager)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaá
+ á( 2√
+3com.bumptech.glide.util.Util.isOnBackgroundThread()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaç ç(!2œ
+?com.bumptech.glide.util.Util.postOnUiThread(java.lang.Runnable)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé é(2Ó
+^com.bumptech.glide.manager.Lifecycle.addListener(com.bumptech.glide.manager.LifecycleListener)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaê ê(2Ó
+^com.bumptech.glide.manager.Lifecycle.addListener(com.bumptech.glide.manager.LifecycleListener)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaí í(2Ã
+<com.bumptech.glide.GlideContext.getDefaultRequestListeners()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï; ï(U2∫
+*com.bumptech.glide.Glide.getGlideContext()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï) ï(82Ó
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(2 
+:com.bumptech.glide.GlideContext.getDefaultRequestOptions()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ. ñ(F2∫
+*com.bumptech.glide.Glide.getGlideContext()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(+2£
+ícom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ É(22Ò
+ajava.util.concurrent.CopyOnWriteArrayList.CopyOnWriteArrayList(java.util.Collection<? extends E>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï ï("2≥
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaz z(2∑
+®com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycleCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java{ {(2∂
+ßcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!treeNodeCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java| |(2º
+≠com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTrackerCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java} }((2µ
+¶com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!contextCALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java~ ~(2—
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÄ Ä(2∑
+¶com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!factoryCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅ Å(2∑
+¶com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!contextCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÇ Ç(2æ
+≠com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTrackerCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ3 É(A2µ
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaá á(	2–
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé é(,2π
+®com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycleCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaê ê(2π
+®com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycleCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaí í(2—
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaí í(-2’
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaî î(2µ
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï# ï((2µ
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glideCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(2¡
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaz	 z(2≈
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java{	 {(2ƒ
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java|	 |(2 
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java}	 }(2√
+5com.bumptech.glide.RequestManager?context@64.26:64.33CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java~	 ~(2∏
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glide	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javat t(2º
+®com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycle	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javau u(2ª
+ßcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!treeNode	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javav v(%2¡
+≠com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTracker	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaw w(#2∫
+¶com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!factory	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javax! x((2∫
+¶com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!context	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javay y(2∂
+!com.bumptech.glide.RequestManagerRETURN_TYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javas s(π
+§com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!glide	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javat t("
+typeGlide"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*glide2¶
+com.bumptech.glide.GlideTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javat t(—
+®com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!lifecycle	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javau u("
+type	Lifecycle"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	lifecycle2≤
+$com.bumptech.glide.manager.LifecycleTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javau u(È
+ßcom.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!treeNode	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javav v(%"
+typeRequestManagerTreeNode"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*treeNode2ø
+1com.bumptech.glide.manager.RequestManagerTreeNodeTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javav v(Â
+≠com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!requestTracker	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaw w(#"
+typeRequestTracker"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestTracker2∑
+)com.bumptech.glide.manager.RequestTrackerTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaw w(Ô
+¶com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!factory	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javax! x((""
+typeConnectivityMonitorFactory"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*factory2√
+5com.bumptech.glide.manager.ConnectivityMonitorFactoryTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javax x( æ
+¶com.bumptech.glide.RequestManager.RequestManager(com.bumptech.glide.Glide, com.bumptech.glide.manager.Lifecycle, com.bumptech.glide.manager.RequestManagerTreeNode, com.bumptech.glide.manager.RequestTracker, com.bumptech.glide.manager.ConnectivityMonitorFactory, android.content.Context)!context	PARAMETERÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javay y("
+typeContext"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*context2•
+android.content.ContextTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javay y(˝
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaô ô(/"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+access	protected"
+LOC2*setRequestOptions2…
+9com.bumptech.glide.request.BaseRequestOptions.autoClone()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö# ö(,2≈
+5com.bumptech.glide.request.BaseRequestOptions.clone()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö ö( 2Ã
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö ö(2Ù
+dcom.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)!toSetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö ö(2˘
+dcom.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)!toSet	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaôH ô(M2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaô ô(ñ
+dcom.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)!toSet	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaôH ô(M"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*toSet2π
+)com.bumptech.glide.request.RequestOptionsTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaô9 ô(G¿
+acom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù ù(0"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC2*updateRequestOptions2ı
+ecom.bumptech.glide.request.BaseRequestOptions.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû$ û()2Ã
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û(2Ã
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û(#2˙
+jcom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)!toUpdateCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû* û(22ˇ
+jcom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)!toUpdate	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaùI ù(Q2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù ù(ü
+jcom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)!toUpdate	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaùI ù(Q"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*toUpdate2π
+)com.bumptech.glide.request.RequestOptionsTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù: ù(HË
+
+gcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≥% ≥(?"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC5*applyDefaultRequestOptions2Ò
+acom.bumptech.glide.RequestManager.updateRequestOptions(com.bumptech.glide.request.RequestOptions)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaµ µ(2Ü
+vcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptionsCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaµ µ('2ã
+vcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¥ ¥(,2∏
+!com.bumptech.glide.RequestManagerRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≥ ≥($±
+vcom.bumptech.glide.RequestManager.applyDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¥ ¥(,"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestOptions2π
+)com.bumptech.glide.request.RequestOptionsTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¥ ¥(›
+
+ecom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java…% …(="
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC5*setDefaultRequestOptions2Ó
+^com.bumptech.glide.RequestManager.setRequestOptions(com.bumptech.glide.request.RequestOptions)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÀ À(2Ñ
+tcom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptionsCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÀ À($2â
+tcom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java   (,2∏
+!com.bumptech.glide.RequestManagerRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java… …($Ø
+tcom.bumptech.glide.RequestManager.setDefaultRequestOptions(com.bumptech.glide.request.RequestOptions)!requestOptions	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java   (,"
+typeRequestOptions"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestOptions2π
+)com.bumptech.glide.request.RequestOptionsTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java   (‚
+/com.bumptech.glide.RequestManager.clearOnStop()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java’% ’(0"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC4*clearOnStop2…
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java÷ ÷(2∏
+!com.bumptech.glide.RequestManagerRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java’ ’($»
+ycom.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎ Î(1"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestManager"
+accesspublic"
+LOC3*addDefaultRequestListener2¿
+0java.util.concurrent.CopyOnWriteArrayList.add(E)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÏ Ï(2’
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÏ Ï(2ö
+âcom.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)!requestListenerCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÏ  Ï(/2ü
+âcom.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)!requestListener	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎJ Î(Y2∏
+!com.bumptech.glide.RequestManagerRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎ	 Î(¸
+âcom.bumptech.glide.RequestManager.addDefaultRequestListener(com.bumptech.glide.request.RequestListener<java.lang.Object>)!requestListener	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎJ Î(Y"
+typeRequestListener<Object>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestListener2∫
+*com.bumptech.glide.request.RequestListenerTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎ2 Î(A2©
+java.lang.ObjectTYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎB Î(HÄ
+
+Rcom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ Ù(5"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*'setPauseAllRequestsOnTrimMemoryModerate2‚
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı((2Ò
+acom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)!pauseAllOnTrimCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı+ ı(92ˆ
+acom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)!pauseAllOnTrim	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ> Ù(L2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ	 Ù(Û
+acom.bumptech.glide.RequestManager.setPauseAllRequestsOnTrimMemoryModerate(boolean)!pauseAllOnTrim	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ> Ù(L"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*pauseAllOnTrim2ó
+booleanTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ6 Ù(=Ö
+,com.bumptech.glide.RequestManager.isPaused()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˛ ˛(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC2*isPaused2ƒ
+4com.bumptech.glide.manager.RequestTracker.isPaused()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇ ˇ("2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇ ˇ(2û
+booleanRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˛ ˛(é
+1com.bumptech.glide.RequestManager.pauseRequests()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaå å(("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*pauseRequests2…
+9com.bumptech.glide.manager.RequestTracker.pauseRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaç ç( 2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaç ç(2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaå å(ó
+4com.bumptech.glide.RequestManager.pauseAllRequests()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java† †(+"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*pauseAllRequests2Ã
+<com.bumptech.glide.manager.RequestTracker.pauseAllRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java° °(#2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java° °(2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java† †(ò
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠ ≠(4"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*pauseAllRequestsRecursive2ƒ
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÆ Æ(2“
+Bcom.bumptech.glide.manager.RequestManagerTreeNode.getDescendants()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ2 Ø(@2ƒ
+4com.bumptech.glide.RequestManager.pauseAllRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∞ ∞(%2∆
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ) Ø(12Í
+Zcom.bumptech.glide.RequestManager.pauseAllRequestsRecursive()?requestManager@303.24:303.38CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∞ ∞(2Ò
+Zcom.bumptech.glide.RequestManager.pauseAllRequestsRecursive()?requestManager@303.24:303.38DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ Ø(&2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠ ≠(å
+Zcom.bumptech.glide.RequestManager.pauseAllRequestsRecursive()?requestManager@303.24:303.38VARIABLEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ Ø(&"
+typeRequestManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestManager2±
+!com.bumptech.glide.RequestManagerTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ	 Ø(Ü
+:com.bumptech.glide.RequestManager.pauseRequestsRecursive()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ ƒ(1"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*pauseRequestsRecursive2¡
+1com.bumptech.glide.RequestManager.pauseRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈(2“
+Bcom.bumptech.glide.manager.RequestManagerTreeNode.getDescendants()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∆2 ∆(@2¡
+1com.bumptech.glide.RequestManager.pauseRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java« «("2∆
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∆) ∆(12Á
+Wcom.bumptech.glide.RequestManager.pauseRequestsRecursive()?requestManager@326.24:326.38CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java« «(2Ó
+Wcom.bumptech.glide.RequestManager.pauseRequestsRecursive()?requestManager@326.24:326.38DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∆ ∆(&2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ ƒ(â
+Wcom.bumptech.glide.RequestManager.pauseRequestsRecursive()?requestManager@326.24:326.38VARIABLEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∆ ∆(&"
+typeRequestManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestManager2±
+!com.bumptech.glide.RequestManagerTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∆	 ∆(ë
+2com.bumptech.glide.RequestManager.resumeRequests()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —()"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*resumeRequests2 
+:com.bumptech.glide.manager.RequestTracker.resumeRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“ “(!2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“ “(2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —(Œ
+;com.bumptech.glide.RequestManager.resumeRequestsRecursive()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹ ‹(2"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC7*resumeRequestsRecursive2ø
+/com.bumptech.glide.util.Util.assertMainThread()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java›	 ›(2¬
+2com.bumptech.glide.RequestManager.resumeRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬁ ﬁ(2“
+Bcom.bumptech.glide.manager.RequestManagerTreeNode.getDescendants()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ2 ﬂ(@2¬
+2com.bumptech.glide.RequestManager.resumeRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡ ‡(#2∆
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ) ﬂ(12Ë
+Xcom.bumptech.glide.RequestManager.resumeRequestsRecursive()?requestManager@351.24:351.38CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡ ‡(2Ô
+Xcom.bumptech.glide.RequestManager.resumeRequestsRecursive()?requestManager@351.24:351.38DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ ﬂ(&2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹ ‹(ä
+Xcom.bumptech.glide.RequestManager.resumeRequestsRecursive()?requestManager@351.24:351.38VARIABLEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ ﬂ(&"
+typeRequestManager"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestManager2±
+!com.bumptech.glide.RequestManagerTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ	 ﬂ(å
+
++com.bumptech.glide.RequestManager.onStart()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÍ Í(""
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*onStart2¬
+2com.bumptech.glide.RequestManager.resumeRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÎ Î(2¬
+2com.bumptech.glide.manager.TargetTracker.onStart()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÏ Ï(2À
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÏ Ï(2 
+6com.bumptech.glide.manager.LifecycleListener.onStart()OVERRIDEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÍ Í("2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÍ Í(ó
+*com.bumptech.glide.RequestManager.onStop()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı(!"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC8*onStop2¡
+1com.bumptech.glide.manager.TargetTracker.onStop()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˆ ˆ(2¡
+1com.bumptech.glide.RequestManager.clearRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¯ ¯(2¡
+1com.bumptech.glide.RequestManager.pauseRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˙ ˙(2À
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˆ ˆ(2…
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˜ ˜(2…
+5com.bumptech.glide.manager.LifecycleListener.onStop()OVERRIDEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı(!2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı(€
+-com.bumptech.glide.RequestManager.onDestroy()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ É($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC9*	onDestroy2ƒ
+4com.bumptech.glide.manager.TargetTracker.onDestroy()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ Ñ(2¡
+1com.bumptech.glide.RequestManager.clearRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÖ Ö(2…
+9com.bumptech.glide.manager.RequestTracker.clearRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÜ Ü( 2Ò
+acom.bumptech.glide.manager.Lifecycle.removeListener(com.bumptech.glide.manager.LifecycleListener)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaá á(2Ò
+acom.bumptech.glide.manager.Lifecycle.removeListener(com.bumptech.glide.manager.LifecycleListener)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaà à(2⁄
+Jcom.bumptech.glide.util.Util.removeCallbacksOnUiThread(java.lang.Runnable)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaâ	 â("2‰
+Tcom.bumptech.glide.Glide.unregisterRequestManager(com.bumptech.glide.RequestManager)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaä
+ ä("2À
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ Ñ(2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÜ Ü(2«
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaá á(2«
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaà à(2—
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaà à(02–
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaâ# â(52√
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaä ä(	2Ã
+8com.bumptech.glide.manager.LifecycleListener.onDestroy()OVERRIDEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ É($2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ É(Á
+
+,com.bumptech.glide.RequestManager.asBitmap()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï  ï(("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<Bitmap>"
+accesspublic"
+LOC4*asBitmap2È
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(!2”
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(2–
+@com.bumptech.glide.RequestManager?DECODE_TYPE_BITMAP@58.38:58.56CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ" ñ(42∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï	 ï(2∑
+android.graphics.BitmapRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaï ï(¸
+
+)com.bumptech.glide.RequestManager.asGif()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java®% ®(*"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"#
+typeRequestBuilder<GifDrawable>"
+accesspublic"
+LOC4*asGif2È
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java©! ©(&2”
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java© ©(2Õ
+=com.bumptech.glide.RequestManager?DECODE_TYPE_GIF@59.38:59.53CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java©' ©(62∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java®	 ®(2–
+0com.bumptech.glide.load.resource.gif.GifDrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java® ®(#π
+.com.bumptech.glide.RequestManager.asDrawable()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∏" ∏(,"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC4*
+asDrawable2”
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaπ π(2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∏	 ∏(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∏ ∏( ∏
+?com.bumptech.glide.RequestManager.load(android.graphics.Bitmap)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ" ƒ(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2œ
+?com.bumptech.glide.RequestBuilder.load(android.graphics.Bitmap)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈(2÷
+Fcom.bumptech.glide.RequestManager.load(android.graphics.Bitmap)!bitmapCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈(#2€
+Fcom.bumptech.glide.RequestManager.load(android.graphics.Bitmap)!bitmap	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ8 ƒ(>2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ	 ƒ(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ ƒ( ﬂ
+Fcom.bumptech.glide.RequestManager.load(android.graphics.Bitmap)!bitmap	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ8 ƒ(>"
+typeBitmap"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*bitmap2ß
+android.graphics.BitmapTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ1 ƒ(7Ë
+Jcom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java–" –(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2⁄
+Jcom.bumptech.glide.RequestBuilder.load(android.graphics.drawable.Drawable)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —(2„
+Scom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)!drawableCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —(%2Ë
+Scom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)!drawable	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java–: –(B2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java–	 –(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java– –( ˚
+Scom.bumptech.glide.RequestManager.load(android.graphics.drawable.Drawable)!drawable	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java–: –(B"
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*drawable2≤
+"android.graphics.drawable.DrawableTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java–1 –(9ú
+8com.bumptech.glide.RequestManager.load(java.lang.String)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹" ‹(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2»
+8com.bumptech.glide.RequestBuilder.load(java.lang.String)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java› ›(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java› ›(2œ
+?com.bumptech.glide.RequestManager.load(java.lang.String)!stringCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java› ›(#2‘
+?com.bumptech.glide.RequestManager.load(java.lang.String)!string	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹8 ‹(>2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹	 ‹(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹ ‹( —
+?com.bumptech.glide.RequestManager.load(java.lang.String)!string	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹8 ‹(>"
+typeString"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*string2†
+java.lang.StringTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‹1 ‹(7í
+7com.bumptech.glide.RequestManager.load(android.net.Uri)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaË" Ë(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2«
+7com.bumptech.glide.RequestBuilder.load(android.net.Uri)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÈ È(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÈ È(2À
+;com.bumptech.glide.RequestManager.load(android.net.Uri)!uriCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÈ È( 2–
+;com.bumptech.glide.RequestManager.load(android.net.Uri)!uri	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaË5 Ë(82∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaË	 Ë(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaË Ë( ∆
+;com.bumptech.glide.RequestManager.load(android.net.Uri)!uri	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaË5 Ë(8"
+typeUri"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*uri2ü
+android.net.UriTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaË1 Ë(4à
+4com.bumptech.glide.RequestManager.load(java.io.File)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ" Ù(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2ƒ
+4com.bumptech.glide.RequestBuilder.load(java.io.File)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı(2…
+9com.bumptech.glide.RequestManager.load(java.io.File)!fileCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaı ı(!2Œ
+9com.bumptech.glide.RequestManager.load(java.io.File)!file	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ6 Ù(:2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ	 Ù(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ Ù( √
+9com.bumptech.glide.RequestManager.load(java.io.File)!file	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ6 Ù(:"
+typeFile"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*file2ú
+java.io.FileTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ1 Ù(5®
+9com.bumptech.glide.RequestManager.load(java.lang.Integer)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅ" Å(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC6*load2…
+9com.bumptech.glide.RequestBuilder.load(java.lang.Integer)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÇ Ç(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÇ Ç(2‘
+Dcom.bumptech.glide.RequestManager.load(java.lang.Integer)!resourceIdCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÇ Ç('2Ÿ
+Dcom.bumptech.glide.RequestManager.load(java.lang.Integer)!resourceId	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅN Å(X2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅ	 Å(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅ Å( ‹
+Dcom.bumptech.glide.RequestManager.load(java.lang.Integer)!resourceId	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅN Å(X"
+typeInteger"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*
+resourceId2°
+java.lang.IntegerTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÅF Å(MÜ
+4com.bumptech.glide.RequestManager.load(java.net.URL)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé" é(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC6*load2ƒ
+4com.bumptech.glide.RequestBuilder.load(java.net.URL)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaè è(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaè è(2»
+8com.bumptech.glide.RequestManager.load(java.net.URL)!urlCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaè è( 2Õ
+8com.bumptech.glide.RequestManager.load(java.net.URL)!url	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé5 é(82∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé	 é(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé é( ¿
+8com.bumptech.glide.RequestManager.load(java.net.URL)!url	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé5 é(8"
+typeURL"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*url2ú
+java.net.URLTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaé1 é(4Ú
+.com.bumptech.glide.RequestManager.load(byte[])METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö" ö(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2æ
+.com.bumptech.glide.RequestBuilder.load(byte[])CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaõ õ(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaõ õ(2ƒ
+4com.bumptech.glide.RequestManager.load(byte[])!modelCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaõ õ("2…
+4com.bumptech.glide.RequestManager.load(byte[])!model	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö8 ö(=2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö	 ö(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö ö( ª
+4com.bumptech.glide.RequestManager.load(byte[])!model	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö8 ö(="
+typebyte[]"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2ñ
+byte[]TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaö1 ö(7ö
+8com.bumptech.glide.RequestManager.load(java.lang.Object)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaß" ß(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeRequestBuilder<Drawable>"
+accesspublic"
+LOC5*load2»
+8com.bumptech.glide.RequestBuilder.load(java.lang.Object)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java® ®(2æ
+.com.bumptech.glide.RequestManager.asDrawable()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java® ®(2Œ
+>com.bumptech.glide.RequestManager.load(java.lang.Object)!modelCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java® ®("2”
+>com.bumptech.glide.RequestManager.load(java.lang.Object)!model	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaß8 ß(=2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaß	 ß(2¬
+"android.graphics.drawable.DrawableRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaß ß( œ
+>com.bumptech.glide.RequestManager.load(java.lang.Object)!model	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaß8 ß(="
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2†
+java.lang.ObjectTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaß1 ß(7Â
+
+0com.bumptech.glide.RequestManager.downloadOnly()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∑ ∑(*"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<File>"
+accesspublic"
+LOC4*downloadOnly2È
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∏ ∏(2”
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∏ ∏(2”
+Ccom.bumptech.glide.RequestManager?DOWNLOAD_ONLY_OPTIONS@60.38:60.59CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∏  ∏(52∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∑	 ∑(2¨
+java.io.FileRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∑ ∑(í
+<com.bumptech.glide.RequestManager.download(java.lang.Object)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java√ √(&"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<File>"
+accesspublic"
+LOC4*download2»
+8com.bumptech.glide.RequestBuilder.load(java.lang.Object)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ ƒ(2¿
+0com.bumptech.glide.RequestManager.downloadOnly()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ ƒ(2“
+Bcom.bumptech.glide.RequestManager.download(java.lang.Object)!modelCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaƒ ƒ($2◊
+Bcom.bumptech.glide.RequestManager.download(java.lang.Object)!model	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java√8 √(=2∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java√	 √(2¨
+java.io.FileRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java√ √(”
+Bcom.bumptech.glide.RequestManager.download(java.lang.Object)!model	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java√8 √(="
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*model2†
+java.lang.ObjectTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java√1 √(7⁄
+
+*com.bumptech.glide.RequestManager.asFile()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“ “($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestBuilder<File>"
+accesspublic"
+LOC4*asFile2È
+Ycom.bumptech.glide.RequestBuilder.apply(com.bumptech.glide.request.BaseRequestOptions<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java” ”(2”
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java” ”(2‘
+Dcom.bumptech.glide.request.RequestOptions.skipMemoryCacheOf(boolean)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java”  ”(12∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“	 “(2¨
+java.io.FileRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“ “(§
+Ccom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡5 ‡(7"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"$
+typeRequestBuilder<ResourceType>"
+accesspublic"
+LOC5*as2∑
+¶com.bumptech.glide.RequestBuilder.RequestBuilder(com.bumptech.glide.Glide, com.bumptech.glide.RequestManager, java.lang.Class<TranscodeType>, android.content.Context)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‚ ‚(2√
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‚  ‚(%2·
+Qcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)!resourceClassCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‚- ‚(:2≈
+5com.bumptech.glide.RequestManager?context@64.26:64.33CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‚< ‚(C2Ê
+Qcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)!resourceClass	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java·# ·(02∏
+!com.bumptech.glide.RequestBuilderRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡ ‡(&2
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡' ‡(32Í
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeTYPE_PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡
+ ‡(‚
+Qcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>)!resourceClass	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java·# ·(0"
+typeClass<ResourceType>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*resourceClass2ü
+java.lang.ClassTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java· ·(2È
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeTYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java· ·(!¯
+Pcom.bumptech.glide.RequestManager.as(java.lang.Class<ResourceType>).ResourceTypeTYPE_PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡
+ ‡(*ResourceType„
+
+:com.bumptech.glide.RequestManager.clear(android.view.View)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÒ Ò("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC2*clear2‰
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÚ Ú(	2‹
+Lcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÚ Ú(2œ
+?com.bumptech.glide.RequestManager.clear(android.view.View)!viewCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÚ Ú(2‘
+?com.bumptech.glide.RequestManager.clear(android.view.View)!view	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÒ" Ò(&2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÒ	 Ò(Œ
+?com.bumptech.glide.RequestManager.clear(android.view.View)!view	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÒ" Ò(&"
+typeView"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*view2°
+android.view.ViewTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÒ Ò(!–
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˚ ˚("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC6*clear2
+`com.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÄ Ä(2Î
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¸ ¸(2Î
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÄ Ä(2
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˚. ˚(42õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˚	 ˚(á
+[com.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˚. ˚(4"
+type	Target<?>"
+isFinaltrue"
+packagecom.bumptech.glide"
+isLocaltrue*target2∏
+(com.bumptech.glide.request.target.TargetTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˚$ ˚(*€"
+`com.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ É( "
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC24*untrackOrDelegate2Ê
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ Ñ(!2≈
+5com.bumptech.glide.request.target.Target.getRequest()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ('2Ë
+Xcom.bumptech.glide.Glide.removeFromManagers(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaó ó(12Á
+Wcom.bumptech.glide.request.target.Target.setRequest(com.bumptech.glide.request.Request)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaò ò(2∫
+*com.bumptech.glide.request.Request.clear()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaô ô(2˜
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ" Ñ((2˜
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(2ä
+zcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?isOwnedByUs@644.12:644.23CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaó	 ó(2√
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaó ó(2˜
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaó2 ó(82Ü
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaó= ó(D2˜
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaò ò(2Ü
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaô ô(2¸
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ4 É(:2ë
+zcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?isOwnedByUs@644.12:644.23DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ Ñ(2ç
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ
+ É(Î
+zcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?isOwnedByUs@644.12:644.23VARIABLEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ Ñ("
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isOwnedByUs2ó
+booleanTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ Ñ(2Ê
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ Ñ(!2˜
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÑ" Ñ((›
+vcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)?request@662.12:662.19VARIABLEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ("
+typeRequest"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2≤
+"com.bumptech.glide.request.RequestTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(2≈
+5com.bumptech.glide.request.target.Target.getRequest()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ('2˜
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javañ ñ(î
+gcom.bumptech.glide.RequestManager.untrackOrDelegate(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ4 É(:"
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2∏
+(com.bumptech.glide.request.target.TargetTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÉ* É(0ô
+Vcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù ù("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspackage_private"	
+LOC14*untrack2≈
+5com.bumptech.glide.request.target.Target.getRequest()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û('2Ï
+\com.bumptech.glide.manager.RequestTracker.clearAndRemove(com.bumptech.glide.request.Request)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java§ §(%2Ì
+]com.bumptech.glide.manager.TargetTracker.untrack(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java• •(2Á
+Wcom.bumptech.glide.request.target.Target.setRequest(com.bumptech.glide.request.Request)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¶ ¶(2Ì
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û(2¸
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java† †(2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java§ §(2¸
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java§& §(-2À
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java• •(2Ì
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java• •("2Ì
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¶ ¶(2Ú
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù2 ù(82É
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û(2û
+booleanRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù ù(…
+lcom.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)?request@670.12:670.19VARIABLEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û("
+typeRequest"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2≤
+"com.bumptech.glide.request.RequestTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û(2≈
+5com.bumptech.glide.request.target.Target.getRequest()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û('2Ì
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaû û(ä
+]com.bumptech.glide.RequestManager.untrack(com.bumptech.glide.request.target.Target<?>)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù2 ù(8"
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2∏
+(com.bumptech.glide.request.target.TargetTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaù( ù(.á
+xcom.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠ ≠("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*track2Î
+[com.bumptech.glide.manager.TargetTracker.track(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÆ Æ(2Ë
+Xcom.bumptech.glide.manager.RequestTracker.runRequest(com.bumptech.glide.request.Request)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ Ø(2À
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÆ Æ(2è
+com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!targetCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÆ Æ(2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ Ø(2ë
+Äcom.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!requestCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaØ Ø(%2î
+com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠- ≠(32ñ
+Äcom.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!request	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠F ≠(M2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠ ≠(¨
+com.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!target	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠- ≠(3"
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2∏
+(com.bumptech.glide.request.target.TargetTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠# ≠()ß
+Äcom.bumptech.glide.RequestManager.track(com.bumptech.glide.request.target.Target<?>, com.bumptech.glide.request.Request)!request	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠F ≠(M"
+typeRequest"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*request2≤
+"com.bumptech.glide.request.RequestTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≠> ≠(Eë	
+>com.bumptech.glide.RequestManager.getDefaultRequestListeners()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≤  ≤(:"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"%
+typeList<RequestListener<Object>>"
+accesspackage_private"
+LOC2*getDefaultRequestListeners2’
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≥ ≥("2•
+java.util.ListRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≤ ≤(2 
+*com.bumptech.glide.request.RequestListenerRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≤ ≤(2∞
+java.lang.ObjectRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≤ ≤(ê
+<com.bumptech.glide.RequestManager.getDefaultRequestOptions()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∂ ∂(6"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeRequestOptions"
+accesspackage_private"
+LOC2*getDefaultRequestOptions2Ã
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∑ ∑(2¿
+)com.bumptech.glide.request.RequestOptionsRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∂ ∂(ì
+Qcom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª ª(9"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeTransitionOptions<?, T>"
+accesspackage_private"
+LOC3*getDefaultTransitionOptions2ﬂ
+Ocom.bumptech.glide.GlideContext.getDefaultTransitionOptions(java.lang.Class<T>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaº# º(>2∫
+*com.bumptech.glide.Glide.getGlideContext()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaº º( 2√
+3com.bumptech.glide.RequestManager?glide@63.24:63.29CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaº º(2
+`com.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClassCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaº? º(M2ı
+`com.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClass	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaªC ª(Q2ª
+$com.bumptech.glide.TransitionOptionsRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª ª(2Û
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TRETURN_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª ª(2Ì
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª ª(Í
+`com.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>)!transcodeClass	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaªC ª(Q"
+typeClass<T>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*transcodeClass2ü
+java.lang.ClassTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª: ª(?2Ï
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª@ ª(A
+Scom.bumptech.glide.RequestManager.getDefaultTransitionOptions(java.lang.Class<T>).TTYPE_PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaª ª(*TΩ
+,com.bumptech.glide.RequestManager.toString()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¿ ¿(%"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC3*toString2´
+java.lang.Object.toString()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¡ ¡(2Ã
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¡, ¡(:2∆
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¡M ¡(U2ß
+java.lang.StringRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java¿ ¿(∆
+
+3com.bumptech.glide.RequestManager.onTrimMemory(int)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC5*onTrimMemory2Õ
+=com.bumptech.glide.RequestManager.pauseAllRequestsRecursive()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java« «(2…
+9com.bumptech.glide.RequestManager.onTrimMemory(int)!levelCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∆ ∆(2‚
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java∆) ∆(M2Œ
+9com.bumptech.glide.RequestManager.onTrimMemory(int)!level	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈($2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈	 ≈(∫
+9com.bumptech.glide.RequestManager.onTrimMemory(int)!level	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈($"
+typeint"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*level2ì
+intTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java≈ ≈(Ô
+/com.bumptech.glide.RequestManager.onLowMemory()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÃ Ã("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*onLowMemory2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÃ	 Ã(∑
+1com.bumptech.glide.RequestManager.clearRequests()METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java– –()"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC5*clearRequests2¡
+1com.bumptech.glide.manager.TargetTracker.getAll()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java—* —(02‰
+Tcom.bumptech.glide.RequestManager.clear(com.bumptech.glide.request.target.Target<?>)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“ “(2¿
+0com.bumptech.glide.manager.TargetTracker.clear()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‘ ‘(2À
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —()2÷
+Fcom.bumptech.glide.RequestManager.clearRequests()?target@721.19:721.25CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java“ “(2À
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‘ ‘(2›
+Fcom.bumptech.glide.RequestManager.clearRequests()?target@721.19:721.25DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —(2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java– –(Ú
+Fcom.bumptech.glide.RequestManager.clearRequests()?target@721.19:721.25VARIABLEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java— —("
+type	Target<?>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*target2∏
+(com.bumptech.glide.request.target.TargetTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java—	 —(£
+[com.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÿ ÿ($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*onConfigurationChanged2˙
+ecom.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)!newConfig	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÿ3 ÿ(<2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÿ	 ÿ(í
+ecom.bumptech.glide.RequestManager.onConfigurationChanged(android.content.res.Configuration)!newConfig	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÿ3 ÿ(<"
+typeConfiguration"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*	newConfig2±
+!android.content.res.ConfigurationTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÿ% ÿ(2º
+@com.bumptech.glide.RequestManager?DECODE_TYPE_BITMAP@58.38:58.56VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java:& :(8"
+isFinaltrue"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*DECODE_TYPE_BITMAP2∑
+)com.bumptech.glide.request.RequestOptionsTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java: :(%2¬
+4com.bumptech.glide.request.BaseRequestOptions.lock()CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java:V :(Z2ÿ
+Jcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java:; :(G∂
+=com.bumptech.glide.RequestManager?DECODE_TYPE_GIF@59.38:59.53VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java;& ;(5"
+isFinaltrue"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*DECODE_TYPE_GIF2∑
+)com.bumptech.glide.request.RequestOptionsTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java; ;(%2¬
+4com.bumptech.glide.request.BaseRequestOptions.lock()CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java;X ;(\2ÿ
+Jcom.bumptech.glide.request.RequestOptions.decodeTypeOf(java.lang.Class<?>)CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java;8 ;(D›	
+Ccom.bumptech.glide.RequestManager?DOWNLOAD_ONLY_OPTIONS@60.38:60.59VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java<& <(;"
+isFinaltrue"
+typeRequestOptions"
+isStatictrue"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*DOWNLOAD_ONLY_OPTIONS2∑
+)com.bumptech.glide.request.RequestOptionsTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java< <(%2‘
+Fcom.bumptech.glide.request.BaseRequestOptions.skipMemoryCache(boolean)CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java=I =(X2·
+Scom.bumptech.glide.request.BaseRequestOptions.priority(com.bumptech.glide.Priority)CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java=2 =(:2˝
+ocom.bumptech.glide.request.RequestOptions.diskCacheStrategyOf(com.bumptech.glide.load.engine.DiskCacheStrategy)CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java= =(Î
+3com.bumptech.glide.RequestManager?glide@63.24:63.29VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java? ?("
+isFinaltrue"
+typeGlide"
+isStaticfalse"
+access	protected"
+isLocalfalse"
+packagecom.bumptech.glide*glide2¶
+com.bumptech.glide.GlideTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java? ?(
+5com.bumptech.glide.RequestManager?context@64.26:64.33VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java@ @(!"
+isFinaltrue"
+typeContext"
+isStaticfalse"
+access	protected"
+isLocalfalse"
+packagecom.bumptech.glide*context2•
+android.content.ContextTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java@ @(â
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaD D("
+isFinaltrue"
+type	Lifecycle"
+isStaticfalse"
+accesspackage_private"
+isLocalfalse"
+packagecom.bumptech.glide*	lifecycle2≤
+$com.bumptech.glide.manager.LifecycleTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaD D(ï
+<com.bumptech.glide.RequestManager?requestTracker@71.31:71.45VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaG G(-"
+isFinaltrue"
+typeRequestTracker"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*requestTracker2∑
+)com.bumptech.glide.manager.RequestTrackerTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaG G(ô
+6com.bumptech.glide.RequestManager?treeNode@74.39:74.47VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaJ' J(/"
+isFinaltrue"
+typeRequestManagerTreeNode"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*treeNode2ø
+1com.bumptech.glide.manager.RequestManagerTreeNodeTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaJ J(&⁄
+;com.bumptech.glide.RequestManager?targetTracker@77.30:77.43VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaM M(+"
+isFinaltrue"
+typeTargetTracker"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*targetTracker2∂
+(com.bumptech.glide.manager.TargetTrackerTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaM M(2∆
+8com.bumptech.glide.manager.TargetTracker.TargetTracker()CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaM2 M(? 	
+@com.bumptech.glide.RequestManager?addSelfToLifecycle@79.25:79.43VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaO O(+"
+isFinaltrue"
+typeRunnable"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*addSelfToLifecycle2†
+java.lang.RunnableTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaO O(2Ï
+^com.bumptech.glide.manager.Lifecycle.addListener(com.bumptech.glide.manager.LifecycleListener)CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaS S(2ê
+Åcom.bumptech.glide.RequestManager.Anonymous-b8ef3112-ae14-4d71-b1af-4761b2653856.Anonymous-b8ef3112-ae14-4d71-b1af-4761b2653856()CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaP
+ P(2≈
+7com.bumptech.glide.RequestManager?lifecycle@68.18:68.27CALLÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaS
+ S(©
+Acom.bumptech.glide.RequestManager?connectivityMonitor@86.36:86.55VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaV$ V(7"
+isFinaltrue"
+typeConnectivityMonitor"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*connectivityMonitor2º
+.com.bumptech.glide.manager.ConnectivityMonitorTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaV V(#¥
+Ecom.bumptech.glide.RequestManager?defaultRequestListeners@90.62:90.85VALUEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaZ> Z(U"
+isFinaltrue"5
+type-CopyOnWriteArrayList<RequestListener<Object>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*defaultRequestListeners2∑
+)java.util.concurrent.CopyOnWriteArrayListTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaZ Z($2¡
+*com.bumptech.glide.request.RequestListenerTYPE_ARGUMENTÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaZ% Z(42ß
+java.lang.ObjectTYPE_ARGUMENTÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaZ5 Z(;ô
+<com.bumptech.glide.RequestManager?requestOptions@93.25:93.39VARIABLEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java] ]('"
+isFinalfalse"
+typeRequestOptions"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*requestOptions2∑
+)com.bumptech.glide.request.RequestOptionsTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java]
+ ](ú
+Rcom.bumptech.glide.RequestManager?pauseAllRequestsOnTrimMemoryModerate@95.18:95.54VARIABLEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java_ _(6"
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*$pauseAllRequestsOnTrimMemoryModerate2ï
+booleanTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java_
+ _(Í
+9com.bumptech.glide.RequestManager?clearOnStop@97.18:97.29VARIABLEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaa a("
+isFinalfalse"
+typeboolean"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*clearOnStop2ï
+booleanTYPEÉ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaa
+ a(Ô
+
+Dcom.bumptech.glide.RequestManager.RequestManagerConnectivityListenerCLASSÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java⁄ ⁄(2"
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classtrue"
+
+isAbstractfalse"
+accessprivate"	
+LOC17*"RequestManagerConnectivityListener2™
+ícom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ ﬂ(&2˙
+ccom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‰ ‰(%2¯
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java›! ›(/2’
+Ccom.bumptech.glide.manager.ConnectivityMonitor.ConnectivityListenerEXTENDÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java€% €(9Æ
+ícom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)CONSTRUCTORÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ ﬂ(&"
+packagecom.bumptech.glide*"RequestManagerConnectivityListener2≤
+°com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)!requestTrackerCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡ ‡(*2Ò
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‡ ‡(2∑
+°com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)!requestTracker	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ? ﬂ(M2€
+Dcom.bumptech.glide.RequestManager.RequestManagerConnectivityListenerRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ ﬂ(&›
+°com.bumptech.glide.RequestManager.RequestManagerConnectivityListener.RequestManagerConnectivityListener(com.bumptech.glide.manager.RequestTracker)!requestTracker	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ? ﬂ(M"
+typeRequestTracker"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*requestTracker2π
+)com.bumptech.glide.manager.RequestTrackerTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaﬂ0 ﬂ(>Ò
+ccom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‰ ‰(%"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC7*onConnectivityChanged2À
+;com.bumptech.glide.manager.RequestTracker.restartRequests()CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÁ Á((2ˇ
+ocom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)!isConnectedCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÂ
+ Â(2Ò
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÁ
+ Á(2ˆ
+bcom.bumptech.glide.manager.ConnectivityMonitor.ConnectivityListener.onConnectivityChanged(boolean)OVERRIDEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‰ ‰(%2Ñ
+ocom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)!isConnected	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‰. ‰(92õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‰ ‰(˛
+ocom.bumptech.glide.RequestManager.RequestManagerConnectivityListener.onConnectivityChanged(boolean)!isConnected	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‰. ‰(9"
+typeboolean"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*isConnected2ó
+booleanTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java‰& ‰(-æ
+acom.bumptech.glide.RequestManager.RequestManagerConnectivityListener?requestTracker@733.33:733.47VALUEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java›! ›(/"
+isFinaltrue"
+typeRequestTracker"
+isStaticfalse"
+accessprivate"
+isLocalfalse"
+packagecom.bumptech.glide*requestTracker2π
+)com.bumptech.glide.manager.RequestTrackerTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java› ›( Ñ
+-com.bumptech.glide.RequestManager.ClearTargetCLASSÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÌ Ì(""
+packagecom.bumptech.glide"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC21*ClearTarget2„
+Lcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÔ Ô(2˙
+ccom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ Ù($2ı
+^com.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˘ ˘(2≥
+õcom.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)DECLARATIONÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˛ ˛(2ƒ
+2com.bumptech.glide.request.target.CustomViewTargetEXTENDÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÌ+ Ì(;2±
+android.view.ViewEXTEND_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÌ< Ì(@2∞
+java.lang.ObjectEXTEND_TYPE_ARGUMENTÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÌB Ì(H¸
+Lcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)CONSTRUCTORÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÔ Ô("
+packagecom.bumptech.glide*ClearTarget2÷
+Fcom.bumptech.glide.request.target.CustomViewTarget.CustomViewTarget(T)CALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java (2·
+Qcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)!viewCALLÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java (2Ê
+Qcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)!view	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÔ Ô("2ƒ
+-com.bumptech.glide.RequestManager.ClearTargetRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÔ Ô(‡
+Qcom.bumptech.glide.RequestManager.ClearTarget.ClearTarget(android.view.View)!view	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÔ Ô(""
+typeView"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*view2°
+android.view.ViewTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÔ Ô(≤
+ccom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ Ù($"
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+access	protected"
+LOC3*onResourceCleared2¸
+hcom.bumptech.glide.request.target.CustomViewTarget.onResourceCleared(android.graphics.drawable.Drawable)OVERRIDEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ Ù($2Ñ
+ocom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ8 Ù(C2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ Ù(ö
+ocom.bumptech.glide.RequestManager.ClearTarget.onResourceCleared(android.graphics.drawable.Drawable)!placeholder	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ8 Ù(C"
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*placeholder2≤
+"android.graphics.drawable.DrawableTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaÙ/ Ù(7ì
+^com.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˘ ˘("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*onLoadFailed2Ì
+Ycom.bumptech.glide.request.target.Target.onLoadFailed(android.graphics.drawable.Drawable)OVERRIDEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˘ ˘(2Å
+lcom.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)!errorDrawable	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˘0 ˘(=2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˘ ˘(ô
+lcom.bumptech.glide.RequestManager.ClearTarget.onLoadFailed(android.graphics.drawable.Drawable)!errorDrawable	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˘0 ˘(="
+typeDrawable"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*errorDrawable2≤
+"android.graphics.drawable.DrawableTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˘' ˘(/‹	
+õcom.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)METHODÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˛ ˛("
+packagecom.bumptech.glide"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*onResourceReady2∫
+§com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!resource	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇ ˇ( 2º
+¶com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!transition	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇG ˇ(Q2õ
+voidRETURN_TYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.java˛ ˛(π
+§com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!resource	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇ ˇ( "
+typeObject"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*resource2†
+java.lang.ObjectTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇ ˇ(Ò
+¶com.bumptech.glide.RequestManager.ClearTarget.onResourceReady(java.lang.Object, com.bumptech.glide.request.transition.Transition<? super java.lang.Object>)!transition	PARAMETERÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇG ˇ(Q""
+typeTransition<? super Object>"
+isFinalfalse"
+packagecom.bumptech.glide"
+isLocaltrue*
+transition2¿
+0com.bumptech.glide.request.transition.TransitionTYPEÖ
+yF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\RequestManager.javaˇ, ˇ(6

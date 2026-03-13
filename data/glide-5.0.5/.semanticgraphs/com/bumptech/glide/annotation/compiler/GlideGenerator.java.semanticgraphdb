@@ -1,0 +1,943 @@
+
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÈ
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaFILEú
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java"
+
+LOC226*ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô(
+5com.bumptech.glide.annotation.compiler.GlideGeneratorCLASS§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaH H("1
+package&com.bumptech.glide.annotation.compiler"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC154*GlideGenerator2‰
+≠com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaU U(2π
+Çcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java` `(2ø
+àcom.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javau u(;2≥
+{com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÜ Ü(.2Ÿ
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™ ™(&2é
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator.discoverGlideMethodsToOverride()DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¬" ¬(@2´
+scom.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∆ ∆(#2‰
+´com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java   (,2å
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator?GLIDE_QUALIFIED_NAME@73.30:73.50DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaI I(22ñ
+`com.bumptech.glide.annotation.compiler.GlideGenerator?REQUEST_MANAGER_QUALIFIED_NAME@75.30:75.60DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaK K(<2í
+\com.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_PACKAGE_NAME@77.30:77.56DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaM M(82ê
+Zcom.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_CLASS_NAME@78.30:78.54DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaN N(62Ö
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaP& P(32Ö
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaQ Q(+2Å
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaR R(%2ä
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaS S(.π.
+≠com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)CONSTRUCTOR§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaU U("1
+package&com.bumptech.glide.annotation.compiler*GlideGenerator2Ú
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaY* Y(92Ù
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java[& [(42Ù
+Ejavax.lang.model.util.Elements.getTypeElement(java.lang.CharSequence)CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java] ](+2Î
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaV V(&2Î
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtilCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaW W(&2Î
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaY Y()2É
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java[ [(2ˆ
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java[ [(%2è
+`com.bumptech.glide.annotation.compiler.GlideGenerator?REQUEST_MANAGER_QUALIFIED_NAME@75.30:75.60CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java[5 [(S2˙
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java] ](2ˆ
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java] ](2Ö
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator?GLIDE_QUALIFIED_NAME@73.30:73.50CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java], ](@2˛
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaV	 V(2˛
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaW	 W(2
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaU' U(42
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaUD U(Q2˝
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25DECLARATION§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaY Y(2Î
+5com.bumptech.glide.annotation.compiler.GlideGeneratorRETURN_TYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaU U(£
+
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)?elementUtils@89.13:89.25VARIABLE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaY Y("
+typeElements"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*elementUtils2Õ
+javax.lang.model.util.ElementsTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaY Y(2Ú
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaY* Y(92Î
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnvCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaY Y()◊
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processingEnv	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaU' U(4"
+typeProcessingEnvironment"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processingEnv2‡
+1javax.annotation.processing.ProcessingEnvironmentTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaU U(&“
+ªcom.bumptech.glide.annotation.compiler.GlideGenerator.GlideGenerator(javax.annotation.processing.ProcessingEnvironment, com.bumptech.glide.annotation.compiler.ProcessorUtil)!processorUtil	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaUD U(Q"
+typeProcessorUtil"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*processorUtil2„
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaU6 U(Cµ
+Çcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)METHOD§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java` `("1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeTypeSpec"
+accesspackage_private"	
+LOC19*generate2∏
+àcom.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaq q(,2º
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!glideNameCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javab! b(*2˙
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javam m(2À
+õcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageNameCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaq- q(E2 
+öcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManagerCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaqG q(^2–
+õcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaa a(%2¡
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!glideName	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaa. a(72œ
+öcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaaB a(Y2‘
+com.squareup.javapoet.TypeSpecRETURN_TYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java` `(
+í
+õcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaa a(%"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedCodePackageName2ø
+java.lang.StringTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaa a(Ù
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!glideName	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaa. a(7"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	glideName2ø
+java.lang.StringTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaa' a(-†
+öcom.bumptech.glide.annotation.compiler.GlideGenerator.generate(java.lang.String, java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaaB a(Y"
+typeTypeSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestManager2Õ
+com.squareup.javapoet.TypeSpecTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaa9 a(A´#
+àcom.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)METHOD§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javau u(;"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<MethodSpec>"
+accessprivate"	
+LOC15* generateOverridesForGlideMethods2Ö
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator.discoverGlideMethodsToOverride()CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javax x(&2¢
+scom.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java| |(!2€
+´com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)CALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java} }(,2¨
+{com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÄ Ä(.2Ã
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-afacf7ee-5fcf-4373-ab5f-1878429e434f.apply(javax.lang.model.element.ExecutableElement)!inputCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java|" |('2—
+°com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageNameCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java~ ~(*2–
+†com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManagerCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java~, ~(C2Ã
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-9c383381-76ec-4a75-b285-635262280313.apply(javax.lang.model.element.ExecutableElement)!inputCALL§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java~E ~(J2Œ
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-062bbad3-95e5-466e-b6ce-aec08327e13b.apply(javax.lang.model.element.ExecutableElement)!inputCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÄ/ Ä(42÷
+°com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javav v(+2’
+†com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javav< v(S2ƒ
+java.util.ListRETURN_TYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javau
+ u(2ﬂ
+ com.squareup.javapoet.MethodSpecRETURN_TYPE_ARGUMENT§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javau u(ó
+°com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedCodePackageName	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javav v(+"
+typeString"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedCodePackageName2ø
+java.lang.StringTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javav v(•
+†com.bumptech.glide.annotation.compiler.GlideGenerator.generateOverridesForGlideMethods(java.lang.String, com.squareup.javapoet.TypeSpec)!generatedRequestManager	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javav< v(S"
+typeTypeSpec"
+isFinaltrue"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestManager2Õ
+com.squareup.javapoet.TypeSpecTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javav3 v(;•
+úcom.bumptech.glide.annotation.compiler.GlideGenerator.Anonymous-ce311aaf-9fd3-470f-821a-33ca186c5f81.apply(javax.lang.model.element.ExecutableElement)!input	PARAMETER§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java{4 {(9"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*input2Ÿ
+*javax.lang.model.element.ExecutableElementTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java{" {(3í
+{com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)METHOD¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÜ Ü(."1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC34*overrideGlideStaticMethod2ü
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá3 á(@2¯
+Gjavax.lang.model.util.Types.asElement(javax.lang.model.type.TypeMirror)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä3 ä(<2Ò
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä$ ä(02Î
+:javax.lang.model.element.ExecutableElement.getReturnType()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaäN ä([2“
+!java.lang.CharSequence.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaçB ç(J2Î
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaç2 ç(?2™
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaè& è(>2“
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaí í(2·
+0java.lang.StringBuilder.append(java.lang.String)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaö	 ö(2∆
+java.util.List.add(E)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaù	 ù(2Î
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaù ù(+2…
+java.util.List.isEmpty()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaû û(2·
+0java.lang.StringBuilder.append(java.lang.String)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java† †(2‰
+3java.lang.AbstractStringBuilder.substring(int, int)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java£$ £(-2Ÿ
+(java.lang.AbstractStringBuilder.length()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java£6 £(<2·
+0java.lang.StringBuilder.append(java.lang.String)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java•	 •(2”
+"java.lang.StringBuilder.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¶ ¶(&2Ã
+java.util.List.toArray(T[])CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¶/ ¶(62Ë
+7java.lang.StringBuilder.StringBuilder(java.lang.String)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô ô(*2–
+java.util.ArrayList.ArrayList()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaõ õ('2Ë
+7java.lang.StringBuilder.StringBuilder(java.lang.String)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java£ £(2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá% á(22æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaáA á(Q2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä ä(#2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä= ä(M2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaç! ç(12Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaè è(%2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaè? è(O2∆
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaê ê(%2√
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaí í( 2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaí" í(22√
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaî î("2»
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaï ï(2√
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javañ ñ(2√
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javañ$ ñ(+2»
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô+ ô(72¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaö ö(2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaú ú(2¸
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaú ú($2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaù ù(2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaù ù(2∆
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaû	 û(2∆
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaü! ü(+2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java† †(2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java° °(2¡
+ècom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?param@159.25:159.30CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java° °(2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java£ £(
+2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java£ £(#2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java£1 £(52¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java• •(2√
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¶ ¶(2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¶ ¶(2¿
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¶* ¶(.2√
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaß ß(2√
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÜA Ü(Q2Õ
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá á("2 
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaâ â(2 
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaå å(2œ
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaî î(2«
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô ô(2«
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaõ õ(2»
+ècom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?param@159.25:159.30DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaü ü(2ÿ
+ com.squareup.javapoet.MethodSpecRETURN_TYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÜ
+ Ü(—
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá á(""
+typeList<ParameterSpec>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+parameters2ø
+java.util.ListTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá á(2›
+#com.squareup.javapoet.ParameterSpecTYPE_ARGUMENT¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá	 á(2ü
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá3 á(@2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaá% á(22æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaáA á(Q¥
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaâ â("
+typeTypeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2’
+$javax.lang.model.element.TypeElementTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaâ â(2¯
+Gjavax.lang.model.util.Types.asElement(javax.lang.model.type.TypeMirror)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä3 ä(<2Ò
+@javax.annotation.processing.ProcessingEnvironment.getTypeUtils()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä$ ä(02Î
+:javax.lang.model.element.ExecutableElement.getReturnType()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaäN ä([2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä ä(#2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaä= ä(M‹
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?builder@140.23:140.30VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaå å("
+typeMethodSpec.Builder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2Ÿ
+(com.squareup.javapoet.MethodSpec.BuilderTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaå å(2“
+!java.lang.CharSequence.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaçB ç(J2Î
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaç2 ç(?2™
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaè& è(>2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaç! ç(12Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaè è(%2æ
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaè? è(O2∆
+îcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?parameters@135.24:135.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaê ê(%¬
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaî î("
+typeboolean"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*returnsValue2∏
+booleanTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaî î(2√
+ëcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?element@137.16:137.23CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaî î("∏	
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?code@153.18:153.22VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô ô("
+typeStringBuilder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*code2»
+java.lang.StringBuilderTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô ô(2Ë
+7java.lang.StringBuilder.StringBuilder(java.lang.String)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô ô(*2»
+ñcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?returnsValue@148.12:148.24CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaô+ ô(7ò
+écom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?args@155.17:155.21VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaõ õ("
+typeList<Object>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*args2ø
+java.util.ListTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaõ õ(2 
+java.lang.ObjectTYPE_ARGUMENT¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaõ	 õ(2–
+java.util.ArrayList.ArrayList()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaõ õ('ê
+ècom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)?param@159.25:159.30VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaü ü("
+typeParameterSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*param2‘
+#com.squareup.javapoet.ParameterSpecTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaü ü(§
+åcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideStaticMethod(javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÜA Ü(Q"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2€
+*javax.lang.model.element.ExecutableElementTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÜ/ Ü(@ÏK
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)METHOD¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™ ™(&"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeBuilder"
+accessprivate"	
+LOC22*addReturnAnnotations2Ù
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java´& ´(52˘
+Hcom.bumptech.glide.annotation.compiler.ProcessorUtil.visibleForTesting()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java≠. ≠(?2Ã
+java.lang.Object.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÆM Æ(U2Ë
+7javax.lang.model.element.Element.getAnnotationMirrors()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∞4 ∞(H2‹
++javax.lang.model.type.TypeMirror.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµB µ(J2Ó
+=javax.lang.model.element.AnnotationMirror.getAnnotationType()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµ. µ(?2⁄
+)java.lang.String.equals(java.lang.Object)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∂" ∂((2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java´ ´(%2È
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java≠ ≠(2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java≠  ≠(-2˝
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÆ0 Æ(L2„
+±com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∞# ∞(32⁄
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builderCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java± ±(2Á
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java±/ ±(52Á
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµ' µ(-2¯
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?annotationQualifiedName@181.13:181.36CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∂
+ ∂(!2É
+—com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeQualifiedName@174.11:174.45CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∂) ∂(K2⁄
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builderCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∑ ∑(2ç
+\com.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_PACKAGE_NAME@77.30:77.56CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaπ" π(<2ã
+Zcom.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_CLASS_NAME@78.30:78.54CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaπ> π(V2⁄
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builderCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaø ø(2ﬂ
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builder	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™/ ™(62Ë
+±com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™J ™(Z2
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java´ ´(2Ñ
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¨ ¨(,2ä
+—com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeQualifiedName@174.11:174.45DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÆ Æ(-2Ó
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∞ ∞( 2ˇ
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?annotationQualifiedName@181.13:181.36DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµ µ($2‡
+(com.squareup.javapoet.MethodSpec.BuilderRETURN_TYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™
+ ™(´	
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java´ ´("
+typeElements"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*elements2œ
+javax.lang.model.util.ElementsTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java´ ´(2Ù
+Cjavax.annotation.processing.ProcessingEnvironment.getElementUtils()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java´& ´(52Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java´ ´(%Õ
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¨ ¨(,"
+typeTypeElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*visibleForTestingTypeElement2’
+$javax.lang.model.element.TypeElementTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¨ ¨(2˘
+Hcom.bumptech.glide.annotation.compiler.ProcessorUtil.visibleForTesting()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java≠. ≠(?2È
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?elements@171.13:171.21CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java≠ ≠(2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java≠  ≠(-§
+
+—com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeQualifiedName@174.11:174.45VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÆ Æ(-"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*"visibleForTestingTypeQualifiedName2¡
+java.lang.StringTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÆ Æ(
+2Ã
+java.lang.Object.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÆM Æ(U2˝
+Àcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?visibleForTestingTypeElement@172.16:172.44CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÆ0 Æ(L¿
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∞ ∞( "
+typeAnnotationMirror"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*mirror2⁄
+)javax.lang.model.element.AnnotationMirrorTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∞	 ∞(˘
+∆com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?annotationQualifiedName@181.13:181.36VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµ µ($"
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*annotationQualifiedName2¡
+java.lang.StringTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµ µ(2‹
++javax.lang.model.type.TypeMirror.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµB µ(J2Ó
+=javax.lang.model.element.AnnotationMirror.getAnnotationType()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµ. µ(?2Á
+µcom.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)?mirror@176.26:176.32CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaµ' µ(-´
+®com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!builder	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™/ ™(6"
+typeBuilder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2Ÿ
+(com.squareup.javapoet.MethodSpec.BuilderTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™' ™(.…
+±com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™J ™(Z"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2€
+*javax.lang.model.element.ExecutableElementTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java™8 ™(I≠
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator.discoverGlideMethodsToOverride()METHOD¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¬" ¬(@"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeList<ExecutableElement>"
+accessprivate"
+LOC2*discoverGlideMethodsToOverride2ù
+lcom.bumptech.glide.annotation.compiler.ProcessorUtil.findStaticMethods(javax.lang.model.element.TypeElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java√ √(*2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java√ √(2¸
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java√+ √(42∆
+java.util.ListRETURN_TYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¬
+ ¬(2Î
+*javax.lang.model.element.ExecutableElementRETURN_TYPE_ARGUMENT¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java¬ ¬( Ÿ
+scom.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)METHOD¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∆ ∆(#"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isGlideWithMethod2“
+†com.bumptech.glide.annotation.compiler.ProcessorUtil.isReturnValueTypeMatching(javax.lang.model.element.ExecutableElement, javax.lang.model.element.TypeElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java« «(22Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java« «(2¨
+{com.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)!elementCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java«3 «(:2Ö
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java«< «(N2±
+{com.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)!element	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∆6 ∆(=2ø
+booleanRETURN_TYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∆
+ ∆(â
+{com.bumptech.glide.annotation.compiler.GlideGenerator.isGlideWithMethod(javax.lang.model.element.ExecutableElement)!element	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∆6 ∆(="
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*element2€
+*javax.lang.model.element.ExecutableElementTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java∆$ ∆(5˚_
+´com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)METHOD¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java   (,"1
+package&com.bumptech.glide.annotation.compiler"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+type
+MethodSpec"
+accessprivate"	
+LOC23*overrideGlideWithMethod2ü
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ3 Œ(@2∆
+java.util.List.size()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java– –(2 
+java.util.Iterator.next()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java—4 —(82 
+java.util.List.iterator()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java—) —(12“
+!java.lang.CharSequence.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‘B ‘(J2Î
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‘2 ‘(?2™
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java÷& ÷(>2“
+!java.lang.CharSequence.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java›1 ›(92Î
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java›! ›(.2“
+†com.bumptech.glide.annotation.compiler.GlideGenerator.addReturnAnnotations(com.squareup.javapoet.MethodSpec.Builder, javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‡ ‡(2È
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageNameCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÕ Õ(!2ı
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManagerCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÕ# Õ(:2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ% Œ(22Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒA Œ(Q2ˆ
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java– –(2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java–B –(R2ˆ
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java— —((2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‘! ‘(12Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java÷ ÷(%2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java÷? ÷(O2ˆ
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java◊ ◊(%2å
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÿ ÿ(52å
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java€ €(02¸
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‹ ‹(2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java› ›( 2ı
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaﬁ ﬁ(2Û
+¡com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?builder@211.12:211.19CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‡  ‡('2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‡) ‡(92Ó
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageName	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀ À(2˙
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManager	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀ# À(:2Û
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀN À(^2ì
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÃ Ã(.2˝
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ Œ("2¸
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java— —(2˙
+¡com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?builder@211.12:211.19DECLARATION¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java” ”(2ÿ
+ com.squareup.javapoet.MethodSpecRETURN_TYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java 
+  (“
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÃ Ã(."
+type	ClassName"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue* generatedRequestManagerClassName2–
+com.squareup.javapoet.ClassNameTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÃ Ã(2È
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageNameCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÕ Õ(!2ı
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManagerCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÕ# Õ(:±
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ Œ(""
+typeList<ParameterSpec>"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*
+parameters2ø
+java.util.ListTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ Œ(2›
+#com.squareup.javapoet.ParameterSpecTYPE_ARGUMENT¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ	 Œ(2ü
+ncom.bumptech.glide.annotation.compiler.ProcessorUtil.getParameters(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ3 Œ(@2Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒ% Œ(22Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaŒA Œ(Q€
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java— —("
+typeParameterSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*	parameter2‘
+#com.squareup.javapoet.ParameterSpecTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java— —(2 
+java.util.Iterator.next()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java—4 —(82 
+java.util.List.iterator()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java—) —(12ˆ
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java— —((⁄'
+¡com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?builder@211.12:211.19VARIABLE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java” ”("
+typeBuilder"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*builder2Ÿ
+(com.squareup.javapoet.MethodSpec.BuilderTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java” ”(2“
+!java.lang.CharSequence.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‘B ‘(J2Î
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‘2 ‘(?2™
+ycom.bumptech.glide.annotation.compiler.ProcessorUtil.generateSeeMethodJavadoc(javax.lang.model.element.ExecutableElement)CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java÷& ÷(>2“
+!java.lang.CharSequence.toString()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java›1 ›(92Î
+:javax.lang.model.element.ExecutableElement.getSimpleName()CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java›! ›(.2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‘! ‘(12Ä
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java÷ ÷(%2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java÷? ÷(O2ˆ
+ƒcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameters@206.24:206.34CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java◊ ◊(%2å
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÿ ÿ(52å
+⁄com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?generatedRequestManagerClassName@204.14:204.46CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java€ €(02¸
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java‹ ‹(2Ó
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverrideCALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.java› ›( 2ı
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)?parameter@209.18:209.27CALL¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaﬁ ﬁ(•
+∑com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!packageName	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀ À("
+typeString"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*packageName2¡
+java.lang.StringTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀ À(Õ
+√com.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!generatedRequestManager	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀ# À(:"
+typeTypeSpec"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*generatedRequestManager2œ
+com.squareup.javapoet.TypeSpecTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀ À("‘
+ºcom.bumptech.glide.annotation.compiler.GlideGenerator.overrideGlideWithMethod(java.lang.String, com.squareup.javapoet.TypeSpec, javax.lang.model.element.ExecutableElement)!methodToOverride	PARAMETER¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀN À(^"
+typeExecutableElement"
+isFinalfalse"1
+package&com.bumptech.glide.annotation.compiler"
+isLocaltrue*methodToOverride2€
+*javax.lang.model.element.ExecutableElementTYPE¶
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaÀ< À(MÈ
+Vcom.bumptech.glide.annotation.compiler.GlideGenerator?GLIDE_QUALIFIED_NAME@73.30:73.50VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaI I(2"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*GLIDE_QUALIFIED_NAME2ø
+java.lang.StringTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaI I(˝
+`com.bumptech.glide.annotation.compiler.GlideGenerator?REQUEST_MANAGER_QUALIFIED_NAME@75.30:75.60VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaK K(<"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*REQUEST_MANAGER_QUALIFIED_NAME2ø
+java.lang.StringTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaK K(ı
+\com.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_PACKAGE_NAME@77.30:77.56VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaM M(8"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*SUPPRESS_LINT_PACKAGE_NAME2ø
+java.lang.StringTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaM M(Ò
+Zcom.bumptech.glide.annotation.compiler.GlideGenerator?SUPPRESS_LINT_CLASS_NAME@78.30:78.54VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaN N(6"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*SUPPRESS_LINT_CLASS_NAME2ø
+java.lang.StringTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaN N(å
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processingEnv@80.38:80.51VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaP& P(3"
+isFinaltrue"
+typeProcessingEnvironment"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processingEnv2‡
+1javax.annotation.processing.ProcessingEnvironmentTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaP P(%á
+Ocom.bumptech.glide.annotation.compiler.GlideGenerator?processorUtil@81.30:81.43VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaQ Q(+"
+isFinaltrue"
+typeProcessorUtil"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*processorUtil2„
+4com.bumptech.glide.annotation.compiler.ProcessorUtilTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaQ Q(Ì
+Kcom.bumptech.glide.annotation.compiler.GlideGenerator?glideType@82.28:82.37VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaR R(%"
+isFinaltrue"
+typeTypeElement"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*	glideType2”
+$javax.lang.model.element.TypeElementTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaR R(ˇ
+Tcom.bumptech.glide.annotation.compiler.GlideGenerator?requestManagerType@83.28:83.46VALUE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaS S(."
+isFinaltrue"
+typeTypeElement"
+isStaticfalse"
+accessprivate"
+isLocalfalse"1
+package&com.bumptech.glide.annotation.compiler*requestManagerType2”
+$javax.lang.model.element.TypeElementTYPE§
+ôF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideGenerator.javaS S(

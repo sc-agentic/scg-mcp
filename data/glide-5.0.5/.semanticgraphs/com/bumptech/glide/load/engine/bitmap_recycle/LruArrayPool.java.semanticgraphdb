@@ -1,0 +1,1832 @@
+
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‘
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaFILEï
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java"
+
+LOC278*íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaâA
+:com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPoolCLASSù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java ("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspublic"
+
+LOC262*LruArrayPool2¯
+Icom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.LruArrayPool()DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java%	 %(2˚
+Lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.LruArrayPool(int)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java.	 .(2Ñ
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4(2
+Acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9 9("2ã
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN N($2Ü
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT T(2»
+òcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _(2π
+âcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas s(2Ñ
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isSmallEnoughForReuse(int)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaw w('2ê
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{ {( 2Ç
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isNoMoreThanHalfFull()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ Ä(&2˘
+Hcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.clearMemory()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÖ Ö(&2˚
+Jcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.trimMemory(int)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaä ä(%2Û
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evict()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaì ì(2¸
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaó ó(2ô
+hcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§ §(#2í
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤) ≤(;2É
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº' º(;2í
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡' ¡(92¸
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java“ “(2Ç
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?DEFAULT_SIZE@18.27:18.39DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java ('2å
+]com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?MAX_OVER_SIZE_MULTIPLE@24.38:24.60DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java& (<2ì
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?SINGLE_ARRAY_MAX_SIZE_DIVISOR@27.27:27.56DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (82Ä
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?groupedMap@29.46:29.56DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java. (82˝
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (2Å
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> (I2˛
+Ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?adapters@32.56:32.64DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java 8  (@2˝
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java! !(2Å
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java" "(2·
+7com.bumptech.glide.load.engine.bitmap_recycle.ArrayPoolEXTENDù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java+ (4£
+Icom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.LruArrayPool()CONSTRUCTORù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java%	 %("8
+package-com.bumptech.glide.load.engine.bitmap_recycle*LruArrayPool2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java& &(2˚
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?DEFAULT_SIZE@18.27:18.39CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java& &(2È
+:com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPoolRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java%	 %(´
+
+Lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.LruArrayPool(int)CONSTRUCTORù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java.	 .("8
+package-com.bumptech.glide.load.engine.bitmap_recycle*LruArrayPool2¸
+Tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.LruArrayPool(int)!maxSizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java/ /(2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java/	 /(2Å
+Tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.LruArrayPool(int)!maxSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java. .(!2È
+:com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPoolRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java.	 .(¢
+Tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.LruArrayPool(int)!maxSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java. .(!"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*maxSize2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java. .(Ú
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*put2È
+Acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java5 5(2É
+[com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>)!arrayCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java5 5(2˛
+Rcom.bumptech.glide.load.engine.bitmap_recycle.ArrayPool.put(T, java.lang.Class<T>)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4(2à
+[com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>)!array	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4(2ç
+`com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4( 4(22≥
+voidRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4(2â
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4
+ 4(˘
+[com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>)!array	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4("	
+typeT"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*array2ˇ
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>).TTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4(Õ
+`com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4( 4(2"
+typeClass<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2∑
+java.lang.ClassTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 4($2à
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>).TTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4% 4(&å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4
+ 4(*TÎ\
+Acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9 9(""8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"	
+LOC19*put2√
+java.lang.Object.getClass()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java;+ ;(32â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java=, =(>2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getArrayLength(T)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> >(*2É
+[com.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getElementSizeInBytes()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java?) ?(>2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isSmallEnoughForReuse(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java@	 @(2á
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2
+Hcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.put(K, V)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaE E(2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF+ F(=2À
+#java.util.Map.get(java.lang.Object)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG G(2ø
+java.util.Map.put(K, V)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaH
+ H(2Í
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evict()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaJ J(	2Ô
+Gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)!arrayCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java;% ;(*2Ä
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java=? =(I2Ç
+Zcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayAdapter@61.29:61.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> >(2Ô
+Gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)!arrayCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java>+ >(02˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?size@62.8:62.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? ?(2Ç
+Zcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayAdapter@61.29:61.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? ?((2ˇ
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayBytes@63.8:63.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java@ @()2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?size@62.8:62.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2Ä
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC  C(*2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?groupedMap@29.46:29.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaE E(2¯
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?key@67.8:67.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaE E(2Ô
+Gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)!arrayCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaE E(2Ä
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF> F(H2˚
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?sizes@70.35:70.40CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG G(2¯
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?key@67.8:67.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG  G(#2˚
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?sizes@70.35:70.40CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaH H(	2¯
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?key@67.8:67.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaH H(2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?current@71.12:71.19CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaH H(2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?current@71.12:71.19CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaH. H(52˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaI I(2ˇ
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayBytes@63.8:63.18CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaI I(2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG$ G((2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaH H(2Í
+>com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool.put(T)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9 9("2Ù
+Gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)!array	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9% 9(*2á
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java; ;(2â
+Zcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayAdapter@61.29:61.41DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java= =()2Ä
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?size@62.8:62.12DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> >(2Ü
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayBytes@63.8:63.18DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? ?(2ˇ
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?key@67.8:67.11DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2Ç
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?sizes@70.35:70.40DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF# F((2Ñ
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?current@71.12:71.19DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG G(2≥
+voidRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9 9(2ı
+Ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9 9(Ë	
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java; ;("
+typeClass<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2∑
+java.lang.ClassTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java; ;(	2Ù
+Ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T).TTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java;
+ ;(2√
+java.lang.Object.getClass()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java;+ ;(32Ô
+Gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)!arrayCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java;% ;(*á
+Zcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayAdapter@61.29:61.41VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java= =()" 
+typeArrayAdapterInterface<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*arrayAdapter2Î
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java= =(2Ù
+Ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T).TTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java= =(2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java=, =(>2Ä
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java=? =(Ií
+
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?size@62.8:62.12VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> >("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> >(2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getArrayLength(T)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> >(*2Ç
+Zcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayAdapter@61.29:61.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> >(2Ô
+Gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)!arrayCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java>+ >(0Æ
+
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayBytes@63.8:63.18VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? ?("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayBytes2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? ?(2É
+[com.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getElementSizeInBytes()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java?) ?(>2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?size@62.8:62.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? ?(2Ç
+Zcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayAdapter@61.29:61.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? ?((÷
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?key@67.8:67.11VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C("
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*key2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2á
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?size@62.8:62.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC C(2Ä
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaC  C(*Â
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?sizes@70.35:70.40VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF# F(("&
+typeNavigableMap<Integer, Integer>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*sizes2æ
+java.util.NavigableMapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF F(2¬
+java.lang.IntegerTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF F(2¬
+java.lang.IntegerTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF F(!2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF+ F(=2Ä
+Xcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?arrayClass@59.13:59.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaF> F(H˜
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?current@71.12:71.19VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG G("
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*current2π
+java.lang.IntegerTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG G(2À
+#java.util.Map.get(java.lang.Object)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG G(2˚
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?sizes@70.35:70.40CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG G(2¯
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)?key@67.8:67.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG  G(#2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaG$ G((—
+Gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T)!array	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9% 9(*"	
+typeT"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*array2Î
+Ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T).TTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9# 9($¯
+Ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.put(T).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java9 9(*TÀ
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN N($"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"	
+typeT"
+accesspublic"
+LOC4*getExact2á
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2¡
+òcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaP P(2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO  O(*2ì
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)?key@79.8:79.11CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaP P(2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaP P($2Ö
+Ycom.bumptech.glide.load.engine.bitmap_recycle.ArrayPool.getExact(int, java.lang.Class<T>)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN N($2é
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN) N(-2î
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN8 N(B2ö
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)?key@79.8:79.11DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2∞
+TRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN N(2ê
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN N(ê
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)?key@79.8:79.11VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O("
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*key2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2á
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO O(2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaO  O(*¨
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN) N(-"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN% N((€
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN8 N(B"
+typeClass<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2∑
+java.lang.ClassTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN/ N(42è
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>).TTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN5 N(6ì
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getExact(int, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaN N(*T•;
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT T("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"	
+typeT"
+accesspublic"	
+LOC10*get2Ã
+$java.util.NavigableMap.ceilingKey(K)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU: U(D2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU U(-2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaW W(2á
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaX X(2á
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaZ Z(2¡
+òcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java\ \(2ä
+bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU. U(82Ñ
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaUE U(I2Ñ
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaW W(2ò
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?possibleSize@85.12:85.24CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaW W()2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?key@86.14:86.17CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaX X(	2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaX X(2ò
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?possibleSize@85.12:85.24CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaX X($2ä
+bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaX& X(02è
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?key@86.14:86.17CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaZ Z(	2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaZ Z(2Ñ
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaZ Z(2ä
+bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaZ Z((2è
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?key@86.14:86.17CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java\ \(2ä
+bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java\ \($2Ä
+Tcom.bumptech.glide.load.engine.bitmap_recycle.ArrayPool.get(int, java.lang.Class<T>)OVERRIDEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT T(2â
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT$ T((2è
+bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT3 T(=2ü
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?possibleSize@85.12:85.24DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU U(2ñ
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?key@86.14:86.17DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaV V(2∞
+TRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT T(2ã
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT T(√
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?possibleSize@85.12:85.24VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU U("
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*possibleSize2π
+java.lang.IntegerTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU U(2Ã
+$java.util.NavigableMap.ceilingKey(K)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU: U(D2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU U(-2ä
+bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaU. U(82Ñ
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!sizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaUE U(IÁ
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)?key@86.14:86.17VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaV V("
+typeKey"
+isFinaltrue"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*key2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaV
+ V(ß
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!size	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT$ T(("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT  T(#—
+bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT3 T(="
+typeClass<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2∑
+java.lang.ClassTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT* T(/2ä
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>).TTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT0 T(1é
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.get(int, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaT T(*T±X
+òcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"	
+typeT"
+accessprivate"	
+LOC15*	getForKey2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java`, `(>2≤
+âcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaa a(2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getArrayLength(T)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javac" c(02É
+[com.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getElementSizeInBytes()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javacH c(]2ê
+hcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javad d(2˝
+Ucom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getArrayLength(T)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javad( d(62Ù
+Lcom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getTag()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javah& h(,2Ù
+Lcom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getTag()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javai i(!2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.newArray(int)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javak k($2Ã
+£com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java`? `(I2≈
+úcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!keyCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaa a(!2”
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javab b(2˙
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javac c(2⁄
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javac c(!2”
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javac1 c(72⁄
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javac; c(G2⁄
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javad d('2”
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javad7 d(=2Ã
+£com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javad@ d(J2”
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javag g(2⁄
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javah h(%2⁄
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javai i(2≈
+úcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!keyCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javai4 i(72”
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javak k(2⁄
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javak k(2≈
+úcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!keyCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javak% k((2”
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javam m(2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javai8 i(<2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javak) k(-2 
+úcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!key	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _(!2—
+£com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_, _(62·
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java` `()2⁄
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12DECLARATIONù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaa a(2∞
+TRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _(2Õ
+öcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _(É
+±com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?arrayAdapter@96.29:96.41VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java` `()" 
+typeArrayAdapterInterface<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*arrayAdapter2Î
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java` `(2Ã
+öcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>).TTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java` `(2â
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java`, `(>2Ã
+£com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!arrayClassCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java`? `(Iä
+™com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)?result@97.6:97.12VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaa a("	
+typeT"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*result2√
+öcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>).TTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaa a(2≤
+âcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaa a(2≈
+úcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!keyCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaa a(!¢
+úcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!key	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _(!"
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*key2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _(’
+£com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>)!arrayClass	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_, _(6"
+typeClass<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2∑
+java.lang.ClassTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_# _((2Ã
+öcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>).TTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_) _(*–
+öcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key, java.lang.Class<T>).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java_ _(*T∑
+âcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas s("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"	
+typeT"
+accessprivate"
+LOC4*getArrayForKey2Ì
+Ecom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.get(K)CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javat t(2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?groupedMap@29.46:29.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javat t(2∂
+çcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key)!keyCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javat t(!2ª
+çcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key)!key	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas# s(&2∞
+TRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas s(2æ
+ãcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas s(ì
+çcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key)!key	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas# s(&"
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*key2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas s("¡
+ãcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getArrayForKey(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key).TTYPE_PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javas s(*Tê
+Ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isSmallEnoughForReuse(int)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaw w('"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isSmallEnoughForReuse2Ü
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isSmallEnoughForReuse(int)!byteSizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javax x(2ˆ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javax x(2å
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?SINGLE_ARRAY_MAX_SIZE_DIVISOR@27.27:27.56CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javax! x(>2ã
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isSmallEnoughForReuse(int)!byteSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaw, w(42∂
+booleanRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaw
+ w(≠
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isSmallEnoughForReuse(int)!byteSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaw, w(4"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*byteSize2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaw( w(+˝
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)METHODù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{ {( "8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC3*mayFillRequest2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isNoMoreThanHalfFull()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java} }( 2î
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)!actualSizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java| |(2î
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)!actualSizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java}& }(02Ö
+]com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?MAX_OVER_SIZE_MULTIPLE@24.38:24.60CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java}5 }(K2ó
+ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)!requestedSizeCALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java}N }([2ú
+ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)!requestedSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{% {(22ô
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)!actualSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{< {(F2∂
+booleanRETURN_TYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{
+ {(√
+ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)!requestedSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{% {(2"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*requestedSize2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{! {($œ
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.mayFillRequest(int, java.lang.Integer)!actualSize	PARAMETERù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{< {(F"
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+actualSize2π
+java.lang.IntegerTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java{4 {(;È
+
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.isNoMoreThanHalfFull()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ Ä(&"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accessprivate"
+LOC2*isNoMoreThanHalfFull2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÅ Å(2¯
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÅ Å(&2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÅ) Å(42∏
+booleanRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ
+ Ä(≈
+Hcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.clearMemory()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÖ Ö(&"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*clearMemory2ı
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÜ Ü(2Û
+Ecom.bumptech.glide.load.engine.bitmap_recycle.ArrayPool.clearMemory()OVERRIDEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÖ Ö(&2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÖ Ö(±
+Jcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.trimMemory(int)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaä ä(%"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC8*
+trimMemory2Ú
+Hcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.clearMemory()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaå å(2ı
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaè è(2˙
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.trimMemory(int)!levelCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaã ã(2˙
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.trimMemory(int)!levelCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaç ç(2˙
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.trimMemory(int)!levelCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaé é(2¯
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaè è(2ı
+Gcom.bumptech.glide.load.engine.bitmap_recycle.ArrayPool.trimMemory(int)OVERRIDEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaä ä(%2ˇ
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.trimMemory(int)!level	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaä* ä(/2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaä ä(†
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.trimMemory(int)!level	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaä* ä(/"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*level2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaä& ä()ø
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evict()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaì ì("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"
+LOC2*evict2ı
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaî î(2¯
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaî î(2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaì
+ ì(ÇB
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaó ó("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC11*evictToSize2ı
+Kcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.removeLast()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaô" ô(,2ﬂ
+5com.bumptech.glide.util.Preconditions.checkNotNull(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaö ö( 2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõ3 õ(G2ˇ
+Ucom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getArrayLength(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaú" ú(02Ö
+[com.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getElementSizeInBytes()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaúI ú(^2í
+hcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaù ù(2ˇ
+Ucom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getArrayLength(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaù( ù(62≈
+java.lang.Object.getClass()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaùI ù(Q2ˆ
+Lcom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getTag()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaû& û(,2ˆ
+Lcom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getTag()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaü ü(!2ˇ
+Ucom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getArrayLength(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaü@ ü(N2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaò ò(2˙
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaò ò(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?groupedMap@29.46:29.56CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaô ô(!2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaö! ö((2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõH õ(O2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaú ú(2ê
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaú ú(!2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaú1 ú(82ê
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaú< ú(H2ê
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaù ù('2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaù7 ù(>2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaùA ù(H2ê
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaû û(%2ê
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaü ü(2ê
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaü3 ü(?2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaüO ü(V2ˇ
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaó ó(#2í
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaô ô(2ó
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõ$ õ(02µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaó
+ ó(∏
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaô ô("
+typeObject"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*evicted2∫
+java.lang.ObjectTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaô ô(2ı
+Kcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.removeLast()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaô" ô(,2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?groupedMap@29.46:29.56CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaô ô(!È
+
+fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?arrayAdapter@155.36:155.48VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõ$ õ(0"%
+typeArrayAdapterInterface<Object>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*arrayAdapter2Ì
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõ õ(2√
+java.lang.ObjectTYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõ õ("2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõ3 õ(G2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)?evicted@153.13:153.20CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaõH õ(Oü
+Pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.evictToSize(int)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaó ó(#"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaó ó(ì0
+hcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§ §(#"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accessprivate"	
+LOC12*decrementArrayOfSize2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java•+ •(=2Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶ ¶(2–
+&java.util.Map.remove(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¨ ¨(2¡
+java.util.Map.put(K, V)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÆ Æ(2Ô
+Ejava.lang.NullPointerException.NullPointerException(java.lang.String)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java® ®($2ù
+scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!arrayClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java•> •(H2¶
+|com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?sizes@165.35:165.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶ ¶(2ó
+mcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶  ¶($2®
+~com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?current@166.12:166.19CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaß ß(2ó
+mcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java©9 ©(=2®
+~com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?current@166.12:166.19CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java´ ´(2¶
+|com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?sizes@165.35:165.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¨ ¨(2ó
+mcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¨ ¨(2¶
+|com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?sizes@165.35:165.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÆ Æ(2ó
+mcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÆ Æ(2®
+~com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?current@166.12:166.19CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÆ Æ(2ú
+mcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§( §(,2¢
+scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§7 §(A2≠
+|com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?sizes@165.35:165.40DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java•# •((2Ø
+~com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?current@166.12:166.19DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶ ¶(2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§
+ §(µ
+|com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?sizes@165.35:165.40VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java•# •(("&
+typeNavigableMap<Integer, Integer>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*sizes2¿
+java.util.NavigableMapTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java• •(2ƒ
+java.lang.IntegerTYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java• •(2ƒ
+java.lang.IntegerTYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java• •(!2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java•+ •(=2ù
+scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!arrayClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java•> •(HÙ
+
+~com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?current@166.12:166.19VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶ ¶("
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*current2ª
+java.lang.IntegerTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶ ¶(2Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶ ¶(2¶
+|com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)?sizes@165.35:165.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶ ¶(2ó
+mcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¶  ¶($º
+mcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§( §(,"
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§$ §('Ÿ
+scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.decrementArrayOfSize(int, java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§7 §(A"
+typeClass<?>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2π
+java.lang.ClassTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java§. §(3õ#
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤) ≤(;"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"&
+typeNavigableMap<Integer, Integer>"
+accessprivate"
+LOC7*getSizesForAdapter2Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥7 ≥(:2¡
+java.util.Map.put(K, V)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java∂ ∂(2≈
+java.util.TreeMap.TreeMap()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaµ µ(2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥+ ≥(62ñ
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)!arrayClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥; ≥(E2ü
+ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)?sizes@179.35:179.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¥ ¥(2ü
+ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)?sizes@179.35:179.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaµ µ(2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java∂ ∂(2ñ
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)!arrayClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java∂ ∂( 2ü
+ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)?sizes@179.35:179.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java∂" ∂('2ü
+ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)?sizes@179.35:179.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java∏ ∏(2õ
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤E ≤(O2¶
+ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)?sizes@179.35:179.40DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥# ≥((2«
+java.util.NavigableMapRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤
+ ≤(2À
+java.lang.IntegerRETURN_TYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤ ≤(2À
+java.lang.IntegerRETURN_TYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤  ≤('Ë
+ucom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)?sizes@179.35:179.40VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥# ≥(("&
+typeNavigableMap<Integer, Integer>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*sizes2¿
+java.util.NavigableMapTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥ ≥(2ƒ
+java.lang.IntegerTYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥ ≥(2ƒ
+java.lang.IntegerTYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥ ≥(!2Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥7 ≥(:2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥+ ≥(62ñ
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)!arrayClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≥; ≥(E“
+lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getSizesForAdapter(java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤E ≤(O"
+typeClass<?>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2π
+java.lang.ClassTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≤< ≤(A¡
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº' º(;"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeArrayAdapterInterface<T>"
+accessprivate"
+LOC3*getAdapterFromObject2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaΩ& Ω(82≈
+java.lang.Object.getClass()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaΩ@ Ω(H2É
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T)!objectCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaΩ9 Ω(?2à
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T)!object	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº> º(D2Ù
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº º(#2é
+Tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T).TRETURN_TYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº$ º(%2à
+Tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T).TTYPE_PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº º(˘
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T)!object	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº> º(D"	
+typeT"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*object2˛
+Tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T).TTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº< º(=ã
+Tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromObject(T).TTYPE_PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaº º(*Tò7
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡' ¡(9"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse" 
+typeArrayAdapterInterface<T>"
+accessprivate"	
+LOC15*getAdapterFromType2Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬0 ¬(32”
+)java.lang.Object.equals(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaƒ ƒ(2”
+)java.lang.Object.equals(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java∆  ∆(&2…
+java.lang.Class.getSimpleName()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java 9  (F2¡
+java.util.Map.put(K, V)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÃ Ã(2Å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.IntegerArrayAdapter.IntegerArrayAdapter()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≈ ≈()2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.ByteArrayAdapter.ByteArrayAdapter()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java« «(&2˜
+Mjava.lang.IllegalArgumentException.IllegalArgumentException(java.lang.String)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java… …(*2˘
+Ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?adapters@32.56:32.64CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬' ¬(/2ö
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬4 ¬(B2°
+wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)?adapter@194.29:194.36CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java√ √(2ö
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaƒ
+ ƒ(2°
+wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)?adapter@194.29:194.36CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java≈ ≈(2ö
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java∆ ∆(2°
+wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)?adapter@194.29:194.36CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java« «(2ö
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java *  (82˘
+Ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?adapters@32.56:32.64CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÃ Ã(2ö
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÃ Ã(!2°
+wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)?adapter@194.29:194.36CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÃ# Ã(*2°
+wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)?adapter@194.29:194.36CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaŒ& Œ(-2ü
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡C ¡(Q2®
+wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)?adapter@194.29:194.36DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬ ¬($2Ù
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡ ¡(#2ù
+ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>).TRETURN_TYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡$ ¡(%2ó
+ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>).TTYPE_PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡ ¡(Ü
+wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)?adapter@194.29:194.36VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬ ¬($" 
+typeArrayAdapterInterface<?>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*adapter2Ì
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬ ¬(2Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬0 ¬(32˘
+Ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?adapters@32.56:32.64CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬' ¬(/2ö
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¬4 ¬(BÛ
+pcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)!arrayPoolClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡C ¡(Q"
+typeClass<T>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*arrayPoolClass2π
+java.lang.ClassTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡: ¡(?2ñ
+ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>).TTYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡@ ¡(Aö
+ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>).TTYPE_PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¡ ¡(*T´0
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java“ “("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspackage_private"
+LOC9*getCurrentSize2¿
+java.util.Map.keySet()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‘% ‘(+2∆
+java.util.SortedMap.keySet()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java’0 ’(62Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java’& ’()2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java÷+ ÷(=2Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊4 ◊(72Õ
+#java.util.Map.get(java.lang.Object)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊* ◊(-2Ö
+[com.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterface.getElementSizeInBytes()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊H ◊(]2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‘ ‘($2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java’ ’(%2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?type@212.18:212.22CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java’* ’(.2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?type@212.18:212.22CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java÷> ÷(B2é
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?currentSize@211.8:211.19CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊ ◊(2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?size@213.19:213.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊ ◊(2¸
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊ ◊()2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?type@212.18:212.22CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊. ◊(22à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?size@213.19:213.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊8 ◊(<2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?adapter@214.33:214.40CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java◊@ ◊(G2é
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?currentSize@211.8:211.19CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java⁄ ⁄(2ï
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?currentSize@211.8:211.19DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java” ”(2è
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?type@212.18:212.22DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‘ ‘(2è
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?size@213.19:213.23DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java’ ’(2í
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?adapter@214.33:214.40DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java÷! ÷((2¥
+intRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java“ “(π
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?currentSize@211.8:211.19VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java” ”("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*currentSize2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java” ”(Ω
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?type@212.18:212.22VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‘ ‘("
+typeClass<?>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*type2π
+java.lang.ClassTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‘	 ‘(æ
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?size@213.19:213.23VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java’ ’("
+typeInteger"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2ª
+java.lang.IntegerTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java’ ’(†	
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?adapter@214.33:214.40VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java÷! ÷((" 
+typeArrayAdapterInterface<?>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*adapter2Ì
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java÷ ÷(2ã
+acom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getAdapterFromType(java.lang.Class<T>)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java÷+ ÷(=2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.getCurrentSize()?type@212.18:212.22CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java÷> ÷(B«
+Scom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?DEFAULT_SIZE@18.27:18.39VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java ('"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*DEFAULT_SIZE2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java („
+]com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?MAX_OVER_SIZE_MULTIPLE@24.38:24.60VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java& (<"
+isFinaltrue"
+typeint"
+isStatictrue"
+accesspackage_private"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*MAX_OVER_SIZE_MULTIPLE2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java" (%È
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?SINGLE_ARRAY_MAX_SIZE_DIVISOR@27.27:27.56VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (8"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*SINGLE_ARRAY_MAX_SIZE_DIVISOR2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (À
+
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?groupedMap@29.46:29.56VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java. (8"
+isFinaltrue"%
+typeGroupedLinkedMap<Key, Object>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*
+groupedMap2Ê
+>com.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java ( 2Ô
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java! ($2¡
+java.lang.ObjectTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java& (,2˘
+Qcom.bumptech.glide.load.engine.bitmap_recycle.GroupedLinkedMap.GroupedLinkedMap()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java? (Q¯
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?keyPool@30.24:30.31VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java ("
+isFinaltrue"
+typeKeyPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*keyPool2Í
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPoolTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (2Ù
+Lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.KeyPool()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java& (-◊
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?sortedSizes@31.62:31.73VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java> (I"
+isFinaltrue"5
+type-Map<Class<?>, NavigableMap<Integer, Integer>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*sortedSizes2µ
+java.util.MapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (2¿
+java.lang.ClassTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (2«
+java.util.NavigableMapTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (*2¬
+java.lang.IntegerTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java+ (22¬
+java.lang.IntegerTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java4 (;2√
+java.util.HashMap.HashMap()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaP (YÓ	
+Ocom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?adapters@32.56:32.64VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java 8  (@"
+isFinaltrue"/
+type'Map<Class<?>, ArrayAdapterInterface<?>>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*adapters2µ
+java.util.MapTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java   (2¿
+java.lang.ClassTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java   (2Ù
+Ccom.bumptech.glide.load.engine.bitmap_recycle.ArrayAdapterInterfaceTYPE_ARGUMENTù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java   (32√
+java.util.HashMap.HashMap()CALLù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java G  (Pæ
+Ncom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?maxSize@33.20:33.27VALUEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java! !("
+isFinaltrue"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*maxSize2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java! !( 
+Rcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool?currentSize@34.14:34.25VARIABLEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java" "("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*currentSize2´
+intTYPEù
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java"
+ "(ˇ
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPoolCLASSü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java› ›($"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC15*KeyPool2˝
+Lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.KeyPool()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‡ ‡(2ê
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚(2¸
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.create()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÈ È(2Â
+9com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPoolEXTENDü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java›- ›(82¯
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyEXTEND_TYPE_ARGUMENTü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java›9 ›(<∂
+Lcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.KeyPool()CONSTRUCTORü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‡ ‡("8
+package-com.bumptech.glide.load.engine.bitmap_recycle*KeyPool2Û
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPoolRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‡ ‡(·
+_com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeKey"
+accesspackage_private"
+LOC4*get2È
+?com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool.get()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java„ „(2Ü
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‰ ‰(2û
+tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)?result@227.10:227.16CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‰ ‰(2é
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)!sizeCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‰ ‰(2î
+jcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)!arrayClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‰ ‰("2û
+tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)?result@227.10:227.16CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÂ Â(2ì
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚(2ô
+jcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚()2•
+tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)?result@227.10:227.16DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java„
+ „(2Ô
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚(Î
+tcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)?result@227.10:227.16VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java„
+ „("
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*result2Ë
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java„ „(	2È
+?com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool.get()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java„ „(≥
+dcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)!size	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*size2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚(–
+jcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.get(int, java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚()"
+typeClass<?>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2π
+java.lang.ClassTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java‚ ‚(≈
+Kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool.create()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÈ È("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeKey"
+access	protected"
+LOC3*create2±
+Ücom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÍ Í(2Ô
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÈ È(∆
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyCLASSü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÓ Ó( "8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accessprivate"	
+LOC39*Key2∏
+Ücom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÛ Û(2ç
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜	 ˜(2à
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˝ ˝(2˙
+Icom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.toString()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÜ Ü(2˜
+Fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.offer()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaã ã(2˙
+Icom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.hashCode()DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaê ê(2Ç
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?pool@239.26:239.30DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÔ Ô(2Ç
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java (2à
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÒ Ò(2‚
+6com.bumptech.glide.load.engine.bitmap_recycle.PoolableEXTENDü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÓ, Ó(4ﬁ
+Ücom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool)CONSTRUCTORü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÛ Û("8
+package-com.bumptech.glide.load.engine.bitmap_recycle*Key2∂
+ãcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool)!poolCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÙ Ù(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?pool@239.26:239.30CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÙ Ù(2ª
+ãcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool)!pool	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÛ Û(2Ô
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÛ Û(û
+ãcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.Key(com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPool)!pool	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÛ Û("
+typeKeyPool"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*pool2Ï
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPoolTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÛ Û(¡
+\com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜	 ˜("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*init2ç
+ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)!lengthCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¯ ¯(2ë
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)!arrayClassCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˘ ˘("2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java¯ ¯(2Å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˘ ˘(2í
+ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)!length	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜ ˜(2ñ
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜# ˜(-2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜ ˜(¥
+ccom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)!length	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜ ˜("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*length2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜ ˜(Õ
+gcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.init(int, java.lang.Class<?>)!arrayClass	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜# ˜(-"
+typeClass<?>"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*
+arrayClass2π
+java.lang.ClassTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˜ ˜(—
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˝ ˝("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeboolean"
+accesspublic"
+LOC7*equals2É
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)!oCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˛
+ ˛(2É
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)!oCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaˇ ˇ(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ Ä(2ï
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)?other@255.12:255.17CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ Ä(2Å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ% Ä(/2ï
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)?other@255.12:255.17CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ3 Ä(82˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ Ä(!2Å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÄ9 Ä(C2à
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)!o	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˝! ˝("2ú
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)?other@255.12:255.17DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaˇ ˇ(2∏
+booleanRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˝ ˝(˚
+kcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)?other@255.12:255.17VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaˇ ˇ("
+typeKey"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*other2Ë
+>com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaˇ ˇ(2É
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)!oCALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaˇ ˇ(µ
+Ycom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.equals(java.lang.Object)!o	PARAMETERü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˝! ˝(""
+typeObject"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*o2∫
+java.lang.ObjectTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java˝ ˝( Â
+Icom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.toString()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÜ Ü("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeString"
+accesspublic"
+LOC3*toString2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaá  á($2Å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaá2 á(<2¡
+java.lang.StringRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÜ Ü(´
+
+Fcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.offer()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaã ã("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC3*offer2Ï
+Bcom.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool.offer(T)CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaå å(2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?pool@239.26:239.30CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaå å(
+2Ï
+>com.bumptech.glide.load.engine.bitmap_recycle.Poolable.offer()OVERRIDEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaã ã(2µ
+voidRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaã ã(‘
+Icom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.hashCode()METHODü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaê ê("8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeint"
+accesspublic"
+LOC5*hashCode2≈
+java.lang.Object.hashCode()CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaí> í(F2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaë ë(2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.hashCode()?result@273.10:273.16CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaí í(2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.hashCode()?result@273.10:273.16CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaí í(2Å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaí í((2Å
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaí3 í(=2à
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.hashCode()?result@273.10:273.16CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaì ì(2è
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.hashCode()?result@273.10:273.16DECLARATIONü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaë
+ ë(2¥
+intRETURN_TYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaê ê(¨
+^com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key.hashCode()?result@273.10:273.16VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaë
+ ë("
+typeint"
+isFinalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle"
+isLocaltrue*result2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaë ë(	2˚
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23CALLü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaë ë(Ö
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?pool@239.26:239.30VALUEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÔ Ô("
+isFinaltrue"
+typeKeyPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*pool2Ï
+Bcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.KeyPoolTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÔ Ô(Œ
+Qcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?size@240.19:240.23VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java ("
+isFinalfalse"
+typeint"
+isStaticfalse"
+accesspackage_private"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*size2≠
+intTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.java („
+Wcom.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool.Key?arrayClass@241.21:241.31VARIABLEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÒ Ò("
+isFinalfalse"
+typeClass<?>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"8
+package-com.bumptech.glide.load.engine.bitmap_recycle*
+arrayClass2π
+java.lang.ClassTYPEü
+íF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\library\src\main\java\com\bumptech\glide\load\engine\bitmap_recycle\LruArrayPool.javaÒ Ò(

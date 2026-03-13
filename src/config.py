@@ -20,8 +20,8 @@ from typing import Optional
 
 PROJECTS: dict[str, dict[str, str]] = {
     "glide": {
-        "data_dir": "data/glide",
-        "code_dir": "code/glide-4.5.0",
+        "data_dir": "data/glide-5.0.5",
+        "code_dir": "code/glide-5.0.5",
     },
     "private_repo": {
         "data_dir": "data/private_repo",

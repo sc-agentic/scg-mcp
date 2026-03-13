@@ -19,6 +19,7 @@ class GraphRAG:
         self.embeddings: Optional[torch.Tensor] = None
         self.model = None
         self.file_map: Dict[str, Path] = {}
+        self._resolve_cache: Dict[str, Optional[Path]] = {}
 
         print("Initializing model...")
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -108,29 +109,53 @@ class GraphRAG:
             return None
 
     def _resolve_file_path(self, uri: str) -> Optional[Path]:
+        # Check cache first
+        if uri in self._resolve_cache:
+            return self._resolve_cache[uri]
+
+        result = self._resolve_file_path_uncached(uri)
+        self._resolve_cache[uri] = result
+        return result
+
+    def _resolve_file_path_uncached(self, uri: str) -> Optional[Path]:
         clean_path = uri.replace("file://", "").replace("\\", "/").lstrip("/")
 
-        # 1. Direct match
+        # 1. If the URI is already an absolute path that exists, use it directly
+        resolved = Path(clean_path)
+        if resolved.is_absolute() and resolved.exists():
+            return resolved
+
+        # 2. Try to extract the relative path by finding code_dir's folder name
+        #    in the URI. Handles cross-platform (Windows URIs on Linux/WSL).
+        #    e.g. URI: "F:/.../code/glide-5.0.5/library/src/Foo.java"
+        #         code_dir name: "glide-5.0.5"
+        #         relative part: "library/src/Foo.java"
+        code_dir_name = self.code_dir.name
+        marker = f"/{code_dir_name}/"
+        idx = clean_path.find(marker)
+        if idx != -1:
+            rel_part = clean_path[idx + len(marker):]
+            candidate = self.code_dir / rel_part
+            if candidate.exists():
+                return candidate
+
+        # 3. Direct relative match (if URI is already a relative path)
         candidate = self.code_dir / clean_path
         if candidate.exists():
             return candidate
 
-        # 2. Try matching by filename from index
+        # 4. Match by filename from index
         filename = Path(clean_path).name
         if filename in self.file_map:
-            candidate = self.file_map[filename]
-            # Check if the path suffix matches
-            candidate_str = str(candidate).replace("\\", "/")
-            if candidate_str.endswith(clean_path):
-                return candidate
+            return self.file_map[filename]
 
-        # 3. Fallback: glob search for the file
-        parts = clean_path.split("/")
-        if len(parts) >= 2:
-            pattern = f"**/{'/'.join(parts[-2:])}"
-            matches = list(self.code_dir.glob(pattern))
-            if matches:
-                return matches[0]
+        # 5. Fallback: search file_map values for suffix match
+        suffix_parts = clean_path.split("/")
+        if len(suffix_parts) >= 2:
+            suffix = "/".join(suffix_parts[-2:])
+            for path in self.file_map.values():
+                if str(path).replace("\\", "/").endswith(suffix):
+                    return path
 
         return None
 

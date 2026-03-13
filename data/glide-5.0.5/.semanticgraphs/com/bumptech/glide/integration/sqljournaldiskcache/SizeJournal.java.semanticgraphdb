@@ -1,0 +1,601 @@
+
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java®
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaFILE±
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java"
+
+LOC136*ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaù-
+>com.bumptech.glide.integration.sqljournaldiskcache.SizeJournalCLASSπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java ("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinaltrue"
+inner classfalse"
+
+isAbstractfalse"
+accesspackage_private"
+
+LOC121*SizeJournal2‹
+êcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java1 1(2ê
+Ecom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java6 6(2û
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaF F(2ù
+Rcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.getCacheSizeBytes()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaL L(2¢
+Wcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaP  P(62˚
+Øcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaX X(2â
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java] ](!2â
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaa a(!2´
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (32∫
+ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX@24.27:24.63DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (?2©
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (12¶
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CACHE_SIZE_QUERY@27.30:27.46DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (.2ö
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (2©
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java$ (72¶
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java4 (D2û
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java/" /(*2ß
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerDECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javao o(+Á
+êcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)CONSTRUCTORπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java1 1("=
+package2com.bumptech.glide.integration.sqljournaldiskcache*SizeJournal2…
+Ñcom.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.SqliteStatementPool(android.database.sqlite.SQLiteOpenHelper)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java3 3(12ﬁ
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelperCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java2 2(2¢
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java3 3(2ﬁ
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelperCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java32 3(:2ó
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java2	 2(2„
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelper	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java1  1((2â
+>com.bumptech.glide.integration.sqljournaldiskcache.SizeJournalRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java1 1(ı
+ôcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeJournal(com.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelper)!dbHelper	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java1  1(("
+typeDiskCacheDbHelper"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*dbHelper2à
+Dcom.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelperTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java1 1(Ω-
+Ecom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java6 6("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC14*open2Ù
+0java.util.concurrent.atomic.AtomicLong.set(long)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaC	 C(2ó
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java7 7( 2ò
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java9( 9(*2¢
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java9, 9(?2¢
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?containsSize@56.12:56.24CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java;	 ;(2ú
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java= =(2ò
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java> >(2ú
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java>? >(E2°
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java? ?(2°
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaA A(2ò
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaA/ A(12ü
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CACHE_SIZE_QUERY@27.30:27.46CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaA3 A(C2ì
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaC C(2°
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaC C(2ü
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java7 7(2©
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?containsSize@56.12:56.24DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java8 8(2®
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java: :(2£
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java< <(2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java6 6(°
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21VARIABLEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java7 7("
+typeSQLiteDatabase"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*db2Í
+&android.database.sqlite.SQLiteDatabaseTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java7 7(2ó
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java7 7( µ	
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?containsSize@56.12:56.24VARIABLEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java8 8("
+typeboolean"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*containsSize2À
+booleanTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java8 8(2ò
+Tcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?db@55.19:55.21CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java9( 9(*2¢
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java9, 9(?È
+]com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?currentSize@58.15:58.26VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java: :("
+typelong"
+isFinaltrue"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*currentSize2»
+longTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java:
+ :(Ö
+Xcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.open()?values@60.20:60.26VARIABLEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java< <("
+typeContentValues"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*values2·
+android.content.ContentValuesTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java< <(´
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaF F("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC4*clearInTransaction2Ù
+0java.util.concurrent.atomic.AtomicLong.set(long)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaI	 I(2ó
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaG G( 2¶
+bcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()?db@71.19:71.21CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaH H(2ì
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaI I(2≠
+bcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()?db@71.19:71.21DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaG G(2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaF F(Ø
+bcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.clearInTransaction()?db@71.19:71.21VARIABLEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaG G("
+typeSQLiteDatabase"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*db2Í
+&android.database.sqlite.SQLiteDatabaseTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaG G(2ó
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaG G( ≤	
+Rcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.getCacheSizeBytes()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaL L("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typelong"
+accesspackage_private"
+LOC2*getCacheSizeBytes2
+,java.util.concurrent.atomic.AtomicLong.get()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaM M(2ì
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaM M(2œ
+longRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaL L(‘
+Wcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaP  P(6"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"%
+typeSizeSQLiteTransactionListener"
+accesspackage_private"
+LOC6*prepareSizeTransaction2¿
+|com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.SizeSQLiteTransactionListener()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaS S(02ü
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaQ+ Q(;2Æ
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaR R(2Æ
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaS S(2Æ
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaU U(2µ
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaQ" Q((2ß
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaP P(à
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.prepareSizeTransaction()?result@81.34:81.40VARIABLEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaQ" Q(("%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*result2†
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaQ Q(!2ü
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaQ+ Q(;⁄
+Øcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaX X("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC3*endSizeTransaction2®
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaY Y(2˝
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listenerCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaY Y(2ü
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaZ Z(2˝
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listenerCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaZ Z(%2Ç
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listener	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaX8 X(@2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaX X(∏
+∏com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.endSizeTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!listener	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaX8 X(@"%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*listener2†
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaX X(7Û
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java] ](!"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC2*decrementSizeInTransaction2Ç
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java^ ^(2è
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListenerCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java^ ^(+2é
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!decrementByCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java^. ^(92î
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java]@ ](L2ì
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!decrementBy	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java]S ](^2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java] ](Œ
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java]@ ](L"%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*sizeListener2†
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java]" ](?€
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.decrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!decrementBy	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java]S ](^"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*decrementBy2»
+longTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java]N ](R€=
+Ωcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaa a(!"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"	
+LOC11*incrementSizeInTransaction2£
+_com.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.obtain(java.lang.String)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javadC d(I2˙
+6java.util.concurrent.atomic.AtomicLong.addAndGet(long)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javah h(2Ã
+ácom.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.offer(java.lang.String, android.database.sqlite.SQLiteStatement)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaj j(2è
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListenerCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javab b(2é
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementByCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javab b(*2¢
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javad/ d(B2§
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javadJ d(_2©
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaf f(2≥
+ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX@24.27:24.63CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaf( f(L2é
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementByCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javafN f(Y2©
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javag g(2ì
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javah h(
+2é
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementByCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javah h( 2¢
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaj j(2§
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaj  j(52©
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaj7 j(O2∫
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javab b(2î
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaa@ a(L2ì
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementBy	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaaS a(^2∞
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javad d(,2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaa a(¢
+‰com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)?updateCacheSizeStatement@100.20:100.44VARIABLEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javad d(,"
+typeSQLiteStatement"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*updateCacheSizeStatement2Î
+'android.database.sqlite.SQLiteStatementTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javad d(2£
+_com.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPool.obtain(java.lang.String)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javadC d(I2¢
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javad/ d(B2§
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javadJ d(_Œ
+ com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!sizeListener	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaa@ a(L"%
+typeSizeSQLiteTransactionListener"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*sizeListener2†
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaa" a(?€
+…com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.incrementSizeInTransaction(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener, long)!incrementBy	PARAMETERπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaaS a(^"
+typelong"
+isFinalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isLocaltrue*incrementBy2»
+longTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaaN a(R™
+`com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SQL@16.30:16.51VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (3"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*UPDATE_CACHE_SIZE_SQL2‘
+java.lang.StringTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (∏
+ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX@24.27:24.63VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (?"
+isFinaltrue"
+typeint"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*$UPDATE_CACHE_SIZE_SIZE_INCREMENT_IDX2«
+intTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (¶
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CONTAINS_SIZE_QUERY@26.30:26.49VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (1"
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*CONTAINS_SIZE_QUERY2‘
+java.lang.StringTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (†
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?CACHE_SIZE_QUERY@27.30:27.46VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (."
+isFinaltrue"
+typeString"
+isStatictrue"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*CACHE_SIZE_QUERY2‘
+java.lang.StringTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (ù
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java ("
+isFinaltrue"
+type
+AtomicLong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*size2Í
+&java.util.concurrent.atomic.AtomicLongTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (2˜
+3java.util.concurrent.atomic.AtomicLong.AtomicLong()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java& (0Í
+^com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?updateCacheSizePool@30.36:30.55VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java$ (7"
+isFinaltrue"
+typeSqliteStatementPool"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*updateCacheSizePool2ä
+Fcom.bumptech.glide.integration.sqljournaldiskcache.SqliteStatementPoolTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (#ø
+[com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?sizeListenerPool@31.52:31.68VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java4 (D"
+isFinaltrue"+
+type#Pool<SizeSQLiteTransactionListener>"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*sizeListenerPool2·
+androidx.core.util.Pools.PoolTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (2©
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerTYPE_ARGUMENTπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (22Î
+¶com.bumptech.glide.util.pool.FactoryPools.threadSafe(int, com.bumptech.glide.util.pool.FactoryPools.Factory<T>, com.bumptech.glide.util.pool.FactoryPools.Resetter<T>)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java   (2®
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java+ +(2„
+ûcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.Anonymous-40508b4d-e595-4b1b-99ce-38b677c80037.Anonymous-40508b4d-e595-4b1b-99ce-38b677c80037()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java" "(A2¿
+|com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.SizeSQLiteTransactionListener()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java% %(62„
+ûcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.Anonymous-38f806aa-b484-4c79-8aaa-e88849a74c5a.Anonymous-38f806aa-b484-4c79-8aaa-e88849a74c5a()CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java( ((52ù
+ÿcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.Anonymous-f26cbfbb-51cd-4a08-a49b-676be84c2008.reset(com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener)!objectCALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java+ +(–
+Scom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?dbHelper@47.34:47.42VALUEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java/" /(*"
+isFinaltrue"
+typeDiskCacheDbHelper"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*dbHelper2à
+Dcom.bumptech.glide.integration.sqljournaldiskcache.DiskCacheDbHelperTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java/ /(!•
+\com.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListenerCLASSπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javao o(+"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinaltrue"
+inner classtrue"
+
+isAbstractfalse"
+accesspackage_private"	
+LOC24*SizeSQLiteTransactionListener2Ø
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javar	 r(2±
+fcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onBegin()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaw w(2≤
+gcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onCommit()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaz z(2¥
+icom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onRollback()DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java} }(2∑
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.getVerifier()DECLARATIONª
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaÑ Ñ($2¡
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28DECLARATIONπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javap p(2˜
+1android.database.sqlite.SQLiteTransactionListenerEXTENDπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javao7 o(P2¯
+2com.bumptech.glide.util.pool.FactoryPools.PoolableEXTENDπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaoR o(ZÏ
+dcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.clear()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javar	 r("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspackage_private"
+LOC2*clear2∫
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javas s(2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javar r(™
+fcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onBegin()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaw w("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*onBegin2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaw w(¨
+gcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onCommit()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaz z("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC1*onCommit2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaz z(Ä
+icom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.onRollback()METHODπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java} }("=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typevoid"
+accesspublic"
+LOC4*
+onRollback2˙
+6java.util.concurrent.atomic.AtomicLong.addAndGet(long)CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (2ì
+Ocom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal?size@29.27:29.31CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (
+2∫
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28CALLπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java (!2œ
+voidRETURN_TYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.java} }(Û	
+jcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener.getVerifier()METHODª
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaÑ Ñ($"=
+package2com.bumptech.glide.integration.sqljournaldiskcache"
+isFinalfalse"
+isStaticfalse"
+
+isAbstractfalse"
+typeStateVerifier"
+accesspublic"
+LOC4*getVerifier2˛
+8com.bumptech.glide.util.pool.StateVerifier.newInstance()CALLª
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaÖ Ö(&2ä
+@com.bumptech.glide.util.pool.FactoryPools.Poolable.getVerifier()OVERRIDEª
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaÑ Ñ($2˜
+*com.bumptech.glide.util.pool.StateVerifierRETURN_TYPEª
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javaÑ Ñ(≠
+vcom.bumptech.glide.integration.sqljournaldiskcache.SizeJournal.SizeSQLiteTransactionListener?updatedSize@112.17:112.28VARIABLEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javap p("
+isFinalfalse"
+typelong"
+isStaticfalse"
+accessprivate"
+isLocalfalse"=
+package2com.bumptech.glide.integration.sqljournaldiskcache*updatedSize2»
+longTYPEπ
+ÆF:\studia-projects\sem3\scg-agentic\scg-mcp\code\glide-5.0.5\integration\sqljournaldiskcache\src\main\java\com\bumptech\glide\integration\sqljournaldiskcache\SizeJournal.javap p(
