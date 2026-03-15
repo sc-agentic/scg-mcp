@@ -26,6 +26,35 @@ VECTOR_DIMENSIONS = 384
 
 neo4j_driver = None
 embed_model: SentenceTransformer | None = None
+stop_node_ids: set[str] | None = None
+STOP_NODE_COUNT = int(os.environ.get("SCG_STOP_NODE_COUNT", "200"))
+
+def _get_stop_nodes() -> set[str]:
+    """Calculate highly connected nodes (super-nodes) to avoid exploding traversals."""
+    global stop_node_ids
+    if stop_node_ids is not None:
+        return stop_node_ids
+        
+    driver = _get_driver()
+    cypher = """
+    MATCH (n:CodeNode)<-[r]-()
+    WITH n, count(r) AS inDegree
+    ORDER BY inDegree DESC
+    LIMIT $limit
+    RETURN n.id AS id, inDegree
+    """
+    try:
+        with driver.session() as session:
+            results = session.execute_read(
+                lambda tx: list(tx.run(cypher, limit=STOP_NODE_COUNT))
+            )
+            stop_node_ids = {r["id"] for r in results}
+            log.info("Identified %d stop-nodes to filter out.", len(stop_node_ids))
+    except Exception as e:
+        log.warning("Failed to identify stop-nodes: %s", e)
+        stop_node_ids = set()
+        
+    return stop_node_ids
 
 
 @contextlib.contextmanager
@@ -133,6 +162,7 @@ def get_node_context(
     node_ids: list[str],
     hops: int = 1,
     kinds: list[str] | None = None,
+    macro_topology: bool = True,
 ) -> str:
     """Get the context subgraph around code nodes — related entities and relationships.
 
@@ -140,6 +170,7 @@ def get_node_context(
         node_ids: Node IDs to explore (from search_code)
         hops: Relationship hops (default: 1, max: 3). Avoid hops=2 on large classes.
         kinds: Node kinds to include. Default filters out PARAMETER, VARIABLE, TYPE_PARAMETER. Pass ['ALL'] for all.
+        macro_topology: Aggregates method-level edges into file-level dependencies.
     """
     driver = _get_driver()
     hops = max(1, min(int(hops), 3))
@@ -148,16 +179,19 @@ def get_node_context(
     filter_kinds = None if include_all else (set(k.upper() for k in kinds) if kinds else None)
     use_noise_filter = not include_all and filter_kinds is None
 
+    stop_nodes = _get_stop_nodes()
+
     nodes_cypher = f"""
     MATCH (start:CodeNode) WHERE start.id IN $node_ids
     MATCH path = (start)-[*0..{hops}]-(n:CodeNode)
+    WHERE NONE(x IN nodes(path) WHERE x.id IN $stop_node_ids AND NOT x.id IN $node_ids)
     RETURN DISTINCT n.id AS id, n.kind AS kind, n.displayName AS displayName
     """
 
     try:
         with driver.session() as session:
             raw_nodes = session.execute_read(
-                lambda tx: list(tx.run(nodes_cypher, node_ids=node_ids))
+                lambda tx: list(tx.run(nodes_cypher, node_ids=node_ids, stop_node_ids=list(stop_nodes)))
             )
     except Exception as e:
         return f"Error getting node context: {e}"
@@ -223,7 +257,8 @@ def get_node_context(
     MATCH (a:CodeNode)-[r]->(b:CodeNode)
     WHERE a.id IN $shown_ids AND b.id IN $shown_ids
     RETURN DISTINCT a.displayName AS source, type(r) AS relType, b.displayName AS target,
-                    a.id AS sourceId, b.id AS targetId
+                    a.id AS sourceId, b.id AS targetId,
+                    a.uri AS sourceUri, b.uri AS targetUri
     """
 
     try:
@@ -278,16 +313,56 @@ def get_node_context(
 
     output.append("\nRelationships:")
     if rels:
-        # Deduplicate
-        seen_rels = set()
-        unique_rels = []
-        for r in rels:
-            key = (r['source'], r['relType'], r['target'])
-            if key not in seen_rels:
-                seen_rels.add(key)
-                unique_rels.append(r)
-        for r in unique_rels:
-            output.append(f"  - {r['source']} --[{r['relType']}]--> {r['target']}")
+        if macro_topology:
+            file_deps = {} # (sourceUri, targetUri) -> {relType: count}
+            intra_file = set()
+            
+            for r in rels:
+                sUri = r.get("sourceUri")
+                tUri = r.get("targetUri")
+                
+                def get_container(uri, display):
+                    if uri:
+                        return uri.split('/')[-1]
+                    return display
+
+                sCont = get_container(sUri, r["source"])
+                tCont = get_container(tUri, r["target"])
+                
+                if sCont != tCont:
+                    key = (sCont, tCont)
+                    if key not in file_deps:
+                        file_deps[key] = {}
+                    rt = r["relType"]
+                    file_deps[key][rt] = file_deps[key].get(rt, 0) + 1
+                else:
+                    intra_file.add((r['source'], r['relType'], r['target']))
+                    
+            if file_deps:
+                output.append("  [Macro-Topology] Inter-file Dependencies:")
+                for (sc, tc), types in sorted(file_deps.items()):
+                    types_str = ", ".join(f"{k} ({v})" for k, v in types.items())
+                    total = sum(types.values())
+                    output.append(f"    - {sc} => {tc} [weight: {total}] ({types_str})")
+                    
+            if intra_file:
+                output.append("  [Micro-Topology] Intra-file Relationships:")
+                for src, rtype, tgt in sorted(intra_file):
+                    output.append(f"    - {src} --[{rtype}]--> {tgt}")
+                    
+            if not file_deps and not intra_file:
+                output.append("  (none)")
+        else:
+            # Deduplicate
+            seen_rels = set()
+            unique_rels = []
+            for r in rels:
+                key = (r['source'], r['relType'], r['target'])
+                if key not in seen_rels:
+                    seen_rels.add(key)
+                    unique_rels.append(r)
+            for r in unique_rels:
+                output.append(f"  - {r['source']} --[{r['relType']}]--> {r['target']}")
     else:
         output.append("  (none)")
 
@@ -357,10 +432,12 @@ def find_path(from_id: str, to_id: str, max_depth: int = 5) -> str:
     """
     driver = _get_driver()
     max_depth = max(1, min(int(max_depth), 10))
+    stop_nodes = _get_stop_nodes()
 
     cypher = f"""
     MATCH (start:CodeNode {{id: $from_id}}), (end:CodeNode {{id: $to_id}})
     MATCH path = shortestPath((start)-[*..{max_depth}]-(end))
+    WHERE NONE(x IN nodes(path) WHERE x.id IN $stop_node_ids AND x.id <> $from_id AND x.id <> $to_id)
     RETURN [n IN nodes(path) | {{id: n.id, kind: n.kind, displayName: n.displayName}}] AS nodes,
            [r IN relationships(path) | {{source: startNode(r).id, target: endNode(r).id, type: type(r)}}] AS relationships,
            length(path) AS pathLength
@@ -369,7 +446,7 @@ def find_path(from_id: str, to_id: str, max_depth: int = 5) -> str:
     try:
         with driver.session() as session:
             result = session.execute_read(
-                lambda tx: list(tx.run(cypher, from_id=from_id, to_id=to_id))
+                lambda tx: list(tx.run(cypher, from_id=from_id, to_id=to_id, stop_node_ids=list(stop_nodes)))
             )
     except Exception as e:
         return f"Error finding path: {e}"
@@ -408,6 +485,7 @@ def get_node_summary(node_ids: list[str]) -> str:
         node_ids: Node IDs to summarize
     """
     driver = _get_driver()
+    stop_nodes = _get_stop_nodes()
 
 
     cypher = """
@@ -416,11 +494,13 @@ def get_node_summary(node_ids: list[str]) -> str:
     
 
     OPTIONAL MATCH (n)-[out]->(target)
+    WHERE NOT target.id IN $stop_node_ids
     WITH n, type(out) AS outType, count(out) AS outCount, collect(target.displayName)[..5] AS outExamples
     WITH n, collect(CASE WHEN outType IS NOT NULL THEN {type: outType, count: outCount, examples: outExamples} END) AS outgoing
     
 
     OPTIONAL MATCH (n)<-[inc]-(source)
+    WHERE NOT source.id IN $stop_node_ids
     WITH n, outgoing, type(inc) AS incType, count(inc) AS incCount, collect(source.displayName)[..5] AS incExamples
     WITH n, outgoing, collect(CASE WHEN incType IS NOT NULL THEN {type: incType, count: incCount, examples: incExamples} END) AS incoming
     
@@ -432,7 +512,7 @@ def get_node_summary(node_ids: list[str]) -> str:
     try:
         with driver.session() as session:
             results = session.execute_read(
-                lambda tx: list(tx.run(cypher, node_ids=node_ids))
+                lambda tx: list(tx.run(cypher, node_ids=node_ids, stop_node_ids=list(stop_nodes)))
             )
     except Exception as e:
         return f"Error: {e}"
@@ -616,6 +696,145 @@ def list_package_classes(package_path: str, include_methods: bool = False) -> st
 
     return "\n".join(output)
 
+
+def _read_code_snippet(uri: str, start_line: int, end_line: int) -> str | None:
+    """Read a snippet of code from a file."""
+    # The URI in SCG is usually relative to the project root,
+    # e.g. "library/src/main/java/com/bumptech/glide/Glide.java"
+    # We need to construct the absolute path here assuming the project is
+    # `code/{project_name}/xxx`, but we dynamically load current dir 
+    # and we can search for the file
+    
+    # Very rudimentary path resolution
+    base_dir = os.getcwd()
+    # E.g. find `code` directory
+    code_dir = os.path.join(base_dir, "code")
+    project_name = os.environ.get("SCG_PROJECT", "private_repo")
+    target_dir = os.path.join(code_dir, project_name)
+
+    if target_dir and not os.path.exists(target_dir):
+        # Fallback if structure is slightly different
+        target_dir = base_dir
+
+    file_path = os.path.join(target_dir, uri)
+    
+    # Try resolving if `uri` is absolute, or if it doesn't exist
+    if not os.path.exists(file_path):
+        if os.path.exists(uri):
+             file_path = uri
+        else:
+             return None
+
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+            
+            # 1-indexed lines
+            s = max(0, start_line - 1)
+            e = min(len(lines), end_line)
+            
+            snippet = "".join(lines[s:e])
+            return snippet
+    except Exception:
+        return None
+
+@mcp.tool()
+def semantic_grep(query: str, limit: int = 5) -> str:
+    """Graph-Guided Semantic Grep. 
+    Searches for relevant nodes via semantic search, finds their immediate neighbors, 
+    and returns actual source code snippets formatting like grep.
+    
+    Args:
+        query: Natural language query (e.g., 'image loading', 'cache')
+        limit: Max initial nodes to search (default: 5)
+    """
+    driver = _get_driver()
+    stop_nodes = _get_stop_nodes()
+
+    if embed_model is None:
+        return "Error: Embedding model not loaded."
+
+    query_embedding = embed_model.encode(query).tolist()
+
+    # Step 1: Semantic search to find top starting nodes
+    search_cypher = """
+    CALL db.index.vector.queryNodes($index_name, $limit, $embedding)
+    YIELD node, score
+    RETURN node.id AS id, score
+    ORDER BY score DESC
+    """
+
+    try:
+        with driver.session() as session:
+            initial_results = session.execute_read(
+                lambda tx: list(
+                    tx.run(
+                        search_cypher,
+                        index_name=VECTOR_INDEX_NAME,
+                        limit=limit,
+                        embedding=query_embedding,
+                    )
+                )
+            )
+    except Exception as e:
+        return f"Semantic search error: {e}"
+
+    if not initial_results:
+        return f"No semantic matches found for '{query}'"
+
+    start_node_ids = [r["id"] for r in initial_results]
+
+    # Step 2: 1-hop expansion, fetching node metadata for snippets
+    nodes_cypher = """
+    MATCH (start:CodeNode) WHERE start.id IN $node_ids
+    MATCH path = (start)-[*0..1]-(n:CodeNode)
+    WHERE NONE(x IN nodes(path) WHERE x.id IN $stop_node_ids AND NOT x.id IN $node_ids)
+    RETURN DISTINCT n.id AS id, n.kind AS kind, n.displayName AS displayName, 
+           n.uri AS uri, n.startLine AS startLine, n.endLine AS endLine
+    """
+
+    try:
+        with driver.session() as session:
+            raw_nodes = session.execute_read(
+                lambda tx: list(tx.run(nodes_cypher, node_ids=start_node_ids, stop_node_ids=list(stop_nodes)))
+            )
+    except Exception as e:
+        return f"Error getting expanded context: {e}"
+
+    # Filter out nodes without file locations
+    valid_nodes = [
+        n for n in raw_nodes 
+        if n.get("uri") and n.get("startLine") is not None and n.get("endLine") is not None
+        and n["startLine"] > 0 and n["endLine"] >= n["startLine"]
+        # Exclude massive files/classes from flooding snippet output (limit to 100 lines)
+        and (n["endLine"] - n["startLine"]) <= 100
+    ]
+
+    if not valid_nodes:
+        return f"Found {len(raw_nodes)} nodes, but none had accessible source code locations or were small enough."
+
+    output = [f"Found {len(valid_nodes)} relevant code snippets for '{query}':\n"]
+    
+    
+    # Sort by uri then startLine
+    valid_nodes.sort(key=lambda x: (x["uri"], x["startLine"]))
+    
+    for n in valid_nodes:
+        uri = n["uri"]
+        start = n["startLine"]
+        end = n["endLine"]
+        
+        snippet = _read_code_snippet(uri, start, end)
+        
+        header = f"--- {uri}:{start}-{end} ({n['kind']} {n['displayName']}) ---"
+        output.append(header)
+        
+        if snippet:
+            output.append(f"```\n{snippet.rstrip()}\n```\n")
+        else:
+            output.append("`[Source code unavailable or could not be read]`\n")
+
+    return "\n".join(output)
 
 MAX_QUERY_RESULTS = 50
 
