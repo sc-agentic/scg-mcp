@@ -81,15 +81,15 @@ mcp = FastMCP(
     instructions="Semantic Code Graph (SCG) MCP server for codebase exploration.\n"
     "Use `investigate` for ALL codebase queries — it searches, summarizes, and returns code in one call.\n"
     "Use `query_neo4j` ONLY when investigate is insufficient and you need a specific Cypher query.\n"
-    "Node kinds: CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE, VALUE, VARIABLE, PARAMETER.\n"
-    "Edge types: CALL, EXTEND, OVERRIDE, CONTAINS, TYPE, DECLARATION, PARAMETER, RETURN_TYPE.\n"
+    "Node kinds: CLASS, METHOD, CONSTRUCTOR, INTERFACE, ENUM.\n"
+    "Edge types: CALL, EXTEND, OVERRIDE.\n"
     "WARNING: Do NOT use 'EXTENDS' or 'IMPLEMENTS' in Cypher. The relationship is EXACTLY 'EXTEND'.",
 )
 
 
-DEFAULT_SEARCH_KINDS = ["CLASS", "TRAIT", "ENUM", "METHOD", "CONSTRUCTOR", "FILE"]
+DEFAULT_SEARCH_KINDS = ["CLASS", "ENUM", "METHOD", "CONSTRUCTOR", "INTERFACE"]
 MAX_CONTEXT_NODES = 50
-CONTEXT_NOISE_KINDS = {"PARAMETER", "VARIABLE", "TYPE_PARAMETER"}
+CONTEXT_NOISE_KINDS = set()
 
 
 def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> str:
@@ -98,7 +98,7 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
     Args:
         query: Natural language query (e.g., 'image loading', 'cache management')
         limit: Max results (default: 5)
-        kinds: Node kinds to include (default: CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE). Pass ['ALL'] for all.
+        kinds: Node kinds to include (default: CLASS, ENUM, METHOD, CONSTRUCTOR, INTERFACE). Pass ['ALL'] for all.
     """
     driver = _get_driver()
 
@@ -1048,8 +1048,7 @@ def query_neo4j(cypher: str, params: dict | None = None) -> str:
       Label: :CodeNode
       Properties: id (str, fully-qualified), kind (str), displayName (str),
                   uri (str, file path), startLine (int), endLine (int)
-      Edge types: CALL, EXTEND, OVERRIDE, CONTAINS, TYPE, DECLARATION,
-                  PARAMETER, RETURN_TYPE, TYPE_ARGUMENT, TYPE_PARAMETER
+      Edge types: CALL, EXTEND, OVERRIDE
       WARNING: Do NOT use 'EXTENDS' or 'IMPLEMENTS'. The graph strictly uses 'EXTEND'.
 
     Example:

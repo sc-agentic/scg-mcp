@@ -1,28 +1,5 @@
 # Semantic Graph RAG
 
-## Project Selection
-
-All commands below accept a `--project <name>` flag to choose which codebase to analyze.  
-Available projects are defined in [`src/config.py`](src/config.py).
-
-| Project        | Data dir             | Code dir              |
-| -------------- | -------------------- | --------------------- |
-| `glide`        | `data/glide`         | `code/glide-4.5.0`    |
-| `private_repo` | `data/private_repo`  | `code/private_repo`   |
-
-The default project is **`private_repo`**. You can override it in three ways:
-
-```bash
-# 1. CLI flag (highest priority)
-uv run python -m src.upload_to_neo4j --project glide
-
-# 2. Environment variable
-export SCG_PROJECT=glide
-uv run python -m src.upload_to_neo4j
-
-# 3. Change DEFAULT_PROJECT in src/config.py
-```
-
 ### Adding a new project
 
 1. Place semantic-graph data in `data/<name>/`
@@ -31,11 +8,23 @@ uv run python -m src.upload_to_neo4j
 
 ## Quick start
 
+Generate SCG (windows)
 ```bash
-docker-compose up -d                                      # Start Neo4j
-uv run python -m src.upload_to_neo4j --project glide      # Build embeddings & upload to Neo4j
+.\scg-cli\bin\scg-cli.bat generate -p .\code\glide-5.0.5 -o .\data\glide\glide_cg.semanticgraphdb
+```
 
-npx @modelcontextprotocol/inspector uv run python -m src.mcp_server --project glide  # Start MCP Inspector
+Upload to Neo4j
+```bash
+docker-compose up -d
+
+uv run python -m src.upload_to_neo4j --project glide -g CG
+```
+
+Run MCP server
+```bash
+uv run python -m src.mcp_server --project glide 
+
+npx @modelcontextprotocol/inspector uv run python -m src.mcp_server --project glide
 ```
 
 ## Queries

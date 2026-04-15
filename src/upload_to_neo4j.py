@@ -4,6 +4,8 @@ from typing import List, Dict, Any
 from tqdm import tqdm
 from src.rag_engine import GraphRAG
 from neo4j import GraphDatabase
+import argparse
+from src.config import get_project_config
 
 BATCH_SIZE = 2000
 
@@ -120,15 +122,25 @@ class Neo4jUploader:
 
 
 def main():
-    from src.config import get_project_config
+    parser = argparse.ArgumentParser(description="Upload SCG to Neo4j.")
+    parser.add_argument("--project", type=str, help="Project name to upload")
+    parser.add_argument(
+        "-g",
+        "--graph",
+        type=str,
+        default="SCG",
+        choices=["SCG", "CG", "CCN"],
+        help="Graph type to generate (default: SCG)",
+    )
+    args = parser.parse_args()
 
     NEO4J_URI = "bolt://localhost:7687"
     NEO4J_AUTH = ("neo4j", "password")
 
-    cfg = get_project_config()
-    print(f"--- Neo4j SCG Uploader [{cfg.name}] ---")
+    cfg = get_project_config(args.project)
+    print(f"--- Neo4j SCG Uploader [{cfg.name} | Graph: {args.graph}] ---")
     print("Initializing GraphRAG engine...")
-    rag = GraphRAG(data_dir=cfg.data_dir, code_dir=cfg.code_dir)
+    rag = GraphRAG(data_dir=cfg.data_dir, code_dir=cfg.code_dir, graph_type=args.graph)
 
     print("Preparing data...")
     embedding_map = {}
@@ -162,12 +174,8 @@ def main():
             payload["startLine"] = -1
             payload["endLine"] = -1
 
-        # Add dynamic properties (flattened)
-        # We prefix them to avoid collision with reserved keys
         if props := meta.get("properties"):
             for k, v in props.items():
-                # Neo4j properties must be primitives.
-                # Assuming 'v' is string from the proto definition.
                 payload[f"prop_{k}"] = v
 
         nodes_payload.append(payload)

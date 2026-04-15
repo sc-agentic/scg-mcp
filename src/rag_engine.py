@@ -9,10 +9,11 @@ from sentence_transformers import SentenceTransformer, util
 
 class GraphRAG:
     def __init__(
-        self, data_dir: Union[str, Path], code_dir: Optional[Union[str, Path]] = None
+        self, data_dir: Union[str, Path], code_dir: Optional[Union[str, Path]] = None, graph_type: str = "SCG"
     ):
         self.data_dir = Path(data_dir)
         self.code_dir = Path(code_dir) if code_dir else None
+        self.graph_type = graph_type.upper()
         self.graph = nx.DiGraph()
         self.node_metadata: Dict[str, Dict[str, Any]] = {}
         self.node_ids_list: List[str] = []
@@ -50,7 +51,15 @@ class GraphRAG:
 
     def _process_file(self, sgf: SemanticGraphFile):
         file_uri = sgf.uri
+        
+        # CG Filters
+        cg_kinds = {"CLASS", "METHOD", "CONSTRUCTOR", "TRAIT", "INTERFACE", "ENUM"}
+        cg_edges = {"CALL", "EXTEND", "OVERRIDE"}
+
         for node in sgf.nodes:
+            if self.graph_type == "CG" and node.kind not in cg_kinds:
+                continue
+                
             if node.id not in self.node_metadata:
                 self.graph.add_node(
                     node.id, kind=node.kind, display_name=node.displayName
@@ -63,6 +72,8 @@ class GraphRAG:
                     "file_uri": file_uri,
                 }
             for edge in node.edges:
+                if self.graph_type == "CG" and edge.type not in cg_edges:
+                    continue
                 self.graph.add_edge(node.id, edge.to, type=edge.type)
 
     def _link_definitions(self):
