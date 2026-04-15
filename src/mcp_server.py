@@ -8,6 +8,7 @@ from neo4j import GraphDatabase
 from sentence_transformers import SentenceTransformer
 from starlette.applications import Starlette
 from starlette.routing import Mount
+from src.config import get_project_config
 
 logging.basicConfig(
     level=logging.INFO,
@@ -28,13 +29,15 @@ neo4j_driver = None
 embed_model: SentenceTransformer | None = None
 stop_node_ids: set[str] | None = None
 STOP_NODE_COUNT = int(os.environ.get("SCG_STOP_NODE_COUNT", "200"))
+_project_code_dir: str | None = None
+
 
 def _get_stop_nodes() -> set[str]:
     """Calculate highly connected nodes (super-nodes) to avoid exploding traversals."""
     global stop_node_ids
     if stop_node_ids is not None:
         return stop_node_ids
-        
+
     driver = _get_driver()
     cypher = """
     MATCH (n:CodeNode)<-[r]-()
@@ -53,7 +56,7 @@ def _get_stop_nodes() -> set[str]:
     except Exception as e:
         log.warning("Failed to identify stop-nodes: %s", e)
         stop_node_ids = set()
-        
+
     return stop_node_ids
 
 
@@ -73,16 +76,14 @@ def _get_driver():
     return neo4j_driver
 
 
-
 mcp = FastMCP(
     "semantic-graph-rag",
-    instructions="Semantic Code Graph (SCG) for codebase exploration.\n\n"
-    "SCHEMA: Nodes are :CodeNode with properties: id, kind, displayName, uri, startLine, endLine.\n"
-    "kind values: CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE, VALUE, VARIABLE, PARAMETER, TYPE_PARAMETER.\n"
-    "Edges: CALL, EXTEND, OVERRIDE, CONTAINS, TYPE, DECLARATION, PARAMETER, RETURN_TYPE, "
-    "TYPE_ARGUMENT, EXTEND_TYPE_ARGUMENT, RETURN_TYPE_ARGUMENT, TYPE_PARAMETER.\n\n"
-    "WORKFLOW: search_code → get_node_summary → get_class_hierarchy → get_node_context.\n"
-    "AVOID: hops=2 on large classes (fan-out explosion), query_neo4j without LIMIT.",
+    instructions="Semantic Code Graph (SCG) MCP server for codebase exploration.\n"
+    "Use `investigate` for ALL codebase queries — it searches, summarizes, and returns code in one call.\n"
+    "Use `query_neo4j` ONLY when investigate is insufficient and you need a specific Cypher query.\n"
+    "Node kinds: CLASS, TRAIT, METHOD, CONSTRUCTOR, FILE, VALUE, VARIABLE, PARAMETER.\n"
+    "Edge types: CALL, EXTEND, OVERRIDE, CONTAINS, TYPE, DECLARATION, PARAMETER, RETURN_TYPE.\n"
+    "WARNING: Do NOT use 'EXTENDS' or 'IMPLEMENTS' in Cypher. The relationship is EXACTLY 'EXTEND'.",
 )
 
 
@@ -91,7 +92,6 @@ MAX_CONTEXT_NODES = 50
 CONTEXT_NOISE_KINDS = {"PARAMETER", "VARIABLE", "TYPE_PARAMETER"}
 
 
-@mcp.tool()
 def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> str:
     """Semantic search for code entities. Entry point for finding relevant code.
 
@@ -107,10 +107,8 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
 
     query_embedding = embed_model.encode(query).tolist()
 
-
     include_all = kinds is not None and len(kinds) == 1 and kinds[0].upper() == "ALL"
     filter_kinds = None if include_all else (kinds if kinds else DEFAULT_SEARCH_KINDS)
-
 
     raw_limit = limit * 5 if filter_kinds else limit
 
@@ -136,7 +134,6 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
     except Exception as e:
         return f"Search error: {e}"
 
-
     if filter_kinds:
         results = [r for r in results if r["kind"] in filter_kinds][:limit]
     else:
@@ -146,7 +143,9 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
         kind_note = f" (filtered to kinds: {filter_kinds})" if filter_kinds else ""
         return f"No results found for query: '{query}'{kind_note}"
 
-    kind_note = f" (kinds: {', '.join(filter_kinds)})" if filter_kinds else " (all kinds)"
+    kind_note = (
+        f" (kinds: {', '.join(filter_kinds)})" if filter_kinds else " (all kinds)"
+    )
     output = [f"Found {len(results)} results for '{query}'{kind_note}:\n"]
     for i, record in enumerate(results, 1):
         output.append(f"{i}. [{record['kind']}] {record['displayName']}")
@@ -157,7 +156,6 @@ def search_code(query: str, limit: int = 5, kinds: list[str] | None = None) -> s
     return "\n".join(output)
 
 
-@mcp.tool()
 def get_node_context(
     node_ids: list[str],
     hops: int = 1,
@@ -176,7 +174,9 @@ def get_node_context(
     hops = max(1, min(int(hops), 3))
 
     include_all = kinds is not None and len(kinds) == 1 and kinds[0].upper() == "ALL"
-    filter_kinds = None if include_all else (set(k.upper() for k in kinds) if kinds else None)
+    filter_kinds = (
+        None if include_all else (set(k.upper() for k in kinds) if kinds else None)
+    )
     use_noise_filter = not include_all and filter_kinds is None
 
     stop_nodes = _get_stop_nodes()
@@ -191,14 +191,17 @@ def get_node_context(
     try:
         with driver.session() as session:
             raw_nodes = session.execute_read(
-                lambda tx: list(tx.run(nodes_cypher, node_ids=node_ids, stop_node_ids=list(stop_nodes)))
+                lambda tx: list(
+                    tx.run(
+                        nodes_cypher, node_ids=node_ids, stop_node_ids=list(stop_nodes)
+                    )
+                )
             )
     except Exception as e:
         return f"Error getting node context: {e}"
 
     if not raw_nodes:
         return f"No nodes found for IDs: {node_ids}"
-
 
     if use_noise_filter:
         filtered_nodes = [n for n in raw_nodes if n["kind"] not in CONTEXT_NOISE_KINDS]
@@ -209,7 +212,6 @@ def get_node_context(
     else:
         filtered_nodes = raw_nodes
         noise_count = 0
-
 
     truncated = False
     truncated_summary = ""
@@ -228,7 +230,6 @@ def get_node_context(
                 omitted_by_kind[kind] = []
             if len(omitted_by_kind[kind]) < max_ids_per_kind:
                 omitted_by_kind[kind].append(n["id"])
-
 
         lines = [
             f"\n⚠️ Showing {MAX_CONTEXT_NODES} of {len(filtered_nodes)} nodes "
@@ -252,7 +253,6 @@ def get_node_context(
     all_traversed_ids = {n["id"] for n in raw_nodes}
     hidden_ids = all_traversed_ids - shown_ids
 
-
     rels_cypher = """
     MATCH (a:CodeNode)-[r]->(b:CodeNode)
     WHERE a.id IN $shown_ids AND b.id IN $shown_ids
@@ -269,7 +269,6 @@ def get_node_context(
     except Exception as e:
         return f"Error getting relationships: {e}"
 
-
     hidden_rel_summary = ""
     if hidden_ids:
         hidden_rels_cypher = """
@@ -281,11 +280,13 @@ def get_node_context(
         try:
             with driver.session() as session:
                 hidden_rels = session.execute_read(
-                    lambda tx: list(tx.run(
-                        hidden_rels_cypher,
-                        shown_ids=list(shown_ids),
-                        hidden_ids=list(hidden_ids),
-                    ))
+                    lambda tx: list(
+                        tx.run(
+                            hidden_rels_cypher,
+                            shown_ids=list(shown_ids),
+                            hidden_ids=list(hidden_ids),
+                        )
+                    )
                 )
             if hidden_rels:
                 parts = [f"{r['relType']} ({r['cnt']})" for r in hidden_rels]
@@ -296,7 +297,6 @@ def get_node_context(
                 )
         except Exception:
             pass
-
 
     header = f"Context subgraph ({len(shown_nodes)} nodes shown"
     if noise_count > 0:
@@ -314,21 +314,21 @@ def get_node_context(
     output.append("\nRelationships:")
     if rels:
         if macro_topology:
-            file_deps = {} # (sourceUri, targetUri) -> {relType: count}
+            file_deps = {}  # (sourceUri, targetUri) -> {relType: count}
             intra_file = set()
-            
+
             for r in rels:
                 sUri = r.get("sourceUri")
                 tUri = r.get("targetUri")
-                
+
                 def get_container(uri, display):
                     if uri:
-                        return uri.split('/')[-1]
+                        return uri.split("/")[-1]
                     return display
 
                 sCont = get_container(sUri, r["source"])
                 tCont = get_container(tUri, r["target"])
-                
+
                 if sCont != tCont:
                     key = (sCont, tCont)
                     if key not in file_deps:
@@ -336,20 +336,20 @@ def get_node_context(
                     rt = r["relType"]
                     file_deps[key][rt] = file_deps[key].get(rt, 0) + 1
                 else:
-                    intra_file.add((r['source'], r['relType'], r['target']))
-                    
+                    intra_file.add((r["source"], r["relType"], r["target"]))
+
             if file_deps:
                 output.append("  [Macro-Topology] Inter-file Dependencies:")
                 for (sc, tc), types in sorted(file_deps.items()):
                     types_str = ", ".join(f"{k} ({v})" for k, v in types.items())
                     total = sum(types.values())
                     output.append(f"    - {sc} => {tc} [weight: {total}] ({types_str})")
-                    
+
             if intra_file:
                 output.append("  [Micro-Topology] Intra-file Relationships:")
                 for src, rtype, tgt in sorted(intra_file):
                     output.append(f"    - {src} --[{rtype}]--> {tgt}")
-                    
+
             if not file_deps and not intra_file:
                 output.append("  (none)")
         else:
@@ -357,7 +357,7 @@ def get_node_context(
             seen_rels = set()
             unique_rels = []
             for r in rels:
-                key = (r['source'], r['relType'], r['target'])
+                key = (r["source"], r["relType"], r["target"])
                 if key not in seen_rels:
                     seen_rels.add(key)
                     unique_rels.append(r)
@@ -372,10 +372,6 @@ def get_node_context(
     return "\n".join(output)
 
 
-
-
-
-@mcp.tool()
 def get_graph_stats() -> str:
     """Get node/edge counts and kind distribution for the code graph."""
     driver = _get_driver()
@@ -421,7 +417,6 @@ def get_graph_stats() -> str:
     return "\n".join(output)
 
 
-@mcp.tool()
 def find_path(from_id: str, to_id: str, max_depth: int = 5) -> str:
     """Find shortest path between two code entities.
 
@@ -446,7 +441,14 @@ def find_path(from_id: str, to_id: str, max_depth: int = 5) -> str:
     try:
         with driver.session() as session:
             result = session.execute_read(
-                lambda tx: list(tx.run(cypher, from_id=from_id, to_id=to_id, stop_node_ids=list(stop_nodes)))
+                lambda tx: list(
+                    tx.run(
+                        cypher,
+                        from_id=from_id,
+                        to_id=to_id,
+                        stop_node_ids=list(stop_nodes),
+                    )
+                )
             )
     except Exception as e:
         return f"Error finding path: {e}"
@@ -477,7 +479,6 @@ def find_path(from_id: str, to_id: str, max_depth: int = 5) -> str:
     return "\n".join(output)
 
 
-@mcp.tool()
 def get_node_summary(node_ids: list[str]) -> str:
     """Compact summary of nodes: metadata + relationship counts with sample neighbors.
 
@@ -486,7 +487,6 @@ def get_node_summary(node_ids: list[str]) -> str:
     """
     driver = _get_driver()
     stop_nodes = _get_stop_nodes()
-
 
     cypher = """
     UNWIND $node_ids AS nid
@@ -512,7 +512,9 @@ def get_node_summary(node_ids: list[str]) -> str:
     try:
         with driver.session() as session:
             results = session.execute_read(
-                lambda tx: list(tx.run(cypher, node_ids=node_ids, stop_node_ids=list(stop_nodes)))
+                lambda tx: list(
+                    tx.run(cypher, node_ids=node_ids, stop_node_ids=list(stop_nodes))
+                )
             )
     except Exception as e:
         return f"Error: {e}"
@@ -536,8 +538,8 @@ def get_node_summary(node_ids: list[str]) -> str:
         if outgoing:
             output.append("  Outgoing:")
             for e in outgoing:
-                examples = ", ".join(e['examples'])
-                if e['count'] > len(e['examples']):
+                examples = ", ".join(e["examples"])
+                if e["count"] > len(e["examples"]):
                     examples += f", ... (+{e['count'] - len(e['examples'])} more)"
                 output.append(f"    - {e['type']} ({e['count']}): {examples}")
         else:
@@ -546,8 +548,8 @@ def get_node_summary(node_ids: list[str]) -> str:
         if incoming:
             output.append("  Incoming:")
             for e in incoming:
-                examples = ", ".join(e['examples'])
-                if e['count'] > len(e['examples']):
+                examples = ", ".join(e["examples"])
+                if e["count"] > len(e["examples"]):
                     examples += f", ... (+{e['count'] - len(e['examples'])} more)"
                 output.append(f"    - {e['type']} ({e['count']}): {examples}")
         else:
@@ -558,7 +560,6 @@ def get_node_summary(node_ids: list[str]) -> str:
     return "\n".join(output)
 
 
-@mcp.tool()
 def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
     """Get inheritance hierarchy for a class/interface.
 
@@ -572,7 +573,6 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
         direction = "both"
 
     sections = []
-
 
     node_cypher = """
     MATCH (n:CodeNode {id: $node_id})
@@ -590,7 +590,6 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
 
             node = node_result[0]
             sections.append(f"Hierarchy for [{node['kind']}] {node['displayName']}:\n")
-
 
             if direction in ("up", "both"):
                 ancestors_cypher = """
@@ -616,7 +615,6 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
                 else:
                     sections.append("  (none — this is a root class/interface)")
                 sections.append("")
-
 
             if direction in ("down", "both"):
                 descendants_cypher = """
@@ -649,7 +647,6 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
     return "\n".join(sections)
 
 
-@mcp.tool()
 def list_package_classes(package_path: str, include_methods: bool = False) -> str:
     """List classes/interfaces in a package.
 
@@ -681,13 +678,14 @@ def list_package_classes(package_path: str, include_methods: bool = False) -> st
     if not results:
         return f"No classes or interfaces found matching path '{package_path}'."
 
-
     by_file: dict[str, list] = {}
     for r in results:
         uri = r.get("uri", "unknown")
         by_file.setdefault(uri, []).append(r)
 
-    output = [f"Found {len(results)} entities in '{package_path}' ({len(by_file)} files):\n"]
+    output = [
+        f"Found {len(results)} entities in '{package_path}' ({len(by_file)} files):\n"
+    ]
     for uri, nodes in sorted(by_file.items()):
         output.append(f"  {uri}:")
         for n in nodes:
@@ -699,51 +697,45 @@ def list_package_classes(package_path: str, include_methods: bool = False) -> st
 
 def _read_code_snippet(uri: str, start_line: int, end_line: int) -> str | None:
     """Read a snippet of code from a file."""
-    # The URI in SCG is usually relative to the project root,
-    # e.g. "library/src/main/java/com/bumptech/glide/Glide.java"
-    # We need to construct the absolute path here assuming the project is
-    # `code/{project_name}/xxx`, but we dynamically load current dir 
-    # and we can search for the file
-    
-    # Very rudimentary path resolution
     base_dir = os.getcwd()
-    # E.g. find `code` directory
-    code_dir = os.path.join(base_dir, "code")
-    project_name = os.environ.get("SCG_PROJECT", "private_repo")
-    target_dir = os.path.join(code_dir, project_name)
+    if _project_code_dir:
+        target_dir = os.path.join(base_dir, _project_code_dir)
+    else:
+        code_dir = os.path.join(base_dir, "code")
+        project_name = os.environ.get("SCG_PROJECT", "private_repo")
+        target_dir = os.path.join(code_dir, project_name)
 
-    if target_dir and not os.path.exists(target_dir):
-        # Fallback if structure is slightly different
+    if not os.path.exists(target_dir):
         target_dir = base_dir
 
     file_path = os.path.join(target_dir, uri)
-    
+
     # Try resolving if `uri` is absolute, or if it doesn't exist
     if not os.path.exists(file_path):
         if os.path.exists(uri):
-             file_path = uri
+            file_path = uri
         else:
-             return None
+            return None
 
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
-            
+
             # 1-indexed lines
             s = max(0, start_line - 1)
             e = min(len(lines), end_line)
-            
+
             snippet = "".join(lines[s:e])
             return snippet
     except Exception:
         return None
 
-@mcp.tool()
+
 def semantic_grep(query: str, limit: int = 5) -> str:
-    """Graph-Guided Semantic Grep. 
-    Searches for relevant nodes via semantic search, finds their immediate neighbors, 
+    """Graph-Guided Semantic Grep.
+    Searches for relevant nodes via semantic search, finds their immediate neighbors,
     and returns actual source code snippets formatting like grep.
-    
+
     Args:
         query: Natural language query (e.g., 'image loading', 'cache')
         limit: Max initial nodes to search (default: 5)
@@ -796,16 +788,26 @@ def semantic_grep(query: str, limit: int = 5) -> str:
     try:
         with driver.session() as session:
             raw_nodes = session.execute_read(
-                lambda tx: list(tx.run(nodes_cypher, node_ids=start_node_ids, stop_node_ids=list(stop_nodes)))
+                lambda tx: list(
+                    tx.run(
+                        nodes_cypher,
+                        node_ids=start_node_ids,
+                        stop_node_ids=list(stop_nodes),
+                    )
+                )
             )
     except Exception as e:
         return f"Error getting expanded context: {e}"
 
     # Filter out nodes without file locations
     valid_nodes = [
-        n for n in raw_nodes 
-        if n.get("uri") and n.get("startLine") is not None and n.get("endLine") is not None
-        and n["startLine"] > 0 and n["endLine"] >= n["startLine"]
+        n
+        for n in raw_nodes
+        if n.get("uri")
+        and n.get("startLine") is not None
+        and n.get("endLine") is not None
+        and n["startLine"] > 0
+        and n["endLine"] >= n["startLine"]
         # Exclude massive files/classes from flooding snippet output (limit to 100 lines)
         and (n["endLine"] - n["startLine"]) <= 100
     ]
@@ -814,21 +816,20 @@ def semantic_grep(query: str, limit: int = 5) -> str:
         return f"Found {len(raw_nodes)} nodes, but none had accessible source code locations or were small enough."
 
     output = [f"Found {len(valid_nodes)} relevant code snippets for '{query}':\n"]
-    
-    
+
     # Sort by uri then startLine
     valid_nodes.sort(key=lambda x: (x["uri"], x["startLine"]))
-    
+
     for n in valid_nodes:
         uri = n["uri"]
         start = n["startLine"]
         end = n["endLine"]
-        
+
         snippet = _read_code_snippet(uri, start, end)
-        
+
         header = f"--- {uri}:{start}-{end} ({n['kind']} {n['displayName']}) ---"
         output.append(header)
-        
+
         if snippet:
             output.append(f"```\n{snippet.rstrip()}\n```\n")
         else:
@@ -836,15 +837,228 @@ def semantic_grep(query: str, limit: int = 5) -> str:
 
     return "\n".join(output)
 
+
+@mcp.tool()
+def investigate(
+    query: str,
+    directions: str = "both",
+    include_code: bool = False,
+    include_file_deps: bool = False,
+) -> str:
+    """Primary codebase exploration tool. Finds relevant code entities and
+    returns curated context (metadata, relationships, code) in one call.
+
+    Args:
+        query: Natural language query (e.g., 'cache management', 'image loading')
+        directions: 'out', 'in', or 'both'. Which topological dependencies to include.
+                    If you only want to know what a function calls, use 'out' to save context.
+        include_code: If true, includes up to 15 lines of code snippet (method signature).
+        include_file_deps: If true, includes inter-file topology. Leave false if searching for functions.
+    """
+    driver = _get_driver()
+    stop_nodes = _get_stop_nodes()
+
+    if embed_model is None:
+        return "Error: Embedding model not loaded."
+
+    directions = directions.lower()
+    if directions not in ("out", "in", "both"):
+        directions = "both"
+
+    query_embedding = embed_model.encode(query).tolist()
+    limit = 3
+
+    # ── Step 1: Semantic search ──────────────────────────────────────────
+    search_cypher = """
+    CALL db.index.vector.queryNodes($index_name, $raw_limit, $embedding)
+    YIELD node, score
+    RETURN node.id AS id, node.kind AS kind, node.displayName AS displayName,
+           node.uri AS uri, node.startLine AS startLine, node.endLine AS endLine,
+           score
+    ORDER BY score DESC
+    """
+
+    try:
+        with driver.session() as session:
+            search_results = session.execute_read(
+                lambda tx: list(
+                    tx.run(
+                        search_cypher,
+                        index_name=VECTOR_INDEX_NAME,
+                        raw_limit=limit * 5,
+                        embedding=query_embedding,
+                    )
+                )
+            )
+    except Exception as e:
+        return f"Search error: {e}"
+
+    # Filter to meaningful kinds
+    search_results = [r for r in search_results if r["kind"] in DEFAULT_SEARCH_KINDS][
+        :limit
+    ]
+
+    if not search_results:
+        return f"No results found for '{query}'"
+
+    node_ids = [r["id"] for r in search_results]
+
+    # ── Step 2: Relationship summaries ───────────────────────────────────
+    if directions == "out":
+        rel_cypher = """
+        UNWIND $node_ids AS nid MATCH (n:CodeNode {id: nid})
+        OPTIONAL MATCH (n)-[out]->(target) WHERE target IS NOT NULL AND NOT target.id IN $stop_node_ids
+        WITH n, type(out) AS outType, count(out) AS outCount, collect(DISTINCT target.displayName)[..2] AS outSamples
+        WITH n, collect(CASE WHEN outType IS NOT NULL THEN {type: outType, count: outCount, samples: outSamples} END) AS outgoing
+        RETURN n.id AS id, outgoing, [] AS incoming
+        """
+    elif directions == "in":
+        rel_cypher = """
+        UNWIND $node_ids AS nid MATCH (n:CodeNode {id: nid})
+        OPTIONAL MATCH (n)<-[inc]-(source) WHERE source IS NOT NULL AND NOT source.id IN $stop_node_ids
+        WITH n, type(inc) AS incType, count(inc) AS incCount, collect(DISTINCT source.displayName)[..2] AS incSamples
+        WITH n, collect(CASE WHEN incType IS NOT NULL THEN {type: incType, count: incCount, samples: incSamples} END) AS incoming
+        RETURN n.id AS id, [] AS outgoing, incoming
+        """
+    else:  # both
+        rel_cypher = """
+        UNWIND $node_ids AS nid MATCH (n:CodeNode {id: nid})
+        OPTIONAL MATCH (n)-[out]->(target) WHERE target IS NOT NULL AND NOT target.id IN $stop_node_ids
+        WITH n, type(out) AS outType, count(out) AS outCount, collect(DISTINCT target.displayName)[..2] AS outSamples
+        WITH n, collect(CASE WHEN outType IS NOT NULL THEN {type: outType, count: outCount, samples: outSamples} END) AS outgoing
+        OPTIONAL MATCH (n)<-[inc]-(source) WHERE source IS NOT NULL AND NOT source.id IN $stop_node_ids
+        WITH n, outgoing, type(inc) AS incType, count(inc) AS incCount, collect(DISTINCT source.displayName)[..2] AS incSamples
+        WITH n, outgoing, collect(CASE WHEN incType IS NOT NULL THEN {type: incType, count: incCount, samples: incSamples} END) AS incoming
+        RETURN n.id AS id, outgoing, incoming
+        """
+
+    try:
+        with driver.session() as session:
+            rel_data = session.execute_read(
+                lambda tx: list(
+                    tx.run(
+                        rel_cypher, node_ids=node_ids, stop_node_ids=list(stop_nodes)
+                    )
+                )
+            )
+    except Exception:
+        rel_data = []
+
+    rel_map = {r["id"]: r for r in rel_data}
+
+    # ── Step 3 (optional): Inter-file dependencies ──────────────────────
+    file_deps: dict[tuple[str, str], dict[str, int]] = {}
+    if include_file_deps:
+        deps_cypher = """
+        MATCH (start:CodeNode) WHERE start.id IN $node_ids
+        MATCH (start)-[*0..1]-(n:CodeNode)-[r]->(m:CodeNode)
+        WHERE n.uri IS NOT NULL AND m.uri IS NOT NULL AND n.uri <> m.uri
+          AND NOT n.id IN $stop_node_ids AND NOT m.id IN $stop_node_ids
+        WITH split(n.uri, '/')[-1] AS srcFile, split(m.uri, '/')[-1] AS tgtFile,
+             type(r) AS relType, count(*) AS cnt
+        RETURN srcFile, tgtFile, collect({type: relType, count: cnt}) AS rels,
+               sum(cnt) AS total
+        ORDER BY total DESC
+        LIMIT 5
+        """
+        try:
+            with driver.session() as session:
+                deps = session.execute_read(
+                    lambda tx: list(
+                        tx.run(
+                            deps_cypher,
+                            node_ids=node_ids,
+                            stop_node_ids=list(stop_nodes),
+                        )
+                    )
+                )
+            for d in deps:
+                key = (d["srcFile"], d["tgtFile"])
+                file_deps[key] = {r["type"]: r["count"] for r in d["rels"]}
+        except Exception:
+            pass
+
+    # ── Format output ────────────────────────────────────────────────────
+    def _short_id(full_id: str) -> str:
+        """Shorten 'com.bumptech.glide.load.engine.Engine#load' to 'Engine#load'."""
+        parts = full_id.rsplit(".", 1)
+        return parts[-1] if len(parts) > 1 else full_id
+
+    output = []
+
+    for i, r in enumerate(search_results, 1):
+        short = _short_id(r["id"])
+        line_info = ""
+        if r.get("uri"):
+            fname = r["uri"].rsplit("/", 1)[-1]
+            line_info = f" ({fname}:{r.get('startLine', '?')}-{r.get('endLine', '?')})"
+        output.append(f"{i}. [{r['kind']}] {r['displayName']}{line_info}")
+        output.append(f"   ID: {r['id']}")
+
+        # Compact relationship summary
+        if r["id"] in rel_map:
+            rd = rel_map[r["id"]]
+            outgoing = [e for e in rd["outgoing"] if e is not None]
+            incoming = [e for e in rd["incoming"] if e is not None]
+
+            if outgoing:
+                parts = [
+                    f"{e['type']}({e['count']}): {', '.join(e['samples'][:2])}"
+                    for e in outgoing
+                ]
+                output.append(f"   Out: {' | '.join(parts)}")
+
+            if incoming:
+                parts = [
+                    f"{e['type']}({e['count']}): {', '.join(e['samples'][:2])}"
+                    for e in incoming
+                ]
+                output.append(f"   In: {' | '.join(parts)}")
+
+        # Code signature
+        if include_code and r.get("uri") and r.get("startLine") and r.get("endLine"):
+            line_count = r.get("endLine", r["startLine"]) - r["startLine"]
+            if line_count >= 0:
+                end_l = min(r["endLine"], r["startLine"] + 15)
+                snippet = _read_code_snippet(r["uri"], r["startLine"], end_l)
+                if snippet:
+                    output.append(f"```\n{snippet.rstrip()}\n```")
+
+    # Inter-file dependency map
+    if include_file_deps and file_deps:
+        output.append("\nFile deps:")
+        for (sf, tf), types in sorted(
+            file_deps.items(), key=lambda x: -sum(x[1].values())
+        )[:5]:
+            total = sum(types.values())
+            types_str = ", ".join(f"{k}({v})" for k, v in types.items())
+            output.append(f"  {sf} => {tf} [{total}] ({types_str})")
+
+    return "\n".join(output)
+
+
 MAX_QUERY_RESULTS = 50
 
 
 @mcp.tool()
 def query_neo4j(cypher: str, params: dict | None = None) -> str:
-    """Execute a read-only Cypher query. Always use LIMIT and kind filters.
+    """Execute a read-only Cypher query against the code graph.
+
+    SCHEMA:
+      Label: :CodeNode
+      Properties: id (str, fully-qualified), kind (str), displayName (str),
+                  uri (str, file path), startLine (int), endLine (int)
+      Edge types: CALL, EXTEND, OVERRIDE, CONTAINS, TYPE, DECLARATION,
+                  PARAMETER, RETURN_TYPE, TYPE_ARGUMENT, TYPE_PARAMETER
+      WARNING: Do NOT use 'EXTENDS' or 'IMPLEMENTS'. The graph strictly uses 'EXTEND'.
+
+    Example:
+      MATCH (n:CodeNode)
+      WHERE n.displayName CONTAINS 'Cache' AND n.kind = 'CLASS'
+      RETURN n.id, n.displayName, n.uri LIMIT 10
 
     Args:
-        cypher: Cypher query string (read-only)
+        cypher: Cypher query string (read-only, always include LIMIT)
         params: Optional query parameters
     """
     driver = _get_driver()
@@ -864,7 +1078,6 @@ def query_neo4j(cypher: str, params: dict | None = None) -> str:
 
         output = [f"Returned {total_count} record(s)"]
         if truncated:
-
             truncated_records = result[MAX_QUERY_RESULTS:]
             kind_counts: dict[str, int] = {}
             for r in truncated_records:
@@ -889,7 +1102,9 @@ def query_neo4j(cypher: str, params: dict | None = None) -> str:
             output.append("")
 
         if truncated:
-            output.append(f"\n⚠️  {total_count - MAX_QUERY_RESULTS} additional records were truncated.")
+            output.append(
+                f"\n⚠️  {total_count - MAX_QUERY_RESULTS} additional records were truncated."
+            )
             output.append(f"Truncated kinds: {kind_counts}")
             output.append(
                 "Tip: Add a LIMIT clause or filter with WHERE n.kind IN ['CLASS', 'TRAIT', 'METHOD'] "
@@ -902,12 +1117,9 @@ def query_neo4j(cypher: str, params: dict | None = None) -> str:
         return f"Cypher query error: {e}"
 
 
-
-
 @contextlib.asynccontextmanager
 async def lifespan(app: Starlette):
-    global neo4j_driver, embed_model
-
+    global neo4j_driver, embed_model, _project_code_dir
 
     try:
         neo4j_driver = GraphDatabase.driver(NEO4J_URI, auth=NEO4J_AUTH)
@@ -917,15 +1129,17 @@ async def lifespan(app: Starlette):
         log.error("Could not connect to Neo4j: %s", e)
         raise
 
-
     log.info("Loading embedding model '%s'...", EMBED_MODEL_NAME)
     with redirect_stdout_to_stderr():
         embed_model = SentenceTransformer(EMBED_MODEL_NAME)
     log.info("Embedding model loaded.")
 
+    cfg = get_project_config()
+    _project_code_dir = str(cfg.code_dir)
+    log.info("Project: %s, code_dir: %s", cfg.name, _project_code_dir)
+
     async with mcp.session_manager.run():
         yield
-
 
     if neo4j_driver is not None:
         neo4j_driver.close()

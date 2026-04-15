@@ -14,11 +14,11 @@ The default project is **`private_repo`**. You can override it in three ways:
 
 ```bash
 # 1. CLI flag (highest priority)
-uv run python -m src.bootstrap --project glide
+uv run python -m src.upload_to_neo4j --project glide
 
 # 2. Environment variable
 export SCG_PROJECT=glide
-uv run python -m src.bootstrap
+uv run python -m src.upload_to_neo4j
 
 # 3. Change DEFAULT_PROJECT in src/config.py
 ```
@@ -32,8 +32,8 @@ uv run python -m src.bootstrap
 ## Quick start
 
 ```bash
-docker-compose up -d                                # Start Neo4j
-uv run python -m src.bootstrap --project glide      # Build embeddings & upload to Neo4j
+docker-compose up -d                                      # Start Neo4j
+uv run python -m src.upload_to_neo4j --project glide      # Build embeddings & upload to Neo4j
 
 npx @modelcontextprotocol/inspector uv run python -m src.mcp_server --project glide  # Start MCP Inspector
 ```
