@@ -478,9 +478,64 @@ def get_node_summary(node_ids: list[str]) -> str:
     return "\n".join(output)
 
 
+def _render_descendant_tree(root_node, descendants) -> str:
+    children_of: dict[str, list] = {}
+    seen: set[str] = set()
+    for d in descendants:
+        if d["id"] in seen:
+            continue
+        seen.add(d["id"])
+        children_of.setdefault(d["parentId"], []).append(d)
+    for k in children_of:
+        children_of[k].sort(key=lambda d: d["displayName"])
+
+    lines = [f"  [{root_node['kind']}] {root_node['displayName']}"]
+
+    def render(node_id: str, prefix: str):
+        children = children_of.get(node_id, [])
+        for i, child in enumerate(children):
+            is_last = i == len(children) - 1
+            connector = "└── " if is_last else "├── "
+            label = f"[{child['kind']}] {child['displayName']} (via {child['relType']})"
+            lines.append(f"  {prefix}{connector}{label}")
+            new_prefix = prefix + ("    " if is_last else "│   ")
+            render(child["id"], new_prefix)
+
+    render(root_node["id"], "")
+    return "\n".join(lines)
+
+
+def _render_ancestor_tree(start_node, ancestors) -> str:
+    parents_of: dict[str, list] = {}
+    seen: set[tuple[str, str]] = set()
+    for a in ancestors:
+        key = (a["childId"], a["id"])
+        if key in seen:
+            continue
+        seen.add(key)
+        parents_of.setdefault(a["childId"], []).append(a)
+    for k in parents_of:
+        parents_of[k].sort(key=lambda a: a["displayName"])
+
+    lines = [f"  [{start_node['kind']}] {start_node['displayName']}"]
+
+    def render(node_id: str, prefix: str):
+        parents = parents_of.get(node_id, [])
+        for i, parent in enumerate(parents):
+            is_last = i == len(parents) - 1
+            connector = "└── ↑ " if is_last else "├── ↑ "
+            label = f"[{parent['kind']}] {parent['displayName']} (via {parent['relType']})"
+            lines.append(f"  {prefix}{connector}{label}")
+            new_prefix = prefix + ("    " if is_last else "│   ")
+            render(parent["id"], new_prefix)
+
+    render(start_node["id"], "")
+    return "\n".join(lines)
+
+
 @mcp.tool()
 def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
-    """Get inheritance hierarchy for a class/interface.
+    """Get inheritance hierarchy for a class/interface as a rendered ASCII tree.
 
     Args:
         node_id: Class or interface node ID
@@ -516,11 +571,13 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
                 ancestors_cypher = """
                 MATCH (start:CodeNode {id: $node_id})
                 MATCH path = (start)-[:EXTEND*1..10]->(ancestor:CodeNode)
-                WITH ancestor, relationships(path) AS rels, length(path) AS depth
-                ORDER BY depth
+                WITH ancestor, nodes(path) AS pnodes,
+                     length(path) AS depth, last(relationships(path)) AS rel
                 RETURN ancestor.id AS id, ancestor.kind AS kind,
                        ancestor.displayName AS displayName,
-                       type(last(rels)) AS relType, depth
+                       type(rel) AS relType, depth,
+                       pnodes[-2].id AS childId
+                ORDER BY depth, ancestor.displayName
                 """
                 ancestors = session.execute_read(
                     lambda tx: list(tx.run(ancestors_cypher, node_id=node_id))
@@ -528,11 +585,7 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
 
                 sections.append("Ancestors (superclasses / implemented interfaces):")
                 if ancestors:
-                    for a in ancestors:
-                        indent = "  " * a["depth"]
-                        sections.append(
-                            f"  {indent}↑ [{a['kind']}] {a['displayName']} (via {a['relType']}, depth {a['depth']})"
-                        )
+                    sections.append(_render_ancestor_tree(node, ancestors))
                 else:
                     sections.append("  (none — this is a root class/interface)")
                 sections.append("")
@@ -542,11 +595,13 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
                 descendants_cypher = """
                 MATCH (start:CodeNode {id: $node_id})
                 MATCH path = (start)<-[:EXTEND*1..10]-(descendant:CodeNode)
-                WITH descendant, relationships(path) AS rels, length(path) AS depth
-                ORDER BY depth
+                WITH descendant, nodes(path) AS pnodes,
+                     length(path) AS depth, last(relationships(path)) AS rel
                 RETURN descendant.id AS id, descendant.kind AS kind,
                        descendant.displayName AS displayName,
-                       type(last(rels)) AS relType, depth
+                       type(rel) AS relType, depth,
+                       pnodes[-2].id AS parentId
+                ORDER BY depth, descendant.displayName
                 """
                 descendants = session.execute_read(
                     lambda tx: list(tx.run(descendants_cypher, node_id=node_id))
@@ -554,11 +609,7 @@ def get_class_hierarchy(node_id: str, direction: str = "both") -> str:
 
                 sections.append("Descendants (subclasses / implementors):")
                 if descendants:
-                    for d in descendants:
-                        indent = "  " * d["depth"]
-                        sections.append(
-                            f"  {indent}↓ [{d['kind']}] {d['displayName']} (via {d['relType']}, depth {d['depth']})"
-                        )
+                    sections.append(_render_descendant_tree(node, descendants))
                 else:
                     sections.append("  (none — no known subclasses or implementors)")
                 sections.append("")
