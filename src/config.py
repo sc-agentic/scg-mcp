@@ -20,8 +20,20 @@ from typing import Optional
 
 PROJECTS: dict[str, dict[str, str]] = {
     "glide": {
-        "data_dir": "data/glide-5.0.5",
-        "code_dir": "code/glide-5.0.5",
+        "data_dir": "../scg-benchmark-ca/codebases/glide-5.0.5",
+        "code_dir": "../scg-benchmark-ca/codebases/glide-5.0.5",
+    },
+    "daytrader7": {
+        "data_dir": "../scg-benchmark-ca/codebases/daytrader7",
+        "code_dir": "../scg-benchmark-ca/codebases/daytrader7",
+    },
+    "petclinic": {
+        "data_dir": "../scg-decompose-bench/codebases/petclinic",
+        "code_dir": "../scg-decompose-bench/codebases/petclinic",
+    },
+    "acmeair": {
+        "data_dir": "../scg-decompose-bench/codebases/acmeair",
+        "code_dir": "../scg-decompose-bench/codebases/acmeair",
     },
     "private_repo": {
         "data_dir": "data/private_repo",

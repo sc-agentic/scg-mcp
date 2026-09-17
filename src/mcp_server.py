@@ -734,6 +734,154 @@ def query_neo4j(cypher: str, params: dict | None = None) -> str:
         return f"Cypher query error: {e}"
 
 
+_COUPLING_REFERENCE = {
+    "TYPE", "RETURN_TYPE", "PARAMETER", "TYPE_ARGUMENT",
+    "RETURN_TYPE_ARGUMENT", "EXTEND", "EXTEND_TYPE_ARGUMENT",
+}
+_COUPLING_CALL = {"CALL", "OVERRIDE"}
+_CLASS_KINDS = ["CLASS", "INTERFACE", "ENUM", "TRAIT"]
+
+
+@mcp.tool()
+def detect_communities(resolution: float = 1.0, include_calls: bool = False) -> str:
+    """Detect candidate service communities in the class-collaboration graph.
+
+    Runs Louvain community detection on a class-level coupling graph derived
+    from the SCG: method/field/parameter edges are rolled up to their owning
+    class, so the result groups classes that depend heavily on each other.
+
+    This is a STRUCTURAL SEED for decomposition — candidate communities, the
+    overall modularity, and the inter-community "seams" (dependencies that
+    would become cross-service calls). It is evidence to refine semantically,
+    NOT a finished partition: merge tiny communities, split incoherent ones,
+    and name each service after the business capability it serves.
+
+    Args:
+        resolution: Louvain resolution. >1 yields more, smaller communities;
+                    <1 yields fewer, larger ones. Default 1.0. If a community is
+                    too large to be one service, re-run with a higher resolution.
+        include_calls: Whether to also roll up method CALL/OVERRIDE coupling on
+                       top of type/field/inheritance references. Default False
+                       (references only). Set True with caution: in apps with a
+                       central facade/hub that everything calls, CALL coupling
+                       routes through that hub and collapses unrelated domains
+                       into one giant community — a misleading seed. If your
+                       first call returns one dominant community or a huge seam,
+                       try the other setting and compare before trusting it.
+    """
+    try:
+        import networkx as nx
+    except ImportError:
+        return "Error: networkx is not available on the server."
+
+    driver = _get_driver()
+    coupling = set(_COUPLING_REFERENCE)
+    if include_calls:
+        coupling |= _COUPLING_CALL
+
+    try:
+        with driver.session() as session:
+            classes = session.execute_read(
+                lambda tx: [
+                    r["id"]
+                    for r in tx.run(
+                        "MATCH (n:CodeNode) WHERE n.kind IN $kinds RETURN n.id AS id",
+                        kinds=_CLASS_KINDS,
+                    )
+                ]
+            )
+            raw_edges = session.execute_read(
+                lambda tx: [
+                    (r["a"], r["b"], r["t"])
+                    for r in tx.run(
+                        "MATCH (a:CodeNode)-[e]->(b:CodeNode) "
+                        "RETURN a.id AS a, b.id AS b, type(e) AS t"
+                    )
+                ]
+            )
+    except Exception as e:
+        return f"Community detection error: {e}"
+
+    if not classes:
+        return "No class-like nodes found in the graph."
+
+    # Map any node id to its owning class via the longest class-id prefix.
+    classes_by_len = sorted(classes, key=len, reverse=True)
+
+    def _owner(node_id: str) -> str | None:
+        for c in classes_by_len:
+            if node_id == c or node_id.startswith(c + ".") or node_id.startswith(c + "("):
+                return c
+        return None
+
+    g = nx.Graph()
+    g.add_nodes_from(classes)
+    for a, b, t in raw_edges:
+        if t not in coupling:
+            continue
+        oa, ob = _owner(a), _owner(b)
+        if oa and ob and oa != ob:
+            if g.has_edge(oa, ob):
+                g[oa][ob]["weight"] += 1
+            else:
+                g.add_edge(oa, ob, weight=1)
+
+    communities = nx.community.louvain_communities(g, weight="weight", resolution=resolution, seed=42)
+    modularity = nx.community.modularity(g, communities, weight="weight")
+
+    def _simple(node_id: str) -> str:
+        return node_id.split(".")[-1]
+
+    communities = sorted(communities, key=len, reverse=True)
+    multi = [c for c in communities if len(c) > 1]
+    singletons = [next(iter(c)) for c in communities if len(c) == 1]
+
+    out: list[str] = [
+        f"Class-collaboration graph: {g.number_of_nodes()} classes, "
+        f"{g.number_of_edges()} weighted coupling edges.",
+        f"Louvain: {len(communities)} communities, modularity {modularity:.3f} "
+        f"(resolution={resolution}, include_calls={include_calls}).",
+        "",
+        "CANDIDATE COMMUNITIES (a seed to refine, not the answer):",
+    ]
+    for i, comm in enumerate(multi):
+        central = max(comm, key=lambda n: g.degree(n, weight="weight"))
+        members = sorted(_simple(n) for n in comm)
+        out.append(f"  [{i}] ({len(comm)}) central={_simple(central)}: {', '.join(members)}")
+    if singletons:
+        out.append(f"  singletons ({len(singletons)}): {', '.join(sorted(_simple(n) for n in singletons))}")
+
+    # Warn if one community dominates — a sign the seed should be split further
+    # (e.g. higher resolution, or include_calls toggled) rather than taken as one service.
+    if multi:
+        largest = max(multi, key=len)
+        if len(largest) > 0.35 * g.number_of_nodes():
+            out.append("")
+            out.append(
+                f"⚠️  Community with central={_simple(max(largest, key=lambda n: g.degree(n, weight='weight')))} "
+                f"holds {len(largest)}/{g.number_of_nodes()} classes — likely too coarse for one "
+                f"service. Re-run with a higher resolution (or toggle include_calls) and split it "
+                f"by sub-capability before treating it as a single service."
+            )
+
+    # Inter-community seams: coupling edges crossing community boundaries.
+    label: dict[str, int] = {}
+    for idx, comm in enumerate(communities):
+        for n in comm:
+            label[n] = idx
+    seam_weight: dict[tuple[int, int], int] = {}
+    for u, v, data in g.edges(data=True):
+        lu, lv = label[u], label[v]
+        if lu != lv:
+            key = (min(lu, lv), max(lu, lv))
+            seam_weight[key] = seam_weight.get(key, 0) + data.get("weight", 1)
+    if seam_weight:
+        out.append("")
+        out.append("TOP SEAMS (community pairs by coupling weight — would become cross-service calls):")
+        for (lu, lv), w in sorted(seam_weight.items(), key=lambda kv: kv[1], reverse=True)[:10]:
+            out.append(f"  [{lu}]↔[{lv}]  weight {w}")
+
+    return "\n".join(out)
 
 
 @contextlib.asynccontextmanager
