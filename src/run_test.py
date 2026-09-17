@@ -73,18 +73,15 @@ def main():
     print(f"=== Semantic Graph Reader Setup Test [{cfg.name}] ===")
     print(f"1. Python: {sys.version.split()[0]}")
 
-    # Check Protobuf
     import google.protobuf
 
     print(f"2. protobuf: ✓ (v{google.protobuf.__version__})")
 
-    # Check Proto File
     proto_file = "src/models/semantic_graph.proto"
     if not os.path.exists(proto_file):
         sys.exit("3. Proto file: ✗ Missing")
     print("3. Proto file: ✓ Found")
 
-    # Generate Bindings
     print("4. Generating bindings...")
     try:
         subprocess.run(
@@ -101,12 +98,10 @@ def main():
     except:
         sys.exit("   ✗ Protoc failed")
 
-    # Test Import
     from src.models.semantic_graph_pb2 import SemanticGraphFile
 
     print("5. Import: ✓ Success")
 
-    # Read Files
     test_dir = cfg.data_dir / ".semanticgraphs"
     db_files = list(test_dir.rglob("*.semanticgraphdb"))
     if not db_files:

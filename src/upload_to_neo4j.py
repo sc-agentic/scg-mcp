@@ -65,7 +65,6 @@ class Neo4jUploader:
                     pbar.update(len(batch))
 
     def _process_chunk(self, chunk):
-        # Group by type within this sorted chunk to use specific queries
         by_type = {}
         for edge in chunk:
             by_type.setdefault(edge["type"], []).append(edge)
@@ -93,19 +92,16 @@ class Neo4jUploader:
     def upload_edges(self, edges_by_type: Dict[str, List[Dict]]):
         print("Uploading edges...")
 
-        # 1. Flatten
         all_edges = []
         for etype, edges in edges_by_type.items():
             for e in edges:
                 e["type"] = etype
                 all_edges.append(e)
 
-        # 2. Sort by source to prevent Deadlocks
         all_edges.sort(key=lambda x: x["source"])
 
         total_edges = len(all_edges)
 
-        # 3. Sequential Execution using sorted chunks
         chunk_size = 5000
         with tqdm(total=total_edges, desc="Edges") as pbar:
             for i in range(0, total_edges, chunk_size):
@@ -143,7 +139,6 @@ def main():
     for node_id, meta in rag.node_metadata.items():
         src = rag.get_node_source(node_id, context_padding=2)
 
-        # Base payload
         payload = {
             "id": node_id,
             "kind": meta.get("kind", "Unknown"),
@@ -152,7 +147,6 @@ def main():
             "embedding": embedding_map.get(node_id, []),
         }
 
-        # Add Location details
         if loc := meta.get("location"):
             payload["uri"] = str(loc.uri)
             payload["startLine"] = loc.startLine
@@ -162,12 +156,8 @@ def main():
             payload["startLine"] = -1
             payload["endLine"] = -1
 
-        # Add dynamic properties (flattened)
-        # We prefix them to avoid collision with reserved keys
         if props := meta.get("properties"):
             for k, v in props.items():
-                # Neo4j properties must be primitives.
-                # Assuming 'v' is string from the proto definition.
                 payload[f"prop_{k}"] = v
 
         nodes_payload.append(payload)

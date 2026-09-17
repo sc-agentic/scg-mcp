@@ -14,12 +14,10 @@ def check_embeddings():
         return
 
     with driver.session() as session:
-        # Check Total Nodes
         result = session.run("MATCH (n:CodeNode) RETURN count(n) as count")
         total = result.single()["count"]
         print(f"Total Nodes: {total}")
 
-        # Check Nodes with Embeddings
         result = session.run(
             "MATCH (n:CodeNode) WHERE n.embedding IS NOT NULL RETURN count(n) as count"
         )
@@ -27,7 +25,6 @@ def check_embeddings():
         print(f"Nodes with Embeddings: {with_emb}")
 
         if with_emb > 0:
-            # Check embedding dimension
             result = session.run(
                 "MATCH (n:CodeNode) WHERE n.embedding IS NOT NULL RETURN size(n.embedding) as dim LIMIT 1"
             )

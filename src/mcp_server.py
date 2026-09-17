@@ -278,7 +278,6 @@ def get_node_context(
 
     output.append("\nRelationships:")
     if rels:
-        # Deduplicate
         seen_rels = set()
         unique_rels = []
         for r in rels:
@@ -805,7 +804,6 @@ def detect_communities(resolution: float = 1.0, include_calls: bool = False) -> 
     if not classes:
         return "No class-like nodes found in the graph."
 
-    # Map any node id to its owning class via the longest class-id prefix.
     classes_by_len = sorted(classes, key=len, reverse=True)
 
     def _owner(node_id: str) -> str | None:
@@ -851,8 +849,6 @@ def detect_communities(resolution: float = 1.0, include_calls: bool = False) -> 
     if singletons:
         out.append(f"  singletons ({len(singletons)}): {', '.join(sorted(_simple(n) for n in singletons))}")
 
-    # Warn if one community dominates — a sign the seed should be split further
-    # (e.g. higher resolution, or include_calls toggled) rather than taken as one service.
     if multi:
         largest = max(multi, key=len)
         if len(largest) > 0.35 * g.number_of_nodes():
@@ -864,7 +860,6 @@ def detect_communities(resolution: float = 1.0, include_calls: bool = False) -> 
                 f"by sub-capability before treating it as a single service."
             )
 
-    # Inter-community seams: coupling edges crossing community boundaries.
     label: dict[str, int] = {}
     for idx, comm in enumerate(communities):
         for n in comm:

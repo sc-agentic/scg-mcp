@@ -21,7 +21,6 @@ def main():
         print(f"Connection failed: {e}")
         return
 
-    # Find top 5 relevant nodes using Cosine Similarity, then fetch 1-hop neighborhood
     cypher_query = """
     MATCH (n:CodeNode)
     WHERE n.embedding IS NOT NULL
@@ -45,7 +44,6 @@ def main():
         print("No matches found.")
         return
 
-    # Constructing RAG Context
     context_lines = ["RAG CONTEXT:\n"]
 
     nodes_info = {}
@@ -57,7 +55,6 @@ def main():
         rel = record["r"]
         score = record["score"]
 
-        # Source Node
         if source["id"] not in nodes_info:
             nodes_info[source["id"]] = {
                 "name": source.get("displayName", source["id"]),
@@ -66,7 +63,6 @@ def main():
                 "source": source.get("source", ""),
             }
 
-        # Neighbor Node
         if target["id"] not in nodes_info:
             nodes_info[target["id"]] = {
                 "name": target.get("displayName", target["id"]),
@@ -80,7 +76,6 @@ def main():
         )
 
     context_lines.append("Relevant Entities:")
-    # Sort source nodes by score first
     sorted_ids = sorted(
         nodes_info.keys(), key=lambda k: nodes_info[k]["score"], reverse=True
     )
@@ -98,7 +93,6 @@ def main():
                 context_lines.append("      Code: Not available")
 
     context_lines.append("\nRelationships:")
-    # Deduplicate edges strings
     for edge_str in sorted(list(set(edges_info))):
         context_lines.append(f"  {edge_str}")
 

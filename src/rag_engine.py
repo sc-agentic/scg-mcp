@@ -109,7 +109,6 @@ class GraphRAG:
             return None
 
     def _resolve_file_path(self, uri: str) -> Optional[Path]:
-        # Check cache first
         if uri in self._resolve_cache:
             return self._resolve_cache[uri]
 
@@ -120,16 +119,10 @@ class GraphRAG:
     def _resolve_file_path_uncached(self, uri: str) -> Optional[Path]:
         clean_path = uri.replace("file://", "").replace("\\", "/").lstrip("/")
 
-        # 1. If the URI is already an absolute path that exists, use it directly
         resolved = Path(clean_path)
         if resolved.is_absolute() and resolved.exists():
             return resolved
 
-        # 2. Try to extract the relative path by finding code_dir's folder name
-        #    in the URI. Handles cross-platform (Windows URIs on Linux/WSL).
-        #    e.g. URI: "F:/.../code/glide-5.0.5/library/src/Foo.java"
-        #         code_dir name: "glide-5.0.5"
-        #         relative part: "library/src/Foo.java"
         code_dir_name = self.code_dir.name
         marker = f"/{code_dir_name}/"
         idx = clean_path.find(marker)
@@ -139,17 +132,14 @@ class GraphRAG:
             if candidate.exists():
                 return candidate
 
-        # 3. Direct relative match (if URI is already a relative path)
         candidate = self.code_dir / clean_path
         if candidate.exists():
             return candidate
 
-        # 4. Match by filename from index
         filename = Path(clean_path).name
         if filename in self.file_map:
             return self.file_map[filename]
 
-        # 5. Fallback: search file_map values for suffix match
         suffix_parts = clean_path.split("/")
         if len(suffix_parts) >= 2:
             suffix = "/".join(suffix_parts[-2:])
@@ -222,7 +212,6 @@ class GraphRAG:
                 for score, idx in zip(top_results.values, top_results.indices)
             ]
 
-        # Fallback keyword search
         matches = []
         q_lower = query.lower()
         for nid, data in self.node_metadata.items():
